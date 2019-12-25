@@ -1,12 +1,12 @@
 #Created by AUMC
-#8986 - Utondwe
+#8986 - Saadani
 
 owner = ZAN
 controller = ZAN
 add_core = ZAN
 culture = sunni
 religion = sunni
-capital = "Utondwe"
+capital = "Saadani"
 is_city = yes
 base_manpower = 1
 trade_goods = fish
