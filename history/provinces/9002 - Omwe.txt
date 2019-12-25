@@ -1,0 +1,24 @@
+#Created by AUMC
+#9002 - Omwe
+
+owner = PTE
+controller = PTE
+add_core = PTE
+culture = swahili #Will be Bajuni but Omwe is a swahili ruin in the area
+religion = sunni
+capital = "Omwe"
+is_city = yes
+base_manpower = 1
+trade_goods = fish
+hre = no
+base_tax = 1
+base_production = 1
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = central_african
+
+
+1498.4.16 = { discovered_by = POR } # Vasco Da Gama
+1600.1.1 = { discovered_by = TUR }
