@@ -1,0 +1,20 @@
+#Created by AUMC
+#8950 - Mambone
+
+owner = SFA
+controller = SFA
+add_core = SFA
+culture = swahili 
+religion = sunni
+capital = "Mambone"
+is_city = yes
+base_manpower = 2
+trade_goods = fish
+hre = no
+base_tax = 3 
+base_production = 3
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = central_african
+

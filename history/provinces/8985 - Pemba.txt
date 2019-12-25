@@ -1,0 +1,26 @@
+#Created by AUMC
+#8985 - Pemba
+
+owner = ZAN
+controller = ZAN
+add_core = ZAN
+culture = shamanism #Fetishism
+religion = sunni
+capital = "Pemba"
+is_city = yes
+base_manpower = 2
+trade_goods = fish
+hre = no
+base_tax = 3
+base_production = 3
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = central_african
+
+
+1498.3.16 = { discovered_by = POR } #Vasco Da Gama
+1600.1.1 = { discovered_by = TUR }
+1730.1.1 = { owner = OMA controller = OMA add_core = OMA } #Omanis restore control
+1763.1.1 = { unrest = 7 } #Kamba migrations in wake of Maasai expansion disturb region

@@ -1,0 +1,20 @@
+#Created by AUMC
+#8970 - Ushanga
+
+culture = swahili
+religion = sunni
+capital = "Ushanga"
+trade_goods = unknown
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+native_size = 40
+native_ferocity = 20
+native_hostileness = 10 
+
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = central_african
