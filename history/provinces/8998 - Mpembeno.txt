@@ -1,18 +1,18 @@
 #Created by AUMC
-#8998 - Dondo
+#8998 - Mpembeno
 
-owner = PTE
-controller = PTE
-add_core = PTE
+owner = ZAN
+controller = ZAN
+add_core = ZAN
 culture = swahili
 religion = sunni
-capital = "Dondo"
+capital = "Mpembeno"
 is_city = yes
-base_manpower = 2
+base_manpower = 1
 trade_goods = grain
 hre = no
 base_tax = 2
-base_production = 2
+base_production = 1
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim
