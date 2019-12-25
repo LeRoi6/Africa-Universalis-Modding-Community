@@ -1,0 +1,20 @@
+# base_price = X			base price in $. (default is 1.0 if not specified
+# goldtype = yes/no			This resource works like 'gold' if yes, using prices from mine-value in province instead of supply/demand and baseprice. Also creates gold-inflation
+
+
+#Beyond Typus trade goods
+bt_trade_good_beer = {
+	base_price = 2.5
+}	#Events change value as follows   2.5 - 2.75 - 3.0 
+
+bt_trade_good_books = {
+	base_price = 3.5
+}	#Events change value as follows   3.5
+
+bt_trade_good_fruit = {
+	base_price = 2.5
+}	#Events change value as follows   2.5
+
+bt_trade_good_apiculture = {
+	base_price = 2.5
+}	#Events change value as follows   2.5

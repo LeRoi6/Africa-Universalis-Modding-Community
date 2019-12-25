@@ -1,0 +1,25 @@
+namespace = bt_free_city_fix
+
+country_event = {
+	id = bt_free_city_fix.1
+	title = "bt_free_city_fix.1.t"
+	desc = "bt_free_city_fix.1.d"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	hidden = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	trigger = {
+		has_reform = free_city
+		num_of_cities = 2
+	}
+	
+	option = {
+		country_event = {
+			id = free_cities.2
+		}
+	}
+}

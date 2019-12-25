@@ -1,0 +1,1226 @@
+
+#Beyond Typus work done by all contributors other than Draiocht
+#Province Scope unless otherwise specified
+
+#############################################################
+#############################################################
+#############################################################
+#Dub's work
+#############################################################
+#############################################################
+#############################################################
+
+#Written by Dub
+#------------#
+#Usage:
+#has_fulfiled_province_requirement_for_mission_trigger = {
+#	TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
+#	PROVINCES=byz_mainland_greece_provinces
+#	OWNER_TYPE=country_or_non_sovereign_subject_holds
+#}
+#------------#
+#Explanation:
+#TOOLTIP is a localisation string and can be:
+#	country_holds_or_non_sovereign_subject_holds_highlighted
+#	country_holds_highlighted
+#	...or anything else that you desire to add.
+#PROVINCES is a scripted trigger that defines the provinces. These are defined below.
+#OWNER_TYPE is to define whether the provinces need to be directly owned or can also be owned by a subject. Thus it can be:
+#	country_or_non_sovereign_subject_holds
+#	owned_by
+#------------#
+has_fulfiled_province_requirement_for_mission_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = $TOOLTIP$
+		NOT = {
+			any_province = {
+				$PROVINCES$ = yes
+				NOT = { $OWNER_TYPE$ = ROOT }
+			}
+		}
+	}
+}
+
+#These are the triggers for the BT missions. All the triggers are preceded with what nation's missions use the province designation trigger.
+
+#Aq Qoyunlu
+destroy_ayyubids_provinces = {
+	OR = {
+		province_id = 4295
+		province_id = 5331 #BT added, as Hisn Kayfa starts with 2 provinces
+	}
+}
+defeat_black_sheep_provinces = {
+	OR = {
+		area = north_kurdistan_area
+		area = armenia_area
+		area = tabriz_area
+		area = shahrizor_area
+		area = al_jazira_area
+		#BT additions:
+		area = mardin_area
+		province_id = 420 #Da Ganja!
+		province_id = 2314
+		province_id = 2306
+	}
+	NOT = { #Exclusion of some Georgian provinces
+		province_id = 2204
+		province_id = 3253
+	}
+}
+conquer_the_caucasus_akk_provinces = {
+	OR = {
+		area = shirvan_area
+		area = imereti_area
+		area = samtskhe_area
+		area = kartli_kakheti_area
+		#BT additions:
+		province_id = 2204
+		province_id = 3253
+	}
+	NOT = { #Exclusion of Circassia's province
+		province_id = 2195
+		province_id = 420 #Da Ganja!
+	}
+}
+conquer_iraq_akk_provinces = { #Unchanged
+	OR = {
+		area = iraq_arabi_area
+		area = basra_area
+		area = khuzestan_area
+		area = luristan_area
+	}
+}
+invade_persia_akk_1_provinces = { #So vanilla has split the claims for the next mission between its two prerequisite missions. That's why this is split.
+	OR = {
+		area = azerbaijan_area
+		area = tabarestan_area
+		area = iraq_e_ajam_area
+		area = isfahan_area
+	}
+}
+invade_persia_akk_2_provinces = { #So vanilla has split the claims for the next mission between its two prerequisite missions. That's why this is split.
+	OR = {
+		area = persian_gulf_coast
+		area = farsistan_area
+		area = kerman_area
+		area = mogostan_area
+		#BT additions:
+		area = persian_gulf_islands_area
+	}
+}
+invade_persia_akk_provinces = { #To merge the above.
+	OR = {
+		invade_persia_akk_1_provinces = yes
+		invade_persia_akk_2_provinces = yes
+	}
+}
+
+#Yemeni tribes
+yem_gen_recon_one_provinces = {
+	OR = {
+		area = hadramut_area
+		area = yemen_area
+	}
+	NOT = { #Exclusion of the Mahri province
+		province_id = 402
+		province_id = 4279 #Moved to Upper Yemen.
+	}
+}
+yem_gen_recon_two_provinces = {
+	OR = {
+		#BT removed, this is so much more than just Yemen now.
+		#area = tihama_al_yemen_area
+		area = upper_yemen_area
+		#BT added, only the province concerned in vanilla.
+		province_id = 2346
+		province_id = 4279 #Moved to Upper Yemen.
+	}
+}
+
+#Aragon
+ara_crowns_of_iberia_provinces = {
+	OR = {
+		area = castille_area
+		area = toledo_area
+		area = asturias_area
+		area = leon_area
+		#BT additions:
+		area = basque_area #Changed from just Viscaya, as BT does not have the issue of Basque/Vasconia going into France.
+		area = extremadura_area
+		area = murcia_area
+		area = galicia_area
+	}
+}
+integrate_naples_provinces = {
+	OR = {
+		area = calabria_area
+		area = apulia_area
+		#BT additions:
+		area = naples_area
+		area = capitanata_area
+		area = abruzzo_area
+		area = lucania_area
+		area = sicily_area
+		area = noto_area
+		area = demone_area
+		province_id = 7016
+		province_id = 7017
+		#Replaced by naples_area
+		#province_id = 121
+		#province_id = 120
+		#province_id = 2983
+	}
+}
+conquer_athens_provinces = {
+	OR = {
+		area = morea_area
+		#area = northern_greece_area
+		#BT additions:
+		area = western_aegean_area
+		area = northern_peloponnesus_area
+		#area = aetolia_area
+		#Replaced by western_aegean_area (Attike)
+		#province_id = 3003
+	}
+}
+
+#Austria
+subjugate_bohemia_provinces = {
+	OR = {
+		area = bohemia_area
+		area = erzgebirge_area
+		#BT additions
+		area = moravia_area
+	}
+}
+recover_silesia_provinces = {
+	OR = {
+		area = silesia_area
+		#BT additions
+		area = lower_silesia_area
+	}
+}
+partition_poland_provinces = {
+	OR = {
+		area = slovakia_area
+		area = malopolska_area
+		area = red_ruthenia_area
+		area = central_galicia_area
+		#BT additions
+		province_id = 7274 #Bukovina
+		province_id = 3156 #Suceava
+		province_id = 7272 #Zalishchyky
+		province_id = 1940 #Belz
+	}
+	NOT = {
+		province_id = 7266 #City was not owned by Habsburgs, but they owned some of the province it seems. Again, Draiocht has fucked up historical borders with his overhauls. Yay.
+	}
+}
+austrian_hungary_provinces = {
+	OR = {
+		area = slovakia_area
+		area = transdanubia_area
+		area = alfold_area
+		#BT additions
+		area = carpathian_ruthenia_area
+		province_id = 157 #Bihar
+		province_id = 3152 #Szatmar
+		province_id = 4127 #Bistrita
+		province_id = 7718 #Srem
+	}
+}
+austrian_croatia_provinces = {
+	OR = {
+		area = east_adriatic_coast_area
+		area = croatia_area
+		#BT additions
+		area = slavonia_area
+		province_id = 7739 #Vukovar
+	}
+	NOT = {
+		province_id = 3182 #Scutari was never part of the Habsburg domain
+	}
+}
+conquer_transylvania_provinces = {
+	OR = {
+		area = southern_transylvania_area
+		area = transylvania_area
+		area = banat_area
+	}
+	NOT = {
+		province_id = 157 #Bihar
+		province_id = 3152 #Szatmar
+		province_id = 4127 #Bistrita
+	}
+}
+austrian_italian_ambition_provinces = { #Why the hell did Draiocht change my trigger without telling me? This one's pretty disgusting right now. Readjusting back to Lombardy-Veneto.
+	OR = {
+		area = venetia_area
+		#BT additions
+		area = lombardy_area
+		area = friuli_area
+		area = carnia_area
+		area = trentino_area
+		area = east_lombardy_area
+	}
+	NOT = {
+		province_id = 3043 #Pavia. Technically city should be in, but the border it creates is disgusting. It is meant to follow the Po river, but that doesn't work with the current overhaul, which certainly bothers me.
+		province_id = 3054 #Lugano, part of Switzerland.
+	}
+}
+
+#Brandenburg-Prussia
+pru_conquer_pomerania_provinces = {
+	area = hinter_pommern_area
+	#BT removed, vorpommern_area as it wasn't historically owned by Prussia until 1815.
+}
+connect_the_prussian_lands_provinces = {
+	OR = {
+		#BT moved to partition mission
+		#area = pomerelia_area
+		area = east_prussia_area
+		area = mittelmark_area
+	}
+}
+pru_conquer_silesia_provinces = {
+	OR = {
+		area = silesia_area
+		#BT additions
+		area = lower_silesia_area
+	}
+	NOT = {
+		province_id = 3142 #Because Brandenburg never conquered it.
+	}
+}
+pru_duchy_of_cleves_provinces = {
+	OR = { #This was difficult to designate.
+		province_id = 3197 #Julich
+		province_id = 2975 #Cleve
+		province_id = 84 #Berg
+		province_id = 3200 #Mark
+	}
+}
+prussia_partitions_poland_provinces = {
+	OR = { #Cheating a little bit - technically Danzig wasn't taken in the 1st partition, but that's fine for now I suppose.
+		area = west_prussia_area
+		area = wielkopolska_area
+		#BT additions
+		area = pomerelia_area
+	}
+	NOT = {
+		province_id = 254 #Wasn't part of 1st partition, but gets added as a claim.
+	}
+}
+
+#Lithuania
+defeat_the_livonian_order_provinces = { #Unchanged, though it creates errors in the log.
+	OR = {
+		area = livonia_area
+		area = estonia_ingria_area
+		area = curonia_area
+	}
+}
+
+#Ottomans
+conquer_southern_greece_provinces = {
+		#BT overhauled to all provinces in Southern Greece, excluding Cephalonia & Corfu
+	OR = {
+		area = morea_area
+		area = western_aegean_area
+		area = euboea_area
+		area = aetolia_area
+		area = northern_peloponnesus_area
+		area = northern_greece_area
+		province_id = 164
+	}
+	NOT = {
+		province_id = 3176
+		province_id = 142
+	}
+}
+conquer_serbia_provinces = {
+	OR = {
+		area = rascia_area
+		#BT overhauled to include all Serbian provinces at game start
+		area = serbia_area
+		area = syrmia_area
+	}
+}
+conquer_bosnia_provinces = {
+	OR = { 
+		area = bosnia_area
+		#BT additions
+		area = krajina_area
+		area = herzegovina_area
+	}
+}
+conquer_hungary_provinces = {
+	OR = {
+		area = alfold_area
+		#BT additions, attempting to simulate historical Suleiman borders
+		area = slavonia_area
+		province_id = 1954
+		province_id = 153
+		province_id = 1864
+	}
+}
+vassalize_wallachia_provinces = { #Unchanged
+	OR = {
+		area = wallachia_area
+		area = oltenia_area
+		area = upper_muntenia_area
+	}
+}
+vassalize_transylvania_provinces = {
+	OR = {
+		area = transylvania_area
+		area = southern_transylvania_area
+		#BT additions
+		province_id = 1952
+	}
+	NOT = {
+		province_id = 1954 #Given to Control the Danube
+	}
+}
+consolidate_asia_minor_provinces = {
+	#BT completely changed to allow for a simpler trigger - all Anatolian provinces except Trebizond, plus Malatya & Antep, as they are controlled by Turkish beyliks.
+	OR = {
+		region = anatolia_region
+		province_id = 2303
+		province_id = 4298
+	}
+	NOT = {
+		area = pontus_area
+	}
+}
+safeguard_eastern_anatolia_provinces = {
+	OR = {
+		area = north_kurdistan_area
+		area = erzurum_area
+		#BT adjusted to mardin area
+		area = mardin_area
+		#area = dulkadir_area
+	}
+}			
+conquer_mesopotamia_provinces = {
+	OR = {
+		area = iraq_arabi_area
+		area = al_jazira_area
+		#BT additions
+		area = shahrizor_area
+		area = rakka_area
+	}
+	NOT = { 
+		province_id = 2211
+	}
+}
+conquer_haasa_provinces = { #Unchanged
+	OR = {
+		area = basra_area
+		area = bahrain_area
+	}
+}
+conquer_trebizond_provinces = {
+	#BT adjusted to whole Pontus area.
+	area = pontus_area
+}
+take_kaffa_provinces = {
+	OR = {
+		#BT adjusted to historical Ottoman holdings.
+		area = crimea_area
+		province_id = 286
+	}
+	NOT = {
+		province_id = 284
+		province_id = 3244
+	}
+}
+conquer_levant_provinces = {
+	#BT adjusted to include all of the Levant region, which means Ottomans finally get a claim to Cyprus!
+	region = mashriq_region
+}
+conquer_egypt_provinces = {
+	OR = {
+		area = delta_area
+		area = bahari_area
+		area = said_area
+		area = vostani_area
+		area = al_wahat_area
+		area = gulf_of_arabia_area
+		#BT moved to Tripolitania
+		#area = cyrenaica_area
+		#BT additions
+		area = lower_nubia_area
+		province_id = 4322
+	}
+	NOT = {
+		province_id = 2322
+		province_id = 5277
+		province_id = 5279
+	}
+}
+defeat_the_knights_provinces = {
+	province_id = 320
+}
+take_crete_from_venice_provinces = {
+	#BT adjusted to Crete area.
+	area = eastern_mediterrenean_islands_area
+}
+conquer_tripolitania_provinces = {
+	OR = {
+		area = tripolitania_area
+		#BT moved to Tunisia
+		#area = djerba_area
+		#BT additions
+		area = cyrenaica_area
+	}
+	NOT = {
+		province_id = 5303
+		province_id = 5304
+	}
+}
+conquer_tunisia_provinces = {
+	OR = {
+		#BT adjusted to encompass historical regions of Tunisia under Suleiman
+		area = tunisia_area
+		area = east_aures_area
+		area = djerba_area
+		province_id = 352
+	}
+}
+subjugate_algiers_provinces = {
+	OR = {
+		area = west_aures_area
+		area = constantine_area
+		area = kabylia_area
+		area = barbary_coast_area
+		area = algiers_area
+		area = hautes_plaines_area
+		area = ouled_nail_area #Hopefully this is Sarahan Atlas
+	}
+	NOT = { 
+		province_id = 350
+	}
+}
+conquer_hedjaz_provinces = {
+	OR = {
+		area = mecca_area
+		area = tabuk_area
+		area = medina_area
+		#BT additions
+		area = tihama_al_yemen_area
+	}
+	NOT = {
+		province_id = 2346
+	}
+}
+conquer_mocha_provinces = {
+	OR = {
+		#BT moved to Hejaz, replaced by single province below
+		#area = tihama_al_yemen_area
+		area = yemen_area
+		#BT additions
+		province_id = 2346
+	}
+}
+
+#Poland-Commonwealth
+conquer_warmia_provinces = { #Unchanged
+	OR = {
+		area = west_prussia_area
+		area = pomerelia_area
+	}
+}
+annex_mazovia_provinces = { #Unchanged
+	OR = {
+		province_id = 257
+		province_id = 1938
+		province_id = 256
+		province_id = 4525
+		province_id = 7264
+	}
+}
+vassalize_the_teutonic_order_provinces = { #Unchanged
+	area = east_prussia_area
+}
+vassalize_lithuania_provinces = {
+	OR = {
+		#BT removed, doesn't even exist in BT.
+		#area = minsk_area
+		area = west_dniepr_area
+		area = pripyat_area
+		#BT removed - no way Smolensk could be considered an integral part of Lithuania since Muscovy's conquest in 1510. It should however be granted as permanent claims after mission completion.
+		#area = smolensk_area
+		#BT additions
+		area = samogitia_area
+		area = lithuania_area
+		area = mazovia_area
+		area = volhynia_area
+		area = podolia_volhynia_area
+		area = white_ruthenia_area
+		area = central_galicia_area
+		area = eastern_volhynia_area
+		area = western_podolia_area
+		area = cherkasy_area
+		area = mazur_area
+		area = vitebsk_area
+		area = polotsk_area
+		area = novogrudok_area
+		area = yotvingia_area
+		area = trakai_area
+		area = east_dniepr_area
+		area = chernigov_area
+		area = podlasie_area
+	}
+}
+conquer_silesia_provinces = {
+	OR = {
+		area = silesia_area
+		#BT additions
+		area = lower_silesia_area
+	}
+}
+
+#Sweden
+control_scania_provinces = { #Moved Bornholm to Turn the Tables
+	OR = {
+		area = vastra_gotaland_area
+		area = gotaland_area
+		area = skaneland_area
+	}
+	NOT = {
+		province_id = 1981 #Bornholm
+	}
+}
+vassalize_norway_swe_provinces = { #Unchanged
+	OR = {
+		area = northern_norway
+		area = eastern_norway
+		area = western_norway
+		area = southern_norway_area
+		area = trondelag_area
+	}
+}
+swe_turns_have_tabled_provinces = {
+	OR = {
+		area = denmark_area
+		area = jutland_area
+		area = schleswig_area
+		province_id = 1981 #Bornholm
+	}
+}
+swe_expand_finland_provinces = { #Kexholm County + Ingria
+	OR = {
+		area = west_karelia_area #Apparently this is the Ingria of BT.
+		area = north_karelia_area 
+	}
+}
+control_estonia_provinces = { #Swedish Estonia
+    area = estonia_ingria_area
+    NOT = { province_id = 35 } #Ösel was actually part of Swedish Livonia, ceded in 1645 as part of the treaty of Brömsebro, together with Jämtland & Gotland (+Halland).
+    NOT = { province_id = 3230 } #Also part of Livonia
+}
+control_latvia_provinces = { #Now adjusted to only include Swedish Livonia
+    OR = {
+        area = livonia_area
+        area = north_livonia_area
+        province_id = 35 #Ösel
+        province_id = 3230 #Sontack
+    }
+    NOT = {
+        province_id = 273 #Not part of historical Swedish Livonia/Estonia/Ingria.
+    }
+}
+swedish_pommerania_provinces = {
+	OR = { 
+		province_id = 47 #Stralsund
+		province_id = 2994 #Greifswald
+		province_id = 1858 #Stettin
+		province_id = 7818 #Kammin
+		province_id = 7817 #Locknitz
+		province_id = 7816 #Usedom
+		province_id = 7815 #Anklam
+		province_id = 7814 #Rügen
+		province_id = 2996 #Wismar. Was part of Swedish Pomerania
+		province_id = 7842 #Greifwald
+	}
+}
+swe_bremen_verden_provinces = {
+	OR = {
+		province_id = 54 #Stade (Verden)
+		province_id = 1874 #Bremen
+	}
+}
+swedish_prussia_provinces = {
+	OR = {
+		area = east_prussia_area
+		area = nadruvia_area
+		#area = masuria_area
+	}
+	NOT = { 
+		province_id = 7830 #Neidenburg
+		province_id = 1841 #Marienburg
+		province_id = 1859 #Kulm
+	}
+}
+swe_subjugate_lithuania_provinces = {
+	OR = {
+		area = samogitia_area
+		area = yotvingia_area
+		area = trakai_area
+		area = lithuania_area
+		#Technically it should give claims to whatever was Lithuania at the time, which was modern-day Belarus + parts of Russia + random pieces in modern-day Ukraine and Poland. But eh.
+		area = pripyat_area
+		area = polotsk_area
+		area = novogrudok_area
+		area = vitebsk_area
+		area = mazur_area
+		area = minsk_area
+		area = white_ruthenia_area
+		area = podlasie_area
+		area = bryansk_area
+		area = smolensk_area
+	}
+	NOT = {
+		province_id = 297 #Bryansk
+		province_id = 4245 #Viazma
+		province_id = 1938 #Wizna
+		province_id = 7262 #Bielsk
+		province_id = 269 #Palenke
+	}
+}
+
+#Denmark
+dan_slesvig_holstein_inheritance_provinces = {
+	OR = {
+		area = schleswig_area
+		area = holstein_area
+	}
+	NOT = {
+		province_id = 4141 #Dithmarschen
+		province_id = 7777 #Pinneburg
+		province_id = 45 #Lübeck
+		province_id = 1857 #Lauenburg
+		province_id = 44 #Hamburg
+	}
+}
+denmark_sweden_integration_provinces = {
+	OR = {
+		area = svealand_area
+		area = norrland_area
+		area = gotaland_area
+		area = vastra_gotaland_area
+	}
+}
+denmark_iceland_integration_provinces = {
+	area = iceland_area
+}
+danish_curonia_provinces = {
+	area = curonia_area
+}
+dan_enforce_danelaw_provinces = {
+	OR = {
+		area = northern_england_area
+		area = east_midlands_area
+		area = wessex_area
+		area = east_anglia_area
+		area = west_midlands_area
+		area = home_counties_area
+		area = yorkshire_area
+	}
+}
+
+#Norway
+nor_reverse_kalmar_union_provinces = {
+	OR = {
+		swe_turns_have_tabled_provinces = yes
+		area = skaneland_area
+	}
+}
+nor_conquer_the_isles_provinces = {
+	area = kingdom_of_the_isles_area
+}
+nor_conquer_scotland_provinces = {
+	OR = {
+		area = lowlands_area
+		area = scottish_marches_area
+		area = highlands_area
+	}
+}
+nor_conquer_ireland_provinces = {
+	OR = {
+		area = leinster_area
+		area = ulster_area
+		area = munster_area
+		area = connacht_area
+	}
+}
+
+#Bulgarian work (Still no missions as of yet).
+bul_conquer_north_bulgaria_provinces = {
+	area = danubian_plain_area
+}
+bul_conquer_south_bulgaria_provinces = {
+	area = bulgaria_area
+	NOT = {
+		province_id = 7711 #Vranje
+		province_id = 3000 #Nis
+	}
+}
+bul_conquer_macedonia_provinces = {
+	OR = {
+		area = eastern_macedonia_area
+		area = macedonia_area
+		area = northern_macedonia_area
+	}
+}
+bul_conquer_serbia_provinces = {
+	OR = {
+		area = rascia_area
+		area = serbia_area
+		province_id = 3187 #Podrinje
+		province_id = 7724 #Srebrenica
+		province_id = 7711 #Vranje
+		province_id = 3000 #Nis
+	}
+	NOT = {
+		province_id = 7709 #Pljevlja
+	}
+}
+bul_conquer_pannonia_provinces = {
+	OR = {
+		area = banat_area
+		area = transylvania_area
+		area = southern_transylvania_area
+		province_id = 155 #Bekes
+	}
+}
+
+bul_conquer_vidin_provinces = {
+	area = vidin_area
+}
+bul_conquer_dobruja_provinces = {
+	area = lower_danube_area
+}
+bul_conquer_wallachia_provinces = {
+	OR = {
+		area = wallachia_area
+		area = upper_muntenia_area
+		area = oltenia_area
+	}
+}
+bul_conquer_moldavia_provinces = {
+	OR = {
+		area = moldavia_area
+		area = western_moldovia
+		area = bukovina_area
+	}
+}
+
+bul_conquer_northern_thrace_provinces = {
+	OR = {
+		area = upper_thrace_area
+		area = northern_thrace_area
+	}
+	NOT = {
+		province_id = 1764 #Mesembria
+		province_id = 7139 #Sozopolis
+	}
+}
+bul_conquer_southern_thrace_provinces = {
+	area = thrace_area
+	NOT = {
+		province_id = 7138 #Bizye
+		province_id = 7137 #Selymbria
+		province_id = 151 #Constantinople
+	}	
+}
+bul_conquer_albania_provinces = {
+	OR = {
+		area = northern_greece_area
+		area = albania_area
+		province_id = 7115 #Amfilochia/Vounitsa
+		province_id = 3175 #Agrinion
+	}
+}
+bul_conquer_constantinople_provinces = {
+	OR = {
+		province_id = 1764 #Mesembria
+		province_id = 7139 #Sozopolis
+		province_id = 7138 #Bizye
+		province_id = 7137 #Selymbria
+		province_id = 151 #Constantinople
+	}
+}
+
+#Wallachia-Moldavia-Romania (And Transylvania?)
+rmn_drive_out_the_turks_provinces = {
+	OR = {
+		AND = {
+			OR = {
+				area = danubian_plain_area
+				area = lower_danube_area
+				area = vidin_area
+				area = bulgaria_area
+				area = eastern_macedonia_area
+				area = northern_macedonia_area
+				area = macedonia_area
+				area = upper_thrace_area
+				area = northern_thrace_area
+				area = thrace_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owned_by = TUR
+		}
+	}
+}
+rmn_heir_of_rome_provinces = {
+	region = balkan_region
+	OR = {
+		owned_by = BYZ
+		province_id = 151
+	}
+}
+unite_the_voivodes_provinces = {
+	OR = {
+		area = wallachia_area
+		area = moldavia_area
+		area = western_moldovia
+		area = bukovina_area
+		area = upper_muntenia_area
+		area = oltenia_area
+	}
+	NOT = { #Ottoman Wallachian provinces will be retaken in a later war.
+		province_id = 4531 #Giurgiu
+		province_id = 7754 #Turnu
+	}
+}
+rmn_conquer_transylvania_provinces = {
+	OR = {
+		area = transylvania_area
+		area = southern_transylvania_area
+		area = banat_area
+		province_id = 1952 #Marmaros
+	}
+	NOT = {
+		province_id = 7741 #Becej
+		province_id = 1954 #Pancevo
+		province_id = 156 #Temes, was never part of Transylvanian Voivode-
+		province_id = 3152 #Szatmar, neither was this.
+	}
+}
+conquer_ferrara_provinces = {
+	OR = {
+		province_id = 113 #Ferrara
+		province_id = 7081 #Polesine
+		province_id = 114 #Ravenna
+	}
+}
+
+#Castille-Spain, GC
+gc_spa_invade_england_provinces = {
+	OR = {
+		area = wessex_area
+		area = home_counties_area
+		area = east_anglia_area
+		area = east_midlands_area
+		area = west_midlands_area
+		area = yorkshire_area
+		area = cornwall_area
+		area = northern_england_area
+	}
+}
+gc_cas_spa_italian_ambition_provinces = {
+	OR = {
+		area = sicily_area
+		area = calabria_area
+		area = apulia_area
+		area = abruzzo_area
+		area = naples_area
+	}
+	NOT = {
+		province_id = 7012 #Benevento
+	}
+}
+gc_cas_spa_italian_ambition_2_provinces = {
+	OR = {
+		area = tuscany_area
+		area = south_tuscany_area
+		area = lombardy_area
+		area = east_lombardy_area
+	}
+}
+gc_spa_spanish_netherlands_provinces = {
+	OR = {
+		area = flanders_area
+		area = wallonia_area
+		area = brabant_area
+	}
+}
+gc_spa_austrian_union_provinces = {
+	OR = {
+		area = inner_austria_area
+		area = austria_proper_area
+		area = tirol_area
+		area = trentino_area
+	}
+}
+gc_cas_spa_reconquista_three_provinces = {
+	OR = {
+		area = valencia_area
+		area = catalonia_area
+		area = aragon_area
+		area = baleares_area
+	}
+}
+gc_cas_spa_reconquista_two_provinces = {
+	OR = {
+		area = beieras_area
+		area = alentejo_area
+		area = minho_duoro_area
+		area = estremadura_area
+		area = algarve_area
+	}
+}
+gc_cas_spa_conquer_philippines_provinces = {
+	OR = {
+		area = mindanao_area
+		#area = west_mindanao_area
+		area = visayas_area
+		area = palawan_area
+		area = luzon_area
+		area = southern_luzon_area
+	}
+	NOT = {
+		province_id = 637 #Api
+		province_id = 8700 #Keningau
+		province_id = 2703 #Lehad Datu
+	}
+}
+
+#Muscovy-Russia, TR
+tr_access_to_the_baltic_sea_provinces = {
+	OR = {
+		area = curonia_area
+		area = estonia_ingria_area
+		area = livonia_area
+		area = north_livonia_area
+		area = latgallia_area
+	}
+}
+tr_consolidate_russia_mission_provinces = {
+	region = russia_region
+	NOT = { #Excluding areas where Lithuania has influence so that the mission can reliably be completed without engaging the PLC. Adding them to Ruthenia instead.
+		area = oka_area
+		area = smolensk_area
+		area = toropets_area
+	}
+}
+tr_russia_partitions_poland_new_provinces = {
+	OR = {
+		region = ruthenia_region
+		area = samogitia_area
+		area = lithuania_area
+		area = oka_area
+		area = smolensk_area
+		area = toropets_area
+	}
+	NOT = {
+		area = red_ruthenia_area
+		province_id = 7272 #Zalishchyky
+	}
+}
+tr_conquer_finland_provinces = {
+	OR = {
+		area = finland_area
+		area = bothnia_area
+		area = laponia_area
+		area = west_karelia_area
+		province_id = 7800 #Torneå
+	}
+}
+rus_partition_poland_mission_provinces = {
+	OR = {
+		area = red_ruthenia_area
+		area = sandomierz_area
+		area = central_poland_area
+		area = kuyavia_area
+		area = malopolska_area
+		area = mazovia_area
+		province_id = 7272 #Zalishchyky
+	}
+}
+rus_romania_conquest_provinces = {
+	OR = {
+		area = wallachia_area
+		area = upper_muntenia_area
+		area = oltenia_area
+		area = moldavia_area
+		area = bukovina_area
+		area = western_moldovia
+		area = carpathian_ruthenia_area
+	}
+}
+rus_third_rome_mission_provinces = {
+	OR = {
+		area = bulgaria_area
+		area = thrace_area
+		area = northern_thrace_area
+		area = western_thrace_area
+		area = upper_thrace_area
+		area = danubian_plain_area
+		area = lower_danube_area
+		area = vidin_area
+	}
+	NOT = {
+		province_id = 7711 #Vranje
+		province_id = 3000 #Nis
+	}
+}
+
+#Granada-Andalusia, GC
+gra_reconquer_valencia_provinces = {
+	OR = {
+		area = murcia_area
+		area = valencia_area
+	}
+}
+gra_reconquer_sevilla_provinces = {
+	OR = {
+		area = upper_andalucia_area
+		area = lower_andalucia_area
+		area = northern_andalusia_area
+	}
+}
+adu_conquer_portugal_provinces = { #Unused, placeholder to show that this needs to be localised for claims for the mission.
+	# OR = {
+		# area = alentejo_area
+		# area = beieras_area
+		# area = minho_duoro_area
+		# area = algarve_area
+		# area = estremadura_area
+	# }
+}
+gra_restore_caliphate_cordoba_provinces = {
+	OR = {
+		area = toledo_area
+		area = new_castile_area
+		area = segovia_area
+		area = aragon_area
+		area = extremadura_area
+	}
+}
+gra_own_iberia_provinces = {
+	OR = {
+		area = castille_area
+		area = galicia_area
+		area = asturias_area
+		area = leon_area
+		area = basque_area
+		area = catalonia_area
+		#Why request the Portuguese ones once more? The mission even needs to be completed beforehand...
+		#area = alentejo_area
+		#area = beieras_area
+	}
+}
+gra_into_france_provinces = {
+	OR = {
+		area = languedoc_area
+		area = provence_area
+		area = upper_guyenne_area
+		area = west_languedoc_area
+		area = dauphine_area
+	}
+}
+adu_conquer_med_islands_provinces = {
+	OR = {
+		area = baleares_area
+		area = corsica_sardinia_area
+		area = sardinia_area
+	}
+}
+adu_retake_sicily_provinces = {
+	OR = {
+		area = sicily_area
+	}
+}
+adu_moroccan_conquest_provinces = {
+	OR = {
+		area = northern_morocco_area
+		area = marrekesh_area
+		area = western_morocco_area
+		province_id = 5213 #Taza
+	}
+}
+adu_own_tunisia_1_provinces = {
+	OR = {
+		area = hautes_plaines_area
+		area = barbary_coast_area
+		area = kabylia_area
+		area = tunisia_area
+		area = djerba_area
+		area = tripolitania_area
+		area = ouled_nail_area
+		province_id = 2465 #Wejda
+		province_id = 349 #Ifyey
+		province_id = 2458 #Al-Masila
+	}
+	NOT = {
+		province_id = 5316 #Tuzer
+		province_id = 2450 #Jebil
+	}
+}
+adu_fatimid_lands_provinces = {
+	OR = {
+		area = cyrenaica_area
+		area = delta_area
+		area = bahari_area
+		area = vostani_area
+		area = al_wahat_area
+		area = said_area
+	}
+	NOT = { #Don't touch non-colonised provinces.
+		is_empty = yes
+	}
+}
+adu_levantine_restoration_provinces = {
+	OR = {
+		area = palestine_area
+		area = syria_area
+		area = aleppo_area
+		area = al_jazira_area
+		area = rakka_area
+		area = syrian_desert_area
+		area = trans_jordan_area
+	}
+}
+adu_reclaim_mecca_provinces = {
+	OR = {
+		area = tihama_al_yemen_area
+		area = tabuk_area
+		area = medina_area
+		area = mecca_area
+	}
+	NOT = {
+		province_id = 2436
+	}
+}
+adu_down_tigris_provinces = {
+	OR = {
+		area = iraq_arabi_area
+		area = basra_area
+		area = khuzestan_area
+		area = luristan_area
+	}
+}
+adu_persian_conquest_provinces = {
+	OR = {
+		area = shahrizor_area
+		area = tabriz_area
+		area = azerbaijan_area
+		area = armenia_area
+	}
+}

@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = picard_culture
+religion = catholic
+technology_group = western
+capital = 7973
+
+
+#History not yet done
+1433.1.1 = {			#Exact date is unknown.
+	monarch = {
+		name = "Louis"
+		dynasty = "de Luxembourg"
+		birth_date = 1418.1.1		#Exact date of his birth is unknown.
+		adm = 2			#A constructor of castles, he also had a lot of holdings scattered through France.
+		dip = 4			#He was double-dealing between France and Burgundy, he was really an important plotter.
+		mil = 3			#Military functions, seems to be a decent general.
+	}
+}

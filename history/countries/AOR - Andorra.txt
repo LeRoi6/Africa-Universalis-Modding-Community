@@ -1,0 +1,12 @@
+government = monarchy
+add_government_reform = peasants_republic			#Not exactly... but whatever
+government_rank = 1
+primary_culture = catalan
+religion = catholic
+technology_group = western
+capital = 7889
+fixed_capital = 7889
+historical_friend = FOI
+historical_friend = ARA
+
+#History not yet done

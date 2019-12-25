@@ -1,0 +1,30 @@
+#Moving forming decisions to BtPLReplaceVanillaCountryFormations
+
+#I normally don't like messing with vanilla files when I don't have to, but between all the map changes and the fact that I wanted to clean up a few things
+#and make everything more dynamic anyway, I figured I'd just reorganise. Hope this doesn't mess with anyone too much. - Draiocht
+
+country_decisions = {
+
+	institute_prussian_monarchy = {
+		major = yes
+		potential = {
+			NOT = { has_dlc = "Dharma" }
+			normal_or_historical_nations = yes
+			tag = PRU
+			government = monarchy
+			NOT = { has_reform = prussian_monarchy_legacy }
+		}
+
+		allow = {
+			OR = {
+				religion = protestant
+				religion = reformed
+			}
+		}
+
+		effect = {
+			add_government_reform = prussian_monarchy
+		}
+	}
+	
+}

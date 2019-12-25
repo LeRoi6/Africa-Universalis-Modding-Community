@@ -1,0 +1,59 @@
+
+#Beyond Typus work done by all contributors other than Draiocht
+#	Example:
+# 
+#	example_effect = {
+#		treasury = 100
+#		add_adm_power = 50
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+
+#############################################################
+#############################################################
+#############################################################
+#Dub's work
+#############################################################
+#############################################################
+#############################################################
+
+add_or_spawn_center_of_trade = {
+    if = { #If has center of trade, add level.
+        limit = {
+            OR = {
+                province_has_center_of_trade_of_level = 1
+                province_has_center_of_trade_of_level = 2
+                province_has_center_of_trade_of_level = 3
+            }
+        }
+        add_center_of_trade_level = $LEVEL$
+    }
+    else = {
+        center_of_trade = $LEVEL$
+    }
+}
+
+create_interregnum_effect = {
+    hidden_effect = {
+        every_country = {
+            limit = {
+                marriage_with = ROOT
+            }
+            break_marriage = ROOT
+        }
+        kill_heir = yes
+    }
+    define_ruler = {
+        name = "(Interregnum)"
+        adm = 0
+        dip = 0
+        mil = 0
+        fixed = yes
+        regency = yes
+    }
+}
