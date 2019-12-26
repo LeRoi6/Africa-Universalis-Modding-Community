@@ -1,9 +1,9 @@
 #Created by AUMC
-#8939 - Mabayin
+#8939 - Mabanyin
 
 culture = tsonga_culture
 religion = shamanism #Fetishism
-capital = "Mabayin"
+capital = "Mabanyin"
 trade_goods = unknown
 hre = no
 base_tax = 1

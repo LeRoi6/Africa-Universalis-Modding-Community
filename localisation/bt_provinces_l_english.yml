@@ -3287,9 +3287,9 @@
  PROV8934:0 "Bembane"
  PROV8935:0 "Massingir"
  PROV8936:0 "Makulele"
- PROV8937:0 "Chaimite"
- PROV8938:0 "Mabalele"
- PROV8939:0 "Mabayin"
+ PROV8937:0 "Nyandweni"
+ PROV8938:0 "Sondolotane"
+ PROV8939:0 "Mabanyin"
  PROV8940:0 "Inkoman Simba"
  PROV8941:0 "Manusa"
  PROV8942:0 "Zavala"
@@ -3354,6 +3354,12 @@
  PROV9001:0 "Kiduruni"
  PROV9002:0 "Omwe"
  PROV9003:0 "Manda"
+ PROV9004:0 "Tongue"
+ PROV9005:0 "Manyikeni"
+ PROV9006:0 "Xitabisso"
+ PROV9007:0 "Chishinzi"
+ PROV9008:0 "Muchieli"
+ PROV9009:0 "Hola-Hola"
 
  
 

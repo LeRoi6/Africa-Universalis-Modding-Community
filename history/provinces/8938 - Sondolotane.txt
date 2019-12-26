@@ -1,9 +1,9 @@
 #Created by AUMC
-#8938 - Mabalele
+#8938 - Sondolotane
 
 culture = tsonga_culture
 religion = shamanism #Fetishism
-capital = "Mabalele"
+capital = "Sondolotane"
 trade_goods = unknown
 hre = no
 base_tax = 2

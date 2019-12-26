@@ -1,11 +1,12 @@
 #Created by AUMC
-#8937 - Chaimite
+#9007 - Chishinzi
+
 culture = tsonga_culture
 religion = shamanism #Fetishism
-capital = "Chaimite"
+capital = "Xitabisso"
 trade_goods = unknown
 hre = no
-base_tax = 1
+base_tax = 2
 base_production = 1
 base_manpower = 1
 native_size = 40

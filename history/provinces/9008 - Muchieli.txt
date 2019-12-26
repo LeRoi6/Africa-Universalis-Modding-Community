@@ -1,13 +1,13 @@
 #Created by AUMC
-#8936 - Makulele
+#9008 - Muchieli
 
 culture = tsonga_culture
 religion = shamanism #Fetishism
-capital = "Xikhari"
+capital = "Muchieli"
 trade_goods = unknown
 hre = no
 base_tax = 2
-base_production = 2
+base_production = 1
 base_manpower = 1
 native_size = 40
 native_ferocity = 20

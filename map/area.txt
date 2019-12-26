@@ -1481,8 +1481,8 @@ inhambane_area = { #6
 	1183 8941 8942 8943 8945 8946
 }
 
-tonga_area = { #3
-	8944
+tonga_area = { #7 #Name not final
+	8944 9004 9005 9006 9007 9008 9009
 }
 
 limpopo_area = { #8
