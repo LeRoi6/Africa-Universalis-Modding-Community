@@ -4,7 +4,7 @@
 owner = ZAN
 controller = ZAN
 add_core = ZAN
-culture = shamanism #Fetishism
+culture = swahili
 religion = sunni
 capital = "Kaole"
 is_city = yes

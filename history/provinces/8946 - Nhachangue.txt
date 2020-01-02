@@ -1,7 +1,7 @@
 #Created by AUMC
 #8946 - Nhachangue
 
-culture = tsonga
+culture = tsonga_culture
 religion = shamanism
 capital = "Nhachangue"
 trade_goods = unknown

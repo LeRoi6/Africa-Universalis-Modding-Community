@@ -1,7 +1,7 @@
 #Created by AUMC
 #9020 - Gorongosa
 
-culture = tsonga
+culture = shona
 religion = shamanism
 capital = "Gorongosa"
 trade_goods = unknown

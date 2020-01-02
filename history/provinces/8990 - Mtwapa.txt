@@ -4,7 +4,7 @@
 owner = MBA
 controller = MBA
 add_core = MBA
-culture = sunni
+culture = swahili
 religion = sunni
 capital = "Mtwapa"
 is_city = yes

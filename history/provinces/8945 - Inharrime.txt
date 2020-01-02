@@ -1,7 +1,7 @@
 #Created by AUMC
 #8945 - Inharrime
 
-culture = tsonga
+culture = tsonga_culture
 religion = shamanism
 capital = "Inhambane"
 trade_goods = unknown
