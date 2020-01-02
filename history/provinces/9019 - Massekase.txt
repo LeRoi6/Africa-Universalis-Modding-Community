@@ -1,0 +1,25 @@
+#Created by AUMC
+#9019  - Massekase
+
+owner = ZIM
+controller = ZIM
+add_core = ZIM
+culture = shona
+religion = shamanism
+capital = "Massekase"
+is_city = yes
+base_manpower = 2
+trade_goods = gems #Hanganhe
+hre = no
+base_tax = 3
+base_production = 3 
+discovered_by = east_african
+discovered_by = central_african
+
+
+1513.1.1 = { discovered_by = POR } #Travels of Antonio Fernandes in hinterland of Sofala
+1690.1.1 = {
+	owner = RZW
+	controller = RZW
+	add_core = RZW
+}

@@ -651,6 +651,9 @@ east_africa_region = {
 		quelimane_area
 		butua_area
 		#AUMC New Areas
+		tete_area
+		maniyka_area
+		madanda_area
 		northern_maputo_area
 		tonga_area
 		inhambane_area
@@ -658,7 +661,7 @@ east_africa_region = {
 		chibuene_area
 		angoche_area
 		quirimbas_islands_area
-		linde_area
+		lindi_area
 		zanzibar_area
 		pate_area
 		mikindani_area

@@ -1,0 +1,18 @@
+#Created by AUMC
+#9028 - Khulubvi
+
+owner = MKU
+controller = MKU
+add_core = MKU
+culture = nyasa
+religion = shamanism #Fetishism
+capital = "Khulubvi"
+is_city = yes
+base_manpower = 1
+trade_goods = livestock
+hre = no
+base_tax = 2
+base_production = 2
+discovered_by = central_african
+
+1572.1.1 = { discovered_by = POR } #Start of Portuguese Interaction with the Maravis north of the Zambezi

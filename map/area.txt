@@ -1418,7 +1418,7 @@ southern_madagascar = { #4
 
 lower_zambezi_area = { #3
 	color = { 213 127 69 }
-	1187 1190 1191
+	1187 9020 9022 9023 9024 9025 9026 9027 
 }
 
 upper_zambezi_area = { #3
@@ -1426,7 +1426,7 @@ upper_zambezi_area = { #3
 }
 
 shire_area = { #3
-	4038 4039 4040
+	4038 4039 4040 9028 9029
 }
 
 butua_area = { #3
@@ -1434,7 +1434,19 @@ butua_area = { #3
 }
 
 zimbabwe_area = { #4
-	1184 2950 2951 2952
+	1184 2950
+}
+
+tete_area = {
+	1190 1191
+}
+
+maniyka_area = { #6
+	2951 9016 9017 9018 9019 9021
+}
+
+madanda_area = { #7 #rename to southern maniyka?
+    2952 9010 9011 9012 9013 9014 9015
 }
 
 ruvuma_area = { #4
@@ -1458,15 +1470,15 @@ comoros_area = { #1
 }
 
 quirimbas_islands_area = { #5
-	4049 8970 8711 8972 8973 8974
+	4049 8970 8971 8972 8973 8974
 }
 
 uticulo_makuana_area = { #3
 	4034 4035 4048
 }
 
-quelimane_area = { #6
-	1192 8957 8958 8959 8960
+quelimane_area = { #7
+	1192 8957 8958 8959 8960 9006 9009
 }
 
 sofala_area = { #6
@@ -1481,8 +1493,8 @@ inhambane_area = { #6
 	1183 8941 8942 8943 8945 8946
 }
 
-tonga_area = { #7 #Name not final
-	8944 9004 9005 9006 9007 9008 9009
+tonga_area = { #5 #Name not final
+	8944 9004 9005 9007 9008
 }
 
 limpopo_area = { #8
