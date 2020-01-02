@@ -955,6 +955,15 @@
  pate_area:0 "Pate"
  pate_area_name:0 "Pate"
  pate_area_adj:0 "Patian"
+ tete_area:0 "Tete"
+ tete_area_name:0 "Tete"
+ tete_area_adj:0 "Tetian"
+ manyika_area:0 "Manyika"
+ manyika_area_name:0 "Manyika"
+ manyika_area_adj:0 "Manyikan"
+ madanda_area:0 "Madanda"
+ madanda_area_name:0 "Madanda"
+ madanda_area_adj:0 "Madandan"
  
  
  ######################################
