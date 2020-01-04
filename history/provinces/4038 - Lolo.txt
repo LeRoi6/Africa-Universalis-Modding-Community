@@ -3,9 +3,9 @@
 owner = MKU
 controller = MKU
 add_core = MKU
-culture = nyasa
+culture = makua
 religion = shamanism #Fetishism
-capital = "Lolo"
+capital = "Malopo"
 is_city = yes
 base_manpower = 2 
 trade_goods = ivory

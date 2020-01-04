@@ -1,11 +1,11 @@
 #Lomwe
 
-owner = MRA
-controller = MRA
-add_core = MRA
+owner = MKU
+controller = MKU
+add_core = MKU
 culture = makua
 religion = shamanism #Fetishism
-capital = "Lomwe"
+capital = "Namuli"
 is_city = yes
 base_manpower = 2 
 trade_goods = ivory

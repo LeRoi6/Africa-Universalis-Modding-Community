@@ -651,6 +651,8 @@ east_africa_region = {
 		quelimane_area
 		butua_area
 		#AUMC New Areas
+		western_makuana_area
+		lomwe_area
 		tete_area
 		maniyka_area
 		madanda_area

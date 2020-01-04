@@ -1426,7 +1426,7 @@ upper_zambezi_area = { #3
 }
 
 shire_area = { #3
-	4038 4039 4040 9028 9029
+	4039 4040 9028 9029
 }
 
 butua_area = { #3
@@ -1457,6 +1457,10 @@ ngonde_area = { #3
 	4041 4044 4045
 }
 
+makonde_area = (
+	4035
+}
+
 angoche_area = { #5
 	788 8961 8962 8963 8964
 }
@@ -1474,7 +1478,15 @@ quirimbas_islands_area = { #5
 }
 
 uticulo_makuana_area = { #3
-	4034 4035 4048
+	4034 9043 9044 9045 9046 9047 9048 9049
+}
+
+western_makuana_area = { #7
+	9031 9032 9033 9034 9035 9036 
+}
+
+lomwe_area = {
+	4038 4048 9037 9038 9039 9040 9041 9042
 }
 
 quelimane_area = { #7
