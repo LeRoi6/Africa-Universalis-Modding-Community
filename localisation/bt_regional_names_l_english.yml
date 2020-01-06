@@ -970,7 +970,18 @@
  lomwe_area:0 "Lomwe"
  lomwe_area_name:0 "Lomwe"
  lomwe_area_adj:0 "Lomwian"
- 
+ umwalia_area:0 "Umwalia"
+ umwalia_area_name:0 "Umwalia"
+ umwalia_area_adj:0 "Umwalian"
+ medo_area:0 "Medo"
+ medo_area_name:0 "Medo"
+ medo_area_adj:0 "Medoan"
+ wayao_area:0 "Wayao"
+ wayao_area_name:0 "Wayao"
+ wayao_area_adj:0 "Wayaoan"
+ makonde_area:0 "Makonde"
+ makonde_area_name:0 "Makonde"
+ makonde_area_adj:0 "Makondian"
  
  ######################################
  #Sea Overhauls

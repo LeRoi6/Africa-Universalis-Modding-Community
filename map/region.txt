@@ -653,6 +653,10 @@ east_africa_region = {
 		#AUMC New Areas
 		western_makuana_area
 		lomwe_area
+		umwalia_area
+		medo_area
+		wayao_area   
+		makonde_area
 		tete_area
 		maniyka_area
 		madanda_area
