@@ -1421,12 +1421,20 @@ lower_zambezi_area = { #3
 	1187 9020 9022 9023 9024 9025 9026 9027 
 }
 
-upper_zambezi_area = { #3
-	4046 4047 4050
+upper_zambezi_area = { #7
+	1190 4047 9070 9071 9072 9073 9074
+}
+
+upper_luangwa_area = { #7
+	9075 9076 9077 9078 9079 9080 9081 
+}
+
+eastern_zambia_area = { #3
+	4046 4050
 }
 
 shire_area = { #3
-	4039 4040 9028 9029
+	4039 4040 9028 9029 9067 9068 9069
 }
 
 butua_area = { #3
@@ -1438,7 +1446,7 @@ zimbabwe_area = { #4
 }
 
 tete_area = {
-	1190 1191
+	1191
 }
 
 maniyka_area = { #6
@@ -1454,7 +1462,7 @@ ruvuma_area = { #4
 }
 
 ngonde_area = { #3
-	4041 4044 4045
+	4041 4044 4045 9082
 }
 
 makonde_area = (

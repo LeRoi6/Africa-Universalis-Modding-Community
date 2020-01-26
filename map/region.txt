@@ -651,6 +651,7 @@ east_africa_region = {
 		quelimane_area
 		butua_area
 		#AUMC New Areas
+		upper_luangwa_area
 		western_makuana_area
 		lomwe_area
 		umwalia_area
@@ -698,6 +699,8 @@ central_africa_region = {
 		rwanda_area
 		chokwe_area
 		bunyoro_area
+		#AUMC New Areas
+		eastern_zambia_area
 	}
 	monsoon = {
 		00.10.01

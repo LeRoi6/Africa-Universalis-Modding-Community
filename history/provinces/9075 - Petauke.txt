@@ -1,0 +1,17 @@
+#Created by AUMC
+#9075 - Petauke
+owner = LDU
+controller = LDU
+add_core = LDU
+culture = nyasa
+religion = shamanism #Fetishism
+capital = "Petauke"
+is_city = yes
+base_manpower = 2
+trade_goods = gold
+hre = no
+base_tax = 2
+base_production = 2
+discovered_by = central_african
+
+1572.1.1 = { discovered_by = POR } #Start of Portuguese Interaction with the Maravis north of the Zambezi

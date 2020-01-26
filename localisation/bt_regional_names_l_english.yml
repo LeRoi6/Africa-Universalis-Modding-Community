@@ -982,6 +982,12 @@
  makonde_area:0 "Makonde"
  makonde_area_name:0 "Makonde"
  makonde_area_adj:0 "Makondian"
+ eastern_zambia_area:0 "Eastern Zambia"
+ eastern_zambia_area_name:0 "Eastern Zambia"
+ eastern_zambia_area_adj:0 "Eastern Zambian"
+ upper_luangwa_area:0 "Upper Luangwa"
+ upper_luangwa_area_name:0 "Upper Luangwa"
+ upper_luangwa_name_adj:0 "Upper Luangwan"
  
  ######################################
  #Sea Overhauls
