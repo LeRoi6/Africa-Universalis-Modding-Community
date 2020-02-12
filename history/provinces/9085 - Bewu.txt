@@ -1,0 +1,17 @@
+#Created by AUMC
+#9085 - Bewu
+
+owner = TBK
+controller = TBK
+add_core = TBK
+culture = nyasa
+religion = shamanism #Fetishism
+capital = "Bewu"
+is_city = yes
+base_manpower = 2 
+trade_goods = cotton
+hre = no
+base_tax = 2 
+base_production = 2
+
+discovered_by = central_african

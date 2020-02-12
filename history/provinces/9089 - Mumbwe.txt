@@ -1,0 +1,17 @@
+#Created by AUMC
+#9089 - Mumbwe
+
+owner = TBK
+controller = TBK
+add_core = TBK
+culture = nyasa
+religion = shamanism #Fetishism
+capital = "Mumbwe"
+is_city = yes
+base_manpower = 2
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 2
+
+discovered_by = central_african

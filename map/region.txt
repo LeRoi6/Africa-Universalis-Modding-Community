@@ -635,7 +635,6 @@ east_africa_region = {
 		lower_zambezi_area
 		upper_zambezi_area
 		ruvuma_area
-		#ngonde_area			#Duplicated, figure it out later
 		mascarenes_area
 		madagascar_highlands_area
 		betsimasaraka_area
@@ -643,7 +642,6 @@ east_africa_region = {
 		southern_madagascar
 		uticulo_makuana_area
 		jubba_area
-		#east_african_islands_area			#Cut in 1.20
 		shire_area
 		mombasa_area
 		#BT moved from South Africa
@@ -651,7 +649,10 @@ east_africa_region = {
 		quelimane_area
 		butua_area
 		#AUMC New Areas
-		upper_luangwa_area
+		ngonde_area
+		njombe_area
+		southern_tumbuka_area
+		kalonga_area
 		western_makuana_area
 		lomwe_area
 		umwalia_area
@@ -686,7 +687,6 @@ east_africa_region = {
 
 central_africa_region = {
 	areas = {
-		ngonde_area
 		buha_area
 		katanga_area
 		zambia_area

@@ -1,0 +1,17 @@
+#Created by AUMC
+#9090 - Chama
+
+owner = TBK
+controller = TBK
+add_core = TBK
+culture = nyasa
+religion = shamanism #Fetishism
+capital = "Chama"
+is_city = yes
+base_manpower = 3
+trade_goods = dyes
+hre = no
+base_tax = 4
+base_production = 4
+
+discovered_by = central_african

@@ -1,0 +1,17 @@
+#Created by AUMC
+#9084 - Muzguzgu
+
+owner = TBK
+controller = TBK
+add_core = TBK
+culture = nyasa
+religion = shamanism #Fetishism
+capital = "Muzguzgu"
+is_city = yes
+base_manpower = 2 
+trade_goods = bt_trade_good_fruit
+hre = no
+base_tax = 3 
+base_production = 3
+
+discovered_by = central_african

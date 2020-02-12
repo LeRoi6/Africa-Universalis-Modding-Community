@@ -1,0 +1,17 @@
+#Created by AUMC
+#9088 - Lumphi
+
+owner = TBK
+controller = TBK
+add_core = TBK
+culture = nyasa
+religion = shamanism #Fetishism
+capital = "Lumphi"
+is_city = yes
+base_manpower = 2
+trade_goods = iron
+hre = no
+base_tax = 3
+base_production = 3
+
+discovered_by = central_african
