@@ -662,6 +662,8 @@ east_africa_region = {
 		tete_area
 		maniyka_area
 		madanda_area
+		dande_area
+		buhera_area
 		northern_maputo_area
 		tonga_area
 		inhambane_area

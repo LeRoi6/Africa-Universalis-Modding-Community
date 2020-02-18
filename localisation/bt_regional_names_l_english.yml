@@ -964,6 +964,12 @@
  madanda_area:0 "Madanda"
  madanda_area_name:0 "Madanda"
  madanda_area_adj:0 "Madandan"
+ dande_area:0 "Dande"
+ dande_area_name:0 "Dande"
+ dande_area:adj:0 "Dandian"
+ buhera_area:0 "Buhera"
+ buhera_area_name:0 "Buhera"
+ buhera_area_adj:0 "Buheran"
  western_makuana_area:0 "Western Makuana"
  western_makuana_area_name:0 "Western Makuana"
  western_makuana_area_adj:0 "Western Makuanan"
@@ -988,6 +994,7 @@
  southern_tumbuka_area:0 "Southern Tumbuka"
  southern_tumbuka_area_name:0 "Southern Tumbuka"
  southern_tumbuka_name_adj:0 "Southern Tumbukan"
+ 
  
  ######################################
  #Sea Overhauls
