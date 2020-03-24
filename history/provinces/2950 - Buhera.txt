@@ -5,13 +5,13 @@ controller = ZIM
 add_core = ZIM
 culture = shona
 religion = shamanism
-capital = "Buhera"
+capital = "Wedza"
 is_city = yes
 base_manpower = 2 
-trade_goods = ivory
+trade_goods = iron
 hre = no
-base_tax = 2  
-base_production = 2 
+base_tax = 4  
+base_production = 4 
 discovered_by = east_african
 discovered_by = central_african
 

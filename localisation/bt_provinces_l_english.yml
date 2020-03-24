@@ -3560,6 +3560,12 @@
  PROV9207:0 "Mgunda Mkali"
  PROV9208:0 "Mdaburu"
  PROV9209:0 "Jiwe-la-Singa"
+ PROV9210:0 "Gwamayaya"
+ PROV9211:0 "Matovoro"
+ PROV9212:0 "Bhale"
+ 
+ 
+ 
  # Beyond Typus province adjectives. Please note these are extremely incomplete, but appear? to only be seen when the province in question is selected as a capital for a custom nation. So I'm treating them as a secondary concern for the moment. -Draiocht
  PROV_ADJ4920:0 "Aleutian"
  PROV_ADJ4921:0 "Naugeikian"

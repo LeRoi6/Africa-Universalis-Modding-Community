@@ -9167,7 +9167,7 @@ province;red;green;blue;x;x
 9166;255;161;79;Madibira;x
 9167;234;150;72;Mugoda Mutitu;x
 9168;255;110;0;Ng'uhule;x
-9169;255;85;0;Ifakara;x
+9169;255;84;0;Ifakara;x
 9170;211;91;0;Lupembe;x
 9171;247;142;44;Ligera;x
 9172;255;121;25;Mbampa;x
@@ -9190,7 +9190,7 @@ province;red;green;blue;x;x
 9189;234;105;0;Mtoti;x
 9190;255;126;45;Kisangire;x
 9191;226;131;83;Kolelo;x
-9192;255;138;43;Matogoro;x
+9192;255;138;43;Morogoro;x
 9193;206;101;20;Mgeto;x
 9194;255;138;35;Liyunge;x
 9195;229;105;11;Malolo;x
@@ -9208,3 +9208,7 @@ province;red;green;blue;x;x
 9207;234;32;70;Mgunda Mkali;x
 9208;255;136;0;Mdaburu;x
 9209;232;108;37;Jiwe-la-Singa;x
+9210;190;47;35;Gwamayaya;x
+9211;209;47;28;Matovoro;x
+9212;183;16;24;Shangano;x
+

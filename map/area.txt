@@ -1450,7 +1450,7 @@ butua_area = { #9
 }
 
 shangwe_area = {
-	1189 9131 9132 9133 9134 9135
+	1189 9131 9132 9133 9134 9135 9210 9211 9212
 }
 
 zimbabwe_area = { #4
@@ -1474,7 +1474,7 @@ naletale_area = { #6
 }
 
 maniyka_area = { #6
-	2951 9016 9017 9018 9019 9021
+	2951 9016 9017 9018 9019 9021 9117
 }
 
 madanda_area = { #7 #rename to southern maniyka?
