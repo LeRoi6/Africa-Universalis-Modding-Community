@@ -1,17 +1,17 @@
 #Created by AUMC
-#9101 - Nyombwe
+#9214 - Guruve
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = RZW
+controller = RZW
+add_core = RZW
 culture = shona
+capital = "Guruve"
 religion = shamanism
-capital = "Nyombwe"
 is_city = yes
 base_manpower = 2
 trade_goods = livestock
 hre = no
-base_tax = 2  
+base_tax = 2
 base_production = 2
 discovered_by = east_african
 discovered_by = central_african

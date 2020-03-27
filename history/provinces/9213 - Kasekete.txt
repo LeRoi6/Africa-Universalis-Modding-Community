@@ -1,18 +1,18 @@
 #Created by AUMC
-#9101 - Nyombwe
+#9213 - Kasekete
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = RZW
+controller = RZW
+add_core = RZW
 culture = shona
+capital = "Kasekete"
 religion = shamanism
-capital = "Nyombwe"
 is_city = yes
 base_manpower = 2
-trade_goods = livestock
+trade_goods = ivory
 hre = no
-base_tax = 2  
-base_production = 2
+base_tax = 3
+base_production = 3
 discovered_by = east_african
 discovered_by = central_african
 
