@@ -1,9 +1,9 @@
 #Created by AUMC
 #9101 - Nyombwe
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = NYO
+controller = NYO
+add_core = NYO
 culture = shona
 religion = shamanism
 capital = "Nyombwe"

@@ -1469,12 +1469,12 @@ buhera_area = { #7
 	2950 9111 9112 9113 9114 9115 9116 
 }
 
-naletale_area = { #6
-	9118 9119 9120 9122 9123 9124
+naletale_area = { #7
+	9118 9119 9120 9121 9122 9123 9124
 }
 
-maniyka_area = { #6
-	2951 9016 9017 9018 9019 9021 9117
+manyika_area = { #9
+	2951 9016 9017 9018 9019 9021 9117 9215 9216
 }
 
 madanda_area = { #7 #rename to southern maniyka?

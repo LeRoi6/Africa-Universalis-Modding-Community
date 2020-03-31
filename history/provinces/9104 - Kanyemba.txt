@@ -1,8 +1,8 @@
 #Created by AUMC
 #9104 - Kanyemba
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = TDE
+controller = TDE
+add_core = TDE
 culture = shona
 religion = shamanism
 capital = "Kanyemba"

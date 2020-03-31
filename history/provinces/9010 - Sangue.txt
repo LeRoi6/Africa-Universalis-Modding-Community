@@ -1,9 +1,9 @@
 #Created by AUMC
 #9010 - Sangue
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = MDD
+controller = MDD
+add_core = MDD
 culture = shona
 religion = shamanism
 capital = "Sangue"

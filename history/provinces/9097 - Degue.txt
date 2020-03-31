@@ -1,9 +1,9 @@
 #Created by AUMC
 #9097 - Degue
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = KKE
+controller = KKE
+add_core = KKE
 culture = shona
 religion = shamanism
 capital = "Degue"

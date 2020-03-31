@@ -8,11 +8,11 @@ culture = shona
 religion = shamanism
 capital = "Chedzurgwe"
 is_city = yes
-base_manpower = 1
+base_manpower = 2
 trade_goods = copper
 hre = no
-base_tax = 2
-base_production = 1
+base_tax = 3
+base_production = 3
 discovered_by = east_african
 discovered_by = central_african
 

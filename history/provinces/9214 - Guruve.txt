@@ -1,9 +1,9 @@
 #Created by AUMC
 #9214 - Guruve
 
-owner = RZW
-controller = RZW
-add_core = RZW
+owner = ZIM
+controller = ZIM
+add_core = ZIM
 culture = shona
 capital = "Guruve"
 religion = shamanism

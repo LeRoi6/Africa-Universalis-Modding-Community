@@ -1,8 +1,8 @@
 #Created by AUMC
 #9026 - Caya
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = BWE
+controller = BWE
+add_core = BWE
 culture = shona
 religion = shamanism
 capital = "Caya"

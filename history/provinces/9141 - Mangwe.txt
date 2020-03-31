@@ -1,9 +1,9 @@
 #Created by AUMC
 #9141 - Mangwe
 
-owner = RZW
-controller = RZW
-add_core = RZW
+owner = BUT
+controller = BUT
+add_core = BUT
 culture = shona
 capital = "Mangwe"
 religion = shamanism

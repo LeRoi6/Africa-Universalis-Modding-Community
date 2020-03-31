@@ -1,9 +1,9 @@
 #Created by AUMC
 #9117 - Chipadze
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = MNK
+controller = MNK
+add_core = MNK
 culture = shona
 capital = "Chipadze"
 religion = shamanism

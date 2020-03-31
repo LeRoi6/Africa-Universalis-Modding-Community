@@ -1,9 +1,9 @@
 #Created by AUMC
 #9024 - Massangano
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = BWE
+controller = BWE
+add_core = BWE
 culture = shona
 religion = shamanism
 capital = "Massangano"

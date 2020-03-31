@@ -660,7 +660,7 @@ east_africa_region = {
 		wayao_area   
 		makonde_area
 		tete_area
-		maniyka_area
+		manyika_area
 		madanda_area
 		dande_area
 		buhera_area

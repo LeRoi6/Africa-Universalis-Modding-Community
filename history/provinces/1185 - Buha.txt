@@ -1,8 +1,8 @@
 #1185 - Uteve
 
-owner = RZW
-controller = RZW
-add_core = RZW
+owner = BUT
+controller = BUT
+add_core = BUT
 culture = shona
 religion = shamanism
 capital = "Khami"

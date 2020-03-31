@@ -1,9 +1,9 @@
 #Created by AUMC
 #9105 - Angoa
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = TDE
+controller = TDE
+add_core = TDE
 culture = shona
 religion = shamanism
 capital = "Angoa"

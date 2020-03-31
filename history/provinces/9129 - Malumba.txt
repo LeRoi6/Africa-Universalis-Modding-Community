@@ -1,9 +1,9 @@
 #Created by AUMC
 #9129 - Malumba
 
-owner = RZW
-controller = RZW
-add_core = RZW
+owner = LZW
+controller = LZW
+add_core = LZW
 culture = shona
 capital = "Malumba"
 religion = shamanism

@@ -1,18 +1,18 @@
 #Created by AUMC
 #9018 - Ussema
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = TEV
+controller = TEV
+add_core = TEV
 culture = shona
 religion = shamanism
 capital = "Ussema"
 is_city = yes
-base_manpower = 1
-trade_goods = grain
+base_manpower = 2
+trade_goods = cloth
 hre = no
-base_tax = 1
-base_production = 1 
+base_tax = 3
+base_production = 3
 discovered_by = east_african
 discovered_by = central_african
 

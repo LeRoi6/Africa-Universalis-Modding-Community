@@ -1,14 +1,14 @@
 # - Madanda
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = MDD
+controller = MDD
+add_core = MDD
 culture = shona
 religion = shamanism
 capital = "Chibabava"
 is_city = yes
 base_manpower = 2 
-trade_goods = ivory
+trade_goods = cloth
 hre = no
 base_tax = 3  
 base_production = 3 

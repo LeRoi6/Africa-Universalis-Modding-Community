@@ -1,9 +1,9 @@
 #Created by AUMC
 #9142 - Tati
 
-owner = RZW
-controller = RZW
-add_core = RZW
+owner = BUT
+controller = BUT
+add_core = BUT
 culture = shona
 capital = "Tati"
 religion = shamanism

@@ -1,9 +1,9 @@
 #Created by AUMC
 #9124 - Matendere
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = LZW
+controller = LZW
+add_core = LZW
 culture = shona
 capital = "Matendere"
 religion = shamanism

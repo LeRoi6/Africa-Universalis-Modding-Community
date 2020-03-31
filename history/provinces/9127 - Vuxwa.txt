@@ -1,9 +1,9 @@
 #Created by AUMC
 #9127 - Vuxwa
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = LZW
+controller = LZW
+add_core = LZW
 culture = shona
 capital = "Vuxwa"
 religion = shamanism

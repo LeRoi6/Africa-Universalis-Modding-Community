@@ -1,9 +1,9 @@
 #Created by AUMC
 #9121 - Naletale
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = BUB
+controller = BUT
+add_core = BUT
 culture = shona
 capital = "Naletale"
 religion = shamanism

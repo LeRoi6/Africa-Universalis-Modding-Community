@@ -1,9 +1,9 @@
 #Created by AUMC
 #9135 - Longwe
 
-owner = RZW
-controller = RZW
-add_core = RZW
+owner = BUT
+controller = BUT
+add_core = BUT
 culture = shona
 capital = "Longwe"
 religion = shamanism

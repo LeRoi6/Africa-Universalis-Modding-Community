@@ -1,9 +1,9 @@
 #Created by AUMC
 #9126 - Cheesa
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = LZW
+controller = LZW
+add_core = LZW
 culture = shona
 capital = "Cheesa"
 religion = shamanism

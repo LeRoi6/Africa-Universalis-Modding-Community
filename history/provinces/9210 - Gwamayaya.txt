@@ -1,9 +1,9 @@
 #Created by AUMC
 #9210 - Gwamayaya
 
-owner = RZW
-controller = RZW
-add_core = RZW
+native_size = 10
+native_ferocity = 20
+native_hostileness = 10 
 culture = shona
 capital = "Gwamayaya"
 religion = shamanism

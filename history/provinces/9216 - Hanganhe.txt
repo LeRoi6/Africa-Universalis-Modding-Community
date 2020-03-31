@@ -1,0 +1,24 @@
+#Created by AUMC
+#9216 - Hanganhe
+owner = TEV
+controller = TEV
+add_core = TEV
+culture = shona
+capital = "Hanganhe"
+religion = shamanism
+is_city = yes
+base_manpower = 2
+trade_goods = copper
+hre = no
+base_tax = 4
+base_production = 4
+discovered_by = east_african
+discovered_by = central_african
+
+
+1513.1.1 = { discovered_by = POR } #Travels of Antonio Fernandes in hinterland of Sofala
+1690.1.1 = {
+	owner = RZW
+	controller = RZW
+	add_core = RZW
+}

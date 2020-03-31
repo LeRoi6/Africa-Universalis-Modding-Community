@@ -1,0 +1,25 @@
+#Created by AUMC
+#9215 - Gaonhe
+
+owner = TEV
+controller = TEV
+add_core = TEV
+culture = shona
+capital = "Gaonhe"
+religion = shamanism
+is_city = yes
+base_manpower = 2
+trade_goods = gold
+hre = no
+base_tax = 5
+base_production = 5
+discovered_by = east_african
+discovered_by = central_african
+
+
+1513.1.1 = { discovered_by = POR } #Travels of Antonio Fernandes in hinterland of Sofala
+1690.1.1 = {
+	owner = RZW
+	controller = RZW
+	add_core = RZW
+}

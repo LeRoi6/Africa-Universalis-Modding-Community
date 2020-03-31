@@ -23,9 +23,79 @@ vassal = {
 #Zimbabwe
 vassal = {
 	first = ZIM
-	second = RZW
+	second = BUT
 	start_date = 1440.1.1
 	end_date = 1650.1.1
+}
+
+vassal = {
+	first = ZIM
+	second = KKE
+	start_date = 1440.1.1
+	end_date = 1480.1.1
+}
+
+vassal = {
+	first = ZIM
+	second = BWE
+	start_date = 1440.1.1
+	end_date = 1608.1.1
+}
+
+vassal = {
+	first = ZIM
+	second = LZW
+	start_date = 1440.1.1
+	end_date = 1490.1.1
+}
+
+vassal = {
+	first = LZW
+	second = ZIM
+	start_date = 1490.1.1
+	end_date = 1494.1.1
+}
+
+vassal = {
+	first = ZIM
+	second = LZW
+	start_date = 1440.1.1
+	end_date = 1490.1.1
+}
+
+vassal = {
+	first = ZIM
+	second = TDE
+	start_date = 1440.1.1
+	end_date = 1821.1.1
+}
+
+vassal = {
+	first = KKE
+	second = CMA
+	start_date = 1440.1.1
+	end_date = 1480.1.1
+}
+
+vassal = {
+	first = KKE
+	second = NYO
+	start_date = 1440.1.1
+	end_date = 1480.1.1
+}
+
+vassal = {
+	first = ZIM
+	second = NYO
+	start_date = 1480.1.1
+	end_date = 1821.1.1
+}
+
+vassal = {
+	first = ZIM
+	second = CMA
+	start_date = 1480.1.1
+	end_date = 1821.1.1
 }
 
 vassal = {

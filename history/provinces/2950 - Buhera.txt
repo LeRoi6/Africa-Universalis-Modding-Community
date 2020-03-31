@@ -1,8 +1,8 @@
 #2950 - Buhera
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
+owner = LZW
+controller = LZW
+add_core = LZW
 culture = shona
 religion = shamanism
 capital = "Wedza"
