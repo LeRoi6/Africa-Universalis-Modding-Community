@@ -3,7 +3,7 @@
 graphical_culture = africangfx
 
 #color = { 226  228  59 }
-color = { 231  109  56 }
+color = { 240  240  193 }
 
 historical_idea_groups = {
 	defensive_ideas
