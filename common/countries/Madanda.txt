@@ -4,6 +4,7 @@ graphical_culture = africangfx
 
 color = { 210  214  224 }
 
+
 historical_idea_groups = {
 	defensive_ideas
 	trade_ideas
