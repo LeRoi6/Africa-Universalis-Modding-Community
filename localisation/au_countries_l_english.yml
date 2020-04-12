@@ -1,4 +1,5 @@
 ﻿l_english:
+#Zimbabwe
  LZW:0 "Lozvi"
  LZW_ADJ:0 " Lozvian"
  NYO:0 "Nyombwe"
@@ -20,4 +21,9 @@
  RZW:0 "Rozvi"
  RZW_ADJ:0 "Rozvian"
  BWE:0 "Barue"
- BWE_ADJ: "Baruese"
+ BWE_ADJ:0 "Baruese"
+ #Malawi
+ NSE:0 "Nsenga"
+ NSE_ADJ:0 "Nsengan"
+ MSJ:0 "Msinja"
+ MSJ_ADJ:0 "Msinjan"

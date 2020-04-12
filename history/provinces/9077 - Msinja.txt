@@ -1,9 +1,9 @@
 #Created by AUMC
 #9077 - Msinja
 
-owner = MRA
-controller = MRA
-add_core = MRA
+owner = MSJ
+controller = MSJ
+add_core = MSJ
 culture = nyasa
 religion = shamanism #Fetishism
 capital = "Msinja"
@@ -11,8 +11,8 @@ is_city = yes
 base_manpower = 2
 trade_goods = livestock
 hre = no
-base_tax = 2
-base_production = 2
+base_tax = 3
+base_production = 3
 discovered_by = central_african
 
 1572.1.1 = { discovered_by = POR } #Start of Portuguese Interaction with the Maravis north of the Zambezi

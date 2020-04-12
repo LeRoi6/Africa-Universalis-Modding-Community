@@ -1,8 +1,8 @@
 #Lundu
 
-owner = MRA
-controller = MRA
-add_core = MRA
+owner = MSJ
+controller = MSJ
+add_core = MSJ
 culture = nyasa
 religion = shamanism #Fetishism
 capital = "Bunga"
