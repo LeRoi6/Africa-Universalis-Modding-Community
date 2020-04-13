@@ -4,7 +4,7 @@
 owner = ZIM
 controller = ZIM
 add_core = ZIM
-culture = shona
+culture = dande
 religion = shamanism
 capital = "Ongoe"
 is_city = yes

@@ -1,7 +1,7 @@
 #Created by AUMC
 #9071 - Michongo
 
-culture = nyasa
+culture = nsenga
 religion = shamanism
 capital = "Michongo"
 trade_goods = unknown

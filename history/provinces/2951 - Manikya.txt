@@ -1,9 +1,9 @@
-# - Manyika
+#2951 - Manyika (misspelled but changing vanilla file makes the game read both files i.e. Mutapa core =/)
 
 owner = MNK
 controller = MNK
 add_core = MNK
-culture = shona
+culture = manyika
 religion = shamanism
 capital = "Chipangura"
 is_city = yes

@@ -3,7 +3,7 @@
 owner = MDD
 controller = MDD
 add_core = MDD
-culture = shona
+culture = ndau
 religion = shamanism
 capital = "Chibabava"
 is_city = yes

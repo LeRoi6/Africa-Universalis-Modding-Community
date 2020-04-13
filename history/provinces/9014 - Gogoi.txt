@@ -4,7 +4,7 @@
 owner = MDD
 controller = MDD
 add_core = MDD
-culture = shona
+culture = ndau
 religion = shamanism
 capital = "Gogoi"
 is_city = yes

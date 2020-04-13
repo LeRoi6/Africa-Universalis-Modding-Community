@@ -4,7 +4,7 @@
 owner = TDE
 controller = TDE
 add_core = TDE
-culture = shona
+culture = dande
 religion = shamanism
 capital = "Angoa"
 is_city = yes

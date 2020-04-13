@@ -3,7 +3,7 @@
 native_size = 20
 native_ferocity = 10
 native_hostileness = 5
-culture = nyasa
+culture = tumbuka
 religion = shamanism #Fetishism
 capital = "Muasse"
 is_city = yes

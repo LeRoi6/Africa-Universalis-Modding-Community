@@ -3,7 +3,7 @@
 owner = NSE
 controller = NSE
 add_core = NSE
-culture = nyasa
+culture = nsenga
 religion = shamanism #Fetishism
 capital = "Akafula"
 is_city = yes

@@ -4,7 +4,8 @@
 owner = ZIM
 controller = ZIM
 add_core = ZIM
-culture = shona
+add_core = TDE
+culture = dande
 religion = shamanism
 capital = "Chiwaya"
 is_city = yes

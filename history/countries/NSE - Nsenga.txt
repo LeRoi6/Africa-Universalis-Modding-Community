@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = tribal_despotism
-primary_culture = nyasa
+primary_culture = nsenga
 religion = shamanism #Fetishism
 technology_group = central_african
 unlock_cult = mwari_cult

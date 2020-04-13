@@ -3,12 +3,12 @@
 owner = BWE
 controller = BWE
 add_core = BWE
-culture = shona
+culture = barwe
 religion = shamanism
 capital = "Caya"
 is_city = yes
 base_manpower = 1
-trade_goods = livestock
+trade_goods = cotton
 hre = no
 base_tax = 2
 base_production = 1

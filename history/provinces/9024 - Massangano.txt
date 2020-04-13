@@ -4,7 +4,7 @@
 owner = BWE
 controller = BWE
 add_core = BWE
-culture = shona
+culture = barwe
 religion = shamanism
 capital = "Massangano"
 is_city = yes

@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = tribal_despotism
-primary_culture = shona
+primary_culture = ndau
 religion = shamanism
 technology_group = central_african
 unit_type = sub_saharan

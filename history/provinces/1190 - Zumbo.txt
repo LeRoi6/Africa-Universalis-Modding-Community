@@ -1,6 +1,6 @@
 #1190 - Zumbo
 
-culture = nyasa
+culture = nsenga
 religion = shamanism
 capital = "Mazansua"
 trade_goods = unknown

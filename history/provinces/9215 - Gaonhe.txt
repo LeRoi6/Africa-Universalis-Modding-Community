@@ -4,7 +4,7 @@
 owner = TEV
 controller = TEV
 add_core = TEV
-culture = shona
+culture = teve
 capital = "Gaonhe"
 religion = shamanism
 is_city = yes

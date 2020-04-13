@@ -4,7 +4,7 @@
 owner = LZW
 controller = LZW
 add_core = LZW
-culture = shona
+culture = lozvi
 capital = "Gwanda"
 religion = shamanism
 is_city = yes

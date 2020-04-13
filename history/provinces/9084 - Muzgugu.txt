@@ -4,7 +4,7 @@
 owner = TBK
 controller = TBK
 add_core = TBK
-culture = nyasa
+culture = henga
 religion = shamanism #Fetishism
 capital = "Muzguzgu"
 is_city = yes

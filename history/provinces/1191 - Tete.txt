@@ -3,7 +3,7 @@
 owner = KKE
 controller = KKE
 add_core = KKE
-culture = shona
+culture = tavara
 religion = shamanism
 capital = "Tete"
 is_city = yes

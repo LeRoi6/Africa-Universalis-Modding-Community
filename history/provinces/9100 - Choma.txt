@@ -4,7 +4,7 @@
 owner = CMA
 controller = CMA
 add_core = CMA
-culture = shona
+culture = tavara
 religion = shamanism
 capital = "Choma"
 is_city = yes

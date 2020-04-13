@@ -4,7 +4,7 @@
 owner = NYO
 controller = NYO
 add_core = NYO
-culture = shona
+culture = tavara
 religion = shamanism
 capital = "Nyombwe"
 is_city = yes

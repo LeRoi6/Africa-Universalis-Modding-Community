@@ -4,7 +4,7 @@
 owner = MNK
 controller = MNK
 add_core = MNK
-culture = shona
+culture = manyika
 capital = "Chipadze"
 religion = shamanism
 is_city = yes

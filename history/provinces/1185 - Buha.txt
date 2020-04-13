@@ -3,7 +3,7 @@
 owner = BUT
 controller = BUT
 add_core = BUT
-culture = shona
+culture = khami
 religion = shamanism
 capital = "Khami"
 is_city = yes

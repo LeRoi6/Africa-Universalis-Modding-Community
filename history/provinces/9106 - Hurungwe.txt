@@ -4,15 +4,15 @@
 owner = TDE
 controller = TDE
 add_core = TDE
-culture = shona
+culture = dande
 religion = shamanism
 capital = "Hurungwe"
 is_city = yes
 base_manpower = 2
 trade_goods = copper
 hre = no
-base_tax = 2
-base_production = 2
+base_tax = 3
+base_production = 3
 discovered_by = east_african
 discovered_by = central_african
 

@@ -4,7 +4,7 @@
 native_size = 10
 native_ferocity = 20
 native_hostileness = 10 
-culture = shona
+culture = khami
 capital = "Matovoro"
 religion = shamanism
 is_city = yes

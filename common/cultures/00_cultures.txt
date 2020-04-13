@@ -8776,6 +8776,25 @@ southern_african = {
 	bemba = {
 		
 	}
+	#BtPLegacy Culture
+	tswana_culture = {
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+}
+
+shona_group = {
+	graphical_culture = africangfx
 	shona = {
 		primary = ZIM
 		dynasty_names = { 
@@ -8791,6 +8810,160 @@ southern_african = {
 			Achieng Nuru
 		}
 	}
+	khami = {
+		primary = BUT
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+	lozvi = {
+		primary = LZW
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+	manyika = {
+		primary = MNK
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+	ndau = {
+		primary = MDD
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+	tavara = {
+		primary = CMA
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+	dande = {
+		primary = TDE
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		
+		female_names = {
+			Achieng Nuru
+		}
+	}
+	barwe = {
+		primary = BWE
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+	teve = {
+		primary = TEV
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}	
+	#BtPLegacy Culture
+	tsonga_culture = {
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+	gitonga = {
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+}
+
+nyasa_group = {
+	graphical_culture = africangfx
 	nyasa = {
 		primary = MRA
 		dynasty_names = {
@@ -8808,37 +8981,9 @@ southern_african = {
 			Achieng Nuru
 		}
 	}
-	#BtPLegacy Culture
-	tswana_culture = {
-		dynasty_names = { 
-			Mwenemutapa Rozwi Mutopa
-		}
-		male_names = {
-			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
-			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
-			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
-			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
-		}
-		female_names = {
-			Achieng Nuru
-		}
-	}
-	#BtPLegacy Culture
-	tsonga_culture = {
-		dynasty_names = { 
-			Mwenemutapa Rozwi Mutopa
-		}
-		male_names = {
-			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
-			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
-			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
-			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
-		}
-		female_names = {
-			Achieng Nuru
-		}
-	}
-	dynasty_names = {
+	nsenga = {
+		primary = NSE
+		dynasty_names = {
 			Mwale Phiri Mbewe Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa
 			Mtika Nyanjagha Chiluba
 		}
@@ -8852,6 +8997,33 @@ southern_african = {
 		female_names = {
 			Achieng Nuru
 		}
+	}
+	tumbuka = {
+		primary = TBK
+		dynasty_names = {
+			Mwale Phiri Mbewe Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa
+			Mtika Nyanjagha Chiluba
+		}
+		male_names = {
+			Mcepera Mcocoma Kampini Sosola Muzura Chunzo Bakili Capampo Chicanda Tondo
+			Quizura Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+	batonga = {
+
+	}
+	henga = {
+		
+	}
+	ngonde = {
+		
+	}
 }
 
 kongo_group = {

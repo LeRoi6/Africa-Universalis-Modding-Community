@@ -1,7 +1,7 @@
 #Created by AUMC
 #9027 - Cheringoma
 
-culture = shona
+culture = teve
 religion = shamanism
 capital = "Cheringoma"
 trade_goods = cotton

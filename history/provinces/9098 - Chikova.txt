@@ -4,7 +4,7 @@
 owner = KKE
 controller = KKE
 add_core = KKE
-culture = shona
+culture = tavara
 religion = shamanism
 capital = "Chikova"
 is_city = yes
