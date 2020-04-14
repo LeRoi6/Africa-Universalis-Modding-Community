@@ -2,7 +2,7 @@
 #9020 - Gorongosa
 
 culture = teve
-religion = shamanism
+religion = mhondoro
 capital = "Gorongosa"
 trade_goods = cotton
 hre = no

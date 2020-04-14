@@ -2,7 +2,7 @@
 #9027 - Cheringoma
 
 culture = teve
-religion = shamanism
+religion = mhondoro
 capital = "Cheringoma"
 trade_goods = cotton
 hre = no
