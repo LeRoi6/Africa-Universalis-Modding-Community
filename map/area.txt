@@ -1566,7 +1566,7 @@ chibuene_area = { #5
 }
 
 inhambane_area = { #6
-	1183 8941 8942 8943 8945 8946
+	1183 8941 8943 8945 8946
 }
 
 tonga_area = { #5 #Name not final
@@ -1574,7 +1574,7 @@ tonga_area = { #5 #Name not final
 }
 
 limpopo_area = { #8
-	1800 8934 8935 8936 8937 8938 8939 8940
+	1800 8934 8935 8936 8937 8938 8939 8940 8942
 }
 
 northern_maputo_area = { #3
