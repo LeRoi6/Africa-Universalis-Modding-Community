@@ -634,7 +634,6 @@ east_africa_region = {
 		mozambique_area
 		lower_zambezi_area
 		upper_zambezi_area
-		ruvuma_area
 		mascarenes_area
 		madagascar_highlands_area
 		betsimasaraka_area
@@ -650,7 +649,6 @@ east_africa_region = {
 		butua_area
 		#AUMC New Areas
 		ngonde_area
-		njombe_area
 		southern_tumbuka_area
 		kalonga_area
 		western_makuana_area
@@ -658,7 +656,6 @@ east_africa_region = {
 		umwalia_area
 		medo_area
 		wayao_area   
-		makonde_area
 		tete_area
 		manyika_area
 		madanda_area
@@ -696,7 +693,6 @@ central_africa_region = {
 		zambia_area
 		luba_area
 		sankuru_area
-		tanzania_area
 		kenya_area
 		buzinza_area
 		uganda_area
@@ -705,6 +701,29 @@ central_africa_region = {
 		bunyoro_area
 		#AUMC New Areas
 		eastern_zambia_area
+	}
+	monsoon = {
+		00.10.01
+		00.12.30
+	}
+	monsoon = {
+		00.01.01
+		00.04.30
+	}
+}
+
+tanzania_region = {
+	areas = {
+		tanzania_area
+		njombe_area
+		makonde_area	
+		ruvuma_area
+		mgunda_mkali_area
+		kilosa_area
+		ikanga_area
+		matogoro_area
+		rukwa_area
+		hehe_area
 	}
 	monsoon = {
 		00.10.01
