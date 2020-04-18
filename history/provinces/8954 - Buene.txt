@@ -4,7 +4,7 @@
 owner = SFA
 controller = SFA
 add_core = SFA
-culture = swahili 
+culture = sofala 
 religion = sunni
 capital = "Buene"
 is_city = yes

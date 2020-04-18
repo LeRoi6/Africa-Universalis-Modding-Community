@@ -1,7 +1,7 @@
 #Created by AUMC
 #8970 - Ushanga
 
-culture = swahili
+culture = mwani
 religion = sunni
 capital = "Ushanga"
 trade_goods = unknown

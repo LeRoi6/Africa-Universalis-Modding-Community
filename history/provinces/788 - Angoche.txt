@@ -3,7 +3,7 @@
 owner = ZAN
 controller = ZAN
 add_core = ZAN
-culture = swahili
+culture = koti
 religion = sunni
 capital = "Angoche"
 is_city = yes

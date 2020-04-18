@@ -8825,8 +8825,8 @@ shona_group = {
 			Achieng Nuru
 		}
 	}
-	lozvi = {
-		primary = LZW
+	manyika = {
+		primary = MNK
 		dynasty_names = { 
 			Mwenemutapa Rozwi Mutopa
 		}
@@ -8840,8 +8840,8 @@ shona_group = {
 			Achieng Nuru
 		}
 	}
-	manyika = {
-		primary = MNK
+	lozvi = {
+		primary = LZW
 		dynasty_names = { 
 			Mwenemutapa Rozwi Mutopa
 		}
@@ -8947,6 +8947,34 @@ shona_group = {
 		}
 	}
 	gitonga = {
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+	chopi = {
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}	
+	ronga = {
 		dynasty_names = { 
 			Mwenemutapa Rozwi Mutopa
 		}

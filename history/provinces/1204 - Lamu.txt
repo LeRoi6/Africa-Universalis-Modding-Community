@@ -3,7 +3,7 @@
 owner = PTE
 controller = PTE
 add_core = PTE
-culture = swahili
+culture = kiamu
 religion = sunni
 capital = "Lamu"
 is_city = yes

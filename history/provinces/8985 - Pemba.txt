@@ -4,7 +4,7 @@
 owner = ZAN
 controller = ZAN
 add_core = ZAN
-culture = swahili
+culture = kiunguja
 religion = sunni
 capital = "Pemba"
 is_city = yes

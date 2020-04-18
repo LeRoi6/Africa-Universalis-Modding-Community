@@ -3,9 +3,9 @@
 owner = MBA
 controller = MBA
 add_core = MBA
-culture = swahili
+culture = kimrima
 religion = shamanism #Fetishism
-capital = "Vumba Kuu"
+capital = "Tanga"
 is_city = yes
 base_manpower = 4
 add_local_autonomy = 35

@@ -58,12 +58,14 @@
  khami:0 "Khami"
  lozvi:0 "Lozvi"
  manyika:0 "Manyika"
- ndau:0 "Ndau"
+ ndau:0 "Madanda"
  tavara:0 "Tavara"
  dande:0 "Dande"
  barwe:0 "Barwe"
  teve:0 "Teve"
  gitonga:0 "Gitonga"
+ chopi:0 "Chopi"
+ ronga:0 "Ronga"
  #Malawi
  nyasa_group:0 "Nyasa"
  nyasa:0 "Chewa"
@@ -72,9 +74,27 @@
  batonga:0 "Batonga"
  henga:0 "Henga"
  ngonde:0 "Ngonde"
+ #Swahili
+ swahili:0 "Swahili"
+ sofala:0 "Sofala"
+ chuwabu:0 "Chuwabu"
+ koti:0 "Koti"
+ mwani:0 "Mwani"
+ makwe:0 "Makwe"
+ kimgao:0 "Kimgao"
+ shikomori:0 "Shikomori"
+ zaramo:0 "Zaramo"
+ kimrima:0 "Kimrima"
+ kimtang_ata:0 "Kimtang'ata"
+ pokomo:0 "Pokomo"
+ mijikenda:0 "Mijikenda"
+ kiunguja:0 "Kiunguja"
+ kimvita:0 "Kimvita"
+ kiamu:0 "Kiamu"
+ tikulu:0 "Tikulu"
+ mwiini:0 "Mwiini"
+ nosse_be:0 "Nosse Be"
 
-
- 
  #################################################################################
  #################################################################################
  #################################################################################

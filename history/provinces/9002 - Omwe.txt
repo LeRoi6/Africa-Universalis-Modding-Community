@@ -4,7 +4,7 @@
 owner = PTE
 controller = PTE
 add_core = PTE
-culture = swahili #Will be Bajuni but Omwe is a swahili ruin in the area
+culture = kiamu #Will be Bajuni but Omwe is a swahili ruin in the area
 religion = sunni
 capital = "Omwe"
 is_city = yes

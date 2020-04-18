@@ -4,7 +4,7 @@
 owner = SFA
 controller = SFA
 add_core = SFA
-culture = swahili 
+culture = gitonga 
 religion = sunni
 capital = "Bazaruto"
 is_city = yes

@@ -1,6 +1,6 @@
 #Created by AUMC
 #8974 - Tungue
-culture = swahili
+culture = makwe
 religion = sunni
 capital = "Pemba"
 trade_goods = unknown

@@ -4,7 +4,7 @@
 owner = SFA
 controller = SFA
 add_core = SFA
-culture = swahili 
+culture = ndau 
 religion = sunni
 capital = "Machanga"
 is_city = yes

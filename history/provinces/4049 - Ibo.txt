@@ -3,7 +3,7 @@
 owner = ZAN
 controller = ZAN
 add_core = ZAN
-culture = swahili
+culture = mwani
 religion = sunni
 capital = "Ibo"
 is_city = yes

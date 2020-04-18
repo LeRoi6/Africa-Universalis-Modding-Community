@@ -3,7 +3,7 @@
 owner = MLI
 controller = MLI
 add_core = MLI
-culture = swahili
+culture = kiamu
 religion = sunni
 capital = "Malindi"
 is_city = yes

@@ -4,7 +4,7 @@
 owner = MLI
 controller = MLI
 add_core = MLI
-culture = swahili
+culture = kimvita
 religion = sunni
 capital = "Gedi"
 is_city = yes

@@ -1,7 +1,7 @@
 #Created by AUMC
 #8956 - Bangoe
 
-culture = swahili
+culture = teve
 religion = sunni
 capital = "Bangoe"
 trade_goods = unknown

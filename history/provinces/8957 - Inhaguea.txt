@@ -1,7 +1,7 @@
 #Created by AUMC
 #8957 - Inhaguea
 
-culture = swahili
+culture = teve
 religion = sunni
 capital = "Inhaguea"
 trade_goods = unknown
