@@ -8855,7 +8855,7 @@ shona_group = {
 			Achieng Nuru
 		}
 	}
-	ndau = {
+	madanda = {
 		primary = MDD
 		dynasty_names = { 
 			Mwenemutapa Rozwi Mutopa

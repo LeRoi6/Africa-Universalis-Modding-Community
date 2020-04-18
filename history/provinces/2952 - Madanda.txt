@@ -3,7 +3,7 @@
 owner = MDD
 controller = MDD
 add_core = MDD
-culture = ndau
+culture = madanda
 religion = mhondoro
 capital = "Chibabava"
 is_city = yes

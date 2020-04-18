@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = tribal_despotism
-primary_culture = ndau
+primary_culture = madanda
 religion = mhondoro
 technology_group = central_african
 unit_type = sub_saharan
@@ -13,7 +13,7 @@ unlock_cult = cwezi_cult
 1420.1.1 = {
 	monarch = {
 		name = "Mlambo"
-		dynasty = "Ndau"
+		dynasty = "Madanda"
 		adm = 2
 		dip = 2
 		mil = 2

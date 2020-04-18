@@ -4,7 +4,7 @@
 owner = SFA
 controller = SFA
 add_core = SFA
-culture = ndau 
+culture = madanda
 religion = sunni
 capital = "Wasika"
 is_city = yes
