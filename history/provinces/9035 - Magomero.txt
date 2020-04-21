@@ -2,7 +2,7 @@
 #9035 - Magomero
 
 culture = makua
-religion = shamanism
+religion = pwiyamwene
 capital = "Magomero"
 trade_goods = unknown
 hre = no

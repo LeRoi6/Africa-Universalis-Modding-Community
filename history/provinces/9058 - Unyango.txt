@@ -2,7 +2,7 @@
 #9058 - Unyango
 
 culture = makua
-religion = shamanism
+religion = pwiyamwene
 capital = "Unyango"
 trade_goods = unknown
 hre = no

@@ -2,7 +2,7 @@
 #9055 - Mogambe
 
 culture = makua
-religion = shamanism
+religion = pwiyamwene
 capital = "Mocama"
 trade_goods = unknown
 hre = no

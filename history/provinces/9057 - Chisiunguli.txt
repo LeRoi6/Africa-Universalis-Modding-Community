@@ -2,7 +2,7 @@
 #9057 - Chisiunguli
 
 culture = makua
-religion = shamanism
+religion = pwiyamwene
 capital = "Chisiunguli"
 trade_goods = unknown
 hre = no

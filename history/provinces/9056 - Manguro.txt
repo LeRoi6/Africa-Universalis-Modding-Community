@@ -2,7 +2,7 @@
 #9056 - Manguro
 
 culture = makua
-religion = shamanism
+religion = pwiyamwene
 capital = "Manguro"
 trade_goods = unknown
 hre = no

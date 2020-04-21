@@ -2,7 +2,7 @@
 #9034 - Malabvi
 
 culture = makua
-religion = shamanism
+religion = pwiyamwene
 capital = "Malabvi"
 trade_goods = unknown
 hre = no

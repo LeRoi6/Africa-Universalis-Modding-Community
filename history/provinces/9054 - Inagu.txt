@@ -2,7 +2,7 @@
 #9054 - Inagu
 
 culture = makua
-religion = shamanism
+religion = pwiyamwene
 capital = "Mwedederi"
 trade_goods = unknown
 hre = no

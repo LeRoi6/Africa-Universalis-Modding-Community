@@ -2,7 +2,7 @@
 #9062 - Kwamakanja
 
 culture = makua
-religion = shamanism
+religion = pwiyamwene
 capital = "Kwamakanja"
 trade_goods = unknown
 hre = no

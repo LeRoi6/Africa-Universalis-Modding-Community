@@ -1,7 +1,7 @@
 #4036 - Wayao
 
 culture = makua
-religion = shamanism
+religion = pwiyamwene
 capital = "Rupapa"
 trade_goods = unknown
 hre = no

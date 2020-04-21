@@ -2,7 +2,7 @@
 #9036 - Tombwe
 
 culture = makua
-religion = shamanism
+religion = pwiyamwene
 capital = "Tombwe"
 trade_goods = unknown
 hre = no

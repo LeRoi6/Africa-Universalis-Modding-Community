@@ -2,7 +2,7 @@
 #9053 - Nikokwe
 
 culture = makua
-religion = shamanism
+religion = pwiyamwene
 capital = "Nikokwe"
 trade_goods = unknown
 hre = no

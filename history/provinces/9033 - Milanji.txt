@@ -2,7 +2,7 @@
 #9033 - Milanji
 
 culture = makua
-religion = shamanism
+religion = pwiyamwene
 capital = "Milanji"
 trade_goods = unknown
 hre = no

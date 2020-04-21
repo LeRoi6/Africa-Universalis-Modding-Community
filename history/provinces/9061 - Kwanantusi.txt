@@ -2,7 +2,7 @@
 #9061 - Kwanantusi
 
 culture = makua
-religion = shamanism
+religion = pwiyamwene
 capital = "Kwanantusi"
 trade_goods = unknown
 hre = no
