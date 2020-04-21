@@ -1,9 +1,9 @@
 #Created by AUMC
 #9050 - Mwiri
 
-owner = MKU
-controller = MKU
-add_core = MKU
+owner = MWA
+controller = MWA
+add_core = MWA
 culture = makua
 religion = shamanism #Fetishism
 capital = "Mwiri"

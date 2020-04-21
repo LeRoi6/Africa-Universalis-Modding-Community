@@ -1,9 +1,9 @@
 #Created by AUMC
 #9046 - Mgao
 
-owner = MKU
-controller = MKU
-add_core = MKU
+owner = MGA
+controller = MGA
+add_core = MGA
 culture = makua
 religion = shamanism #Fetishism
 capital = "Mdigwidi"

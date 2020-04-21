@@ -1,9 +1,9 @@
 #Created by AUMC
 #9043 - Terala
 
-owner = MKU
-controller = MKU
-add_core = MKU
+owner = SHW
+controller = SHW
+add_core = SHW
 culture = makua
 religion = shamanism #Fetishism
 capital = "Terala"

@@ -1,11 +1,11 @@
 #Lolo
 
-owner = MKU
-controller = MKU
-add_core = MKU
+owner = CHB
+controller = CHB
+add_core = CHB
 culture = makua
 religion = shamanism #Fetishism
-capital = "Malopo"
+capital = "Malopa"
 is_city = yes
 base_manpower = 2 
 trade_goods = ivory

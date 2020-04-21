@@ -1,9 +1,9 @@
 #Created by AUMC
 #9039 - Mahua
 
-owner = MKU
-controller = MKU
-add_core = MKU
+owner = NII
+controller = NII
+add_core = NII
 culture = makua
 religion = shamanism #Fetishism
 capital = "Mahua"

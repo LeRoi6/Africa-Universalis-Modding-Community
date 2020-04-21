@@ -1,9 +1,9 @@
 #Created by AUMC
 #9040 - Malua
 
-owner = MKU
-controller = MKU
-add_core = MKU
+owner = LMW
+controller = LMW
+add_core = LMW
 culture = makua
 religion = shamanism #Fetishism
 capital = "Nawalama"

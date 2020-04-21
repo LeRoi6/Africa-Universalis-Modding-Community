@@ -1,9 +1,9 @@
 #Created by AUMC
 #9037 - Chimbwa
 
-owner = MKU
-controller = MKU
-add_core = MKU
+owner = CHB
+controller = CHB
+add_core = CHB
 culture = makua
 religion = shamanism #Fetishism
 capital = "Chimbwa"

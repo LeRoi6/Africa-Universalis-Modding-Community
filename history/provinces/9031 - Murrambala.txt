@@ -1,9 +1,9 @@
 #Created by AUMC
 #9031 - Murrambala
 
-owner = MKU
-controller = MKU
-add_core = MKU
+owner = LOL #lol
+controller = LOL
+add_core = LOL
 culture = makua
 religion = shamanism #Fetishism
 capital = "Murrambala"

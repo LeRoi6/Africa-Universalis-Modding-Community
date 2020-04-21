@@ -1,9 +1,9 @@
 #Created by AUMC
 #9041 - Mlunguji
 
-owner = MKU
-controller = MKU
-add_core = MKU
+owner = MLU
+controller = MLU
+add_core = MLU
 culture = makua
 religion = shamanism #Fetishism
 capital = "Mlunguji"

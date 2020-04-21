@@ -8,7 +8,7 @@ unlock_cult = central_african_ancestor_cult
 unlock_cult = cwezi_cult
 
 unit_type = sub_saharan
-capital = 4034	# Makua
+capital = 4034	
 
 #Dates are fictional, names are from various Makua Chiefs the Portuguese report having dealt with.
 1444.1.1 = {
