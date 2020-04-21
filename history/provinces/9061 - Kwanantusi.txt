@@ -1,7 +1,7 @@
 #Created by AUMC
 #9061 - Kwanantusi
 
-culture = makua
+culture = makonde
 religion = pwiyamwene
 capital = "Kwanantusi"
 trade_goods = unknown

@@ -1,6 +1,6 @@
 #4036 - Wayao
 
-culture = makua
+culture = yao
 religion = pwiyamwene
 capital = "Rupapa"
 trade_goods = unknown

@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = tribal_kingdom #Various constallations of Makua Tribes
-primary_culture = makua
+primary_culture = medo
 religion = pwiyamwene
 technology_group = central_african
 unlock_cult = mwari_cult

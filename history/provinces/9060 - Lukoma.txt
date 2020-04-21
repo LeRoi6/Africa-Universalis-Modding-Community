@@ -1,7 +1,7 @@
 #Created by AUMC
 #9060 - Lukoma
 
-culture = makua
+culture = yao
 religion = pwiyamwene
 capital = "Lukoma"
 trade_goods = unknown

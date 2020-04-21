@@ -4,7 +4,7 @@
 owner = CHB
 controller = CHB
 add_core = CHB
-culture = makua
+culture = lomwe
 religion = pwiyamwene
 capital = "Chimbwa"
 is_city = yes

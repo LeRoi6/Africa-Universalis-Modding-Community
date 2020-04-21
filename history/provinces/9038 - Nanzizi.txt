@@ -4,7 +4,7 @@
 owner = NII
 controller = NII
 add_core = NII
-culture = makua
+culture = lomwe
 religion = pwiyamwene
 capital = "Nanzizi"
 is_city = yes

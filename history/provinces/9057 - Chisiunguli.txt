@@ -1,7 +1,7 @@
 #Created by AUMC
 #9057 - Chisiunguli
 
-culture = makua
+culture = yao
 religion = pwiyamwene
 capital = "Chisiunguli"
 trade_goods = unknown

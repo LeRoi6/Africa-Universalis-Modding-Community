@@ -3,7 +3,7 @@
 owner = CHB
 controller = CHB
 add_core = CHB
-culture = makua
+culture = lolo
 religion = pwiyamwene
 capital = "Malopa"
 is_city = yes

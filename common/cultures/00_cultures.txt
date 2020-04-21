@@ -8746,19 +8746,6 @@ west_african = {
 
 southern_african = {
 	graphical_culture = africangfx
-	makua = {
-		primary = MKU
-		dynasty_names = { Angoni Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa Mtika Nyanjagha Chiluba }
-		male_names = {
-			Gallo Bano Maurusa Tondo Mcepera Mcocoma Sosola Muzura Chunzo Bakili Capampo Chicanda 
-			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
-			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
-			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
-		}
-		female_names = {
-			Achieng Nuru Nyalak
-		}
-	}
 	nguni = {
 		dynasty_names = { 
 			Mwenemutapa Rozwi Mutopa
@@ -9051,6 +9038,99 @@ nyasa_group = {
 	}
 	ngonde = {
 		
+	}
+}
+
+yao_group = {
+	graphical_culture = africangfx
+	makua = {
+		primary = MKU
+		dynasty_names = { Angoni Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa Mtika Nyanjagha Chiluba }
+		male_names = {
+			Gallo Bano Maurusa Tondo Mcepera Mcocoma Sosola Muzura Chunzo Bakili Capampo Chicanda 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru Nyalak
+		}
+	}
+	lomwe = {
+		primary = LMW
+		dynasty_names = { Angoni Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa Mtika Nyanjagha Chiluba }
+		male_names = {
+			Gallo Bano Maurusa Tondo Mcepera Mcocoma Sosola Muzura Chunzo Bakili Capampo Chicanda 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru Nyalak
+		}
+	}	
+	lolo = {
+		primary = LOL
+		dynasty_names = { Angoni Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa Mtika Nyanjagha Chiluba }
+		male_names = {
+			Gallo Bano Maurusa Tondo Mcepera Mcocoma Sosola Muzura Chunzo Bakili Capampo Chicanda 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru Nyalak
+		}
+	}
+	mwalia = {
+		primary = MWA
+		dynasty_names = { Angoni Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa Mtika Nyanjagha Chiluba }
+		male_names = {
+			Gallo Bano Maurusa Tondo Mcepera Mcocoma Sosola Muzura Chunzo Bakili Capampo Chicanda 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru Nyalak
+		}
+	}
+	medo = {
+		primary = MEO
+		dynasty_names = { Angoni Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa Mtika Nyanjagha Chiluba }
+		male_names = {
+			Gallo Bano Maurusa Tondo Mcepera Mcocoma Sosola Muzura Chunzo Bakili Capampo Chicanda 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru Nyalak
+		}
+	}
+	makonde = {
+		dynasty_names = { Angoni Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa Mtika Nyanjagha Chiluba }
+		male_names = {
+			Gallo Bano Maurusa Tondo Mcepera Mcocoma Sosola Muzura Chunzo Bakili Capampo Chicanda 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru Nyalak
+		}
+	}
+	yao = {
+		dynasty_names = { Angoni Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa Mtika Nyanjagha Chiluba }
+		male_names = {
+			Gallo Bano Maurusa Tondo Mcepera Mcocoma Sosola Muzura Chunzo Bakili Capampo Chicanda 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru Nyalak
+		}
 	}
 }
 

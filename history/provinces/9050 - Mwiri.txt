@@ -4,7 +4,7 @@
 owner = MWA
 controller = MWA
 add_core = MWA
-culture = makua
+culture = mwalia
 religion = pwiyamwene
 capital = "Mwiri"
 is_city = yes

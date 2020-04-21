@@ -1,7 +1,7 @@
 #Created by AUMC
 #9054 - Inagu
 
-culture = makua
+culture = mwalia
 religion = pwiyamwene
 capital = "Mwedederi"
 trade_goods = unknown

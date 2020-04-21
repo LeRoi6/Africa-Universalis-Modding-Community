@@ -1,7 +1,7 @@
 #Created by AUMC
 #9035 - Magomero
 
-culture = makua
+culture = lolo
 religion = pwiyamwene
 capital = "Magomero"
 trade_goods = unknown

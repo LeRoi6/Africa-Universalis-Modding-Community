@@ -1319,7 +1319,7 @@ pagan = {
 		heretic = { UROYI }
 	}
 	pwiyamwene = { #AU, our first unique religion =D
-		color = { 88 39 40 }
+		color = { 127 26 68 }
 		icon = 30
 		country = {
 			tolerance_own = 2

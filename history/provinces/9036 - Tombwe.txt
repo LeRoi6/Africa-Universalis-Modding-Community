@@ -1,7 +1,7 @@
 #Created by AUMC
 #9036 - Tombwe
 
-culture = makua
+culture = lomwe
 religion = pwiyamwene
 capital = "Tombwe"
 trade_goods = unknown

@@ -4,7 +4,7 @@
 owner = MEO
 controller = MEO
 add_core = MEO
-culture = makua
+culture = medo
 religion = pwiyamwene
 capital = "Itule"
 trade_goods = ivory

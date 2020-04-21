@@ -1,7 +1,7 @@
 #Created by AUMC
 #9033 - Milanji
 
-culture = makua
+culture = lolo
 religion = pwiyamwene
 capital = "Milanji"
 trade_goods = unknown

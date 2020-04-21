@@ -1,7 +1,7 @@
 #Created by AUMC
 #9055 - Mogambe
 
-culture = makua
+culture = yao
 religion = pwiyamwene
 capital = "Mocama"
 trade_goods = unknown

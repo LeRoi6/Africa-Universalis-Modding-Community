@@ -1,7 +1,7 @@
 #Created by AUMC
 #9056 - Manguro
 
-culture = makua
+culture = yao
 religion = pwiyamwene
 capital = "Manguro"
 trade_goods = unknown

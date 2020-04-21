@@ -74,6 +74,14 @@
  batonga:0 "Batonga"
  henga:0 "Henga"
  ngonde:0 "Ngonde"
+ #Makua
+ yao_group:0 "Yao"
+ yao:0 "Yao"
+ lomwe:0 "Lomwe"
+ lolo:0 "Lolo"
+ medo:0 "Medo"
+ mwalia:0 "Mwalia"
+ makonde:0 "Makonde"
  #Swahili
  swahili:0 "Swahili"
  sofala:0 "Sofala"
@@ -93,7 +101,7 @@
  kiamu:0 "Kiamu"
  tikulu:0 "Tikulu"
  mwiini:0 "Mwiini"
- nosse_be:0 "Nosse Be"
+ nosse_be:0 "Nosse Be" 
 
  #################################################################################
  #################################################################################

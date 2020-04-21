@@ -3,7 +3,7 @@
 owner = LMW
 controller = LMW
 add_core = LMW
-culture = makua
+culture = lomwe
 religion = pwiyamwene
 capital = "Namuli"
 is_city = yes

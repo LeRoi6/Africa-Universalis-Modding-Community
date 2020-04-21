@@ -1,7 +1,7 @@
 #Created by AUMC
 #9059 - Mtengula
 
-culture = makua
+culture = yao
 religion = pwiyamwene
 capital = "Mtengula"
 trade_goods = unknown

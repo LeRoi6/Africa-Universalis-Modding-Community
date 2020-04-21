@@ -4,8 +4,8 @@
 owner = LMW
 controller = LMW
 add_core = LMW
-culture = makua
-religion = shamanism #Fetishism
+culture = lomwe
+religion = pwiyamwene
 capital = "Egoli"
 is_city = yes
 base_manpower = 2 

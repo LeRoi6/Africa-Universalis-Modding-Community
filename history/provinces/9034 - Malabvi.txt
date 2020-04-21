@@ -1,7 +1,7 @@
 #Created by AUMC
 #9034 - Malabvi
 
-culture = makua
+culture = lolo
 religion = pwiyamwene
 capital = "Malabvi"
 trade_goods = unknown

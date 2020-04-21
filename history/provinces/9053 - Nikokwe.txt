@@ -1,7 +1,7 @@
 #Created by AUMC
 #9053 - Nikokwe
 
-culture = makua
+culture = mwalia
 religion = pwiyamwene
 capital = "Nikokwe"
 trade_goods = unknown

@@ -1,7 +1,7 @@
 #Created by AUMC
 #9058 - Unyango
 
-culture = makua
+culture = yao
 religion = pwiyamwene
 capital = "Unyango"
 trade_goods = unknown

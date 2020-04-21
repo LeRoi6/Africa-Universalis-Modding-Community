@@ -4,7 +4,7 @@
 owner = LOL #lol
 controller = LOL
 add_core = LOL
-culture = makua
+culture = lolo
 religion = pwiyamwene
 capital = "Murrambala"
 is_city = yes

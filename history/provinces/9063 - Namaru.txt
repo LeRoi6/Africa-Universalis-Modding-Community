@@ -1,7 +1,7 @@
 #Created by AUMC
 #9063 - Namaru
 
-culture = makua
+culture = medo
 religion = pwiyamwene
 capital = "Namaru"
 trade_goods = unknown

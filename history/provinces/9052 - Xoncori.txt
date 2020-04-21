@@ -1,7 +1,7 @@
 #Created by AUMC
 #9052 - Xoncori
 
-culture = makua
+culture = mwalia
 religion = pwiyamwene
 capital = "Xoncori"
 trade_goods = unknown

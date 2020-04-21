@@ -1,7 +1,7 @@
 #Created by AUMC
 #9062 - Kwamakanja
 
-culture = makua
+culture = medo
 religion = pwiyamwene
 capital = "Kwamakanja"
 trade_goods = unknown
