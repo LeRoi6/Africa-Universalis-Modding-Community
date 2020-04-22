@@ -4,7 +4,7 @@
 owner = ZAN
 controller = ZAN
 add_core = ZAN
-culture = mwani
+culture = nahara
 religion = sunni
 capital = "Sancul"
 is_city = yes

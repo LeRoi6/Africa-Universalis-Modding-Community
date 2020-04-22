@@ -4,7 +4,7 @@
 owner = ZAN
 controller = ZAN
 add_core = ZAN
-culture = kimgao
+culture = rufiji
 religion = sunni
 capital = "Mpembeno"
 is_city = yes

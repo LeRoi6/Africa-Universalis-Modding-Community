@@ -12321,7 +12321,10 @@ swahili = {
 	koti = {		#Angoche
 	}
 	
-	mwani = {		#Mozambique and Kirambas
+	nahara = {		#Mozambique Isle
+	}
+	
+	mwani = {		#Northern Mozambique and Kirambas
 	}
 	
 	makwe = {
@@ -12330,7 +12333,13 @@ swahili = {
 	kimgao = {		#Kilwa
 	}
 	
+	mbwera = {		#Mafia
+	}
+	
 	shikomori = {		#Comorian
+	}
+	
+	rufiji = {
 	}
 	
 	zaramo = {

@@ -4,7 +4,7 @@
 owner = ZAN
 controller = ZAN
 add_core = ZAN
-culture = kimrima
+culture = mbwera
 religion = sunni
 capital = "Mafia"
 is_city = yes
