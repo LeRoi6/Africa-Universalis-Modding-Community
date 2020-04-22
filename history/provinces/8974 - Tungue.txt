@@ -2,7 +2,7 @@
 #8974 - Tungue
 culture = medo
 religion = pwiyamwene
-capital = "Pemba"
+capital = "Tungue"
 trade_goods = unknown
 hre = no
 base_tax = 2
