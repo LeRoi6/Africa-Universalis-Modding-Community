@@ -4,7 +4,7 @@
 owner = TEV
 controller = TEV
 add_core = TEV
-culture = manyika
+culture = teve
 religion = mhondoro
 capital = "Ussema"
 is_city = yes

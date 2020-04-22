@@ -1,7 +1,7 @@
 #Created by AUMC
 #8974 - Tungue
-culture = makwe
-religion = sunni
+culture = medo
+religion = pwiyamwene
 capital = "Pemba"
 trade_goods = unknown
 hre = no

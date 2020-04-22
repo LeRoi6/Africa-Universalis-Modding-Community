@@ -1,7 +1,7 @@
 #Created by AUMC
 #9052 - Xoncori
 
-culture = mwalia
+culture = medo
 religion = pwiyamwene
 capital = "Xoncori"
 trade_goods = unknown

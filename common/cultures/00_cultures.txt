@@ -9082,21 +9082,8 @@ yao_group = {
 			Achieng Nuru Nyalak
 		}
 	}
-	mwalia = {
-		primary = MWA
-		dynasty_names = { Angoni Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa Mtika Nyanjagha Chiluba }
-		male_names = {
-			Gallo Bano Maurusa Tondo Mcepera Mcocoma Sosola Muzura Chunzo Bakili Capampo Chicanda 
-			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
-			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
-			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
-		}
-		female_names = {
-			Achieng Nuru Nyalak
-		}
-	}
 	medo = {
-		primary = MEO
+		primary = MWA
 		dynasty_names = { Angoni Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa Mtika Nyanjagha Chiluba }
 		male_names = {
 			Gallo Bano Maurusa Tondo Mcepera Mcocoma Sosola Muzura Chunzo Bakili Capampo Chicanda 

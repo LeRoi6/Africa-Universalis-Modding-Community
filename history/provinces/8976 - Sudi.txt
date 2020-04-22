@@ -4,7 +4,7 @@
 owner = ZAN
 controller = ZAN
 add_core = ZAN
-culture = makua
+culture = makwe
 religion = sunni
 capital = "Sudi"
 is_city = yes

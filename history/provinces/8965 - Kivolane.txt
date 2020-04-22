@@ -4,8 +4,8 @@
 owner = ZAN
 controller = ZAN
 add_core = ZAN
-culture = koti
-religion = sunni
+culture = makua
+religion = pwiyamwene
 capital = "Kivolane"
 is_city = yes
 base_manpower = 1 

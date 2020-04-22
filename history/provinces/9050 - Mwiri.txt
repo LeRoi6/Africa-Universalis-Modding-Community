@@ -4,12 +4,12 @@
 owner = MWA
 controller = MWA
 add_core = MWA
-culture = mwalia
+culture = medo
 religion = pwiyamwene
 capital = "Mwiri"
 is_city = yes
 base_manpower = 2
-trade_goods = ivory
+trade_goods = gold
 hre = no
 base_tax = 2 
 base_production = 2
