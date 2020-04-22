@@ -1,17 +1,18 @@
 #Created by AUMC
 #9056 - Manguro
 
+owner = MLL
+controller = MLL
+add_core = MLL
 culture = yao
 religion = pwiyamwene
 capital = "Manguro"
-trade_goods = unknown
+trade_goods = ivory
 hre = no
 base_tax = 3
 base_production = 3
 base_manpower = 2
-native_size = 40
-native_ferocity = 20
-native_hostileness = 10 
+
 discovered_by = central_african
 discovered_by = east_african
 

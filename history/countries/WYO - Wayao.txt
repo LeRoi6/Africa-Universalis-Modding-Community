@@ -1,0 +1,9 @@
+government = tribal
+add_government_reform = tribal_kingdom #Various constallations of Makua Tribes
+primary_culture = yao
+religion = pwiyamwene
+technology_group = central_african
+
+
+unit_type = sub_saharan
+capital = 4037	

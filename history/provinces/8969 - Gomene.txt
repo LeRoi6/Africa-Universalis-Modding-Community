@@ -3,8 +3,8 @@
 owner = ZAN
 controller = ZAN
 add_core = ZAN
-culture = makua
-religion = pwiyamwene
+culture = mwani
+religion = sunni
 capital = "Gomene"
 is_city = yes
 base_manpower = 2 
