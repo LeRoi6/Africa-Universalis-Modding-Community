@@ -1,11 +1,11 @@
 #Created by AUMC
 #8947 - Chibuene
 
-owner = SFA
-controller = SFA
-add_core = SFA
+owner = CBN
+controller = CBN
+add_core = CBN
 culture = gitonga 
-religion = sunni
+religion = mhondoro
 capital = "Chibuene"
 is_city = yes
 base_manpower = 1

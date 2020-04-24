@@ -1,15 +1,15 @@
 #Created by AUMC
 #8951 - Wasika
 
-owner = SFA
-controller = SFA
-add_core = SFA
+owner = WSK
+controller = WSK
+add_core = WSK
 culture = madanda
-religion = sunni
+religion = mhondoro
 capital = "Wasika"
 is_city = yes
 base_manpower = 1
-trade_goods = fish
+trade_goods = ivory		#Tis what the sources say, that and amber
 hre = no
 base_tax = 2 
 base_production = 1

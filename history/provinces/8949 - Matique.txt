@@ -1,18 +1,18 @@
 #Created by AUMC
 #8949 - Matique
 
-owner = SFA
-controller = SFA
-add_core = SFA
+owner = MRR
+controller = MRR
+add_core = MRR
 culture = gitonga 
-religion = sunni
+religion = mhondoro
 capital = "Matique"
 is_city = yes
 base_manpower = 1
 trade_goods = fish
 hre = no
 base_tax = 1 
-base_production = 1
+base_production = 2
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman

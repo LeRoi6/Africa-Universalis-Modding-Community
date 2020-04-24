@@ -1,9 +1,9 @@
 #Created by AUMC
 #8952 - Chiloane
 
-owner = SFA
-controller = SFA
-add_core = SFA
+owner = CLO
+controller = CLO
+add_core = CLO
 culture = madanda 
 religion = sunni
 capital = "Chiloane"

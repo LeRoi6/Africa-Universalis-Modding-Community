@@ -1,9 +1,9 @@
 #Created by AUMC
 #8953 - Machanga
 
-owner = SFA
-controller = SFA
-add_core = SFA
+owner = MMB
+controller = MMB
+add_core = MMB
 culture = madanda
 religion = sunni
 capital = "Machanga"

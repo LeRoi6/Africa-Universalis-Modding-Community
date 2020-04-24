@@ -1,9 +1,9 @@
 #Created by AUMC
 #8948 - Bazaruto
 
-owner = SFA
-controller = SFA
-add_core = SFA
+owner = BZR
+controller = BZR
+add_core = BZR
 culture = gitonga 
 religion = sunni
 capital = "Bazaruto"
