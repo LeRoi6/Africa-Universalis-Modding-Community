@@ -1,8 +1,8 @@
 government = tribal
 add_government_reform = tribal_federation
-primary_culture = sofala
+primary_culture = sofala	#Right next door, likely had Sofala nobility
 religion = sunni
-technology_group = central_african
+technology_group = east_african
 unit_type = sub_saharan
 capital = 8954
 

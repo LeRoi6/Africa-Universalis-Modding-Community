@@ -1,0 +1,33 @@
+#Mambone
+dependency = {
+	subject_type = "tributary_state"
+	first = MMB
+	second = WSK
+	start_date = 1444.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MMB
+	second = MRR
+	start_date = 1444.1.1
+}
+
+#Sofala
+dependency = {
+	subject_type = "tributary_state"
+	first = SFA
+	second = BZR
+	start_date = 1444.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = SFA
+	second = CLO
+	start_date = 1444.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = SFA
+	second = MBY
+	start_date = 1444.1.1
+}
