@@ -2,7 +2,7 @@
 
 culture = tsonga_culture
 religion = shamanism #Fetishism
-capital = "Chicualacuala"
+capital = "Pangane"
 trade_goods = unknown
 hre = no
 base_tax = 2
