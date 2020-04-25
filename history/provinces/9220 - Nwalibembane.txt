@@ -1,0 +1,19 @@
+#Created by AUMC
+#9220 - Nwalibembane
+
+owner = MTL
+controller = MTL
+add_core = MTL
+culture = ronga
+religion = shamanism #Fetishism
+capital = "Nwalibembane"			
+trade_goods = livestock
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+
+1497.1.1 = { discovered_by = POR } # Vasco da Gama
+1616.1.1 = { discovered_by = NED } # Dirk Hartog
+

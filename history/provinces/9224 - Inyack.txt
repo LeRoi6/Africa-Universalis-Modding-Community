@@ -1,0 +1,19 @@
+#Created by AUMC
+#9224 - Inyack
+
+owner = INH
+controller = INH
+add_core = INH
+culture = ronga
+religion = shamanism #Fetishism
+capital = "Inyack"			
+trade_goods = gems
+hre = no
+base_tax = 1
+base_production = 2
+base_manpower = 1
+
+
+1497.1.1 = { discovered_by = POR } # Vasco da Gama
+1616.1.1 = { discovered_by = NED } # Dirk Hartog
+

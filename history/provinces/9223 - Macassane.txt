@@ -1,0 +1,19 @@
+#Created by AUMC
+#9223 - Macassane
+
+owner = BUY
+controller = BUY
+add_core = BUY
+culture = ronga
+religion = shamanism #Fetishism
+capital = "Macassane"			
+trade_goods = bt_trade_good_fruit
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+
+1497.1.1 = { discovered_by = POR } # Vasco da Gama
+1616.1.1 = { discovered_by = NED } # Dirk Hartog
+

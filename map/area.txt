@@ -1577,8 +1577,12 @@ limpopo_area = { #8
 	1800 8934 8935 8936 8937 8938 8939 8940 8942
 }
 
-northern_maputo_area = { #3
-	1182 5382 8933
+northern_maputo_area = { #7
+	1182 5382 8933 9217 9218 9219 9220 9228
+}
+
+southern_maputo_area = { #7
+	9221 9222 9223 9224 9225 9226 9227
 }
 
 lindi_area = { #5

@@ -18,8 +18,6 @@
  TEV_ADJ:0 "Quitevese"
  BUT: "Butua"
  BUT_ADJ:0 "Butuan"
- RZW:0 "Rozvi"
- RZW_ADJ:0 "Rozvian"
  BWE:0 "Barue"
  BWE_ADJ:0 "Baruese"
  #Malawi
@@ -71,5 +69,26 @@
  CLO_ADJ:0 "Chiloane"
  MBY_ADJ:0 "Malbuyuni"
  MRR_ADJ:0 "Muringare"
- WSK_ADJ:0 "Wasika"
+ WSK_ADJ:0 "Wasikan"
  MMB_ADJ:0 "Mambone"
+ #Mozambique
+ BOM:0 "Bombo"
+ BOM_ADJ:0 "Bombo"
+ MFO:0 "Mfumo"
+ MFO_ADJ:0 "Mfumo"
+ MTK:0 "Mateke"
+ MTK_ADJ:0 "Mateke"
+ MTL:0 "Matsolo"
+ MTL_ADJ:0 "Matsolo"
+ MHC:0 "Manisse"
+ MHC_ADJ:0 "Manissian"
+ INH:0 "Nhaca"
+ INH_ADJ:0 "Nhacan"
+ BUY:0 "Buyingane"
+ BUY_ADJ:0 "Buyinganian"
+ TEM:0 "Tembe"
+ TEM_ADJ:0 "Tembian"
+ 
+ 
+ 
+ 
