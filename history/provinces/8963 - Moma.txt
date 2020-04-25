@@ -1,9 +1,9 @@
 #Created by AUMC
 #8963 - Moma
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = MOM
+controller = MOM
+add_core = MOM
 culture = koti
 religion = sunni
 capital = "Moma"

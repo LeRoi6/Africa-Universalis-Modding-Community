@@ -1,9 +1,9 @@
 #Created by AUMC
 #9006 - Mulambe
 
-owner = SFA
-controller = SFA
-add_core = SFA
+owner = KWM
+controller = KWM
+add_core = KWM
 culture = chuwabu 
 religion = sunni
 capital = "Mulambe"

@@ -1,10 +1,10 @@
 #1187 - Sena
 
-owner = BWE
-controller = BWE
-add_core = BWE
-culture = barwe
-religion = mhondoro
+owner = SYN
+controller = SYN
+add_core = SYN
+culture = chuwabu
+religion = sunni
 capital = "Sena"
 is_city = yes
 base_manpower = 4
