@@ -8965,6 +8965,7 @@ shona_group = {
 		dynasty_names = { 
 			Mwenemutapa Rozwi Mutopa
 		}
+		primary = TEM
 		male_names = {
 			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
 			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 

@@ -1,0 +1,19 @@
+#Created by AUMC
+#9222 - Mclengana
+
+owner = TEM
+controller = TEM
+add_core = TEM
+culture = ronga
+religion = shamanism #Fetishism
+capital = "Nkahasa"			
+trade_goods = livestock
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+
+1497.1.1 = { discovered_by = POR } # Vasco da Gama
+1616.1.1 = { discovered_by = NED } # Dirk Hartog
+

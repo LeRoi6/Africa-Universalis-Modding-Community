@@ -1,0 +1,19 @@
+#Created by AUMC
+#9225 - Nhaca
+
+owner = INH
+controller = INH
+add_core = INH
+culture = ronga
+religion = shamanism #Fetishism
+capital = "Inhaca"			
+trade_goods = ivory
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+
+1497.1.1 = { discovered_by = POR } # Vasco da Gama
+1616.1.1 = { discovered_by = NED } # Dirk Hartog
+

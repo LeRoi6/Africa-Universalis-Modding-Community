@@ -1,0 +1,19 @@
+#Created by AUMC
+#9227 - Matutuine
+
+owner = BUY
+controller = BUY
+add_core = BUY
+culture = ronga
+religion = shamanism #Fetishism
+capital = "Matutuine"			
+trade_goods = livestock
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+
+1497.1.1 = { discovered_by = POR } # Vasco da Gama
+1616.1.1 = { discovered_by = NED } # Dirk Hartog
+

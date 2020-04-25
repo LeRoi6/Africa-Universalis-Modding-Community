@@ -1,0 +1,18 @@
+#Created by AUMC
+#9228 - Magaia
+
+owner = BOM
+controller = BOM
+add_core = BOM
+culture = ronga
+religion = shamanism #Fetishism
+capital = "Nondouane"			
+trade_goods = livestock
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+
+1497.1.1 = { discovered_by = POR } # Vasco da Gama
+1616.1.1 = { discovered_by = NED } # Dirk Hartog
