@@ -1,9 +1,9 @@
 #Created by AUMC
 #9030 - Mopeia
 
-owner = SFA
-controller = SFA
-add_core = SFA
+owner = QLM
+controller = QLM
+add_core = QLM
 culture = chuwabu 
 religion = sunni
 capital = "Mopeia"

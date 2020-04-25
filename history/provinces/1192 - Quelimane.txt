@@ -1,8 +1,8 @@
 #1192 - Quelimane
 
-owner = SFA
-controller = SFA
-add_core = SFA
+owner = QLM
+controller = QLM
+add_core = QLM
 culture = chuwabu
 religion = sunni
 capital = "Quelimane"

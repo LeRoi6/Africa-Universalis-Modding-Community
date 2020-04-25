@@ -1,9 +1,9 @@
 #Created by AUMC
 #8962 - Morrua
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = BJN
+controller = BJN
+add_core = BJN
 culture = koti
 religion = sunni
 capital = "Morrua"

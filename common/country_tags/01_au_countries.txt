@@ -37,6 +37,15 @@ MBY = "countries/Malbuyuni.txt"
 MRR = "countries/Muringare.txt"
 WSK = "countries/Wasika.txt"
 MMB = "countries/Mambone.txt"
+
+KWM = "countries/Kwama.txt"
+SYN = "countries/Sayuna.txt"
+QLM = "countries/Quelimane.txt"
+BJN = "countries/Bajone.txt"
+MOM = "countries/Moma.txt"
+AGC = "countries/Angoche.txt"
+SGE = "countries/Sangage.txt"
+
 #Mozambique
 BOM = "countries/Bombo.txt"
 MFO = "countries/Mfumo.txt"

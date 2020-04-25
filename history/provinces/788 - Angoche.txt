@@ -1,8 +1,8 @@
 #788 - Angoche
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = AGC
+controller = AGC
+add_core = AGC
 culture = koti
 religion = sunni
 capital = "Angoche"

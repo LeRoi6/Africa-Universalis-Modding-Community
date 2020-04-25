@@ -1,9 +1,9 @@
 #Created by AUMC
 #9009 - Chupanga
 
-owner = SFA
-controller = SFA
-add_core = SFA
+owner = TEV
+controller = TEV
+add_core = TEV
 culture = chuwabu 
 religion = sunni
 capital = "Chupanga"
