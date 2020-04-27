@@ -39,7 +39,7 @@ WSK = "countries/Wasika.txt"
 MMB = "countries/Mambone.txt"
 
 KWM = "countries/Kwama.txt"
-SYN = "countries/Sayuna.txt"
+SNA = "countries/Sayuna.txt"
 QLM = "countries/Quelimane.txt"
 BJN = "countries/Bajone.txt"
 MOM = "countries/Moma.txt"
