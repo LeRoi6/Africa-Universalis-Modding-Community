@@ -66,6 +66,7 @@
  gitonga:0 "Gitonga"
  chopi:0 "Chopi"
  ronga:0 "Ronga"
+ wutonga:0 "Wutonga"
  #Malawi
  nyasa_group:0 "Nyasa"
  nyasa:0 "Chewa"
@@ -104,6 +105,8 @@
  nahara:0 "Nahara"
  mbwera:0 "Wambwera"
  rufiji:0 "Rufiji"
+ #Zambia
+ citonga:0 "Citonga"
 
  #################################################################################
  #################################################################################

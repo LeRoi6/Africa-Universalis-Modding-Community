@@ -1,11 +1,12 @@
 # No previous file for Beyond Typus province
+#modified by AU
 
-culture = tsonga_culture
+culture = gitonga
 religion = shamanism 
-capital = "Manusa" 
+capital = "Inhapula" 
 trade_goods = unknown
 hre = no 
-base_tax = 1 
+base_tax = 2 
 base_production = 1 
 base_manpower = 1 
 native_size = 100
