@@ -1,8 +1,8 @@
 #1187 - Sena
 
-owner = SYN
-controller = SYN
-add_core = SYN
+owner = SNA
+controller = SNA
+add_core = SNA
 culture = chuwabu
 religion = sunni
 capital = "Sena"
