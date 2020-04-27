@@ -1,17 +1,17 @@
 #Created by AUMC
 #9005 - Manyikeni
 
-culture = tsonga_culture
-religion = shamanism #Fetishism
+culture = gitonga
+religion = mhondoro
 capital = "Manyikeni"
-trade_goods = unknown
+trade_goods = livestock
 hre = no
 base_tax = 5
 base_production = 5
 base_manpower = 5
-native_size = 40
-native_ferocity = 20
-native_hostileness = 10 
+owner = MYI
+controller = MYI
+add_core = MYI
 extra_cost = 8
 center_of_trade = 1
 

@@ -1,0 +1,17 @@
+#Created by AUMC
+#9233 - Mazibi
+
+culture = gitonga
+religion = mhondoro
+capital = "Mazibi"
+trade_goods = livestock
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+owner = MYI
+controller = MYI
+add_core = MYI
+
+discovered_by = east_african
+discovered_by = central_african

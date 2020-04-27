@@ -1,0 +1,16 @@
+#Created by AUMC
+#8941 - Wutonga
+
+culture = wutonga
+religion = mhondoro
+capital = "Wutonga"
+trade_goods = livestock
+hre = no
+base_tax = 3
+base_production = 2
+base_manpower = 2
+owner = WUT
+controller = WUT
+add_core = WUT
+discovered_by = east_african
+discovered_by = central_african

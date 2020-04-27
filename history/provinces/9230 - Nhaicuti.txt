@@ -1,0 +1,17 @@
+#Created by AUMC
+#9230 - Nhaicuti
+
+culture = gitonga
+religion = mhondoro
+capital = "Nhaicuti"
+trade_goods = livestock
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 1
+owner = MYI
+controller = MYI
+add_core = MYI
+
+discovered_by = east_african
+discovered_by = central_african

@@ -1,0 +1,17 @@
+#Created by AUMC
+#9235 - Tinga-Tinga
+
+culture = gitonga
+religion = mhondoro
+capital = "Tinga-Tinga"
+trade_goods = livestock
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 1
+owner = IHB
+controller = IHB
+add_core = IHB
+
+discovered_by = east_african
+discovered_by = central_african

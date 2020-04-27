@@ -1063,7 +1063,7 @@
  PROV5379:0 "Polokwane"         #ERROR - Return to double check these rushed localisations
  PROV5380:0 "Ba-Phalaborwa"
  PROV5381:0 "''Xegwi"         #ERROR - Return to double check these rushed localisations
- PROV5382:0 "Manhica"
+ PROV5382:0 "Inhapula"
  PROV5383:0 "Lekwa"         #ERROR - odd name, odd placement, questionable source... needs looking at again
  PROV5384:0 "Thembelihle"         #ERROR - MODERN Bantu name in what was probably San (Khoisan) land
  PROV5385:0 "Cuoa"
@@ -3291,10 +3291,10 @@
  PROV8938:0 "Sondolotane"
  PROV8939:0 "Mabanyin"
  PROV8940:0 "Inkoman Simba"
- PROV8941:0 "Manusa"
- PROV8942:0 "Bileni"
- PROV8943:0 "Wutonga"
- PROV8944:0 "Panda"
+ PROV8941:0 "Wutonga"
+ PROV8942:0 "Biyin"
+ PROV8943:0 "Mural"
+ PROV8944:0 "Pande"
  PROV8945:0 "Inharrime"
  PROV8946:0 "Nhachangue"
  PROV8947:0 "Chibuene"
@@ -3579,6 +3579,15 @@
  PROV9226:0 "Zitundo"
  PROV9227:0 "Mutituine"
  PROV9228:0 "Magaia"
+ PROV9229:0 "Inyaveni"
+ PROV9230:0 "Nhaicuti"
+ PROV9231:0 "Svikundo"
+ PROV9232:0 "Chiquita"
+ PROV9233:0 "Mazibi"
+ PROV9234:0 "Gwambe"
+ PROV9235:0 "Tinga-Tinga"
+ PROV9236:0 "Zavora"
+ PROV9237:0 "Bilene"
  
  
  

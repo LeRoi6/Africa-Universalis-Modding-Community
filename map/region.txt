@@ -665,7 +665,8 @@ east_africa_region = {
 		naletale_area
 		northern_maputo_area
 		southern_maputo_area
-		tonga_area
+		gitonga_area
+		hlengwe_area
 		inhambane_area
 		sofala_area
 		chibuene_area

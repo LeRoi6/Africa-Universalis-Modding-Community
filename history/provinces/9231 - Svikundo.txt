@@ -1,0 +1,17 @@
+#Created by AUMC
+#9231 - Svikundo
+
+culture = tsonga_culture
+religion = shamanism #Fetishism
+capital = "Svikundo"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+owner = SSO
+controller = SSO
+add_core = SSO
+
+discovered_by = east_african
+discovered_by = central_african
