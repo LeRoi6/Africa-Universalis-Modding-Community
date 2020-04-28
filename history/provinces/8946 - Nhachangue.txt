@@ -2,7 +2,7 @@
 #8946 - Nhachangue
 
 culture = gitonga
-religion = shamanism
+religion = mhondoro
 capital = "Nhachangue"
 trade_goods = gems
 hre = no
