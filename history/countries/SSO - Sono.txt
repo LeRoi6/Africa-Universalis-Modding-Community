@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = tribal_despotism
-primary_culture = tsonga
+primary_culture = tsonga_culture
 religion = shamanism
 technology_group = east_african
 unit_type = sub_saharan
