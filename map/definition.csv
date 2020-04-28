@@ -9156,13 +9156,13 @@ province;red;green;blue;x;x
 9155;234;115;42;Kingwichiro;x
 9156;229;107;13;Mbarika;x
 9157;255;121;5;Likuyu;x
-9158;255;152;68;Ifema;x
+9158;47;3;3;TBD
 9159;239;99;0;Muhenge;x
 9160;232;151;90;Mlongora;x
 9161;219;78;13;Ikombagulu;x
 9162;211;110;33;Image;x
 9163;255;130;40;Lukalo;x
-9164;221;117;57;Kalenga;x
+9164;48;3;3;TBD
 9165;229;103;0;Malangali;x
 9166;255;161;79;Madibira;x
 9167;234;150;72;Mugoda Mutitu;x
@@ -9173,11 +9173,11 @@ province;red;green;blue;x;x
 9172;255;121;25;Mbampa;x
 9173;255;81;0;Litembo;x
 9174;249;105;13;Myangayanga;x
-9175;47;3;3;TBD;x
-9176;255;152;68;Ulanga;x
+9175;49;3;3;TBD;x
+9176;237;144;50;Ulanga;x
 9177;255;128;25;Mdando;x
 9178;226;130;40;Ikombe;x
-9179;145;165;177;Kinpergere;x
+9179;50;3;3;TBD;x
 9180;255;159;16;Mfumbi;x
 9181;244;152;39;Utengule;x
 9182;226;92;15;Selya;x
@@ -9205,7 +9205,7 @@ province;red;green;blue;x;x
 9204;242;128;14;Nkokolo;x
 9205;239;123;64;Kiwele;x
 9206;234;145;44;Unyangwila;x
-9207;234;32;70;Mgunda Mkali;x
+9207;51;3;3;TBD;x
 9208;255;136;0;Mdaburu;x
 9209;232;108;37;Jiwe-la-Singa;x
 9210;190;47;35;Gwamayaya;x

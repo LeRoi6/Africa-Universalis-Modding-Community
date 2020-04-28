@@ -675,7 +675,6 @@ east_africa_region = {
 		lindi_area
 		zanzibar_area
 		pate_area
-		mikindani_area
 		comoros_area
 	}
 	monsoon = {

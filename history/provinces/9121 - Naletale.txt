@@ -1,7 +1,7 @@
 #Created by AUMC
 #9121 - Naletale
 
-owner = BUB
+owner = BUT
 controller = BUT
 add_core = BUT
 culture = khami
