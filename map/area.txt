@@ -1590,7 +1590,7 @@ southern_maputo_area = { #7
 }
 
 lindi_area = { #5
-	1198 8975 8976 8977 8978
+	1198 8975 8976 8977 8978 9151
 }
 
 zanzibar_area = { #8
