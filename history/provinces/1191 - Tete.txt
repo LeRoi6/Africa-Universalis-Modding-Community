@@ -1,10 +1,10 @@
 #1191 - Tete
 
-owner = KKE
-controller = KKE
-add_core = KKE
-culture = tavara
-religion = mhondoro
+owner = TEE
+controller = TEE
+add_core = TEE
+culture = chuwabu
+religion = sunni
 capital = "Tete"
 is_city = yes
 base_manpower = 2 

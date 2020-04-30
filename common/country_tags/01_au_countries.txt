@@ -40,6 +40,7 @@ MMB = "countries/Mambone.txt"
 
 KWM = "countries/Kwama.txt"
 SNA = "countries/Sayuna.txt"
+TEE = "countries/Tete.txt"
 QLM = "countries/Quelimane.txt"
 BJN = "countries/Bajone.txt"
 MOM = "countries/Moma.txt"
