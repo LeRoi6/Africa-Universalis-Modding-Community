@@ -36,7 +36,7 @@ dependency = {
 dependency = {
 	subject_type = "tributary_state"
 	first = ZAN
-	second = KWA
+	second = KWM
 	start_date = 1444.1.1
 }
 vassal = {
