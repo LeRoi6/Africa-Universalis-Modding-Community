@@ -8,12 +8,12 @@ unit_type = sub_saharan
 capital = 1192
 religious_school = shafii_school
 
-1444.1.1 = {
+1444.1.1 = {	
 	monarch = {
-		name= "Suleiman I"
-		dynasty = "Quelimane"
-		dip = 2
+		name= "Hassani"
+		dynasty = "bin Quelimane"
+		dip = 3
 		mil = 2
-		adm = 2
+		adm = 3
 	}
 }

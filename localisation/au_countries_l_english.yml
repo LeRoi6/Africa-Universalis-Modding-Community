@@ -73,7 +73,6 @@
  MMB_ADJ:0 "Mambone"
  SNA_ADJ:0 "Sayunan"
  TEE_ADJ:0 "Tete"
-
  KWM:0 "Kwama"
  SNA:0 "Sayuna"
  TEE:0 "Tete"
@@ -82,6 +81,12 @@
  MOM:0 "Moma"
  AGC:0 "Angoche"
  SGE:0 "Sangage"
+ KWM_ADJ:0 "Kwaman"
+ QLM_ADJ:0 "Quelimani"
+ BJN_ADJ:0 "Bajoni"
+ MOM_ADJ:0 "Moman"
+ AGC_ADJ:0 "Angochan"
+ SGE_ADJ:0 "Sangagan"
  #Mozambique
  BOM:0 "Bombo"
  BOM_ADJ:0 "Bombo"

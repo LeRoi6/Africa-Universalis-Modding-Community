@@ -31,3 +31,38 @@ dependency = {
 	second = MBY
 	start_date = 1444.1.1
 }
+
+#Kilwa and its Constituancies 
+dependency = {
+	subject_type = "tributary_state"
+	first = ZAN
+	second = KWA
+	start_date = 1444.1.1
+}
+vassal = {
+	first = ZAN
+	second = QLM
+	start_date = 1444.11.11
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = QLM
+	second = BJN
+	start_date = 1444.1.1
+}
+vassal = {
+	first = ZAN
+	second = AGC
+	start_date = 1444.11.11
+}
+vassal = {
+	first = AGC
+	second = MOM
+	start_date = 1444.11.11
+}
+dependency = {		#Assuming so, no referances afaik
+	subject_type = "tributary_state"
+	first = ZAN
+	second = SGE
+	start_date = 1444.1.1
+}

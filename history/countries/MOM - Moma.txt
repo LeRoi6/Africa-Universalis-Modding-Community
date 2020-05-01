@@ -8,10 +8,10 @@ unit_type = sub_saharan
 capital = 8963
 religious_school = shafii_school
 
-1444.1.1 = {
+1444.1.1 = {		#fictional
 	monarch = {
-		name= "Suleiman I"
-		dynasty = "Moma"
+		name= "Suleiman"
+		dynasty = "bin Moma"
 		dip = 2
 		mil = 2
 		adm = 2

@@ -10,8 +10,8 @@ religious_school = shafii_school
 
 1444.1.1 = {
 	monarch = {
-		name= "Suleiman I"
-		dynasty = "Bajone"
+		name= "'Ali"
+		dynasty = "bin Bajone"
 		dip = 2
 		mil = 2
 		adm = 2
