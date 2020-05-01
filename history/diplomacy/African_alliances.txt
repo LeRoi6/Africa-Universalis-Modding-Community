@@ -71,6 +71,20 @@ vassal = {
 }
 
 vassal = {
+	first = ZIM
+	second = TEE
+	start_date = 1440.1.1
+	end_date = 1530.1.1
+}
+
+vassal = {
+	first = ZIM
+	second = SNA
+	start_date = 1440.1.1
+	end_date = 1530.1.1
+}
+
+vassal = {
 	first = KKE
 	second = CMA
 	start_date = 1440.1.1
