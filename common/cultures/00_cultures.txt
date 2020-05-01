@@ -12360,6 +12360,7 @@ swahili = {
 	koti = {		#Angoche
 		primary = AGC
 		dynasty_names = {
+			Inhanandare "M'bilinzi" Inhamilala Inhaitide Inhabaco Anhapakho
 		}
 	}
 	
