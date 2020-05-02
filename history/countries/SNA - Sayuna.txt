@@ -2,6 +2,7 @@ government = tribal
 add_government_reform = tribal_despotism
 government_rank = 1
 primary_culture = chuwabu
+add_accepted_culture = hatonga
 religion = sunni
 technology_group = east_african
 unit_type = sub_saharan

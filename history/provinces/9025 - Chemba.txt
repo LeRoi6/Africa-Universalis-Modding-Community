@@ -4,7 +4,7 @@
 owner = BWE
 controller = BWE
 add_core = BWE
-culture = barwe
+culture = hatonga
 religion = mhondoro
 capital = "Chemba"
 is_city = yes

@@ -4,7 +4,7 @@ primary_culture = barwe
 religion = mhondoro
 technology_group = central_african
 unit_type = sub_saharan
-capital = 9024
+capital = 9022
 
 
 

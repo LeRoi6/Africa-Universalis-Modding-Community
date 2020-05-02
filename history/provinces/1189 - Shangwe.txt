@@ -1,7 +1,7 @@
 #1189 - Shangwe
 
 
-culture = khami
+culture = citonga
 religion = shamanism
 capital = "Gogwe Mudhara"
 is_city = yes

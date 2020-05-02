@@ -1418,7 +1418,7 @@ southern_madagascar = { #4
 
 lower_zambezi_area = { #3
 	color = { 213 127 69 }
-	1187 9020 9022 9023 9024 9025 9026 9027 
+	1187 9020 9022 9023 9024 9025 9026 9027 9158 9164
 }
 
 upper_zambezi_area = { #8

@@ -3,8 +3,8 @@
 owner = SNA
 controller = SNA
 add_core = SNA
-culture = chuwabu
-religion = sunni
+culture = hatonga
+religion = mhondoro
 capital = "Sena"
 is_city = yes
 base_manpower = 4

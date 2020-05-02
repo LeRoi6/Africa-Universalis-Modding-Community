@@ -1,10 +1,10 @@
 #Created by AUMC
 #9027 - Cheringoma
 
-culture = teve
+culture = hatonga
 religion = mhondoro
 capital = "Cheringoma"
-trade_goods = cotton
+trade_goods = ivory
 hre = no
 base_tax = 2
 base_production = 2

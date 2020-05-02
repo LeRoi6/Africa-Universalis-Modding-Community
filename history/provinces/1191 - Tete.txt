@@ -3,8 +3,8 @@
 owner = TEE
 controller = TEE
 add_core = TEE
-culture = chuwabu
-religion = sunni
+culture = hatonga
+religion = mhondoro
 capital = "Tete"
 is_city = yes
 base_manpower = 2 
