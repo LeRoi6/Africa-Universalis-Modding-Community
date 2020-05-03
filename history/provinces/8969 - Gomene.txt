@@ -1,8 +1,8 @@
 #Created by AUMC
 #8969 - Gomene
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = GME
+controller = GME
+add_core = GME
 culture = mwani
 religion = sunni
 capital = "Gomene"

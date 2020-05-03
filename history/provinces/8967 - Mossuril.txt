@@ -1,9 +1,9 @@
 #Created by AUMC
 #8967 - Mossuril
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = MSR
+controller = MSR
+add_core = MSR
 culture = nahara
 religion = sunni
 capital = "Mossuril"

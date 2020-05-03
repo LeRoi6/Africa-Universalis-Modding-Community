@@ -1,5 +1,5 @@
-government = tribal
-add_government_reform = tribal_federation
+government = republic
+add_government_reform = noble_elite_reform
 government_rank = 1
 primary_culture = chuwabu
 religion = sunni

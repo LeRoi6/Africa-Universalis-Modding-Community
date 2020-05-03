@@ -1,9 +1,9 @@
 #Created by AUMC
 #8962 - Morrua
 
-owner = BJN
-controller = BJN
-add_core = BJN
+owner = MOM
+controller = MOM
+add_core = MOM
 culture = koti
 religion = sunni
 capital = "Morrua"

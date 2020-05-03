@@ -1,17 +1,17 @@
 government = monarchy
 add_government_reform = plutocratic_reform
 government_rank = 1
-primary_culture = koti
+primary_culture = mwani
 religion = sunni
 technology_group = east_african
 unit_type = sub_saharan
-capital = 8961
+capital = 8968
 religious_school = shafii_school
 
-1444.1.1 = {
+1444.1.1 = {		#Fictional
 	monarch = {
-		name= "'Ali"
-		dynasty = "bin Bajone"
+		name= "Salih"
+		dynasty = "bin Somana"
 		dip = 2
 		mil = 2
 		adm = 2

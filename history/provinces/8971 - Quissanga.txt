@@ -1,9 +1,9 @@
 #Created by AUMC
 #8971 - Quissanga
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = QSS
+controller = QSS
+add_core = QSS
 culture = medo
 religion = pwiyamwene
 capital = "Quissanga"
