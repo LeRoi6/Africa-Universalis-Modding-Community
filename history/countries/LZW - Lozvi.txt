@@ -9,8 +9,18 @@ capital = 9120
 unit_type = sub_saharan
 capital = 9120
 
-#Torwa Dynasty
-1444.1.1 = {
+
+1420.1.1 = {
+	monarch = {
+		name = "Chikura"
+		dynasty = "Mwenemutapa"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1490.1.1 = {
 	monarch = {
 		name = "Changa"
 		dynasty = "Changamire"
