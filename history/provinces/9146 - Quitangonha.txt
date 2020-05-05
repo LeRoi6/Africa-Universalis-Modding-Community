@@ -2,9 +2,9 @@
 #9146 - Quitangonha 
 #I'm glad LeRoi changed his mind ;)
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = QTG
+controller = QTG
+add_core = QTG
 culture = mwani
 religion = sunni
 capital = "Quitangonha"

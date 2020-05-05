@@ -1,9 +1,9 @@
 #Created by AUMC
 #8966 - Sancul
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = LMB
+controller = LMB
+add_core = LMB
 culture = nahara
 religion = sunni
 capital = "Sancul"

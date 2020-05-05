@@ -1,5 +1,5 @@
-government = tribal
-add_government_reform = tribal_despotism
+government = monarchy
+add_government_reform = plutocratic_reform
 government_rank = 1
 primary_culture = chuwabu
 add_accepted_culture = hatonga

@@ -1,8 +1,8 @@
 #1195 - Mozambique
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = MZM
+controller = MZM
+add_core = MZM
 culture = nahara
 religion = sunni
 capital = "Mozambique"

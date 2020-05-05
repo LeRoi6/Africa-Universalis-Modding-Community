@@ -1,9 +1,9 @@
 #Created by AUMC
 #8965 - Kivolane
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = KVL
+controller = KVL
+add_core = KVL
 culture = nahara
 religion = sunni
 capital = "Kivolane"
