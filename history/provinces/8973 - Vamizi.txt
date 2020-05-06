@@ -1,9 +1,9 @@
 #Created by AUMC
 #8973 - Vamizi
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = AMS
+controller = AMS
+add_core = AMS
 culture = mwani
 religion = sunni
 capital = "Pangane"
@@ -12,7 +12,7 @@ base_manpower = 2
 trade_goods = cloth
 hre = no
 base_tax = 4
-base_production = 4
+base_production = 5
 add_local_autonomy = 25
 
 discovered_by = east_african

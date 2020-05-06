@@ -105,3 +105,54 @@ dependency = {		#Assuming so, no referances afaik
 	second = GME
 	start_date = 1444.1.1
 }
+dependency = {
+	subject_type = "tributary_state"
+	first = ZAN
+	second = IBO
+	start_date = 1444.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = ZAN
+	second = AMS
+	start_date = 1444.1.1
+}
+dependency = {		#Assuming so, no referances afaik
+	subject_type = "tributary_state"
+	first = ZAN
+	second = MKN
+	start_date = 1444.1.1
+}
+dependency = {		#Assuming so, no referances afaik
+	subject_type = "tributary_state"
+	first = ZAN
+	second = LDI
+	start_date = 1444.1.1
+}
+dependency = {		#Assuming so, no referances afaik
+	subject_type = "tributary_state"
+	first = ZAN
+	second = MMW
+	start_date = 1444.1.1
+}
+dependency = {		#Assuming so, no referances afaik
+	subject_type = "tributary_state"
+	first = ZAN
+	second = SGM
+	start_date = 1444.1.1
+}
+
+dependency = {		#Assuming so, no referances afaik
+	subject_type = "tributary_state"
+	first = ZAN
+	second = KUA
+	start_date = 1444.1.1
+}
+
+dependency = {		#Assuming so, no referances afaik
+	subject_type = "tributary_state"
+	first = ZAN
+	second = MFI
+	start_date = 1444.1.1
+}
+

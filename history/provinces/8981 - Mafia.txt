@@ -1,18 +1,18 @@
 #Created by AUMC
 #8981 - Mafia
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = MFI
+controller = MFI
+add_core = MFI
 culture = mbwera
 religion = sunni
-capital = "Mafia"
+capital = "Chole"
 is_city = yes
 base_manpower = 2
 trade_goods = incense
 hre = no
 base_tax = 3
-base_production = 2
+base_production = 4
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim
