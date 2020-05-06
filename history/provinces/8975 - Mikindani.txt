@@ -1,18 +1,18 @@
 #Created by AUMC
 #8975 - Mikindani
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = MKN
+controller = MKN
+add_core = MKN
 culture = makwe
 religion = sunni
 capital = "Mikindani"
 is_city = yes
-base_manpower = 2
+base_manpower = 3
 trade_goods = grain		#Pottery
 hre = no
 base_tax = 2
-base_production = 2
+base_production = 3
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim

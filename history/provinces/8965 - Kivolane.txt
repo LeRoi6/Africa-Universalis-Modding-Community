@@ -8,11 +8,11 @@ culture = nahara
 religion = sunni
 capital = "Kivolane"
 is_city = yes
-base_manpower = 1 
+base_manpower = 2 
 trade_goods = fish
 hre = no
 base_tax = 2
-base_production = 2
+base_production = 3
 add_local_autonomy = 25
 
 discovered_by = east_african

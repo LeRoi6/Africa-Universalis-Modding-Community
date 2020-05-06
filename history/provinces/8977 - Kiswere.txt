@@ -1,18 +1,18 @@
 #Created by AUMC
 #8977 - Kiswere
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = MMW
+controller = MMW
+add_core = MMW
 culture = kimgao
 religion = sunni
 capital = "Kiswere"
 is_city = yes
-base_manpower = 1
+base_manpower = 2
 trade_goods = fish
 hre = no
-base_tax = 2
-base_production = 2
+base_tax = 3
+base_production = 3
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim

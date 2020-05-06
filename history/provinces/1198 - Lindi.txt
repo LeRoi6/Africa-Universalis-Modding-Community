@@ -1,8 +1,8 @@
 #1198 - Lindi
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = LDI
+controller = LDI
+add_core = LDI
 culture = kimgao
 religion = sunni
 capital = "Lindi"
