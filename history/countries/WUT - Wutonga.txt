@@ -8,7 +8,7 @@ capital = 8941
 
 1440.1.1 = {
 	monarch = {
-		name = "Xakamani"
+		name = "Gamba"
 		dynasty = "Wutonga"
 		adm = 3
 		dip = 3

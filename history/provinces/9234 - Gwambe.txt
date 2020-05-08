@@ -9,8 +9,9 @@ hre = no
 base_tax = 2
 base_production = 2
 base_manpower = 2
-owner = GWB
-controller = GWB
+owner = WUT
+controller = WUT
+add_core = WUT
 add_core = GWB
 
 discovered_by = east_african
