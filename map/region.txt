@@ -663,6 +663,7 @@ east_africa_region = {
 		buhera_area
 		shangwe_area
 		naletale_area
+		vuxwa_area
 		northern_maputo_area
 		southern_maputo_area
 		gitonga_area
