@@ -8,10 +8,10 @@ capital = "Hanganhe"
 religion = mhondoro
 is_city = yes
 base_manpower = 2
-trade_goods = copper
+trade_goods = gems
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 5
+base_production = 5
 discovered_by = east_african
 discovered_by = central_african
 

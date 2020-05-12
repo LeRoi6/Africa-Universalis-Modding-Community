@@ -2,7 +2,7 @@
 #8957 - Inhaguea
 
 culture = teve
-religion = sunni
+religion = mhondoro
 capital = "Inhaguea"
 trade_goods = unknown
 hre = no

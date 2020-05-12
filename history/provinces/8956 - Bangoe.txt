@@ -2,7 +2,7 @@
 #8956 - Bangoe
 
 culture = teve
-religion = sunni
+religion = mhondoro
 capital = "Bangoe"
 trade_goods = unknown
 hre = no

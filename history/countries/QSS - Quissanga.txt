@@ -1,8 +1,8 @@
 government = tribal
 add_government_reform = tribal_despotism
 government_rank = 1
-primary_culture = medo
-religion = pwiyamwene
+primary_culture = mwani
+religion = sunni
 technology_group = central_african
 unit_type = sub_saharan
 capital = 8971
