@@ -1,7 +1,7 @@
 #Created by AUMC
 #8957 - Inhaguea
 
-culture = teve
+culture = hatonga
 religion = mhondoro
 capital = "Inhaguea"
 trade_goods = unknown
