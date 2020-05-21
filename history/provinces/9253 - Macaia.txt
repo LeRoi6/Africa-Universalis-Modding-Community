@@ -1,0 +1,25 @@
+#Created by AUMC
+#9253 - Macaia
+
+owner = TEV
+controller = TEV
+add_core = TEV
+culture = teve
+religion = mhondoro
+capital = "Tica"
+is_city = yes
+base_manpower = 2
+trade_goods = ivory
+hre = no
+base_tax = 3
+base_production = 2
+discovered_by = east_african
+discovered_by = central_african
+
+
+1513.1.1 = { discovered_by = POR } #Travels of Antonio Fernandes in hinterland of Sofala
+1690.1.1 = {
+	owner = RZW
+	controller = RZW
+	add_core = RZW
+}

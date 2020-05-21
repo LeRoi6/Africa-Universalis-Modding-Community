@@ -3,7 +3,7 @@
 
 culture = hatonga
 religion = mhondoro
-capital = "Cheringoma"
+capital = "Gobira"
 trade_goods = ivory
 hre = no
 base_tax = 3

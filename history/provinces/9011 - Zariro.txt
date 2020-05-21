@@ -1,0 +1,25 @@
+#Created by AUMC
+#9011 - Zariro
+
+owner = MDD
+controller = MDD
+add_core = MDD
+culture = madanda
+religion = mhondoro
+capital = "Pambango"
+is_city = yes
+base_manpower = 2 
+trade_goods = ivory
+hre = no
+base_tax = 2  
+base_production = 2 
+discovered_by = east_african
+discovered_by = central_african
+
+
+1513.1.1 = { discovered_by = POR } #Travels of Antonio Fernandes in hinterland of Sofala
+1690.1.1 = {
+	owner = RZW
+	controller = RZW
+	add_core = RZW
+}

@@ -1,0 +1,17 @@
+#Created by AUMC
+#9229 - Massangene
+
+culture = madanda
+religion = mhondoro
+capital = "Massangene"
+trade_goods = livestock
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+owner = MDD
+controller = MDD
+add_core = MDD
+
+discovered_by = east_african
+discovered_by = central_african

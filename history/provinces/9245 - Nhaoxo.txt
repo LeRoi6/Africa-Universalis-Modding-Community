@@ -1,0 +1,17 @@
+#Created by AUMC
+#9245 - Nhaoxo
+
+culture = teve
+religion = mhondoro
+capital = "Nhaoxo"
+trade_goods = livestock
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+owner = TEV
+controller = TEV
+add_core = TEV
+
+discovered_by = east_african
+discovered_by = central_african

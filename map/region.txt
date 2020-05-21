@@ -658,6 +658,8 @@ east_africa_region = {
 		wayao_area   
 		tete_area
 		manyika_area
+		barue_area
+		teve_area
 		madanda_area
 		dande_area
 		buhera_area

@@ -8946,7 +8946,7 @@ province;red;green;blue;x;x
 8945;255;255;86;Inharrime;x
 8946;193;117;196;Nhachangue;x
 8947;242;92;0;Chibuene;x
-8948;101;229;32;Dundo;x
+8948;101;229;32;Bazaruto;x
 8949;201;0;56;Matique;x
 8950;239;239;81;Mambone;x
 8951;219;115;123;Wasika;x
@@ -9002,14 +9002,14 @@ province;red;green;blue;x;x
 9001;159;255;255;Kiduruni;x
 9002;0;210;221;Omwe;x
 9003;113;233;242;Manda;x
-9004;131;44;232;Tongue;x
+9004;131;44;232;Inhavarre;x
 9005;146;198;77;Manyikeni;x
 9006;63;81;131;Mulambe;x
 9007;97;72;66;Chishinzi;x
 9008;210;214;224;Muchieli;x
 9009;213;229;73;Chupanga;x
 9010;0;228;155;Sangue;x
-9011;0;224;0;Massengue;x
+9011;0;224;0;Zariro;x
 9012;255;115;68;Chirimugwenzi;x
 9013;255;212;68;Machaze;x
 9014;0;63;155;Gogoi;x
@@ -9017,11 +9017,11 @@ province;red;green;blue;x;x
 9016;150;88;69;Vumba;x
 9017;100;232;88;Bandire;x
 9018;129;65;142;Ussema;x
-9019;234;116;30;Massekase;x
+9019;234;116;30;Nyanga;x
 9020;234;61;30;Gorongosa;x
 9021;150;255;237;Niamara;x
 9022;234;215;30;Missongue;x
-9023;145;63;255;Matemba;x
+9023;145;63;255;Mbombona;x
 9024;240;249;227;Massangano;x
 9025;128;247;162;Chemba;x
 9026;153;24;10;Caya;x
@@ -9115,7 +9115,7 @@ province;red;green;blue;x;x
 9114;130;16;37;Tere;x
 9115;175;0;41;Macanca;x
 9116;214;12;2;Luanze;x
-9117;231;60;7;Chipadze;x
+9117;231;60;7;Chitsotso;x
 9118;201;58;36;Chitomborwizi;x
 9119;200;18;25;Rimuka;x
 9120;255;18;38;Njanja;x
@@ -9227,7 +9227,7 @@ province;red;green;blue;x;x
 9226;123;114;193;Zitundo;x
 9227;70;68;191;Matutuine;x
 9228;42;84;51;Magaia;x
-9229;196;160;115;Inyaveni;x
+9229;196;160;115;Massangene;x
 9230;86;154;196;Nhaicuti;x
 9231;163;97;221;Svikundo;x
 9232;127;161;255;Chiquita;x
@@ -9242,4 +9242,16 @@ province;red;green;blue;x;x
 9241;255;88;28;Chisanga;x
 9242;153;40;0;Shawasha;x
 9243;221;50;28;Musimbira;x
+9244;198;11;27;Selangombie;x
+9245;155;52;26;Nhaoxo;x
+9246;255;50;32;Gwindingwi;x
+9247;154;249;80;Vuhoca;x
+9248;229;201;87;Murrongue;x
+9249;0;150;72;Maringa;x
+9250;175;34;21;Zamvi;x
+9251;255;38;66;Mugova;x
+9252;234;80;54;Guenje;x
+9253;196;25;42;Macaia;x
+9254;228;25;19;Doverove;x
+9255;156;162;243;Tambara;x
 
