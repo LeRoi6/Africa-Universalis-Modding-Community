@@ -3,15 +3,15 @@
 
 culture = hatonga
 religion = mhondoro
-capital = "Inhaguea"
-trade_goods = unknown
+capital = "Teve-Teve"
+trade_goods = grain
 hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
-native_size = 40
-native_ferocity = 20
-native_hostileness = 10 
+owner = TEV
+controller = TEV
+add_core = TEV
 
 discovered_by = east_african
 discovered_by = central_african

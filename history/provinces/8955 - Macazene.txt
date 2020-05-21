@@ -1,15 +1,15 @@
 #Created by AUMC
 #8955 - Macazene
 
-owner = SFA
-controller = SFA
-add_core = SFA
+owner = TEV
+controller = TEV
+add_core = TEV
 culture = teve 
-religion = sunni
+religion = mhondoro
 capital = "Macazene"
 is_city = yes
 base_manpower = 2
-trade_goods = fish
+trade_goods = bt_trade_good_fruit
 hre = no
 base_tax = 3 
 base_production = 3

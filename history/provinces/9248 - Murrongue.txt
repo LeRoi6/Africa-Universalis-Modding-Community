@@ -3,15 +3,15 @@
 
 culture = gitonga
 religion = mhondoro
-capital = "Chambechambe"
+capital = "Murrongue"
 trade_goods = livestock
 hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
-owner = MYI
-controller = MYI
-add_core = MYI
+owner = PND
+controller = PND
+add_core = PND
 
 discovered_by = east_african
 discovered_by = central_african
