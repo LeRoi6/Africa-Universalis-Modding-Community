@@ -44,3 +44,42 @@ ZIM_ideas = {
 		diplomatic_reputation = 1
 	}
 }
+
+MNK_ideas = {
+	start = {
+		tate_maintenance_modifier = -0.15
+		global_manpower_modifier = 0.1
+	}
+
+	bonus = {
+		merchants = 1
+	}
+	
+	trigger = {
+		tag = MNK
+	}
+	free = yes
+	
+	mnk_abundance_of_metals = {
+		production_efficiency = 0.1
+	}
+	mnk_mazari = {
+		global_unrest = -1
+		female_advisor_chance = 0.25
+	}
+	mnk_mountain_valleys = {
+		development_cost = -0.1
+	}
+	mnk_kudya_mbeu = {
+		stability_cost_modifier = -0.1
+	}
+	mnk_develop_the_markets = {
+		build_cost = -0.1
+	}
+	mnk_makasva = {
+		tolerance_own = 2
+	}
+	mnk_seek_european_support = {
+		mil_tech_cost_modifier = -0.1
+	}
+}

@@ -8,7 +8,6 @@ TDE = "countries/Tande.txt"
 MNK = "countries/Manyika.txt"
 TEV = "countries/Quiteve.txt"
 BUT = "countries/Khami.txt"
-RZW = "countries/Butua.txt"
 BWE = "countries/Barue.txt"
 #Malawi
 NSE = "countries/Nsenga.txt"
