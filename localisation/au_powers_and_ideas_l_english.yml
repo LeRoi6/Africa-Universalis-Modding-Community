@@ -33,11 +33,22 @@
  mnk_makasva_desc:0 "A common practice among the Shona peoples is the rainmaking ceremony. To us, the Mhondoro is responsible for bringing us rain. Makasva is one of our names for the ceremony, and the ceremony involves music, singing, and dancing. wHile this ceremony is common, wour peoples have done it differently by having the women try to secude the Mhondoro in order to bring the rain. While we may have unique aspects, the rainmaking ceremony is something that is understood by all the Shona peoples."
  mnk_seek_european_support:0 "Seek European Support"
  mnk_seek_european_support_desc:0 "We have been noticing the new foreigners encroaching on our lands, looking for our gold. However, they offer many things to us. If we promise them our gold and some trading rights, we can protect ourselves from our stronger neighbors and learn new technologies while also making a profit. Hopefully this keeps the Europeans at bay, although they might be still eyeing our territory even after this."
- 
- 
-
-
-
-
+ TEV_ideas:0 "Quiteve Ideas"
+ TEV_ideas_start:0 "Quiteve Traditions"
+ TEV_ideas_bonus:0 "Quiteve Ambition"
+ tev_encourage_swahili_trade:0 "Encourage Swahili Trade"
+ tev_encourage_swahili_trade_desc:0 "Quiteve lies between the high mountains of Manyika, and the Swahili Coast. For many years Swahili merchants have probed the interior, trading for gold and other resources. It's time that we tapped into this large Swahili network. Trading in this network can provide us with new contacts and can transport our goods into we have never even heard about."
+ tev_resist_against_mutapa:0 "Resist against Mutapa"
+ tev_resist_against_mutapa_desc:0 "During the era of Changamire, the Mutapa state would conquer Quiteve and installed a son of the Mwenemutapa. A similar fate would happne to our neighbors as well. As an independent state an encroachemnt on our state is something we can not allow. We must fight Mutapa to show them who they are dealing with. 
+ tev_ruler_owned_fields:0 "Ruler-Owned Fields"
+ tev_ruler_owned_fields_desc:0 In every town of our state, our ruler owns a field. These fields are worked by the population, who have to give 30 days of labor. This system of labor for the ruler prevents any sort of massive autonomy that these people could amass, alongside the other benefits a worked field provides. 
+ tev_celebration_of_the_teve_mudzimu:0 "Celebration of the Teve Mudzimu"
+ tev_celebration_of_the_teve_vadzimu_desc:0 "Every year we gather our governors to a mountain where our shrine of the Mhondoro resides. Here, we celebrate the mudzimu, who connects us to the Mhondoro.
+ tev_ban_the_ndoro:0 "Ban the Ndoro"
+ tev_ban_the_ndoro_desc:0 "Mutapa is a state of both militaristic and religious influences. While we resist the armies of Mutapa, we still feel the religious custom of Mutapa. If we are to truly break free from Mutapa, this must end. A symbol of the Mutapa Mhondoro and the royal familiy, the ndoro shell, must be banned. Execute anybody wearing them. Removing this symbol from our lands will go a long way to fully break free from Mutapa."
+ tev_king_as_a_medium:0 "King as a Medium"
+ tev_king_as_a_medium_desc:0 "In Teve society, the king acts as a medium for the Mhondoro. While normal mediums are present in our country, our king acts as a beacon for all. This promotes the absolute power for the monarch, as well as help promote our religion."
+ tev_portuguese_deserters:0 "Portuguese Deserters"
+ tev_portuguese_deserters_desc:0 "Neighboring the Portuguese is both dangerous and an opportunity. While we must defend ourselves from them, we've been receiving deserters that bring with a new weapon that we've never seen. Although the sound it makes is quite concerning, using these deserters can help us against any encroachment from the foreigners."
  
  

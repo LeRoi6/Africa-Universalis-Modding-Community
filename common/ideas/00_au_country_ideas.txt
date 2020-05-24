@@ -47,7 +47,7 @@ ZIM_ideas = {
 
 MNK_ideas = {
 	start = {
-		tate_maintenance_modifier = -0.15
+		state_maintenance_modifier = -0.15
 		global_manpower_modifier = 0.1
 	}
 
@@ -81,5 +81,44 @@ MNK_ideas = {
 	}
 	mnk_seek_european_support = {
 		mil_tech_cost_modifier = -0.1
+	}
+}
+
+TEV_ideas = {
+	start = {
+		global_institution_spread = 0.1
+		war_exhaustion_cost = -0.1
+	}
+
+	bonus = {
+		dip_tech_cost_modifier = -0.1
+	}
+	
+	trigger = {
+		tag = TEV
+	}
+	free = yes
+	
+	tev_encourage_swahili_trade = {
+		global_trade_power = 0.1
+	}
+	tev_resist_against_mutapa = {
+		discipline = 0.05
+	}
+	tev_ruler_owned_fields	= {
+		global_autonomy = -0.05
+	}
+	tev_celebration_of_the_teve_mudzimu = {
+		global_tax_modifier = 0.1
+	}
+	tev_ban_the_ndoro = {
+		prestige = 1
+	}
+	tev_king_as_a_medium = {
+		global_missionary_strength = 0.02
+		yearly_absolutism = 0.1
+	}
+	tev_portuguese_deserters = {
+		fire_damage_received = -0.1
 	}
 }
