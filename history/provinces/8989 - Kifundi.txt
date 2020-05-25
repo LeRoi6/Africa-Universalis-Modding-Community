@@ -1,9 +1,9 @@
 #Created by AUMC
 #8989 - Kifundi
 
-owner = MBA
-controller = MBA
-add_core = MBA
+owner = WFZ
+controller = WFZ
+add_core = WFZ
 culture = kimrima
 religion = sunni
 capital = "Kifundi"

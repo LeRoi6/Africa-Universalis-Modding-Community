@@ -1,9 +1,6 @@
 #Created by AUMC
 #8994 - Ozi
 
-owner = PTE
-controller = PTE
-add_core = PTE
 culture = kiamu
 religion = sunni
 capital = "Ozi"
@@ -13,6 +10,9 @@ trade_goods = ivory
 hre = no
 base_tax = 3
 base_production = 3
+native_size = 50
+native_ferocity = 3
+native_hostileness = 3
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim

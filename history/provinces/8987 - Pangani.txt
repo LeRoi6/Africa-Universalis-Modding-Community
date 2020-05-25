@@ -1,9 +1,9 @@
 #Created by AUMC
 #8987 - Pangani
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = WFZ
+controller = WFZ
+add_core = WFZ
 culture = kimrima
 religion = sunni
 capital = "Pangani"

@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = tribal_despotism
+government_rank = 1
+primary_culture = zaramo
+religion = sunni
+technology_group = east_african
+unit_type = sub_saharan
+capital = 9189
+religious_school = shafii_school
+
+1444.1.1 = {		#Fictional
+	monarch = {
+		name= "Munganaye"
+		dynasty = "Pazi"
+		dip = 3
+		mil = 3
+		adm = 3
+	}
+}

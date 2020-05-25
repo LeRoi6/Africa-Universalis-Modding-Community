@@ -1,0 +1,9 @@
+government = tribal
+add_government_reform = tribal_despotism
+government_rank = 1
+primary_culture = rufiji
+religion = sunni
+technology_group = east_african
+unit_type = sub_saharan
+capital = 4058
+religious_school = shafii_school

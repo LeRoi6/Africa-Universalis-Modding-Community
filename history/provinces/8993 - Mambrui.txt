@@ -1,9 +1,9 @@
 #Created by AUMC
 #8993 - Mambrui
 
-owner = MLI
-controller = MLI
-add_core = MLI
+owner = MBR
+controller = MBR
+add_core = MBR
 culture = kiamu
 religion = sunni
 capital = "Mambrui"

@@ -1,8 +1,8 @@
 #1201 - Zanzibar
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = ZZB
+controller = ZZB
+add_core = ZZB
 culture = kiunguja
 religion = ibadi
 capital = "Zanzibar"

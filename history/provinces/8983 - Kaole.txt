@@ -1,9 +1,9 @@
 #Created by AUMC
 #8983 - Kaole
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = KLA
+controller = KLA
+add_core = KLA
 culture = zaramo
 religion = sunni
 capital = "Kaole"

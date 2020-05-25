@@ -1,9 +1,9 @@
 #Created by AUMC
 #8999 - Siyu
 
-owner = PTE
-controller = PTE
-add_core = PTE
+owner = SYU
+controller = SYU
+add_core = SYU
 culture = kiamu
 religion = sunni
 capital = "Siyu"

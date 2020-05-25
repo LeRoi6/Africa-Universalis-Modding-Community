@@ -1,9 +1,9 @@
 #Created by AUMC
 #8998 - Mpembeno
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = RFJ
+controller = RFJ
+add_core = RFJ
 culture = rufiji
 religion = sunni
 capital = "Mpembeno"

@@ -1,9 +1,9 @@
 #Created by AUMC
 #8986 - Saadani
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = SAD
+controller = SAD
+add_core = SAD
 culture = kimrima
 religion = sunni
 capital = "Saadani"

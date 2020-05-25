@@ -1,9 +1,9 @@
 #Created by AUMC
 #8991 - Mnarani
 
-owner = MBA
-controller = MBA
-add_core = MBA
+owner = MNR
+controller = MNR
+add_core = MNR
 culture = kimvita
 religion = sunni
 capital = "Mnarani"

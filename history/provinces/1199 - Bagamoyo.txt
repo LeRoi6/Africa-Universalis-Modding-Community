@@ -1,8 +1,5 @@
 #1199 - Bagamoyo
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
 culture = zaramo
 religion = shamanism #Fetishism
 capital = "Bagamayo"
@@ -12,6 +9,9 @@ trade_goods = salt
 hre = no
 base_tax = 2  
 base_production = 2 
+native_size = 30
+native_ferocity = 4
+native_hostileness = 4
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim

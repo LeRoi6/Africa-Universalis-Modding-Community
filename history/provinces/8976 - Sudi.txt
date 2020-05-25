@@ -1,9 +1,9 @@
 #Created by AUMC
 #8976 - Sudi
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = SUD
+controller = SUD
+add_core = SUD
 culture = makwe
 religion = sunni
 capital = "Sudi"

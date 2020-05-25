@@ -1,9 +1,9 @@
 #Created by AUMC
 #8992 - Gedi
 
-owner = MLI
-controller = MLI
-add_core = MLI
+owner = GDI
+controller = GDI
+add_core = GDI
 culture = kimvita
 religion = sunni
 capital = "Gedi"

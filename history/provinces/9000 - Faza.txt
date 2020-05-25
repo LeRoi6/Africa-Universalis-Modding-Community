@@ -1,9 +1,9 @@
 #Created by AUMC
 #9000 - Faza
 
-owner = PTE
-controller = PTE
-add_core = PTE
+owner = FAZ
+controller = FAZ
+add_core = FAZ
 culture = kiamu
 religion = sunni
 capital = "Faza"
