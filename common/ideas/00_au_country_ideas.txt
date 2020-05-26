@@ -122,3 +122,41 @@ TEV_ideas = {
 		fire_damage_received = -0.1
 	}
 }
+
+BWE_ideas = {
+	start = {
+		land_maintenance_modifier = -0.05
+		war_exhaustion_cost = -0.1
+	}
+
+	bonus = {
+		local_defensiveness = 0.1
+	}
+	
+	trigger = {
+		tag = BWE
+	}
+	free = yes
+	
+	bwe_mukomowasha = {
+		num_accepted_cultures = 1
+	}
+	bwe_gold_middleman = {
+		trade_steering = 0.1
+	}
+	bwe_the_fire_of_quarra_quate = {
+		fire_damage = 0.1
+	}
+	bwe_baruese_resistance = {
+		hostile_attrition = 1
+	}
+	bwe_grant_the_amambo_privileges = {
+		vassal_income = 0.25
+	}
+	bwe_madzi_manga = {
+		tolerance_heathen = 2
+	}
+	bwe_donhodzo = {
+		diplomatic_reputation = 2
+	}
+}
