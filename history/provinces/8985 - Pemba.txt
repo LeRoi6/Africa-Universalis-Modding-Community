@@ -1,12 +1,12 @@
 #Created by AUMC
 #8985 - Pemba
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = PMB
+controller = PMB
+add_core = PMB
 culture = kiunguja
 religion = sunni
-capital = "Pemba"
+capital = "Wete"
 is_city = yes
 base_manpower = 2
 trade_goods = fish

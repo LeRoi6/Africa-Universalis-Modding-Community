@@ -1,9 +1,9 @@
 #Created by AUMC
 #8990 - Mtwapa
 
-owner = MBA
-controller = MBA
-add_core = MBA
+owner = MTW
+controller = MTW
+add_core = MTW
 culture = kimvita
 religion = sunni
 capital = "Mtwapa"

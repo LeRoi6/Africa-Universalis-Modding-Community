@@ -1,0 +1,14 @@
+
+owner = ZRM
+controller = ZRM
+add_core = ZRM
+culture = zaramo
+religion = shamanism #Fetishism
+trade_goods = cloth
+hre = no
+base_tax = 2  
+base_production = 2 
+base_manpower = 2 
+discovered_by = central_african
+discovered_by = east_african
+capital = "Zigua"

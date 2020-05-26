@@ -1,9 +1,9 @@
 #Created by AUMC
 #8988 - Vumba Kuu
 
-owner = MBA
-controller = MBA
-add_core = MBA
+owner = VUK
+controller = VUK
+add_core = VUK
 culture = kimrima
 religion = sunni
 capital = "Vumba Kuu"

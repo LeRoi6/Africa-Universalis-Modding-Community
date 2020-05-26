@@ -1,8 +1,8 @@
 #1200 - Tanga
 
-owner = MBA
-controller = MBA
-add_core = MBA
+owner = WFZ
+controller = WFZ
+add_core = WFZ
 culture = kimrima
 religion = shamanism #Fetishism
 capital = "Tanga"

@@ -1,10 +1,10 @@
 #1197 - Mzizima
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = MZZ
+controller = MZZ
+add_core = MZZ
 culture = zaramo
-religion = shamanism #Fetishism
+religion = sunni
 capital = "Mzizima"
 is_city = yes
 base_manpower = 2 

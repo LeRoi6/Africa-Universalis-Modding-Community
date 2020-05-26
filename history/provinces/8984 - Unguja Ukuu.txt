@@ -1,8 +1,7 @@
-#1201 - Zanzibar
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
+owner = UJK
+controller = UJK
+add_core = UJK
 culture = kiunguja
 religion = ibadi
 capital = "Unguja Ukuu"
