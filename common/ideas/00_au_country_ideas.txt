@@ -160,3 +160,41 @@ BWE_ideas = {
 		diplomatic_reputation = 2
 	}
 }
+
+BUT_ideas = {
+	start = {
+		envoy_travel_time = -0.2
+		prestige_decay = -0.01
+	}
+
+	bonus = {
+		ae_impact = -0.1
+	}
+	
+	trigger = {
+		tag = BUT
+	}
+	free = yes
+	
+	but_the_khami_sites = {
+		global_trade_power = 0.1
+	}
+	but_torwa_dynasty = {
+		land_morale = 0.1
+	}
+	but_promote_self_sufficiency = {
+		max_states = 3
+	}
+	but_mwari_shrines = {
+		missionaries = 1
+	}
+	but_a_new_zimbabwe = {
+		trade_goods_size_modifier = 0.1	
+	}
+	but_oxen_of_butua = {
+		caravan_power = 0.2
+	}
+	but_expand_the_khami_sites = {
+			global_colonial_growth = 20
+	}
+}
