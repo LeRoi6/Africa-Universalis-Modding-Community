@@ -1610,7 +1610,7 @@ zanzibar_area = { #8
 }
 
 central_swahili_coast_area = { #4
-	1196 1197 8979 8980 8981 8982
+	1196 1197 8979 8980 8981 8982 9207
 }
 
 northern_swahili_coast_area = { #5

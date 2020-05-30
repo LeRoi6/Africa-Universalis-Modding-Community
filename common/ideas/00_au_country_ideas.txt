@@ -105,7 +105,7 @@ TEV_ideas = {
 	tev_resist_against_mutapa = {
 		discipline = 0.05
 	}
-	tev_ruler_owned_fields	= {
+	tev_ruler_owned_fields = {
 		global_autonomy = -0.05
 	}
 	tev_celebration_of_the_teve_mudzimu = {
@@ -161,10 +161,47 @@ BWE_ideas = {
 	}
 }
 
+BUT_ideas = {
+	start = {
+		envoy_travel_time = -0.2
+		prestige_decay = -0.01
+	}
+
+	bonus = {
+		ae_impact = -0.1
+	}
+	
+	trigger = {
+		tag = BUT
+	}
+	free = yes
+	
+	but_the_khami_sites = {
+		global_trade_power = 0.1
+	}
+	but_torwa_dynasty = {
+		land_morale = 0.1
+	}
+	but_promote_self_sufficiency = {
+		max_states = 3
+	}
+	but_mwari_shrines = {
+		missionaries = 1
+	}
+	but_a_new_zimbabwe = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	but_oxen_of_butua = {
+		caravan_power = 0.2
+	}
+	but_expand_the_khami_sites = {
+		global_colonial_growth = 20
+	}
+}
 
 LZW_ideas = {
 	start = {
-		infantry_cost = 0.1
+		infantry_cost = -0.1
 		spy_offence = 0.2
 	}
 
@@ -178,7 +215,7 @@ LZW_ideas = {
 	free = yes
 	
 	lzw_rise_of_changamire = {
-		leader_fire = 1
+		leader_land_fire = 1
 	}
 	lzw_heirs_of_zimbabwe = {
 		trade_range_modifier = 0.2

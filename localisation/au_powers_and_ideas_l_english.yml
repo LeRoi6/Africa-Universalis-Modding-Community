@@ -19,7 +19,7 @@
  MNK_ideas:0 "Manyikan Ideas"
  MNK_ideas_start:0 "Manyikan Traditions"
  MNK_ideas_bonus:0 "Manyikan Ambition"
- mnk_abundance_of_metals:0 "Abundance of Metals
+ mnk_abundance_of_metals:0 "Abundance of Metals"
  mnk_abundance_of_metals_desc:0 "Manyika is revered for its large amount of metals. Not only do we have gold, but we also host mines of iron and gold. Due to our economic position that it has brought us, we should increase our production in these areas to extract more wealth from our lands."
  mnk_mazari:0 "Mazari"
  mnk_mazari_desc:0 "In our society, females hold a certain level of power compared to the men. Female members of our dynasty are appointed to rule over our 'dunhus' (wards) as 'Washe' after a meeting with our Mhondoro. The benefit of this is that the these wards are unable to develop power, as they are controlled by our dynasty. These brethen can also provide a great role in our court, so allowing the Mazari to both rule and help us is very beneficial."
@@ -39,11 +39,11 @@
  tev_encourage_swahili_trade:0 "Encourage Swahili Trade"
  tev_encourage_swahili_trade_desc:0 "Quiteve lies between the high mountains of Manyika, and the Swahili Coast. For many years Swahili merchants have probed the interior, trading for gold and other resources. It's time that we tapped into this large Swahili network. Trading in this network can provide us with new contacts and can transport our goods into we have never even heard about."
  tev_resist_against_mutapa:0 "Resist against Mutapa"
- tev_resist_against_mutapa_desc:0 "During the era of Changamire, the Mutapa state would conquer Quiteve and installed a son of the Mwenemutapa. A similar fate would happne to our neighbors as well. As an independent state an encroachemnt on our state is something we can not allow. We must fight Mutapa to show them who they are dealing with. 
+ tev_resist_against_mutapa_desc:0 "During the era of Changamire, the Mutapa state would conquer Quiteve and installed a son of the Mwenemutapa. A similar fate would happne to our neighbors as well. As an independent state an encroachemnt on our state is something we can not allow. We must fight Mutapa to show them who they are dealing with." 
  tev_ruler_owned_fields:0 "Ruler-Owned Fields"
- tev_ruler_owned_fields_desc:0 In every town of our state, our ruler owns a field. These fields are worked by the population, who have to give 30 days of labor. This system of labor for the ruler prevents any sort of massive autonomy that these people could amass, alongside the other benefits a worked field provides. 
+ tev_ruler_owned_fields_desc:0 "In every town of our state, our ruler owns a field. These fields are worked by the population, who have to give 30 days of labor. This system of labor for the ruler prevents any sort of massive autonomy that these people could amass, alongside the other benefits a worked field provides." 
  tev_celebration_of_the_teve_mudzimu:0 "Celebration of the Teve Mudzimu"
- tev_celebration_of_the_teve_vadzimu_desc:0 "Every year we gather our governors to a mountain where our shrine of the Mhondoro resides. Here, we celebrate the mudzimu, who connects us to the Mhondoro.
+ tev_celebration_of_the_teve_mudzimu_desc:0 "Every year we gather our governors to a mountain where our shrine of the Mhondoro resides. Here, we celebrate the mudzimu, who connects us to the Mhondoro. Honoring our ancestors is a major part of our people and celebrating the ones who connect us to them is a great way of showing our love for our Mhondoro."
  tev_ban_the_ndoro:0 "Ban the Ndoro"
  tev_ban_the_ndoro_desc:0 "Mutapa is a state of both militaristic and religious influences. While we resist the armies of Mutapa, we still feel the religious custom of Mutapa. If we are to truly break free from Mutapa, this must end. A symbol of the Mutapa Mhondoro and the royal familiy, the ndoro shell, must be banned. Execute anybody wearing them. Removing this symbol from our lands will go a long way to fully break free from Mutapa."
  tev_king_as_a_medium:0 "King as a Medium"
@@ -81,7 +81,24 @@
  but_a_new_zimbabwe:0 "A New Zimbabwe"
  but_a_new_zimbabwe_desc:0 "It is a common misconception that Khami was a successor to Great Zimbabwe. That is most incorrect: Khami is its own entity. Now that Great Zimbabwe has fallen, it's time that we become the greatest Zimbabwe. While Great Zimbabwe struggled with bringing in the gold, we own our own goldfields, and it's time we become the greatest Zimbabwe, independent from the old."
  but_oxen_of_butua:0 "Oxen of Butua"
- but_oxen_of_butua:_desc:0 "While Butua is known for many things, our oxen, surprisingly, is one of our most popular goods. While gold and ivory are both popular in the trading business, we've been revered by merchants and foreigners for our cows, as they are of the highest quality. If our bovine commodities have such high demand, then we should let our merchants pursue beef-propanganda across the land, and promote our superior taurine trade."  
+ but_oxen_of_butua_desc:0 "While Butua is known for many things, our oxen, surprisingly, is one of our most popular goods. While gold and ivory are both popular in the trading business, we've been revered by merchants and foreigners for our cows, as they are of the highest quality. If our bovine commodities have such high demand, then we should let our merchants pursue beef-propanganda across the land, and promote our superior taurine trade."  
  but_expand_the_khami_sites:0 "Expand the Khami Sites"
  but_expand_the_khami_sites_desc:0 "Our Khami Sites have proven to be great trading centers, among other things. While the Zimbabwe region is packed full of kingdoms, near us lies an open steppe waiting to be settled. The power of Zimbabwes can provide a new power base over our neighboring areas. We should send our people to build new sites, and let our Khami sites continue to dominate the land."
- 
+ LZW_ideas:0 "Lozvi Ideas"
+ LZW_ideas_start:0 "Lozvi Traditions"
+ LZW_ideas_bonus:0 "Lozvi Ambition"
+ lzw_rise_of_changamire:0 "Rise of Changamire"
+ lzw_rise_of_changamire_desc:0 "While his origins are unclear, Changamire was leader of profound skill. Rising in the ranks of Mutapa, Changamire became a domintant figure in the state. Eventually overthrowing and murdering the Mwene Mutapa, Changamire wouid rule over 4 years until the new Mutapa ruler killed him. During this time, he became the ruler of our state. After the revolt our kingdom broke free from Mutapa. While his dynasty lives on as our rulers, the rise of Changamire has changed the region forever."
+ lzw_heirs_of_zimbabwe:0 "Heirs of Zimbabwe"
+ lzw_heirs_of_zimbabwe_desc:0 "Lozvi is the name of the people living in the Great Zimbabwe area. With Mutapa migrating north, our people have become the heir to Great Zimbabwe. While the site has become irrelevant to regional trade and politics, we are still the keepers of the site, and we must honor its glory and continue its legacy in trade."
+ lzw_quash_the_mwenemutapa:0 "Quash the Mwenemutapa"
+ lzw_quash_the_mwenemutapa_desc:0 "Mutapa has always been a nuisance to us ever since our independence. Their mere existence is a danger to our state. While Changamire failed to control them, our successors should learn from his mistakes and finally bring the Mwene Mutapa to his knees. Whether they are subjugated or conquered, Mutapa should no longer hold dominance over the region anymore."
+ lzw_invade_the_plateau:0 "Invade the Plateau"
+ lzw_invade_the_plateau_desc:0 "Ever since Changamire helped Mutapa conquer and install a family ruler in Manyika, the eastern plateau has become a very good target for conquest. From gold-bearing Manyika to the wealth and power of Quiteve, we should take advantage over these states and turn the vassal swarm against Mutapa."
+ lzw_vito_tlhelo_xidodlo:0 "Vito Tlhelo Xidodlo"
+ lzw_vito_tlhelo_xidodlo_desc:0 "I vito ra Changameri wo sungula tlhelo xidlodlo xava Changameri lavan’wana."
+ lzw_shona_migrations:0 "Shona Migrations"
+ lzw_shona_migrations_desc:0 "Due to Changamire and other conflicts, the region has seen a lot of people migrate away to other parts of the area and some have even gone far away. With these movements bring new states, and as a growing power it should be our duty to keep these states under our thumb. Investing in controlling these new states should become a top priority for us in order to expand our control over the region.
+ lzw_a_rozvi_identity:0 "A Rozvi Identity"
+ lzw_a_rozvi_identity_desc:0 "The term Lozvi for our people has slowly become obsolete over the years. No longer a name for the people of Great Zimbabwe, our state has become evolved. Recently our people have become united the name 'Rozvi'. While it is considered an alternative naming of Lozvi, we have evolved in many ways. As such, adopting this new name will give us a new identity and a sense of freedom that we never had before."
+ 6
