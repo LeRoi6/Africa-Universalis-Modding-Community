@@ -161,40 +161,41 @@ BWE_ideas = {
 	}
 }
 
-BUT_ideas = {
+
+LZW_ideas = {
 	start = {
-		envoy_travel_time = -0.2
-		prestige_decay = -0.01
+		infantry_cost = 0.1
+		spy_offence = 0.2
 	}
 
 	bonus = {
-		ae_impact = -0.1
+		diplomats = 1
 	}
 	
 	trigger = {
-		tag = BUT
+		tag = LZW
 	}
 	free = yes
 	
-	but_the_khami_sites = {
-		global_trade_power = 0.1
+	lzw_rise_of_changamire = {
+		leader_fire = 1
 	}
-	but_torwa_dynasty = {
-		land_morale = 0.1
+	lzw_heirs_of_zimbabwe = {
+		trade_range_modifier = 0.2
 	}
-	but_promote_self_sufficiency = {
-		max_states = 3
+	lzw_quash_the_mwenemutapa = {
+		shock_damage = 0.1
 	}
-	but_mwari_shrines = {
-		missionaries = 1
+	lzw_invade_the_plateau = {
+		core_creation = -0.1
 	}
-	but_a_new_zimbabwe = {
-		trade_goods_size_modifier = 0.1	
+	lzw_vito_tlhelo_xidodlo = {
+		prestige_from_land = 0.5
 	}
-	but_oxen_of_butua = {
-		caravan_power = 0.2
+	lzw_shona_migrations = {
+		diplomatic_upkeep = 1
 	}
-	but_expand_the_khami_sites = {
-			global_colonial_growth = 20
+	lzw_a_rozvi_identity = {
+		infantry_power = 0.1
 	}
 }
