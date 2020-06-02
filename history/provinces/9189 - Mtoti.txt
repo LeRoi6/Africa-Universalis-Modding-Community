@@ -11,4 +11,4 @@ base_production = 2
 base_manpower = 2 
 discovered_by = central_african
 discovered_by = east_african
-capital = "Zigua"
+capital = "Msanga"

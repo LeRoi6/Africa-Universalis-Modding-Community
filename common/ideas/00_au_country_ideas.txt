@@ -236,3 +236,41 @@ LZW_ideas = {
 		infantry_power = 0.1
 	}
 }
+
+MDD_ideas = {
+	start = {
+		manpower_recovery_speed = 0.1
+		leader_land_manuever = 1
+	}
+
+	bonus = {
+		advisor_pool = 1
+	}
+	
+	trigger = {
+		tag = MDD
+	}
+	free = yes
+	
+	mdd_the_sofala_gold_trade = {
+		global_own_trade_power = 0.1
+	}
+	mdd_develop_the_save_valley = {
+		global_tax_modifier = 0.1
+	}
+	mdd_kupfava = {
+		improve_relation_modifier = 0.2
+	}
+	mdd_maporissa = {
+		free_dip_policy = 1
+	}
+	mdd_strength_in_numbers = {
+		land_forcelimit_modifier = 0.2
+	}
+	mdd_deny_internal_access = {
+		global_foreign_trade_power = 0.1
+	}
+	mdd_unite_the_dzinza = {
+		global_spy_defence = 0.2
+	}
+}
