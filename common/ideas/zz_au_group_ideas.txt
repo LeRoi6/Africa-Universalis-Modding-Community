@@ -22,7 +22,7 @@ zimbabwe_minor_ideas = {
 	carve_our_own_kingdoms = {
 		core_creation = -0.1
 	}
-	holders_of_the_sacred_site = {
+	holders_of_the_sacred_sites = {
 		legitimacy = 1
 	}
 	new_mhondoro = {
