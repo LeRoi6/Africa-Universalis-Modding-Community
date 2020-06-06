@@ -274,3 +274,41 @@ MDD_ideas = {
 		global_spy_defence = 0.2
 	}
 }
+
+CMA_ideas = {
+	start = {
+		improve_relation_modifier = 0.2
+		infantry_cost = 0.1
+	}
+
+	bonus = {
+		army_tradition = 1
+	}
+	
+	trigger = {
+		tag = CMA
+	}
+	free = yes
+	
+	cma_karuva_and_the_shrine_of_nhenhene = {
+		tolerance_own = 2
+	}
+	cma_muzukuru_rulers = {
+		stability_cost_modifier = -0.1
+	}
+	cma_rivalry_with_nyombwe = {
+		prestige_from_land = 0.5
+	}
+	cma_protect_our_myths = {
+		land_morale = 0.1
+	}
+	cma_blessings_of_the_rain = {
+		local_production_efficiency = 0.1
+	}
+	cma_the_mhondoros_of_tavara = {
+		local_unrest = -1
+	}
+	cma_protect_the_tavara  = {
+		ae_impact = -0.1
+	}
+}
