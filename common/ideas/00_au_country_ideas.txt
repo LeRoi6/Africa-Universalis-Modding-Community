@@ -334,7 +334,7 @@ TDE_ideas = {
 	tde_korekore_influences = {
 		years_of_nationalism = -5
 	}
-	tde_valapi = {
+	tde_vatapi = {
 		missionaries = 1
 	}
 	tde_repulse_mutapa = {
