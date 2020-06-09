@@ -303,12 +303,50 @@ CMA_ideas = {
 		land_morale = 0.1
 	}
 	cma_blessings_of_the_rain = {
-		local_production_efficiency = 0.1
+		production_efficiency = 0.1
 	}
 	cma_the_mhondoros_of_tavara = {
 		local_unrest = -1
 	}
 	cma_protect_the_tavara  = {
 		ae_impact = -0.1
+	}
+}
+
+TDE_ideas = {
+	start = {
+		loot_amount = 0.25
+		movement_speed = 0.1
+	}
+
+	bonus = {
+		siege_ability = 0.2  
+	}
+	
+	trigger = {
+		tag = TDE
+	}
+	free = yes
+	
+	tde_panapa_and_mugomo = {
+		idea_cost = -0.1
+	}
+	tde_korekore_influences = {
+		years_of_nationalism = -5
+	}
+	tde_valapi = {
+		missionaries = 1
+	}
+	tde_repulse_mutapa = {
+		shock_damage = 0.1
+	}
+	tde_mbudzirume = {
+		prestige_decay = -0.01
+	}
+	tde_nzou_samanyanga = {
+		local_unrest = -1
+	}
+	tde_conduct_guerilla_warfare  = {
+		local_hostile_attrition = 1
 	}
 }
