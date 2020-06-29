@@ -5,9 +5,6 @@ papal_missions_slot = {
 	potential = {
 		tag = PAP
 		NOT = { map_setup = map_setup_random }
-		NOT = {
-			has_dlc = "Emperor"
-		}
 	}
 	has_country_shield = yes
 
@@ -61,9 +58,9 @@ papal_missions_slot = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-				provinces=conquer_ferrara_provinces
-				owner_type=country_or_non_sovereign_subject_holds
+				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
+				PROVINCES=conquer_ferrara_provinces
+				OWNER_TYPE=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -86,9 +83,6 @@ papal_missions_slot_2 = {
 	potential = {
 		tag = PAP
 		NOT = { map_setup = map_setup_random }
-		NOT = {
-			has_dlc = "Emperor"
-		}
 	}
 	has_country_shield = yes
 	

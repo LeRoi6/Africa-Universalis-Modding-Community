@@ -1,14 +1,15 @@
 #1201 - Zanzibar
 
-owner = ZAN
-controller = ZAN
-add_core = ZAN
-culture = swahili
+owner = ZZB
+controller = ZZB
+add_core = ZZB
+culture = kiunguja
 religion = ibadi
 capital = "Zanzibar"
 is_city = yes
 base_manpower = 2 
 trade_goods = slaves
+estate = estate_burghers
 hre = no
 base_tax = 4  
 base_production = 4

@@ -4,14 +4,15 @@
 
 owner = BOH
 controller = BOH
-capital = "Hradište"
-culture = slovak
-religion = hussite
-trade_goods = wine
+capital = "Zlín"
+culture = czech
+religion = catholic
+trade_goods = grain 
 hre = yes
-base_tax = 2 
-base_production = 1 
-base_manpower = 1 
+base_tax = 4 
+base_production = 4 
+base_manpower = 2 
+estate = estate_burghers
 is_city = yes
 add_core = BOH
 add_core = MRV

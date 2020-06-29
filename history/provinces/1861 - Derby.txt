@@ -1,6 +1,6 @@
 #1861 - Derby
 #Region - Britain
-#Area - Midlands
+#Area - Mercia
 
 latent_trade_goods = {
 	coal
@@ -12,9 +12,9 @@ culture = english
 religion = catholic
 hre = no
 base_tax = 3 
-base_production = 2
+base_production = 3 
+trade_goods = iron
 base_manpower = 2 
-trade_goods = iron #lots of iron and coal mines. also a lot of limestone and other rocks so a stone good works here. 
 capital = "Derby"
 is_city = yes
 add_core = ENG

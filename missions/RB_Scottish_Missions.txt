@@ -1,7 +1,3 @@
-#Updated by C1CK 28-01-2020
-#Was Mostly up-to-date except for unaccounted Ireland Region, new Northumbria area, and Orkney seemingly forgotten about. Also as usual Jan Mayen was needed for missions that only want the Faroes and Iceland
-#Has no changes besides updating claims for BT
-
 sco_rb_adm_missions = {
 	slot = 1
 	generic = no
@@ -40,6 +36,7 @@ sco_rb_adm_missions = {
 			}
 		}
 	}
+	
 	sco_bank = {
 		icon = mission_rb_the_bank_of_scotland
 		required_missions = { sco_highlands_mission }
@@ -160,7 +157,7 @@ sco_rb_conquest_missions = {
 	}
 	has_country_shield = yes
 	
-	sco_auld_alliance = { #Updated by C1CK
+	sco_auld_alliance = {
 		icon = mission_alliances
 		required_missions = {  }
 		trigger = {
@@ -197,7 +194,7 @@ sco_rb_conquest_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			1978 = { #Shetlands
+			1978 = {
 				if = {
 					limit = {
 						NOT = {
@@ -208,25 +205,7 @@ sco_rb_conquest_missions = {
 					add_permanent_claim = ROOT
 				}
 			}
-			369 = { #Orkney, added since SCO do not start owning this -C1CK
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			#scottish_marches_area = { #Cut since this is now entirely in SCO -C1CK
-			#	limit = {
-			#		NOT = { owned_by = ROOT	}
-			#		NOT = { is_core = ROOT	}
-			#	}
-			#	add_permanent_claim = ROOT
-			#}
-			northern_england_area = { #Northumbria, Replacing Scottish Marches -C1CK
+			scottish_marches_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -242,22 +221,17 @@ sco_rb_conquest_missions = {
 			}
 		}
 	}
-	sco_advance_frontier = { #Updated by C1CK
+	sco_advance_frontier = {
 		icon = mission_assemble_an_army
 		required_missions = { sco_auld_alliance }
 		provinces_to_highlight = {
-			#area = scottish_marches_area #Replacing Scottish Marches -C1CK
-			area = northern_england_area #Northumbria
+			area = scottish_marches_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			#scottish_marches_area = { #Replacing Scottish Marches -C1CK
-			#	type = all
-			#	country_or_non_sovereign_subject_holds = ROOT
-			#}
-			northern_england_area = { #Northumbria
+			scottish_marches_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -272,14 +246,7 @@ sco_rb_conquest_missions = {
 				}
 				add_prestige = 10
 			}
-			#scottish_marches_area = { #Cut since this is now entirely in SCO -C1CK
-			#	limit = { owned_by = ROOT }
-			#	add_province_modifier = {
-			#		name = faster_integration
-			#		duration = 7300
-			#	}
-			#}
-			northern_england_area = { #Northumbria, Replacing Scottish Marches -C1CK
+			scottish_marches_area  = {
 				limit = { owned_by = ROOT }
 				add_province_modifier = {
 					name = faster_integration
@@ -353,7 +320,7 @@ sco_rb_conquest_missions = {
 			}
 		}
 	}
-	sco_conquer_london = { #Updated by C1CK
+	sco_conquer_london = {
 		icon = mission_rb_scottish_conquer_london
 		required_missions = { sco_conquer_midlands }
 		provinces_to_highlight = {
@@ -384,13 +351,6 @@ sco_rb_conquest_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			cornwall_area = { #Added by C1CK
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 			wales_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
@@ -400,24 +360,17 @@ sco_rb_conquest_missions = {
 			}
 		}
 	}
-	sco_british_empire = { #Updated by C1CK
+	sco_british_empire = {
 		icon = mission_rb_rule_britannia_scottish_version
 		required_missions = { sco_conquer_london sco_conquer_ireland }
 		provinces_to_highlight = {
-			OR = {
-				region = british_isles_region
-				region = ireland_area #Added by C1CK
-			}
+			region = british_isles_region
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
 			british_isles_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			ireland_area = { #Added by C1CK
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -485,6 +438,7 @@ sco_rb_conquest_missions_2 = {
 			}
 		}
 	}
+	
 	sco_conquer_ireland = {
 		icon = mission_rb_conquer_ireland
 		required_missions = { sco_into_ireland }
@@ -604,7 +558,7 @@ sco_rb_colonial_2 = {
 	}
 	has_country_shield = yes
 	
-	claiming_orkney = { #Updated by C1CK
+	claiming_orkney = {
 		icon = mission_sea_battles
 		required_missions = { sco_auld_alliance }
 		position = 2
@@ -612,8 +566,7 @@ sco_rb_colonial_2 = {
 			OR = {
 				area = highlands_area
 				area = kingdom_of_the_isles_area
-				province_id = 1978 #Shetlands
-				province_id = 369 #Orkney
+				province_id = 1978
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -628,10 +581,7 @@ sco_rb_colonial_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			1978 = { #Shetlands
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			369 = { #Orkney
+			1978 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -661,7 +611,7 @@ sco_rb_colonial_2 = {
 			}
 		}
 	}
-	sco_north_atlantic = { #Updated by C1CK
+	sco_north_atlantic = {
 		icon = mission_rb_cod_wars
 		required_missions = { claiming_orkney }
 		provinces_to_highlight = {
@@ -670,7 +620,6 @@ sco_rb_colonial_2 = {
 				area = subarctic_islands_area
 			}
 			NOT = {
-				province_id = 5591 #Jan Mayen, Don't think this should be required
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -681,10 +630,7 @@ sco_rb_colonial_2 = {
 			}
 			subarctic_islands_area = {
 				type = all
-				OR = {
-					province_id = 5591 #Jan Mayen, Don't think this should be required
-					country_or_non_sovereign_subject_holds = ROOT
-				}
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -695,12 +641,6 @@ sco_rb_colonial_2 = {
 				}
 			}
 			subarctic_islands_area = {
-				limit = {
-					OR = {
-						NOT = { province_id = 5591 } #Jan Mayen
-						country_or_non_sovereign_subject_holds = ROOT #Give modifier to Jan Mayen if colonized by SCO
-					}
-				}
 				add_province_modifier = {
 					name = "cod_boom"
 					duration = 7300

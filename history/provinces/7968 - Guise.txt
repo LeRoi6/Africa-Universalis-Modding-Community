@@ -1,8 +1,8 @@
 #BT's Western Europe Overhaul in 12.0
 
-owner = PRO
-controller = PRO
-add_core = PRO
+owner = ANJ
+controller = ANJ
+add_core = ANJ
 culture = picard_culture
 religion = catholic
 capital = "Guise"

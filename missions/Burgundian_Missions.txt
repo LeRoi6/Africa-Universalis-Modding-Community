@@ -7,9 +7,6 @@ bur_conquest = {
 	potential = {
 		tag = BUR
 		NOT = { map_setup = map_setup_random }
-		NOT = {
-			has_dlc = "Emperor"
-		}
 	}
 	has_country_shield = yes
 	
@@ -47,13 +44,13 @@ bur_conquest = {
 		
 		provinces_to_highlight = {
 			area = lorraine_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
 			lorraine_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		
@@ -90,13 +87,6 @@ bur_conquest = {
 			add_country_modifier = {
 				name = "bur_diplo_mod"
 				duration = 5475
-			}
-			north_brabant_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
 			}
 			frisia_area = {
 				limit = {
@@ -150,9 +140,6 @@ bur_arles = {
 	potential = {
 		tag = BUR
 		NOT = { map_setup = map_setup_random }
-		NOT = {
-			has_dlc = "Emperor"
-		}
 	}
 	has_country_shield = yes
 

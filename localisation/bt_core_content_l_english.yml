@@ -262,10 +262,7 @@
  suma_culture:0 "Suma"
  nez_perce_culture:0 "Nez-Percé"
  cochimi:0 "Cochimí"
- coast_penutian:0 "Kalapuyan"
- okanagan:0 "Okanagan"
- sugpiat:0 "Sugpiat"
- nahanni:0 "Nahanni"
+ 
  
  
  #################################################################################
@@ -296,7 +293,7 @@
  three_quarters_of_scotland_tooltip:0 "Own 13 of Scotland's 17 traditional provinces as cores"
  two_thirds_of_england_tooltip:0 "Own 16 of England's 24 traditional provinces as cores"
  two_thirds_of_britain_tooltip:0 "Own at least 33 of Britain's 49 provinces as cores"
- three_quarters_of_britain_tooltip:0 "Own at least 78 of Britain's 104 provinces as cores"
+ three_quarters_of_britain_tooltip:0 "Own at least 37 of Britain's 49 provinces as cores"
  two_thirds_of_france_tooltip:0 "Own at least 111 of France's 166 provinces as cores"
  three_quarters_of_france_tooltip:0 "Own at least 125 of France's 166 provinces as cores"
  half_of_greece_tooltip:0 "Own at least 23 of Greece's 55 provinces as cores"

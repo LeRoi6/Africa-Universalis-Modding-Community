@@ -3,18 +3,7 @@ country_event = {
 	id = 2011
 	title = "EVTNAME2011"
 	desc = "EVTDESC2011"
-	picture = {	
-		trigger = {
-			has_dlc = "Emperor"
-		}
-		picture = LUTHER_eventPicture
-	}
-	picture = {	
-		trigger = {
-			NOT = { has_dlc = "Emperor" }
-		}
-		picture = RELIGION_eventPicture
-	}
+	picture = RELIGION_eventPicture
 	
 	major = yes
 	
@@ -34,6 +23,14 @@ country_event = {
 		any_owned_province = {
 			can_have_center_of_reformation_trigger = {
 					RELIGION = reformed
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				set_province_flag = start_of_reformed_reformation
 			}
 		}
 	}
@@ -245,8 +242,8 @@ country_event = {
 		add_stability = -1
 		capital_scope = {
 			add_permanent_province_modifier = {
-			 	name = heresy
-			 	duration = 5475
+			 name = heresy
+			 duration = 5475
 			}
 		}
 	}

@@ -4,7 +4,7 @@ add_government_reform = feudalism_reform
 technology_group = eastern
 primary_culture = bulgarian
 religion = orthodox
-capital = 4703
+capital = 7704
 
 
 #Incomplete

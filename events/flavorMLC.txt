@@ -96,14 +96,8 @@ country_event = {
 		modifier = {
 			factor = 0.8
 			any_owned_province = {
-				OR = {
-					area = malaya_area
-					area = malacca_area
-				}
-				OR = {
-					has_discovered = POR
-					has_discovered = IBE
-				}
+				area = malaya_area
+				has_discovered = POR
 			}
 		}
 	}
@@ -138,7 +132,6 @@ country_event = {
 
 	trigger = {
 		tag = MLC
-		religion_group = muslim
 		is_year = 1460
 		NOT = { is_year = 1500 }
 	}

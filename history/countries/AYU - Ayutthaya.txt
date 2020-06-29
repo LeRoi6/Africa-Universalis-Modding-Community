@@ -5,7 +5,6 @@ religion = buddhism
 technology_group = chinese
 capital = 600 # Ayutthaya
 
-
 1395.1.1 = {
 	monarch = {
 		name = "Ramaracha"

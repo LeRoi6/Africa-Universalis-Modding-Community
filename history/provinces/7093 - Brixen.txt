@@ -59,9 +59,9 @@ discovered_by = eastern
 } # The Treaty of Pressburg
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1809.10.14 = {
-	owner = ITL
-	controller = ITL
-	add_core = ITL
+	owner = ITA
+	controller = ITA
+	add_core = ITA
 	remove_core = BAV
 } # Incorporated into the Kingdom of Italy after the treaty of Schönbrunn
 1814.4.11 = {

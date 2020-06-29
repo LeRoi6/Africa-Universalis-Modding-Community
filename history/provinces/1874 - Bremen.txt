@@ -4,7 +4,7 @@
 
 owner = BRE
 controller = BRE
-culture = lower_saxon
+culture = hannoverian
 religion = catholic
 capital = "Bremen"
 trade_goods = bt_trade_good_beer

@@ -2,8 +2,8 @@
 #Region - Low Countries
 #Area - Frisia
 
-owner = FRI #Changed from GRN
-controller = FRI #Changed from GRN
+owner = GRN
+controller = GRN
 capital = "Delfzijl"			#Founded 26 years after 1291 start.... but whatever
 is_city = yes
 culture = frisian
@@ -13,7 +13,7 @@ base_tax = 2			#Though only founded in 1317, it was founded as a main port for G
 base_production = 3
 trade_goods = fish 
 base_manpower = 2
-add_core = FRI #Changed from GRN
+add_core = GRN
 
 discovered_by = western
 discovered_by = muslim

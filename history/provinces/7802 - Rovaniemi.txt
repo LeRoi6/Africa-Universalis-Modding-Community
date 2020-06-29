@@ -12,12 +12,11 @@ base_manpower = 1
 trade_goods = fur
 is_city = yes
 hre = no
-add_local_autonomy = 55 #This stacks with culture and religious starting autonomy, it seems. Reducing from 90.
+add_local_autonomy = 90
 
 discovered_by = eastern
 discovered_by = western
 
-add_province_triggered_modifier = bt_birkarls
 
 #Province history completed by - Draiocht
 1291.5.21 = { #BeyondTypus batch edit shortcut the first shattering begins
@@ -25,14 +24,14 @@ add_province_triggered_modifier = bt_birkarls
 	controller = FIN
 	add_core = FIN
 	remove_core = SWE
-	add_local_autonomy = -55
+	add_local_autonomy = -90
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1291.5.23 = { #BeyondTypus batch edit shortcut the first shattering ends
 	owner = SWE
 	controller = SWE
 	add_core = SWE
 	remove_core = FIN
-	add_local_autonomy = 55 #This stacks with culture and religious starting autonomy, it seems. Reducing from 90.
+	add_local_autonomy = 90
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #1st Performance Start Unused
 
@@ -43,14 +42,14 @@ add_province_triggered_modifier = bt_birkarls
 	controller = FIN
 	add_core = FIN
 	remove_core = SWE
-	add_local_autonomy = -55
+	add_local_autonomy = -90
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	owner = SWE
 	controller = SWE
 	add_core = SWE
 	remove_core = FIN
-	add_local_autonomy = 55 #This stacks with culture and religious starting autonomy, it seems. Reducing from 90.
+	add_local_autonomy = 90
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #2nd Performance Start Unused
 

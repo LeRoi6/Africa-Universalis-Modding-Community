@@ -11,6 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3 
 is_city = yes
+estate = estate_nobles
 fort_15th = yes #Castles of the Morea, Monemvasia, etc.
 #add_core = ACH			#Temp cut, readd later
 add_core = MOE

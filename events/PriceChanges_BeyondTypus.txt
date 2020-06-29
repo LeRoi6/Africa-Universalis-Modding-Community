@@ -89,7 +89,6 @@ province_event = {
 			}
 		}
 		has_global_flag = BT_reinheitsgebot_happened #Happens after the Reinheitsgebot
-		province_without_special_goods_produced_trigger = yes #Can't fire for a province with special goods.
 	}
 	
 	mean_time_to_happen = {
@@ -112,10 +111,11 @@ province_event = {
 		name = "PriceChanges_BeyondTypus.EVTOPTA2"
 		ai_chance = { factor = 1 }
 		add_prestige = 10
-		add_province_modifier = {
-			name = "bt_birthplace_lager"
-			duration = -1
-		}
+		add_base_production = 2	#Temporarily replaces below. I (Draiocht) am having some stupid problem with this modifier.
+		#add_province_modifier = {
+		#	name = "bt_birthplace_lager"
+		#	duration = -1
+		#}
 		change_price = {
 			trade_goods = bt_trade_good_beer
 			key = BT_lager_beer
@@ -169,7 +169,7 @@ province_event = {
 	}
 }
 
-# Dub's Prussian Blue event, all credit to Dub
+# Dub's Prussia Blue event, all credit to Dub
 country_event = {
 	id = PriceChanges_BeyondTypus.4
 	title = "PriceChanges_BeyondTypus.EVTNAME4"
@@ -206,107 +206,103 @@ country_event = {
 		}
 		50 = {
 			change_trade_goods = dyes
+			add_base_production = 3
 			#Not adding the province modifier atm, I like the idea, but Berlin could use a dev boost anyway and this wouldn't retroactively apply to saved games anyway. Might add this in 10.0 and even more likely when HRE is overhauled.
-			add_province_modifier = {
-				name = "bt_prussian_blue"
-				duration = -1
-			}
+			#add_province_modifier = {
+			#	name = "bt_prussian_blue"
+			#	duration = -1
+			#}
 		}
 		add_prestige = 10
 	}
 }
 
 # Dub's 1st apiculture event, all credit to Dub
-country_event = {
-	id = PriceChanges_BeyondTypus.5
-	title = "PriceChanges_BeyondTypus.EVTNAME5"
-	desc = "PriceChanges_BeyondTypus.EVTDESC5"
-	picture = TRADEGOODS_eventPicture
+# country_event = {
+	# id = PriceChanges_BeyondTypus.5
+	# title = "PriceChanges_BeyondTypus.EVTNAME5"
+	# desc = "PriceChanges_BeyondTypus.EVTDESC5"
+	# picture = TRADEGOODS_eventPicture
 
-	fire_only_once = yes
+	# fire_only_once = yes
 	
-	major = yes
+	# major = yes
 
-	trigger = { #Research into bee biology.
-		has_institution = enlightenment
-		philosopher = 3
-		bt_trade_good_apiculture = 3
-	}
+	# trigger = { #Research into bee biology.
+		# has_institution = enlightenment
+		# philosopher = 3
+		# bt_trade_good_apiculture = 3
+	# }
 
-	mean_time_to_happen = {
-		months = 60
-	}
+	# mean_time_to_happen = {
+		# months = 60
+	# }
 	
-	option = {
-		name = "PriceChanges_BeyondTypus.EVTOPTA5"
-		add_innovativeness_big_effect = yes
-		every_owned_province = {
-			limit = {
-				trade_goods = bt_trade_good_apiculture
-			}
-			add_base_production = 2
-		}
-		set_global_flag = bt_bee_biology_researched
-		change_price = {
-			trade_goods = bt_trade_good_apiculture
-			key = BT_BEE_BIOLOGY
-			value = 0.125 #4.0 -> 4.5
-			duration = -1
-		}
-	}
-}
+	# option = {
+		# every_owned_province = {
+			# limit = {
+				# trade_goods = bt_trade_good_apiculture
+			# }
+			# add_base_production = 2
+		# }
+		#set_global_flag = bt_bee_biology_researched
+		# change_price = { #Personally if you ask me, 2.5 for apiculture when the hives literally had to be destroyed is just way too low. I'd personally say it should start at 4, then rise to about 4.5, then drop down to 2.0 or 2.5. Honey was a damn luxury at this point.
+			# trade_goods = bt_trade_good_apiculture
+			# key = BT_BEE_BIOLOGY
+			# value = 0.40 #2.5 -> 3.5
+			# duration = -1
+		# }
+	# }
+# }
 
 # Dub's 2nd apiculture event, all credit to Dub
-country_event = {
-	id = PriceChanges_BeyondTypus.6
-	title = "PriceChanges_BeyondTypus.EVTNAME6"
-	desc = "PriceChanges_BeyondTypus.EVTDESC6"
-	picture = TRADEGOODS_eventPicture
+# country_event = {
+	# id = PriceChanges_BeyondTypus.6
+	# title = "PriceChanges_BeyondTypus.EVTNAME6"
+	# desc = "PriceChanges_BeyondTypus.EVTDESC6"
+	# picture = TRADEGOODS_eventPicture
 
-	fire_only_once = yes
+	# fire_only_once = yes
 	
-	major = yes
+	# major = yes
 
-	trigger = {
-		has_institution = enlightenment
-		NOT = { #Secular state
-			estate_influence = {
-				estate = estate_church
-				influence = 40
-			}
-		}
-		bt_trade_good_apiculture = 3
-		has_global_flag = bt_bee_biology_researched
-	}
+	# trigger = {
+		# has_institution = enlightenment
+		# NOT = { #Secular state
+			# estate_influence = {
+				# estate = estate_church
+				# influence = 40
+			# } 
+		# }
+		# bt_trade_good_apiculture = 3
+	# }
 
-	mean_time_to_happen = {
-		months = 600
-	}
+	# mean_time_to_happen = {
+		# months = 1200
+	# }
 	
-	option = {
-		name = "PriceChanges_BeyondTypus.EVTOPTA6"
-		add_innovativeness_big_effect = yes
-		every_owned_province = {
-			limit = {
-				trade_goods = bt_trade_good_apiculture
-			}
-			add_base_production = 4
-		}
-		set_global_flag = bt_movable_comb_hives_invented
-		change_price = {
-			trade_goods = bt_trade_good_apiculture
-			key = BT_MOVABLE_BEE_COMB_HIVE
-			value = -0.50 #4.5 -> 2.5
-			duration = -1
-		}
-	}
-}
+	# option = {
+		# every_owned_province = {
+			# limit = {
+				# trade_goods = bt_trade_good_apiculture
+			# }
+			# add_base_production = 4
+		# }
+		#set_global_flag = bt_movable_bee_skeps_invented
+		# change_price = { #Personally if you ask me, 2.5 for apiculture when the hives literally had to be destroyed is just way too low. I'd personally say it should start at 4, then rise to about 4.5, then drop down to 2.0 or 2.5. Honey was a damn luxury at this point.
+			# trade_goods = bt_trade_good_apiculture
+			# key = BT_MOVABLE_BEE_SKEPS
+			# value = -0.60 #3.5 -> 2.0
+			# duration = -1
+		# }
+	# }
+# }
 
 #Trade good event by Draiocht
 #country_event = {
-#	id = PriceChanges_BeyondTypus.7
-#	title = "PriceChanges_BeyondTypus.EVTNAME7"
-#	desc = "PriceChanges_BeyondTypus.EVTDESC7"
+#	id = PriceChanges_BeyondTypus.5
+#	title = "PriceChanges_BeyondTypus.EVTNAME5"
+#	desc = "PriceChanges_BeyondTypus.EVTDESC5"
 #	picture = TRADEGOODS_eventPicture
 #
 #	fire_only_once = yes

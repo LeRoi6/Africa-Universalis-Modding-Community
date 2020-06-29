@@ -3,7 +3,6 @@
 owner = ARA
 controller = ARA
 add_core = ARA
-add_core = CAT
 culture = catalan
 religion = catholic
 capital = "Tortosa"

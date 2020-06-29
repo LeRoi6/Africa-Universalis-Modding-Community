@@ -53,10 +53,10 @@ discovered_by = eastern
 1806.1.1 = {
 	owner = CRR
 	controller = CRR
-	add_core = ITL
+	add_core = ITA
 } # given to Italy by Napoleon, but a special duchy for his sister Pauline
 
-1814.4.11 = { owner = PAR controller = PAR remove_core = ITL }# back to Parma
+1814.4.11 = { owner = PAR controller = PAR remove_core = ITA }# back to Parma
 
 #
 

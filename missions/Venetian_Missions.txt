@@ -4,9 +4,6 @@ venice_missions_1 = {
 	ai = yes
 	potential = {
 		tag = VEN
-		NOT = {
-			has_dlc = "Emperor"
-		}
 	}
 	has_country_shield = yes
 	
@@ -162,9 +159,6 @@ venice_missions_2 = {
 	ai = yes
 	potential = {
 		tag = VEN
-		NOT = {
-			has_dlc = "Emperor"
-		}
 	}
 	has_country_shield = yes
 	

@@ -1,8 +1,8 @@
 #BT Balkans reoverhaul
 
-owner = HRZ
-controller = HRZ
-add_core = HRZ
+owner = DSS
+controller = DSS
+add_core = DSS
 culture = serbian
 religion = orthodox
 capital = "Trebinje"

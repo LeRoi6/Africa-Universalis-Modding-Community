@@ -39,28 +39,15 @@ NDefines.NDiplomacy.PEACE_COST_RELEASE_ANNEXED = 0.4			-- from 1   Some peace co
 NDefines.NDiplomacy.PEACE_COST_RELEASE_VASSAL = 0.25			-- from 0p5
 NDefines.NDiplomacy.PEACE_COST_CONVERSION = 0.25			-- from 1   Some peace cost changes moved from Misc Addon to Main BT where they overlap   I know people love their beliefs and resist religious change but the absurdly high price of this made it only possible against very small tags where it was usually preferable to just annex   Now this might be useful
 NDefines.NDiplomacy.PEACE_COST_RELEASE = 1			-- from 2
-
-
-NDefines.NDiplomacy.PEACE_COST_GOLD_STEP = 10 						-- from 5 	Loans hardcoded to being double size in BT.
-NDefines.NDiplomacy.PEACE_COST_GOLD_MAX = 3						-- from 5	Loans hardcoded to being double size in BT. Sadly, this value does not accept decimal values, so it's either 2 or 3. I go with 3 since it makes a nice 50% with war reps costs.
-
  --End of Peace Costs
 NDefines.NDiplomacy.ANNEX_DIP_COST_PER_DEVELOPMENT = 4			-- from 8
-NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_STATE_WITH_PROSPERITY = 0.03			-- Readjusted this value to vanilla's since states have not been redrawn in the region, and with 1.29, Mandate owners are very unlikely to expand. Finally, the increased number of state slots are not twice of vanilla's, so halving this number doesn't make sense.
+NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_STATE_WITH_PROSPERITY = 0.015			-- from 0p03
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_DEVASTATION = -5			-- from -10p0
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_TRIBUTARY_DEV = 0.075			-- from 0p15
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_NONTRIBUTARY_DEV = 0.0			-- from -0p0   used to be -0p3 and BT was -0p15
 NDefines.NDiplomacy.TRIBUTE_BASE_ADM = 0.015			-- from 0p03
 NDefines.NDiplomacy.TRIBUTE_BASE_DIP = 0.015			-- from 0p03
 NDefines.NDiplomacy.TRIBUTE_BASE_MIL = 0.015			-- from 0p03
-
-NDefines.NDiplomacy.JOIN_HRE_DEVELOPMENT_CAP_VASSAL = 400			-- fom 400
-
-
-NDefines.NDiplomacy.HRE_AUTHORITY_JOIN_EMPIRE = 2.5			-- from 5. Way more tags in BT so this needs to be halved.
-NDefines.NDiplomacy.HRE_AUTHORITY_LEAVE_EMPIRE = -5			-- from -10. See above.
-NDefines.NDiplomacy.HRE_AUTHORITY_PROVINCE_JOIN = 0.05			-- from 0p1. More provinces equals more IA, hence counterbalance by less IA gain.
-
 
  --NCountry changes
 NDefines.NCountry.EXPLOIT_ADM_INCOME = 30			-- from 60
@@ -91,7 +78,7 @@ NDefines.NCountry.PS_IMPROVE_PROVINCE_BASE = 25			-- from 50
 NDefines.NCountry.PS_IMPROVE_PROVINCE_CAPITAL_DISCOUNT = 0.025			-- from 0p05
 NDefines.NCountry.OVEREXTENSION_FACTOR = 0.5			-- from 1p0
 NDefines.NCountry.MONTHS_TO_CHANGE_CULTURE = 5			-- from 10
-NDefines.NCountry.REVOLT_SIZE_DEVELOPMENT_MULTIPLIER = 0.05			-- from 0p1
+NDefines.NCountry.REVOLT_SIZE_DEVELOPMENT_MULTIPLIER = 0.15			-- from 0p3
 NDefines.NCountry.LIBERTY_DESIRE_DEVELOPED_IN_SUBJECT = -2.5 		--from 5p0
 NDefines.NCountry.GRANT_PROVINCE_LIBERTY_MULTIPLIER = 0.25 			--from 0p5
 NDefines.NCountry.RETURN_LAND_LIBERTY_MULTIPLIER = 1.25			-- from 2p5
@@ -112,15 +99,14 @@ NDefines.NEconomy.EXPELLING_MINORITY_SETTLER_CHANCE_FACTOR = 0.003			-- from 0p0
  --NMilitary changes
 NDefines.NMilitary.DEVASTATION_DEVELOPMENT_SCALE = 2.5			-- from 5     I dont actually know how this works     Might have it reversed better check later
 NDefines.NMilitary.PARTICIPATION_SCORE_BLOCKADE = 0.0005			-- from 0p001
-NDefines.NMilitary.FORT_PER_DEV_RATIO = 33			-- From 50 vanilla, from 100 in BT. It seems that the AI will delete any forts that are unnecessary to obtain this fort per dev ratio. This was the culprit of the ever-deleting fort AI, not the actual income it made. This has been semi-tailored after Ottomans, who start with now 738 dev and 22 forts, yielding an approximate 33 dev per fort.
+NDefines.NMilitary.FORT_PER_DEV_RATIO = 100			-- from 50
 NDefines.NMilitary.BASE_MP_TO_MANPOWER = 0.125			-- from 0p25
 NDefines.NMilitary.BLOCKADE_FACTOR = 1.5			-- from 3     (Total sail speed / blockade_factor) * blockade_efficiency / province development
 NDefines.NMilitary.JANISSARIES_HEATHEN_DEVELOPMENT_DIVISOR = 20			-- from 10
-NDefines.NMilitary.LOOTED_SCALE = 0.5 --From 1p0 vanilla. Value forgotten to be accounted for dev doubling.
 
  --NAI changes
-NDefines.NAI.DEVELOPMENT_CAP_BASE = 50	-- From 10. Trying to unhinge the AI's development so that they actually use their extra monarch points.
-NDefines.NAI.DEVELOPMENT_CAP_MULT = 10 -- From 2. Same here.
+NDefines.NAI.DEVELOPMENT_CAP_BASE = 20			-- from 10
+NDefines.NAI.PEACE_TERMS_RELEASE_ANNEXED_SIZE_MULT = 0.005			-- from 0p01
 
 NDefines.NAI.DIPLOMATIC_ACTION_VASSALIZE_DEVELOPMENT_FACTOR = 10			-- from 20
 NDefines.NAI.DIPLOMATIC_ACTION_ANNEX_DEVELOPMENT_FACTOR = 25			-- from 50
@@ -132,8 +118,6 @@ NDefines.NAI.DIPLOMATIC_ACTION_SUPPORT_HEIR_DEVELOPMENT_FACTOR = 1			-- from 2
 NDefines.NAI.DIPLOMATIC_ACTION_TRIBUTARY_ACCEPTANCE_PER_DEVELOPMENT = -0.25			-- from -0p5
 NDefines.NAI.CHARTER_COMPANY_DEVELOPMENT_RELUCTANCE = 1			-- from 3
 NDefines.NAI.IMPORANT_PROVINCE_THRESHOLD = 0.02			-- from 0p05
-NDefines.NAI.MAX_CAV_PERCENTAGE = 30 --From 50. Misc lowered max cav percentage down to 30, while leaving this up at 50. This caused the AI to derp in certain cases, which I hope to fix with this adjustment.
-NDefines.NAI.IMPORANT_PROVINCE_THRESHOLD = 0.01 --From 0.05. Many more provinces means that each individual province matters less to the AI.
 
  --NGraphics changes
 NDefines.NGraphics.CITY_SPRAWL_AMOUNT = 1.0			-- from 3p0

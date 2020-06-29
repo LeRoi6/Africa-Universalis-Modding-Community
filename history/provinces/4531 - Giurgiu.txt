@@ -13,8 +13,6 @@ base_manpower = 2
 is_city = yes
 add_core = WAL
 add_core = TUR
-add_local_autonomy = 10
-
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

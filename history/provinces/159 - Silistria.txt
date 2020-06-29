@@ -13,7 +13,6 @@ base_manpower = 3 # one of the most important Bulgarian cities
 is_city = yes
 add_core = BUL
 fort_15th = yes
-add_local_autonomy = 10
 
 discovered_by = KAZ
 discovered_by = CRI
@@ -55,6 +54,7 @@ discovered_by = western
 	base_tax = 3
 	base_production = 3
 	base_manpower = 2
+	estate = estate_dhimmi
 } #falls to Turkey, devastated (though not much)
 
 #2nd Shattering unused

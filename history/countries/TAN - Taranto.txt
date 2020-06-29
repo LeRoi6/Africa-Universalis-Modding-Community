@@ -2,11 +2,10 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-primary_culture = neapolitan
-add_accepted_culture = griko
+primary_culture = umbrian
 religion = catholic
-capital = 122
-fixed_capital = 122
+capital = 1111
+fixed_capital = 1111
 
 #historical_friend = XXX
 #historical_rival = XXX

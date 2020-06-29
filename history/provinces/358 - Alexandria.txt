@@ -11,6 +11,7 @@ base_tax = 8
 base_production = 8
 base_manpower = 4
 is_city = yes
+estate = estate_burghers
 add_core = MAM
 add_core = KEM
 fort_15th = yes

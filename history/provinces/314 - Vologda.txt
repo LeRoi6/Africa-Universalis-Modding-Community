@@ -1,6 +1,6 @@
 #314 - Vologda
 #Region - Russia
-#Area - Sukhoma
+#Area - Beloozero
 
 owner = MOS
 controller = MOS
@@ -14,7 +14,6 @@ base_manpower = 2
 capital = "Vologda"
 is_city = yes
 add_core = MOS
-add_core = NOV # Novgorodian claims
 
 extra_cost = 8
 center_of_trade = 1

@@ -5,103 +5,100 @@
 # Eventual fiefdom triggered mod
 ###########################################
 
-#Bugfixes note: The country-unique ones should eventually be replaced by more generic versions, because situational trigmods disallow player freedom and is too railroaded for situations not fit for the game.
-#One idea is to expand the vassal upkeep bonuses up to 9 or 11 vassals, plus rebalance the bonuses to not become better the more subjects you have.
-#Also: Remove fiefs from the trigmods and remove all current fiefs from history temporarily, as they're unfinished.
-#The situation with Aragon is particularly difficult, as giving a major LD bonus to Aragonese ideas feel really weird. One option is to directly decrease Neapolitan LD through an effect in history files, which means Aragon will have to work harder to keep Naples.
+
 ###########################################
 # Vassal upkeep bonus
 ###########################################
-# bt_triggered_modifier_a_big_family = {
-	# potential = {
-		# num_of_subjects = 1
-		# NOT = {
-			# calc_true_if = {
-				# all_known_country = {
-					# is_subject_of = ROOT
-					# OR = {
-						# is_subject_of_type = vassal
-						# is_subject_of_type = march
-						# is_subject_of_type = personal_union
-						# is_subject_of_type = client_vassal
-						# is_subject_of_type = client_march
-						# is_subject_of_type = fiefdom_bt
-					# }				
-				# }
-				# amount = 5
-			# }
-		# }
-	# }
-	# trigger = {
-		# custom_trigger_tooltip = {
-			# tooltip = bt_bunch_o_vassals_tooltip
-			# calc_true_if = {
-				# all_known_country = {
-					# is_subject_of = ROOT
-					# OR = {
-						# is_subject_of_type = vassal
-						# is_subject_of_type = march
-						# is_subject_of_type = personal_union
-						# is_subject_of_type = client_vassal
-						# is_subject_of_type = client_march
-						# is_subject_of_type = fiefdom_bt
-					# }					
-				# }
-				# amount = 3
-			# }
-		# }
-		# hidden_trigger = {
-			# NOT = {
-				# calc_true_if = {
-					# all_known_country = {
-						# is_subject_of = ROOT
-						# OR = {
-							# is_subject_of_type = vassal
-							# is_subject_of_type = march
-							# is_subject_of_type = personal_union
-							# is_subject_of_type = client_vassal
-							# is_subject_of_type = client_march
-							# is_subject_of_type = fiefdom_bt
-						# }				
-					# }
-					# amount = 5
-				# }
-			# }
-		# }
-	# }
-	# diplomatic_upkeep = 1
-	# reduced_liberty_desire = 10
-# }
+bt_triggered_modifier_a_big_family = {
+	potential = {
+		num_of_subjects = 1
+		NOT = {
+			calc_true_if = {
+				all_known_country = {
+					is_subject_of = ROOT
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = march
+						is_subject_of_type = personal_union
+						is_subject_of_type = client_vassal
+						is_subject_of_type = client_march
+						is_subject_of_type = fiefdom_bt
+					}				
+				}
+				amount = 5
+			}
+		}
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = bt_bunch_o_vassals_tooltip
+			calc_true_if = {
+				all_known_country = {
+					is_subject_of = ROOT
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = march
+						is_subject_of_type = personal_union
+						is_subject_of_type = client_vassal
+						is_subject_of_type = client_march
+						is_subject_of_type = fiefdom_bt
+					}					
+				}
+				amount = 3
+			}
+		}
+		hidden_trigger = {
+			NOT = {
+				calc_true_if = {
+					all_known_country = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = vassal
+							is_subject_of_type = march
+							is_subject_of_type = personal_union
+							is_subject_of_type = client_vassal
+							is_subject_of_type = client_march
+							is_subject_of_type = fiefdom_bt
+						}				
+					}
+					amount = 5
+				}
+			}
+		}
+	}
+	diplomatic_upkeep = 1
+	reduced_liberty_desire = 10
+}
 
 ###########################################
 # Vassal upkeep bonus II
 ###########################################
-# bt_triggered_modifier_hegemoniacle = {
-	# potential = {
-		# num_of_subjects = 3
-	# }
-	# trigger = {
-		# custom_trigger_tooltip = {
-			# tooltip = bt_really_a_bunch_o_vassals_tooltip
-			# calc_true_if = {
-				# all_known_country = {
-					# is_subject_of = ROOT
-					# OR = {
-						# is_subject_of_type = vassal
-						# is_subject_of_type = march
-						# is_subject_of_type = personal_union
-						# is_subject_of_type = client_vassal
-						# is_subject_of_type = client_march
-						# is_subject_of_type = fiefdom_bt
-					# }				
-				# }
-				# amount = 5
-			# }
-		# }
-	# }
-	# diplomatic_upkeep = 3
-	# reduced_liberty_desire = 25
-# }
+bt_triggered_modifier_hegemoniacle = {
+	potential = {
+		num_of_subjects = 3
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = bt_really_a_bunch_o_vassals_tooltip
+			calc_true_if = {
+				all_known_country = {
+					is_subject_of = ROOT
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = march
+						is_subject_of_type = personal_union
+						is_subject_of_type = client_vassal
+						is_subject_of_type = client_march
+						is_subject_of_type = fiefdom_bt
+					}				
+				}
+				amount = 5
+			}
+		}
+	}
+	diplomatic_upkeep = 3
+	reduced_liberty_desire = 25
+}
 
 ###########################################
 # Aragon Balancing
@@ -127,7 +124,6 @@ bt_iberian_crowns = {
 		}
 		#NOT = { has_country_flag = bt_centralising_aragon }			#Currently a dead end, might add later.
 	}
-	diplomatic_upkeep = 2 #Added to account for lack of hegemoniacle for Aragon since PUs don't count.
 	reduced_liberty_desire = 45
 	diplomatic_annexation_cost = 0.25
 }
@@ -202,13 +198,44 @@ bt_hegemony_of_burgundy = {
 		tag = BUR
 		is_subject = no
 		NOT = { government_rank = 2 }
-		personal_union = 4
+		calc_true_if = {
+			all_known_country = {
+				OR = {
+					is_subject_of = BUR
+					guaranteed_by = BUR
+				}
+			}
+			amount = 5
+		}
 	}
 	trigger = {
 		tag = BUR
 		NOT = { is_year = 1545 }
-		NOT = { government_rank = 2 }
-		personal_union = 5
+		custom_trigger_tooltip = {
+			tooltip = bt_burgundian_hegemony_check_tooltip
+			calc_true_if = {
+				all_known_country = {
+					is_subject_of = ROOT
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = march
+						is_subject_of_type = personal_union
+						is_subject_of_type = client_vassal
+						is_subject_of_type = client_march
+					}				
+				}
+				amount = 5
+			}
+		}
+		calc_true_if = {
+			all_known_country = {
+				OR = {
+					is_subject_of = BUR
+					guaranteed_by = BUR
+				}
+			}
+			amount = 7
+		}
 	}
 	diplomatic_upkeep = 5
 }

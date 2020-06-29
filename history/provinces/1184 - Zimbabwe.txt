@@ -1,14 +1,14 @@
 #1184 - Zimbabwe
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
-culture = shona
-religion = shamanism
+owner = LZW
+controller = LZW
+add_core = LZW
+culture = lozvi
+religion = mhondoro
 capital = "Zimbabwe"
 is_city = yes
 base_manpower = 4
-trade_goods = gold
+trade_goods = copper
 hre = no
 base_tax = 4  
 base_production = 4

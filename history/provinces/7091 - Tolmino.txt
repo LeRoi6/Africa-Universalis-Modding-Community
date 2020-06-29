@@ -67,9 +67,9 @@ owner = HAB
 	add_core = HAB
 } # Treaty of Campo Formio
 1805.12.26 = {
-	owner = ITL
-	controller = ITL
-	add_core = ITL
+	owner = ITA
+	controller = ITA
+	add_core = ITA
 	remove_core = HAB
 } # Treaty of Pressburg
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
@@ -77,5 +77,5 @@ owner = HAB
 	owner = HAB
 	controller = HAB
 	add_core = HAB
-	remove_core = ITL
+	remove_core = ITA
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally

@@ -5,7 +5,7 @@
 owner = HAM
 controller = HAM
 add_core = HAM
-culture = lower_saxon
+culture = hannoverian
 religion = catholic
 hre = yes
 base_tax = 11

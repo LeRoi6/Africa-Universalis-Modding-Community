@@ -1,19 +1,18 @@
-#136 - Split
+#136 - Dalmatia
 
 owner = HUN
 controller = HUN
 culture = croatian
 religion = catholic
-capital = "Split"
-trade_goods = cloth
+capital = "Zadar"
+trade_goods = naval_supplies
 hre = no
 base_tax = 3
 base_production = 3
-base_manpower = 2
+base_manpower = 1 
 is_city = yes
-fort_15th = yes # Klis Fortress
 add_core = HUN
-#add_core = CRO #Removed because this province was not owned by Hungary since 1200-1240ish. Hungarian core is removed by 1420, so no need to remove that, although it should really be a Neapolitan core.
+add_core = CRO
 
 discovered_by = KAZ
 discovered_by = CRI
@@ -28,7 +27,6 @@ discovered_by = ottoman
 1420.1.1 = { owner = VEN controller = VEN add_core = VEN remove_core = HUN }
 1540.10.2 = { owner = TUR controller = TUR add_core = TUR } # A large part of Dalmatia is incorporated into the Ottoman empire
 1699.1.26 = { owner = VEN controller = VEN remove_core = TUR } # Peace of Karlowitz, Dalmatian hinterland given to Venice
-1710.1.1 = { fort_15th = no fort_17th = yes }
 1797.10.17 = {
 	owner = HAB
 	controller = HAB

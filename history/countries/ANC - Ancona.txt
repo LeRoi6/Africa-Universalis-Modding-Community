@@ -6,7 +6,6 @@ primary_culture = umbrian
 religion = catholic
 capital = 119
 fixed_capital = 119
-set_estate_privilege = estate_church_papal_emissary
 
 #historical_friend = XXX
 #historical_rival = XXX
@@ -19,15 +18,7 @@ set_estate_privilege = estate_church_papal_emissary
 		duration = -1
 	}
 }
-1444.11.11 = {
-	monarch = {
-		name = "Consiglio di Anziani" #Elders Council in Italian. Was technically six elders, but this'll work.
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
-	}
-}
+
 1648.1.1 = {
 	remove_country_modifier = bt_guelph_nation
 }

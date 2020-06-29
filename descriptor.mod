@@ -3,4 +3,4 @@ path="D:/SiegFiles/Documents/Paradox Interactive/Europa Universalis IV/mod/Afric
 tags={
 	"Map"
 }
-supported_version="1.30.*.*"
+supported_version="1.29.*.*"

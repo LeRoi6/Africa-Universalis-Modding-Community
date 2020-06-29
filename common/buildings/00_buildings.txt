@@ -44,7 +44,7 @@
 marketplace = {
 	cost = 50			#BTAddOn changed from 100. Logically, a market shouldn't be so expensive, and in gameplay terms, 100 ducats this early is also rather expensive. Lowering cost and effect by half.
 	time = 12
-
+	
 	modifier = {
 		province_trade_power_modifier = 0.25			#BTAddOn changed from .5 A 50 percent bonus available at practically day 1 was overpowered, and it snowballed for CoTs. While we still want CoTs strong, not x15 any other province this early. BT's lower avg dev but generally same dev for capitals and CoTs only made this worse, as well.
 	}
@@ -89,7 +89,7 @@ workshop = {
 	allow_in_gold_provinces = no
 
 	ai_will_do = {
-		factor = 1			#BT Addon changed from 1. Changing all base factors to price divided by 100
+		factor = 0.5			#BT Addon changed from 1. Changing all base factors to price divided by 100
 		#BT Addon New factors, range 13 percent to 675 percent
 		modifier = {
 			factor = 0.2
@@ -119,6 +119,10 @@ workshop = {
 				has_terrain = woods
 			}
 		}
+		modifier = {
+			factor = 1.5
+			has_estate = estate_burghers			#Provinces with burgher estates will also be more likely to have workshops
+		}
 		#Removed for now. Massive gov changes in 1.26 make this not an easy 1 to 1 update
 		#modifier = {
 		#	factor = 1.5
@@ -147,11 +151,16 @@ temple = {
 	}
 	
 	ai_will_do = {
-		factor = 1			#BT Addon changed from 1. Changing all base factors to price divided by 100
+		factor = 0.5			#BT Addon changed from 1. Changing all base factors to price divided by 100
 		#BT Addon New factors, range 100 percent to 450 percent
 		modifier = {
 			factor = 1.5
 			has_owner_religion = no			#AI is encouraged to build this where they need to convert the local population
+			NOT = { has_estate = estate_dhimmi }
+		}
+		modifier = {
+			factor = 1.5
+			has_estate = estate_church			#Provinces with chuch estates will also be more likely to have temples
 		}
 		modifier = {
 			factor = 2.0
@@ -194,28 +203,36 @@ barracks = {
 		factor = 40			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings). 
 		#BT Addon New factors, range 36 percent to 486 percent
 		modifier = {
-			factor = 0.5
-			NOT = { FROM = { army_tradition = 20 } }			#Army tradition now either encourages or discourages building barracks
-		}
-		modifier = {
-			factor = 0.8
-			NOT = { FROM = { army_tradition = 40 } }			#Army tradition now either encourages or discourages building barracks
-		}
-		modifier = {
-			factor = 1.2
-			FROM = { army_tradition = 60 }			#Army tradition now either encourages or discourages building barracks
-		}
-		modifier = {
 			factor = 1.5
-			FROM = { army_tradition = 80 }			#Army tradition now either encourages or discourages building barracks
+			OR = {
+				has_estate = estate_nobles			#Provinces with noble estates will also be more likely to have barracks
+				has_estate = estate_nomadic_tribes			#Provinces with nomadic estates will also be more likely to have barracks
+				has_estate = estate_cossacks			#Provinces with cossack estates will also be more likely to have barracks
+			}
 		}
 		modifier = {
+			NOT = { FROM = { army_tradition = 20 } }			#Army tradition now either encourages or discourages building barracks
+			factor = 0.5
+		}
+		modifier = {
+			NOT = { FROM = { army_tradition = 40 } }			#Army tradition now either encourages or discourages building barracks
+			factor = 0.8
+		}
+		modifier = {
+			FROM = { army_tradition = 60 }			#Army tradition now either encourages or discourages building barracks
 			factor = 1.2
-			NOT = { owner = { manpower_percentage = 0.35 } }			#Further encouraged if low on manpower
 		}
 		modifier = {
-			factor = 0.9
+			FROM = { army_tradition = 80 }			#Army tradition now either encourages or discourages building barracks
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { owner = { manpower_percentage = 0.35 } }			#Further encouraged if low on manpower
+			factor = 1.2
+		}
+		modifier = {
 			owner = { manpower_percentage = 0.8 }			#Slightly discouraged if plenty of manpower
+			factor = 0.9
 		}
 		#Removed for now. Massive gov changes in 1.26 make this not an easy 1 to 1 update
 		#modifier = {
@@ -244,7 +261,7 @@ barracks = {
 shipyard = {
 	cost = 100			#BTAddOn notes - leaving cost here despite lowering most others. Dramtically improving naval capabilities was a bit overpowered, in my opinion. Especially compared to the regimental camp with half effect at double the price.
 	time = 12
-	build_trigger = {
+	trigger = {
 		has_port = yes
 	}
 	modifier = {
@@ -254,7 +271,7 @@ shipyard = {
 	}
 	
 	ai_will_do = {
-		factor = 60			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings). 
+		factor = 80			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings). 
 		#BT AddOn removed navy size modifier below, replaced with a more detailed version in new factors
 		#modifier = {
 		#	factor = 105 # Little above build cost
@@ -267,36 +284,36 @@ shipyard = {
 		#}
 		#BT Addon New factors, range 40 percent to 676 percent (replacing vanilla 100 percent to 11,550). I'm assuming from vanilla's high factor that the AI doesn't consider forcelimits as valuable, but if you start seeing too many or too few, please do report.
 		modifier = {
-			factor = 1.2			#running total 72
 			FROM = { navy_size_percentage = 0.75 }
+			factor = 1.2			#running total 72
 		}
 		modifier = {
-			factor = 1.3			#running total 93.6
 			FROM = { navy_size_percentage = 1.0 }
+			factor = 1.3			#running total 93.6
 		}
 		modifier = {
-			factor = 1.4			#running total 131.04
 			FROM = { navy_size_percentage = 1.25 }
+			factor = 1.4			#running total 131.04
 		}
 		modifier = {
-			factor = 1.5			#running total 196.56
 			FROM = { navy_size_percentage = 1.5 }
+			factor = 1.5			#running total 196.56
 		}
 		modifier = {
-			factor = 0.75
 			NOT = { FROM = { navy_tradition = 20 } }			#Naval tradition now either encourages or discourages building shipyards
+			factor = 0.75
 		}
 		modifier = {
-			factor = 0.9
 			NOT = { FROM = { navy_tradition = 40 } }			#Naval tradition now either encourages or discourages building shipyards
+			factor = 0.9
 		}
 		modifier = {
-			factor = 1.1
 			FROM = { navy_tradition = 60 }			#Naval tradition now either encourages or discourages building shipyards
+			factor = 1.1
 		}
 		modifier = {
-			factor = 1.25
 			FROM = { navy_tradition = 80 }			#Naval tradition now either encourages or discourages building shipyards
+			factor = 1.25
 		}
 		modifier = {
 			factor = 1.5
@@ -359,10 +376,6 @@ fort_15th = {
 	
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
-		modifier = {
-			factor = 2
-			is_capital = yes			#AI would want to fortify their home province.
-		}
 		#BT Addon New factors, range 57 percent to 216.5625 percent
 		modifier = {
 			factor = 1.5
@@ -406,22 +419,6 @@ fort_15th = {
 	}
 }
 
-coastal_defence = {
-
-	cost = 100
-	time = 12
-	build_trigger = {
-		has_port = yes
-	}
-	modifier = {
-		blockade_force_required = 0.5
-		hostile_disembark_speed = 1.0
-	}
-
-	ai_will_do = {
-		factor = 1
-	}
-}
 
 ################################################
 # Tier 2, 16th Century Buildings
@@ -429,15 +426,9 @@ coastal_defence = {
 courthouse = {
 	cost = 50			#BTAddOn changed from 100. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
 	time = 12
-	
-	build_trigger = { #BT 13 added to balance states territories and tradecompanies.
-		is_state = yes
-	}
-	
 	modifier = {
 		local_state_maintenance_modifier = -0.25
 		local_autonomy = -0.1
-		local_governing_cost = -0.25
 	}
 	
 	ai_will_do = {
@@ -465,7 +456,7 @@ courthouse = {
 dock = {
 	cost = 50			#BTAddOn changed from 100. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
 	time = 12
-	build_trigger = {
+	trigger = {
 		has_port = yes
 	}
 	modifier = {
@@ -476,28 +467,28 @@ dock = {
 		factor = 20			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings). Special penalty for Docks, as it is worthless.
 		#BT Addon New factors, range 36 percent to 216 percent
 		modifier = {
-			factor = 0.5
 			NOT = { FROM = { navy_tradition = 20 } }			#Naval tradition now either encourages or discourages building docks
+			factor = 0.5
 		}
 		modifier = {
-			factor = 0.8
 			NOT = { FROM = { navy_tradition = 40 } }			#Naval tradition now either encourages or discourages building docks
+			factor = 0.8
 		}
 		modifier = {
-			factor = 1.2
 			FROM = { navy_tradition = 60 }			#Naval tradition now either encourages or discourages building docks
-		}
-		modifier = {
-			factor = 1.5
-			FROM = { navy_tradition = 80 }			#Naval tradition now either encourages or discourages building docks
-		}
-		modifier = {
 			factor = 1.2
-			NOT = { owner = { sailors_percentage = 0.35 } }			#Further encouraged if low on sailors
 		}
 		modifier = {
-			factor = 0.9
+			FROM = { navy_tradition = 80 }			#Naval tradition now either encourages or discourages building docks
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { owner = { sailors_percentage = 0.35 } }			#Further encouraged if low on sailors
+			factor = 1.2
+		}
+		modifier = {
 			owner = { sailors_percentage = 0.8 }			#Slightly discouraged if plenty of sailors
+			factor = 0.9
 		}
 		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
 		modifier = {
@@ -543,7 +534,7 @@ regimental_camp = {
 #	}
 	
 	ai_will_do = {
-		factor = 60			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings). 
+		factor = 80			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings). 
 		#BT AddOn removed army size modifier below, replaced with a more detailed version in new factors
 		#modifier = {
 		#	factor = 215 # Little above build cost
@@ -555,36 +546,36 @@ regimental_camp = {
 		#}
 		#BT Addon New factors, range 40 percent to 676 percent (replacing vanilla 100 percent to 23,650 percent).
 		modifier = {
-			factor = 1.2			#running total 72
 			FROM = { army_size_percentage = 0.75 }
+			factor = 1.2			#running total 72
 		}
 		modifier = {
-			factor = 1.3			#running total 93.6
 			FROM = { army_size_percentage = 1.0 }
+			factor = 1.3			#running total 93.6
 		}
 		modifier = {
-			factor = 1.4			#running total 131.04
 			FROM = { army_size_percentage = 1.25 }
+			factor = 1.4			#running total 131.04
 		}
 		modifier = {
-			factor = 1.5			#running total 196.56
 			FROM = { army_size_percentage = 1.5 }
+			factor = 1.5			#running total 196.56
 		}
 		modifier = {
+			NOT = { FROM = { army_tradition = 20 } }			#Army tradition now either encourages or discourages building camps
 			factor = 0.75
-		NOT = { FROM = { army_tradition = 20 } }			#Army tradition now either encourages or discourages building camps
 		}
 		modifier = {
-			factor = 0.9
 			NOT = { FROM = { army_tradition = 40 } }			#Army tradition now either encourages or discourages building camps
+			factor = 0.9
 		}
 		modifier = {
-			factor = 1.1
 			FROM = { army_tradition = 60 }			#Army tradition now either encourages or discourages building camps
+			factor = 1.1
 		}
 		modifier = {
-			factor = 1.25
 			FROM = { army_tradition = 80 }			#Army tradition now either encourages or discourages building camps
+			factor = 1.25
 		}
 		modifier = {
 			factor = 1.5
@@ -652,10 +643,6 @@ fort_16th = {
 	
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
-		modifier = {
-			factor = 2
-			is_capital = yes			#AI would want to fortify their home province.
-		}
 		#BT Addon New factors, range 51 percent to 216.5625 percent
 		modifier = {
 			factor = 1.5
@@ -699,25 +686,6 @@ fort_16th = {
 	} 
 }
 
-naval_battery = {
-
-	make_obsolete = coastal_defence
-	cost = 200
-	time = 12
-	build_trigger = {
-		has_port = yes
-	}
-	modifier = {
-		blockade_force_required = 1.0
-		hostile_disembark_speed = 2.0
-		hostile_fleet_attrition = 5
-	}
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
 ################################################
 # Tier 3, 17th Century Buildings
 ################################################
@@ -732,11 +700,16 @@ cathedral = {
 	}
 	
 	ai_will_do = {
-		factor = 4			#BT Addon changed from 1. Changing all base factors to price divided by 100. 
+		factor = 2			#BT Addon changed from 1. Changing all base factors to price divided by 100. 
 		#BT Addon New factors, range 100 percent to 450 percent
 		modifier = {
 			factor = 1.5
 			has_owner_religion = no			#AI is encouraged to build this where they need to convert the local population
+			NOT = { has_estate = estate_dhimmi }
+		}
+		modifier = {
+			factor = 1.5
+			has_estate = estate_church			#Provinces with chuch estates will also be more likely to have temples
 		}
 		modifier = {
 			factor = 2.0
@@ -758,7 +731,7 @@ university = {
 	}
 	
 	ai_will_do = {
-		factor = 12			#BT Addon changed from 1. Changing all base factors to price divided by 100.
+		factor = 6			#BT Addon changed from 1. Changing all base factors to price divided by 100.
 		#BT Addon cut a bunch of... not horrible but not great AI code here encouraging unis to be built. Replacing it below. Vanilla range was 36 percent to 7,500 percent.
 		#Note with this addon, universities are no longer economically worthless, and I am assuming the AI will pick up on that. I do not know, however, what the exact figures are and thus balancing it will be a challenge. For a start, it has roughly half the economic contribution of a cathedral, but x3 the cost, 
 		#assuming the new AI is not smart enough to pick up on institution spread modifiers, which do not exist in vanilla, without any other modifiers I'm assuming (notice a trend here?) that it will require a factor of 6 or so before the AI will choose this before a cathedral or a factor of 12 to pick before a temple.
@@ -929,7 +902,7 @@ university = {
 		modifier = {
 			factor = 20
 			OR = {
-				province_id = 4730		#Bologna, 1088
+				province_id = 3041		#Bologna, 1088
 				province_id = 237			#Oxford, 1096
 				province_id = 183			#Paris (Sorbonne), 1160 (I thought it was older...)
 				province_id = 3027		#Cambrige, 1209
@@ -946,7 +919,7 @@ university = {
 				province_id = 116			#Florence, 1321
 				province_id = 115			#Pisa, 1343
 				province_id = 266			#Prague, 1348
-				province_id = 4728		#Pavia, 1361
+				province_id = 3043		#Pavia, 1361
 				province_id = 262			#Jagiellonian (Krakow), 1364
 				province_id = 134			#Vienna, 1365
 				province_id = 77			#Ruprecht Karl University of Heidelberg, 1386
@@ -1012,7 +985,7 @@ grand_shipyard = {
 	
 	make_obsolete = shipyard
 	
-	build_trigger = {
+	trigger = {
 		has_port = yes
 	}
 	modifier = {
@@ -1022,7 +995,7 @@ grand_shipyard = {
 	}
 	
 	ai_will_do = {
-		factor = 180			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings).
+		factor = 240			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings).
 		#BT AddOn removed navy size modifier below, replaced with a more detailed version in new factors
 		#modifier = {
 		#	factor = 320 # Little above build cost
@@ -1035,36 +1008,36 @@ grand_shipyard = {
 		#}
 		#BT Addon New factors, range 40 percent to 225 percent (replacing vanilla 100 percent to 35,200). I'm assuming from vanilla's high factor that the AI doesn't consider forcelimits as valuable, but if you start seeing too many or too few, please do report.
 		modifier = {
-			factor = 1.2			#running total 216
 			FROM = { navy_size_percentage = 0.75 }
+			factor = 1.2			#running total 216
 		}
 		modifier = {
-			factor = 1.3			#running total 280.8
 			FROM = { navy_size_percentage = 1.0 }
+			factor = 1.3			#running total 280.8
 		}
 		modifier = {
-			factor = 1.4			#running total 393.12
 			FROM = { navy_size_percentage = 1.25 }
+			factor = 1.4			#running total 393.12
 		}
 		modifier = {
-			factor = 1.5			#running total 589.68
 			FROM = { navy_size_percentage = 1.5 }
+			factor = 1.5			#running total 589.68
 		}
 		modifier = {
-			factor = 0.75
 			NOT = { FROM = { navy_tradition = 20 } }			#Naval tradition now either encourages or discourages building shipyards
+			factor = 0.75
 		}
 		modifier = {
-			factor = 0.9
 			NOT = { FROM = { navy_tradition = 40 } }			#Naval tradition now either encourages or discourages building shipyards
+			factor = 0.9
 		}
 		modifier = {
-			factor = 1.1
 			FROM = { navy_tradition = 60 }			#Naval tradition now either encourages or discourages building shipyards
+			factor = 1.1
 		}
 		modifier = {
-			factor = 1.25
 			FROM = { navy_tradition = 80 }			#Naval tradition now either encourages or discourages building shipyards
+			factor = 1.25
 		}
 		modifier = {
 			factor = 1.5
@@ -1127,28 +1100,36 @@ training_fields = {
 		factor = 160			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings).
 		#BT Addon New factors, range 36 percent to 486 percent
 		modifier = {
-			factor = 0.5
-			NOT = { FROM = { army_tradition = 20 } }			#Army tradition now either encourages or discourages building barracks
-		}
-		modifier = {
-			factor = 0.8
-			NOT = { FROM = { army_tradition = 40 } }			#Army tradition now either encourages or discourages building barracks
-		}
-		modifier = {
-			factor = 1.2
-			FROM = { army_tradition = 60 }			#Army tradition now either encourages or discourages building barracks
-		}
-		modifier = {
 			factor = 1.5
-			FROM = { army_tradition = 80 }			#Army tradition now either encourages or discourages building barracks
+			OR = {
+				has_estate = estate_nobles			#Provinces with noble estates will also be more likely to have barracks
+				has_estate = estate_nomadic_tribes			#Provinces with nomadic estates will also be more likely to have barracks
+				has_estate = estate_cossacks			#Provinces with cossack estates will also be more likely to have barracks
+			}
 		}
 		modifier = {
+			NOT = { FROM = { army_tradition = 20 } }			#Army tradition now either encourages or discourages building barracks
+			factor = 0.5
+		}
+		modifier = {
+			NOT = { FROM = { army_tradition = 40 } }			#Army tradition now either encourages or discourages building barracks
+			factor = 0.8
+		}
+		modifier = {
+			FROM = { army_tradition = 60 }			#Army tradition now either encourages or discourages building barracks
 			factor = 1.2
-			NOT = { owner = { manpower_percentage = 0.35 } }			#Further encouraged if low on manpower
 		}
 		modifier = {
-			factor = 0.9
+			FROM = { army_tradition = 80 }			#Army tradition now either encourages or discourages building barracks
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { owner = { manpower_percentage = 0.35 } }			#Further encouraged if low on manpower
+			factor = 1.2
+		}
+		modifier = {
 			owner = { manpower_percentage = 0.8 }			#Slightly discouraged if plenty of manpower
+			factor = 0.9
 		}
 		#Removed for now. Massive gov changes in 1.26 make this not an easy 1 to 1 update
 		#modifier = {
@@ -1216,10 +1197,6 @@ fort_17th = {
 	
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
-		modifier = {
-			factor = 2
-			is_capital = yes			#AI would want to fortify their home province.
-		}
 		#BT Addon New factors, range 38 percent to 216.5625 percent
 		modifier = {
 			factor = 1.5
@@ -1320,7 +1297,7 @@ counting_house = {
 	allow_in_gold_provinces = no
 	
 	ai_will_do = {
-		factor = 4			#BT Addon changed from 1. Changing all base factors to price divided by 100.
+		factor = 2			#BT Addon changed from 1. Changing all base factors to price divided by 100.
 		#BT Addon New factors, range 13 percent to 675 percent
 		modifier = {
 			factor = 0.2
@@ -1350,6 +1327,10 @@ counting_house = {
 				has_terrain = woods
 			}
 		}
+		modifier = {
+			factor = 1.5
+			has_estate = estate_burghers			#Provinces with burgher estates will also be more likely to have workshops
+		}
 		#Removed for now. Massive gov changes in 1.26 make this not an easy 1 to 1 update
 		#modifier = {
 		#	factor = 1.5
@@ -1378,14 +1359,9 @@ town_hall = {
 	
 	make_obsolete = courthouse
 	
-	build_trigger = { #BT 13 added to balance states territories and tradecompanies.
-		is_state = yes
-	}
-	
 	modifier = {
 		local_state_maintenance_modifier = -0.5
 		local_autonomy = -0.2
-		local_governing_cost = -0.5
 	}
 	
 	ai_will_do = {
@@ -1416,7 +1392,7 @@ drydock = {
 	
 	make_obsolete = dock
 	
-	build_trigger = {
+	trigger = {
 		has_port = yes
 	}
 	
@@ -1428,28 +1404,28 @@ drydock = {
 		factor = 80			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings). Special penalty for Docks because they're worthless
 		#BT Addon New factors, range 36 percent to 216 percent
 		modifier = {
-			factor = 0.5
 			NOT = { FROM = { navy_tradition = 20 } }			#Naval tradition now either encourages or discourages building docks
+			factor = 0.5
 		}
 		modifier = {
-			factor = 0.8
 			NOT = { FROM = { navy_tradition = 40 } }			#Naval tradition now either encourages or discourages building docks
+			factor = 0.8
 		}
 		modifier = {
-			factor = 1.2
 			FROM = { navy_tradition = 60 }			#Naval tradition now either encourages or discourages building docks
-		}
-		modifier = {
-			factor = 1.5
-			FROM = { navy_tradition = 80 }			#Naval tradition now either encourages or discourages building docks
-		}
-		modifier = {
 			factor = 1.2
-			NOT = { owner = { sailors_percentage = 0.35 } }			#Further encouraged if low on sailors
 		}
 		modifier = {
-			factor = 0.9
+			FROM = { navy_tradition = 80 }			#Naval tradition now either encourages or discourages building docks
+			factor = 1.5
+		}
+		modifier = {
+			NOT = { owner = { sailors_percentage = 0.35 } }			#Further encouraged if low on sailors
+			factor = 1.2
+		}
+		modifier = {
 			owner = { sailors_percentage = 0.8 }			#Slightly discouraged if plenty of sailors
+			factor = 0.9
 		}
 		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
 		modifier = {
@@ -1499,7 +1475,7 @@ conscription_center = {
 	}
 	
 	ai_will_do = {
-		factor = 180			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings).
+		factor = 240			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings).
 		#BT AddOn removed navy size modifier below, replaced with a more detailed version in new factors
 		#modifier = {
 		#	factor = 435 # Little above build cost
@@ -1511,36 +1487,36 @@ conscription_center = {
 		#}
 		#BT Addon New factors, range 40 percent to 225 percent (replacing vanilla 100 percent to 47,850 percent).
 		modifier = {
-			factor = 1.2			#running total 216
 			FROM = { army_size_percentage = 0.75 }
+			factor = 1.2			#running total 216
 		}
 		modifier = {
-			factor = 1.3			#running total 280.8
 			FROM = { army_size_percentage = 1.0 }
+			factor = 1.3			#running total 280.8
 		}
 		modifier = {
-			factor = 1.4			#running total 393.12
 			FROM = { army_size_percentage = 1.25 }
+			factor = 1.4			#running total 393.12
 		}
 		modifier = {
-			factor = 1.5			#running total 589.68
 			FROM = { army_size_percentage = 1.5 }
+			factor = 1.5			#running total 589.68
 		}
 		modifier = {
-			factor = 0.75
 			NOT = { FROM = { army_tradition = 20 } }			#Army tradition now either encourages or discourages building camps
+			factor = 0.75
 		}
 		modifier = {
-			factor = 0.9
 			NOT = { FROM = { army_tradition = 40 } }			#Army tradition now either encourages or discourages building camps
+			factor = 0.9
 		}
 		modifier = {
-			factor = 1.1
 			FROM = { army_tradition = 60 }			#Army tradition now either encourages or discourages building camps
+			factor = 1.1
 		}
 		modifier = {
-			factor = 1.25
 			FROM = { army_tradition = 80 }			#Army tradition now either encourages or discourages building camps
+			factor = 1.25
 		}
 		modifier = {
 			factor = 1.5
@@ -1613,10 +1589,6 @@ fort_18th = {
 	
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
-		modifier = {
-			factor = 2
-			is_capital = yes			#AI would want to fortify their home province.
-		}
 		#BT Addon New factors, range 25 percent to 216.5625 percent
 		modifier = {
 			factor = 1.5
@@ -1692,7 +1664,7 @@ wharf = {
 	onmap = yes
 	
 	ai_will_do = {
-		factor = 12			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses. Note vanilla was 1750, but considering this building had the same effect as other manufacturies and they all have factors of 1, I assumed this was a vanilla oversight.
+		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses. Note vanilla was 1750, but considering this building had the same effect as other manufacturies and they all have factors of 1, I assumed this was a vanilla oversight.
 		#BT Addon removed a bunch of modifiers for the same reason as directly above.
 		#BT Addon New factors, range 2 percent to about 425 percent
 		modifier = {
@@ -1792,7 +1764,7 @@ weapons = {
 	onmap = yes
 	
 	ai_will_do = {
-		factor = 12			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
+		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
 		modifier = {
 			factor = 0.9
@@ -1894,7 +1866,7 @@ textile = {
 	onmap = yes
 	
 	ai_will_do = {
-		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
+		factor = 6			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
 		modifier = {
 			factor = 0.9
@@ -2001,7 +1973,7 @@ plantations = {
 	onmap = yes
 	
 	ai_will_do = {
-		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
+		factor = 6			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
 		modifier = {
 			factor = 0.9
@@ -2206,7 +2178,7 @@ farm_estate = {
 	onmap = yes
 	
 	ai_will_do = {
-		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
+		factor = 6			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
 		modifier = {
 			factor = 0.9
@@ -2301,7 +2273,7 @@ mills = {
 	onmap = yes
 	
 	ai_will_do = {
-		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
+		factor = 6			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
 		modifier = {
 			factor = 0.9
@@ -2409,7 +2381,7 @@ furnace = {
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	
 	ai_will_do = {
-		factor = 15			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
+		factor = 9			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
 		modifier = {
 			factor = 0.9
@@ -2484,135 +2456,5 @@ furnace = {
 			factor = 1.6
 			base_production = 12
 		}
-	}
-}
-
-ramparts = {
-	manufactory = {
-		all
-	}
-	modifier = {
-		local_hostile_attrition = 1
-		local_defensiveness = 0.15
-	}
-	onmap = no
-	show_separate = yes # Means as a manufactory it will be shown according to the old way
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-soldier_households = {
-	manufactory = {
-		all
-	}
-
-	bonus_manufactory = { # Will apply an extra modifier if these goods
-		grain
-		fish
-		livestock
-		wine
-	}
-
-	modifier = {
-		local_manpower = 0.75
-	}
-	bonus_modifier = {
-		local_manpower = 0.75
-	}
-	onmap = no
-	show_separate = yes # Means as a manufactory it will be shown according to the old way
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-impressment_offices = {
-	manufactory = {
-		all
-	}
-
-	bonus_manufactory = { # Will apply an extra modifier if these goods
-		salt
-		fish
-		naval_supplies
-		tropical_wood
-	}
-
-	build_trigger = {
-		has_port = yes
-	}
-
-	modifier = {
-		local_sailors = 250
-	}
-	bonus_modifier = {
-		local_sailors = 250
-	}
-	onmap = no
-	show_separate = yes # Means as a manufactory it will be shown according to the old way
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-
-state_house = {
-	manufactory = {
-		all
-	}
-
-	bonus_manufactory = { # Will apply an extra modifier if these goods
-		paper
-		glass
-		gems
-	}
-
-	build_trigger = {
-		is_state = yes
-		NOT = {
-			area_for_scope_province = {
-				owner = {
-					tag = ROOT
-				}
-				OR = {
-					has_building = state_house
-					has_construction = state_house
-				}
-			}
-		}
-	}
-	
-	keep_trigger = {
-		NOT = {
-			area_for_scope_province = {
-				NOT = { province_id = root }
-				owner = {
-					tag = ROOT
-				}
-				OR = {
-					has_building = state_house
-					has_construction = state_house
-				}
-			}
-		}
-	}
-
-	modifier = {
-		statewide_governing_cost = -0.2
-		min_local_autonomy = -5
-	}
-	bonus_modifier = {
-		statewide_governing_cost = -0.2
-		min_local_autonomy = -5
-	}
-	onmap = no
-	show_separate = yes # Means as a manufactory it will be shown according to the old way
-
-	ai_will_do = {
-		factor = 1
 	}
 }

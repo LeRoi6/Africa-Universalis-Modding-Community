@@ -3,12 +3,9 @@
 #Hopefully for the ease of translators, starting with BT12.0 I'm putting all new localisation content in a new file, which will then be deleted and replaced in the following version (its contents moved to their proper place in the existing files).
 #I think it also may help me, as well, to better keep track of changes & miss fewer localisations with new content.
 
- #Cultures
+#Cultures
  aquitaine:0 "Provençal"
  
- #Tags
- PRO: "Anjou"
- PRO_ADJ:0 "Angevin"
  
  #Trade nodes
  champagne:0 "Paris"

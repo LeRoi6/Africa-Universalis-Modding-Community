@@ -2,9 +2,9 @@
 #Region - Germany
 #Area - Franconia
 
-owner = BAM
-controller = BAM
-add_core = BAM
+owner = BMB
+controller = BMB
+add_core = BMB
 culture = franconian
 religion = catholic
 base_tax = 6
@@ -21,11 +21,11 @@ discovered_by = ottoman
 discovered_by = eastern
 
 1632.2.11 = { controller = SWE }
-1634.11.1 = { controller = BAM }
+1634.11.1 = { controller = BMB }
 1803.1.1 = {
 	owner = BAV
 	controller = BAV
 	add_core = BAV
-	remove_core = BAM
+	remove_core = BMB
 } # Annexed by Bavaria
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

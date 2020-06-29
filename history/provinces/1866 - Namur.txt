@@ -18,6 +18,7 @@ base_tax = 6
 base_production = 6
 trade_goods = iron			#A mjor industrial centre of the Ardennes. Metal working, mining, industrial furnaces, machining, etc.
 base_manpower = 3 
+estate = estate_church
 fort_15th = yes
 
 discovered_by = western

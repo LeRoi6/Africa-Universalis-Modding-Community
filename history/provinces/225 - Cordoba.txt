@@ -5,7 +5,6 @@
 owner = CAS		#Juan II of Castille
 controller = CAS
 add_core = CAS
-add_core = CDB #BTB added: Castilian revolter tag.
 culture = andalucian
 religion = catholic
 hre = no
@@ -14,6 +13,7 @@ base_production = 8
 trade_goods = gold
 base_manpower = 4
 capital = "Córdoba" 
+estate = estate_nobles
 is_city = yes
 
 discovered_by = western

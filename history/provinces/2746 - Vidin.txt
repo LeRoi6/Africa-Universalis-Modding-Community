@@ -82,10 +82,10 @@ center_of_trade = 1
 	owner = TUR
 	controller = TUR
 	add_core = TUR
+	estate = estate_dhimmi
 	base_tax = 4 #2
 	base_production = 2
 	base_manpower = 4
-	add_local_autonomy = 10
 }	#Ottomans come along. Pax Ottomana. Technically held as a subject for a couple decades before being fully annexed, but whatever
 
 #1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins

@@ -41,7 +41,7 @@ country_decisions = {
 				province_id = 1866 # Namur
 				province_id = 2974 # Loon
 				province_id = 3064 # Westhoek
-				province_id = 4769 # Lille
+				province_id = 3065 # Lille
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -68,7 +68,7 @@ country_decisions = {
 						province_id = 1866 # Namur
 						province_id = 2974 # Loon
 						province_id = 3064 # Westhoek
-						province_id = 4769 # Lille
+						province_id = 3065 # Lille
 					}
 				}
 				amount = 7			#At least 2/3 of Belgium's 11 provinces (approximate)
@@ -95,12 +95,18 @@ country_decisions = {
 						region = low_countries_region
 						area = picardy_area
 					}
-					#NOT = { province_id = 87 }
+					NOT = { province_id = 87 }
 					NOT = { province_id = 1931 }
 				}
 				add_permanent_claim = BEL
 			}
-			swap_ideas = yes
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = ARM_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			set_country_flag = formed_belgian_flag_btp
 		}
 		ai_will_do = {
@@ -132,7 +138,14 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			culture = romagnan
+			OR = {
+				province_id = 105	# Parma
+				province_id = 106	# Modena
+				province_id = 109	# Mantua
+				province_id = 113	# Ferrara
+				province_id = 114	# Romagna
+				province_id = 3041	# Bologna
+			}
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -143,33 +156,34 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			owns_core_province = 4730	# Bologna
+			owns_core_province = 3041	# Bologna
 			calc_true_if = {
 				all_owned_province = {
 					is_core = ROOT
-					culture = romagnan
+					OR = {
+						province_id = 105	# Parma
+						province_id = 106	# Modena
+						province_id = 109	# Mantua
+						province_id = 113	# Ferrara
+						province_id = 114	# Romagna
+						province_id = 3041	# Bologna
+					}
 				}
-				amount = 15			#At least 2/3rds of Romagnol-cultured 22 provinces
+				amount = 6			#At least all of Emilia's 6 provinces (approximate)
 			}
 		}
 		effect = {
 			change_tag = EMR
-			#remove_non_electors_emperors_from_empire_effect = yes #Duchy rank, therefore should not remove from HRE.
+			remove_non_electors_emperors_from_empire_effect = yes
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
-			every_province = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-					culture = romagnan
-				}
-				add_permanent_claim = EMR
-			}
 			add_prestige = 10
-			#No Emilian ideas yet.
-			# swap_ideas = yes
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			set_country_flag = formed_emilia_flag_btp
 		}
 		ai_will_do = {
@@ -275,8 +289,11 @@ country_decisions = {
 				}
 				add_claim = FRA
 			}
-			swap_ideas = yes
-			# custom_tooltip = spanish_unification_effect.tooltip
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			custom_tooltip = spanish_unification_effect.tooltip
 			set_country_flag = formed_france_flag
 		}
 		ai_will_do = {
@@ -327,8 +344,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = IBE
-			#No Iberian missions yet.
-			#swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 3 } }
@@ -346,8 +362,10 @@ country_decisions = {
 				}
 				add_permanent_claim = IBE
 			}
-			#No Iberian ideas yet.
-			# swap_ideas = yes
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			set_country_flag = formed_iberia_flag_btp
 		}
 		ai_will_do = {
@@ -377,15 +395,15 @@ country_decisions = {
 				province_id = 137				# Ragusa
 				province_id = 138				# Zeta
 				province_id = 139				# Hum
-				province_id = 3002				# Lasva
+				province_id = 140				# Lasva
 				province_id = 141				# Belgrade
 				province_id = 1766			# Kosovo
 				province_id = 1767			# Slavonia
 				province_id = 1826			# Lika
 				province_id = 3001			# Skopje
-				province_id = 4755			# Sarajevo
+				province_id = 3002			# Sarajevo
 				province_id = 3187			# Podrinje
-				province_id = 4752			# Rijeka
+				province_id = 3191			# Rijeka
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -405,15 +423,15 @@ country_decisions = {
 						province_id = 137				# Ragusa
 						province_id = 138				# Zeta
 						province_id = 139				# Hum
-						province_id = 3002				# Lasva
+						province_id = 140				# Lasva
 						province_id = 141				# Belgrade
 						province_id = 1766			# Kosovo
 						province_id = 1767			# Slavonia
 						province_id = 1826			# Lika
 						province_id = 3001			# Skopje
-						province_id = 4755			# Sarajevo
+						province_id = 3002			# Sarajevo
 						province_id = 3187			# Podrinje
-						province_id = 4752			# Rijeka
+						province_id = 3191			# Rijeka
 					}
 				}
 				amount = 9			#At least 2/3 of Illyria's 13 provinces (approximate)
@@ -443,8 +461,10 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
-			#No Illyrian ideas yet.
-			# swap_ideas = yes
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			set_country_flag = formed_illyria_flag_btp
 		}
 		ai_will_do = {
@@ -544,7 +564,7 @@ country_decisions = {
 				province_id = 1769	# Gorizia
 				province_id = 1774	# Treviso
 				province_id = 1862	# Cremona
-				province_id = 4739	# Bergamo
+				province_id = 3047	# Bergamo
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -578,7 +598,7 @@ country_decisions = {
 						province_id = 1769	# Gorizia
 						province_id = 1774	# Treviso
 						province_id = 1862	# Cremona
-						province_id = 4739	# Bergamo
+						province_id = 3047	# Bergamo
 					}
 				}
 				amount = 7			#At least 2/3 of lmv's 11 provinces (approximate)
@@ -598,21 +618,9 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
-			#If Lombardy-Venetia is formed by theocracy or tribal nation, it gets generic ideas, so gating it behind that.
 			if = {
-				limit = {
-					OR = {
-						AND = {
-							government = monarchy 
-							NOT = { has_idea_group = MLO_ideas }
-						}
-						AND = {
-							government = republic
-							NOT = { has_idea_group = VEN_ideas }
-						}
-					}
-				}
-				swap_ideas = yes
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_country_flag = formed_lombardy_venetia_flag_btp
 		}
@@ -725,8 +733,11 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 50
-			#No Moravian ideas yet
-			# swap_ideas = yes
+			#Cutting this because there are currently no unique Moravian ideas
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
 			set_country_flag = formed_moravia_flag_btp
 		}
 		ai_will_do = {
@@ -813,7 +824,157 @@ country_decisions = {
 ###################################################################################################
 ################################			Pomerania			 ##############################################			#Done by JP 2019-4 & adjusted a bit by Draiocht
 ###################################################################################################
-#Moved to BtPLReplaceVanillaCountryFormations due to appearing in vanilla in 1.30.
+	bt_pomeranian_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			bt_hre_stem_duchy_check = yes			#prevents lateral progression. Must not be or have been a stem duchy already
+			NOT = { has_country_flag = bt_formed_stem_duchy } 			#prevents lateral progression. All Stem Duchies should give this and check for this.
+			NOT = { has_country_flag = formed_pomerania_flag_btp } 
+			NOT = { num_of_cities = 30 }	#With more than 60 cities, tag should be aiming to form Prussia or Germany
+			OR = {
+				#Tags which we want to see the decision by default
+				tag = WLG
+				tag = STT
+				tag = STP
+				tag = KMI
+				tag = RUG
+				AND = {
+					capital_scope = {
+						OR = {
+							area = vorpommern_area
+							area = hinter_pommern_area
+						}
+					}
+					OR = {
+						culture_group = germanic
+						primary_culture = polabian_culture
+						primary_culture = kashubian_culture
+					}
+					NOT = { government_rank = 2 }
+				}	#Some contingencies for odd situations. So long as the tag is a reasonable culture, it isn't too large, and has a capital in Pomerania, then why not? Note the num of city check should ensure no quirks with giant tags switching who shouldn't
+			}
+		}
+		provinces_to_highlight = {
+			OR = { 
+				area = vorpommern_area
+				area = hinter_pommern_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = POM } 
+			is_at_war = no 
+			is_free_or_tributary_trigger = yes 
+			is_nomad = no 
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = bt_sole_pomeranian_duchy_tooltip
+					OR = {
+						AND = {
+							tag = WLG
+							NOT = { exists = STT }
+							NOT = { exists = STP }
+						}
+						AND = {
+							tag = STT
+							NOT = { exists = WLG }
+							NOT = { exists = STP }
+						}
+						AND = {
+							tag = STP
+							NOT = { exists = WLG }
+							NOT = { exists = STT }
+						}
+					}
+				}
+				AND  = {
+					custom_trigger_tooltip = {
+						tooltip = bt_no_other_surviving_pomeranian_minors
+						NOT = { exists = WLG }
+						NOT = { exists = STT }
+						NOT = { exists = STP }
+					}
+					custom_trigger_tooltip = {
+						tooltip = two_thirds_of_pomerania_tooltip
+						calc_true_if = {
+							all_owned_province = {
+								is_core = ROOT
+									OR = {
+										area = vorpommern_area
+										area = hinter_pommern_area
+									}
+							}
+							amount = 10			#At least 2/3 of Pomerania's 14 provinces
+						}
+					}
+					owns_core_province = 1858			#Stettin
+					owns_core_province = 2994			#Griefswald
+					owns_core_province = 2995			#Stolp
+				}
+			}
+		}
+		effect = {
+			change_tag = POM
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 5
+			vorpommern_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = POM
+			}
+			hinter_pommern_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = POM
+			}
+			custom_tooltip = bt_reunifies_duchy_of_pomerania
+			hidden_effect = {
+				every_province = {
+					limit = {
+						continent = europe
+						is_core = WLG
+					}
+					remove_core = WLG
+					add_core = POM
+				}
+				every_province = {
+					limit = {
+						continent = europe
+						is_core = STT
+					}
+					remove_core = STT
+					add_core = POM
+				}
+				every_province = {
+					limit = {
+						continent = europe
+						is_core = STP
+					}
+					remove_core = STP
+					add_core = POM
+				}
+			}
+			set_country_flag = formed_pomerania_flag_btp
+			set_country_flag = bt_formed_stem_duchy
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 
 ###################################################################################################
 ################################			Sennar			 ##############################################

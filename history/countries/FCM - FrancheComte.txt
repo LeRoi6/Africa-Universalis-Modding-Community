@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = burgundian
 religion = catholic
 technology_group = western
-capital = 4764
+capital = 7941
 
 
 #History not yet done

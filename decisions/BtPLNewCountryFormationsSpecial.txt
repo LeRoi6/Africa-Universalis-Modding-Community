@@ -36,15 +36,20 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				area = connacht_area
-				value = 4			#of 6
+			custom_trigger_tooltip = {
+				tooltip = ireland_provincial_kingdom_hegemony_tooltip_a
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						area = connacht_area
+					}
+					amount = 2			#of 3
+				}
 			}
 		}
 		effect = {
 			change_tag = CNN
-			add_government_reform = provincial_kingdom_reform
+			#change_government = provincial_kingdom
 			connacht_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -97,15 +102,20 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				area = munster_area
-				value = 6			#of 9
+			custom_trigger_tooltip = {
+				tooltip = ireland_provincial_kingdom_hegemony_tooltip_b
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						area = munster_area
+					}
+					amount = 4			#of 5
+				}
 			}
 		}
 		effect = {
 			change_tag = MNS
-			add_government_reform = provincial_kingdom_reform
+			#change_government = provincial_kingdom
 			munster_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -158,15 +168,20 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				area = leinster_area
-				value = 5			#of 7
+			custom_trigger_tooltip = {
+				tooltip = ireland_provincial_kingdom_hegemony_tooltip_c
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						area = leinster_area
+					}
+					amount = 3			#of 4
+				}
 			}
 		}
 		effect = {
 			change_tag = LEI
-			add_government_reform = provincial_kingdom_reform
+			#change_government = provincial_kingdom
 			leinster_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -219,15 +234,20 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				area = ulster_area
-				value = 6			#of 8
+			custom_trigger_tooltip = {
+				tooltip = ireland_provincial_kingdom_hegemony_tooltip_d
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						area = ulster_area
+					}
+					amount = 4			#of 5
+				}
 			}
 		}
 		effect = {
 			change_tag = ULS
-			add_government_reform = provincial_kingdom_reform
+			#change_government = provincial_kingdom
 			ulster_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -256,8 +276,6 @@ country_decisions = {
 			NOT = { has_country_flag = formed_tir_na_gceilteach_btp }
 			NOT = { tag = CEL }
 			NOT = { tag = GBR }
-			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			OR = {
 				culture_group = gaelic
 				culture_group = brythonic
@@ -266,37 +284,28 @@ country_decisions = {
 			OR = {
 				tag = TNA
 				tag = YYK
-				num_of_owned_provinces_with = {
-					is_core = ROOT
-					OR = {
-						region = british_isles_region
-						region = ireland_area
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							region = british_isles_region
+							region = ireland_area
+						}
 					}
-					value = 78			#78 of Britain and Ireland's 116 provinces
+					amount = 44			#44 of Britain and Ireland's 66 provinces
 				}
 			}
 		}
 		provinces_to_highlight = {
 			OR = {
-				#Ireland
 				region = ireland_area
-				#Scotland
 				area = highlands_area
 				area = lowlands_area
-				area = grampians_area
 				area = scottish_marches_area
 				area = kingdom_of_the_isles_area
-				#Wales
-				area = powys_area
 				area = wales_area
-				area = west_midlands_area
-				#Brittany
+				area = cornwall_area
 				area = brittany_area
-				area = lower_brittany_area
-				#Cornwall
-				province_id = 233 #Cornwall
-				province_id = 8122 #North Devon/Barnstaple
-				province_id = 4373 #South Devon/Exeter
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -306,51 +315,66 @@ country_decisions = {
 		allow = {
 			NOT = { exists = CEL }
 			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
 			government_rank = 2			#Replaces the government specific Nots, as all Irish minors are rank 1. Also useful because we dont want a rank 1 jumping to rank 3 in one go
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				region = ireland_area
-				value = 16			#At least half of Ireland (30)
-			}
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				OR = {
-					area = highlands_area
-					area = lowlands_area
-					area = scottish_marches_area
-					area = kingdom_of_the_isles_area
-					area = grampians_area
+			custom_trigger_tooltip = {
+				tooltip = celtic_nation_required_provinces_tooltip_a
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						region = ireland_area
+					}
+					amount = 9			#At least half of Ireland
 				}
-				value = 15			#At least half of Scotland (28)
+			}
+			custom_trigger_tooltip = {
+				tooltip = celtic_nation_required_provinces_tooltip_b
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = highlands_area
+							area = lowlands_area
+							area = scottish_marches_area
+							area = kingdom_of_the_isles_area
+						}
+					}
+					amount = 9			#At least half of Scotland
+				}
 			}
 			owns_core_province = 4365			#Owns the Isle of Man
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				OR = {
-					area = powys_area
-					area = wales_area
-					area = west_midlands_area
+			custom_trigger_tooltip = {
+				tooltip = celtic_nation_required_provinces_tooltip_c
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						area = wales_area
+					}
+					amount = 3			#At least half of Wales
 				}
-				value = 8			#At least half of Wales (15)
 			}
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				OR = {
-					province_id = 233 #Cornwall
-					province_id = 8122 #North Devon/Barnstaple
-					province_id = 4373 #South Devon/Exeter
+			custom_trigger_tooltip = {
+				tooltip = celtic_nation_required_provinces_tooltip_d
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						area = cornwall_area
+					}
+					amount = 1			#At least half of Cornwall
 				}
-				value = 2			#At least half of Cornwall (3)
 			}
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				OR = {
-					area = brittany_area
-					area = lower_brittany_area
+			custom_trigger_tooltip = {
+				tooltip = celtic_nation_required_provinces_tooltip_e
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						area = brittany_area
+					}
+					amount = 3			#At least half of Brittany
 				}
-				value = 6			#BT Bugfixes adjusted to 6 out of 15. Reason being that only Lower Brittany is Celtic in 1444, and it contains 6 provinces.
 			}
-			num_of_cities = 70			#Additonally, must have at least 25 more provinces than the minimum, located anywhere. That is roughly all of any 3 of the 4 major Celtic countries.
+			num_of_cities = 40			#Additonally, must have at least 14 more provinces than the minimum, located anywhere. That is roughly all of any 3 of the 4 major Celtic countries, or minimum above plus about half of England. Ireland - 17, Scotland - 17, Wales - 6, Brittany - 6, Cornwall - 2, Mann - 1, England - 24
 			total_development = 500			#Special discount. Normal requirement for rank 3 is 2000 dev, so this is 75 percent discounted. Note base dev in 1444 of all Celtic countries is around 508 (and England is another 362).
 			prestige = 40			#Normal requirement for rank 3 is 75 prestige.
 			}
@@ -383,39 +407,15 @@ country_decisions = {
 					limit = { NOT = { owned_by = ROOT } }
 					add_permanent_claim = CEL
 				}
-				grampians_area = {
-					limit = { NOT = { owned_by = ROOT } }
-					add_permanent_claim = CEL
-				}
-				powys_area = {
-					limit = { NOT = { owned_by = ROOT } }
-					add_permanent_claim = CEL
-				}
 				wales_area = {
 					limit = { NOT = { owned_by = ROOT } }
 					add_permanent_claim = CEL
 				}
-				west_midlands_area = {
+				cornwall_area = {
 					limit = { NOT = { owned_by = ROOT } }
-					add_permanent_claim = CEL
-				}
-				233 = {
-					if = { limit = { NOT = { owned_by = ROOT } } }
-					add_permanent_claim = CEL
-				}
-				8122 = {
-					if = { limit = { NOT = { owned_by = ROOT } } }
-					add_permanent_claim = CEL
-				}
-				4373 = {
-					if = { limit = { NOT = { owned_by = ROOT } } }
 					add_permanent_claim = CEL
 				}
 				brittany_area = {
-					limit = { NOT = { owned_by = ROOT } }
-					add_permanent_claim = CEL
-				}
-				lower_brittany_area = {
 					limit = { NOT = { owned_by = ROOT } }
 					add_permanent_claim = CEL
 				}
@@ -456,12 +456,199 @@ country_decisions = {
 			#############################
 			custom_tooltip = merges_celtic_cultures_tooltip
 			set_global_flag = gaels_and_britons_reunited_into_one_group
-			change_culture_group_effect = { old_culture = irish 				new_culture = celtic_irish_culture }
-			change_culture_group_effect = { old_culture = highland_scottish 	new_culture = celtic_highland_scottish_culture }
-			change_culture_group_effect = { old_culture = gallgaidheil 			new_culture = celtic_highland_scottish_culture }
-			change_culture_group_effect = { old_culture = welsh 				new_culture = celtic_welsh_culture }
-			change_culture_group_effect = { old_culture = breton 				new_culture = celtic_breton_culture }
-			change_culture_group_effect = { old_culture = cornish 				new_culture = celtic_cornish_culture }
+			#Primary Culture
+			hidden_effect = {
+				every_country = {
+					limit = { primary_culture = irish }
+					change_primary_culture = celtic_irish_culture
+				}
+				every_country = {
+					limit = { primary_culture = highland_scottish }
+					change_primary_culture = celtic_highland_scottish_culture
+				}
+				every_country = {
+					limit = { primary_culture = gallgaidheil }
+					change_primary_culture = celtic_highland_scottish_culture
+				}
+				#every_country = {
+				#	limit = { primary_culture = manx }
+				#	change_primary_culture = celtic_manx_culture
+				#}
+				every_country = {
+					limit = { primary_culture = welsh }
+					change_primary_culture = celtic_welsh_culture
+				}
+				every_country = {
+					limit = { primary_culture = breton }
+					change_primary_culture = celtic_breton_culture
+				}
+				every_country = {
+					limit = { primary_culture = cornish }
+					change_primary_culture = celtic_cornish_culture
+				}
+			}
+			#Accepted Cultures
+			hidden_effect = {
+				every_country = {
+					limit = { accepted_culture = irish }
+					remove_accepted_culture = irish
+					add_accepted_culture = celtic_irish_culture
+				}
+				every_country = {
+					limit = { accepted_culture = highland_scottish }
+					remove_accepted_culture = highland_scottish
+					add_accepted_culture = celtic_highland_scottish_culture
+				}
+				every_country = {
+					limit = { accepted_culture = gallgaidheil }
+					remove_accepted_culture = gallgaidheil
+					add_accepted_culture = celtic_highland_scottish_culture
+				}
+				#every_country = {
+				#	limit = { accepted_culture = manx }
+				#	remove_accepted_culture = manx
+				#	add_accepted_culture = celtic_manx_culture
+				#}
+				every_country = {
+					limit = { accepted_culture = welsh }
+					remove_accepted_culture = welsh
+					add_accepted_culture = celtic_welsh_culture
+				}
+				every_country = {
+					limit = { accepted_culture = breton }
+					remove_accepted_culture = breton
+					add_accepted_culture = celtic_breton_culture
+				}
+				every_country = {
+					limit = { accepted_culture = cornish }
+					remove_accepted_culture = cornish
+					add_accepted_culture = celtic_cornish_culture
+				}
+			}
+			#Provinces
+			hidden_effect = {
+				every_province = {
+					limit = { culture = irish }
+					change_culture = celtic_irish_culture
+				}
+				every_province = {
+					limit = { culture = highland_scottish }
+					change_culture = celtic_highland_scottish_culture
+				}
+				every_province = {
+					limit = { culture = gallgaidheil }
+					change_culture = celtic_highland_scottish_culture
+				}
+				#every_province = {
+				#	limit = { culture = manx }
+				#	change_culture = celtic_manx_culture
+				#}
+				every_province = {
+					limit = { culture = welsh }
+					change_culture = celtic_welsh_culture
+				}
+				every_province = {
+					limit = { culture = breton }
+					change_culture = celtic_breton_culture
+				}
+				every_province = {
+					limit = { culture = cornish }
+					change_culture = celtic_cornish_culture
+				}
+			}
+			#Rulers
+			hidden_effect = {
+				every_country = {
+					limit = { ruler_culture = irish }
+					set_ruler_culture = celtic_irish_culture
+				}
+				every_country = {
+					limit = { ruler_culture = highland_scottish }
+					set_ruler_culture = celtic_highland_scottish_culture
+				}
+				every_country = {
+					limit = { ruler_culture = gallgaidheil }
+					set_ruler_culture = celtic_highland_scottish_culture
+				}
+				#every_country = {
+				#	limit = { ruler_culture = manx }
+				#	set_ruler_culture = celtic_manx_culture
+				#}
+				every_country = {
+					limit = { ruler_culture = welsh }
+					set_ruler_culture = celtic_welsh_culture
+				}
+				every_country = {
+					limit = { ruler_culture = breton }
+					set_ruler_culture = celtic_breton_culture
+				}
+				every_country = {
+					limit = { ruler_culture = cornish }
+					set_ruler_culture = celtic_cornish_culture
+				}
+			}
+			#Heirs
+			hidden_effect = {
+				every_country = {
+					limit = { heir_culture = irish }
+					set_heir_culture = celtic_irish_culture
+				}
+				every_country = {
+					limit = { heir_culture = highland_scottish }
+					set_heir_culture = celtic_highland_scottish_culture
+				}
+				every_country = {
+					limit = { heir_culture = gallgaidheil }
+					set_heir_culture = celtic_highland_scottish_culture
+				}
+				#every_country = {
+				#	limit = { heir_culture = manx }
+				#	set_heir_culture = celtic_manx_culture
+				#}
+				every_country = {
+					limit = { heir_culture = welsh }
+					set_heir_culture = celtic_welsh_culture
+				}
+				every_country = {
+					limit = { heir_culture = breton }
+					set_heir_culture = celtic_breton_culture
+				}
+				every_country = {
+					limit = { heir_culture = cornish }
+					set_heir_culture = celtic_cornish_culture
+				}
+			}
+			#Consorts
+			hidden_effect = {
+				every_country = {
+					limit = { consort_culture = irish }
+					set_consort_culture = celtic_irish_culture
+				}
+				every_country = {
+					limit = { consort_culture = highland_scottish }
+					set_consort_culture = celtic_highland_scottish_culture
+				}
+				every_country = {
+					limit = { consort_culture = gallgaidheil }
+					set_consort_culture = celtic_highland_scottish_culture
+				}
+				#every_country = {
+				#	limit = { consort_culture = manx }
+				#	set_consort_culture = celtic_manx_culture
+				#}
+				every_country = {
+					limit = { consort_culture = welsh }
+					set_consort_culture = celtic_welsh_culture
+				}
+				every_country = {
+					limit = { consort_culture = breton }
+					set_consort_culture = celtic_breton_culture
+				}
+				every_country = {
+					limit = { consort_culture = cornish }
+					set_consort_culture = celtic_cornish_culture
+				}
+			}
 			#############################
 			#End Merging of the Celtic cultures
 			#############################
@@ -470,7 +657,10 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 50
-			swap_ideas = yes
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			set_country_flag = formed_tir_na_gceilteach_btp
 		}
 		ai_will_do = {
@@ -503,10 +693,15 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				area = connacht_area
-				value = 4			#of 6
+			custom_trigger_tooltip = {
+				tooltip = ireland_provincial_kingdom_hegemony_tooltip_a
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						area = connacht_area
+					}
+					amount = 2			#of 3
+				}
 			}
 		}
 		effect = {
@@ -552,10 +747,15 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				area = munster_area
-				value = 6			#of 9
+			custom_trigger_tooltip = {
+				tooltip = ireland_provincial_kingdom_hegemony_tooltip_b
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						area = munster_area
+					}
+					amount = 4			#of 5
+				}
 			}
 		}
 		effect = {
@@ -604,10 +804,15 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				area = leinster_area
-				value = 5			#of 7
+			custom_trigger_tooltip = {
+				tooltip = ireland_provincial_kingdom_hegemony_tooltip_c
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						area = leinster_area
+					}
+					amount = 3			#of 4
+				}
 			}
 		}
 		effect = {
@@ -656,10 +861,15 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				area = ulster_area
-				value = 6			#of 8
+			custom_trigger_tooltip = {
+				tooltip = ireland_provincial_kingdom_hegemony_tooltip_d
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						area = ulster_area
+					}
+					amount = 4			#of 5
+				}
 			}
 		}
 		effect = {
@@ -709,11 +919,13 @@ country_decisions = {
 				tag = ULS
 				tag = MNS
 				tag = CNN
-				num_of_owned_provinces_with = {
-					is_core = ROOT
-					region = ireland_area
-					value = 16			#over half of Ireland to see if not one of the four primary provincial kingdoms Mun 9 Lei 7 Con 6 Uls 8
-				}
+				calc_true_if = {
+					all_owned_province = {
+						region = ireland_area
+						is_core = owner
+					}
+					amount = 9			#over half of Ireland to see if not one of the four primary provincial kingdoms
+				}		
 			}
 			#NOT = { has_reform = norman_lordship_reform }			#Lordships need to create duchy first
 		}
@@ -731,10 +943,15 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 373			# The Pale and Dublin
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				region = ireland_area
-				value = 20			#requires roughly two thirds of Ireland to form, so ANI can be formed without the west or IRE can be formed without the Pale and the NE plantations
+			custom_trigger_tooltip = {
+				tooltip = two_thirds_of_ireland_tooltip
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						region = ireland_area
+					}
+					amount = 12			#At least 2/3 of Ireland's 17 provinces
+				}	#requires roughly two thirds of Ireland to form, so ANI can be formed without the west or IRE can be formed without the Pale and the NE plantations
 			}
 			total_development = 150			#Special discount. Normal requirement for rank 2 is 500 dev, so this is 70 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -772,9 +989,10 @@ country_decisions = {
 			add_prestige = 25
 			if = {
 				limit = {
+					has_custom_ideas = no
 					NOT = { has_idea_group = ANI_ideas }
 				}
-				swap_ideas = yes
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_country_flag = formed_ireland_flag
 		}
@@ -810,7 +1028,6 @@ country_decisions = {
 				area = scottish_marches_area
 				area = highlands_area
 				area = kingdom_of_the_isles_area
-				area = grampians_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -825,24 +1042,34 @@ country_decisions = {
 			government_rank = 2			#We dont want a rank 1 jumping to rank 3 in one go
 			owns_core_province = 4120			#Kildare, stand in for Tara
 			owns_core_province = 250			#Fife
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				region = ireland_area
-				value = 23			#3/4 of Ireland's 30 provinces
-			}
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				OR = {
-					area = lowlands_area
-					area = scottish_marches_area
-					area = highlands_area
-					area = kingdom_of_the_isles_area
+			custom_trigger_tooltip = {
+				tooltip = three_quarters_of_ireland_tooltip
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						region = ireland_area
+					}
+					amount = 13			#3/4 of Ireland's 17 provinces
 				}
-				value = 21			#3/4 of Scotland's 28 provinces
+			}
+			custom_trigger_tooltip = {
+				tooltip = three_quarters_of_scotland_tooltip
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						OR = {
+							area = lowlands_area
+							area = scottish_marches_area
+							area = highlands_area
+							area = kingdom_of_the_isles_area
+						}
+					}
+					amount = 13			#3/4 of Scotland's 17 provinces
+				}
 			}
 			total_development = 400			#Special discount for cultural union of a small group. Normal requirement for rank 3 is 2000 dev, so this is 80 percent discounted. Note base dev in 1444 Ireland and Scotland is around 360 total
 			prestige = 25			#Special discount. Normal requirement for rank 2 is 75 prestige, so this is 2/3rds discounted
-		}
+			}
 		effect = {
 			change_tag = TNA
 			remove_non_electors_emperors_from_empire_effect = yes
@@ -881,13 +1108,6 @@ country_decisions = {
 				}
 				add_permanent_claim = TNA
 			}
-			grampians_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = TNA
-			}
 			if = {
 				limit = { NOT = { government_rank = 3 } }
 				set_government_rank = 3
@@ -897,7 +1117,10 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
-			swap_ideas = yes
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			set_country_flag = formed_tir_na_ngael_flag_bt
 		}
 		ai_will_do = {
@@ -936,10 +1159,15 @@ country_decisions = {
 			government_rank = 2			#We dont want a rank 1 jumping to rank 3 in one go
 			owns_core_province = 236			#London
 			owns_core_province = 242			#Gwynedd and Angelsey
-			num_of_owned_provinces_with = {
-				is_core = ROOT
-				region = british_isles_region
-				value = 63	#At least 3/4 of Britain's 84 provinces
+			custom_trigger_tooltip = {
+				tooltip = three_quarters_of_britain_tooltip
+				calc_true_if = {
+					all_owned_province = {
+						is_core = ROOT
+						region = british_isles_region
+					}
+					amount = 37			#3/4 of Britain's 49 provinces
+				}
 			}
 			total_development = 400			#Special discount for cultural union of a small group. Normal requirement for rank 3 is 2000 dev, so this is 80 percent discounted. Note base dev in 1444 for southern Britain is around 420, plus 108 more in Brittany.
 			prestige = 25			#Special discount. Normal requirement for rank 2 is 75 prestige, so this is 2/3rds discounted
@@ -951,7 +1179,7 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
-					#NOT = { area = kingdom_of_the_isles_area }
+					NOT = { area = kingdom_of_the_isles_area }
 				}
 				add_permanent_claim = YYK
 			}
@@ -1014,15 +1242,27 @@ country_decisions = {
 			owns_or_vassal_of = 241		# Glamorgan
 			owns_or_vassal_of = 248		# Lothian
 			owns_or_vassal_of = 373		# Dublin
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = british_isles_region
-				is_core = owner
-				value = 76			#At least 90 percent of Britain's 84 provinces
+			custom_trigger_tooltip = {
+				tooltip = hegemony_over_britain_tooltip
+				calc_true_if = {
+					all_province = {
+						region = british_isles_region
+						country_or_vassal_holds = ROOT
+						is_core = owner
+					}
+					amount = 45			#At least 90 percent of Britain's 50 provinces
+				}
 			}
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = ireland_area
-				is_core = owner
-				value = 27			#At least 90 percent of Ireland's 30 provinces
+			custom_trigger_tooltip = {
+				tooltip = hegemony_over_ireland_tooltip
+				calc_true_if = {
+					all_province = {
+						region = ireland_area
+						country_or_vassal_holds = ROOT
+						is_core = owner
+					}
+					amount = 16			#At least 90 percent of Ireland's 17 provinces
+				}
 			}
 			total_development = 1000			#Normal requirement for rank 3 is 2000 dev, so this is 50 percent discounted. Note 1444 dev in all of Britain and Ireland is around 870, so one will need to boost dev a bit first.
 			prestige = 40			#Normal requirement for rank 3 is 75 prestige, so this is 50 percent discounted
@@ -1045,7 +1285,7 @@ country_decisions = {
 								tag = IRE
 								tag = SCO
 							}
-							NOT = { num_of_cities = 36 }
+							NOT = { num_of_cities = 24 }
 						}
 					}
 				}

@@ -1,8 +1,8 @@
 #BT's Western Europe Overhaul in 12.0
 
-owner = TRN
-controller = TRN
-add_core = TRN
+owner = SPL
+controller = SPL
+add_core = SPL
 add_core = ATS
 culture = picard_culture
 religion = catholic

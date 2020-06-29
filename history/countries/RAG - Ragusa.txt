@@ -1,10 +1,9 @@
 government = republic
-add_government_reform = merchants_reform
+add_government_reform = noble_republic
 government_rank = 1
-mercantilism = 25
-primary_culture = dalmatian
+mercantilism = 20
+primary_culture = dalmatian_culture
 religion = catholic
-add_accepted_culture = croatian
 technology_group = eastern
 capital = 137	# Ragusa
 fixed_capital = 137 # Cannot move capital away from this province & no power cost to move to it

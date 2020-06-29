@@ -5,7 +5,7 @@
 owner = HSA
 controller = HSA
 add_core = HSA
-culture = lower_saxon
+culture = hannoverian
 religion = catholic
 hre = yes
 base_tax = 14

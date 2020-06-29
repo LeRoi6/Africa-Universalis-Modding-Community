@@ -41,9 +41,13 @@ country_event = {
 			}
 			add_core = GRE
 		}
-		1853 = {
-			if = {
-				limit = { NOT = { culture = greek } }
+		if = {
+			limit = {
+				1853 = {
+					NOT = { culture = greek }
+				}
+			}
+			1853 = {
 				change_culture = greek
 			}
 		}
@@ -98,6 +102,17 @@ country_event = {
 			tooltip = {
 				1853 = {
 					add_unrest = 4
+				}
+			}
+		}
+		if = {
+			limit = {
+				owns = 1853
+				1853 = { NOT = { culture = greek } }
+			}
+			tooltip = {
+				1853 = {
+					change_culture = greek
 				}
 			}
 		}

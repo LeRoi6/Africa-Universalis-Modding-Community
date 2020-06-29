@@ -1,7 +1,3 @@
-#Updated by C1CK 31-01-2020
-#All areas up-to-date but the dev numbers hadn't been updated for doubling
-#Has no changes besides updating claims for BT
-
 lithuanian_missions_1 = {
 	slot = 1
 	generic = no
@@ -12,28 +8,52 @@ lithuanian_missions_1 = {
 	}
 	has_country_shield = yes
 	
-	develop_ukraine_1 = { #Updated by C1CK
+	develop_ukraine_1 = {
 		icon = mission_colonial
 		required_missions = {  }
 		provinces_to_highlight = {
 			region = ruthenia_region
 			NOT = {
-				development = 10
+				OR = {
+					development = 10
+					has_building = temple
+					has_building = cathedral
+				}
 			}
 		}
 		trigger = {
-			num_of_owned_provinces_with = {
-				region = ruthenia_region
-				development = 10
-				value = 20
+			custom_trigger_tooltip = {
+				tooltip = develop_ukraine_tooltip
+				num_of_owned_provinces_with = {
+					region = ruthenia_region
+					OR = {
+						development = 10
+						has_building = temple
+						has_building = cathedral
+					}
+					value = 10
+				}
 			}
 		}
 		effect = {
-			ruthenia_region = {
-				limit = { owned_by = root }
-				add_province_modifier = {
-					name = restored_ruthenia
-					duration = -1
+			if = {
+				limit = {
+					has_dlc = "Common Sense"
+				}
+				custom_tooltip = develop_ukraine_effect_tooltip
+			}
+			else = {
+				custom_tooltip = develop_ukraine_effect_tooltip_2
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = ruthenia_region
+					}
+					add_province_modifier = {
+						name = restored_ruthenia
+						duration = -1
+					}
 				}
 			}
 		}
@@ -80,15 +100,31 @@ lithuanian_missions_1 = {
 			}
 		}
 	}
-	lit_ukraine_2 = { #Updated by C1CK
+	lit_ukraine_2 = {
 		icon = mission_eastern_european_city
 		required_missions = { lit_religious_unity }
 		provinces_to_highlight = {
 			province_id = 280
 		}
 		trigger = {
-			280 = { #Kyyiv
-				development = 30 #Adjusted down from 40 because it feels a bit high.
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Dharma"
+						has_dlc = "Common Sense"
+					}
+				}
+				280 = {
+					development = 20
+				}
+			}
+			else = {
+				280 = {
+					OR = {
+						has_building = cathedral
+						has_building = farm_estate
+					}
+				}
 			}
 			if = {
 				limit = {
@@ -108,15 +144,31 @@ lithuanian_missions_1 = {
 			}
 		}
 		effect = {
-			280 = {
-				add_province_modifier = {
-					name = "restoration_of_kiev"
-					duration = -1
+			if = {
+				limit = {
+					NOT = {
+						280 = {
+							development = 20
+						}
+					}
+				}
+				280 = {
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 3
+				}
+			}
+			else = {
+				280 = {
+					add_province_modifier = {
+						name = "restoration_of_kiev"
+						duration = -1
+					}
 				}
 			}
 		}
 	}
-	lit_develop_sluck = { #Updated by C1CK
+	lit_develop_sluck = {
 		icon = mission_noble_council
 		required_missions = { lit_ukraine_2 }
 		provinces_to_highlight = {
@@ -149,7 +201,7 @@ lithuanian_missions_1 = {
 				}
 			}
 			4545 = {
-				add_base_production = 6
+				add_base_production = 3
 				add_province_modifier = {
 					name = "sluck_sashes"
 					duration = -1
@@ -258,10 +310,8 @@ lithuanian_missions_2 = {
 		provinces_to_highlight = {
 			province_id = 262
 			NOT = {
-				AND = {
-					country_or_non_sovereign_subject_holds = ROOT
-					has_building = university
-				}
+				country_or_non_sovereign_subject_holds = ROOT
+				has_building = university
 			}
 		}
 		trigger = {
@@ -316,10 +366,18 @@ lithuanian_missions_slot = {
 					estate = estate_cossacks
 					influence = 40
 				}
-				has_estate_privilege = estate_cossacks_establish_the_cossack_regiments
-				owns_core_province = 282
-				owns_core_province = 2406
-				owns_core_province = 283
+				282 = {
+					has_estate = estate_cossacks
+					owned_by = ROOT
+				}
+				2406 = {
+					has_estate = estate_cossacks
+					owned_by = ROOT
+				}
+				283 = {
+					has_estate = estate_cossacks
+					owned_by = ROOT
+				}
 			}
 			else = {
 				282 = {
@@ -368,13 +426,12 @@ lithuanian_missions_slot = {
 			}
 		}
 	}
-	lit_conquer_crimea = { #Updated by C1CK
+	lit_conquer_crimea = {
 		icon = mission_crusade_for_varna
 		required_missions = { mission_lit_cossacks }
 		provinces_to_highlight = {
 			OR = {
 				region = crimea_region
-				province_id = 3268 #Elets
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -383,9 +440,6 @@ lithuanian_missions_slot = {
 		trigger = {
 			crimea_region = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			3268 = { #Elets
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
 		}
@@ -405,7 +459,7 @@ lithuanian_missions_slot = {
 				}
 			}
 			else = {
-				1322 = {
+				285 = {
 					add_trade_modifier = {
 						who = root
 						duration = 7300
@@ -475,7 +529,7 @@ lithuanian_missions_slot = {
 		}
 	}
 
-	defeat_the_livonian_order = { #Updated by C1CK (Updated for below changes)
+	defeat_the_livonian_order = {
 		icon = mission_teutonic_knights
 		required_missions = { polish_alliance_lit }
 		position = 5
@@ -520,8 +574,10 @@ lithuanian_missions_slot = {
 			}
 			if = {
 				limit = {
+					government = monarchy
 					exists = POL
-					valid_for_personal_unions_trigger = yes
+					is_subject = no
+					religion_group = christian
 					POL = {
 						is_subject = no
 						government = monarchy
@@ -627,7 +683,6 @@ lithuanian_missions_slot = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
 						NOT = { is_core = ROOT	}
-						NOT = { province_id = 7879 } #Valday
 					}
 					add_permanent_claim = ROOT
 				}
@@ -648,7 +703,7 @@ lithuanian_missions_slot = {
 			}
 		}
 	}
-	lit_conquer_novgorod = { #Updated by C1CK (Removed Valday from required provinces)
+	lit_conquer_novgorod = {
 		icon = mission_assemble_an_army
 		required_missions = { defeat_the_livonian_order }
 		provinces_to_highlight = {
@@ -665,10 +720,7 @@ lithuanian_missions_slot = {
 			OR = {
 				novgorod_area = {
 					type = all
-					OR = {
-						country_or_non_sovereign_subject_holds = ROOT
-						province_id = 7879 #Valday
-					}
+					country_or_non_sovereign_subject_holds = ROOT	
 				}
 				pskov_area = {
 					type = all
@@ -690,10 +742,13 @@ lithuanian_missions_slot = {
 		effect = {
 			if = {
 				limit = {
+					government = monarchy
 					exists = RUS
-					valid_for_personal_unions_trigger = yes
+					is_subject = no
+					religion_group = christian
 					RUS = {
-						valid_for_personal_unions_trigger = yes
+						is_subject = no
+						government = monarchy
 					}
 				}
 				add_casus_belli = {
@@ -704,10 +759,13 @@ lithuanian_missions_slot = {
 			}
 			else_if = {
 				limit = {
+					government = monarchy
 					exists = MOS
-					valid_for_personal_unions_trigger = yes
+					is_subject = no
+					religion_group = christian
 					MOS = {
-						valid_for_personal_unions_trigger = yes
+						is_subject = no
+						government = monarchy
 					}
 				}
 				add_casus_belli = {

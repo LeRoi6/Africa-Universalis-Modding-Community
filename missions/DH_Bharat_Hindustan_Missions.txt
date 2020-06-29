@@ -398,13 +398,6 @@ hin_slot_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			sumatran_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 	
@@ -522,10 +515,6 @@ hin_slot_5 = {
 		}
 		trigger = {
 			malaya_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			sumatran_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}

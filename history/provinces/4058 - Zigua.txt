@@ -1,6 +1,6 @@
 #4058 - Zigua
 
-culture = swahili
+culture = zaramo
 religion = shamanism #Fetishism
 trade_goods = unknown
 hre = no

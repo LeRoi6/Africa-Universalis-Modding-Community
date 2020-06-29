@@ -85,10 +85,6 @@ has_river_estuary_trigger = {
 			has_province_modifier = limpopo_estuary_modifier
 			has_province_modifier = breede_estuary_modifier
 			has_province_modifier = tugela_estuary_modifier
-			has_province_modifier = waterford_harbour_modifier
-			has_province_modifier = mersey_estuary_modifier
-			has_province_modifier = tweed_estuary_modifier
-			has_province_modifier = humber_estuary_modifier
 		}
 	}
 }
@@ -176,12 +172,6 @@ has_no_river_estuary_trigger = {
 			has_province_modifier = san_francisco_bay_modifier
 			has_province_modifier = orange_estuary_modifier
 			has_province_modifier = limpopo_estuary_modifier
-			has_province_modifier = breede_estuary_modifier
-			has_province_modifier = tugela_estuary_modifier
-			has_province_modifier = waterford_harbour_modifier
-			has_province_modifier = mersey_estuary_modifier
-			has_province_modifier = tweed_estuary_modifier
-			has_province_modifier = humber_estuary_modifier
 		}
 	}
 }
@@ -203,7 +193,6 @@ province_with_special_goods_produced_trigger = {
 		has_province_modifier = bookmarket_of_x
 		has_province_modifier = grand_bank_fisheries
 		has_province_modifier = diamond_district
-		has_province_modifier = jingdezhen_kilns
 		has_province_modifier = perfume_capital
 		#Added special goods in BT
 		has_province_modifier = grand_banks_of_newfoundland
@@ -217,9 +206,7 @@ province_with_special_goods_produced_trigger = {
 		has_province_modifier = bt_basque_whaling
 		has_province_modifier = bt_la_beauce
 		has_province_modifier = bt_mercury_of_almaden
-		has_province_modifier = bt_birthplace_lager
-		province_id = 50 #Berlin #Gets Prussian Blue if held by Prussia or Prussian-cultured Germany.
-		
+		#has_province_modifier = 
 	}
 }
 
@@ -240,7 +227,6 @@ province_without_special_goods_produced_trigger = {
 		has_province_modifier = bookmarket_of_x
 		has_province_modifier = grand_bank_fisheries
 		has_province_modifier = diamond_district
-		has_province_modifier = jingdezhen_kilns
 		has_province_modifier = perfume_capital
 		has_latent_trade_goods = coal
 		#Added special goods in BT
@@ -256,8 +242,6 @@ province_without_special_goods_produced_trigger = {
 		has_province_modifier = bt_la_beauce
 		has_province_modifier = bt_mercury_of_almaden
 		#has_province_modifier = 
-		has_province_modifier = bt_birthplace_lager
-		province_id = 50 #Berlin #Gets Prussian Blue if held by Prussia or Prussian-cultured Germany.
 	}
 }
 
@@ -272,6 +256,6 @@ is_religious_center_province = {
 		province_id = 409
 		province_id = 2221
 		province_id = 2095
-		#province_id = 8042 #What??
+		province_id = 8042
 	}
 }

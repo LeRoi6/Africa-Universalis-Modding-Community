@@ -2,10 +2,10 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-primary_culture = neapolitan
+primary_culture = umbrian
 religion = catholic
-capital = 7007 ##If and until Andria is added as a proper province. Ingame, 7007 is Barletta.
-fixed_capital = 7007
+capital = 1111
+fixed_capital = 1111
 
 #historical_friend = XXX
 #historical_rival = XXX

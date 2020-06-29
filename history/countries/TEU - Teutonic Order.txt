@@ -10,19 +10,6 @@ historical_rival = POL
 capital = 1841	# Marienburg
 add_army_professionalism = 0.1
 
-change_estate_land_share = {
-	estate = estate_burghers
-	share = 25
-}
-change_estate_land_share = {
-	estate = estate_church
-	share = -15
-}
-change_estate_land_share = {
-	estate = estate_nobles
-	share = -10
-}
-
 1393.1.1 = {
 	monarch = {
 		name = "Konrad von Jungingen"
@@ -85,10 +72,6 @@ change_estate_land_share = {
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = silver_tongue_personality
-}
-
-1444.10.1 = {
-	set_estate_privilege = estate_nobles_strong_duchies
 }
 
 1449.11.8 = {

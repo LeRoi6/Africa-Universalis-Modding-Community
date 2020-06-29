@@ -12,7 +12,6 @@ base_manpower = 1
 trade_goods = wine			#Might just be a modern thing, but why not? Not too many wine provinces yet.
 is_city = yes
 hre = no
-add_local_autonomy = 10
 
 discovered_by = KAZ
 discovered_by = CRI
@@ -42,6 +41,7 @@ discovered_by = western
 	remove_core = BYZ
 	base_tax = 1
 	base_production = 1
+	estate = estate_dhimmi
 }	#taken by Turkey, devastated
 
 #2nd Shattering unused

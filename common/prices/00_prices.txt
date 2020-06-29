@@ -4,41 +4,41 @@
 
 # Base resources
 grain = {
-	base_price = 2.5			#BTAddOn note - Now goes 2.5 - 1 - 2.5 - 1.75 - 2.5 - 2 (Vanilla was 2.5 - 0.625 - 2.5 - 1.875 - 2.5 - 2)
+	base_price = 2.5
 }
 
 wine = {
-	base_price = 2.5			#BTAddOn note - Now goes 2.5 - 0.5 - 2.5 - 1 - 2.5 - 3.5 (Vanilla was 2.5 - 0.625 - 2.5 - 1.875 - 2.5 - 3.125)
+	base_price = 2.5
 }
 
 wool = {
-	base_price = 3			#BTAddOn changed from 2.5 - Now goes 3 - 2.7 - 2.1 - 2.25 - 3 (Vanilla was 2.5 - 2.25 - 1.75 - 2 - 2.6125)
+	base_price = 2.5
 }
 
 cloth = {
-	base_price = 3			#BTAddOn note - Goes 3 - 3.6 - 4.05
-}	#In BT I generally use this as a highly developed general industry trade good, as well as specifically cloth, so most capitals get this.
+	base_price = 3
+}
 
 fish = {
-	base_price = 2.5			#BTAddOn note - Now goes 2.5 - 2.25 - 2 (Vanilla was 2.5 - 1.875 - 2.5 - 2.25 - 2)
+	base_price = 2.5
 }
 
 fur = {
-	base_price = 2.5			#BTAddOn changed from 2 - Now goes 2.5 - 4 - 2.5 - 2.75 - 3.5 - 4.5 - 3.5 (Vanilla was 2 - 2.5 - 2 - 2.7 - 3.5 - 4 - 3.5)
+	base_price = 2
 }
 
 salt = {
-	base_price = 4			#BTAddOn changed from 3 - Now goes 4 - 6 - 4 - 5 - 6 - 5 (Vanilla was 3 - 3.75 - 3 - 3.3 - 4.05 - 3.3)
-}	#Doesn't seem too exotic, but was traded weight for weight with gold for most of history. Perhaps the biggest trading good worldwide and one of the primary sources of income for powers from Austria to China.
+	base_price = 3
+}
 
 naval_supplies = {
-	base_price = 2.5			#BTAddOn changed from 2 - Now goes 2.5 - 3.5 (Vanilla was 2 - 3)
+	base_price = 2
 }
 
 
 # Metals
 copper = {
-	base_price = 3			#BTAddOn note - Goes 3-4.5-3.45
+	base_price = 3
 }
 
 gold = {
@@ -47,94 +47,93 @@ gold = {
 }
 
 iron = {
-	base_price = 3			#BTAddOn note - Goes 3-4.5
+	base_price = 3
 }
 
 
 # African Resources
 slaves = {
-	base_price = 2.5			#BTAddOn changed from 2 - Now goes 2.5-4.5-2 (Vanilla was 2-3-2.2)
+	base_price = 2
 }
 ivory = {
-	base_price = 3			#BTAddOn changed from 4 - Now goes 3-4.5 (Vanilla was 4-5)
+	base_price = 4 
 }
 
 
 # Eastern Resources
 tea = {
-	base_price = 2.5			#BTAddOn changed from 2 - Now goes 2.5-3-4 (Vanilla was 2-2.5-3)
+	base_price = 2
 }
 
 chinaware = {
-	base_price = 3			#BTAddOn note - Goes 3-4.5-3
+	base_price = 3
 }
 
 spices = {
-	base_price = 4			#BTAddOn changed from 3 - Now goes 4-5-3 (Vanilla was 3-4.5-3.3)
+	base_price = 3
 }
 
 
 # New World Resources
 coffee = {
-	base_price = 3			#BTAddOn note - Now goes 3 - 3.75 - 2.7 (Vanilla was 3 - 4.5 - 3.3)
+	base_price = 3
 }
 
 cotton = {
-	base_price = 2.5			#BTAddOn changed from 3 - Now goes 2.5-3.5-4 (Vanilla was 3-4.35-4.95)
+	base_price = 3
 }
 
 sugar = {
-	base_price = 3			#BTAddOn note - Now goes 3-3.6-4.8 (Vanilla was 3-4.5-5.25)
+	base_price = 3 
 }
 
 tobacco = {
-	base_price = 3			#BTAddOn note - Goes 3-4.5
+	base_price = 3
 }
 
 cocoa = {
-	base_price = 3			#BTAddOn changed from 4 - Now goes 3 - 4.2 (Vanilla was 4 - 5.4)
+	base_price = 4 
 }
 
 # New Non-European Tradegoods
 
 silk = {
-	base_price = 4			#BTAddOn note - Goes 4-5
+	base_price = 4
 }
 
-
 tropical_wood = {
-	base_price = 2.5			#BTAddOn changed from 2 - Now goes 2.5-4.5 (Vanilla was 2-2.7)
+	base_price = 2
 }
 
 dyes = {
-	base_price = 4			#BTAddOn note - Goes 4 - 5 - 4
+	base_price = 4 
 }
 
-#Additional Trade Goods - Added in 1.23
+#Additional Trade Goods
 
 livestock = {
-	base_price = 2			#BTAddOn changed from 2 - Now goes 2 - 1.8 - 2 - 2.5 - 3 (Vanilla was 2 - 1.5 - 2 - 2.2 - 2.7 - 3.4)
-}	#Few chanegs here, but following Paradox closely
+	base_price = 2
+}
 
 incense = {
-	base_price = 4			#BTAddOn changed from 2.5 - Now goes 4 - 4.2 - 3.8 - 5 (Vanilla was 2.5 - 2.75 - 2.35 - 3.225)
-}	#People got insanely rich off this, at one point.
+	base_price = 2.5
+}
 
 glass = {
-	base_price = 3			#BTAddOn changed from 3 - Now goes 3 - 3.3 - 3.9 - 5.1 - 3.6 (Vanilla was 3 - 3.45 - 3.9 - 4.65 - 5.4 - 3.45)
-}	#Few chanegs here, but following Paradox closely
+	base_price = 3
+}
 
 gems = {
-	base_price = 5			#BTAddOn changed from 4 - Now goes 5 - 6 - 4.5 (Vanilla was 4 - 5 - 3)
-}	#Making this into a top trade good, as it should be. After all, who doesn't like diamonds, pearls, rubies, emeralds, and opals?
+	base_price = 4
+}
 
 paper = {
-	base_price = 3			#BTAddOn changed from 3.5 - Now goes 3 - 3.75 - 4.5 - 3 - 4.05 -  (Vanilla was 3.5 - 4.375 - 5.25 - 3.5 - 4.375)
-}	#Paper was an important component in the development of modern society, but no one ever got that rich trading it.
+	base_price = 3
+}
 
 coal = {
-	base_price = 8			#BTAddOn changed from 10
-}	#Making coal slightly less OPed. Even as a late game-only thing, 3.3x the price of gems is a bit much, no?
+	base_price = 10
+}
 
 #Vanilla unknown
 unknown = {

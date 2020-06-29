@@ -4,7 +4,7 @@ primary_culture = bosnian
 add_accepted_culture = serbian
 religion = catholic
 technology_group = eastern
-capital = 3002
+capital = 140
 #historical_friend = SER
 
 1389.1.1 = {

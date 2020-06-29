@@ -2,8 +2,7 @@
 
 graphical_culture = westerngfx # was italiangfx # UPE compatibility
 
-color = { 250  146  131 }
-revolutionary_colors = { 14 0 14 } 
+color = { 250  146  131 } 
 
 historical_score = 75
 

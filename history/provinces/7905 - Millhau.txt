@@ -3,7 +3,6 @@
 owner = AMG
 controller = AMG
 add_core = AMG
-add_core = TOU
 culture = occitain
 religion = catholic
 capital = "Millhau"

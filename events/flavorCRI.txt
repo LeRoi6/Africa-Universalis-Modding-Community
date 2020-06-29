@@ -557,10 +557,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		TUR = {
-			has_country_flag = ottoman_promise_to_crimea
-			NOT = { had_country_flag = { flag = ottoman_promise_to_crimea days = 23725 } } #Mengli was supposedly 30 when he fled to the Ottomans and 95 when he died.
-		}
+		TUR = { has_country_flag = ottoman_promise_to_crimea }
+		NOT = { had_country_flag = { flag = ottoman_promise_to_crimea days = 23725 } } #Mengli was supposedly 30 when he fled to the Ottomans and 95 when he died.
 		tag = CRI
 		is_subject_of = TUR
 	}
@@ -692,7 +690,7 @@ country_event = {
 		create_march = ILK
 		ILK = {
 			change_government = monarchy
-			#set_legacy_government = despotic_monarchy
+			set_legacy_government = despotic_monarchy
 			change_primary_culture = ROOT
 			change_religion = ROOT
 			define_ruler = {
@@ -705,9 +703,9 @@ country_event = {
 	option = {
 		name = flavor_cri.8.b
 		4338 = {
-			add_base_tax = 4
-			add_base_manpower = 4
-			add_base_production = 4
+			add_base_tax = 2
+			add_base_manpower = 2
+			add_base_production = 2
 		}
 	}
 }

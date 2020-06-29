@@ -33,7 +33,7 @@ gov_puppet_kingdom_of_ireland = {
 	}
 
 	trigger = {
-		has_reform = anglo_irish_monarchy_reform
+		government = puppet_kingdom_of_ireland_legacy
 	}
 }
 
@@ -81,7 +81,7 @@ gov_transitional_government_ireland = {
 	}
 	
 	trigger = {
-		has_reform = anglo_irish_monarchy_reform
+		government = transitional_government_ireland_legacy
 	}
 }
 
@@ -115,7 +115,7 @@ gov_irish_clann = {
 	}
 	
 	trigger = {
-		has_reform = irish_clann_reform
+		government = irish_clann_legacy
 	}
 }
 
@@ -149,7 +149,7 @@ gov_provincial_kingdom = {
 	}
 	
 	trigger = {
-		has_reform = provincial_kingdom_reform
+		government = provincial_kingdom_legacy
 	}
 }
 
@@ -197,7 +197,7 @@ gov_high_kingship = {
 	}
 	
 	trigger = {
-		has_reform = tanistry_reform
+		government = high_kingship_legacy
 	}
 }
 
@@ -231,151 +231,151 @@ gov_norman_lordship = {
 	}
 	
 	trigger = {
-		has_reform = norman_lordship_reform
+		government = norman_lordship_legacy
 	}
 }
 
-# gov_norman_duchy = {
-	# rank = {
-		# 1 = DUCHY
-	# }
+gov_norman_duchy = {
+	rank = {
+		1 = DUCHY
+	}
 	
-	# ruler_male = {
-		# 1 = DUKE
-	# }
+	ruler_male = {
+		1 = DUKE
+	}
 	
-	# ruler_female = {
-		# 1 = DUCHESS
-	# }
+	ruler_female = {
+		1 = DUCHESS
+	}
 	
-	# consort_male = {
-		# 1 = DUKE
-	# }
+	consort_male = {
+		1 = DUKE
+	}
 
-	# consort_female = {
-		# 1 = DUCHESS
-	# }
+	consort_female = {
+		1 = DUCHESS
+	}
 	
-	# heir_male = {
-		# 1 = HEIR
-	# }
+	heir_male = {
+		1 = HEIR
+	}
 
-	# heir_female = {
-		# 1 = HEIRESSBTP
-	# }
+	heir_female = {
+		1 = HEIRESSBTP
+	}
 	
-	# trigger = {
-		# has_reform = norman_lordship_reform
-	# }
-# }
+	trigger = {
+		government = norman_duchy_legacy
+	}
+}
 
-# gov_anglo_irish_monarchy = {
-	# rank = {
-		# 1 = DUCHY
-		# 2 = KINGDOM
-		# 3 = EMPIRE
-	# }	
+gov_anglo_irish_monarchy = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}	
 	
-	# ruler_male = {
-		# 1 = DUKE
-		# 2 = KING
-		# 3 = EMPEROR
-	# }
+	ruler_male = {
+		1 = DUKE
+		2 = KING
+		3 = EMPEROR
+	}
 	
-	# ruler_female = {
-		# 1 = DUCHESS
-		# 2 = QUEEN	
-		# 3 = EMPRESS
-	# }
+	ruler_female = {
+		1 = DUCHESS
+		2 = QUEEN	
+		3 = EMPRESS
+	}
 	
-	# consort_male = {
-		# 1 = DUKE
-		# 2 = KING
-		# 3 = EMPEROR
-	# }
+	consort_male = {
+		1 = DUKE
+		2 = KING
+		3 = EMPEROR
+	}
 
-	# consort_female = {
-		# 1 = DUCHESS
-		# 2 = QUEEN	
-		# 3 = EMPRESS
-	# }
+	consort_female = {
+		1 = DUCHESS
+		2 = QUEEN	
+		3 = EMPRESS
+	}
 	
-	# heir_male = {
-		# 1 = HEIR
-		# 2 = PRINCE
-		# 3 = PRINCE
-	# }
+	heir_male = {
+		1 = HEIR
+		2 = PRINCE
+		3 = PRINCE
+	}
 
-	# heir_female = {
-		# 1 = HEIRESSBTP
-		# 2 = PRINCESS
-		# 3 = PRINCESS
-	# }
+	heir_female = {
+		1 = HEIRESSBTP
+		2 = PRINCESS
+		3 = PRINCESS
+	}
 	
-	# trigger = {
-		# government = anglo_irish_monarchy_legacy
-	# }
-# }
+	trigger = {
+		government = anglo_irish_monarchy_legacy
+	}
+}
 
-# gov_florence_republic = {
-	# rank = {
-		# 1 = REPUBLIC
-		# 2 = GRAND_REPUBLIC
-		# 3 = GREAT_REPUBLIC
-	# }
+gov_florence_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = GRAND_REPUBLIC
+		3 = GREAT_REPUBLIC
+	}
 
-	# ruler_male = {
-		# 1 = GONFALONIERE
-		# 2 = GRAND_CONSUL
-		# 3 = GREAT_CONSUL
-	# }
+	ruler_male = {
+		1 = GONFALONIERE
+		2 = GRAND_CONSUL
+		3 = GREAT_CONSUL
+	}
 
-	# ruler_female = {
-		# 1 = GONFALONIERE_fem
-		# 2 = GRAND_CONSULESS
-		# 3 = GREAT_CONSULESS
-	# }
+	ruler_female = {
+		1 = GONFALONIERE_fem
+		2 = GRAND_CONSULESS
+		3 = GREAT_CONSULESS
+	}
 
-	# trigger = {
-		# government = florence_republic_legacy
-	# }
-# }
+	trigger = {
+		government = florence_republic_legacy
+	}
+}
 
-# gov_regnum_dei = {
-	# rank = {
-		# 1 = PAPACY
-		# 2 = PAPACY
-		# 3 = PAPACY
-	# }
+gov_regnum_dei = {
+	rank = {
+		1 = PAPACY
+		2 = PAPACY
+		3 = PAPACY
+	}
 	
-	# ruler_male = {
-		# 1 = POPE
-		# 2 = POPE
-		# 3 = POPE
-	# }
+	ruler_male = {
+		1 = POPE
+		2 = POPE
+		3 = POPE
+	}
 	
-	# ruler_female  ={
-		# 1 = POPETTE
-		# 2 = POPETTE
-		# 3 = POPETTE
-	# }
+	ruler_female  ={
+		1 = POPETTE
+		2 = POPETTE
+		3 = POPETTE
+	}
 	
-	# heir_male = {
-		# 1 = PREFERATUSBTP
-		# 2 = PREFERATUSBTP
-		# 3 = PREFERATUSBTP
-	# }
+	heir_male = {
+		1 = PREFERATUSBTP
+		2 = PREFERATUSBTP
+		3 = PREFERATUSBTP
+	}
 
-	# heir_female = {
-		# 1 = PREFERATABTP
-		# 2 = PREFERATABTP
-		# 3 = PREFERATABTP
-	# }
+	heir_female = {
+		1 = PREFERATABTP
+		2 = PREFERATABTP
+		3 = PREFERATABTP
+	}
 	
-	# trigger = {
-		# government = regnum_dei_legacy
-	# }
-# }
+	trigger = {
+		government = regnum_dei_legacy
+	}
+}
 
 scottish_vassal_monarchy = {
 	rank = {
@@ -507,4 +507,40 @@ abbacy = {
 		tag = FLD
 		government = theocracy
 	}
+}
+
+#Dub's German Pet peave, credit to Dub
+german_empire = {
+    rank = {
+        3 = EMPIRE
+    }
+    
+    ruler_male = {
+        3 = KAISER
+    }
+    
+    ruler_female = {
+        3 = KAISERIN
+    }
+    
+    consort_male = {
+        3 = PRINCE_CONSORT
+    }
+
+    consort_female = {
+        3 = EMPRESS_CONSORT
+    }
+    
+    heir_male = {
+        3 = HEIR
+    }
+
+    heir_female = {
+        3 = HEIR_fem
+    }
+    
+    trigger = {
+        tag = GER
+        government = monarchy
+    }
 }
