@@ -5,8 +5,10 @@ mercantilism = 0.2
 primary_culture = romagnan
 religion = catholic
 technology_group = western
-capital = 3041 # Bologna
-fixed_capital = 3041
+capital = 4730 # Bologna
+fixed_capital = 4730
+set_estate_privilege = estate_church_papal_emissary
+
 
 
 1291.5.20 = {

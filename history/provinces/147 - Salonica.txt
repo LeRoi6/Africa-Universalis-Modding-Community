@@ -13,6 +13,7 @@ base_manpower = 2
 is_city = yes
 add_core = TUR
 fort_15th = yes
+add_local_autonomy = 10
 
 discovered_by = KAZ
 discovered_by = CRI
@@ -35,7 +36,6 @@ discovered_by = western
 	controller = TUR
 	add_core = TUR
 	remove_core = VEN
-	estate = estate_nobles			#one of the few without Dhimmi. This area was home to a large Turkish settlement attempt and thorough proselytization.
 } # To the Ottoman Empire
 1502.1.1 = { remove_core = BYZ }
 1555.1.1 = { unrest = 5 } # General discontent with the Janissaries' dominance

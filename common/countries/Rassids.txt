@@ -2,7 +2,9 @@
 
 graphical_culture = muslimgfx
 
-color = { 221  35  36 }				#Light redish, for no reason in particular
+color = { 205 10 10 }
+#Commenting out Draiocht's old colour.
+#color = { 221  35  36 }				#Light redish, for no reason in particular
 
 historical_idea_groups = {
 	religious_ideas

@@ -34,15 +34,15 @@ discovered_by = eastern
 	add_core = MOD
 }
 1797.6.29 = {
-	owner = ITA
-	controller = ITA
-	add_core = ITA
+	owner = ITL
+	controller = ITL
+	add_core = ITL
 }
 1805.6.10 = {
 	owner = FRA
 	controller = FRA
 	add_core = FRA
-	remove_core = ITA
+	remove_core = ITL
 }# Annexed by France
 1814.4.11 = {
 	owner = MOD

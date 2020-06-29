@@ -3,16 +3,20 @@
 graphical_culture = northamericagfx
 
 color = { 52 142 126 }
+#color = { 127 32 49 } 
 
 historical_idea_groups = {
 	religious_ideas
 	defensive_ideas
 	offensive_ideas
+#	maritime_ideas
 	trade_ideas
 	diplomatic_ideas
 	plutocracy_ideas
 	spy_ideas
 	economic_ideas
+#	quality_ideas
+#	administrative_ideas
 }
 
 historical_units = {

@@ -91,8 +91,19 @@ germanic = {
 			Raphaela Sabine Vera Betten Dagas Gelennis Gerkus Grasus Gulbis Mila Milyuns Weslikan Ziedas
 		}
 	}
-	hannoverian = {
+	lower_saxon = {
 		primary = HAN
+		male_names = {
+			Ernst Adolf Alfred August Christian Eduard Friedrich Georg Karl Philipp Maximilian Octavius Wilhelm 
+			Alexander Alois Anton Bruno Clemens Denis Gerfried Gottfried Günther Helmut Herbert Ignatz Isidor 
+			Konstantin Kuno Markus Martin Oskar Reinhard Silvester Stefan Waldemar Jakob
+		}
+		female_names = {
+			Amanda Beate Debora Sara Anne Saga Sibyl Joanna Joanne Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie 
+		}
+	}
+	hannoverian = {
+		primary = WES
 		male_names = {
 			Ernst Adolf Alfred August Christian Eduard Friedrich Georg Karl Philipp Maximilian Octavius Wilhelm 
 			Alexander Alois Anton Bruno Clemens Denis Gerfried Gottfried Günther Helmut Herbert Ignatz Isidor 
@@ -161,10 +172,10 @@ germanic = {
 		}
 	}
 	franconian = {
-		primary = ANS
+		primary = FKN
 	}
 	swabian = {
-		primary = WUR
+		primary = SWA
 	}
 	swiss = {
 		primary = SWI
@@ -308,7 +319,7 @@ germanic = {
 		}
 	}
 	#Beyond the Pale Culture
-	frisian = {
+	frisian = { #Disregarded 1.30's new stuff and going with BtP for now.
 		graphical_culture = westerngfx
 		primary = FRI
 		male_names = {
@@ -411,6 +422,12 @@ germanic = {
 			# Frisian
 			"van Serooskerken"
 		}
+	}
+	transylvanian_saxons = {
+		#primary = #no tag so no seperatists
+	}
+	silesian_german = {
+		#primary = #no tag so no seperatists
 	}
 	female_names = {
 		Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie Amanda 
@@ -1207,12 +1224,58 @@ latin = {
 	}
 	romagnan = {
 		primary = FER
+
+		dynasty_names = {
+			Bevilacqua Boschetti Carandini Castelvetri Tassoni "Pico di Mirandola" Rangoni Monesi "da Fogliano" Bevilacqua "da Correggio" Platoni Biondelli Arrigoni Castiglione Cavriani d'Arco Ceresara Donesmondi
+		}
 	}
 	ligurian = {
 		primary = GEN
 	}
 	venetian = {
 		primary = VEN
+	}
+	dalmatian = {
+		primary = DAL
+		male_names = {
+			Pongo
+			Alban Arber Ardian Aplis Apludus Aplus Aplius Aelius Andabio Armatus Apurus
+			Baezo Bardylis Baro Bepo Beusas Beuzas Batona Bassegli Bobali
+			Camdus Caboga Curbania Cursulavia
+			Daor Daes Dez Dalmat Dardan Delminium
+			Histro Heracles
+			Epulo Ghetaldi Giorgi Gondola Gozze Gradi
+			Iato Ivka Ibrica Ignacio
+			Lavincia Ledrus Liber
+			Messor Madecus
+			Naren
+			Paiio Panes Panias Panius Panentius Panthia Panes Panto Pinsus Pladomenus Platino
+			Samuntio Seiio Silvanus Statanius Staticus Stato Status Sestus Sextus Sexto
+			Taulant  Teuta Tito Thana Tizius Tritus Titus
+			Varro Vidasus Vidaza
+			Andre Andreas Bisti Blaxius Calenda Clime Comes
+			Domagna Gaucoli Gauzoli Gervasius Giuco Give
+			Jugno Juliano Junius Laurenzo Leonardus Loncho Lucarus
+			Mares Marco Maroe Marinus Matheus Michael Nale Nichiforus Nicola
+			Pascalis Pasqualis Petragna Petrus Piero Perue Rassinus Rusco
+			Stane Thoma Tuone Vallius Vita
+			Adam Aguastin Alecuandur Aliau Aliard Andre Antune Antuone Blasi Buartol Bunedec Bunin Caunstantin
+			Caurnel Clemiant Crastin Cuarl Dimitre Domienc Domienja Fabri Faguor Fiaurens Filip Frane
+			Giorgi Guaspar Jacop Jiolian Joan Jualb Liaun Marc Marjan Matei Mihial Mouro Muerten Nadual Nicaul
+			Paladen Piar Ponsio Puol Puoskal Raimaun Savjan Simaun Sismaun Stanislau Sthepan Taumas Taumasin
+			Teodor Timotei Vait Valdemaur Vidual Vittaur
+		}
+		female_names = {
+			Perdita
+			Ane Aneta Ante Anka Albina Augustina Amaica Amaura Alecuandra Amilja Andreja
+			Bepina Blanca Bruva Buni Catriana Cauleta Caunstantina Cvita Ibrica Ivka
+			Joana Lucia Krysto Matija Manda Nicauleta Pernica Piara Puola
+			Antolina Antonia Anussa Babalio Bodacia Catarena Caterina Clara Clara
+			Drase Dea Descia Deia Deussa Elena Eloija Fiaura Filippa Helene Giva
+			Jachussa Jacobica Jelussa Laurica Lene Helene
+			Magdalena Magdalena Margerita Margaret Maria Mauressa Micha Mira Nicoletta Nixa
+			Rade Rado Regina Regina Rossa Rosa Schimosa Thome Viola Vele Vittaurja
+		}
 	}
 	neapolitan = {
 		primary = NAP
@@ -1250,10 +1313,10 @@ latin = {
 	ladin_culture = {
 		#primary = XXX
 	}
-	#BtPLegacy Culture
-	dalmatian_culture = {
-		#primary = XXX
-	}
+	#BtPLegacy Culture, deprecated
+	#dalmatian = {
+	#	#primary = XXX
+	#}
 	male_names = {
 		Abbondanzio Abbondio Abelardo Abelino Achille Adalberto Adelfo Adelmio Adelmo Adone 
 		Agapito Agostino Aimone Alamanno Alarico Adriano
@@ -1290,7 +1353,7 @@ latin = {
 		Rosso Ruggiero Salinguerra Salvatore Salvestro Sante Sancho Saverio Sciarra Sebastiano 
 		Secondotto Serafino Sergio Sesto Settimio Severino Severo
 		Silvano Silvestro Simone Simonetto Sinibaldo Sinucello Sozzo Spinetto Stefano
-		Taddeo Tedaldo Tedice Teodoro Tibaldo Tiziano Tommaso Lupo
+		Taddeo Tedaldo Tedice Teodoro Tibaldo Tiziano Tommaso Lupo Vittorio Umberto
 	}
 	female_names = {
 		Abelina Adalberta Adalgisa Adelaida Adelasia Adelia Adela Adriana Agalina Agnese 
@@ -1489,7 +1552,7 @@ iberian	= {
 		}
 	}
 	andalucian = {
-		#primary culture of a Andalusian duchy tag
+		#primary culture of a Andalusian duchy tag (BTU Note: Potentially new Seville tag, SVL?)
 		dynasty_names = {
 			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
 			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
@@ -1605,7 +1668,7 @@ french	= {
 	#Readded because of infuriating little bugs showing up in the error report related to triggers for events that don't seem to exist. Still not present in any province and should not ever appear except as an accepted culture for a French CU.
 	#Finally with France reoverhaul in 12.0, repurposing this culture to a Central Occitan culture as occitain string is repurposed into specifically Provencal.
 	aquitaine = {
-		primary = PRO
+		primary = ANJ
 	}
 	burgundian = {
 		primary = BUR
@@ -1630,7 +1693,7 @@ french	= {
 	}
 	#BtPLegacy Culture
 	angevin_culture = {
-		primary = ANJ
+		primary = PRO
 	}
 	#BtPLegacy Culture
 	lorraine_culture = {
@@ -1950,7 +2013,7 @@ south_slavic = {
 			Vedrana Visnja Vjekoslava Zlata Zvonimira Valerija Katalin
 		}
 		dynasty_names = {
-			"Kulinic" "Trpimirovic" "Mihaljevic" "Subic" "Hrvatinic" 
+			"Trpimirovic" "Mihaljevic" "Subic" "Hrvatinic" 
 			"Kosaca" "Vukcic" "Vukasin" "Dukasin" "Babonic" "Frankopan" "Kacic" "Draskovic" 
 			"Bebek" "Svetoslavic" "Krešimirovic" "Domagojevic" "Feštetic" "Gorjanski"
 			"Svacic" "Kobilic" "Lackovic" "Šubic"
@@ -1960,6 +2023,63 @@ south_slavic = {
 	}
 	serbian = {
 		primary = SER
+		male_names = {
+			Stefan Lazar Djuradj Milosh Djordje Alexa Grgur Petrija Todor Aleksandar Mihailo Milan 
+			Bratislav Darko Dragan Dubravko Dusan Filip Goran Ivan Josif Konstantin Luka Marko Mateja Miroslav 
+			Nebojsa Nemanja Nenad Nikola Pedrag Stanko Toma Vinko Vjekoslav Zdravko Zvonimir
+			Aldimir Asen Berbat Blaz Blaise Boleslav Borna Branimir Budimir Kosmin Danilo Daniel 
+			George Dmitar Dobroslav Dragija Dragos Dragutin Gavrilo Gabriel Godimir Goran
+			Grgur Ilija Ivan John Josif Joseph Josip Joseph Jovan John Kasjan Konstantin Constantine 
+			Lazar Ljudevit Luka Marko Marcus Martin Martin Matija Matthew Mihailo Mihovil Milorad 
+			Mircea Miroslav Miroslav Mislav Nenad Nikodim Nicodemus Nikola Nicholas
+			Ninoslav Petar Peter Porin Prvoslav Radoslav Rastko Ratomir Roman Serapion Simeon 
+			Sinisa Slavko Slobodan Stefan Stephen Teodosije Trajan Uros Visarion Vladimir Vladimir 
+			Vladislav Vladislav Vlastimir Milutin Krsto Djordje Bogdan Branko 
+			Vuk Lupo Vukan Vukasin Vukoman Zoran Zvonimir Simon Mladen
+		}
+		female_names = {
+			Agata Agatha Barbara Branimira Desislava Dubravka Elena Helen Hicela Jelena Karolina 
+			Lovorka Marija Maria Milka Neda Radica Zdenka Andjela Antonija
+			Bastina Biljana Bistrina Bojana Casna Chasna Dejana Dragana Dragoslava Duga Dusica Gordana 
+			Grana Grubana Jagoda Jovana Jovanka Karika
+			Ljubica Luka Majka Malina Medeni Meki Milinka Miljana Miriti Mirjana Mudary Mudra Nada 
+			Namena Nadanje Keratza Branka Mirna
+		}
+		dynasty_names = {
+			"Nemanjic" "Vlastimirovic" "Obrenovic" "Obilic" "Karadjordjevic" "Kovacevic" "Petrovic" 
+			"Dragutinovic" "Vojislavljevic" "Sokolovic" "Ilic" "Vukanovic" "Mrnjavcevic" "Lazarevic" 
+			"Brakovic" "Balsic" "Vukovic" "Branovic"
+		}
+	}
+	#Beyond the Pale Culture (Haven't integrated vanilla's names)
+	slovene = {
+		primary = CLI
+		male_names = {
+			Alenka Alfonz Alfred Andrej Anton Avgust Bartolomej Blaz Bojan Boris
+			Bostjian Bozidar Ciril Danilo Demeter Drago Dusan Franc Gregorij Ivan
+			Ivo Janez Jernej Joze Jurij Karpo Lado Leon Lojze Miha
+			Milan Mladen Odilo Pino Rado Radovan Rudolf Slavko Slavoj Stane
+			Stanko Tomasz Toncka Tone Viktor Vilko Vladimir Vladko Vojko Zeljko
+		}
+		female_names = {
+			Adriana Anna Borislava Cededa Doroteja Dorothy Ekaterina Catherine Helena Helen Jadviga 
+			Jovana Kera Ladika Maria Maria Mihaela Nada Petra Viola Yolanda Jadranka Mare
+			Antonija Capeka Dragana Dubravka Emilija Emily Gordana Jagoda Jelena Jelka Lucija Lucia 
+			Catherine Marija Maria Marijana Mirjana Mirna Mojca Natalija NataŠa
+			Rijeka Silvija Snjezana Sofija Sophia Suzana Susana Svjetlana Suronja Tatjana Tihana 
+			Vedrana Visnja Vjekoslava Zlata Zvonimira Valerija Katalin
+		}
+		dynasty_names = {
+			Arnic Avbelj Avsenik Bajuk Bitenc Cankar Cec Cernigoj Czipott Dolar
+			Drolc Duletic Globocnik Gobec Godina Golob Haus Hladnik Ivanek Kantuser
+			Kidric Komar Kopitar Kraigher Lipovsek Lipuscek Macek Maister Marinko Miklosic
+			Mravlajk Pengov Pesek Peterle Pirec Plecnik Rozman Rupnik Sarh Srebrnic
+			Tomazic Tomsic Urbancic Vega "Von Windisch-Grätz" Zagar Zerjal Zizke Zornada Zupancic
+		}
+	}
+	#Beyond the Pale Culture (Haven't integrated vanilla's names)
+	bosnian = {
+		primary = BOS
 		male_names = {
 			Stefan Lazar Djuradj Milosh Djordje Alexa Grgur Petrija Todor Aleksandar Mihailo Milan 
 			Bratislav Darko Dragan Dubravko Dusan Filip Goran Ivan Josif Konstantin Luka Marko Mateja Miroslav 
@@ -2011,63 +2131,6 @@ south_slavic = {
 		}
 		dynasty_names = {
 			"Krum" "Dulo" "Cometopuli" "Asen" "Terter" "Shishman" "Teleki"
-		}
-	}
-	#Beyond the Pale Culture
-	bosnian = {
-		primary = BOS
-		male_names = {
-			Stefan Lazar Djuradj Milosh Djordje Alexa Grgur Petrija Todor Aleksandar Mihailo Milan 
-			Bratislav Darko Dragan Dubravko Dusan Filip Goran Ivan Josif Konstantin Luka Marko Mateja Miroslav 
-			Nebojsa Nemanja Nenad Nikola Pedrag Stanko Toma Vinko Vjekoslav Zdravko Zvonimir
-			Aldimir Asen Berbat Blaz Blaise Boleslav Borna Branimir Budimir Kosmin Danilo Daniel 
-			George Dmitar Dobroslav Dragija Dragos Dragutin Gavrilo Gabriel Godimir Goran
-			Grgur Ilija Ivan John Josif Joseph Josip Joseph Jovan John Kasjan Konstantin Constantine 
-			Lazar Ljudevit Luka Marko Marcus Martin Martin Matija Matthew Mihailo Mihovil Milorad 
-			Mircea Miroslav Miroslav Mislav Nenad Nikodim Nicodemus Nikola Nicholas
-			Ninoslav Petar Peter Porin Prvoslav Radoslav Rastko Ratomir Roman Serapion Simeon 
-			Sinisa Slavko Slobodan Stefan Stephen Teodosije Trajan Uros Visarion Vladimir Vladimir 
-			Vladislav Vladislav Vlastimir Milutin Krsto Djordje Bogdan Branko 
-			Vuk Lupo Vukan Vukasin Vukoman Zoran Zvonimir Simon Mladen
-		}
-		female_names = {
-			Agata Agatha Barbara Branimira Desislava Dubravka Elena Helen Hicela Jelena Karolina 
-			Lovorka Marija Maria Milka Neda Radica Zdenka Andjela Antonija
-			Bastina Biljana Bistrina Bojana Casna Chasna Dejana Dragana Dragoslava Duga Dusica Gordana 
-			Grana Grubana Jagoda Jovana Jovanka Karika
-			Ljubica Luka Majka Malina Medeni Meki Milinka Miljana Miriti Mirjana Mudary Mudra Nada 
-			Namena Nadanje Keratza Branka Mirna
-		}
-		dynasty_names = {
-			"Nemanjic" "Vlastimirovic" "Obrenovic" "Obilic" "Karadjordjevic" "Kovacevic" "Petrovic" 
-			"Dragutinovic" "Vojislavljevic" "Sokolovic" "Ilic" "Vukanovic" "Mrnjavcevic" "Lazarevic" 
-			"Brakovic" "Balsic" "Vukovic" "Branovic"
-		}
-	}
-	#Beyond the Pale Culture
-	slovene = {
-		primary = CNL
-		male_names = {
-			Alenka Alfonz Alfred Andrej Anton Avgust Bartolomej Blaz Bojan Boris
-			Bostjian Bozidar Ciril Danilo Demeter Drago Dusan Franc Gregorij Ivan
-			Ivo Janez Jernej Joze Jurij Karpo Lado Leon Lojze Miha
-			Milan Mladen Odilo Pino Rado Radovan Rudolf Slavko Slavoj Stane
-			Stanko Tomasz Toncka Tone Viktor Vilko Vladimir Vladko Vojko Zeljko
-		}
-		female_names = {
-			Adriana Anna Borislava Cededa Doroteja Dorothy Ekaterina Catherine Helena Helen Jadviga 
-			Jovana Kera Ladika Maria Maria Mihaela Nada Petra Viola Yolanda Jadranka Mare
-			Antonija Capeka Dragana Dubravka Emilija Emily Gordana Jagoda Jelena Jelka Lucija Lucia 
-			Catherine Marija Maria Marijana Mirjana Mirna Mojca Natalija NataŠa
-			Rijeka Silvija Snjezana Sofija Sophia Suzana Susana Svjetlana Suronja Tatjana Tihana 
-			Vedrana Visnja Vjekoslava Zlata Zvonimira Valerija Katalin
-		}
-		dynasty_names = {
-			Arnic Avbelj Avsenik Bajuk Bitenc Cankar Cec Cernigoj Czipott Dolar
-			Drolc Duletic Globocnik Gobec Godina Golob Haus Hladnik Ivanek Kantuser
-			Kidric Komar Kopitar Kraigher Lipovsek Lipuscek Macek Maister Marinko Miklosic
-			Mravlajk Pengov Pesek Peterle Pirec Plecnik Rozman Rupnik Sarh Srebrnic
-			Tomazic Tomsic Urbancic Vega "Von Windisch-Grätz" Zagar Zerjal Zizke Zornada Zupancic
 		}
 	}
 	dynasty_names = { 
@@ -2171,11 +2234,27 @@ west_slavic = {
 			Zapolský Palfi Cáki Balaša Báthory
 		}
 	}
-	#Beyond the Pale Culture
+	
 	sorbian = {
-		graphical_culture = westerngfx
-		primary = LUS
+		primary = SOR
+		male_names = {
+			Awgust Alojs Abraham Albin Bogumil Bjedrich Bjarnat Cyril Derwan Fryco Frido Filip
+			Handrij Jan Jurij Jakub Jozef Joachim Korla Kito Kristalub Krescan Michal Mikolaj Mato Mercin
+			Matej Marko Miliduch Miklaws Nathanael Petr Pawol Pomgajbog Stanislaw Salomon
+			Wjaclaw Wylem
+		}
+		female_names = {
+			Bogna Benedikta Hanka Inga Irmgard Jewa Lubina Ludmila Marja Marta Marjana Pawlina Róza Sofija
+		}
+		dynasty_names = {
+			Brosk "z Barenstamma" Buk Bronisz Czornak Cyzh Dejka "z Friedenfelsa"
+			Glowan Jakobica Klosopolski Kucank Leska Langa Mosak Muslik Mercink Miczka
+			Parczewski Prätorius Pjekar Rhenisz Rizo Rychtar Swora Stempel Smoler
+			Woski Wirt Zejler
+		}
 	}
+	#Beyond the Pale Culture Deprecated
+	#sorbian = {}
 	#BtPLegacy Culture
 	polabian_culture = {
 		graphical_culture = westerngfx
@@ -2225,50 +2304,55 @@ carpathian = {
 	graphical_culture = easterngfx
 	hungarian = {
 		primary = HUN
-		dynasty_names = {
-			Báthory Hunyadi Szapolyai Rákóczy Bocskai Bethlen Almásy Andrássy Batthyány Csáky Dessewffy
-			Erdody Eszterházy Festetics Hajdú Károlyi Kun Magyary Perényi Rónai Széchenyi Szepessy 
-			Thököly Tisza Zrínyi Teleki
-			Majláth Dóczy Dobó Koháry Orczy Frankopan Garay Mikes Szécsi Imreffy Nádasdy Rhédey
-			
-			#CK2
-			Zrinski Hadik Both "Rákóczi" Forgách Cseszneky Derencsényi Décsey Révay Esterházy
-			Kállay Kemény Thurzó Zichy
-		}
-		male_names = {
-			Ulászló László Lajos Albert János Mátyás Zsigmond András Károly István Béla Anasztáz Barnabás 
-			Boldizsár Dávid Dömötör Edvárd Ernö Ferenc Gábor György Izsák Jenö József Kálmán Kázmér Lörinc 
-			Miklós Oszkár Ottó Patrik Péter Simon Tamás Vencel
-			Ábel Ádárn Ágoston Álmos Árpád Õdön Otto Alajos Ambrus András Andrew Antal Attila Bálint 
-			Albert Balázs Benedek Benedict Bernát Bernard Bertók Bertalan Boldizsár Bonuslo
-			Borisz Boris Csák Csaba Csongor Dénes Dömötör Dezsõ Domoszló Donát Elek Elemér Endre Ernõ 
-			Philip Ferenc Francis Frigyes Gábor Gábriel Gabriel Gáspár Caspar Géza Gazsi
-			Gellért Gergely György George Gyula Imre István Stephen Izsák Jákob Jacob János John József 
-			Joseph Jenõ Kálmán Károly Charles Konrád Konrad Kornél Kristóf László Lázár Lõrinc Lajos 
-			Lampert Levente Lukács Márk Marcus Márton Martin Máté Mátyás Matthew Móric Mózes Mihály 
-			Michael Louis Fulöp Béla
-			Miklós Nándor Orbán Oszkár Pál Paul Péter Peter Sámuel Samuel Sándor Alexander Salamon 
-			Szilveszter Silvester Tádor Tacsony Tamás Thomas Tibor Tivadar Vazul Vencel Vaclav Vilmos 
-			Zoltán Zsigmond Sigmund Zsolt Saul Soma
-		}
-		female_names = {
-			Ágnes Agnes Éva Eva Adelaida Adelaide Agáta Agatha Amália Amelia Angyalka Anikó Aranka 
-			Bertha Borbála Csilla Csillag Czenzi Dorottya Dorothy Edit Edith Emõke Emese Erika Erzsébet 
-			Elisabeth Eszter Berta Anna
-			Etel Euphemia Euphemia Gizella Gisela Györgyi Georgia Hajnal Hedwig Hedwig Ibolya Ildikó 
-			Irén Irene Jácinta Józsa Júlia Juliana Jolán Judith Judith Kamilla Camilla Katalin 
-			Kinga Klára Clara Catherine Illona
-			Konstancia Constance Krisztina Christina Kunigunda Kunigunde Luca Mária Maria Márta Martha 
-			Magdolna Magdalena Margaréta Margaret Margit Matild Matilda Natália Natalia Odola Orsolya 
-			Panni Piroska Rózsa Rosa Sára Sarah Sarolt Zsuzsa Zsanett
-			Skolasztika Sophia Sophia Tundér Terezia Teresa Viola Viola Virág Zoltána Zsófia Sophia
-		}
+	}
+	cuman = {
+		primary = CUM
+	}
+	szekely = {
+		primary = SZE
+	}
+	dynasty_names = {
+		Báthory Hunyadi Szapolyai Rákóczy Bocskai Bethlen Almásy Andrássy Batthyány Csáky Dessewffy
+		Erdody Eszterházy Festetics Hajdú Károlyi Kun Magyary Perényi Rónai Széchenyi Szepessy 
+		Thököly Tisza Zrínyi Teleki
+		Majláth Dóczy Dobó Koháry Orczy Frankopan Garay Mikes Szécsi Imreffy Nádasdy Rhédey
+		
+		#CK2
+		Zrinski Hadik Both "Rákóczi" Forgách Cseszneky Derencsényi Décsey Révay Esterházy
+		Kállay Kemény Thurzó Zichy
+	}
+	male_names = {
+		Ulászló László Lajos Albert János Mátyás Zsigmond András Károly István Béla Anasztáz Barnabás 
+		Boldizsár Dávid Dömötör Edvárd Ernö Ferenc Gábor György Izsák Jenö József Kálmán Kázmér Lörinc 
+		Miklós Oszkár Ottó Patrik Péter Simon Tamás Vencel
+		Ábel Ádárn Ágoston Álmos Árpád Õdön Otto Alajos Ambrus András Andrew Antal Attila Bálint 
+		Albert Balázs Benedek Benedict Bernát Bernard Bertók Bertalan Boldizsár Bonuslo
+		Borisz Boris Csák Csaba Csongor Dénes Dömötör Dezsõ Domoszló Donát Elek Elemér Endre Ernõ 
+		Philip Ferenc Francis Frigyes Gábor Gábriel Gabriel Gáspár Caspar Géza Gazsi
+		Gellért Gergely György George Gyula Imre István Stephen Izsák Jákob Jacob János John József 
+		Joseph Jenõ Kálmán Károly Charles Konrád Konrad Kornél Kristóf László Lázár Lõrinc Lajos 
+		Lampert Levente Lukács Márk Marcus Márton Martin Máté Mátyás Matthew Móric Mózes Mihály 
+		Michael Louis Fulöp Béla
+		Miklós Nándor Orbán Oszkár Pál Paul Péter Peter Sámuel Samuel Sándor Alexander Salamon 
+		Szilveszter Silvester Tádor Tacsony Tamás Thomas Tibor Tivadar Vazul Vencel Vaclav Vilmos 
+		Zoltán Zsigmond Sigmund Zsolt Saul Soma
+	}
+	female_names = {
+		Ágnes Agnes Éva Eva Adelaida Adelaide Agáta Agatha Amália Amelia Angyalka Anikó Aranka 
+		Bertha Borbála Csilla Csillag Czenzi Dorottya Dorothy Edit Edith Emõke Emese Erika Erzsébet 
+		Elisabeth Eszter Berta Anna
+		Etel Euphemia Euphemia Gizella Gisela Györgyi Georgia Hajnal Hedwig Hedwig Ibolya Ildikó 
+		Irén Irene Jácinta Józsa Júlia Juliana Jolán Judith Judith Kamilla Camilla Katalin 
+		Kinga Klára Clara Catherine Illona
+		Konstancia Constance Krisztina Christina Kunigunda Kunigunde Luca Mária Maria Márta Martha 
+		Magdolna Magdalena Margaréta Margaret Margit Matild Matilda Natália Natalia Odola Orsolya 
+		Panni Piroska Rózsa Rosa Sára Sarah Sarolt Zsuzsa Zsanett
+		Skolasztika Sophia Sophia Tundér Terezia Teresa Viola Viola Virág Zoltána Zsófia Sophia
 	}
 }
 	
 east_slavic = {
 	graphical_culture = easterngfx
-	
 	russian = { #Muscovite - Vladimir-Suzdal dialects
 		primary = MOS
 		male_names = {
@@ -3927,6 +4011,7 @@ central_american = {
 aridoamerican = {			#New group added in 1.28... I'm.... not really a huge fan, but I'll leave it until I can handle it myself.
 	graphical_culture = southamericagfx
 	tecos = {
+		primary = CLM
 		male_names = {
 			Acalan Acacitli Acamapichtli Acolmiztli Aculnahuacatl Ahuiliztli Ahuitzotl Atl Axayacatl Cacamatzin 
 			Chimalli Chimalpilli Chimalpopoca Cipac Coanacoch Coatl Cozahtli Cuauhtemoc Cuauhtl Cuetlachtli 
@@ -3959,6 +4044,7 @@ aridoamerican = {			#New group added in 1.28... I'm.... not really a huge fan, b
 		}
 	}
 	tepic = {
+		primary = XAL
 		male_names = {
 			Acalan Acacitli Acamapichtli Acolmiztli Aculnahuacatl Ahuiliztli Ahuitzotl Atl Axayacatl Cacamatzin 
 			Chimalli Chimalpilli Chimalpopoca Cipac Coanacoch Coatl Cozahtli Cuauhtemoc Cuauhtl Cuetlachtli 
@@ -4095,6 +4181,7 @@ maya = {
 		}
 	} 
 	highland_mayan = {
+		primary = KIC
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
 			"Pacal Balam" "Yaxum Balam" "Butz Chan" "Chaan Muan" "Yax Pac" "Ahpop-Achi" "Kan Bahlun Mo" Cocom 
@@ -4393,6 +4480,7 @@ chibchan = {
 		}
 	}
 	miskito = {
+		primary = MIS
 		dynasty_names = {
 			Miskito Chibchan
 		}
@@ -6815,6 +6903,7 @@ malay = {
 	}
 	#Moved from Bantu Group
 	madagasque = {
+		primary = SKA
 		dynasty_names = {
 			Mwenemutapa Rozwi Mutopa Lukeni Loanga
 		}
@@ -9289,6 +9378,21 @@ african = {	#Eastern Bantu Groups
 	bantu = { #Thagiicu, old tag kept to not break older saves.
 		
 	}
+	swahili = {
+		primary = ZAN
+		dynasty_names = {
+			Nabahani al-Mawahib Zanzibari Mvita al-Malindi
+		}
+		male_names = {
+			Husayn Muhammad Sulaymân Ahmad Hasan Sa'îd 'Abd Allâh 'Alî Ibrâhîm al-Fudail Abû Bakr Sabo al-Hasan 
+			Munganaye Yûsuf Bwana Mkuu Mas'ûd Bwana Tamu Fumo Madi Makame Mwinyi Ahmad Sa'if Nasr Salih Fumo Luti Bwana 
+			Waziri Bwana Shaykh Fumo Bakari Fumo Umar Khamis Rashid Mwinyi Hasan Kombo Ngwale Ngwacani Athmani 'Alawi 
+			Twakali Janfar Muksedi
+		}
+		female_names = {
+			"Mwana Mwema" Fatima
+		}
+	}
 	
 	dynasty_names = {
 		Mwenemutapa Rozwi Mutopa Lukeni Loanga Nabahani al-Mawahib Zanzibari Mvita al-Malindi
@@ -9669,7 +9773,7 @@ evenks = {
 	manchu = {
 		country = { has_banners = 1}
 		province = { local_has_banners = 1}
-		primary = MCH
+		primary = MJZ
 		dynasty_names = {
 			"Aisin Gioro" Wanyan "Yehe Nara" "Ula Nara" "Magiya Hala" Niohuru
 			Heseri Guwalgiya Tunggiya Hata Hoifa Yeren Udige
@@ -10127,12 +10231,12 @@ lost_cultures_group = {
 	hebrew = { #EU Rome
 		dynasty_names = {
 			Abiatarid Akabonid Amitid Amramid Boazid Dorid Dovid Eiranid Eleazid Heroid Honioid Hillelid Joazid Kahanid Nahumid Nirid Nogahid 
-			Oferid Omrid Pinchasid Raananid Shemidid Shemidid Yairid
+			Oferid Omrid Pinchasid Raananid Shemidid Yairid
 		}
 		male_names = {
 			Abiatar Ahijah Akabon Alon Amit Amram Ananelus Ananias Aretas Aristobulus Azrikam Barak Baruch Belshazar Costobarus Deror Dori 
-			Eiran Eleazar Erotimus Ezra Hadasa Herod Hillel Hyrkanus Jannaeus Joazar Yosef Josiada Kahana Hillel Hodaviah Honio Meir Nahum 
-			Nathan Nehemiah Nikanor Nir Obadiah  Ofer Omri Pinchas Phannias Phasael Raanan Malichus Manasseh Nahum Nogah Shamgar Shammai 
+			Eiran Eleazar Erotimus Ezra Hadasa Herod Hillel Hyrkanus Jannaeus Joazar Yosef Josiada Kahana Hodaviah Honio Meir Nahum 
+			Nathan Nehemiah Nikanor Nir Obadiah  Ofer Omri Pinchas Phannias Phasael Raanan Malichus Manasseh Nogah Shamgar Shammai 
 			Shaul Shemaiah Shemida Silas Simeon Sosa Talmon Tarfon Tovia Yair Yochanan Zadok
 		}
 		female_names = {
@@ -10270,21 +10374,25 @@ illyrian = {
 	graphical_culture = easterngfx
 	albanian = {
 		primary = ALB
-		male_names = {
-			Gjergj Lekë Gjon Kostandin Lulëzim Pal Tanush Aleksandër Karolus Filippo Adnan Agim Bashkim Besnik 
-			Dardan Dhurim Dritëro Elidon Erjon Fatmir Flamur Florin Hekuran Ilir Ismail Klodian Luigj Milaim 
-			Pashko Pëllumb Përparim Pjetër Rrok Shpëtim Tahir Viktor Xhevat Ylli Zenel Halil Ali Mustafa Qemal 
-			Mehmet Ramiz Edi Demaci Edon Dukagjin Haxhi Lishëndri Mensur Kreshnik Rahman Nxhiku Riza Rexhep 
-			Sulejman Selim Sadik Bujar Nikolla Enver Ramadan
-		}
-		female_names = {
-			Gjylo Afërdita Blerta Bora Dafina Dardana Era Fatmire Flutura Gentiana Jehona Lindita Lule Luljeta Pranvera Shpresa 
-			Shqipe Teuta Venera Vera Vesa Yllka
-		}
+	}
+	arvanite = {
+		#primary = #no tag so no seperatists
+	}
+	male_names = {
+		Gjergj Lekë Gjon Kostandin Lulëzim Pal Tanush Aleksandër Karolus Filippo Adnan Agim Bashkim Besnik 
+		Dardan Dhurim Dritëro Elidon Erjon Fatmir Flamur Florin Hekuran Ilir Ismail Klodian Luigj Milaim 
+		Pashko Pëllumb Përparim Pjetër Rrok Shpëtim Tahir Viktor Xhevat Ylli Zenel Halil Ali Mustafa Qemal 
+		Mehmet Ramiz Edi Demaci Edon Dukagjin Haxhi Lishëndri Mensur Kreshnik Rahman Nxhiku Riza Rexhep 
+		Sulejman Selim Sadik Bujar Nikolla Enver Ramadan
+	}
+	female_names = {
+		Gjylo Afërdita Blerta Bora Dafina Dardana Era Fatmire Flutura Gentiana Jehona Lindita Lule Luljeta Pranvera Shpresa 
+		Shqipe Teuta Venera Vera Vesa Yllka
 	}
 	dynasty_names = { 
 		"Trpimirovic" "Svetoslavic" "Kosovic" "Kresimirovic" "Zrinski" "Domagojevic" "Hrvatinic" "Kotromanic" "Brankovic" "Lazarevic" "Ibrahimovic"
 	}
+	
 }
 
 
@@ -10529,7 +10637,7 @@ berber_group = {
 		}
 	}
 	shilha = {
-		primary = REG
+		primary = RGR
 		dynasty_names = {
 			"al-Ilighi" "al-Tadsi" "Zayyanid" Maatka Wattasid Atfayyish "Beni Isguen" "al-Afdali" "Mzabi"
 			Tabghurin "al-Malshuti"
@@ -12336,179 +12444,3 @@ septrional_creoles = {
 	}
 }
 
-#############################################################################################################################
-#############################################################################################################################
-#############################################################################################################################
-###############################################		AUMC New Cultures		################################################
-#############################################################################################################################
-#############################################################################################################################
-#############################################################################################################################
-
-swahili = {
-	swahili = {
-		dynasty_names = {
-			Nabahani al-Mawahib Zanzibari Mvita al-Malindi
-		}
-		male_names = {
-			Husayn Muhammad Sulaymân Ahmad Hasan Sa'îd 'Abd Allâh 'Alî Ibrâhîm al-Fudail Abû Bakr Sabo al-Hasan 
-			Munganaye Yûsuf Bwana Mkuu Mas'ûd Bwana Tamu Fumo Madi Makame Mwinyi Ahmad Sa'if Nasr Salih Fumo Luti Bwana 
-			Waziri Bwana Shaykh Fumo Bakari Fumo Umar Khamis Rashid Mwinyi Hasan Kombo Ngwale Ngwacani Athmani 'Alawi 
-			Twakali Janfar Muksedi
-		}
-		female_names = {
-			"Mwana Mwema" Fatima
-		}
-	}
-	
-	sofala = {
-		primary = SFA
-		dynasty_names = {
-			Yakote Yusuf Ankoni
-		}
-	}
-	
-	chuwabu = {		#Zambesi Delta
-		primary = KWM
-	}
-	
-	koti = {		#Angoche
-		primary = AGC
-		dynasty_names = {
-			Inhanandare "M'bilinzi" Inhamilala Inhaitide Inhabaco Anhapakho
-		}
-	}
-	
-	nahara = {		#Mozambique Isle
-		dynasty_names = {
-		}
-	}
-	
-	mwani = {		#Northern Mozambique and Kirambas
-		dynasty_names = {
-		}
-	}
-	
-	makwe = {
-		dynasty_names = {
-		}
-	}
-	
-	kimgao = {		#Kilwa
-		primary = ZAN
-		dynasty_names = {
-		}
-	}
-	
-	mbwera = {		#Mafia
-		dynasty_names = {
-		}
-	}
-	
-	shikomori = {		#Comorian
-		dynasty_names = {
-			Mujojo
-		}
-	}
-	
-	rufiji = {
-		dynasty_names = {
-		}
-	}
-	
-	zaramo = {
-		dynasty_names = {
-		}
-	}
-	
-	kimrima = {
-		dynasty_names = {
-		}
-	}
-	
-	kimtang_ata = {
-		dynasty_names = {
-		}
-	}
-	
-	pokomo = {
-		dynasty_names = {
-		}
-	}
-	
-	mijikenda = {
-		dynasty_names = {
-		}
-	}
-	
-
-	kiunguja = {		#Zanzibar and Pemba
-		dynasty_names = {
-		}
-	}
-	
-	kimvita = {			#Mombasa
-		dynasty_names = {
-		}
-	}
-	
-	kiamu = {		#Lamu
-		dynasty_names = {
-		}
-	}
-	
-	tikulu = {		#Bajuni
-		dynasty_names = {
-		}
-	}
-	
-	mwiini = {		#Brava
-		dynasty_names = {
-		}
-	}
-	
-	nosse_be = {		#Madagascar Swahili
-		dynasty_names = {
-			Mujojo
-		}
-	}
-	
-	dynasty_names = {
-		Mwenemutapa Rozwi Mutopa Lukeni Loanga Nabahani al-Mawahib Zanzibari Mvita al-Malindi
-	}
-	male_names = {
-	    Barack Barak Faraji Jabari Omari Sadeeki Sadiki Sahel Simba Yazeed Yazid Zahoor Zahour Zahur Zooberi Zuberi Zubery 
-		"'Abd" "'Alawi" "'Ali" "Abu" Ahmad Allah Athmani
-		Bakari Bakr Bwana Fumo Hasan Husayn Ibrahim Janfar Khamis Kombo Luti Madi Makame Mas'ûd Mkuu Muhammad Muksedi Munganaye
-		Mwinyi Nasr Ngwacani Ngwale Rashid "Sa'if" "Sa'id" Sabo Salih Shaykh Sulayman Tamu Twakali Umar Waziri Yusuf
-		al-Fudail al-Hasan
-		Mani Rabi'a Musa Ibrahim Markhan Watban Nasir Idris "'Abd-Allah" Sa'ud Zayid Abdullah Muhammad
-		'Abdullah Turki Faisal Al-Rahman Khalid Fahd Aziz Abu-Bakr Abu-Bakr Aarif Abdul-Gafur Abdul-Jaleel Abdul-Qadir 
-		Abdul-Wahab Abdul Abdul Abdullah Abdullah Aghlab Akin Ali Ali Alim Aram Azam Bahir Burhanaddin
-		Fadil Fadl Faruk Ghalib Hafiz Halil Hasan Hasan Husam Hussayn Hussayn Ibrahim Abraham Idris 
-		Is'mail Ismail Isa Jabir Jalil Jibril Khaireddin Khalil Mahdi Mahmud Mahmud
-		Mansur Mirza Mubarak Muhammad Muhammad Mukhtar Murad Musa Moses Muslihiddin Muzaffaraddin Najib 
-		Nasr Nizam Qawurd Ramadan Sa'daddin Sadiq Sami Samir Shaiban
-		Shamir Shujah Sulayman Solomon Talib Ubayd Uways Yahya Yahya Ya'qub Jacob Youkhanna John Yusuf 
-		Joseph Zeyd 
-	}
-	female_names = {
-		Aivana Aivanna Avana Avania Avannia Ayanna Ayonna Baraka Barrak Faraji Hasina
-		Jabari Jina Lakeisha Lelafe Lulufe Nea Nia Niah Nya Nyah Omari Sadeeki Sadiki Safia Safiyah Sahel
-		Abena Abeni Aberash Abimbola Abiodun Achieng Adaeze Adanna Adannaya Ade Adebola Adebowale Adedayo Adetokunbo 
-		Adhiambo Adjoa Adwoa Afia Afua Akachi Akinyi Akosua Akpofure Akua Akuchi Alaba Alemayehu Alinafe Ama Amaka Amara 
-		Amarachi Anan Añuli Asha Aisha Atieno Awiti Awotwi Ayo Ayodele Ayomide Ayotunde Baako Babirye Boipelo Boitumelo 
-		Bolanle Bosede  Chausiku Chi Chiamaka Chibueze Chibuike Chibuzo Chichi Chidi Chidiebere Chidiebube Chidiegwu 
-		Chidimma Chifundo Chifuniro Chijindum Chika Chike Chikelu Chikere Chikondi Chikumbutso Chimwemwe Chinasa Chinedu 
-		Chinonso Chinwe Chinweike Chinwendu Chinweuba Chinyelu Chinyere Chioma Chipo Chisomo Chiyembekezo Chizoba Dada 
-		Dalitso Dayo Desta Dikeledi Dubaku Dumisani Ebele Efe Efemena Efua Ejiro Ejiroghene Ekene Ekenedilichukwu Ekua 
-		Ekundayo Emem Eniola Enitan Enu Eseoghene Eshe Esi Farai Fatsani Folami Fumnanya Funanya Fungai Furaha Ganizani 
-		Gbemisola Hiwot Hlengiwe Idowu Ife Ige Imani Ime Itumeleng Kagiso Kahina Kamaria Katlego Kayin Kefilwe Kirabo 
-		Kondwani Kumbukani Kunto Lerato Lesedi Limbani Limbikani Lindiwe Lumusi Lungile Madalitso Makena Manyara Marjani 
-		Masego Masozi Fatima "Mwana Mwema"
-		Nadiyya Adila Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand 
-		Parween Paymaneh Paywand Qamara Rafiqa Rasa Rashida Reshawna
-		Saaman Sabba Saghar Sahba Sajida Samira Semeah Setara Shahrbano Shahzadah Shameem Shararah 
-		Sheeftah Sheeva Shogofa Shokouh Shola Sholah Simin Souzan
-		Taliba Tanaz Taneen Yagana Yakta Yasmin Zaynab
-	}
-}

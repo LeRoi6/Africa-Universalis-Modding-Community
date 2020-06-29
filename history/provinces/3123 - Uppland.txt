@@ -13,7 +13,6 @@ base_production = 3
 trade_goods = iron
 base_manpower = 2 
 capital = "Uppsala"
-estate = estate_church
 is_city = yes
 
 discovered_by = western

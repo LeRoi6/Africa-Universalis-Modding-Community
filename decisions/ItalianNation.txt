@@ -16,7 +16,7 @@ country_decisions = {
 			NOT = { exists = ITA }
 			NOT = { exists = ITL }
 			tag = PAP
-			NOT = { has_country_modifier = btp_kingdom_of_god }
+			NOT = { has_country_flag = is_kingdom_of_god_flag }
 			OR = {
 				ai = no
 				AND = {
@@ -84,6 +84,8 @@ country_decisions = {
                 }
                 add_permanent_claim = ROOT
             }
+			override_country_name = KINGDOM_OF_GOD
+			set_country_flag = is_kingdom_of_god_flag
 		}
 		ai_will_do = {
 			factor = 1

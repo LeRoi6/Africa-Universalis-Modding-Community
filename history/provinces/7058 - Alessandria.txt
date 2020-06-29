@@ -3,7 +3,7 @@
 owner = ASD
 controller = ASD
 add_core = ASD
-culture = lombard
+culture = piedmontese #Eastern Piedmontese. It has influence from neighboring Emilian, Lombard, and Ligurian, but is not classified as Lombard despite Draiocht putting it that way in the history files.
 religion = catholic
 capital = "Alessandria"
 base_tax = 8

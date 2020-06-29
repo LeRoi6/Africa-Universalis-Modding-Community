@@ -37,15 +37,11 @@ colonial_alaska = {
 	
 	# Specific
 	names = {
-		trigger = {
-			primary_culture = russian
-		}
+		trigger = { primary_culture = russian }
 		name = "COLONIAL_ALASKA_Alyeska"
 	}
 	names = {
-		trigger = {
-			culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
-		}
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
 		name = "COLONIAL_ALASKA_BTP_Halaskaland"
 	}
 	names = {
@@ -60,22 +56,35 @@ colonial_alaska = {
 		name = "COLONIAL_ALASKA_BTP_Denalien"
 	}
 	names = {
-		trigger = { culture_group = gaelic }
+		trigger = { 
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			} 
+		}
 		name = "COLONIAL_ALASKA_BTP_Alasca"
 	}
 	names = {
-		trigger = {
-			OR = {
-				tag = SPA
-				tag = CAS
-				tag = ARA
-			}
-		}
+		trigger = {	primary_culture = portugese }
+		name = "COLONIAL_ALASKA_LA"
+	}
+	names = {
+		trigger = { culture_group = iberian	}
 		name = "COLONIAL_ALASKA_Pacifico_Norte"
 	}
 	names = {
 		trigger = { culture_group = east_asian }
 		name = "COLONIAL_ALASKA_BT_EAST_ASIAN"
+	}
+	names = {
+		trigger = {	culture_group = latin }
+		name = "COLONIAL_ALASKA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_ALASKA_TU"
 	}
 	# Generic
 	names = {
@@ -129,6 +138,10 @@ colonial_canada = {
 	
 	# Specific
 	names = {
+		trigger = { primary_culture = swedish }
+		name = "COLONIAL_CANADA_SWE"
+	}
+	names = {
 		trigger = {			#The Saint Lawrence valleys culture is French but owned by the British, as historically 1763 to 1791
 			OR = {
 				tag = GBR
@@ -155,15 +168,11 @@ colonial_canada = {
 		name = "COLONIAL_CANADA_BTP_CANADA_NAME"
 	}
 	names = {
-		trigger = {
-			tag = POR
-		}
+		trigger = { primary_culture = portugese }
 		name = "COLONIAL_CANADA_Lavrador"
 	}
 	names = {
-		trigger = {			#Why do we need this... it is a good name though
-			tag = IRO
-		}
+		trigger = {	tag = IRO }		#Why do we need this... it is a good name though 
 		name = "COLONIAL_CANADA_Kanata"
 	}
 	names = {
@@ -174,9 +183,7 @@ colonial_canada = {
 		name = "COLONIAL_CANADA_BTP_QUEBEC_FR_NAME"
 	}
 	names = {
-		trigger = {
-			culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
-		}
+		trigger = {	culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
 		name = "COLONIAL_CANADA_BTP_Markland"
 	}
 	names = {
@@ -195,7 +202,14 @@ colonial_canada = {
 		name = "COLONIAL_CANADA_BTP_Kanadas"
 	}
 	names = {
-		trigger = { culture_group = gaelic }
+		trigger = { 
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			} 
+		}
 		name = "COLONIAL_CANADA_BTP_Ceanada"
 	}
 	names = {
@@ -203,10 +217,27 @@ colonial_canada = {
 			OR = {
 				primary_culture = welsh
 				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
 			}
 		}
 		name = "COLONIAL_CANADA_CY"
 	}
+	names = {
+		trigger = { tag = BRU }
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_CANADA_LA"
+	}	
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_CANADA_TU"
+	}
+	
+	# Generic
 	names = {
 		trigger = {
 			OR = {			#Owns something in the Labrador
@@ -237,14 +268,6 @@ colonial_canada = {
 		}
 		name = "COLONIAL_CANADA_Laurentia"
 	}
-	names = {
-		trigger = {
-			tag = BRU
-		}
-		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	
-	# Generic
 	names = {
 		name = "COLONIAL_CANADA_Root_Culture_GetName_Canada"
 	}
@@ -347,6 +370,10 @@ colonial_eastern_america = {
 	
 	# Specific
 	names = {
+		trigger = { tag = SWE }
+		name = "COLONIAL_EASTERN_AMERICA_SWE"
+	}
+	names = {
 		trigger = {
 			OR = {
 				tag = GBR
@@ -365,12 +392,12 @@ colonial_eastern_america = {
 		}
 		name = "COLONIAL_EASTERN_AMERICA_Nouvelle_Flandre"
 	}
-	names = {
-		trigger = {
-			culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
-		}
-		name = "COLONIAL_EASTERN_AMERICA_BTP_Vinland"
-	}
+	# names = {
+		# trigger = {
+			# culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		# }
+		# name = "COLONIAL_EASTERN_AMERICA_BTP_Vinland"
+	# }
 	names = {
 		trigger = {
 			culture_group = germanic
@@ -387,7 +414,14 @@ colonial_eastern_america = {
 		name = "COLONIAL_EASTERN_AMERICA_BTP_Nea_Attike"
 	}
 	names = {
-		trigger = { culture_group = gaelic }
+		trigger = { 
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			} 
+		}
 		name = "COLONIAL_EASTERN_AMERICA_BTP_Eire_Nua"
 	}
 	names = {
@@ -395,9 +429,24 @@ colonial_eastern_america = {
 			OR = {
 				primary_culture = welsh
 				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
 			}
 		}
 		name = "COLONIAL_EASTERN_AMERICA_CY"
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_EASTERN_AMERICA_PT"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_EASTERN_AMERICA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_EASTERN_AMERICA_TU"
 	}
 	# Generic
 	names = {
@@ -491,6 +540,14 @@ colonial_louisiana = {
 	
 	# Specific
 	names = {
+		trigger = { primary_culture = swedish }
+		name = "COLONIAL_LOUISIANA_SWE"
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_LOUISIANA_PT"
+	}
+	names = {
 		trigger = {
 			OR = {
 				tag = FRA
@@ -523,9 +580,7 @@ colonial_louisiana = {
 		name = "PROV915"
 	}
 	names = {
-		trigger = {
-			culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
-		}
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
 		name = "COLONIAL_LOUISIANA_BTP_Konungrborg"
 	}
 	names = {
@@ -548,9 +603,20 @@ colonial_louisiana = {
 			OR = {
 				primary_culture = welsh
 				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
 			}
 		}
 		name = "COLONIAL_LOUISIANA_CY"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_LOUISIANA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_LOUISIANA_TU"
 	}
 	# Generic
 	names = {
@@ -720,9 +786,15 @@ colonial_california = {
 
 	# Specific
 	names = {
-		trigger = {
-			culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
-		}
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_CALIFORNIA_PT"
+	}
+	names = {
+		trigger = { culture_group = british	}
+		name = "COLONIAL_CALIFORNIA_New_Albion"
+	}
+	names = {
+		trigger = { culture_group = scandinavian } #Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
 		name = "COLONIAL_CALIFORNIA_BTP_Kalarheimr"
 	}
 	names = {
@@ -735,6 +807,19 @@ colonial_california = {
 			}
 		}
 		name = "COLONIAL_CALIFORNIA_BTP_Kalifien"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+			any_owned_province = { #Avoiding silliness of not owning a province in Apulia but colony names itself New Apulia.
+				area = apulia_area
+			}
+		}
+		name = "COLONIAL_CALIFORNIA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_CALIFORNIA_TU"
 	}
 	# Generic
 	names = {
@@ -796,21 +881,19 @@ colonial_mexico = {
 	
 	# Specific
 	names = {
-		trigger = {
-			tag = SPA
-		}
+		trigger = { primary_culture	= portugese }
+		name = "COLONIAL_MEXICO_PT"
+	}
+	names = {
+		trigger = { tag = SPA }
 		name = "COLONIAL_MEXICO_New_Spain"
 	}
 	names = {
-		trigger = {
-			tag = CAS
-		}
+		trigger = { tag = CAS }
 		name = "COLONIAL_MEXICO_New_Castile"
 	}
 	names = {
-		trigger = {
-			culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
-		}
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
 		name = "COLONIAL_MEXICO_BTP_Meksavik"
 	}
 	names = {
@@ -825,7 +908,14 @@ colonial_mexico = {
 		name = "COLONIAL_MEXICO_BTP_Mexicaland"
 	}
 	names = {
-		trigger = { culture_group = gaelic }
+		trigger = { 
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			} 
+		}
 		name = "COLONIAL_MEXICO_BTP_Meicsiceo"
 	}
 	names = {
@@ -833,9 +923,20 @@ colonial_mexico = {
 			OR = {
 				primary_culture = welsh
 				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
 			}
 		}
 		name = "COLONIAL_MEXICO_CY"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_MEXICO_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_MEXICO_TU"
 	}
 	# Generic
 	names = {
@@ -931,16 +1032,20 @@ colonial_the_carribean = {
 	#	name = "COLONIAL_THE_CARRIBEAN_Antilles"
 	#}
 	names = {
-		trigger = {
-			tag = POR
-		}
+		trigger = { primary_culture = portugese }
 		name = "COLONIAL_THE_CARRIBEAN_Caraibas"
 	}
 	names = {
-		trigger = {
-			tag = POR
-		}
+		trigger = { primary_culture = portugese }
 		name = "COLONIAL_THE_CARRIBEAN_Antilhas"
+	}
+	names = {
+		trigger = { primary_culture = swedish }
+		name = "COLONIAL_THE_CARRIBEAN_SWE"
+	}
+	names = {
+		trigger = { primary_culture = danish }
+		name = "COLONIAL_THE_CARRIBEAN_DAN"
 	}
 	names = {
 		trigger = {
@@ -968,7 +1073,14 @@ colonial_the_carribean = {
 		name = "COLONIAL_THE_CARRIBEAN_Nea_Kyklades"
 	}
 	names = {
-		trigger = { culture_group = gaelic }
+		trigger = { 
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			} 
+		}
 		name = "COLONIAL_THE_CARRIBEAN_BTP_Aintilli"
 	}
 	names = {
@@ -976,9 +1088,25 @@ colonial_the_carribean = {
 			OR = {
 				primary_culture = welsh
 				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
 			}
 		}
 		name = "COLONIAL_THE_CARRIBEAN_CY"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+			any_owned_province = { #To avoid a situation where you don't own Sicily yet still get New isles off the coast of Sicily.
+				area = sicily_area
+			}
+		}
+		name = "COLONIAL_THE_CARRIBEAN_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_THE_CARRIBEAN_TU"
 	}
 	# Generic
 	names = {
@@ -1036,21 +1164,23 @@ colonial_colombia = {
 
 	# Specific
 	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_COLOMBIA_PT"
+	}
+	names = {
 		trigger = {
-			OR = {
-				tag = SPA
-				tag = CAS
-				tag = ARA
-			}
+			culture_group = iberian
 			owns = 223 # Granada
 		}
 		name = "COLONIAL_COLOMBIA_New_Granada"
 	}
 	names = {
-		trigger = {
-			culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
-		}
+		trigger = { culture_group = scandinavian }	 		#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
 		name = "COLONIAL_COLOMBIA_BTP_Karbumork"
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_COLOMBIA_EN"
 	}
 	names = {
 		trigger = {
@@ -1068,9 +1198,26 @@ colonial_colombia = {
 			OR = {
 				primary_culture = welsh
 				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
 			}
 		}
 		name = "COLONIAL_COLOMBIA_CY"
+	}
+	names = {
+		trigger = { 
+			culture_group = latin
+			NOT = { #These cultures/nations hated Venetians/Venice.
+				primary_culture = ligurian
+				primary_culture = lombard
+			}
+		}
+		name = "COLONIAL_COLOMBIA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_COLOMBIA_TU"
 	}
 	# Generic
 	names = {
@@ -1120,9 +1267,11 @@ colonial_peru = {
 #		name = ""
 #	}
 	names = {
-		trigger = {
-			culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
-		}
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_PERU_PT"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
 		name = "COLONIAL_PERU_BTP_Birurheimr"
 	}
 	names = {
@@ -1139,6 +1288,27 @@ colonial_peru = {
 	names = {
 		trigger = { culture_group = byzantine }
 		name = "COLONIAL_PERU_BTP_Perou"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+			any_owned_province = {
+				OR = {
+					area = upper_peru
+					area = potosi_area
+					area = antisuyu_area
+				}
+			}
+		}
+		name = "COLONIAL_PERU_LA_2"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_PERU_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_PERU_TU"
 	}
 	# Generic
 	names = {
@@ -1214,22 +1384,28 @@ colonial_la_plata = {
 		}
 		name = "COLONIAL_LA_PLATA_Argentine"
 	}
-	names = {
-		trigger = {
-			tag = POR
-		}
-		name = "COLONIAL_LA_PLATA_Rio_de_Prata"
-	}
-	names = {
-		trigger = {
-			tag = POR
+	names = { #Moved to take precedence based on if extra conditions are met.
+		trigger = { 
+			primary_culture = portugese
+			any_country = { #Brazil needs to own Cisplatina for this name to make sense.
+				capital_scope = {
+					colonial_region = colonial_brazil
+				}
+				is_colonial_nation_of = ROOT
+				any_owned_province = { #Cisplatina area
+					area = banda_oriental_area
+				}
+			}
 		}
 		name = "COLONIAL_LA_PLATA_Transplatina"
 	}
 	names = {
-		trigger = {
-			culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
-		}
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_LA_PLATA_Rio_de_Prata"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		
 		name = "COLONIAL_LA_PLATA_BTP_Sylfrdalar"
 	}
 	names = {
@@ -1248,9 +1424,20 @@ colonial_la_plata = {
 			OR = {
 				primary_culture = welsh
 				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
 			}
 		}
 		name = "COLONIAL_LA_PLATA_CY"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_LA_PLATA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_LA_PLATA_TU"
 	}
 	# Generic
 	names = {
@@ -1334,13 +1521,17 @@ colonial_brazil = {
 	# Specific
 	names = {
 		trigger = {
-			tag = POR
+			tag = FRA
 		}
+		name = "COLONIAL_BRAZIL_France_Antarctique"
+	}
+	names = {
+		trigger = {	primary_culture = portugese }
 		name = "COLONIAL_BRAZIL_Root_Culture_GetName_Brazil"
 	}
 	names = {
 		trigger = {
-			tag = POR
+			primary_culture = portugese
 			religion_group = christian
 		}
 		name = "COLONIAL_BRAZIL_Terra_de_Vera_Cruz"
@@ -1357,9 +1548,7 @@ colonial_brazil = {
 		name = "COLONIAL_BRAZIL_new_granada"
 	}
 	names = {
-		trigger = {
-			culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
-		}
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
 		name = "COLONIAL_BRAZIL_BTP_Miklavidr"
 	}
 	names = {
@@ -1378,9 +1567,20 @@ colonial_brazil = {
 			OR = {
 				primary_culture = welsh
 				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
 			}
 		}
 		name = "COLONIAL_BRAZIL_CY"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_BRAZIL_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_BRAZIL_TU"
 	}
 	# Generic
 	names = {
@@ -1416,22 +1616,15 @@ colonial_australia = {
 	
 	# Specific
 	names = {
-		trigger = {
-			OR = {
-				tag = ENG
-				tag = GBR
-			}
-		}
+		trigger = { culture_group = british	}
 		name = "COLONIAL_AUSTRALIA_Australia"
 	}
 	names = {
-		trigger = {
-			OR = {
-				tag = SPA
-				tag = CAS
-				tag = ARA
-			}
-		}
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_AUSTRALIA_PT"
+	}
+	names = {
+		trigger = { culture_group = iberian	}
 		name = "COLONIAL_AUSTRALIA_Tierra_Austral"
 	}
 	names = {
@@ -1454,9 +1647,7 @@ colonial_australia = {
 		name = "COLONIAL_AUSTRALIA_New_Holland"
 	}
 	names = {
-		trigger = {
-			culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
-		}
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
 		name = "COLONIAL_AUSTRALIA_BTP_Fjarejyar"
 	}
 	names = {
@@ -1475,8 +1666,23 @@ colonial_australia = {
 		name = "COLONIAL_AUSTRALIA_BTP_Pankhaia"
 	}
 	names = {
-		trigger = { culture_group = gaelic }
+		trigger = { 
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			} 
+		}
 		name = "COLONIAL_AUSTRALIA_BTP_Astrail"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_AUSTRALIA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_AUSTRALIA_TU"
 	}
 	# Generic
 	names = {

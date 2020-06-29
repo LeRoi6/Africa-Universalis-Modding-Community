@@ -12,9 +12,9 @@ base_production = 6			#For a long period, one of the greatest ports in the Medit
 base_manpower = 4
 is_city = yes
 fort_15th = yes
-estate = estate_dhimmi
 add_core = TUR
 add_core = BYZ
+add_local_autonomy = 10
 
 discovered_by = KAZ
 discovered_by = CRI

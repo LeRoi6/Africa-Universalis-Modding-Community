@@ -48,7 +48,7 @@ discovered_by = eastern
 	remove_core = LAN
 }
 #stone definitely the trade good - alabaster in addition to alum
-1750.1.1 = { add_core = ITA } 
+1750.1.1 = { add_core = ITL } 
 1801.2.9 = {
 	owner = FRA
 	controller = FRA

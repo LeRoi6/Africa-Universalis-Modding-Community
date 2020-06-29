@@ -3,7 +3,7 @@
 owner = ZAN
 controller = ZAN
 add_core = ZAN
-culture = kimgao
+culture = swahili
 religion = sunni
 capital = "Kilwa Kisiwani"
 is_city = yes

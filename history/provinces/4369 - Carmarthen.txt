@@ -1,21 +1,23 @@
-#3035 - Dyfed
+#4369 - Carmarthen
 #Region - Britain
-#Area - Wales
+#Area - Deheubarth
 
-owner = WMC
-controller = WMC
-culture = welsh
+owner = ENG
+controller = ENG
+culture = anglo_irish #Not welsh?
 religion = catholic
 hre = no
-base_tax = 4 
-base_production = 4 
-trade_goods = fish
-base_manpower = 2 
+base_tax = 2
+base_production = 1
+trade_goods = grain #Was fish
+base_manpower = 2
 capital = "Pembroke"
 is_city = yes
-add_core = WMC
+add_core = ENG
+add_core = PEM
 add_core = WLS
 
+add_local_autonomy = 75
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

@@ -83,14 +83,14 @@ discovered_by = ottoman
 1796.10.8 = {
 	owner = FRA
 	controller = FRA
-	add_core = ITA
+	add_core = ITL
 } # Cispadane republic
 1797.6.29 = {
-	owner = ITA
-	controller = ITA
-	add_core = ITA
+	owner = ITL
+	controller = ITL
+	add_core = ITL
 } # Transpadane and Cispadane Merge
-1814.4.11 = { owner = MOD controller = MOD remove_core = ITA }
+1814.4.11 = { owner = MOD controller = MOD remove_core = ITL }
 1815.1.1 = { base_manpower = 5 } #Military Academy founded
 1816.1.1 = { fort_16th = no } #Fortifications dismantled and removed
 1831.2.3 = { unrest = 12 }#Ciro Menotti's arrest and revolts

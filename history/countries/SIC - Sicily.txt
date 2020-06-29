@@ -31,7 +31,9 @@ historical_friend = ARA
 
 # 1720.1.1 Vittorio Amedeo II becomes king of Sardinia-Piemont
 
-1806.3.11 = { set_legacy_government = enlightened_despotism }
+1806.3.11 = { government = monarchy
+# add_government_reform = letat_cest_moi_reform 
+}
 
 # Ferdinand/Ferrante flees to Sicily
 1806.3.11 = {

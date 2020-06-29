@@ -1,0 +1,21 @@
+#Iveagh
+
+graphical_culture = westerngfx
+
+color = {112 185 114 }
+
+preferred_religion = catholic
+
+#historical_idea_groups = { }
+
+#historical_units = { }
+
+#monarch_names = { }
+
+#leader_names = { }
+
+#ship_names = { }
+
+#army_names = { }
+
+#fleet_names = { }

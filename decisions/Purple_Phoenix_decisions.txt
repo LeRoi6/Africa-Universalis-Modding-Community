@@ -75,7 +75,7 @@ country_decisions = {
 				province_id = 143
 				province_id = 138
 				province_id = 137
-				province_id = 136
+				province_id = 4753
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -90,7 +90,7 @@ country_decisions = {
 			owns = 143
 			owns = 138
 			owns = 137
-			owns = 136
+			owns = 4753
 		}
 		effect = {
 			add_prestige = 20

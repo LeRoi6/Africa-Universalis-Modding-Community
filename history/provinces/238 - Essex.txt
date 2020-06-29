@@ -1,20 +1,21 @@
 #238 - Essex
 #Region - Britain
-#Area - East Anglia
+#Area - Essex
 
 owner = ENG
 controller = ENG
 culture = english
 religion = catholic
 hre = no
-base_tax = 5
-base_production = 5
-trade_goods = glass
-base_manpower = 3 
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = naval_supplies #Representing the Forest of Essex
 capital = "Chelmsford"
 is_city = yes
 add_core = ENG
 
+seat_in_parliament = yes
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

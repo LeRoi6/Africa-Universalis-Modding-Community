@@ -2,9 +2,9 @@
 #Region - Germany
 #Area - Lower Bavaria
 
-owner = BAV
-controller = BAV
-add_core = BAV
+owner = LBV
+controller = LBV
+add_core = LBV
 culture = bavarian
 religion = catholic
 base_tax = 6
@@ -14,7 +14,6 @@ base_manpower = 4
 fort_15th = yes #Trausnitz Castle
 capital	= "Landshut" 
 is_city = yes
-estate = estate_nobles
 hre = yes
 
 discovered_by = western

@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = austrian_archduchy_reform
 government_rank = 1
 primary_culture = austrian
 religion = catholic
@@ -74,6 +74,7 @@ national_focus = ADM
 		dip = 3
 		mil = 2
 	}
+	set_country_flag = hab_ladislaus_postumus_heir
 }
 
 #1450.1.1 = { decision = court_of_wards_and_liveries }
@@ -85,6 +86,7 @@ national_focus = ADM
 		name = "Ladislaus Postumus"
 		dynasty = "von Habsburg"
 		birth_date = 1440.2.22
+		death_date = 1457.11.24
 		adm = 3
 		dip = 3
 		mil = 2
@@ -92,6 +94,7 @@ national_focus = ADM
 }
 
 1457.11.24 = {
+	clr_country_flag = hab_ladislaus_postumus_heir
 	monarch = {
 		name = "Friedrich III"
 		dynasty = "von Habsburg"
@@ -193,7 +196,8 @@ national_focus = ADM
 1499.1.1 = { 
 	leader = {	
 		name = "von Frundsberg"
-        type = general
+        type = general
+
 		fire = 4
 		shock = 5
 		manuever = 3

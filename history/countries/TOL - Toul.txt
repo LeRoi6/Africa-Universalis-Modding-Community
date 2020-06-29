@@ -13,7 +13,7 @@ capital = 7947
 		name = "Louis"
 		dynasty = "de Haraucourt"
 		#Date of birth unknown.
-		adm = 1			#Great functions thanks to king René, it seems that he was helped by an administrator.
+		adm = 1			#Great functions thanks to king RenÃ©, it seems that he was helped by an administrator.
 		dip = 2			#Scandals, bad relations with the burghers... Though he was sent to the council of Basel...
 		mil = 1			#Fights with the burghers, it seems he lose.
 	}

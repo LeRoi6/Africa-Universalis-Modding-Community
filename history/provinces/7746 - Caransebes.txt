@@ -12,6 +12,7 @@ base_manpower = 1
 trade_goods = wool			#somewhat rugged landscape and nothing specific of note found
 is_city = yes
 hre = no
+add_core = SEV
 
 discovered_by = KAZ
 discovered_by = CRI

@@ -339,7 +339,7 @@ btpl_funj_momentum = {
 
 btpl_abdullahs_coffers = {
 	land_forcelimit_modifier = 1.0
-	possible_mercenaries = 1.0
+	mercenary_manpower = 0.5 #Was 1.0 possible mercenaries.
 }
 
 btpl_spread_of_islam_in_alodia = {

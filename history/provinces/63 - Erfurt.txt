@@ -2,8 +2,8 @@
 #Region - Germany
 #Area - Thuringia
 
-owner = SAX
-controller = SAX 
+owner = THU
+controller = THU 
 culture = saxon
 religion = catholic
 capital = "Erfurt"
@@ -13,8 +13,7 @@ base_tax = 4
 base_production = 6
 base_manpower = 2 
 is_city = yes
-estate = estate_nobles
-add_core = SAX
+add_core = THU
 
 discovered_by = western
 discovered_by = muslim

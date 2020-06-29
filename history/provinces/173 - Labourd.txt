@@ -15,6 +15,7 @@ trade_goods = fish
 base_manpower = 2 
 add_core = ENG
 add_core = GUY
+add_core = FRA
 
 discovered_by = western
 discovered_by = muslim
@@ -24,7 +25,6 @@ discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
 
-1444.1.1 = { add_core = AMG add_core = FRA }
 1453.7.18 = { owner = FRA controller = FRA }
 1475.8.29 = { remove_core = ENG } # Treaty of Picquigny
 1549.12.22 = {	owner = AUV

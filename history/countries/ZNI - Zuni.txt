@@ -5,7 +5,8 @@ religion = totemism
 technology_group = north_american
 capital = 2493 # Zuni
 
-1444.1.1 = {
+
+1444.11.11 = {
 	monarch = {
 		name = "Native Council"
 		adm = 3

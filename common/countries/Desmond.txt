@@ -3,6 +3,9 @@
 graphical_culture = westerngfx # was britishgfx # UPE compatibility
 
 color = { 165  15  20 }
+#Vanilla's colour:
+#color = { 179 89 89 }
+revolutionary_colors = { 5 6 5 }
 
 preferred_religion = catholic
 
@@ -14,7 +17,7 @@ historical_idea_groups = {
 	economic_ideas
 	spy_ideas
 	innovativeness_ideas
-	offensive_ideas
+	offensive_ideas			#	administrative_ideas
 }
 
 historical_units = {

@@ -1,3 +1,4 @@
+#Updated and scriptified by Dub.
 eng_british_naval_conq = {
 
 	slot = 3
@@ -36,7 +37,11 @@ eng_british_naval_conq = {
 		}
 		
 		trigger = {
-			num_of_total_ports = 40
+			#num_of_total_ports = 40
+			development_in_provinces = { #Replacing # of ports because this can and will change as the map updates.
+				value = 600
+				has_port = yes
+			}
 			navy_size_percentage = 0.9
 		}
 		
@@ -106,16 +111,7 @@ eng_rb_gibraltar = {
 				name = "eng_rb_gibraltar_mod"
 				duration = 5475
 			}
-			4559 = {
-				add_permanent_claim = ROOT
-			}
-			corsica_sardinia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=eng_rb_take_baleares }
 		}
 	}
 }
@@ -143,40 +139,21 @@ eng_rb_islands_med = {
 		position = 3
 		
 		provinces_to_highlight = {
-			OR = {
-				area = corsica_sardinia_area
-				province_id = 4559
-			}
+			eng_rb_take_baleares_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			4559 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			corsica_sardinia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=eng_rb_take_baleares_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
 		effect = {
-			126 = {
-				add_permanent_claim = ROOT
-			}
-			163 = {
-				add_permanent_claim = ROOT
-			}
-			321 = {
-				add_permanent_claim = ROOT
-			}
-			delta_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=eng_rb_take_mediterranean_islands }
+			give_permaclaims_for_mission = { mission=eng_rb_take_delta }
 		}
 	}
 	
@@ -185,23 +162,15 @@ eng_rb_islands_med = {
 		required_missions = { eng_rb_take_baleares }
 		
 		provinces_to_highlight = {
-			OR = {
-				province_id = 126
-				province_id = 163
-				province_id = 321
-			}
+			eng_rb_take_mediterranean_islands_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			126 = { 
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			163 = { 
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			321 = { 
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=eng_rb_take_mediterranean_islands_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
@@ -238,34 +207,26 @@ eng_rb_egypt = {
 	eng_rb_take_delta = {
 		icon = mission_rb_seize_alexandria
 		required_missions = { 
-		eng_rb_take_baleares
-		eng_rb_empire_status
+			eng_rb_take_baleares
+			eng_rb_empire_status
 		}
 		position = 4
 		
 		provinces_to_highlight = {
-			area = delta_area
+			eng_rb_take_delta_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			delta_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=eng_rb_take_delta_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
 		effect = {
-			2315 = {
-				add_permanent_claim = ROOT
-			}
-			bahari_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=eng_rb_take_bahari }
 		}
 	}
 	
@@ -275,20 +236,15 @@ eng_rb_egypt = {
 		position = 5
 		
 		provinces_to_highlight = {
-			OR = {
-				area = bahari_area
-				province_id = 2315
-			}
+			eng_rb_take_bahari_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			bahari_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			2315 = {
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=eng_rb_take_bahari_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
@@ -301,10 +257,28 @@ eng_rb_egypt = {
 					key = alexandria_ambition
 				}
 			}
-			cyrenaica_area = {
+			cyrenaica_area = { #Can't say I understand why this is given as a claim.
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			5272 = { #Adding to connect to Cyrenaica...?
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
+					}
+				}
+				add_claim = ROOT
+			}
+			2325 = { #Adding to connect to Cyrenaica...?
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
+					}
 				}
 				add_claim = ROOT
 			}
@@ -389,7 +363,7 @@ eng_rb_stability = {
 				}
 				government_rank	= 3
 				else = {
-					total_development	= 1000
+					total_development = 2000
 				}
 			}
 		}
@@ -425,10 +399,7 @@ eng_rb_burgundy = {
 		position = 6
 		
 		provinces_to_highlight = {
-			OR = {
-				area = picardy_area
-				area = bourgogne_area
-			}
+			eng_rb_conquer_burgundy_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -444,13 +415,10 @@ eng_rb_burgundy = {
 		}
 		
 		trigger = {
-			picardy_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			bourgogne_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=eng_rb_conquer_burgundy_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
@@ -462,6 +430,12 @@ eng_rb_burgundy = {
 				}
 			}
 			bourgogne_area = {
+				add_province_modifier = {
+					name = "eng_rb_local_conv"
+					duration = 5475
+				}
+			}
+			west_burgundy_area = {
 				add_province_modifier = {
 					name = "eng_rb_local_conv"
 					duration = 5475
@@ -674,6 +648,7 @@ eng_rb_buildings_group = {
 				}
 				amount = 20
 			}
+			#NB: Add every possible coal-producing province here.
 			1861 = {
 				owned_by = ROOT
 			}
@@ -681,6 +656,9 @@ eng_rb_buildings_group = {
 				owned_by = ROOT
 			}	
 			4375 = {
+				owned_by = ROOT
+			}	
+			4368 = {
 				owned_by = ROOT
 			}	
 			246 = {
@@ -689,6 +667,20 @@ eng_rb_buildings_group = {
 		}
 		
 		effect = {
+			#Not sure if this works because the latent trade good thingy could possibly forget to check for if the province already produces coal. Would save on script otherwise.
+			# every_province = {
+				# limit = {
+					# has_latent_trade_goods = coal
+					# owned_by = ROOT
+				# }
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			#NB: Add every possible coal-producing province here.
 			1861 = {
 				add_base_production = 3
 				add_base_manpower = 3
@@ -706,6 +698,14 @@ eng_rb_buildings_group = {
 				}
 			}
 			4375 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "eng_rb_coal_produced_mod"
+					duration = -1
+				}
+			}
+			4368 = {
 				add_base_production = 3
 				add_base_manpower = 3
 				add_province_modifier = {
@@ -731,14 +731,17 @@ eng_rb_buildings_group = {
 		
 		provinces_to_highlight = {
 			OR = {
+				#NB: Add every possible coal-producing province here.
 				province_id = 1861
 				province_id = 241
 				province_id = 4375
+				province_id = 4368				
 				province_id = 246
 			}
 		}
 		
 		trigger = {
+			#NB: Add every possible coal-producing province here.
 			1861 = {
 				owned_by = ROOT
 				has_building = furnace
@@ -751,6 +754,10 @@ eng_rb_buildings_group = {
 				owned_by = ROOT
 				has_building = furnace
 			}
+			4368 = {
+				owned_by = ROOT
+				has_building = furnace
+			}
 			246 = {
 				owned_by = ROOT
 				has_building = furnace
@@ -758,10 +765,10 @@ eng_rb_buildings_group = {
 		}
 		
 		effect = {
-			capital_scope = {
-				add_base_tax = 3
-				add_base_production = 3
-				add_base_manpower = 3
+			capital_scope = { #I expect this to push London way up in terms of dev, so not quite giving it +18 dev (Vanilla does +9).
+				add_base_tax = 5
+				add_base_production = 5
+				add_base_manpower = 4
 			}
 		}
 	}
@@ -790,10 +797,7 @@ eng_rb_conquest_europe = {
 		position = 4
 		
 		provinces_to_highlight = {
-			OR = {
-				area = brittany_area
-				area = lower_brittany_area
-			}
+			eng_rb_brittany_provinces = yes
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -818,18 +822,15 @@ eng_rb_conquest_europe = {
 		}
 		
 		trigger = {
-			brittany_area = {
-				type = all
-				owned_by = ROOT
-			}
-			lower_brittany_area = {
-				type = all
-				owned_by = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=eng_rb_brittany_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
 		effect = {
-			1276 = {
+			174 = {
 				add_trade_modifier = {
 					who = root
 					duration = 5475
@@ -837,41 +838,7 @@ eng_rb_conquest_europe = {
 					key = bordeaux_ambition
 				}
 			}
-			pyrenees_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			guyenne_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			upper_gascony = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			normandy_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			lower_normandy_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=eng_rb_angevin }
 		}
 	
 	}
@@ -882,63 +849,29 @@ eng_rb_conquest_europe = {
 		position = 5
 		
 		provinces_to_highlight = {
-			OR = {
-				area = pyrenees_area
-				area = guyenne_area
-				area = upper_gascony
-				area = normandy_area
-				area = lower_normandy_area
-			}
+			eng_rb_angevin_provinces = yes
 			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
-			pyrenees_area = {
-				type = all
-				owned_by = ROOT
-			}
-			guyenne_area = {
-				type = all
-				owned_by = ROOT
-			}
-			upper_gascony = {
-				type = all
-				owned_by = ROOT
-			}
-			normandy_area = {
-				type = all
-				owned_by = ROOT
-			}
-			lower_normandy_area = {
-				type = all
-				owned_by = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=eng_rb_angevin_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
 		effect = {
-			178 = {
-				add_base_tax = 3
-				add_base_production = 3
-				add_base_manpower = 3
+			178 = { #I'm *this* close to making it the English capital, disabling formation of Great Britain and changing the name of England to Angevin Empire for 1.30.
+				add_base_tax = 6
+				add_base_production = 6
+				add_base_manpower = 5
 				add_province_modifier = {
 					name = "eng_rb_angers_summer_court"
 					duration = -1
 				}
 			}
-			picardy_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			bourgogne_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=eng_rb_conquer_burgundy }
 			champagne_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1011,7 +944,15 @@ gbr_rb_empire_group = {
 			OR = {
 				ROOT = {
 					is_emperor = yes
-					hre_reform_level = 6
+					if = {
+						limit = {
+							has_dlc = "Emperor"
+						}
+						hre_reform_passed = emperor_erbkaisertum
+					}
+					else = {
+						hre_reform_passed = erbkaisertum
+					}
 				}
 				AND = {
 					NOT = { hre_size = 1 }
@@ -1097,13 +1038,7 @@ gbr_rb_spice_islands_group = {
 				limit = {
 					tag = GBR
 				}
-				west_bengal_area = {
-					limit = {
-						NOT = { is_claim = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				give_permaclaims_for_mission = { mission=gbr_rb_india_landfall }
 			}
 		}
 	}
@@ -1129,7 +1064,7 @@ gbr_rb_indian_group = {
 		position = 9
 		
 		provinces_to_highlight = {
-			area = west_bengal_area
+			gbr_rb_india_landfall_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -1139,13 +1074,15 @@ gbr_rb_indian_group = {
 		}
 		
 		trigger = {
-			west_bengal_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=gbr_rb_india_landfall_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
 		effect = {
+			give_permaclaims_for_mission = { mission=gbr_rb_india_coast }
 			golconda_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1154,20 +1091,6 @@ gbr_rb_indian_group = {
 				add_permanent_claim = ROOT
 			}
 			garjat_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			orissa_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			andhra_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1197,54 +1120,21 @@ gbr_rb_indian_group = {
 		required_missions = { gbr_rb_india_landfall }
 		
 		provinces_to_highlight = {
-			OR = {
-				area = orissa_area
-				area = andhra_area
-			}
+			gbr_rb_india_coast_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		
 		trigger = {
-			orissa_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			andhra_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=gbr_rb_india_coast_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
 		effect = {
-			bihar_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			purvanchal_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			oudh_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			gaur_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=gbr_rb_india_landgrab }
 		}
 	
 	}
@@ -1254,32 +1144,16 @@ gbr_rb_indian_group = {
 		required_missions = { gbr_rb_india_coast }
 		
 		provinces_to_highlight = {
-			OR = {
-				area = bihar_area
-				area = purvanchal_area
-				area = oudh_area
-				area = gaur_area
-			}
+			gbr_rb_india_landgrab_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		
 		trigger = {
-			bihar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			purvanchal_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			oudh_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			gaur_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=gbr_rb_india_landgrab_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
@@ -1313,41 +1187,29 @@ gbr_rb_india_princes = {
 		position = 10
 		
 		provinces_to_highlight = {
-			OR = {
-				area = golconda_area
-				area = maidan_area
-				area = garjat_area
-				area = jharkhand_area
-				area = upper_mahanadi_area
-			}
+			gbr_rb_india_princedoms_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		
 		trigger = {
-			jharkhand_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			golconda_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			maidan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			garjat_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			upper_mahanadi_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=gbr_rb_india_princedoms_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
 		effect = {
+			jharkhand_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "gbr_inland_trade"
+					duration = 5475
+				}
+			}
 			golconda_area = {
 				limit = {
 					owned_by = ROOT
@@ -1410,11 +1272,7 @@ gbr_rb_northern_colonial = {
 		position = 5
 		
 		provinces_to_highlight = {
-			OR = {
-				province_id = 369
-				province_id = 1978
-				province_id = 1979
-			}
+			eng_rb_take_shetland_and_faro_isles_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -1423,14 +1281,10 @@ gbr_rb_northern_colonial = {
 		}
 		
 		trigger = {
-			369 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1978 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1979 = {
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=eng_rb_take_shetland_and_faro_isles_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
@@ -1719,9 +1573,11 @@ eng_rb_trade_in_home_cot_group = {
 	
 		effect = {
 			1874 = {
+				add_base_tax = 2
 				add_base_production = 2
 			}
 			45 = {
+				add_base_tax = 2
 				add_base_production = 2
 			}
 			43 = {
@@ -1776,15 +1632,17 @@ eng_rb_trade_in_home_cot_group = {
 	
 		effect = {
 			38 = {
+				add_base_tax = 2
 				add_base_production = 2
 			}
-			east_prussia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-				}
-				add_claim = ROOT
-			}
+			#This claim makes no sense in BT. Removing it.
+			# east_prussia_area = {
+				# limit = {
+					# NOT = { is_core = ROOT }
+					# NOT = { is_claim = ROOT }
+				# }
+				# add_claim = ROOT
+			# }
 		}
 	}
 

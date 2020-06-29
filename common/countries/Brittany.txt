@@ -4,6 +4,8 @@ graphical_culture = westerngfx
 
 color = { 118  99  151 }
 
+revolutionary_colors = { 1  0  1 } #Black/White/Black - common colors of Brittany. 
+
 preferred_religion = catholic
 
 historical_score = 25
@@ -37,131 +39,107 @@ historical_units = {
 	napoleonic_lancers
 }
 
+#Country file overhauled by Math
+
 monarch_names = {
-	"Yann #5" = 100
-	"Arzhur #2" = 40
-	"Pêr #2" = 40
-	"Konan #4" = 40
-	"Alan #4" = 40
-	"Fransez #1" = 40
-	"Hoel #2" = 20
-	"Jafrez #2" = 20
-	"Eozen #2" = 10
-	"Charlez #1" = 10
-	"Erwan #0" = 10
-	"Gaël #0" = 5
-	"Gwenaël #0" = 5
-	"Drogon #1" = 5
-	"Gi #1" = 5
-	"Herri #0" = 5
-	"Guerech #1" = 0
-	"Ranulf #1" = 0
-	"Hawiz #1" = 0
-	"Gwenneg #0" = 0
-	"Gwilherm #0" = 0
-	"Iouennic #0" = 0
-	"Loïc #0" = 0
-	"Maeldan #0" = 0
-	"Mikael #0" = 0
-	"Olier #0" = 0
-	"Padrig #0" = 0
-	"Paol #0" = 0
-	"Patern #0" = 0
-	"Pier #0" = 0
-	"Primel #0" = 0
-	"Roparzh #0" = 0
-	"Servan #0" = 0
-	"Similien #0" = 0
-	"Sklaer #0" = 0
-	"Sulio #0" = 0
-	"Ronan #0" = 0
-	"Venec #0" = 0
-	"Visant #0" = 0
-	"Vonig #0" = 0
-	"Vougay #0" = 0
+	"Jean #5" = 80
+	"Alain #4" = 60
+	"Arthur #2" = 40
+	"François #1" = 40
+	"Pierre #1" = 40
+	"Gilles #0" = 20
+	"Olivier #0" = 20
+	"Charles #1" = 10
+	"Geoffroy #2" = 10
+	"Guy #0" = 10
+	"Antoine #0" = 5
+	"Guillaume #0" = 5
+	"Josselin #0" = 5
+	"Richard #0" = 5
+	"Bertrand #0" = 0
+	"Conan #4" = 0
+	"Claude #0" = 0
+	"Étienne #0" = 0
+	"Henri #0" = 0
+	"Hervé #0" = 0
+	"Jacques #0" = 0
+	"Maurice #0" = 0
+	"Michel #0" = 0
+	"Nicolas #0" = 0
+	"Pol #0" = 0
+	"Thibaud #0" = 0
+	"Tristan #0" = 0
+	"Yves #0" = 0
 	
-	"Alis #1" = -10
-	"Konstanza #1" = -10
-	"Janed #1" = -10
-	"Berta #1" = -10
-	"Anna #0" = -5
-	"Klaoda #0" = -5
-	"Gwenvred #0" = -1
-}	#Redone by Draiocht, mostly, not fully done. Based on history from the beginning of the house of Nantes
+	"Jeanne #1" = -15
+	"Blanche #0" = -10
+	"Isabeau #0" = -10
+	"Marguerite" = -10
+	"Marie #0" = -10
+	"Aliénor #0" = -5
+	"Alix #1" = -5
+	"Anne #0" = -5
+	"Catherine #0" = -1
+	"Constance #1" = -1
+	"Françoise #0" = -1
+}	#Redone to have french names culturally adapted to Brittany. Based on the different families of Brittany from the 13th century to the 15th century (Montfort, Dreux, Rohan, Penthièvre, Clisson, Rieux, Léon...) + some male names often found in Brittany to diversify them. I didn't put some names that have been used for several rulers as they often sounded too archaic for the period.
 
 leader_names = {
-	#Dynasties
-	Monforzh Roc'han "de Dreux" Karter Kerne Tangi 
-	#Places
-	Breizh Kemper Porhoet Gwened Brest Naoned Roazhon Penteur "Sant-Brieg" Landreger Arvor "Sant-Tegoneg" Eusa Baz Glenan Sun Gwilen Medrigneg
-	Bronn Koedlinez "Sant-Kast" Lambal Loudieg Rostrenenn  "Sant-Nikolaz" Pempoull Kintin Dinan Bear Briad "Perroz-Gireg" "ar Jentilez" "Sant-Maloù"
-	Plouha Mur Kastellin Montroulez Lannuon Gwengamp Sarzhav Arzhon Lokentaz Edig Houad Groe Guedel Lesneven Benoded Poutrecoet Henbont Reoz 
-	#Natural Features
-	Renk Aon Oded 
-	#Epitets, don't know if Breton uses the article like this.... anyone know?
-	"ar Fur" Degouezh "ar Ruz" Du Brun Gell Gwenn "ar Gall" "ar Bras" "an Tev" "ar Kamm" "ar Mad"
-	#Few French-French options for flavour, maybe 10 to 30 percent of the time would be ideal for this time period, probably
-	"de France" "de Normandie" "de Nantes" "de Rennes" "de Bretagne" "de Penthièvre" "de Cornouaille" "de Thouars" d'Angleterre "de Coucy"
-	"de Limoges" "de Montfort" 
-	#Vanilla descriptions, ideas, etc. all about how Brittany is not France.... then a bunch of French and Francophone names... real classy =p. Removed.
-	#d'Ancenis d'Angennes d'Argentré
-	#"de Bain" "de Beaudiez" "de Beaumetz" "de Boisguéhenneuc" "de Bouëtiez"
-	#"de Châteaubriand" "de Châtillon" "de Coatgoureden" "de Coëtivy" "de Coëtmen" "Couasnon de la Barillière" "de Craon" 
-	#"de Dol"
-	#d'Elbène
-	#"de Francheville"
-	#"de Goulaine" "de Gourcuff"
-	#"de Halgoët" "de La Haye-Saint-Hilaire" 
-	#"Kalbean de Cardelan" "de Kerdrel" "de Kerellec" "de Kergoulay" "de Kerguenech" "de Kerguerron" "de Kersauzon" "de Kersulguen" 
-	#"de Lamballe" "de Locmaria" 
-	#"de Machecoul" Madec "de Malestroit" "de Mercœur" "de Monfort"
-	#"de la Nouë-Bogat"
-	#"de Penguem" "de Penhoadic" "de Penthièvre" "de Pontbriand" 
-	#"de Rieux" "de Rodellec" "de Rohan" "de Roscoat" "de Rostrenen"
-	#"de Saint-Hoularn" "de Saint-Meleuc" "de Sévigné"
-	#"de Talhouët" "de Tasher de la Pagerie" "de Tintériac" "de Tonquedec" "de Tournemine" "de Tréméreuc" "de la Trémoille" "de Trogoff" "de Tromelin"
-	#"de Vitré"
+	#Mix of breton families (from the most prestigious to minor ones), place names and non-noble names
+	"de Montfort" "de Rohan" "de Rieux" "de Laval" "de Penthièvre" "de Clisson" "de Dinan" "d'Ancenis" "de Léon" "du Ponthus" "de Guérande" "de Bourgneuf" "de Closmadeuc"
+	"d'Avaugour" "de Châteaubriant" "de Retz" "de Vitré" "de Fougères" "de La Roche-Bernard" "du Pont-l'Abbé" "de Pont-Château" "de Kerguelen" "de Muzillac" "de Tinténiac"
+	"de Rosnyvinen" "d'Auray" "de Bain" "Le Bihan" "de Bréhan" "de Concarneau" "de Coëtivy" "de Dinan" "de Châtillon" "Le Breton" "de Kervenoaël" "de L'Hôpital" "de La Villéon"
+	"de Quintin" "de Malestroit" "du Guesclin" "de Dol" "de Donges" "de Kergorlay" "de Talhouët" "du Faou" "de Goulaine" "de Kermoysan" "de Machecoul" "du Fail" "de Launay"
+	"de Lantivy" "de Lannion" "Le Prévôt" "de Rochechouart" "de Rochefort" "de Rostrenen" "de Quémenet" "de Derval" "de Lohéac" "de Coëtmen" "de Tournemine" "de Kerbiquet"
+	"d'Acigné" "du Chastel" "d'Espinay" "d'Argentré" "Le Baud" "de Gourcuff" "de Kersauzon" "Le Gall" "Le Roux" "de Kermadec" "de Penhoët" "de La Moussaye" "de Goësbriand"
+	"de Montbourcher" "de Saint-Malo" "de Rhuys" "de Porhoët" "de Poher" "de Cornouaille" "de Trégor" "de Quimperlé" "de Vannes" "de Goüyon" Urvoy "de Groix" "de Coëtlogon"
+	"de Rennes" "de Nantes" "de Pontivy" "de Redon" "de Goëlo" "de Guingamp" "de Lesneven" "d'Hennebont" "de Moncontour" "de Quimper" "de Rougé" "du Crosic" "de La Lande"
+	"de Josselin" "de Morlaix" "de Paimpol" "de Bréhat" "de Rezé" "de Crozon" "du Fresnay" "L'Espervier" "de Coëtquis" "de La Rivière" "d'Espinay" "Le Clerc" "de Bruc"
+	Prigent "de La Guerche" Dubois "de Montrelais" "de Kerleau" "de Locminé" "du Cellier" Botherel "du Quélennec" "du Cambout" "de Kergariou" "de Quélen" "de Locronan"
 }
 
 ship_names = {
-	"l'Achille" "l'Actif" "l'Active" "l'Admirable" "l'Aglaé"
-	"l'Aimable" "l'Alcide" "l'Algésiras" "l'Alose" "l'Amazone"
-	"l'Ambition" "l'Amphion" "l'Anémone" "l'Annibal" "l'Apollon"
-	"l'Argonaute" "l'Artésien" "l'Audacieux" "l'Auguste" "l'Avenant"
-	"la Badine" "la Barbue" "le Beaumont" "la Bécasse" "le Belliqueux"
-	"la Bergère" "la Berryer" "le Bien-Aimé" "le Bienfaisant" "le Bon"
-	"la Bretagne" "la Bretonne" "le Brillant" "le Brutus" "le Caché"
-	"le Célèbre" "le Centaure" "le Chameau" "le Comte" "le Courageux"
-	"le Défenseur" "le Diadème" "le Diamant" "le Dictateur" "le Diligent"
-	"le Dragon" "le Duc" "l'Élephant" "l'Élisabeth" "l'Émérillon"
-	"l'Entreprenant" "l'Éole" "le Fleuron" "le Formidable" "le Fortuné"
-	"le Foudroyant" "le Fougueux" "le Fourgon" "le Furieux" "le Glorieux"
-	"la Grande Hermine" "l'Impétueux" "l'Indien" "l'Indomptable" "le Jupiter"
-	"le Léopard" "la Loire" "le Massiac" "le Neptune" "le Nestor"
-	"l'Orion" "le Pégase" "la Petite Hermine" "le Portefaix" "le Profond"
-	"la Protée" "le Rolland" "le Saint-Guillaume" "la Sarcelle" "le Sévère"
-	"le Six-Corps" "le Solide" "le Solitaire" "le Souverain" "la Sphère"
-	"le Sphinx" "le Superbe" "le Tardif" "le Téméraire" "le Terrible"
-	"le Thésée" "le Tonnant" "le Triomphant" "le Triton" "l'Union"
-	"le Vaillant" "le Vengeur" "la Victoire" "le Vigilant" "la Volante"
-}	#Can't be bothered to do ship names at the moment - Draiocht
+	#Religious names
+	"l'Ave-Maria" "le Bienheureux" "le Catholique" "la Cordelière" "la Dieu-Donnée" 
+	"la Dieu-la-Garde" "la Notre-Dame" "le Paradis" "le Sainte-Anne" "le Saint-Armel"
+	"le Saint-Aubin" "le Saint-Brieuc" "le Saint-Corentin" "la Sainte-Croix"
+	"le Saint-Esprit" "le Saint-Guénolé" "le Saint-Gildas" "le Saint-Guillaume"
+	"le Saint-Jacques" "le Saint-Jean" "le Saint-Malo" "la Sainte-Marie"
+	"le Saint-Michel" "la Sainte-Nonne" "le Saint-Nicolas" "le Saint-Patern"
+	"le Saint-Pierre" "le Saint-Pol" "le Saint-Ronan" "le Saint-Samson"
+	"le Saint-Sauveur" "le Saint-Thuriau" "le Saint-Tugdual" "le Saint-Vincent"
+	"le Saint-Yves"
+	#Lay names
+	"l'Armorique" "le Barbetorte" "le Bonaventure" "le Broërec" "le Connétable" 
+	"le Cornouaille" "la Croix-Noire" "la Duchesse" "le Duc de Bretagne" "l'Erispoë" 
+	"l'Ésperance" "la Flamme" "la Frégate de Saint-Malo" "le Gagne-Pain" "l'Hermine"
+	"l'Iroise" "le Jean V" "la Jeannette" "le Justicier" "le Léon" "le Loup-de-Mer"
+	"le Marchand" "la Mariotte" "le Mériadec" "le Morvan" "le Navire-du-Duc"
+	"la Nef-Blanche" "la Nef-d'Écosse" "le Nominoë" "la Passe-Rose" "la Pélerine"
+	"le Penthièvre" "le Poher" "le Porte-Joie" "le Richemont" "le Roi Arthur"
+	"le Rohan" "le Salomon" "le Sept-Saints" "le Trégor" "la Vilaine" "la Vinetière"
+	"l'Ys" 
+	#Vanilla
+	"l'Aimable" "l'Alliance" "l'Audacieux" "l'Avenant" "la Barbue" "le Belliqueux"
+	"le Bien-Aimé" "le Bienfaisant" "le Bon" "la Bretonne" "la Bretagne" "le Brillant"
+	"le Célèbre" "le Comte" "le Courage" "le Défenseur" "le Diadème" "le Diligent" "le Duc"
+	"le Fleuron" "le Formidable" "le Fortuné" "le Fougueux" "le Furieux" "le Glorieux"
+	"la Grande Hermine" "l'Impétueux" "l'Idomptable" "la Loire" "la Petite Hermine"
+	"le Sévère" "le Solide" "le Solitaire" "le Souverain" "le Superbe" "le Téméraire"
+	"le Terrible" "l'Union" "le Vaillant" "le Vengeur"  "la Victoire" "le Vigilant"
+	"la Volante"
+}	#Some new religious and lay names for ships in order to better fit to Brittany.
 
 army_names = {
-	 "Lu Breizh"
-	 #Culturally specific fun names
-	 "Lu Ankoù" "Lu ar Bleiz" "Lu al Louarn" "Lu ar Kaerell" "Lu Mad" 
-	 #Numbered, I can only hope the grammar is right here, Brythonic numbers are usually much easier than Gaelic, though, unless I'm missing something, so I think I'm okay
-	 "Ar C'hentan Lu" "An Daouvet Lu" "An Trede Lu" "Ar Pevare Lu" "Ar Pempet Lu" 
-	#Misc names, colours for now
-	"Lu Ruz" "Lu Gwer" "Lu Glas" "Lu Du" "Lu Gwenn"
-	 #Generic placeholder for when above runs out
-	 "Lu $PROVINCE$"
-}
+	#Cultural names
+	"Armée du Duc" "Armée de Basse-Bretagne" "Armée de Haute-Bretagne" "Armée des Marches"
+	#Generic placeholder for when above runs out
+	"Armée de $PROVINCE$"
+}	#Some simple army names adapted to Brittany.
 
 fleet_names = {
-	"Morlu Breizh"
-	 #Numbered, I can only hope the grammar is right here, Brythonic numbers are usually much easier than Gaelic, though, unless I'm missing something, so I think I'm okay
-	 "Ar C'hentan Morlu" "An Daouvet Morlu" "An Trede Morlu" "Ar Pevare Morlu" "Ar Pempet Morlu" 
-	 #Generic placeholder for when above runs out
-	"Morlu $PROVINCE$"
-}
+	#Cultural names
+	"Escadre de Bretagne" "Escadre de l'Hermine" "Escadre Noire" 
+	#Generic placeholder for when above runs out
+	"Escadre de $PROVINCE$"
+}	#Some simple fleet names adapted to Brittany.

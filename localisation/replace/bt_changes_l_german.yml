@@ -560,7 +560,11 @@
  BHT:0 "Bohtan"
  BHT_ADJ:0 "Bohtanisch"
  TRV:0 "Treviso"
- TRV_ADJ:0 "Trevisisch
+ TRV_ADJ:0 "Trevisisch"
+ 
+ #1.30
+ HRZ:0 "Hum"            #Duchy of Saint Sava
+ HRZ_ADJ:0 "Humisch"          #Yup, going with this 
  
  #Institution Overhauls, formerly part of Misc Addon but annexed to BT proper in 10.0 with dev doubling
  tooltip_development_10:0 "Entwickelte Provinz (10 oder mehr)"

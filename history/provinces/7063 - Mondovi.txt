@@ -62,11 +62,9 @@ discovered_by = eastern
 	owner = SAV
 	controller = SAV
 	add_core = SAV
-	estate = estate_nobles			#Savoy-Achaia branch of Savoy. Calling it noble estate and autonomy for now, though it could be a tag, it doesn't really need to be one.
 	add_local_autonomy = 35
 } # Taken by Savoy-Achaia in 1396 from Montferrat.
 1418.12.6 = {
-	remove_estate = estate_nobles
 	add_local_autonomy = -35
 }	#Extinction of Savoy-Achaia, the autonomous principality merges with Savoy
 

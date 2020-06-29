@@ -1,16 +1,16 @@
 #1183 - Inhambane
 
-culture = gitonga
-religion = mhondoro
+culture = nguni
+religion = shamanism #Fetishism
 capital = "Inhambane"
-trade_goods = cloth
+trade_goods = unknown
 hre = no
-base_tax = 7
-base_production = 7
-base_manpower = 2
-owner = IHB
-controller = IHB
-add_core = IHB
+base_tax = 8 
+base_production = 8
+base_manpower = 2 
+native_size = 30
+native_ferocity = 4
+native_hostileness = 9
 discovered_by = east_african
 discovered_by = central_african
 discovered_by = ETH

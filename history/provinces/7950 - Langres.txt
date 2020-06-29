@@ -3,6 +3,7 @@
 owner = LGR
 controller = LGR
 add_core = LGR
+add_core = CHP
 culture = burgundian
 religion = catholic
 capital = "Langres"

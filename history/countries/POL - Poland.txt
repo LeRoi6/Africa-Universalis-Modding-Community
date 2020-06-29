@@ -8,8 +8,14 @@ historical_rival = TEU
 historical_rival = TUR
 capital = 262 # Krakow
 add_accepted_culture = ruthenian
+#Bugfixes added Hungary as historical friend to try and make love, not war. Will go away upon forming Commonwealth.
+historical_friend = HUN
 
 national_focus = ADM
+
+1444.10.1 = {
+	set_estate_privilege = estate_nobles_golden_liberty
+}
 
 1444.11.11 = {
 	monarch = {
@@ -68,7 +74,8 @@ national_focus = ADM
 1461.1.1 = {
 	leader = {
 		name = "Piotr Dunin"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 3
 		manuever = 3
@@ -80,7 +87,8 @@ national_focus = ADM
 1465.1.1 = {
 	leader = {
 		name = "Feliks Paniewski"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 3
 		manuever = 2
@@ -93,7 +101,8 @@ national_focus = ADM
 1475.1.1 = {
 	leader = {
 		name = "Dobieslaw Kurozwecki"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 3
 		manuever = 2
@@ -229,7 +238,8 @@ national_focus = ADM
 1521.1.1 = {
 	leader = {
 		name = "Jan Tarnowski"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 4
 		manuever = 4
@@ -297,7 +307,8 @@ national_focus = ADM
 1560.1.1 = {
 	leader = {
 		name = "Sebastian Lubomirski"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 3
 		manuever = 3
@@ -309,7 +320,8 @@ national_focus = ADM
 1565.1.1 = {
 	leader = {
 		name = "Andrzej Kurbski"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 1
 		manuever = 3

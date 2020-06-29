@@ -43,7 +43,7 @@ shan_monarchy = {
 	}
 
 	trigger = {
-                primary_culture = shan
+		primary_culture = shan
 		government = monarchy
 	}
 }
@@ -80,7 +80,7 @@ lue_monarchy = {
 	}
 
 	trigger = {
-                primary_culture = khun
+		primary_culture = khun
 		government = monarchy
 	}
 }
@@ -117,7 +117,7 @@ tai_monarchy = {
 	}
 
 	trigger = {
-                primary_culture = tai
+		primary_culture = tai
 		government = monarchy
 		NOT = {
 			tag = MPH

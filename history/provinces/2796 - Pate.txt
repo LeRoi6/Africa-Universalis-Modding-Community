@@ -3,9 +3,9 @@
 owner = PTE
 controller = PTE
 add_core = PTE
-culture = kiamu
+culture = swahili
 religion = sunni
-capital = "Pate"
+capital = "Siyu"
 is_city = yes
 base_manpower = 4
 trade_goods = cloth

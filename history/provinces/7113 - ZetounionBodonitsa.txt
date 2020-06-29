@@ -13,7 +13,7 @@ base_manpower = 1
 trade_goods = grain			#Semi generic, but seems like good land and Greece ought to have a fair number of grain provinces.
 is_city = yes
 hre = no
-estate = estate_dhimmi
+add_local_autonomy = 10
 
 discovered_by = KAZ
 discovered_by = CRI

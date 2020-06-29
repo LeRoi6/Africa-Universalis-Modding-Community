@@ -53,7 +53,6 @@ discovered_by = eastern
 	controller = SWE
 	add_core = SWE
 	remove_core = DAN
-	estate = estate_nobles
 } # The Peace of Brömsebro
 1710.9.20 = { controller = RUS }
 1721.8.30 = {

@@ -14,7 +14,6 @@ is_city = yes
 #add_core = ACH			#Temp cut, readd later
 add_core = MOE
 add_core = BYZ
-estate = estate_nobles
 add_local_autonomy = 25
 
 extra_cost = 8

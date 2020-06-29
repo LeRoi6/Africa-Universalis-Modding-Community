@@ -1,14 +1,14 @@
 #1204 - Lamu
 
-owner = LMU
-controller = LMU
-add_core = LMU
-culture = kiamu
+owner = MLI
+controller = MLI
+add_core = MLI
+culture = swahili
 religion = sunni
 capital = "Lamu"
 is_city = yes
 base_manpower = 2 
-trade_goods = gold		#Jewelry 
+trade_goods = ivory
 hre = no
 base_tax = 6 
 base_production = 6

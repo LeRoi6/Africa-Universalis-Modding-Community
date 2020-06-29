@@ -11,7 +11,7 @@ base_production = 3
 base_manpower = 2
 trade_goods = grain
 is_city = yes
-hre = no
+hre = yes
 
 discovered_by = KAZ
 discovered_by = CRI
@@ -47,6 +47,19 @@ discovered_by = western
 #	controller = XXX
 #	remove_core = XXX
 #} #Return to proper mod added owners and cuts vanilla core, typically.
+
+1420.1.1 = {
+	add_core = STY
+} # To the Habsburgs
+
+1452.1.1 = {
+	owner = STY
+	controller = STY
+}
+1457.11.24 = {	owner = HAB
+	controller = HAB
+	remove_core = STY
+}
 
 #1291 - 1444
 

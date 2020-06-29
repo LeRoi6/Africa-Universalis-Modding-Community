@@ -1,5 +1,5 @@
+#Fixed by Dub.
 eng_british_conquest = {
-
 	slot = 1
 	generic = no
 	ai = yes
@@ -25,62 +25,8 @@ eng_british_conquest = {
 		}
 		
 		effect = {
-			munster_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			connacht_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			ulster_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			leinster_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			lowlands_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			scottish_marches_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			highlands_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			kingdom_of_the_isles_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=conquer_ireland }
+			give_permaclaims_for_mission = { mission=conquer_scotland }
 			if = {
 				limit = {
 					exists = SCO
@@ -116,54 +62,20 @@ eng_british_conquest_ire = {
 		completed_by = 1603.1.1
 		
 		provinces_to_highlight = {
-			OR = {
-				area = munster_area
-				area = connacht_area
-				area = ulster_area
-				area = leinster_area
-			}
-			NOT = { owned_by = ROOT }
+			conquer_ireland_provinces = yes
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } #Changing from owned_by because BT introduces the Irish Viceroyalty and I didn't want to make the mission incompletable on that basis.
 		}
 		
 		trigger = {
-			munster_area = {
-				type = all
-				owned_by = ROOT
-			}
-			connacht_area = {
-				type = all
-				owned_by = ROOT
-			}
-			ulster_area = {
-				type = all
-				owned_by = ROOT
-			}
-			leinster_area = {
-				type = all
-				owned_by = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=conquer_ireland_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
 		effect = {
-			munster_area = { 
-				add_province_modifier = {
-					name = "eng_irish_revolts"
-					duration = 5475
-				}
-			}
-			connacht_area = { 
-				add_province_modifier = {
-					name = "eng_irish_revolts"
-					duration = 5475
-				}
-			}
-			ulster_area = { 
-				add_province_modifier = {
-					name = "eng_irish_revolts"
-					duration = 5475
-				}
-			}
-			leinster_area = { 
+			ireland_area = { 
 				add_province_modifier = {
 					name = "eng_irish_revolts"
 					duration = 5475
@@ -195,31 +107,15 @@ eng_british_conquest_scotland = {
 		completed_by = 1603.1.1
 		
 		provinces_to_highlight = {
-			OR = {
-				area = lowlands_area
-				area = scottish_marches_area
-				area = highlands_area
-				area = kingdom_of_the_isles_area
-			}
+			conquer_scotland_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			lowlands_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			scottish_marches_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			highlands_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			kingdom_of_the_isles_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=conquer_scotland_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
@@ -234,19 +130,11 @@ eng_british_conquest_scotland = {
 					has_dlc = "Rule Britannia"
 					tag = GBR
 				}
-				369 = {
-					add_permanent_claim = ROOT
-				}
-				1978 = {
-					add_permanent_claim = ROOT
-				}
-				1979 = {
-				add_permanent_claim = ROOT
-				}
+				give_permaclaims_for_mission = { mission=eng_rb_take_shetland_and_faro_isles }
 				iceland_area = {
 					limit = {
 						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
+						NOT = { is_claim = ROOT }
 					}
 					add_claim = ROOT
 				}
@@ -298,13 +186,7 @@ eng_french_conquest = {
 		}
 		
 		effect = {
-			ile_de_france_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=vassalize_france }
 		}
 	}
 	
@@ -375,13 +257,7 @@ eng_french_conquest = {
 				limit = {
 					has_dlc = "Rule Britannia"
 				}
-				brittany_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				give_permaclaims_for_mission = { mission=eng_rb_brittany }
 			}
 		}
 	}
@@ -392,14 +268,15 @@ eng_french_conquest = {
 		position = 5
 		
 		provinces_to_highlight = {
-			area = ile_de_france_area
+			vassalize_france_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			ile_de_france_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=vassalize_france_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		
@@ -441,7 +318,7 @@ eng_exploration_americas = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_caribbean
-				colonial_the_carribean = { has_discovered = ROOT }
+				carribeans_region = { has_discovered = ROOT }
 			}
 		}
 		
@@ -478,7 +355,9 @@ eng_exploration_americas = {
 		}
 	
 		effect = {
-			create_conquistador = 80
+			create_conquistador = {
+				tradition = 80
+			}
 		}
 	}
 	
@@ -535,7 +414,7 @@ eng_exploration_americas = {
 	}
 }
 
-eng_chesapeake_dominance = {
+eng_chesapeake_dominance = { #Overwritten by RB, not fixing.
 
 	slot = 2
 	ai = yes
@@ -573,7 +452,7 @@ eng_chesapeake_dominance = {
 				name = "eng_chesapeake_dominance"
 				duration = 7300
 			}
-			if = {
+			if = { #What. This mission isn't even available if you have Rule Britannia! Get out of here, PDX, or whoever is responsible for this..
 				limit = {
 					has_dlc = "Rule Britannia"
 				}
@@ -618,20 +497,6 @@ eng_indian_ocean_exploration = {
 		effect = {
 			add_dip_power = 100
 			add_navy_tradition = 20
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Rule Britannia"
-					}
-				}
-				west_bengal_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_claim = ROOT
-				}
-			}
 		}
 	}
 	
@@ -672,7 +537,7 @@ eng_indian_ocean_exploration = {
 
 }
 
-eng_indian_cot_dominance = {
+eng_indian_cot_dominance = { #Overwritten by RB, not fixing.
 
 	slot = 4
 	ai = yes
@@ -729,7 +594,7 @@ eng_indian_cot_dominance = {
 
 }
 
-eng_british_cot_dominance = {
+eng_british_cot_dominance = { #Overwritten by RB, not fixing.
 
 	slot = 3
 	ai = yes

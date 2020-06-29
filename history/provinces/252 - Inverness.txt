@@ -2,19 +2,19 @@
 #Region - Britain
 #Area - Highlands
 
-owner = SCO
-controller = SCO
+owner = LOI
+controller = LOI
 culture = highland_scottish
 religion = catholic
 hre = no
-base_tax = 4  
-base_production = 4 
+base_tax = 2
+base_production = 3
 trade_goods = bt_trade_good_apiculture
 base_manpower = 2 
 capital = "Inverness"
 is_city = yes
-estate = estate_nobles
 add_core = SCO
+add_core = LOI
 
 discovered_by = western
 discovered_by = muslim

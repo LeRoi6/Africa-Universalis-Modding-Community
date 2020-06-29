@@ -1,17 +1,18 @@
-#3025 - Warwickshire
+#4372 - Coventry
 #Region - Britain
-#Area - Mercia
+#Area - Midlands
 
 owner = ENG
 controller = ENG
 culture = english
 religion = catholic
 hre = no
-base_tax = 5 
-base_production = 5
-trade_goods = cloth
-base_manpower = 3 
-capital = "Coventry"
+base_tax = 3
+base_production = 2
+trade_goods = salt #Droitwich Spa, could also be livestock or iron for mining. Pick salt for a bit of variety tbh
+#trade_goods = cloth
+base_manpower = 2
+capital = "Worcester" #"Coventry"
 is_city = yes
 add_core = ENG
 seat_in_parliament = yes

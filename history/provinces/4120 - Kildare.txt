@@ -1,4 +1,4 @@
-#3008 - Kildare			Adapted to 4120 with BT 3.0
+#4120 - Kildare			Adapted to 4120 with BT 3.0
 #Region - Ireland
 #Area - Leinster
 
@@ -8,11 +8,12 @@ add_core = KID
 culture = irish
 religion = catholic
 hre = no
-base_tax = 6
-base_production = 4 
-base_manpower = 2 
+base_tax = 4
+base_production = 2
+base_manpower = 3
 trade_goods = grain
-capital = "Nás na Ríogh"
+capital = "Cill Dara"
+#capital = "Nás na Ríogh"
 is_city = yes
 
 

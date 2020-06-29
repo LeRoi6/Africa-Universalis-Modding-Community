@@ -3,6 +3,7 @@
 owner = FRA
 controller = FRA
 add_core = FRA
+add_core = TOU
 culture = occitain
 religion = catholic
 capital = "Mende"

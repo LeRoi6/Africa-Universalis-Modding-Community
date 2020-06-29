@@ -1,6 +1,6 @@
 # No previous file for Beyond Typus province
 
-culture = tswana_culture
+culture = shona
 religion = shamanism 
 capital = "Toropo" 
 trade_goods = unknown

@@ -12,7 +12,7 @@ base_manpower = 1
 trade_goods = cotton			#Or livestock. 
 is_city = yes
 hre = no
-estate = estate_dhimmi
+add_local_autonomy = 10
 
 discovered_by = KAZ
 discovered_by = CRI

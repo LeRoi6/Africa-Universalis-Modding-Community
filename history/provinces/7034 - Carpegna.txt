@@ -43,14 +43,14 @@ discovered_by = eastern
 }
 1495 = { hre = no }
 1805.12.26 = {
-	owner = ITA
-	controller = ITA
-	add_core = ITA
+	owner = ITL
+	controller = ITL
+	add_core = ITL
 } # Treaty of Pressburg
 1814.4.11 = {
 	owner = CRP
 	controller = CRP
-	remove_core = ITA
+	remove_core = ITL
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
 
 1819.1.1 = {
