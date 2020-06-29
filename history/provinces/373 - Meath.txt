@@ -8,10 +8,10 @@ add_core = ENG
 culture = anglo_irish
 religion = catholic
 hre = no
-base_tax = 5
-base_production = 3
-base_manpower = 4
-trade_goods = cloth
+base_tax = 6
+base_production = 6
+base_manpower = 3
+trade_goods = bt_trade_good_beer
 capital = "Dublin"
 is_city = yes
 

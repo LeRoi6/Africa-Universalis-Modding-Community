@@ -14,6 +14,7 @@ base_manpower = 2
 trade_goods = iron			#best known for iron mining
 is_city = yes
 hre = yes
+estate = estate_burghers
 add_local_autonomy = 50
 
 discovered_by = western
@@ -57,6 +58,7 @@ discovered_by = eastern
 	owner = VEN
 	controller = VEN
 	add_core = VEN
+	remove_estate = estate_nobles
 	add_local_autonomy = -50
 }	#Venice finally decided to occupy the area, de jured granted some years before by Brescia.
 1433.1.1 = { hre = no } # Treaty between Doge Francesco Foscari and Emperor Sigismund of the HRE
@@ -85,14 +87,14 @@ discovered_by = eastern
 	add_core = FRA
 } # Treaty of Campo Formio
 1802.6.26 = {
-	owner = ITL
-	controller = ITL
-	add_core = ITL
+	owner = ITA
+	controller = ITA
+	add_core = ITA
 	remove_core = FRA
 } # Merged with the Cisalpine Republic
 1814.4.11 = {
 	owner = HAB
 	controller = HAB
 	add_core = HAB
-	remove_core = ITL
+	remove_core = ITA
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally

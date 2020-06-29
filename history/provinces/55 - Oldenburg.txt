@@ -4,7 +4,7 @@
 
 owner = OLD
 controller = OLD
-culture = lower_saxon
+culture = hannoverian
 religion = catholic
 capital = "Oldenburg"
 trade_goods = salt

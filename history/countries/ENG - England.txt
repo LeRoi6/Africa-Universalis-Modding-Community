@@ -10,14 +10,6 @@ religion = catholic
 capital = 236 # London
 national_focus = DIP
 
-change_estate_land_share = {
-	estate = estate_church
-	share = -10
-}
-change_estate_land_share = {
-	estate = estate_burghers
-	share = -10
-}
 
 #Plantagenets
 
@@ -353,10 +345,6 @@ change_estate_land_share = {
 }
 
 1422.8.31 = {
-	# change_estate_land_share = { #compensates for lack of nobles, distributes 20 between the remaining estates
-		# estate = all
-		# share = 20
-	# }
 	monarch = {
 		name = "Henry VI"
 		dynasty = "Lancaster"
@@ -375,7 +363,7 @@ change_estate_land_share = {
 
 #1434.1.1 = { leader = {	name = "Richard Neville"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1460.12.31 } }
 
-1444.1.1 = { leader = {	name = "John Talbot"	type = general	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1453.7.17 } }
+1435.1.1 = { leader = {	name = "Richard Plantagenet"	type = general	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1460.12.30 } }
 
 1445.4.23 = {
 	queen = {
@@ -1028,9 +1016,9 @@ change_estate_land_share = {
 		name = "Oliver"
 		dynasty = "Cromwell"
 		birth_date = 1599.4.25
-		adm = 4
-		dip = 4
-		mil = 5
+		adm = 5
+		dip = 5
+		mil = 6
 		leader = { name = "Oliver Cromwell"	type = general	fire = 5	shock = 5	manuever = 4	siege = 1 }
 	}
 	
@@ -1049,7 +1037,7 @@ change_estate_land_share = {
 1650.1.1 = { leader = {	name = "George Ayscue"		type = admiral	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1671.7.19 } }
 
 
-1651.12.30 = { mercantilism = 25  } # The Act of Navigation
+1651.12.30 = { mercantilism = 25 decision = establish_british_merchant_navy } # The Act of Navigation
 
 1658.9.3 = {
 	monarch = {
@@ -1071,7 +1059,6 @@ change_estate_land_share = {
 		regent = yes
 	}
 	religion = protestant
-	government = republic
 	add_government_reform = noble_elite_reform
 	set_legacy_government = noble_republic
 } # The protectorate is Abolished

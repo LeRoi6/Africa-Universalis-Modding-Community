@@ -15,6 +15,7 @@ trade_goods = fish
 base_manpower = 2
 capital = "La Coruña" 
 is_city = yes
+estate = estate_church
  # Santiago de Compostela pilgrimage
 
 extra_cost = 8

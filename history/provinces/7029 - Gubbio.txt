@@ -44,7 +44,7 @@ discovered_by = eastern
 	remove_core = RMG
 } 
 1631.1.1 = { controller = PAP owner = PAP add_core = PAP } # Annexed to the Holy See
-1750.1.1 = { add_core = ITL }
+1750.1.1 = { add_core = ITA }
 1805.12.26 = {
 	owner = FRA
 	controller = FRA
@@ -58,9 +58,9 @@ discovered_by = eastern
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
 
 1831.1.1 = {
-	owner = ITL
-	controller = ITL
-	add_core = ITL
+	owner = ITA
+	controller = ITA
+	add_core = ITA
 } # Nationalist rebellion
 1832.1.1 = {
 	owner = PAP

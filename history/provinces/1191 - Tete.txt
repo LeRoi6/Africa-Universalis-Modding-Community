@@ -1,10 +1,10 @@
 #1191 - Tete
 
-owner = ZIM
-controller = ZIM
-add_core = ZIM
-culture = shona
-religion = shamanism
+owner = TEE
+controller = TEE
+add_core = TEE
+culture = hatonga
+religion = mhondoro
 capital = "Tete"
 is_city = yes
 base_manpower = 2 

@@ -12,7 +12,7 @@ base_manpower = 2
 trade_goods = bt_trade_good_fruit			#Rich region, no real other logic here.
 is_city = yes
 hre = no
-add_local_autonomy = 10
+estate = estate_dhimmi
 
 discovered_by = KAZ
 discovered_by = CRI

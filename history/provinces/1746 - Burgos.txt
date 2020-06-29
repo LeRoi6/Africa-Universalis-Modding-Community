@@ -14,6 +14,7 @@ trade_goods = wool
 base_manpower = 3 
 fort_15th = yes
 capital = "Burgos"
+estate = estate_burghers
 is_city = yes
 
 discovered_by = western

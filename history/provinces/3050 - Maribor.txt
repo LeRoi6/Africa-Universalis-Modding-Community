@@ -5,6 +5,7 @@
 owner = HAB
 controller = HAB
 add_core = HAB
+add_core = CNL
 culture = slovene
 religion = catholic
 base_tax = 4

@@ -3,7 +3,6 @@
 owner = FRA
 controller = FRA
 add_core = FRA
-add_core = LOR
 culture = lorraine_culture
 religion = catholic
 capital = "Épinal"

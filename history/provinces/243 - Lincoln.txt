@@ -1,18 +1,18 @@
 #243 - Lincoln
 #Region - Britain
-#Area - Midlands
+#Area - Mercia
 
 owner = ENG
 controller = ENG
 culture = english
 religion = catholic
 hre = no
-base_tax = 4
+base_tax = 4 
 base_production = 4
-base_manpower = 2
-trade_goods = livestock
+trade_goods = cloth
+base_manpower = 2 
 capital = "Lincoln"
-is_city = yes # Includes Leicester (Not really)
+is_city = yes # Includes Leicester
 add_core = ENG
 
 discovered_by = western

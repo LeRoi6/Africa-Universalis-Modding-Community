@@ -97,7 +97,7 @@ romanian_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			silistria_area = {
+			lower_danube_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -186,9 +186,9 @@ romanian_missions_1 = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-				provinces=rmn_drive_out_the_turks_provinces
-				owner_type=country_or_non_sovereign_subject_holds
+				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
+				PROVINCES=rmn_drive_out_the_turks_provinces
+				OWNER_TYPE=country_or_non_sovereign_subject_holds
 			}
 			balkan_region = {
 				type = all
@@ -227,9 +227,9 @@ romanian_missions_1 = {
 				exists = BYZ
 			}
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-				provinces=rmn_heir_of_rome_provinces
-				owner_type=country_or_non_sovereign_subject_holds
+				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
+				PROVINCES=rmn_heir_of_rome_provinces
+				OWNER_TYPE=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -269,9 +269,9 @@ romanian_missions_5 = {
 		trigger = {
 			is_subject = no
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-				provinces=unite_the_voivodes_provinces
-				owner_type=country_or_non_sovereign_subject_holds
+				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
+				PROVINCES=unite_the_voivodes_provinces
+				OWNER_TYPE=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -349,9 +349,9 @@ romanian_missions_5 = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-				provinces=rmn_conquer_transylvania_provinces
-				owner_type=country_or_non_sovereign_subject_holds
+				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
+				PROVINCES=rmn_conquer_transylvania_provinces
+				OWNER_TYPE=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {

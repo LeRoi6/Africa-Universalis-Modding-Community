@@ -1,89 +1,10 @@
 #New on_actions:
 #On new Monarch if Hungary is under a PU of Austria and Croatia exists and is either PU of Austria or Hungary (I'll be honest, I don't know whether PU transfer comes before this or not), Hungary integrates Croatia.
-#Removed on_actions:
-#Most of BT's on_startups.
 
-on_startup = {
-	#Vanilla
-	emperor = {
-		save_global_event_target_as = Emperor
-	}
-	if = {
-		limit = {
-			is_emperor_of_china = yes
-		}
-		save_global_event_target_as = EmperorOfChina
-	}
-	events = {
-		muslim_school_events.20 #Pick School
-#		flavor_fra.15000 #Make the French Revolution happen if starting in 1789
-	}
-	if = {
-		limit = {
-			has_dlc = "Cradle of Civilization"
-			has_country_modifier = tur_janissary
-		}
-		remove_country_modifier = tur_janissary
-	}
-	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
-
-	if = {
-		limit = {
-			NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
-			OR = {
-				tag = UBV
-				tag = LBV
-				tag = ING
-			}
-		}
-		set_country_flag = new_flavour_bav_13_has_been_triggered
-		country_event = { id = new_flavour_bav.13 days = 90 } #better not to allow almost instant DOWs
-	}
-	if = {
-		limit = {
-			tag = FRA
-			started_in = 1789.7.14
-			NOT = { is_year = 1790 }
-			NOT = { has_disaster = french_revolution }
-		}
-		add_disaster_progress = {
-			value = 100
-			disaster = french_revolution
-		}
-	}
-	#BT
-	if = {
-		limit = {
-			has_global_flag = beyond_typus_mod_enabled
-		}
-		if = {
-			limit = { started_in = 1459.1.1 }
-			set_global_flag = constantinople_restored
-			TUR = { set_country_flag = relocated_capital_constantinople }
-		}	#Preventing exploits relating to Contaninople's growth.
-		if = {
-			limit = {
-				started_in = 1495.1.1
-				NOT = { started_in = 1648.1.1 }
-			}
-			clr_global_flag = italy_out_of_HRE
-		}	#BT calls the Peace of Westphalia then end of the Italian HRE, not 1495, so delaying the global flag here without having to mess with the HAB history file for now.
-		# if = { #Dirty fix for the huge loan sizes in BT due to dev doubling since there's no defines value to change. #Didn't work. Deprecated.
-			# limit = {
-				# has_global_flag = beyond_typus_mod_enabled
-				# NOT = { has_global_flag = bt_loan_size_fixed }
-			# }
-			# every_country = {
-				# loan_size = 6 
-			# }
-			# set_global_flag = bt_loan_size_fixed
-		# }
-	}
-}
 
 # country 
 on_new_monarch = {
-	#Vanilla
+	#Apparently, the below vanilla code below must be included in any mod, else problems arise.... absolutely bizarre, but what can one do?
 	crimean_succession_effect = yes #Scripted effect
 	slesvig_question_effect = yes #Scripted effect
 	if = {
@@ -118,12 +39,9 @@ on_new_monarch = {
 		}
 		country_event = { id = china_events.32 }	# History of last ruler 
 	}
-	#ambrosian_republic_effect = yes
+	ambrosian_republic_effect = yes
 	succession_culture_religion_effect = yes
 	sheik_ul_islam_effect = yes
-	hab_remove_mission_mods_if_not_emperor_effect = yes
-	thu_remain_von_wettin_effect = yes
-	ladislaus_postumus_union_effect = yes
 	events = {
 		tribal_succession.1		# Harsh anti-tribals.
 		9492 					# Remove some event modifiers
@@ -163,10 +81,10 @@ on_new_monarch = {
 		50 = dynastic_events.5	
 		25 = harem_events.7		#Failed Policy of Fratricide
 	}
-	#BT
+	#Apparently, the above vanilla code below must be included in any mod, else problems arise.... absolutely bizarre, but what can one do?
 	if = {
 		limit = {
-			has_reform = tanistry_reform
+			government = high_kingship
 			NOT = { has_country_flag = bt_abolition_of_tanistry_succession }
 		}
 		set_country_flag = bt_tanistry_king_just_died
@@ -174,14 +92,6 @@ on_new_monarch = {
 		remove_country_modifier = bt_uncertainty_about_a_high_queen
 		country_event = { id = BeyondTypusCelticFlavour.1 days = 1 }				#New Tanist election
 		country_event = { id = BeyondTypusCelticFlavour.6 days = 1 }			#High Queen comes to power, will only fire for female rulers
-	}
-	if = { #If Sweden fell under the Danish PU elsehow and the event that was supposed to fire the end of Karl Knutsson Bonde's reign never fired.
-		limit = {
-			tag = SWE
-			junior_union_with = DAN
-			has_global_flag = bt_kalmar_union_power_struggle_pt_I
-		}
-		clr_global_flag = bt_kalmar_union_power_struggle_pt_I
 	}
 	if = { #Kalmar Union power struggle flavour event.
 		limit = {
@@ -192,145 +102,37 @@ on_new_monarch = {
 		DAN = {
 			create_union = SWE
 		}
-		clr_global_flag = bt_kalmar_union_power_struggle_pt_I
 	}
-	if = {
+	if = { #If Hungary is PU'd by Austria and Croatia is a PU of either.
 		limit = {
-			tag = ARA
-			NOT = { has_global_flag = bt_two_sicilies_divided_happened }
-		}
-		country_event = { id = BtPLegacyIberianFlavour.1 }
-	}
-}
-
-on_monarch_death = {
-	#Vanilla
-	if = {
-		limit = {
-			tag = ANS
-			BRA = {
-				has_country_flag = albrecht_achilles_flag
+			NOT = { has_global_flag = HAB_got_hungarian_throne }
+			HUN = {
+				junior_union_with = HAB
+			}
+			CRO = {
+				exists = yes
+				OR = {
+					junior_union_with = HAB
+					junior_union_with = HUN
+				}
 			}
 		}
-		BRA = {
-			clr_country_flag = albrecht_achilles_flag #Just to be sure
-			kill_heir = yes #If Albrecht Achilles dies in Ansbach he will also be dead in Brandenburg, will appear as normal death of heir to BRA.
+		HUN = {
+			inherit = CRO
 		}
-	}
-	if = {
-		limit = { has_country_modifier = sought_after_bachelor }
-		remove_country_modifier = sought_after_bachelor
-	}
-	if = {
-		limit = {
-			tag = SAX
-			has_country_flag = sax_thuringen_split_to_happen
-			OR = {
-				NOT = { dynasty = "von Wettin" }
-				NOT = { senior_union_with = THU }
-				has_regency = yes
-			}
-		}
-		clr_country_flag = sax_thuringen_split_to_happen
-	}
-	burgundian_inheritance_start_effect = yes
-	ladislaus_postumus_king_died_effect = yes
-	events = {
-		flavor_wal.1 # Vlad the Impaler. So that he doesn't try to usurp his father.
-		flavor_nav.4 # Navarra succession event
-		flavor_sax.8 # Treaty of Leipzig
-		flavor_pap.16 # Borgia Pope
-		flavor_pap.19 # death of borgia pope
-		flavor_tus.22 # Medici Pope
-		flavor_tus.24 # death of the Medici Pope
-	}
-	#BT
-	if = {
-		limit = {
-			has_reform = tanistry_reform
-			NOT = { has_country_flag = bt_abolition_of_tanistry_succession }
-		}
-		set_country_flag = bt_tanistry_king_just_died
-		clr_country_flag = bt_tanistry_high_queen_reigning
-		remove_country_modifier = bt_uncertainty_about_a_high_queen
-		remove_country_modifier = bt_tanistry_underaged_heir
-		remove_country_modifier = bt_tanistry_female_heir
-		remove_country_modifier = bt_tanistry_waiting_on_heir
+		set_global_flag = HAB_got_hungarian_throne
 	}
 }
-
-on_heir_death = {
-	#Vanilla
-	if = {
-		limit = { has_country_flag = heir_dip_education }
-		clr_country_flag = heir_dip_education
-	}
-	if = {
-		limit = { has_country_flag = heir_mil_education }
-		clr_country_flag = heir_mil_education
-	}
-	if = {
-		limit = { has_country_flag = heir_adm_education }
-		clr_country_flag = heir_adm_education
-	}
-	if = {
-		limit = { has_ruler_flag = well_advised_tutored_heir }
-		clr_ruler_flag = well_advised_tutored_heir
-	}
-	if = {
-		limit = { has_ruler_flag = heir_went_on_grand_tour }
-		clr_ruler_flag = heir_went_on_grand_tour
-	}
-	if = {
-		limit = { has_country_flag = albrecht_achilles_flag }
-		clr_country_flag = albrecht_achilles_flag #Death of original Albrecht Achilles
-	}
-	if = {
-		limit = { has_ruler_flag = sancaga_cikma }
-		clr_ruler_flag = sancaga_cikma
-		every_owned_province = {
-			limit = {
-				has_province_modifier = heir_in_training
-			}
-			remove_province_modifier = heir_in_training
-		}
-	}
-	if = {
-		limit = { has_ruler_flag = returned_from_sancaga_sikma_province }
-		clr_ruler_flag = returned_from_sancaga_sikma_province
-	}
-	ladislaus_postumus_heir_died_effect = yes
-	#BT
-	if = {
-		limit = {
-			has_reform = tanistry_reform
-			NOT = { has_country_flag = bt_abolition_of_tanistry_succession }
-		}
-		remove_country_modifier = bt_tanistry_underaged_heir
-		remove_country_modifier = bt_tanistry_female_heir
-		country_event = { id = BeyondTypusCelticFlavour.8 days = 1 }			#Tanist dies, new tanist event
-	}
-}
-
-on_new_heir = {
-	if = {
-		limit = {
-			has_reform = tanistry_reform
-			has_country_modifier = bt_tanistry_waiting_on_heir
-			NOT = { has_country_flag = bt_abolition_of_tanistry_succession }
-		}
-		country_event = { id = BeyondTypusCelticFlavour.2 days = 1 }			#Male heir born/introduced			- doesn't seem to work, I'll look into this later, added a 1 day MTTH in the meantime
-		country_event = { id = BeyondTypusCelticFlavour.3 days = 1 }			#Female heir born/introduced			- doesn't seem to work, I'll look into this later, added a 1 day MTTH in the meantime
-	}
-}
-
-
 
 # province
 on_province_religion_converted = {
-	#Vanilla
-	on_province_religion_converted_estate_privileges_effect = yes
-	#BT
+	if = {
+		limit = {
+			religion_group = muslim
+			has_estate = estate_dhimmi
+		}
+		remove_estate = estate_dhimmi
+	}
 	#BT added if Culture's Iberian and gets converted to muslim, it turns into Andalusi culture.
 	if = {
 		limit = {
@@ -346,17 +148,5 @@ on_province_religion_converted = {
 			culture = andalusi_culture
 		}
 		change_culture = andalucian
-	}
-}
-
-#BT adding minority expulsion bonus in preparation for a 1.30 change.
-# When a minority is expelled to a colony
-# THIS = Colony, ROOT = Colony, FROM = Home province
-on_minority_expelled = {
-	FROM = {
-		add_province_modifier = {
-			name = "bt_minorities_expelled"
-			duration = 5475 #15 years
-		}
 	}
 }

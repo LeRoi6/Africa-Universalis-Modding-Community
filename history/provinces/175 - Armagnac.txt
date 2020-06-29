@@ -13,6 +13,7 @@ base_tax = 3
 base_production = 3 
 trade_goods = wine
 base_manpower = 2 
+estate = estate_nobles
 add_core = AMG
 add_core = GUY
 
@@ -21,6 +22,7 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+1399.1.1 = { add_core = ENG }
 1475.8.29 = { remove_core = ENG } # Treaty of Picquigny
 1549.12.22 = {
 	owner = AUV

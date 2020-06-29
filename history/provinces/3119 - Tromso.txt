@@ -12,9 +12,10 @@ base_production = 1
 base_manpower = 1 
 trade_goods = fish
 capital = "Tromsø"
-add_local_autonomy = 55 #This stacks with culture and religious starting autonomy, it seems. Reducing from 90.
+add_local_autonomy = 90
 is_city = yes
 add_core = NOR
+
 discovered_by = western
 discovered_by = eastern
 

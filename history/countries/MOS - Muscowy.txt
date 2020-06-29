@@ -22,8 +22,8 @@ national_focus = DIP
 
 1415.3.10 = {
 	heir = {
-		name = "Vasiliy Temny"
-		monarch_name = "Vasiliy II Temny"
+		name = "Vasiliy"
+		monarch_name = "Vasiliy II"
 		dynasty = Rurikovich
 		birth_date = 1415.3.10
 		death_date = 1462.3.27
@@ -38,7 +38,7 @@ national_focus = DIP
 
 1424.2.27 = {
 	monarch = {
-		name = "Vasiliy II Temny"
+		name = "Vasiliy II"
 		dynasty = Rurikovich
 		birth_date = 1415.3.10
 		adm = 3
@@ -78,11 +78,6 @@ national_focus = DIP
 		dip = 4
 		mil = 5
 	}
-}
-
-1444.10.1 = {
-	set_estate_privilege = estate_nobles_strong_duchies
-	set_estate_privilege = estate_nobles_very_strong_duchies
 }
 
 #Time under Dmitry Shemyaka 1446-1447

@@ -1,6 +1,6 @@
-#4375 - Chester
+#3024 - Cheshire
 #Region - Britain
-#Area - Lancashire
+#Area - Northumbria
 
 latent_trade_goods = {
 	coal
@@ -11,25 +11,23 @@ controller = ENG
 culture = northumbrian
 religion = catholic
 hre = no
-base_tax = 3
-base_production = 2
-trade_goods = salt
-base_manpower = 1
+base_tax = 5 
+base_production = 5 
+trade_goods = cloth
+base_manpower = 3 
 capital = "Chester"
 is_city = yes
 add_core = ENG
-add_core = CST
-#seat_in_parliament = yes
+seat_in_parliament = yes
 
-add_local_autonomy = 75
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
-#extra_cost = 8
+extra_cost = 8
 
-#center_of_trade = 1
+center_of_trade = 1
 
 #Decided to switch the modifier from an estuary to a CoT, for the other bonuses. Manchester's CoT worthiness going before the minor river estuary's worthiness, and don't want both for balance.
 #add_permanent_province_modifier = {

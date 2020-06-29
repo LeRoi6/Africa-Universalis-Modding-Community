@@ -68,7 +68,7 @@ bt_generic_can_form_potential_check = {
 		ai = no
 		AND = {
 			ai = yes
-			num_of_cities = 3	#BT Bugfixes reverting to 3	because this caused issues for Pomeranian minors' railroading since they all start below 6 cities and therefore will never feel the need to form Pomerania and thus won't desire Pomeranian cities.	#3 is common in vanilla, but more provinces in BT
+			num_of_cities = 6			#3 is common in vanilla, but more provinces in BT
 		}
 	}
 	is_colonial_nation = no
@@ -143,7 +143,7 @@ bt_hre_stem_duchy_check = {
 	NOT = { tag = GER }
 	NOT = { tag = PRU }
 	NOT = { tag = HAB }
-	NOT = { tag = LOT }	#BTP add Lothringia
+	NOT = { tag = LTH }	#BTP add Lothringia
 	#Stem Duchies
 	NOT = { tag = FRE }	#BTP add united Frisia
 	NOT = { tag = SAX }
@@ -154,8 +154,8 @@ bt_hre_stem_duchy_check = {
 	NOT = { tag = BOH }
 	NOT = { tag = BAV }
 	#Carinthia
-	NOT = { tag = FKN }	#BTP add Franconia
-	NOT = { tag = SWA }	#BTP add Swabia
+	NOT = { tag = FNC }	#BTP add Franconia
+	NOT = { tag = SWB }	#BTP add Swabia
 	NOT = { tag = BUR }
 	#Upper Lorraine
 	#Lower Lorraine
@@ -166,7 +166,7 @@ bt_hre_stem_duchy_check = {
 	NOT = { was_tag = GER }
 	NOT = { was_tag = PRU }
 	NOT = { was_tag = HAB }
-	NOT = { was_tag = LOT }
+	NOT = { was_tag = LTH }
 	NOT = { was_tag = FRE }
 	NOT = { was_tag = SAX }
 	NOT = { was_tag = MKL }
@@ -176,8 +176,8 @@ bt_hre_stem_duchy_check = {
 	NOT = { was_tag = BOH }
 	NOT = { was_tag = BAV }
 	#Carinthia
-	NOT = { was_tag = FKN }
-	NOT = { was_tag = SWA }
+	NOT = { was_tag = FNC }
+	NOT = { was_tag = SWB }
 	NOT = { was_tag = BUR }
 	#Upper Lorraine
 	#Lower Lorraine
@@ -291,7 +291,7 @@ bt_downstream_of_india = {
 		area = carnia_area
 		area = trentino_area
 		area = upper_emilia_area
-		area = po_valley_area
+		area = east_lombardy_area
 		area = north_piedmont_area
 		area = south_piedmont_area
 		area = south_tuscany_area
@@ -300,20 +300,20 @@ bt_downstream_of_india = {
  
  bt_trigger_central_italy_areas = {			#broken off from previous Italy grouping, this corresponds mostly to the Papal states in Lazio, Umbria and Marche. About 19 provinces.
 	OR = {
-		area = lazio_area
-		area = umbria_area
 		area = central_italy_area
+		area = umbria_area
+		area = north_marche_area
 		#Latium
-		province_id = 4732
+		province_id = 7018
 		province_id = 7020
 	}
  }
  
  bt_trigger_northeastern_italy_areas = {			#broken off from previous Italy grouping, corresponds to the central and northeastern portions. Currently used for BYZ mission only
 	OR = {
-		area = lazio_area
-		area = umbria_area
 		area = central_italy_area
+		area = umbria_area
+		area = north_marche_area
 		area = venetia_area
 		area = tuscany_area
 		area = liguria_area
@@ -323,7 +323,7 @@ bt_downstream_of_india = {
 		area = carnia_area
 		area = south_tuscany_area
 		#Latium
-		province_id = 4732
+		province_id = 7018
 		province_id = 7020
 	}
  }
@@ -366,18 +366,18 @@ bt_downstream_of_india = {
 		province_id = 1853
 		province_id = 7124
 		#Eastern Macedonia
-		province_id = 4702
+		province_id = 3172
 		province_id = 7120
 		province_id = 7127
 		province_id = 7128
 		province_id = 7129
 		#Epirus
 		province_id = 144
-		province_id = 4699
+		province_id = 7131
 		province_id = 7132
 		province_id = 7133
 		#Western Thrace
-		province_id = 4705
+		province_id = 3171
 		province_id = 7130
 	}
  }
@@ -423,7 +423,7 @@ bt_downstream_of_india = {
 	OR = {
 		area = bulgaria_area
 		area = danubian_plain_area
-		area = silistria_area
+		area = lower_danube_area
 	}
  }
  

@@ -1,8 +1,8 @@
 #BT Italy reoverhaul
 
-owner = PDV #controlled by Padua since 1266
-controller = PDV
-add_core = PDV
+owner = PAD #controlled by Padua since 1266
+controller = PAD
+add_core = PAD
 culture = venetian
 religion = catholic
 capital = "Vicenza"
@@ -36,7 +36,7 @@ discovered_by = eastern
 1311.4.15 = {
 	owner = VRN
 	controller = VRN
-	remove_core = PDV
+	remove_core = PAD
 }	#Liberated from Padua, but almost immediately put under Imperial control under Verona
 1388.10.24 = {
 	owner = MLO
@@ -52,16 +52,16 @@ discovered_by = eastern
 1433.1.1 = { hre = no } # Treaty between Doge Francesco Foscari and Emperor Sigismund of the HRE
 
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	owner = PDV
-	controller = PDV
-	add_core = PDV
+	owner = PAD
+	controller = PAD
+	add_core = PAD
 	remove_core = VEN
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	owner = VEN
 	controller = VEN
 	add_core = VEN
-	remove_core = PDV
+	remove_core = PAD
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #Second performance start unused
 
@@ -76,14 +76,14 @@ discovered_by = eastern
 	add_core = HAB
 } # Treaty of Campo Formio
 1805.12.26 = {
-	owner = ITL
-	controller = ITL
-	add_core = ITL
+	owner = ITA
+	controller = ITA
+	add_core = ITA
 	remove_core = HAB
 } # Treaty of Pressburg
 1814.4.11 = {
 	owner = HAB
 	controller = HAB
 	add_core = HAB
-	remove_core = ITL
+	remove_core = ITA
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally

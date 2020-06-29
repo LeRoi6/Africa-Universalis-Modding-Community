@@ -8,6 +8,7 @@ add_core = ENG
 add_core = FRA
 capital = "Bordeaux"
 is_city = yes
+estate = estate_burghers
 culture = gascon
 religion = catholic
 hre = no

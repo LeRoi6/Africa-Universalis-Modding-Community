@@ -1,9 +1,6 @@
-#4130 - Somerset
+#3031 - Somerset
 #Region - Britain
 #Area - Wessex
-latent_trade_goods = { #Somerset Coalfields from 15th to 19th centuries
-	coal 
-} 
 
 owner = ENG
 controller = ENG
@@ -12,8 +9,7 @@ religion = catholic
 hre = no
 base_tax = 3  
 base_production = 3 
-trade_goods = bt_trade_good_fruit #Large number of fruits grown including Strawberries at Cheddar and Apples across the county for Cider. Generally an agricultural shire
-
+trade_goods = wine
 base_manpower = 2 
 capital = "Taunton"
 is_city = yes

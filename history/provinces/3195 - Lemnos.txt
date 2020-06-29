@@ -12,6 +12,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 add_core = BYZ
+estate = estate_nobles
 add_local_autonomy = 50
 
 

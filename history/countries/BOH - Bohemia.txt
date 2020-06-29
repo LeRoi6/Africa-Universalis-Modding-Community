@@ -5,14 +5,9 @@ religion = catholic
 elector = yes
 capital = 266 # Praha
 technology_group = western
-add_accepted_culture = sorbian
+add_accepted_culture = saxon
 add_accepted_culture = bavarian			#Draiocht added, only change in this file
 add_army_professionalism = 0.1
-
-change_estate_land_share = {
-	estate = estate_burghers
-	share = -5
-}
 
 1378.11.29 = {
 	monarch = {
@@ -41,12 +36,6 @@ change_estate_land_share = {
 		dip = 2
 		mil = 2
 	}
-}
-
-1444.10.1 = {
-	set_estate_privilege = estate_nobles_strong_duchies
-	set_estate_privilege = estate_nobles_very_strong_duchies
-	set_estate_privilege = estate_nobles_extremely_strong_duchies
 }
 
 # Personal Union with Habsburg under Ladislaus Postumus 1453-1457
@@ -149,7 +138,6 @@ change_estate_land_share = {
 }
 
 1526.8.30 = {
-	government = monarchy
 	add_government_reform = autocracy_reform
 	elector = no
 	add_accepted_culture = schlesian
@@ -166,8 +154,7 @@ change_estate_land_share = {
 	}
 }
 
-1556.10.2 = { 
-	government = monarchy
+1556.10.2 = {
 	add_government_reform = autocracy_reform 
 }
 

@@ -44,9 +44,9 @@ discovered_by = western
 #} #Return to proper mod added owners and cuts vanilla core, typically.
 
 1295.1.1 = {
-	owner = WOL
-	controller = WOL
-	add_core = WOL
+	owner = WLG
+	controller = WLG
+	add_core = WLG
 	remove_core = POM
 }	#Barnim II of Pomerania dies, killed by the husband of a woman he seduced. Pomerania fractures.
 1300.1.1 = { culture = pommeranian }	#Ostsiedlung

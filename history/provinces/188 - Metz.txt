@@ -10,6 +10,7 @@ owner = MTZ			#Like Koeln, seems to be trouble between Bishohric and imperial fr
 controller = MTZ 
 capital = "Metz"
 is_city = yes
+estate = estate_burghers
 culture = hessian
 religion = catholic
 hre = yes

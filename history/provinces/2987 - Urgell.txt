@@ -13,7 +13,8 @@ base_tax = 1
 base_production = 1 
 trade_goods = wool 
 base_manpower = 1 
-capital = "Urgell" #Tarrega is way down south in Lleida. Hence it has to be Seu d'Urgell. #"Tàrrega" 
+capital = "Tàrrega" 
+estate = estate_nobles
 is_city = yes 
 
 discovered_by = western

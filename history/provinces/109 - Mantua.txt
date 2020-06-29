@@ -35,14 +35,14 @@ discovered_by = ottoman
 1797.2.1 = { controller = FRA } # Mantua surrenders to the French forces
 1797.10.17 = { owner = FRA add_core = FRA remove_core = HAB } # Treaty of Campo Formio
 1800.6.26 = {
-	owner = ITL
-	controller = ITL
-	add_core = ITL
+	owner = ITA
+	controller = ITA
+	add_core = ITA
 } # Cisalpine Republic
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1814.4.11 = {
 	owner = HAB
 	controller = HAB
 	add_core = HAB
-	remove_core = ITL
+	remove_core = ITA
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally

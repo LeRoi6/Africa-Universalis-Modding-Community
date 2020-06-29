@@ -5,44 +5,25 @@ technology_group = western
 primary_culture = english
 #add_accepted_culture = welsh			#This would make the polity more stable, but really isn't historical, so leaving it here disabled.
 religion = catholic
-capital = 240	#Shrewsbury
-fixed_capital = 240
+capital = 241	#Calling Cardiff the capital of the Marches, more for later significance and so the AI increases development here than anything else. No true central capital for this collection of polities is really possible.
+fixed_capital = 241
 
 
-1425.1.1 = {
+#Eleanor de Clare 1292-1337
+
+#Edward le Despencer, 1st Baron le Despencer 1349-1375
+
+1439.1.1 = {
 	monarch = {
-		name = "Richard"
-		dynasty = "York"
-		adm = 2
-		dip = 4
-		mil = 5
-		birth_date = 1411.12.30
-	}
-}
-1442.5.28 = {
-	heir = {
-		name = "Edward"
-		dynasty = "York"
-		adm = 1
-		dip = 5
-		mil = 4
-		claim = 100
-		birth_date = 1442.5.28
+		name = "Henry"
+		dynasty = "de Beauchamp"
+		adm = 3
+		dip = 3
+		mil = 3
 	}
 }
 
-1460.12.30 = {
-	monarch = {
-		name = "Edward"
-		dynasty = "York"
-		adm = 1
-		dip = 5
-		mil = 4
-		birth_date = 1442.5.28
-	}
-}
-
-1461.1.1 = {
+1445.1.1 = {
 	monarch = {
 		name = "Marcher Lords"
 		adm = 1

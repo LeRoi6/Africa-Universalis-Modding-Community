@@ -3,6 +3,7 @@
 owner = BOU
 controller = BOU
 add_core = BOU
+add_core = AUV
 culture = arpitan
 religion = catholic
 capital = "Annonay"

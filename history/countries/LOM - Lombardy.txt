@@ -2,10 +2,10 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-primary_culture = lombard
+primary_culture = umbrian
 religion = catholic
-capital = 104 #Milan
-fixed_capital = 104
+capital = 1111
+fixed_capital = 1111
 
 #historical_friend = XXX
 #historical_rival = XXX

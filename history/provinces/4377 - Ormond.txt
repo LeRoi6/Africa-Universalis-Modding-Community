@@ -1,4 +1,4 @@
-#4377 - Ormond
+#3010 - Ormond
 #Region - Ireland
 #Area - Munster
 
@@ -12,14 +12,13 @@ add_core = ORD
 culture = irish
 religion = catholic
 hre = no
-base_tax = 2
-base_production = 3 
-base_manpower = 1
-trade_goods = copper #Was livestock
-capital = "Aonach Urmhumhan" #"Port Láirge"
+base_tax = 6
+base_production = 4 
+base_manpower = 2 
+trade_goods = livestock
+capital = "Port Láirge"
 is_city = yes
 
-fort_15th = yes
 
 discovered_by = western
 discovered_by = muslim

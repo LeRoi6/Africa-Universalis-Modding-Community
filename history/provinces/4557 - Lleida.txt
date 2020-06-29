@@ -2,7 +2,6 @@
 owner = ARA		# Alfons V of Aragon
 controller = ARA
 add_core = ARA
-add_core = CAT
 culture = catalan
 religion = catholic
 hre = no

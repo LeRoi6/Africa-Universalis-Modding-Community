@@ -1,9 +1,6 @@
-#4376 - Leicester
+#3026 - Leicestershire
 #Region - Britain
-#Area - Midlands
-latent_trade_goods = {
-	coal 
-}
+#Area - Mercia
 
 owner = ENG
 controller = ENG
@@ -11,9 +8,9 @@ culture = english
 religion = catholic
 hre = no
 base_tax = 3
-base_production = 3
-trade_goods = glass #Made a lot of bells for British churches. Also the stained glass as well. Tempted to put it under iron but meh. Also a rural shire with lots of leather production, so could be livestock
-base_manpower = 2
+base_production = 4
+trade_goods = livestock
+base_manpower = 2 
 capital = "Leicester"
 is_city = yes
 add_core = ENG

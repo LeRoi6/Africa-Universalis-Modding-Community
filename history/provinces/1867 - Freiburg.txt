@@ -14,12 +14,14 @@ base_production = 3			#Lowered dev generally in Romandie, became richer later as
 base_manpower = 2 
 is_city = yes
 add_core = SAV
+estate = estate_burghers
 
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+1444.1.1 = { add_core = SWI }
 1499.1.1 = { owner = FRA controller = FRA add_core = FRA } 
 1513.7.3 = { unrest = 7 } # Luzern Peasant War
 1515.1.1 = { unrest = 0 }

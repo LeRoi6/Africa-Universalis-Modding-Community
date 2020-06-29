@@ -2,10 +2,10 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-primary_culture = romagnan
+primary_culture = umbrian
 religion = catholic
-capital = 7025
-fixed_capital = 2025
+capital = 1111
+fixed_capital = 1111
 
 #historical_friend = XXX
 #historical_rival = XXX

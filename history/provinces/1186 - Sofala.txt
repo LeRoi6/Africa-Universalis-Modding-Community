@@ -3,14 +3,14 @@
 owner = SFA
 controller = SFA
 add_core = SFA
-culture = nguni
+culture = sofala 
 religion = sunni
 capital = "Sofala"
 is_city = yes
-base_manpower = 4
+base_manpower = 6
 trade_goods = gold
 hre = no
-base_tax = 6 
+base_tax = 9
 base_production = 8
 discovered_by = east_african
 discovered_by = muslim

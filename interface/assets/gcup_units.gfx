@@ -13,13 +13,13 @@ objectTypes = {
 		animation = { id = "idle"				type = "spear_shield_idle_animation" }
 		animation = { id = "walk"				type = "gcup_polearm_twohanded_armor_moving_animation" }
 		animation = { id = "death"				type = "polearm_twohanded_death_animation" }
-		animation = { id = "retreat"			type = "polearm_twohanded_retreat_animation" }
+		animation = { id = "retreat"			type = "rifleman_retreat_animation" }
 
 		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
 		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
 		animation = { id = "horse_walk"			type = "cavalry_rider_moving_animation" }	
 		animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
-		animation = { id = "horse_retreat"		type = "cavalry_rider_retreat_animation" }	
+		animation = { id = "horse_retreat"		type = "cavalry_rider_moving_animation" }	
 		
 		scale = 0.35
 	}	
@@ -86,13 +86,13 @@ objectTypes = {
 		animation = { id = "idle"				type = "spear_shield_idle_animation" }
 		animation = { id = "walk"				type = "gcup_polearm_twohanded_armor_moving_animation" }
 		animation = { id = "death"				type = "polearm_twohanded_death_animation" }
-		animation = { id = "retreat"			type = "polearm_twohanded_retreat_animation" }
+		animation = { id = "retreat"			type = "rifleman_retreat_animation" }
 
 		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
 		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
 		animation = { id = "horse_walk"			type = "cavalry_rider_moving_animation" }	
 		animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
-		animation = { id = "horse_retreat"		type = "cavalry_rider_retreat_animation" }		
+		animation = { id = "horse_retreat"		type = "cavalry_rider_moving_animation" }		
 		
 		scale = 0.35
 	}
@@ -158,13 +158,13 @@ objectTypes = {
 		animation = { id = "idle"				type = "spear_shield_idle_animation" }
 		animation = { id = "walk"				type = "gcup_polearm_twohanded_armor_moving_animation" }
 		animation = { id = "death"				type = "polearm_twohanded_death_animation" }
-		animation = { id = "retreat"			type = "polearm_twohanded_retreat_animation" }
+		animation = { id = "retreat"			type = "rifleman_retreat_animation" }
 
 		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
 		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
 		animation = { id = "horse_walk"			type = "cavalry_rider_moving_animation" }	
 		animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
-		animation = { id = "horse_retreat"		type = "cavalry_rider_retreat_animation" }		
+		animation = { id = "horse_retreat"		type = "cavalry_rider_moving_animation" }		
 		
 		scale = 0.35
 	}
@@ -232,13 +232,13 @@ objectTypes = {
 		animation = { id = "idle"				type = "spear_shield_idle_animation" }
 		animation = { id = "walk"				type = "gcup_polearm_twohanded_armor_moving_animation" }
 		animation = { id = "death"				type = "polearm_twohanded_death_animation" }
-		animation = { id = "retreat"			type = "polearm_twohanded_retreat_animation" }
+		animation = { id = "retreat"			type = "rifleman_retreat_animation" }
 
 		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
 		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
 		animation = { id = "horse_walk"			type = "cavalry_rider_moving_animation" }	
 		animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
-		animation = { id = "horse_retreat"		type = "cavalry_rider_retreat_animation" }		
+		animation = { id = "horse_retreat"		type = "cavalry_rider_moving_animation" }		
 		
 		scale = 0.35
 	}
@@ -304,13 +304,13 @@ objectTypes = {
 		animation = { id = "idle"				type = "spear_shield_idle_animation" }
 		animation = { id = "walk"				type = "gcup_polearm_twohanded_armor_moving_animation" }
 		animation = { id = "death"				type = "polearm_twohanded_death_animation" }
-		animation = { id = "retreat"			type = "polearm_twohanded_retreat_animation" }
+		animation = { id = "retreat"			type = "rifleman_retreat_animation" }
 
 		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
 		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
 		animation = { id = "horse_walk"			type = "cavalry_rider_moving_animation" }	
 		animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
-		animation = { id = "horse_retreat"		type = "cavalry_rider_retreat_animation" }		
+		animation = { id = "horse_retreat"		type = "cavalry_rider_moving_animation" }		
 		
 		scale = 0.35
 	}

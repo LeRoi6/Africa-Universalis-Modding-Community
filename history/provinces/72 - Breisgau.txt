@@ -2,9 +2,9 @@
 #Region - Germany
 #Area - Upper Rhineland
 
-owner = HAB
-controller = HAB
-add_core = HAB
+owner = BAD
+controller = BAD
+add_core = BAD
 culture = swabian
 religion = catholic
 base_tax = 6 			#The silver mines in Mount Schauinsland provided an important source of capital for Freiburg. This silver made Freiburg one of the richest cities in Europe, and in 1327 Freiburg minted its own coin, the Rappenpfennig.

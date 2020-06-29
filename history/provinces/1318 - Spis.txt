@@ -2,18 +2,17 @@
 
 owner = HUN
 controller = HUN  
-culture = transylvanian_saxons
+culture = slovak
 religion = catholic
 capital = "Spiš"
 trade_goods = gold #Schemnitz / Banská Štiavnica
 hre = no
-base_tax = 2
-base_production = 1
-base_manpower = 1 
+base_tax = 4
+base_production = 4
+base_manpower = 2 
 is_city = yes
 add_core = HUN
-add_core = UHU
-add_core = POL
+add_core = SLO
 
 discovered_by = KAZ
 discovered_by = CRI

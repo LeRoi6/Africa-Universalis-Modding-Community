@@ -51,15 +51,15 @@ GLW = "countries/Galway.txt"
 MYO = "countries/Mayo.txt"
 
 #BTP Italy
-#Dub removed BLG added in vanilla 1.30 same tag
-#Dub removed SZO added in vanilla 1.30 same tag
-#Dub removed TRN added in vanilla 1.30 as TNT
+BLG = "countries/Bologna.txt"
+SZO = "countries/Saluzzo.txt"
+TRN = "countries/Trent.txt"
 ARE = "countries/Arezzo.txt"
 MSS = "countries/Massa.txt"
 PIO = "countries/Piombino.txt"
 RMG = "countries/Romagna.txt"
 GRZ = "countries/Gorizia.txt"
-#Dub removed PGI added in vanilla 1.30 as PGA
+PGI = "countries/Perugia.txt"
 ITL = "countries/Italia.txt"
 LMV = "countries/LombardyVenetia.txt"
 EMR = "countries/EmiliaRomagna.txt"
@@ -75,13 +75,13 @@ VDN = "countries/Verdun.txt"
 CMB = "countries/Cambrai.txt"
 GRN = "countries/Groningen.txt"
 DUR = "countries/Durham.txt"
-#Dub removed MNT added in vanilla 1.30 as MBZ
+MNT = "countries/Montfort.txt"
 
 #3.1
 #Draiocht removed ICE added in vanilla 1.16 same tag
 CNL = "countries/Carniola.txt"
 #Draiocht removed SVK added in vanilla 1.16 as SLO attention to other refs some go by nyitra
-#Dub removed LUS added in vanilla 1.30 as SOR
+LUS = "countries/Lusatia.txt"
 LES = "countries/Lesbos.txt"
 MRV = "countries/Moravia.txt"
 GMV = "countries/GreatMoravia.txt"
@@ -95,17 +95,17 @@ SAA = "countries/Saarbrucken.txt"
 ESN = "countries/Essen.txt"
 DRT = "countries/Dortmund.txt"
 MND = "countries/Minden.txt"
-#Dub removed LPP added in vanilla 1.30 same tag			#Formerly LIP, changed in 1.28 to avoid conflicts
+LPP = "countries/Lippe.txt"			#Formerly LIP, changed in 1.28 to avoid conflicts
 HOH = "countries/Hohenzollern.txt"
-#Dub removed KNS added in vanilla 1.30 as KNZ
+KNS = "countries/Konstanz.txt"
 HEL = "countries/Heilbronn.txt"
 DRM = "countries/Darmstadt.txt"
 FLD = "countries/Fulda.txt"
-#Dub removed RGN added in vanilla 1.30 as REG
-#Dub removed BMB added in vanilla 1.30 as BAM
-#Dub removed BYR added in vanilla 1.30 as BYT
+RGN = "countries/Regensburg.txt"
+BMB = "countries/Bamberg.txt"
+BYR = "countries/Bayreuth.txt"
 KMI = "countries/Kammin.txt" #Draiocht changed KMN to KMI fix for 1.26 conflict
-#Dub removed RPN added in vanilla 1.30 as RUP
+RPN = "countries/Ruppin.txt"
 STR = "countries/Stargard.txt"
 OSL = "countries/OselWiek.txt"
 DRP = "countries/Dorpat.txt"
@@ -113,11 +113,11 @@ YLT = "countries/Yelets.txt"
 #Draiocht removed OKA added in vanilla 1.16 same tag
 #Draiocht removed RST added in vanilla 1.22 as RSO
 FRE = "countries/Frisia.txt"
-#Dub removed LTH added in vanilla 1.30 as LOT
-#Dub removed FNC added in vanilla 1.30 as FKN
-#Dub removed SWB added in vanilla 1.30 as SWA
-#Dub removed OSN added in vanilla 1.30 same tag
-#Dub removed PDB added in vanilla 1.30 as PAD
+LTH = "countries/Lotharingia.txt"
+FNC = "countries/Franconia.txt"
+SWB = "countries/Swabia.txt"
+OSN = "countries/Osnabruck.txt"
+PDB = "countries/Paderborn.txt"
 HOY = "countries/Hoya.txt"
 KCH = "countries/Khachen.txt"
 SHE = "countries/Sheki.txt"
@@ -135,7 +135,7 @@ LTE = "countries/LatinEmpire.txt"			#For compatibility with Dub's BR addon. No c
 #Britannia
 WEX = "countries/Wexford.txt"
 CLN = "countries/Clandeboye.txt"
-#Dub removed GRL added in vanilla 1.30 as TTL
+GRL = "countries/GreyLeagues.txt"
 #Draiocht removed MLA added in vanilla 1.28 as MJO
 #Draiocht removed VAL added in vanilla 1.28 same tag
 TNA = "countries/TirnanGael.txt"
@@ -143,19 +143,6 @@ YYK = "countries/YnysyKedyrn.txt"
 JER = "countries/JerseyandGuernsey.txt"
 WMC = "countries/WelshMarches.txt"
 UNK = "countries/UnitedKingdomBT.txt"
-#BT Unofficial Additions by Dub & JP:
-IVE = "countries/Iveagh.txt" #Magennis
-FGH = "countries/Fermanagh.txt" #Maguire
-MGH = "countries/Monaghan.txt" #McMahon
-BIF = "countries/Breifne.txt" #O'Rourke
-ECO = "countries/EastConnacht.txt" #O'Connor Don
-WCO = "countries/WestConnacht.txt" #O'Flaherty
-WTF = "countries/Waterford.txt" #Le Poer
-CST = "countries/Chester.txt" #Cores
-GLA = "countries/Glamorgan.txt" #Cores
-PEM = "countries/Pembroke.txt" #Cores, later Jasper Tudor
-BRC = "countries/Brecon.txt" #Cores
-LCA = "countries/Lancaster.txt" #Cores
 
 #Lands of the Rus'
 VYA = "countries/Vyatka.txt"
@@ -200,13 +187,13 @@ MTA = "countries/Matera.txt"
 LEC = "countries/Lecce.txt"
 TAN = "countries/Taranto.txt"
 ADR = "countries/Andria.txt"
-SRA = "countries/Sora.txt" #Dub changed from SOR to SRA in 1.30 due to tag conflict.
+SOR = "countries/Sora.txt"
 ATR = "countries/Atri.txt"
-ALT = "countries/Alatri.txt" #Dub changed from ALA to ALT in 1.30 due to tag conflict.
+ALA = "countries/Alatri.txt"
 TIV = "countries/Tivoli.txt"
 TNI = "countries/Terni.txt"
 NRC = "countries/Norcia.txt"
-#Dub removed SPO added in vanilla 1.30 as SPL
+SPO = "countries/Spoleto.txt"
 FMO = "countries/Fermo.txt"
 FLG = "countries/Foligno.txt"
 FAB = "countries/Fabriano.txt"
@@ -224,14 +211,14 @@ GRO = "countries/Grosetto.txt"
 DOV = "countries/Dovadola.txt"
 CUI = "countries/Chiusi.txt"
 RGO = "countries/Reggio.txt"			#Emilia, not the other one.
-#Dub removed PAD added in vanilla 1.30 as PDV
-#Dub removed VRN added in vanilla 1.30 same tag
+PAD = "countries/Padua.txt"
+VRN = "countries/Verona.txt"
 VCZ = "countries/Vicenza.txt"			#This tag will be cut in 11.0, assuming I remember. Not actually needed or used
 FTR = "countries/Feltre.txt"
 BLL = "countries/Belluno.txt"
 TST = "countries/Trieste.txt"
 BSC = "countries/Brescia.txt"
-BGM = "countries/Bergamo.txt" #Dub changed from BRG to BGM in 1.30 due to tag conflict.
+BRG = "countries/Bergamo.txt"
 CMO = "countries/Como.txt"
 NVA = "countries/Novara.txt"
 PCZ = "countries/Piacenza.txt"
@@ -254,7 +241,7 @@ BAI = "countries/Bari.txt"
 CDA = "countries/Candia.txt"
 GZR = "countries/Gazaria.txt"
 TRV = "countries/Treviso.txt"			#Added in a hotfix to 10.0
-CBR = "countries/Calabria.txt"			#Regional cores for shattering. Dub change from CLB to CBR in 1.30 due to tag conflict.
+CLB = "countries/Calabria.txt"			#Regional cores for shattering
 LCN = "countries/Lucania.txt"			#Regional cores for shattering, note relocalising this to Salerno is a viable option for the autonomous duchy under Naples
 ABR = "countries/Abruzzo.txt"			#Regional cores for shattering
 APU = "countries/Apulia.txt"			#Formable, regional cores for shattering
@@ -266,20 +253,13 @@ UMB = "countries/Umbria.txt"			#Formable
 #Benevento
 
 #Balkans
-#Dub removed DSS added in vanilla 1.30 as HRZ
+DSS = "countries/SaintSava.txt"
 DRJ = "countries/Dobruja.txt"
 VBZ = "countries/Velbazhd.txt"
 BDN = "countries/Vidin.txt"	
 RIJ = "countries/Rijeka.txt"	
 #KRN = "countries/Kran.txt"			#appanage for Aldimir family, ambiguous tag, could be an estate
 #KPS = "countries/Kopsis.txt"			#Another Bulgarian appanage, and another ambiguous tag which could be easily an estate
-#BT Additions by Dub & JP:
-SLA = "countries/Slavonia.txt"
-SEV = "countries/Severin.txt"
-CUM = "countries/Cumania.txt"
-SZE = "countries/Szeklerland.txt"
-LHU = "countries/LowerHungary.txt"
-UHU = "countries/UpperHungary.txt"
 
 #Scandinavia
 GTA = "countries/Gotaland.txt"			#Core only stolen from Neprut
@@ -294,18 +274,18 @@ PMS = "countries/Pomesania.txt"
 KUL = "countries/Kulm.txt"
 ROS = "countries/Rostock.txt"
 STP = "countries/Stolp.txt"
-#Dub removed STT added in vanilla 1.30 as STE
-#Dub removed WLG added in vanilla 1.30 as WOL
-#Dub removed RUG added in vanilla 1.30 same tag
+STT = "countries/Stettin.txt"
+WLG = "countries/Wolgast.txt"
+RUG = "countries/Rugen.txt"
 #SWR = "countries/Schwerin.txt"
 
 #France
-ANJ = "countries/ProvenceBT.txt"
+ANJ = "countries/Anjou.txt"
 VNE = "countries/Vienne.txt"
 TOL = "countries/Toul.txt"
 STV = "countries/Stavelot.txt"
 TOA = "countries/Tournai.txt"
-TRN = "countries/Saint Pol.txt"	#Changed from SPL to TRN to avoid conflicts with new 1.30 tags
+SPL = "countries/Saint Pol.txt"
 LGR = "countries/Langres.txt"
 RHM = "countries/Rheims.txt"
 LAO = "countries/Laon.txt"
@@ -316,38 +296,9 @@ LXL = "countries/Luxeuil.txt"
 
 #Iberia
 AOR = "countries/Andorra.txt"
-#Iberia 1400 Kingdoms of Castille, revolter tags.
-TLD = "countries/Toledo.txt" #Wholeheartedly stolen from Shattered Europe, adjusted to TLD because Draiocht used TOL for Toul.
-SVL = "countries/Seville.txt"
-MUR = "countries/Murcia.txt"
-JAE = "countries/Jaen.txt"
-CDB = "countries/Cordoba.txt"
 
 #Germany
 #CJK = "countries/Cuijk.txt"
-
-#Poland and Bohemia
-#1444
-LEG = "countries/Legnica.txt"
-OLE = "countries/Oels.txt"
-TRO = "countries/Troppau.txt"
-KLU = "countries/Kreuzburg.txt"
-NIE = "countries/Niesse.txt"
-RAC = "countries/Ratibor.txt"
-TES = "countries/Teschen.txt"
-ASC = "countries/Auschwitz.txt"
-#Cores
-EGR = "countries/Eger.txt"
-KRO = "countries/Crossen.txt"
-SAG = "countries/Sagan.txt"
-JAW = "countries/Jawor.txt"
-BAU = "countries/Breslau.txt"
-SWD = "countries/Swidnica.txt"
-MST = "countries/Munsterberg.txt"
-BEG = "countries/Brieg.txt"
-BET = "countries/Beuthen.txt"
-SCI = "countries/Steinau.txt"
-NAM = "countries/Namslau.txt"
 
 ########################################
 #Africa
@@ -355,7 +306,7 @@ NAM = "countries/Namslau.txt"
 #Draiocht removed RBR added in vanilla 1.28 as SLE
 #RBR = "countries/RepublicofSale.txt"
 ANF = "countries/Anfa.txt"
-RGR = "countries/Regraga.txt"
+REG = "countries/Regraga.txt"
 RIF = "countries/Riffans.txt"			#Core only stolen from Neprut
 HAW = "countries/Hawwara.txt"
 SLK = "countries/Shilluk.txt"

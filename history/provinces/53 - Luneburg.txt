@@ -5,7 +5,7 @@
 owner = LUN
 controller = LUN
 add_core = LUN
-culture = lower_saxon
+culture = hannoverian
 religion = catholic
 capital = "Lüneburg"
 trade_goods = salt

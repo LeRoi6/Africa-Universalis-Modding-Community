@@ -14,7 +14,7 @@ trade_goods = wine			#For no special reason
 is_city = yes
 hre = no
 fort_15th = yes
-add_local_autonomy = 10
+estate = estate_dhimmi
 
 discovered_by = KAZ
 discovered_by = CRI

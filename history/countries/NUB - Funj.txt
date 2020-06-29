@@ -39,7 +39,6 @@ capital = 2799	# Sennar
 
 1523.1.1 = { 
 	religion = sunni
-	religious_school = maliki_school
 	add_piety = -0.3
 }
 

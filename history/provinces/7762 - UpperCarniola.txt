@@ -1,8 +1,8 @@
 #BT Balkans reoverhaul
 
-owner = CLI
-controller = CLI
-add_core = CLI
+owner = HAB
+controller = HAB
+add_core = HAB
 culture = austrian
 religion = catholic
 capital = "Gottschee"			#Not founded until sometime between 1340 & 1360, but whatever
@@ -11,8 +11,7 @@ base_production = 3
 base_manpower = 2
 trade_goods = naval_supplies			#a wooded plateau with significant spruce forests
 is_city = yes
-hre = yes
-add_core = CNL
+hre = no
 
 discovered_by = KAZ
 discovered_by = CRI

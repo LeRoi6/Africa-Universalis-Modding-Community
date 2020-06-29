@@ -5,7 +5,7 @@
 owner = LAU
 controller = LAU
 add_core = LAU
-culture = lower_saxon
+culture = hannoverian
 religion = catholic
 capital = "Lauenburg"
 trade_goods = salt

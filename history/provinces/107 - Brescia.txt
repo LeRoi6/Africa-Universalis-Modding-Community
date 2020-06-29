@@ -88,14 +88,14 @@ discovered_by = eastern
 	add_core = FRA
 } # Treaty of Campo Formio
 1802.6.26 = {
-	owner = ITL
-	controller = ITL
-	add_core = ITL
+	owner = ITA
+	controller = ITA
+	add_core = ITA
 	remove_core = FRA
 } # Merged with the Cisalpine Republic
 1814.4.11 = {
 	owner = HAB
 	controller = HAB
 	add_core = HAB
-	remove_core = ITL
+	remove_core = ITA
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally

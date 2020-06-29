@@ -1,7 +1,3 @@
-#Updated by C1CK
-#Worked fine, except for when it strayed into Russia and Ruthenia
-#Has no changes besides updating claims for BT
-
 tatar_missions_1 = {
 	slot = 1
 	generic = no
@@ -176,6 +172,7 @@ tatar_missions_1 = {
 			}
 		}
 	}
+
 	mission_conquer_persia_tatars = {
 		icon = mission_persian_soldiers
 		required_missions = { mission_conquer_caucausus mission_conquer_samarkand }
@@ -638,7 +635,7 @@ tatar_missions_2 = {
 	}
 	has_country_shield = yes
 
-	crimean_expansion_horde = { #Updated by C1CK
+	crimean_expansion_horde = {
 		icon = mission_non-western_soldiers
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -646,18 +643,8 @@ tatar_missions_2 = {
 				area = azov_area
 				area = crimea_area
 				area = northern_crimea_area
-				area = lower_dnieper_area
-				area = lower_dnieper_area
-				area = pryazovia_area
-				area = sloboda_ukraine_area
-				province_id = 7257 #Samara
-				province_id = 2411 #Mansur
-				province_id = 7202 #Donetsk
-				province_id = 3302 #Bahmut
-				province_id = 7204 #Lugansk
 			}
 			NOT = {
-				province_id = 2406 #Perevizka
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -676,36 +663,6 @@ tatar_missions_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			lower_dnieper_area = {
-				type = all
-				OR = {
-					province_id = 2406 #Perevizka
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-			}
-			pryazovia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			sloboda_ukraine_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			7257 = { #Samara
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			2411 = { #Mansur
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			7202 = { #Donetsk
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			3302 = { #Bahmut
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			7204 = { #Lugansk
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 		}
 		effect = {
 			zaporizhia_area = {
@@ -750,6 +707,20 @@ tatar_missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			cherkasy_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			western_zaporizhia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
 			pryazovia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -764,16 +735,9 @@ tatar_missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			severia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
-	ruin_ruthenia = { #Updated by C1CK
+	ruin_ruthenia = {
 		icon = mission_steppe_warriors
 		required_missions = { crimean_expansion_horde }
 		provinces_to_highlight = {
@@ -784,9 +748,10 @@ tatar_missions_2 = {
 				area = west_dniepr_area
 				area = east_dniepr_area
 				area = podolia_volhynia_area
+				area = cherkasy_area
+				area = western_zaporizhia_area
 				area = pryazovia_area
 				area = lower_dnieper_area
-				area = severia_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -817,15 +782,19 @@ tatar_missions_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			cherkasy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_zaporizhia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			pryazovia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			lower_dnieper_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			severia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -837,7 +806,7 @@ tatar_missions_2 = {
 			add_horde_unity = 25
 		}
 	}
-	subjugate_ryazan_horde = { #Updated by C1CK
+	subjugate_ryazan_horde = {
 		icon = mission_cossack_cavalry
 		provinces_to_highlight = {
 			province_id = 301
@@ -866,7 +835,7 @@ tatar_missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			suzdal_area = { #Zalesye
+			suzdal_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -887,21 +856,7 @@ tatar_missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#vladimir_area = { #This is no longer vladimir in BT
-			#	limit = {
-			#		NOT = { is_permanent_claim = ROOT	}
-			#		NOT = { is_core = ROOT	}
-			#	}
-			#	add_permanent_claim = ROOT
-			#}
-			beloozero_area = { #Bezhetsk
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			novgorod_area = {
+			vladimir_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -910,19 +865,17 @@ tatar_missions_2 = {
 			}
 		}
 	}
-	tatar_yoke_mission = { #Updaed by C1CK
+	tatar_yoke_mission = {
 		icon = mission_non-western_cavalry_raid
 		required_missions = { subjugate_ryazan_horde }
 		provinces_to_highlight = {
 			OR = {
 				area = ryazan_area
 				area = moscow_area
-				area = suzdal_area #Zalesye
+				area = suzdal_area
 				area = tver_area
 				area = yaroslavl_area
-				#area = vladimir_area #This is no longer vladimir in BT
-				area = beloozero_area #Bezhetsk
-				area = novgorod_area
+				area = vladimir_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -937,7 +890,7 @@ tatar_missions_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			suzdal_area = { #Zalesye
+			suzdal_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -949,15 +902,7 @@ tatar_missions_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			#vladimir_area = { #This is no longer vladimir in BT
-			#	type = all
-			#	country_or_non_sovereign_subject_holds = ROOT
-			#}
-			beloozero_area = { #Bezhetsk
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			novgorod_area = {
+			vladimir_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

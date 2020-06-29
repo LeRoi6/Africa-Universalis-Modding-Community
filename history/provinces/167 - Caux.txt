@@ -8,6 +8,7 @@ add_core = FRA
 add_core = NRM
 capital = "Rouen"
 is_city = yes
+estate = estate_burghers
 culture = normand
 religion = catholic
 hre = no

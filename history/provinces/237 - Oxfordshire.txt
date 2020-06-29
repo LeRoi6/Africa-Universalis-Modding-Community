@@ -1,6 +1,6 @@
 #237 - Oxfordshire
 #Region - Britain
-#Area - Essex
+#Area - Mercia
 
 owner = ENG
 controller = ENG
@@ -8,11 +8,11 @@ culture = english
 religion = catholic
 hre = no
 base_tax = 4 
-base_production = 3
+base_production = 4
+trade_goods = bt_trade_good_beer
 base_manpower = 2 
-trade_goods = bt_trade_good_books # Includes Reading (Well, not any more)
 capital = "Oxford"
-is_city = yes 
+is_city = yes # Includes Reading
 add_core = ENG
 seat_in_parliament = yes
 

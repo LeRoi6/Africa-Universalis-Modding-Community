@@ -1,8 +1,3 @@
-#Updated by C1CK 28-01-2020
-#Was Mostly up-to-date except for unaccounted Ireland Region, and new Northumbria area
-#Has no changes besides updating claims for BT
-
-
 ire_conquest_1 = {
 	slot = 1
 	generic = no
@@ -64,7 +59,7 @@ ire_conquest_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			3009 = {
+			4379 = {
 				if = {
 					limit = {
 						NOT = {
@@ -163,7 +158,7 @@ ire_conquest_main = {
 				}
 				add_permanent_claim = ROOT
 			}
-			3009 = {
+			4379 = {
 				if = {
 					limit = {
 						NOT = {
@@ -207,7 +202,7 @@ ire_conquest_main = {
 				area = ulster_area
 				area = connacht_area
 				area = munster_area
-				province_id = 3009
+				province_id = 4379
 				province_id = 4120
 				province_id = 374
 			}
@@ -228,7 +223,7 @@ ire_conquest_main = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			3009 = {
+			4379 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			4120 = {
@@ -298,7 +293,7 @@ ire_conquest_main = {
 			}
 		}
 	}
-	conquer_wales = { #Updated by C1CK
+	conquer_wales = {
 		icon = mission_rb_conquer_wales
 		required_missions = { beyond_the_pale }
 		provinces_to_highlight = {
@@ -328,23 +323,15 @@ ire_conquest_main = {
 				}
 				add_permanent_claim = ROOT
 			}
-			cornwall_area = { #Added by C1CK, used to be part of Wessex
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
-	conquer_west_england = { #Updated by C1CK
+	conquer_west_england = {
 		icon = mission_rb_invade_england
 		required_missions = { conquer_wales }
 		provinces_to_highlight = {
 			OR = {
 				area = west_midlands_area
 				area = wessex_area
-				area = cornwall_area #Added by C1CK, used to be part of Wessex
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -356,10 +343,6 @@ ire_conquest_main = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			wessex_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			cornwall_area = { #Added by C1CK, used to be part of Wessex
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -519,7 +502,7 @@ ire_conquest_2 = {
 			}
 		}
 	}
-	ire_conquer_scotland = { #Updated by C1CK
+	ire_conquer_scotland = {
 		icon = mission_rb_conquer_scotland
 		required_missions = { ire_conquer_isles }
 		provinces_to_highlight = {
@@ -557,33 +540,19 @@ ire_conquest_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			northern_england_area = { #Northumbria, Added by C1CK
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
-	ire_rule_britannia = { #Updated by C1CK
+	ire_rule_britannia = {
 		icon = mission_rb_rule_britannia_irish_version
 		required_missions = { ire_conquer_scotland conquer_west_england }
 		provinces_to_highlight = {
-			OR = {
-				region = british_isles_region
-				region = ireland_area #Added by C1CK
-			}
+			region = british_isles_region
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
 			british_isles_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			ireland_area = { #Added by C1CK
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -642,7 +611,7 @@ ire_conquest_4 = {
 		required_missions = { }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 3009
+				province_id = 4379
 				province_id = 4120
 				province_id = 374
 			}
@@ -651,7 +620,7 @@ ire_conquest_4 = {
 			}
 		}
 		trigger = {
-			3009 = {
+			4379 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			4120 = {
@@ -752,7 +721,6 @@ ire_colonial_missions = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
 					colonial_region = colonial_eastern_america
-					is_city = yes
 				}
 			}
 		}
@@ -785,7 +753,6 @@ ire_colonial_missions = {
 						continent = new_world
 						continent = north_america
 					}
-					is_city = yes
 				}
 			}
 		}

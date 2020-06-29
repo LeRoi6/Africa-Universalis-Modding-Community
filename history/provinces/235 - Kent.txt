@@ -1,27 +1,21 @@
 #235 - Kent
 #Region - Britain
-#Area - Essex
+#Area - Wessex
 
 owner = ENG
 controller = ENG
 culture = english
 religion = catholic
 hre = no
-base_tax = 4
+base_tax = 5
+base_production = 5
+trade_goods = bt_trade_good_beer
 base_manpower = 3
-base_production = 4
-trade_goods = bt_trade_good_books #Canterbury being a major religious centre for Catholics and later Anglicans. Also has Rochester Cathedral, the 2nd oldest Cathedral in Europe after Canterbury in 1st.
 capital = "Canterbury"
+estate = estate_church
 is_city = yes
 add_core = ENG
-
 seat_in_parliament = yes
-fort_15th = yes 
-
-add_permanent_province_modifier = {
-	name = cinque_ports_modifier
-	duration = -1
-}
 
 discovered_by = western
 discovered_by = muslim

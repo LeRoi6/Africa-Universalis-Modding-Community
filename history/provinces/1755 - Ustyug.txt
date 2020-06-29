@@ -1,6 +1,6 @@
 #1755 - Ustyug
 #Region - Russia
-#Area - Perm
+#Area - Pomorye
 
 owner = RSO			# Appears to have been its own principality, subordinate to Rostov until 1474 (also the date Rostov was annexed)
 controller = RSO
@@ -14,7 +14,6 @@ base_manpower = 2
 capital = "Ustyug"
 is_city = yes
 add_core = RSO
-add_core = NOV # Novgorodian claims
 
 
 discovered_by = eastern

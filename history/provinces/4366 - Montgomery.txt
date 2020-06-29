@@ -1,20 +1,20 @@
-#4366 - Montgomery
+#3033 - Powys
 #Region - Britain
-#Area - Powys
+#Area - Wales
 
 owner = WMC
 controller = WMC
 culture = welsh
 religion = catholic
 hre = no
-base_tax = 1
-base_production = 2
+base_tax = 2 
+base_production = 3 
 trade_goods = iron
-base_manpower = 1
+base_manpower = 2 
 capital = "Gwyddelwern"
 is_city = yes
 add_core = WMC
-add_core = WLS
+add_core = WLS 
 
 discovered_by = western
 discovered_by = muslim

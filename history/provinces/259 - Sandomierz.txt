@@ -5,11 +5,11 @@ controller = POL
 capital = "Sandomierz"
 culture = polish
 religion = catholic
-trade_goods = bt_trade_good_beer #Was cloth
+trade_goods = cloth
 hre = no
-base_tax = 3
-base_production = 2
-base_manpower = 2
+base_tax = 6
+base_production = 6
+base_manpower = 3
 is_city = yes
 add_core = POL
 

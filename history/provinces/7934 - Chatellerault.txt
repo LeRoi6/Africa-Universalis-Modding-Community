@@ -68,8 +68,8 @@ discovered_by = eastern
 
 #1444 on
 1447.1.1 = {
-	owner = PRO
-	controller = PRO
-	add_core = PRO
+	owner = ANJ
+	controller = ANJ
+	add_core = ANJ
 	remove_core = FRA
 }	#Jean VII d'Harcourt gives Chatellerault to the d'Anjou family, specifically Charles IV of Maine, in 1447

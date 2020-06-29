@@ -13,6 +13,7 @@ base_production = 6
 trade_goods = sugar
 base_manpower = 4 
 capital = "Almería"
+estate = estate_nobles
 is_city = yes
 
 

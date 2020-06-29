@@ -1,4 +1,7 @@
-#Updated and scriptified by Dub.
+ ##################################################
+ ##### Dub's Mission Work - All credit to Dub for this #####
+ ##################################################
+#Updated vanilla missions to BT. Updates done by Dub.
 prussian_missions_main_slot = {
 	slot = 1
 	generic = no
@@ -8,9 +11,6 @@ prussian_missions_main_slot = {
 			tag = BRA
 			tag = PRU
 		}
-		NOT = {
-			has_dlc = "Emperor"
-		}
 	}
 	has_country_shield = yes
 
@@ -18,17 +18,13 @@ prussian_missions_main_slot = {
 		icon = mission_have_two_subjects
 		required_missions = { }
 		provinces_to_highlight = {
-			reclaim_neumark_provinces = yes
+			province_id = 49
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_highlighted 
-				provinces=reclaim_neumark_provinces
-				owner_type=owned_by
-			}
+			owns_core_province = 49
 		}
 		effect = {
 			#Claims
@@ -65,9 +61,9 @@ prussian_missions_main_slot = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-				provinces=pru_conquer_pomerania_provinces
-				owner_type=country_or_non_sovereign_subject_holds
+				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
+				PROVINCES=pru_conquer_pomerania_provinces
+				OWNER_TYPE=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -99,9 +95,9 @@ prussian_missions_main_slot = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-				provinces=connect_the_prussian_lands_provinces
-				owner_type=country_or_non_sovereign_subject_holds
+				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
+				PROVINCES=connect_the_prussian_lands_provinces
+				OWNER_TYPE=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -142,9 +138,9 @@ prussian_missions_main_slot = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-				provinces=pru_conquer_silesia_provinces
-				owner_type=country_or_non_sovereign_subject_holds
+				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
+				PROVINCES=pru_conquer_silesia_provinces
+				OWNER_TYPE=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -209,9 +205,9 @@ prussian_missions_main_slot = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-				provinces=pru_duchy_of_cleves_provinces
-				owner_type=country_or_non_sovereign_subject_holds
+				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
+				PROVINCES=pru_duchy_of_cleves_provinces
+				OWNER_TYPE=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -247,9 +243,6 @@ prussian_missions_slot_2 = {
 			tag = BRA
 			tag = PRU
 		}
-		NOT = {
-			has_dlc = "Emperor"
-		}
 	}
 	has_country_shield = yes
 	prussia_partitions_poland = {
@@ -264,9 +257,9 @@ prussian_missions_slot_2 = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-				provinces=prussia_partitions_poland_provinces
-				owner_type=country_or_non_sovereign_subject_holds
+				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
+				PROVINCES=prussia_partitions_poland_provinces
+				OWNER_TYPE=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -276,7 +269,7 @@ prussian_missions_slot_2 = {
 			}
 			
 			#Claims, to mirror further Polish partitions.
-			#2nd Partition provinces (Except 256 & 4525 in Mazovia)
+			#2nd Partition provinces (Roughly, missing Plock)
 			kuyavia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -284,14 +277,16 @@ prussian_missions_slot_2 = {
 				}
 				add_claim = ROOT
 			}
-			central_poland_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+			254 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
 			}
-			#3rd Partition provinces (Including 256 & 4525 in Mazovia, plus the part of the 257 & 3220 that technically went to the Habsburgs.)
+			#3rd Partition provinces (Roughly, including Plock)
 			mazovia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -299,12 +294,23 @@ prussian_missions_slot_2 = {
 				}
 				add_claim = ROOT
 			}
-			yotvingia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+			3225 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
+			}
+			3220 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_claim = ROOT
+				}
 			}
 		}
 	}

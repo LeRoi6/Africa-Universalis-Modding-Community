@@ -1,8 +1,3 @@
-#Updated by C1CK
-#Only had minor issues with slightly dodgy claims, and the Great Mosque of Kairouan being in the wrong place
-#Has no changes besides updating claims for BT
-#Scriptified by Dub.
-
 gc_tunis_1 = {
 	slot = 1
 	generic = no
@@ -16,21 +11,45 @@ gc_tunis_1 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	gc_tun_tribes = { #Updated by C1CK
+	gc_tun_tribes = {
 		icon = mission_pacify_the_berbers
 		required_missions = { }
 		
 		provinces_to_highlight = {
-			gc_tun_tribes_provinces = yes
+			OR = {
+				province_id = 4567
+				province_id = 2449
+				province_id = 2448
+				area = north_saharan_area
+				area = ouled_nail_area
+				area = tripolitania_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-                provinces=gc_tun_tribes_provinces
-                owner_type=country_or_non_sovereign_subject_holds
-            }
+			custom_trigger_tooltip = {
+				tooltip = tun_tribes_tooltip
+				fezzan_area = {
+					type = all
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_empty = yes
+					}
+				}
+			}
+			north_saharan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ouled_nail_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tripolitania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -39,7 +58,7 @@ gc_tunis_1 = {
 			}
 		}
 	}
-	gc_tun_sahara = { #Updated by C1CK
+	gc_tun_sahara = {
 		icon = mission_traverse_the_sahara
 		required_missions = { gc_tun_tribes }
 		
@@ -57,7 +76,7 @@ gc_tunis_1 = {
 					}
 				}
 				AND = {
-					province_id = 2474 #Murzuq
+					province_id = 2448
 					NOT = {
 						owned_by = ROOT
 						is_core = ROOT
@@ -71,13 +90,24 @@ gc_tunis_1 = {
 				has_building = marketplace
 				owned_by = ROOT
 			}
-			owns_core_province = 2474 #Murzuq
+			owns_core_province = 2448
 			341 = {
 				is_strongest_trade_power = ROOT
 			}
 		}
 		effect = {
-			if = { #Djabo
+			if = {
+				limit = {
+					2474 = {
+						is_empty = yes
+					}
+				}
+				2474 = {
+					add_core = ROOT
+					cede_province = ROOT
+				}
+			}
+			if = {
 				limit = {
 					2475 = {
 						is_empty = yes
@@ -88,12 +118,21 @@ gc_tunis_1 = {
 					cede_province = ROOT
 				}
 			}
-			give_permaclaims_for_mission = { mission=gc_tun_air }
 			azbin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				discover_country = ROOT	
+				add_permanent_claim = ROOT
 			}
 			east_azbin_area = {
-				discover_country = ROOT			
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				discover_country = ROOT
+				add_permanent_claim = ROOT				
 			}
 			katsina_area = {
 				discover_country = ROOT
@@ -105,32 +144,52 @@ gc_tunis_1 = {
 		required_missions = { gc_tun_sahara }
 		
 		provinces_to_highlight = {
-			gc_tun_air_provinces = yes
+			OR = {
+				area = azbin_area
+				area = east_azbin_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-                provinces=gc_tun_air_provinces
-                owner_type=country_or_non_sovereign_subject_holds
-            }
+			azbin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_azbin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			add_country_modifier = {
 				name = "conquest_of_air"
 				duration = 7300
 			}
-			give_permaclaims_for_mission = { mission=gc_tun_kanem }
 			katsina_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				discover_country = ROOT
+				add_permanent_claim = ROOT
 			}
 			kanem_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				discover_country = ROOT
+				add_permanent_claim = ROOT
 			}
 			bornu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				discover_country = ROOT
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -139,17 +198,28 @@ gc_tunis_1 = {
 		required_missions = { gc_tun_air }
 		
 		provinces_to_highlight = {
-			gc_tun_kanem_provinces = yes
+			OR = {
+				area = katsina_area
+				area = kanem_area
+				area = bornu_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-                provinces=gc_tun_kanem_provinces
-                owner_type=country_or_non_sovereign_subject_holds
-            }
+			katsina_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kanem_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bornu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -198,17 +268,6 @@ gc_tunis_2 = {
 		effect = {
 			add_treasury = 500
 			add_yearly_sailors = 5
-			220 = { #Valencia
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
 		}
 	}	
 	gc_tun_valencia = {
@@ -252,7 +311,7 @@ gc_tunis_3 = {
 	}
 	has_country_shield = yes
 	
-	gc_tun_fleet = { #Updated by C1CK
+	gc_tun_fleet = {
 		icon = mission_construct_a_corsair_fleet
 		required_missions = { }
 		
@@ -261,33 +320,98 @@ gc_tunis_3 = {
 			num_of_light_ship = 5
 		}
 		effect = {
-			give_permaclaims_for_mission = { mission=gc_tun_med_islands }
-			give_permaclaims_for_mission = { mission=gc_tun_barbary_coast }
+			sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			corsica_sardinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			baleares_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			barbary_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hautes_plaines_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	gc_tun_med_islands = { #Updated by C1CK
+	gc_tun_med_islands = {
 		icon = mission_seize_the_isles
 		required_missions = { gc_tun_fleet }
 		
 		provinces_to_highlight = {
-			gc_tun_med_islands_provinces = yes
+			OR = {
+				area = sicily_area
+				area = corsica_sardinia_area
+				area = baleares_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-                provinces=gc_tun_med_islands_provinces
-                owner_type=country_or_non_sovereign_subject_holds
-            }
+			sicily_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			baleares_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			add_country_modifier = {
 				name = "tun_med_conquest"
 				duration = 7300
 			}
-			give_permaclaims_for_mission = { mission=gc_tun_east_med_islands }
-			101 = { #Genoa
+			163 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			320 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			321 = {
 				if = {
 					limit = {
 						NOT = {
@@ -300,28 +424,36 @@ gc_tunis_3 = {
 			}
 		}
 	}
-	gc_tun_east_med_islands = { #Updated by C1CK
+	gc_tun_east_med_islands = {
 		icon = mission_dominate_the_mediterranean
 		required_missions = { gc_tun_med_islands }
 		
 		provinces_to_highlight = {
-			gc_tun_east_med_islands_provinces = yes
+			OR = {
+				province_id = 163
+				province_id = 320
+				province_id = 321
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-                provinces=gc_tun_east_med_islands_provinces
-                owner_type=country_or_non_sovereign_subject_holds
-            }
+			163 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			320 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			321 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			add_country_modifier = {
 				name = "tun_med_conquest_east"
 				duration = 7300
 			}
-			112 = { #Venice
+			112 = {
 				if = {
 					limit = {
 						NOT = {
@@ -390,16 +522,22 @@ gc_tunis_4 = {
 		position = 2
 		
 		provinces_to_highlight = {
-			gc_tun_barbary_coast_provinces = yes
+			OR = {
+				area = barbary_coast_area
+				area = hautes_plaines_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-                provinces=gc_tun_barbary_coast_provinces
-                owner_type=country_or_non_sovereign_subject_holds
-            }
+			barbary_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hautes_plaines_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			add_yearly_sailors = 3
@@ -409,7 +547,7 @@ gc_tunis_4 = {
 			}
 		}
 	}
-	gc_tun_privateer = { #Updated by C1CK
+	gc_tun_privateer = {
 		icon = mission_sponsor_piracy
 		required_missions = { gc_tun_barbary_coast gc_tun_ottomans }
 		
@@ -456,24 +594,55 @@ gc_tunis_4 = {
 			country_event = {
 				id = flavor_tun.1
 			}
-			give_permaclaims_for_mission = { mission=gc_tun_morocco }
+			northern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			marrekesh_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	gc_tun_morocco = { #Updated by C1CK
+	gc_tun_morocco = {
 		icon = mission_moroccan_ports
 		required_missions = { gc_tun_privateer }
 		
 		provinces_to_highlight = {
-			gc_tun_morocco_provinces = yes
+			OR = {
+				area = northern_morocco_area
+				area = western_morocco_area
+				area = marrekesh_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-                provinces=gc_tun_morocco_provinces
-                owner_type=country_or_non_sovereign_subject_holds
-            }
+			northern_morocco_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_morocco_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			marrekesh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -498,7 +667,7 @@ gc_tunis_5 = {
 	}
 	has_country_shield = yes
 	
-	gc_tun_ottomans = { #Updated by C1CK
+	gc_tun_ottomans = {
 		icon = mission_ottoman_diplomacy
 		required_missions = {  }
 		position = 2
@@ -516,41 +685,63 @@ gc_tunis_5 = {
 			}
 		}
 		effect = {
-			give_permaclaims_for_mission = { mission=gc_tun_alexandria }
+			358 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			cyrenaica_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	gc_tun_alexandria = { #Updated by C1CK
+	gc_tun_alexandria = {
 		icon = mission_conquer_alexandria
 		required_missions = { gc_tun_ottomans }
 		
 		provinces_to_highlight = {
-			gc_tun_alexandria_provinces = yes #Baked in only colonised provinces in trigger.
+			OR = {
+				area = cyrenaica_area
+				province_id = 358
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-                provinces=gc_tun_alexandria_provinces
-                owner_type=country_or_non_sovereign_subject_holds
-            }
+			358 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			cyrenaica_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			if = {
 				limit = {
 					has_dlc = "Dharma"
-					358 = { #Alexandria ain't a CoT in BT, so this is true 99% of the time unless another mission adds a CoT here.
+					358 = {
 						NOT = {
 							province_has_center_of_trade_of_level = 3
 						}
 					}
 				}
 				358 = {
-					add_or_spawn_center_of_trade = { level=1 }
+					add_center_of_trade_level = 1
 				}
 			}
-			else = { #Shame this will never trigger unless without Dharma.
-				358 = { 
+			else = {
+				358 = {
 					add_province_modifier = {
 						name = "tun_restoration_of_alexandra"
 						duration = -1
@@ -559,12 +750,12 @@ gc_tunis_5 = {
 			}
 		}
 	}
-	gc_tun_art_religion = { #Updated by C1CK
+	gc_tun_art_religion = {
 		icon = mission_patronize_art_and_religion
 		required_missions = { gc_tun_privateer }
 		
 		provinces_to_highlight = {
-			province_id = 2454
+			province_id = 4566
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = {
@@ -578,7 +769,7 @@ gc_tunis_5 = {
 		}
 		
 		trigger = {
-			2454 = { #Al-Qairawan
+			4566 = {
 				owned_by = ROOT
 				OR = {
 					has_building = temple

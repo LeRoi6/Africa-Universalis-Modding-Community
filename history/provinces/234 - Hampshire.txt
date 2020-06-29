@@ -1,4 +1,4 @@
-#234 - Hampshire
+#234 - Wessex
 #Region - Britain
 #Area - Wessex
 
@@ -7,11 +7,12 @@ controller = ENG
 culture = english
 religion = catholic
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 3
-trade_goods = naval_supplies #two major ports, Portsmouth and Southampton, as well as a large harbour protected by islands
-capital = "Winchester" #Keeping at Winchester for now, though it will become Southampton later on. Wiki says 1523 at the latest
+base_tax = 5
+base_production = 5
+trade_goods = naval_supplies
+base_manpower = 3 
+capital = "Salisbury"
+estate = estate_church
 is_city = yes
 add_core = ENG
  #Salisbury and Winchester Cathedrals

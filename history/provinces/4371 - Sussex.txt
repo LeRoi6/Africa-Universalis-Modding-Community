@@ -1,16 +1,16 @@
-#4371 - Sussex
+#3029 - Sussex
 #Region - Britain
-#Area - Essex
+#Area - Wessex
 
 owner = ENG
 controller = ENG
 culture = english
 religion = catholic
 hre = no
-base_tax = 4
-base_production = 3
-trade_goods = glass #first produced broad sheet glass known, generally major glass production. Was grain
-base_manpower = 2
+base_tax = 4 
+base_production = 4
+trade_goods = fish
+base_manpower = 2 
 capital = "Chichester"
 is_city = yes
 add_core = ENG

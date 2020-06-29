@@ -5,7 +5,7 @@
 owner = DTT
 controller = DTT
 add_core = DTT
-culture = lower_saxon
+culture = hannoverian
 religion = catholic
 hre = yes
 base_tax = 5 

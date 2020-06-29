@@ -1,16 +1,16 @@
 #236 - London
 #Region - Britain
-#Area - Essex
+#Area - East Anglia
 
 owner = ENG
 controller = ENG
 culture = english
 religion = catholic
 hre = no
-base_tax = 11
-base_production = 9
-base_manpower = 8
+base_tax = 14
+base_production = 14
 trade_goods = cloth
+base_manpower = 8
 capital = "London"
 is_city = yes
 add_core = ENG

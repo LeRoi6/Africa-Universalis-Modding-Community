@@ -2,8 +2,8 @@
 #Region - France
 #Area - Loire
 
-owner = PRO
-controller = PRO 
+owner = ANJ
+controller = ANJ 
 capital = "Angers"
 is_city = yes
 culture = angevin_culture
@@ -13,7 +13,7 @@ base_tax = 8
 base_production = 8			#Old centre of Angevin powers, and a considerable power in and off itself. Going slightly more that what is probably historical because pro tag lost vassal dev
 trade_goods = bt_trade_good_books			#Major university, and an important cultural and literary centre
 base_manpower = 5
-add_core = PRO
+add_core = ANJ
 fort_15th = yes
 
 extra_cost = 20

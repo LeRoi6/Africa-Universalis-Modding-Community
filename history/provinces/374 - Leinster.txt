@@ -1,4 +1,4 @@
-#374 - Leinster
+#374 - Wexford
 #Region - Ireland
 #Area - Leinster
 
@@ -8,12 +8,11 @@ add_core = LAI
 culture = irish
 religion = catholic
 hre = no
-base_tax = 2
-base_production = 3
-base_manpower = 2
-trade_goods = bt_trade_good_beer
-#trade_goods = copper			#Avoca and Glendalough copper mines, I couldnt decide on trade good, but copper or woods seemed the best bet to me
-capital = "Fearna Mór Maedhóg" #"Cill Mhantáin"
+base_tax = 4 
+base_production = 4 
+base_manpower = 2 
+trade_goods = copper			#Avoca and Glendalough copper mines, I couldnt decide on trade good, but copper or woods seemed the best bet to me
+capital = "Cill Mhantáin"
 is_city = yes
 
 

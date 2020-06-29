@@ -9,7 +9,7 @@
  PROV12:0 "Copenhagen"
  PROV15:0 "Ribe"
  PROV17:0 "Vestfold"                 #1.19 Scandinavia overhaul - removed
- PROV18:0 "Södra Lappland" 
+ PROV18:0 "South Lappland" 
  PROV22:0 "Hedmark"
  PROV26:0 "Halmstad"
  PROV29:0 "Tavastehus"
@@ -24,11 +24,11 @@
  PROV127:0 "Gallura"
  PROV136:0 "Zadar"
  PROV139:0 "Mostar"
- PROV140:0 "Doboj"
+ PROV140:0 "Lasva"
  PROV141:0 "Sumadija"
  PROV143:0 "Berat"
  PROV145:0 "Laconia"
- PROV152:0 "Varazdin"
+ PROV152:0 "Bjelovar"
  PROV160:0 "Craiova"
  PROV163:0 "Heraklion"
  PROV166:0 "Waldstätte"
@@ -41,17 +41,20 @@
  PROV200:0 "Montpellier"
  PROV204:0 "Grenoble"
  PROV206:0 "La Coruña"
+ PROV234:0 "Wessex"
  PROV237:0 "Oxford"
  PROV239:0 "Gloucester"
  PROV241:0 "Glamorgan"
+ PROV242:0 "Gwynedd"
  PROV243:0 "Lincoln"
  PROV244:0 "Lancaster"
+ PROV245:0 "Leeds"          #Reaplaces 3023 as of 1.25. Formerly York
  PROV249:0 "Ayr"
  PROV251:0 "Aberdeen"
  PROV253:0 "Outer Hebrides"
  PROV261:0 "Halych"
- #PROV265:0 "Brno"
- PROV268:0 "Dorohoi"
+ PROV265:0 "Brno"
+ PROV268:0 "Botosani"
  PROV313:0 "Arkhangelsk"
  PROV316:0 "Nicomedia"
  PROV317:0 "Prusa"
@@ -98,6 +101,11 @@
  PROV364:0 "Arish"
  PROV365:0 "Sinai"
  PROV366:0 "Las Palmas"
+ PROV372:0 "Tyrone"
+ PROV373:0 "Dublin"
+ PROV374:0 "Wicklow"
+ PROV375:0 "Thomond"          #Reaplaces 3012 as of 1.25. Formerly Cork
+ PROV376:0 "Galway"
  PROV377:0 "Aleppo"
  PROV378:0 "Tripoli"
  PROV379:0 "Judea"
@@ -138,7 +146,7 @@
  PROV486:0 "Bayaquitiri"
  PROV487:0 "Xaymaca"
  PROV488:0 "Yaguana"                #sources conflict, some saying Yaguana and some saying Guava... but the later sounds like a fruit joke
- PROV489:0 "Xarama"
+ PROV489:0 "Guárico"
  PROV490:0 "Higüey"
  PROV491:0 "Bonay"          #Can't find any indigenous name for Curacao, so just going with Bonay for both... not ideal, but better than a Portuguese name
  PROV493:0 "Tortola"            #Actually a anglicised Dutch name.... but I couldn't find a single native name for any of the islands, and they appear to have been uninhabited after around 1505 until the Dutch landed so.... going with this for now
@@ -240,7 +248,6 @@
  PROV1179:0 "Hessequa"
  PROV1180:0 "Mthatha"
  PROV1181:0 "Umgungundlovu"
- PROV1182:0 "Maputo"
  PROV1216:0 "Nuba"          #or Teqali
  PROV1217:0 "Latjoor"
  PROV1219:0 "Daju"          #or Marrah
@@ -266,8 +273,8 @@
  PROV1266:0 "Southern Norwegian Coast"
  PROV1269:0 "Southern Bight"
  PROV1270:0 "The Wash"
- #PROV1274:0 "Land's End"
- #PROV1275:0 "Coast of Brittany"
+ PROV1274:0 "Land's End"
+ PROV1275:0 "Coast of Brittany"
  PROV1279:0 "Wadden Sea"
  PROV1299:0 "Pentland Firth"
  PROV1300:0 "Sea of Sardinia"
@@ -544,9 +551,9 @@
  #PROV2954:0 "Djerba"            #Actually the same as vanilla, but adding here anyway to prevent changes with vanilla
  PROV2963:0 "Krajna"
  PROV2986:0 "Cagliari"
- PROV2991:0 "Forcalquier"
+ PROV2991:0 "Toulon"
  PROV2999:0 "Hormuz"
- PROV3002:0 "Lasva"
+ PROV3002:0 "Visegrad"
  PROV4033:0 "Gadarif"
  PROV4154:0 "Pyrenees"
  PROV4156:0 "West Caucasus Mountains"
@@ -561,18 +568,23 @@
  PROV4111:0 "Aunis"         #Formerly 3079
  PROV4112:0 "Quercy"         #Formerly 3082
  PROV4113:0 "Oulu"         #Formerly 3126
- PROV4114:0 "Norra Lappland"         #Formerly 3125
+ PROV4114:0 "Northern Lappland"         #Formerly 3125
  PROV4115:0 "Gomel"         #Formerly 3236
  PROV4116:0 "Oka"         #Formerly 3269
  PROV4117:0 "Uglich"         #Formerly 3274
+ PROV4118:0 "Cork"           #replaces 375 as of 1.25, which then replaced 3012. Was Desmond. Formerly formerly 3011 before that
+ PROV4119:0 "Sligo"         #Formerly 3013
+ PROV4120:0 "Kildare"           #Formerly 3008
+ PROV4121:0 "Antrim"            #New
  PROV4122:0 "Vaga"         #Formerly 3283
  PROV4123:0 "Pirkanmaa"         #Formerly 3129
  PROV4124:0 "Karjala"         #Formerly 3131
  PROV4125:0 "Heves"         #Formerly 3147
- #PROV4126:0 "Kiskun"         #Formerly 3149
- PROV4127:0 "Beszterce"         
+ PROV4126:0 "Kiskun"         #Formerly 3149
+ PROV4127:0 "Beszterce"         #Formerly 3153
  PROV4128:0 "Brassó"         #Formerly 3155
  PROV4129:0 "Ust-Vym"
+ PROV4130:0 "Somerset"         #Replaces 3031 as of 1.25, formerly Devon. Formerly formerly 3032 before that
  PROV4141:0 "Dithmarschen"           #Formerly 3136
  PROV4142:0 "Aarhus"
  PROV4143:0 "Østfold"                 #1.19 Scandinavia overhaul
@@ -595,7 +607,7 @@
  
  #1.21 changes
  PROV4236:0 "Trencín"                 #Formerly 3145
- #PROV4237:0 "Olomouc"         #Formerly 3144
+ PROV4237:0 "Olomouc"         #Formerly 3144
  PROV4238:0 "Lehnice"         #Formerly 3140
  PROV4239:0 "Belgrade"         #Formerly 3188 -changed again in 11.5
  PROV4240:0 "Fejér"         #Formerly 3150
@@ -662,6 +674,26 @@
  PROV4340:0 "Talysh"          #Formerly 3257
  
  #1.25 changes
+ PROV4361:0 "Selkirk"          #Formerly 3021
+ PROV4362:0 "Dumfries"          #Formerly 3020
+ PROV4363:0 "Argyll"          #Formerly 3018
+ PROV4364:0 "Inner Hebrides"          #Formerly 5099
+ PROV4365:0 "Mann"          #Formerly 3016
+ PROV4366:0 "Powys"          #Formerly 3033
+ PROV4367:0 "York"          #Formerly 245, which then replaced 3023
+ PROV4368:0 "Durham"          #Formerly 3022
+ PROV4369:0 "Dyfed"          #Formerly 3035
+ PROV4370:0 "Cambridge"          #Formerly 3027
+ PROV4371:0 "Sussex"          #Formerly 3029
+ PROV4372:0 "Warwick"          #Formerly 3025
+ PROV4373:0 "Devon"          #Formerly 4130, which then replaced 3031
+ PROV4374:0 "Dorset"          #Formerly 3030
+ PROV4375:0 "Chester"          #Formerly 3024
+ PROV4376:0 "Leicester"          #Formerly 3026
+ PROV4377:0 "Ormond"          #Formerly 3010
+ PROV4378:0 "Desmond"          #Formerly 4118, which then replaced 375, which then replaced 3012
+ PROV4379:0 "Offaly"          #Formerly 3007
+ PROV4380:0 "Tyrconnell"          #Formerly 3004
  PROV4381:0 "Overijssel"          #Formerly 3059
  PROV4382:0 "Ommelanden"          #Formerly 3057
  PROV4383:0 "Gravenhage"          #Formerly 3062
@@ -685,7 +717,7 @@
  PROV4549:0 "Játiva"         #Formerly 3300
  PROV4550:0 "Castellón"         #Formerly 3094
  PROV4551:0 "Ávila"         #Formerly 3298
- PROV4552:0 "Palencia"         #Formerly 3299
+ PROV4552:0 "Segovia"         #Formerly 3299
  PROV4553:0 "Zamora"         #Formerly 3101
  PROV4554:0 "Lugo"         #Formerly 3102
  PROV4555:0 "Tui"         #or Vigo, or Pontevedra
@@ -701,7 +733,7 @@
  PROV4567:0 "Ghadames"         #Formerly 5308
  
  PROV4618:0 "Gonaibo"         #Formerly 5564
- PROV4619:0 "Guárico"         #Formerly 5562
+ PROV4619:0 "Xarama"         #Formerly 5562
  PROV4620:0 "Maguá"         #Formerly 5566
  PROV4621:0 "Hosama"         #Formerly 5568
  PROV4622:0 "Siwanea"         #Formerly 5570
@@ -713,91 +745,6 @@
  PROV4632:0 "Kewa"         #Formerly 5828
  PROV4634:0 "Dilzhé'é"         #Formerly 5842
  PROV4649:0 "Mayo"         #Formerly 5062
- 
- #1.30
- #PROV4694:0 "Foix"
- #PROV4695:0 "Carcassonne"
- #PROV4696:0 "La Marche"
- #PROV4697:0 "Cephalonia"
- #PROV4698:0 "Arta"
- PROV4700:0 "Lesbos"
- #PROV4701:0 "Corinth"
- PROV4702:0 "Serres"
- PROV4703:0 "Velbazhd"
- PROV4704:0 "Tarnovo"
- PROV4705:0 "Komotini"
- PROV4706:0 "Tulcea"
- PROV4710:0 "Vorarlberg"
- #PROV4712:0 "Konstanz"
- #PROV4716:0 "Coburg"
- #PROV4717:0 "Bayreuth"
- #PROV4718:0 "Aschaffenburg"
- PROV4719:0 "Bresse"
- PROV4720:0 "Geneva"
- #PROV4723:0 "Opole"
- #PROV4724:0 "Chrudim" #Vanilla runs Pardubice
- PROV4725:0 "Tábor"
- PROV4726:0 "Prerov"
- #PROV4727:0 "Saluzzo"
- #PROV4728:0 "Pavia"
- PROV4729:0 "Padua"
- #PROV4730:0 "Bologna"
- #PROV4731:0 "Spoleto"
- PROV4732:0 "Velletri" #Terracina is scrapped.
- #PROV4733:0 "Molise"
- #PROV4734:0 "Avellino"
- #PROV4735:0 "Arborea"
- #PROV4736:0 "Trapani"
- #PROV4737:0 "Girgenti"
- PROV4738:0 "Trieste"
- #PROV4739:0 "Bergamo"
- #PROV4740:0 "Como"
- #PROV4743:0 "Weimar"
- #PROV4745:0 "Rügen"
- #PROV4746:0 "Stargard"
- #PROV4747:0 "Dramburg"
- #PROV4749:0 "Stargard"
- #PROV4751:0 "Zilli"
- #PROV4752:0 "Rijeka"
- 
- PROV4754:0 "Kotor"
- PROV4755:0 "Visegrad" #Podrinje
- PROV4756:0 "Bjelovar"
- PROV4757:0 "Valjevo" #Kolubara
- PROV4758:0 "Meran" #Etschtal
- PROV4762:0 "Pitten" #Wienerwald
- PROV4763:0 "West Rhaetian Alps" #Alps
- PROV4764:0 "Dole" #Salins
- PROV4765:0 "Colmar" #Mulhouse, bye bye.
- #PROV4766:0 "Verdun"
- #PROV4768:0 "Jülich"
- PROV4769:0 "Rijsel"
- #PROV4770:0 "Den Bosch"
- #PROV4773:0 "Göttingen"
- #PROV4774:0 "Fulda"
- #PROV4776:0 "Blois"
- #PROV4777:0 "Forez"
- PROV4778:0 "Görlitz"
- PROV4779:0 "Gallipoli"
- PROV4780:0 "Ohrid"
- PROV4781:0 "Tshwane"
- PROV4782:0 "Huhudi"
- PROV4783:0 "Hluhluwe"
- PROV4784:0 "Polokwane"
- #PROV4785:0 "Sheffield"
- #PROV4786:0 "Prignitz"
- #PROV4787:0 "Ribatejo"
- #PROV4788:0 "Plasencia"
- #PROV4789:0 "Segovia"
- 
- PROV4367:0 "Hull"
- PROV245:0 "York"
- 
- 
- 
- 
- 
- #PROV150:0 "Pleven" #Not certain if this is worth representing. Keeping vanilla Nigbolu-Nikopol now.
  
  #Change Notes
  #1.19 Changes

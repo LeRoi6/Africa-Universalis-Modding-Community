@@ -8,9 +8,10 @@ capital = "Czestochowa"
 hre = no
 base_tax = 3
 base_production = 3
-trade_goods = iron
+trade_goods = cloth
 base_manpower = 2
 is_city = yes
+estate = estate_church
 add_core = POL
 
 discovered_by = KAZ

@@ -2,9 +2,9 @@
 #Region - Germany
 #Area - Upper Bavaria
 
-owner = ING
-controller = ING
-add_core = ING
+owner = BAV
+controller = BAV
+add_core = BAV
 culture = bavarian
 religion = catholic
 base_tax = 6 

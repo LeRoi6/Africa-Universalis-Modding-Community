@@ -11,8 +11,8 @@ hre = no
 base_tax = 4  
 base_production = 4 
 base_manpower = 2 
-trade_goods = grain
-capital = "Béal Feirste" #"Dún Pádraig"
+trade_goods = bt_trade_good_beer
+capital = "Dún Pádraig"
 is_city = yes
 
 

@@ -1,7 +1,7 @@
 #424 - Ardabil
 
-owner = ARL #Changing to vanilla's interpretation. This was a particularly notable holy order, and given that all these bishoprics have gone independent/start as vassals as of late, it only makes sense.
-controller = ARL
+owner = QAR
+controller = QAR
 culture = azerbaijani
 religion = shiite
 capital = "Ardabil"
@@ -11,25 +11,25 @@ base_tax = 4
 base_production = 4 
 base_manpower = 4 
 is_city = yes
+add_core = QAR
+add_core = PER
 add_core = ARL
-#add_core = QAR
-#add_core = PER
+estate = estate_church
 
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
-#Holy crap is this history old. revolt_risk?! Was fucking removed in 1.8.
 1458.9.1 = { revolt = { type = pretender_rebels size = 0 name = "Hasan Ali's Faction" leader = "Hasan Ali" } controller = REB } # Civil war in Qara Quyunlu
 1458.12.1 = { revolt = {} controller = QAR }
-# 1459.1.1 = { revolt_risk = 3 } # Attacked by Safavids
-# 1460.1.1 = { revolt_risk = 0 }
+1459.1.1 = { revolt_risk = 3 } # Attacked by Safavids
+1460.1.1 = { revolt_risk = 0 }
 1468.1.1 = {
 	owner = AKK
 	controller = AKK
 	add_core = AKK
-	#remove_core = QAR
+	remove_core = QAR
 } # The Ak Koyunlu expands their territory
 1468.8.1 = { controller = TIM } #Invasion of Abu Said
 1469.2.4 = { controller = AKK } #Battle of Qarabagh
@@ -53,6 +53,6 @@ discovered_by = nomad_group
 	add_core = PER
 	remove_core = RUS
 }
-# 1747.1.1 = { revolt_risk = 3 } # Shah Nadir is killed, local khanates emerged
-# 1748.1.1 = { revolt_risk = 4 } # The empire began to decline
-# 1779.1.1 = { revolt_risk = 0 } # With the Qajar dynasty the situation stabilized
+1747.1.1 = { revolt_risk = 3 } # Shah Nadir is killed, local khanates emerged
+1748.1.1 = { revolt_risk = 4 } # The empire began to decline
+1779.1.1 = { revolt_risk = 0 } # With the Qajar dynasty the situation stabilized

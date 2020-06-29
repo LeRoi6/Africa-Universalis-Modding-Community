@@ -14,7 +14,6 @@ trade_goods = cloth			#Major provincial centre under the Ottomans, so a generic 
 is_city = yes
 hre = no
 fort_15th = yes
-add_local_autonomy = 10
 
 discovered_by = KAZ
 discovered_by = CRI
@@ -42,6 +41,7 @@ discovered_by = western
 	add_core = TUR
 	remove_core = BYZ
 	capital = "Çirmen"
+	estate = estate_dhimmi
 } #falls to Turkey, but doesn't seem to have been devastated
 #1402.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Interregnum
 1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }

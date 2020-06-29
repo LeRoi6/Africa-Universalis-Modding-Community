@@ -2,9 +2,9 @@
 #Region - Germany
 #Area - Mittelmark
 
-owner = RUP
-controller = RUP
-add_core = RUP
+owner = RPN
+controller = RPN
+add_core = RPN
 culture = saxon
 religion = catholic
 hre = yes
@@ -26,7 +26,7 @@ discovered_by = eastern
 	owner = BRA
 	controller = BRA
 	add_core = BRA
-	remove_core = RUP
+	remove_core = RPN
 }
 1536.1.1 = { religion = protestant }
 1650.1.1 = { culture = prussian  }

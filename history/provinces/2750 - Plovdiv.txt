@@ -13,7 +13,6 @@ base_production = 5
 base_manpower = 4
 is_city = yes
 fort_15th = yes
-add_local_autonomy = 10
 
 extra_cost = 8
 center_of_trade = 1
@@ -39,6 +38,7 @@ discovered_by = western
 	controller = TUR
 	add_core = TUR
 	base_manpower = 3
+	estate = estate_dhimmi
 } #falls to Turkey, devastated
 1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
 1442.1.1= {

@@ -1,6 +1,6 @@
-#Country Name: Please see filename.
+# Country name see file name.
 
-graphical_culture = westerngfx
+graphical_culture = westerngfx # was bavariangfx # UPE compatibility
 
 color = { 135  5  23 }
 
@@ -33,9 +33,9 @@ historical_units = {
 }
 
 monarch_names = {
-	"Frederick #0" = 60
-	"Johan #0" = 40
-	"Gottfried #0" = 20
+	"Frederick #6" = 60
+	"Johan #3" = 40
+	"Gottfried #1" = 20
 	"Cristoph #0" = 0
 	"Peter #0" = 0
 	"Jacob #0" = 0
@@ -66,13 +66,24 @@ monarch_names = {
 }
 
 leader_names = {
-	Adler Alers Bake Beckröge Bergius Berninghausen 
-	Boelken Bollheim Brill Delius Drewers Engels Ficke 
-	Foukhard Geffken Gildemeister Grovermann Happach
-	Heimbruch Hinke Kindt Köhne Krefting Laporte Löning 
-	Meyer Oelrichs Ordemann Reiners Rohde Sanders Schulken
-	Steinwachs Stucken Truernitt "von Bobert" "von Cappeln" 
-	"von Holten" "von Horn" "von Meinertzhagen" "von Passau" "von Freising"
+	"Ebner von Eschenbach"
+	"Fürer von Haimendorf"
+	"Geuder von Heroldsberg"
+	"von Altenthann und Weiherhaus"
+	"von Altenthann und Weiherhaus"
+	"Gugel von Brand und Diepoltsdorf"
+	"Haller von Hallerstein"
+	"Harsdorf von Enderndorf"
+	"Holzschuher von Harrlach"
+	Imhoff
+	"Kress von Kressenstein"
+	"Löffelholz von Kolberg"
+	"Oelhafen von Schöllenbach"
+	Praun
+	"Stromer von Reichenbach"
+	"Tucher von Simmelsdorf"
+	"Volckamer von Kirchensittenbach"
+	"Welser von Neunhof und zu Beerbach"
 }
 
 army_names = {
@@ -83,7 +94,7 @@ ship_names = {
 	"St. Sebaldus" Nürnberg  "St. Kilian" "Tassilo III"
 	"König Arnulf" "Graf von Bogen" "Graf von Andechs"
 	"Graf von Sulzbach" Wittelsbach "Graf von Diepolding"
-	Otto Regensburg Passau
+	Otto
 	Augsburg Andechs Burgau Diessen Friedberg Kempten Lindau
 	Memmingen Mindel Oettingen Straubing Wolfstein
 }

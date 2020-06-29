@@ -1,11 +1,11 @@
 #Nsenga
 
-owner = LDU
-controller = LDU
-add_core = LDU
-culture = nyasa
+owner = NSE
+controller = NSE
+add_core = NSE
+culture = nsenga
 religion = shamanism #Fetishism
-capital = "Nsenga"
+capital = "Mano"
 is_city = yes
 base_manpower = 2 
 trade_goods = livestock

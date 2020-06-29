@@ -31,7 +31,7 @@ discovered_by = eastern
 1291.5.26 = { #BeyondTypus batch edit shortcut first performance start ends
 	owner = NVA
 	controller = NVA
-	#remove_core = NVA #Why remove its core? Neighboring prov still has Novara core.
+	remove_core = NVA
 } #Return to proper mod added owners and cuts vanilla core, typically.
 1339.2.21 = {
 	owner = MLO
@@ -77,15 +77,15 @@ discovered_by = eastern
 	remove_core = HAB
 } # Transpadane Republic
 1797.6.29 = {
-	owner = ITL
-	controller = ITL
-	add_core = ITL
+	owner = ITA
+	controller = ITA
+	add_core = ITA
 } # Cisalpine Republic
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1814.4.11 = {
 	owner = HAB
 	controller = HAB
 	add_core = HAB
-	remove_core = ITL
+	remove_core = ITA
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
 1814.4.20 = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # The Milan insurrection

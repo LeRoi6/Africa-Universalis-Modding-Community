@@ -42,7 +42,7 @@ TNA_ideas = {
 		prestige_from_land = 0.5
 	}
 	tirnangael_gall_oglaigh = {
-		mercenary_manpower = 0.25
+		possible_mercenaries = 0.25
 		mercenary_discipline = 0.05
 	}
 	tirnangael_explorers_legacy = {
