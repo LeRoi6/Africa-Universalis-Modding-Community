@@ -1,18 +1,17 @@
-#3140 - Lehnice
+#4238 - Leignitz
 
-owner = BOH
-controller = BOH
-culture = saxon
+owner = LEG
+controller = LEG
+culture = silesian_german
 religion = catholic
 capital = "Lehnice"
 trade_goods = gold
 hre = yes
-base_tax = 4 
-base_production = 4 
+base_tax = 3 
+base_production = 2 
 is_city = yes
 base_manpower = 2 
-add_core = BOH
-add_core = SIL
+add_core = LEG
 
 discovered_by = KAZ
 discovered_by = CRI

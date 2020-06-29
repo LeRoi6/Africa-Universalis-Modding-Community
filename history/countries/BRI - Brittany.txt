@@ -8,8 +8,8 @@ technology_group = western
 capital = 172	# Nantes
 historical_friend = SCO			#This is really just to prevent Scotland and Brittany rivaling each other at day 1, as they historically got on well, but game mechanics encouraged them to rival. Probably necessary indeed.
 historical_friend = BUR			#Brittany allied several times with Burgundy, often secretly to counter France. Will probably need to be removed due the 1291 start date.
-historical_friend = ENG			#The Montfort dynasty was supported by England during the Breton Succession War. The countries had close diplomatic relations and were often allied to counter France.
-#Probably too much of powerful friends, but well it represents the alliances that Brittany did with foreign powers and the diplomatic and military difficulties France had when it wants to annex the duchy. Castile or Austria could be in too, but they were more recent allies (end of 15th century), while Brittany was allied with England and Burgundy way before.
+
+#History file overhauled by Math
 
 1286.10.8 = {
 	monarch = {
@@ -119,6 +119,8 @@ historical_friend = ENG			#The Montfort dynasty was supported by England during 
 	}
 	add_ruler_personality = tactical_genius_personality
 }
+
+1365.4.12 = { capital = 171 } 		#Vannes
 
 1366.5.1 = {
 	queen = {
@@ -299,7 +301,7 @@ historical_friend = ENG			#The Montfort dynasty was supported by England during 
 		leader = { name = "Arthur de Montfort"	type = general	fire = 2	shock = 4	manuever = 3	siege = 2 }
 	}
 	queen = {
-		country_of_origin = BUR 	#Saint-Pol
+		country_of_origin = TRN
 		name = "Catherine"
 		dynasty = "de Luxembourg"
 		birth_date = 1422.1.1		#Exact date of her birth is unknown
@@ -351,11 +353,13 @@ historical_friend = ENG			#The Montfort dynasty was supported by England during 
 	add_ruler_personality = intricate_web_weaver_personality  
 }
 
+1458.12.27 = { capital = 172 } 		#Nantes
+
 1474.6.27 = {
 	queen = {
 		country_of_origin = NAV
 		name = "Marguerite"
-		dynasty = "de Grailly"
+		dynasty = "de Foix"
 		birth_date = 1449.1.1		#Exact date of her birth is unknown
 		death_date = 1486.5.15
 		female = yes
@@ -391,68 +395,10 @@ historical_friend = ENG			#The Montfort dynasty was supported by England during 
 		female = yes
 	}
 	clear_scripted_personalities = yes
-	add_ruler_personality = just_personality # Righteous would also be valid
+	add_ruler_personality = just_personality 		#Righteous would also be valid
 }
 
-#Personal Union in 1491#					#Will probably be represented via events ?
-
-#Independance between 1498 and 1499#
-
-#Personal Union in 1499#					#So the next dukes are not necessary and can be cut, that's why I didn't make any modifications to them
-
-1499.10.14 = {
-	heir = {
-		name = "Claude"
-		monarch_name = "Claude I"
-		dynasty = "de Valois"
-		birth_date = 1499.10.14
-		death_date = 1525.7.20
-		claim = 95
-		adm = 2
-		dip = 2
-		mil = 2
-		female = yes
-	}
-}
-
-1514.1.10 = {
-	monarch = {
-		name = "Claude I"
-		dynasty = "de Valois"
-		birth_date = 1499.10.14
-		adm = 2
-		dip = 2
-		mil = 2
-		female = yes
-	}
-}
-
-1518.2.28 = {
-	heir = {
-		name = "François"
-		monarch_name = "François III"
-		dynasty = "de Valois"
-		birth_date = 1518.2.28
-		death_date = 1536.8.10
-		claim = 95
-		adm = 3
-		dip = 2
-		mil = 1
-	}
-}
-
-1524.7.21 = {
-	monarch = {
-		name = "François III"
-		dynasty = "de Valois"
-		birth_date = 1518.2.28
-		adm = 3
-		dip = 2
-		mil = 1
-	}
-}
-
-#Annexion 1532#
+#Personal Union in 1491 and annexion in 1532#
 
 1589.8.3 = { set_legacy_government = administrative_monarchy }
 

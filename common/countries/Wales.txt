@@ -2,7 +2,9 @@
 
 graphical_culture = westerngfx
 
+#color = { 117  127  174 }
 color = { 2  171  57 }			#Welsh Flag colour
+revolutionary_colors = { 0 5 10 }
 
 historical_idea_groups = {
 	maritime_ideas

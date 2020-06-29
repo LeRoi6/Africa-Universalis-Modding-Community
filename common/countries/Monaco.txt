@@ -30,75 +30,82 @@ historical_units = {
 }
 
 monarch_names = {
-	"Cosimo #0" = 60
-	"Ferdinando #0" = 60
-	"Francesco #0" = 60
-	"Lodovico #2" = 40
-	"Carlo #0 Emmanuele" = 20
-	"Carlo #0 Felice" = 20
-	"Lodovico #0 Maria" = 20
-	"Alessandre #0" = 20
-	"Francesco #0 Stefano" = 20
-	"Galeazzo Maria #0" = 20
-	"Gian Galeazzo #0" = 20
-	"Gian Gastone #0" = 20
-	"Massimiliano #0" = 20
-	"Napoleone #0" = 20
-	"Pietro Leopoldo #0" = 20
-	"Vittorio Amedeo #0" = 20
-	"Carlo #0" = 10
-	"Antonio #0" = 10
-	"Ermes #0" = 10
-	"Eugenio #0" = 10
-	"Filippo #0" = 10
-	"Gian Carlo #0" = 10
-	"Giovanni #0 Maria" = 10
-	"Pietro #0" = 10
-	"Alberto #0" = 5
-	"Rodolfo #0" = 5
-	"Ascanio Maria #0" = 5
-	"Augusto #0" = 5
-	"Benedetto #0" = 5
-	"Emmanuele Filiberto #0" = 5
-	"Filippo #0 Maria" = 5
-	"Giovanni #0" = 5
-	"Giuseppe #0" = 5
-	"Leopoldo #0" = 5
-	"Matteo #0" = 5
+	"Carlo #1" = 60
+	"Giovanni #1" = 60
+	"Antonio #2" = 40
+	"Lodovico #1" = 40
+	"Ranieri #2" = 40
+	"Alberto #0" = 20
+	"Francesco #1" = 20
+	"Onorato #0" = 20
+	"Ambrogio #1" = 10
+	"Catalano #0" = 10
+	"Gabriele #1" = 10
+	"Lamberto #0" = 10
+	"Agostino #0" = 5
+	"Bartholomeo #0" = 5
+	"Cosimo #0" = 5
+	"Ercole #0" = 5
+	"Filippo #0" = 5
+	"Giacomo #0" = 5
+	"Luciano #0" = 5
 	"Maurizio #0" = 5
-	"Ottaviano #0" = 5
-	"Raniero #0" = 5
-	"Sforza Maria #0" = 5
-	"Agostino #0" = 0
+	"Alessandre #0" = 0
+	"Benedetto #0" = 0
 	"Constanzo #0" = 0
 	"Demetrio #0" = 0
+	"Emmanuele #0" = 0
+	"Eugenio #0" = 0
 	"Fabio #0" = 0
+	"Ferdinando #0" = 0
 	"Giordano #0" = 0
+	"Giuseppe #0" = 0
 	"Isidoro #0" = 0
+	"Lanfranco #0" = 0
+	"Leopoldo #0" = 0
+	"Massimiliano #0" = 0
+	"Matteo #0" = 0
 	"Niccolò #0" = 0
+	"Ottaviano #0" = 0
 	"Paolo #0" = 0
+	"Pietro #0" = 0
+	"Rodolfo #0" = 0
 	"Romeo #0" = 0
 	"Severino #0" = 0
 	"Vittorio #0" = 0
 	
-	"Viola #0" = -1
-	"Zaira #0" = -1
-	"Angelica #0" = -1
+	"Bianca #0" = -10
+	"Claudina #0" = -10
+	"Ippolita #0" = -10
+	"Isabella #0" = -5
+	"Lucchina #0" = -5
+	"Luisa #0" = -5
+	"Antonia #0" = -1
+	"Aurelia #0" = -1
+	"Benedetta #0" = -1
+	"Caterina #0" = -1
+	"Maria #0" = -1
+	"Theodora #0" = -1
 }
 
-leader_names = {
-	"Appiani d'Aragona" "Arborio Mella" 
-	Barberini Barzagli Boncompagni Borghese Borromeo Buonarroti "di Busca"
-	"di Campofregoso" Carafa "di Cardé" "del Carreto" Casanova Castagna
-	Castagnaro "di Cavour" Chigi Colonna Contarini Conti Corsini Cybo 
-	"Doria di Cirié" Doria-Landi Doria-Pamphili
-	d'Este 	"di Farnese" "di Ferrari"
-	"Gaetani dell'Aquila" Galilei Gambacorta Gentileschi Giustiniani Gonzaga Grimaldi
-	Ludovisi Malaspina "de' Medici" Melzi Montefeltro Orsini
-	"di Paesana" "Paleologi Montferrato" Pallavicini Paradisi Petrucci Pico Pignatelli
-	"dalla Rosa" "della Rovere"
-	"di Saluzzo" "di Savoia" Sfondrati Sforza Spinola
-	"della Torre" "della Ubaldini" Vico Visconti
+leader_names = {	#Mix of new names and names from other Italian tags.
+	#Monaco
+	Asinari Fregoso Doria Orsini Spinetti Lascaris "di Antibo" Boglio
+	Grimaldi "di Savoia" Appiani "di Busca" Landi
+	#Genoa
+	Adorno "Arborio Mella" Balbi Bracelli Brignole Buonaparte "di Busca"
+	Campi "di Campofregoso" "del Carreto" Cattaneo Cebá Centurione Chiavari Clavarezza Cybo
+	Durazzo "de Ferrari" "di Fornari" "de Franchi"
+	Garbarino Gattilusio Gentile Giustiniani "di Busca"
+	Imperiale Invrea Lercari Lomelli Longo "de Mari" Negrone "da Novi" Odoni
+	"Paleologi Montferrato" Pallavicini Pico Pignolo Promontorio "della Rovere"
+	Sale Senarega Serra Spinola "della Torre" Veneroso Vivaldi
+	#Milan
+	Adelasio Aldini Alessandri "Arborio Mella" "Barbiano Belgioioso" Bargnani "Bigliori di Lava" Birago Borromeo Brunetti
+	Caetani "di Campofregoso" Caracciolo Carafa "di Cardé" "del Carreto" Containi Franchi Ghislieri Gonzaga "de Guzman"
+	Lamberti "de Leiva" Luosi "Luserna Bigliori" "Luserna della Torre" Mancini "Medici di Marignano" Melzi "del Monte" Moscati
+	Odescalchi "Paleologi Montferrato" Paradisi Pico Ruga Sabbati "di Saluzzo" Savoldi "della Scalla" Serbelloni Sfondrati Sforza Sommariva Sopransi
+	Testi Tizzone Visconti
 }
 
 ship_names = {

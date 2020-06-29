@@ -48,8 +48,8 @@ discovered_by = eastern
 	add_core = MLO
 }	#Visconti domion
 1390.6.1 = {
-	owner = PAD
-	controller = PAD
+	owner = PDV
+	controller = PDV
 	remove_core = MLO
 }	#to di Carrara
 1404.1.1 = {
@@ -85,14 +85,14 @@ discovered_by = eastern
 	add_core = HAB
 } # Treaty of Campo Formio
 1805.12.26 = {
-	owner = ITA
-	controller = ITA
-	add_core = ITA
+	owner = ITL
+	controller = ITL
+	add_core = ITL
 	remove_core = HAB
 } # Treaty of Pressburg
 1814.4.11 = {
 	owner = HAB
 	controller = HAB
 	add_core = HAB
-	remove_core = ITA
+	remove_core = ITL
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally

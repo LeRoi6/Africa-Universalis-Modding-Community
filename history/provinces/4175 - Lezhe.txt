@@ -1,19 +1,20 @@
 #4175 - repurposed by Draiocht
 #Vanilla 4175 info
 
-owner = ALB
-controller = ALB
+owner = VEN
+controller = VEN
 culture = albanian
 religion = orthodox
-capital = "Kruja"			#or Lezha
+capital = "Lezhë"			
 trade_goods = wine
 hre = no
 base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
+add_core = VEN
 add_core = ALB
-fort_15th = yes			#Main fort in Albania, was a very fortified area
+#fort_15th = yes			#Main fort in Albania, was a very fortified area
 
 discovered_by = KAZ
 discovered_by = CRI

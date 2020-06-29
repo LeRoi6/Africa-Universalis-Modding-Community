@@ -1,3 +1,4 @@
+#Updated and scriptified by Dub.
 guj_maritime_conquest = {
 	slot = 1
 	generic = no
@@ -24,61 +25,22 @@ guj_maritime_conquest = {
 		}
 
 		trigger = {
-			2054 = {
+			2054 = { #Keeping fort level 2 because capital.
 				fort_level = 2
 			}
 		}
 
 		effect = {
 			2054 = {
-				add_base_tax = 1
-				add_base_production = 1
+				add_base_tax = 2
+				add_base_production = 2
 				add_province_modifier = {
 					name = guj_walls_of_ahmedabad
 					duration = -1
 				}
 			}
-			saurashtra_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			ahmedabad_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			4480 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			2056 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			4456 = {
+			give_permaclaims_for_mission = { mission=guj_subjugate_saurashtra }
+			2056 = { #For other mission.
 				if = {
 					limit = {
 						NOT = {
@@ -97,27 +59,16 @@ guj_maritime_conquest = {
 		completed_by = 1470.1.1
 
 		provinces_to_highlight = {
-			OR = {
-				area = saurashtra_area
-				area = ahmedabad_area
-				province_id = 4480
-				province_id = 515
-			}
+			guj_subjugate_saurashtra_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
 		trigger = {
 			owns_core_province = 515 #Girnar / Junnagadh Fort
-			saurashtra_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			ahmedabad_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4480 = {
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=guj_subjugate_saurashtra_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 
@@ -144,16 +95,13 @@ guj_maritime_conquest = {
 
 		provinces_to_highlight = {
 			province_id = 515
-			NOT = { fort_level = 4 }
+			NOT = { fort_level = 1 }
 		}
 
 		trigger = {
 			515 = {
-				fort_level = 2
-				OR = {
-					has_building = barracks
-					has_building = training_fields
-				}
+				fort_level = 1
+				has_manpower_building_trigger = yes
 			}
 		}
 
@@ -259,15 +207,7 @@ guj_rajputana_frontier_series = {
 		}
 
 		effect = {
-			mewar_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=guj_break_mewar }
 			if = {
 				limit = {
 					has_estate = estate_rajput
@@ -351,7 +291,7 @@ guj_malwa_focus = {
 					has_building = temple
 					has_building = cathedral
 				}
-				fort_level = 2
+				fort_level = 1
 				NOT = { local_autonomy = 30 }
 			}
 		}
@@ -368,29 +308,12 @@ guj_malwa_focus = {
 				}
 			}
 			2056 = {
-				add_base_manpower = 1
-				add_base_tax = 1
+				add_base_manpower = 2
+				add_base_tax = 2
 				change_province_name = "Mahmudabad"
 				rename_capital = "Mahmudabad"
 			}
-			malwa_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			khandesh_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=guj_conquer_malwa }
 		}
 	}
 
@@ -401,21 +324,15 @@ guj_malwa_focus = {
 		completed_by = 1486.1.1
 
 		provinces_to_highlight = {
-			OR = {
-				area = malwa_area
-				area = khandesh_area
-			}
+			guj_conquer_malwa_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
 		trigger = {
-			malwa_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			khandesh_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=guj_conquer_malwa_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 
@@ -484,7 +401,7 @@ guj_minor_industry = {
 		}
 		effect = {
 			2054 = {
-				add_base_production = 2
+				add_base_production = 4
 				add_province_modifier = {
 					name = "ahmadabad_paper"
 					duration = 10950
@@ -530,9 +447,10 @@ guj_rajputana_conquest = {
 
 		trigger = {
 			owns_core_province = 2087
-			mewar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=guj_break_mewar_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 
@@ -540,7 +458,7 @@ guj_rajputana_conquest = {
 			add_prestige = 15
 			add_estate_nobles_loyalty_effect = yes
 			2087 = {
-				add_base_manpower = 1
+				add_base_manpower = 2
 			}
 			mewar_area = {
 				add_province_modifier = {
@@ -548,42 +466,7 @@ guj_rajputana_conquest = {
 					duration = 7300
 				}
 			}
-			marwar_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			jangladesh_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			jaipur_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			gird_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=guj_subjugate_rajputana }
 		}
 	}
 
@@ -597,32 +480,16 @@ guj_rajputana_conquest = {
 		completed_by = 1486.1.1
 
 		provinces_to_highlight = {
-			OR = {
-				area = marwar_area
-				area = jangladesh_area
-				area = jaipur_area
-				area = gird_area
-			}
+			guj_subjugate_rajputana_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
 		trigger = {
 			owns_core_province = 2087
-			marwar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			jangladesh_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			jaipur_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			gird_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=guj_subjugate_rajputana_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 
@@ -643,8 +510,8 @@ guj_rajputana_conquest = {
 				add_prestige = 10
 			}
 			2087 = {
-				add_base_production = 1
-				add_base_manpower = 1
+				add_base_production = 2
+				add_base_manpower = 2
 				add_province_modifier = {
 					name = "guj_rajput_governor"
 					duration = -1
@@ -705,15 +572,17 @@ guj_mercantile = {
 			4457 = {
 				province_has_center_of_trade_of_level = 3
 			}
-			calc_true_if = {
-				all_owned_province = {
-					has_estate = estate_jains
-				}
-				amount = 6
+			estate_influence = {
+				estate = estate_jains
+				influence = 50
 			}
 			estate_loyalty = {
 				estate = estate_jains
-				loyalty = 70
+				loyalty = 60
+			}
+			num_of_estate_privileges = {
+				estate = estate_jains
+				value = 2
 			}
 		}
 		effect = {
@@ -790,39 +659,19 @@ guj_mercantile = {
 			owns = 1192
 			owns = 1201
 			owns = 4020
-			custom_trigger_tooltip = {
-				tooltip = guj_gujarati_diaspora_tooltip
-				num_of_owned_provinces_with = {
-					OR = {
-						region = horn_of_africa_region
-						region = east_africa_region
-					}
-					value = 10
+			num_of_owned_provinces_with = {
+				OR = {
+					region = horn_of_africa_region
+					region = east_africa_region
 				}
+				value = 10
 			}
 		}
 		effect = {
-			add_permanent_claim = 833
-			add_permanent_claim = 1177
-			add_permanent_claim = 1179
-			lower_zambezi_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			butua_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
+			# add_permanent_claim = 833
+			# add_permanent_claim = 1177
+			# add_permanent_claim = 1179
+			give_permaclaims_for_mission = { mission=guj_zambezi_gold_mines }
 			1448 = {
 				add_trade_modifier = {
 					who = root
@@ -833,25 +682,27 @@ guj_mercantile = {
 			}
 		}
 	}
-	guj_south_africa = {
+	guj_south_africa = { #This one's horrible in BT, not only because of the overhaul, but because it is now a colonial region.
 		icon = mission_south_african_bases
 		required_missions = {
 			guj_gujarati_diaspora
 		}
 
-		provinces_to_highlight = {
-			OR = {
-				province_id = 833
-				province_id = 1177
-				province_id = 1179
-			}
+		provinces_to_highlight = { 
+			colonial_region = colonial_cape
 			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-			owns = 833
-			owns = 1177
-			owns = 1179
+			owns_or_non_sovereign_subject_of = 1177
+			custom_trigger_tooltip = {
+				tooltip = guj_south_africa.tooltip
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					colonial_region = colonial_cape
+					is_city = yes
+				}
+			}
 		}
 		effect = {
 			1177 = {
@@ -908,15 +759,7 @@ guj_mercantile_and_industry = {
 		effect = {
 			set_country_flag = merchant_of_gujarat
 			country_event = { id = flavor_guj.6 }
-			konkan_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=guj_clear_konkani_coast }
 		}
 	}
 	guj_clear_konkani_coast = {
@@ -924,13 +767,14 @@ guj_mercantile_and_industry = {
 		required_missions = { guj_merchant_of_gujarat }
 
 		provinces_to_highlight = {
-			area = konkan_area
+			guj_clear_konkani_coast_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			konkan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=guj_clear_konkani_coast_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -1011,9 +855,9 @@ guj_mercantile_and_industry = {
 		}
 		effect = {
 			capital_scope = {
-				add_base_tax = 2
-				add_base_production = 2
-				add_base_manpower = 2
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
 			}
 			1331 = {
 				add_trade_modifier = {
@@ -1059,7 +903,7 @@ guj_mercantile_and_industry = {
 				}
 				add_claim = ROOT
 			}
-			mahra_area = {
+			asir_area = { #mahra_area's completely in a different place (BT's Al Ahsa). Changing to asir_area
 				limit = {
 					NOT = {
 						is_claim = ROOT
@@ -1102,21 +946,15 @@ guj_into_africa = {
 		position = 5
 		required_missions = { guj_gujarati_diaspora }
 		provinces_to_highlight = {
-			OR = {
-				area = lower_zambezi_area
-				area = butua_area
-			}
+			guj_zambezi_gold_mines_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
 		trigger = {
-			lower_zambezi_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			butua_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=guj_zambezi_gold_mines_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {

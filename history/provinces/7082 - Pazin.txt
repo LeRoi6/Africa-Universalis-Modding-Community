@@ -42,6 +42,19 @@ discovered_by = eastern
 }	#sold to the Habsburgs
 1420.1.1 = { remove_core = AQU } # Aquileia conquered by Venice, so removing Aquilea cores in non-core lands to give Istria a better chance to revolt
 
+1420.1.1 = {
+	add_core = STY
+} # To the Habsburgs
+
+1452.1.1 = {
+	owner = STY
+	controller = STY
+}
+1457.11.24 = {	owner = HAB
+	controller = HAB
+	remove_core = STY
+}
+
 #1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 #	owner = XXX
 #	controller = XXX

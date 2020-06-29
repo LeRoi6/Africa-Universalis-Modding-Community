@@ -13,7 +13,7 @@ base_manpower = 1
 trade_goods = gold
 is_city = yes
 hre = no
-estate = estate_dhimmi
+add_local_autonomy = 10
 
 discovered_by = KAZ
 discovered_by = CRI
@@ -26,6 +26,10 @@ discovered_by = eastern
 discovered_by = western
 
 #Potential province modifier of some sort for Athos.
+
+#Byz_resurgence added: Mount Athos modifiers
+add_province_triggered_modifier = mount_athos_modifier_muslim
+add_province_triggered_modifier = mount_athos_modifier_orthodox
 
 #Province history completed by - Draiocht
 #1291.5.21 = { #BeyondTypus batch edit shortcut the first shattering begins

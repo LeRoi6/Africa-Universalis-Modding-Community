@@ -17,94 +17,42 @@ vij_north_conquest = {
 		required_missions = { }
 		completed_by = 1522.1.1
 		provinces_to_highlight = {
-			area = raichur_doab_area
+			vij_bah_reconquest_provinces = yes
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			raichur_doab_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			has_fulfiled_province_requirement_for_mission_trigger = {
+                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+                provinces=vij_bah_reconquest_provinces
+                owner_type=country_or_non_sovereign_subject_holds
+            }
 		}
 		effect = {
 			add_mil_power = 50
-			maidan_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			golconda_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=vij_defeat_bahmanis }
 		}
 	}
 	vij_defeat_bahmanis = {
 		icon = mission_advance_to_kalyana
 		required_missions = { vij_bah_reconquest }
 		provinces_to_highlight = {
-			OR = {
-				area = maidan_area
-				area = golconda_area
-			}
+			vij_defeat_bahmanis_provinces = yes
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			maidan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			golconda_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
+			has_fulfiled_province_requirement_for_mission_trigger = {
+                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+                provinces=vij_defeat_bahmanis_provinces
+                owner_type=country_or_non_sovereign_subject_holds
+            }
 		}
 		effect = {
 			country_event = { id = flavor_vij.20 }
-			telingana_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			konkan_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			desh_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			ahmednagar_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			berar_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=vij_marathas }
 		}
 	}
 	
@@ -113,38 +61,17 @@ vij_north_conquest = {
 		required_missions = { vij_defeat_bahmanis }
 		position = 4
 		provinces_to_highlight = {
-			OR = {
-				area = telingana_area
-				area = konkan_area
-				area = desh_area
-				area = ahmednagar_area
-				area = berar_area
-			}
+			vij_marathas_provinces = yes
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			telingana_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			konkan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			desh_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			ahmednagar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			berar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
+			has_fulfiled_province_requirement_for_mission_trigger = {
+                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+                provinces=vij_marathas_provinces
+                owner_type=country_or_non_sovereign_subject_holds
+            }
 		}
 		effect = {
 			add_country_modifier = {
@@ -158,25 +85,17 @@ vij_north_conquest = {
 		required_missions = { vij_aden_conquest }
 		position = 7
 		provinces_to_highlight = {
-			OR = {
-				province_id = 1201
-				province_id = 1202
-				province_id = 1205
-			}
+			vij_africa_conquest_provinces = yes
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			1201 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1202 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1205 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			has_fulfiled_province_requirement_for_mission_trigger = {
+                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+                provinces=vij_africa_conquest_provinces
+                owner_type=country_or_non_sovereign_subject_holds
+            }
 		}
 		effect = {
 			1448 = {
@@ -199,14 +118,11 @@ vij_north_conquest = {
 			1448 = {
 				is_strongest_trade_power = ROOT
 			}
-			custom_trigger_tooltip = {
-				tooltip = vij_zanzibar_tooltip
-				num_of_owned_provinces_with = {
-					value = 5
-					region = east_africa_region
-					has_building = tradecompany
-					is_owned_by_trade_company = yes
-				}
+			num_of_owned_provinces_with = {
+				value = 5
+				region = east_africa_region
+				has_building = tradecompany
+				is_owned_by_trade_company = yes
 			}
 			custom_trigger_tooltip = {
 				tooltip = vij_zanzibar_tooltip_2
@@ -264,43 +180,24 @@ vij_south_conquest = {
 			owns_core_province = 2100
 		}
 		effect = {
-			lanka_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			south_lanka_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=vij_ceylon_conquest }
 		}
 	}
 	vij_ceylon_conquest = {
 		icon = mission_conquer_lanka
 		required_missions = { vij_integrate_jaffna }
 		provinces_to_highlight = {
-			OR = {
-				area = lanka_area
-				area = south_lanka_area
-			}
+			vij_ceylon_conquest_provinces = yes
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			lanka_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			south_lanka_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
+			has_fulfiled_province_requirement_for_mission_trigger = {
+                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+                provinces=vij_ceylon_conquest_provinces
+                owner_type=country_or_non_sovereign_subject_holds
+            }
 		}
 		effect = {
 			add_country_modifier = {
@@ -314,16 +211,17 @@ vij_south_conquest = {
 		required_missions = { vij_city_of_victory }
 		position = 6
 		provinces_to_highlight = {
-			area = yemen_area
+			vij_aden_conquest_provinces = yes
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			yemen_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
+			has_fulfiled_province_requirement_for_mission_trigger = {
+                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+                provinces=vij_aden_conquest_provinces
+                owner_type=country_or_non_sovereign_subject_holds
+            }
 		}
 		effect = {
 			1331 = {
@@ -334,39 +232,7 @@ vij_south_conquest = {
 					key = vij_oman_modifier
 				}
 			}
-			1201 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			1202 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			1205 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=vij_africa_conquest }
 		}
 	}
 	vij_aden_trade = {
@@ -407,12 +273,23 @@ vij_tamil_conquest = {
 		icon = mission_the_tamil_trade_guilds
 		required_missions = {  }
 		provinces_to_highlight = {
-			OR = {
-				area = south_carnatic_area
-				area = tanjore_area
-			}
-			NOT = {
-				owned_by = ROOT
+			OR = { #Better highlighting
+				AND = {
+					culture = tamil
+					OR = {
+						local_autonomy = 50
+						unrest = 2
+					}
+				}
+				AND = {
+					OR = {
+						area = south_carnatic_area
+						area = tanjore_area
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
 			}
 		}
 		completed_by = 1530.1.1
@@ -451,13 +328,7 @@ vij_tamil_conquest = {
 					add_permanent_claim = ROOT
 				}
 			}
-			mysore_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=vij_mysore_conquest }
 		}
 	}
 	vij_mysore_conquest = {
@@ -465,67 +336,37 @@ vij_tamil_conquest = {
 		required_missions = { vij_tamil_trade }
 		completed_by = 1513.1.1
 		provinces_to_highlight = {
-			area = mysore_area
+			vij_mysore_conquest_provinces = yes
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			mysore_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
+			has_fulfiled_province_requirement_for_mission_trigger = {
+                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+                provinces=vij_mysore_conquest_provinces
+                owner_type=country_or_non_sovereign_subject_holds
+            }
 		}
 		effect = {
-			kanara_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			malabar_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			madura_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=vij_malabar }
 		}	
 	}
 	vij_malabar = {
 		icon = mission_secure_the_malabar_coast
 		required_missions = { vij_mysore_conquest }
 		provinces_to_highlight = {
-			OR = {
-				area = kanara_area
-				area = malabar_area
-				area = madura_area
-			}
+			vij_malabar_provinces = yes
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			kanara_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			malabar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			madura_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
+			has_fulfiled_province_requirement_for_mission_trigger = {
+                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+                provinces=vij_malabar_provinces
+                owner_type=country_or_non_sovereign_subject_holds
+            }
 		}
 		effect = {
 			malabar_area = {
@@ -580,20 +421,8 @@ vij_tamil_conquest = {
 		}
 		effect = {
 			country_event = { id = flavor_vij.21 }
-			yemen_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			orissa_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}		
+			give_permaclaims_for_mission = { mission=vij_aden_conquest }
+			give_permaclaims_for_mission = { mission=vij_conquer_orissa }	
 		}
 	}
 }
@@ -636,20 +465,7 @@ vij_east_conquest = {
 			}
 		}
 		effect = {
-			andhra_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			north_carnatic_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=vij_conquer_andhra }
 		}	
 	}
 	vij_conquer_andhra = {
@@ -657,23 +473,17 @@ vij_east_conquest = {
 		required_missions = { vij_tamil_rebels }
 		completed_by = 1516.1.1
 		provinces_to_highlight = {
-			OR = {
-				area = andhra_area
-				area = north_carnatic_area
-			}
+			vij_conquer_andhra_provinces = yes
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			andhra_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			north_carnatic_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
+			has_fulfiled_province_requirement_for_mission_trigger = {
+                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+                provinces=vij_conquer_andhra_provinces
+                owner_type=country_or_non_sovereign_subject_holds
+            }
 		}
 		effect = {
 			add_country_modifier = {
@@ -688,25 +498,20 @@ vij_east_conquest = {
 		required_missions = { vij_city_of_victory }
 		position = 6
 		provinces_to_highlight = {
-			area = orissa_area
+			vij_conquer_orissa_provinces = yes
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			orissa_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
+			has_fulfiled_province_requirement_for_mission_trigger = {
+                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+                provinces=vij_conquer_orissa_provinces
+                owner_type=country_or_non_sovereign_subject_holds
+            }
 		}
 		effect = {
-			tenasserim_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=vij_chola_conquest }
 			east_bengal_area = {
 				limit = {
 					NOT = { is_claim = ROOT	}
@@ -808,7 +613,7 @@ vij_religious_missions = {
 		required_missions = { vij_war_plunder }
 		trigger = {
 			capital_scope = {
-				development = 24
+				development = 48
 			}
 		}
 		effect = {
@@ -859,21 +664,22 @@ vij_religious_missions = {
 					influence = 100
 				}
 			}
-			NOT = {
-				any_owned_province = {
-					has_estate = estate_jains
-					devastation = 1
-					NOT = {
-						controlled_by = ROOT
-					}
-				}
-			}		
+			estate_loyalty = {
+				estate = estate_jains
+				loyalty = 60
+			}
+			num_of_estate_privileges = {
+				estate = estate_jains
+				value = 2
+			}
 		}
 		effect = {
 			add_adm_power = 50
-			add_estate_loyalty = {
+			add_estate_loyalty_modifier = {
 				estate = estate_jains
-				loyalty = 30
+				desc = EST_VAL_VIJ_PROTECT_JAINS
+				loyalty = 10
+				duration = 10950
 			}
 		}
 	}
@@ -894,7 +700,11 @@ vij_religious_missions = {
 			}
 			estate_loyalty = {
 				estate = estate_brahmins
-				loyalty = 80
+				loyalty = 60
+			}
+			num_of_estate_privileges = {
+				estate = estate_brahmins
+				value = 2
 			}
 			religious_unity = 1
 		}
@@ -908,42 +718,38 @@ vij_religious_missions = {
 		required_missions = { vij_conquer_orissa }
 		position = 7
 		provinces_to_highlight = {
-			area = tenasserim_area
+			vij_chola_conquest_provinces = yes
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			tenasserim_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
+			has_fulfiled_province_requirement_for_mission_trigger = {
+                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+                provinces=vij_chola_conquest_provinces
+                owner_type=country_or_non_sovereign_subject_holds
+            }
 		}
 		effect = {
 			add_navy_tradition = 25
-			malaya_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=vij_rajendra_ambition }
 		}
 	}
 	vij_rajendra_ambition = {
 		icon = mission_rajendras_ambition
 		required_missions = { vij_chola_conquest }
 		provinces_to_highlight = {
-			region = malaya_region
+			vij_rajendra_ambition_provinces = yes
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			malaya_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
+			has_fulfiled_province_requirement_for_mission_trigger = {
+                tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+                provinces=vij_rajendra_ambition_provinces
+                owner_type=country_or_non_sovereign_subject_holds
+            }
 		}
 		effect = {
 			add_prestige = 20

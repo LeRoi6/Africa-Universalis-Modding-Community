@@ -2,9 +2,9 @@
 #Region - Germany
 #Area - Thuringia
 
-owner = SAX
-controller = SAX
-culture = saxon
+owner = THU
+controller = THU
+culture = franconian
 religion = catholic
 capital = "Plauen"
 trade_goods = wool
@@ -13,8 +13,7 @@ base_tax = 4
 base_production = 2 
 base_manpower = 2 
 is_city = yes
-estate = estate_nobles
-add_core = SAX
+add_core = THU
 
 discovered_by = western
 discovered_by = muslim

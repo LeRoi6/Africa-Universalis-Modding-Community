@@ -9,6 +9,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//missions//mission_breitenfeld.dds"
 	}
 	spriteType = {
+		name = "mission_tre_kronor"
+		texturefile = "gfx//interface//missions//mission_tre_kronor.dds"
+	}
+	spriteType = {
 		name = "mission_hre_shield"
 		texturefile = "gfx//interface//missions//mission_hre_shield.dds"
 	}
@@ -51,6 +55,26 @@ spriteTypes = {
 	spriteType = {
 		name = "mission_serbian_empire"
 		texturefile = "gfx//interface//missions//mission_serbian_empire.dds"
+	}
+	spriteType = {
+		name = "mission_black_sheep"
+		texturefile = "gfx//interface//missions//mission_black_sheep.dds"
+	}
+	spriteType = {
+		name = "mission_white_sheep"
+		texturefile = "gfx//interface//missions//mission_white_sheep.dds"
+	}
+	spriteType = {
+		name = "mission_baghdad"
+		texturefile = "gfx//interface//missions//mission_baghdad.dds"
+	}
+	spriteType = {
+		name = "mission_hospital"
+		texturefile = "gfx//interface//missions//mission_hospital.dds"
+	}
+	spriteType = {
+		name = "mission_muslim_piety"
+		texturefile = "gfx//interface//missions//mission_muslim_piety.dds"
 	}
 }
 

@@ -4,16 +4,21 @@ graphical_culture = easterngfx # czechgfx # UPE compatibility
 
 color = { 124  105  182 }
 revolutionary_colors = { 0  4  15 }
+#Vanilla's:
+#color = { 34 131 193 }
+#revolutionary_colors = { 0 15 16 }
 
 historical_idea_groups = {
 	economic_ideas
 	defensive_ideas
 	diplomatic_ideas
 	offensive_ideas
+#	trade_ideas
 	innovativeness_ideas
 	quantity_ideas
 	administrative_ideas
 	religious_ideas
+#	spy_ideas	
 }
 
 historical_units = {

@@ -1,0 +1,43 @@
+#8239 - Osoblaha
+#Area - Upper Silesia
+#Region - Poland
+
+#Core Details
+capital = "Osoblaha"
+is_city = yes
+owner = BOH
+controller = BOH
+
+#Demographics
+culture = silesian_german
+religion = catholic
+
+#Development and Trade
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = grain
+
+#Cores and Occupation (Alphabetical after current)
+add_core = BOH
+add_core = MRV
+
+#Other Political
+hre = yes
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Histories

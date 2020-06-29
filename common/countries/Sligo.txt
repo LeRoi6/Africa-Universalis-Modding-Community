@@ -3,6 +3,9 @@
 graphical_culture = westerngfx # was irishgfx # UPE compatibility
 
 color = { 120  120  120 }
+#Vanilla's colour:
+#color = { 191 155 203 }
+revolutionary_colors = { 1 0 1 }
 
 historical_idea_groups = {
 	maritime_ideas

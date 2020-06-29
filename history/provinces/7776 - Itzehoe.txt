@@ -3,7 +3,7 @@
 owner = SHL
 controller = SHL
 add_core = SHL
-culture = hannoverian
+culture = lower_saxon
 religion = catholic
 capital = "Itzehoe"
 base_tax = 5

@@ -1,0 +1,140 @@
+country_decisions = {
+	
+	zimbabwe_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_zimbabwe_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = GZB }
+			NOT = { tag = ZIM }
+			NOT = { tag = LZW }
+			NOT = { tag = RZW }
+			religion = shamanism
+			
+			
+			OR = {
+				primary_culture = shona
+				AND = {
+					OR = {
+						culture_group = shona_group
+					}
+					OR = {
+						capital_scope = { area = zimbabwe_area }
+						capital_scope = { area = naletale_area }
+						capital_scope = { area = manyika_area }
+						capital_scope = { area = madanda_area }
+						capital_scope = { area = butua_area }
+						capital_scope = { area = vuxwa_area }
+					}
+				}
+			}
+			any_owned_province = {
+				OR = {
+				1184 = { owned_by = ROOT }
+				1185 = { owned_by = ROOT }
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = zimbabwe_area
+				area = naletale_area
+				area = manyika_area
+				area = madanda_area
+				area = butua_area
+				area = vuxwa_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = GZB }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 1184
+			calc_true_if = {
+				all_owned_province = {
+					is_core = ROOT
+					OR = {
+						area = zimbabwe_area
+						area = naletale_area
+						area = manyika_area
+						area = madanda_area
+						area = butua_area
+						area = vuxwa_area
+					}
+				}
+				amount = 20			
+			}
+			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
+			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
+		}
+		
+		
+		effect = {
+			change_tag = GZB
+			swap_non_generic_missions = yes
+			
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			
+			add_prestige = 25
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 3650
+			}
+			
+			set_capital = 1184 #Zimbabwe
+			
+			if = {
+				limit = {
+					government = tribal
+				}
+				change_government = monarchy 
+			}
+				
+			if = {
+				limit = {
+				NOT = { owned_by = ROOT }
+				}
+			 zimbabwe_area = {
+				add_permanent_claim = ROOT
+			}
+			 butua_area = {
+				add_permanent_claim = ROOT
+			}
+			 naletale_area = {
+				add_permanent_claim = ROOT
+			}
+			 manyika_area = {
+				add_permanent_claim = ROOT
+			}
+			 madanda_area = {
+				add_permanent_claim = ROOT
+			}
+			 vuxwa_area = {
+				add_permanent_claim = ROOT
+			}
+			}
+			
+			
+			
+			set_country_flag = formed_zimbabwe_flag
+			
+			add_government_reform = confederation_of_zimbabwe_reform
+			
+
+		}
+	}
+}

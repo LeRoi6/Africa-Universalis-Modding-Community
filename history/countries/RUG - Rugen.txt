@@ -5,7 +5,7 @@ primary_culture = polabian_culture
 add_accepted_culture = pommeranian
 religion = catholic
 technology_group = western
-capital = 7814
+capital = 4745
 
 
 #Incomplete

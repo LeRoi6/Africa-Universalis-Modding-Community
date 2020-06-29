@@ -14,7 +14,6 @@ base_production = 2
 trade_goods = livestock			#Cow crossing.... sounds about right. Niki identified peat as the main export (timeframe unknown?) but Dutch cattle were a thing too, and the town's name makes it too good to resist. Plus this was a poor marshy area for grain.
 base_manpower = 1 
 add_core = UTR
-estate = estate_church
 
 discovered_by = western
 discovered_by = muslim

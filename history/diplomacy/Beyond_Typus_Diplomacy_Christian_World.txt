@@ -54,6 +54,13 @@ march = {
 
 march = {
 	first = ENG
+	second = DUR
+	start_date = 1291.1.1 
+	end_date = 1836.6.5
+}
+
+march = {
+	first = ENG
 	second = KOI
 	start_date = 1444.1.1
 	end_date = 1444.11.16 #BeyondTypus batch edit shortcut second performance start begins
@@ -133,7 +140,7 @@ union = {
 ############################################################
 #French Fiefs
 dependency = {
-	subject_type = "fiefdom_bt"
+	subject_type = "vassal"
 	first = FRA
 	second = ORL
 	start_date = 1444.1.1
@@ -141,7 +148,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "fiefdom_bt"
+	subject_type = "vassal"
 	first = FRA
 	second = ORL
 	start_date = 1444.11.18 #BeyondTypus batch edit shortcut second performance start ends
@@ -149,7 +156,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "fiefdom_bt"
+	subject_type = "vassal"
 	first = FRA
 	second = BOU
 	start_date = 1444.1.1
@@ -157,7 +164,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "fiefdom_bt"
+	subject_type = "vassal"
 	first = FRA
 	second = BOU
 	start_date = 1444.11.18 #BeyondTypus batch edit shortcut second performance start ends
@@ -165,7 +172,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "fiefdom_bt"
+	subject_type = "vassal"
 	first = FRA
 	second = AMG
 	start_date = 1444.1.1
@@ -173,7 +180,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "fiefdom_bt"
+	subject_type = "vassal"
 	first = FRA
 	second = AMG
 	start_date = 1444.11.18 #BeyondTypus batch edit shortcut second performance start ends
@@ -181,7 +188,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "fiefdom_bt"
+	subject_type = "vassal"
 	first = FRA
 	second = RHM
 	start_date = 1444.1.1
@@ -189,7 +196,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "fiefdom_bt"
+	subject_type = "vassal"
 	first = FRA
 	second = RHM
 	start_date = 1444.11.18 #BeyondTypus batch edit shortcut second performance start ends
@@ -197,7 +204,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "fiefdom_bt"
+	subject_type = "vassal"
 	first = FRA
 	second = LAO
 	start_date = 1444.1.1
@@ -205,7 +212,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "fiefdom_bt"
+	subject_type = "vassal"
 	first = FRA
 	second = LAO
 	start_date = 1444.11.18 #BeyondTypus batch edit shortcut second performance start ends
@@ -213,7 +220,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "fiefdom_bt"
+	subject_type = "vassal"
 	first = FRA
 	second = LGR
 	start_date = 1444.1.1
@@ -221,7 +228,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "fiefdom_bt"
+	subject_type = "vassal"
 	first = FRA
 	second = LGR
 	start_date = 1444.11.18 #BeyondTypus batch edit shortcut second performance start ends
@@ -344,14 +351,14 @@ guarantee = {
 
 guarantee = {
 	first = BUR
-	second = SPL
+	second = TRN
 	start_date = 1444.1.1
 	end_date = 1444.11.13 #BeyondTypus batch edit shortcut the second shattering begins
 }
 
 guarantee = {
 	first = BUR
-	second = SPL
+	second = TRN
 	start_date = 1444.11.18 #BeyondTypus batch edit shortcut second performance start ends
 	end_date = 1477.1.5
 }
@@ -373,7 +380,7 @@ guarantee = {
 #Other Stuff
 
 union = {
-	first = ANJ
+	first = PRO
 	second = LOR
 	start_date = 1431.1.25
 	end_date = 1453.2.28
@@ -381,7 +388,7 @@ union = {
 
 alliance = {
 	first = FRA
-	second = ANJ
+	second = PRO
 	start_date = 1431.1.25
 	end_date = 1453.7.18
 }
@@ -500,14 +507,14 @@ union = {
 
 guarantee = {
 	first = ARA
-	second = DSS
+	second = HRZ
 	start_date = 1444.1.1
 	end_date = 1444.11.13 #BeyondTypus batch edit shortcut the second shattering begins
 }
 
 guarantee = {
 	first = ARA
-	second = DSS
+	second = HRZ
 	start_date = 1444.11.18 #BeyondTypus batch edit shortcut second performance start ends
 	end_date = 1483.1.1
 }
@@ -689,7 +696,7 @@ vassal = {
 dependency = {
 	subject_type = "papal_subject_bt"
 	first = PAP
-	second = PGI
+	second = PGA
 	start_date = 1291.5.19 #BeyondTypus batch edit shortcut Start Date
 	end_date = 1291.5.21 #BeyondTypus batch edit shortcut the first shattering begins
 }
@@ -697,7 +704,7 @@ dependency = {
 dependency = {
 	subject_type = "papal_subject_bt"
 	first = PAP
-	second = PGI
+	second = PGA
 	start_date = 1291.5.26 #BeyondTypus batch edit shortcut first performance start ends
 	end_date = 1408.1.1
 }
@@ -705,7 +712,7 @@ dependency = {
 dependency = {
 	subject_type = "papal_subject_bt"
 	first = PAP
-	second = PGI
+	second = PGA
 	start_date = 1414.8.6 
 	end_date = 1444.11.13 #BeyondTypus batch edit shortcut the second shattering begins
 }
@@ -713,7 +720,7 @@ dependency = {
 dependency = {
 	subject_type = "papal_subject_bt"
 	first = PAP
-	second = PGI
+	second = PGA
 	start_date = 1444.11.18 #BeyondTypus batch edit shortcut second performance start ends
 	end_date = 1450.1.1
 }
@@ -858,7 +865,7 @@ dependency = {
 dependency = {
 	subject_type = "papal_subject_bt"
 	first = PAP
-	second = ALA
+	second = ALT
 	start_date = 1291.5.19 #BeyondTypus batch edit shortcut Start Date
 	end_date = 1291.5.21 #BeyondTypus batch edit shortcut the first shattering begins
 }
@@ -866,7 +873,7 @@ dependency = {
 dependency = {
 	subject_type = "papal_subject_bt"
 	first = PAP
-	second = ALA
+	second = ALT
 	start_date = 1291.5.26 #BeyondTypus batch edit shortcut first performance start ends
 	end_date = 1434.1.1
 }
@@ -922,7 +929,7 @@ dependency = {
 dependency = {
 	subject_type = "papal_subject_bt"
 	first = PAP
-	second = SPO
+	second = SPL
 	start_date = 1291.5.19 #BeyondTypus batch edit shortcut Start Date
 	end_date = 1291.5.21 #BeyondTypus batch edit shortcut the first shattering begins
 }
@@ -930,7 +937,7 @@ dependency = {
 dependency = {
 	subject_type = "papal_subject_bt"
 	first = PAP
-	second = SPO
+	second = SPL
 	start_date = 1291.5.26 #BeyondTypus batch edit shortcut first performance start ends
 	end_date = 1354.1.1
 }
@@ -1131,7 +1138,7 @@ vassal = {
 
 vassal = {
 	first = SWI
-	second = GRL
+	second = TTL
 	start_date = 1497.1.1
 	end_date = 1520.1.1
 } # Switzerland-Grey Leagues relations
@@ -1145,7 +1152,7 @@ union = {
 
 union = {
 	first = KOL
-	second = PDB
+	second = PAD
 	start_date = 1415.1.1
 	end_date = 1463.2.14
 }
@@ -1171,7 +1178,75 @@ vassal = {
 	end_date = 1809.1.1
 }
 
+vassal = {
+	first = BOH
+	second = GLG
+	start_date = 1444.1.1
+	end_date = 1450.1.1
+}
 
+vassal = {
+	first = BOH
+	second = LEG
+	start_date = 1444.1.1
+	end_date = 1450.1.1
+}
+
+vassal = {
+	first = BOH
+	second = OLE
+	start_date = 1444.1.1
+	end_date = 1450.1.1
+}
+
+vassal = {
+	first = BOH
+	second = OPL
+	start_date = 1444.1.1
+	end_date = 1450.1.1
+}
+
+vassal = {
+	first = BOH
+	second = TRO
+	start_date = 1444.1.1
+	end_date = 1450.1.1
+}
+
+vassal = {
+	first = BOH
+	second = BEG
+	start_date = 1444.1.1
+	end_date = 1450.1.1
+}
+
+vassal = {
+	first = BOH
+	second = TES
+	start_date = 1444.1.1
+	end_date = 1450.1.1
+}
+
+vassal = {
+	first = BOH
+	second = RAC
+	start_date = 1444.1.1
+	end_date = 1450.1.1
+}
+
+vassal = {
+	first = BOH
+	second = NIE
+	start_date = 1444.1.1
+	end_date = 1450.1.1
+}
+
+vassal = {
+	first = BOH
+	second = ASC
+	start_date = 1444.1.1
+	end_date = 1450.1.1
+}
 
 ############################################################
 ############################################################

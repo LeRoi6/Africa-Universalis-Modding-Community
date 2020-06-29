@@ -14,8 +14,17 @@ country_decisions = {
 			NOT = { tag = HLR }
 			NOT = { tag = ROM }
 			NOT = { tag = TUR }
-			culture_group = byzantine
-			religion = orthodox
+			OR = {
+				culture_group = byzantine
+				AND = {
+					has_idea = MFA_byzantine_claimants
+					dynasty = "Palaiologos"
+				}
+			}
+			OR = {
+				religion = orthodox
+				has_idea = MFA_byzantine_claimants
+			}
 			num_of_owned_provinces_with = {
 				value = 5
 				OR = {

@@ -55,24 +55,23 @@ discovered_by = eastern
 	owner = VEN
 	controller = VEN
 	add_core = VEN
-	estate = estate_church
 	add_local_autonomy = 50
 }	#Right of civil investiture
 1516.12.1 = { controller = VEN remove_core = HAB } # Treaty of Brussels
-1769.12.14 = { remove_estate = estate_church add_local_autonomy = -50 }#Venice finally integrates Ceneda
+1769.12.14 = { add_local_autonomy = -50 }#Venice finally integrates Ceneda
 1797.10.17 = {
 	owner = HAB
 	controller = HAB
 	add_core = HAB
 } # Treaty of Campo Formio
 1805.12.26 = {
-	owner = ITA
-	controller = ITA
-	add_core = ITA
+	owner = ITL
+	controller = ITL
+	add_core = ITL
 	remove_core = HAB
 } # Treaty of Pressburg
 1814.4.11 = {	owner = HAB
 	controller = HAB
 	add_core = HAB
-	remove_core = ITA
+	remove_core = ITL
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally

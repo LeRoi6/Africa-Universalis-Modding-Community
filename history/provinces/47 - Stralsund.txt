@@ -24,9 +24,9 @@ discovered_by = eastern
 
 
 1325.1.1 = {
-	owner = WLG
-	controller = WLG
-	add_core = WLG
+	owner = WOL
+	controller = WOL
+	add_core = WOL
 	remove_core = POM
 	hre = yes
 }	#House of Wizlaw dies out. Rugen inherited by the Griffins and goes with them to Pomerania. Specifically Wartislaw IV of Wolgast.

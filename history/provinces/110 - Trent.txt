@@ -2,9 +2,9 @@
 #Region - Italy
 #Area - Venetia
 
-owner = TRN
-controller = TRN
-add_core = TRN
+owner = TNT
+controller = TNT
+add_core = TNT
 culture = venetian
 religion = catholic
 hre = yes
@@ -29,8 +29,8 @@ discovered_by = ottoman
 	add_core = HAB
 } #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
 1291.5.26 = { #BeyondTypus batch edit shortcut first performance start ends
-	owner = TRN
-	controller = TRN
+	owner = TNT
+	controller = TNT
 	remove_core = HAB
 } #Return to proper mod added owners and cuts vanilla core, typically.
 
@@ -43,8 +43,8 @@ discovered_by = ottoman
 	add_core = HAB
 } #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
 1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
-	owner = TRN
-	controller = TRN
+	owner = TNT
+	controller = TNT
 	remove_core = HAB
 } #Return to proper mod added owners and cuts vanilla core, typically.
 
@@ -65,9 +65,9 @@ discovered_by = ottoman
 	add_core = BAV
 } # The Treaty of Pressburg
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-1809.10.14 = {	owner = ITA
-	controller = ITA
-	add_core = ITA
+1809.10.14 = {	owner = ITL
+	controller = ITL
+	add_core = ITL
 	remove_core = BAV
 } # Incorporated into the Kingdom of Italy after the treaty of Schönbrunn
 1814.4.11 = {	owner = HAB

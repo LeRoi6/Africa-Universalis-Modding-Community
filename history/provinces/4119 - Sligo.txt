@@ -1,4 +1,4 @@
-#3013 - Sligo			Adapted to 4119 with BT 3.0
+#4119 - Sligo			Adapted to 4119 with BT 3.0
 #Region - Ireland
 #Area - Connacht
 
@@ -8,10 +8,10 @@ add_core = SLN
 culture = irish
 religion = catholic
 hre = no
-base_tax = 4  
-base_production = 4 
-base_manpower = 2 
-trade_goods = naval_supplies
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = fish #Was naval_supplies
 capital = "Sligeach"
 is_city = yes
 

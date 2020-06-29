@@ -1,9 +1,15 @@
+#Updated by Dub.
 berber_3 = {
 	slot = 3
 	generic = yes
 	ai = yes
 	potential = {
-		culture_group = maghrebi
+		OR = { #BT overhauled this due to cultural overhaul restricting this to Algiers only.
+			culture_group = berber_group
+			culture_group = maghrebi
+			primary_culture = tunisian
+			primary_culture = moroccan
+		}
 		capital_scope = {
 			region = maghreb_region
 		}
@@ -214,7 +220,7 @@ berber_3 = {
 						capital_scope = {
 							region = iberia_region
 						}
-						total_development = 100
+						total_development = 200
 						religion_group = christian
 						is_subject = no
 					}
@@ -224,7 +230,7 @@ berber_3 = {
 				tooltip = berber_invade_iberia_tooltip_2
 				num_of_owned_provinces_with = {
 					region = iberia_region
-					value = 5
+					value = 10
 				}
 			}
 		}

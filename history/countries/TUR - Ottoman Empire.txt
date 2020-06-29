@@ -13,6 +13,25 @@ capital = 149 # Edirne
 #national_focus = MIL
 add_army_professionalism = 0.1
 religious_school = hanafi_school
+#Changed from vanilla's values due to Ottomans now having state religion not dominant
+change_estate_land_share = {
+	estate = estate_dhimmi
+	share = -20
+}
+change_estate_land_share = {
+	estate = estate_church
+	share = 10
+}
+change_estate_land_share = {
+	estate = estate_nobles
+	share = 10
+}
+
+1444.10.1 = {
+	set_estate_privilege = estate_dhimmi_guaranteed_autonomy
+	set_estate_privilege = estate_dhimmi_lighter_dhimmi_taxes
+	set_estate_privilege = estate_dhimmi_manpower
+}
 
 1439.1.1 = {
 	leader = {
@@ -462,8 +481,6 @@ religious_school = hanafi_school
 	add_ruler_personality = embezzler_personality
 	add_piety = -0.2
 }
-
-#1640.2.8 = { add_government_reform = autocracy_reform }
 
 1642.1.2 = {
 	heir = {

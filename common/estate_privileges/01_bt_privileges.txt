@@ -1,0 +1,109 @@
+estate_nobles_very_strong_duchies = {
+	icon = privilege_royal_authority
+	max_absolutism = -10
+	influence = 0.1
+	loyalty = 0.05
+	is_valid = {
+		calc_true_if = {
+			amount = 3
+			all_subject_country = {
+				OR = {
+					is_march = yes
+					is_vassal = yes
+				}
+			}
+		}
+		OR = {
+			has_estate_privilege = estate_nobles_strong_duchies
+			has_estate_privilege = estate_nobles_french_strong_duchies 
+		}
+	}
+	can_select = {
+		if = {
+			limit = {
+				has_dlc = "Art of War"
+			}
+			custom_trigger_tooltip = {
+				tooltip = estate_nobles_very_strong_duchies_trigger_tooltip
+				calc_true_if = {
+					amount = 4
+					all_subject_country = {
+						OR = {
+							is_march = yes
+							is_vassal = yes
+						}
+					}
+				}
+			}
+		}
+		else = {
+			vassal = 4
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+		diplomatic_upkeep = 2
+		reduced_liberty_desire = 10
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = { #will lose it via invalid sooner or later
+			factor = 10
+			has_estate_privilege = estate_nobles_very_strong_duchies
+		}
+	}
+}
+estate_nobles_extremely_strong_duchies = {
+	icon = privilege_royal_authority
+	max_absolutism = -10
+	influence = 0.1
+	loyalty = 0.05
+	is_valid = {
+		calc_true_if = {
+			amount = 5
+			all_subject_country = {
+				OR = {
+					is_march = yes
+					is_vassal = yes
+				}
+			}
+		}
+		has_estate_privilege = estate_nobles_very_strong_duchies
+	}
+	can_select = {
+		if = {
+			limit = {
+				has_dlc = "Art of War"
+			}
+			custom_trigger_tooltip = {
+				tooltip = estate_nobles_extremely_strong_duchies_trigger_tooltip
+				calc_true_if = {
+					amount = 6
+					all_subject_country = {
+						OR = {
+							is_march = yes
+							is_vassal = yes
+						}
+					}
+				}
+			}
+		}
+		else = {
+			vassal = 6
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+		diplomatic_upkeep = 2
+		reduced_liberty_desire = 10
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = { #will lose it via invalid sooner or later
+			factor = 10
+			has_estate_privilege = estate_nobles_extremely_strong_duchies
+		}
+	}
+}

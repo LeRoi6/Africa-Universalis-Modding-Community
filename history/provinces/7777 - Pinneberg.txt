@@ -3,7 +3,7 @@
 owner = PNN
 controller = PNN
 add_core = PNN
-culture = hannoverian
+culture = lower_saxon
 religion = catholic
 capital = "Pinneberg"
 base_tax = 3

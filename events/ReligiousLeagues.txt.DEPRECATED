@@ -1,0 +1,510 @@
+########################################
+# Events for Religious Leagues
+#
+# written by Martin Anward
+########################################
+
+namespace = religious_leagues
+
+# The Emperor Triumphant (Catholic)
+country_event = {
+	id = religious_leagues.1
+	title = "religious_leagues.1.t"
+	desc = "religious_leagues.1.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		hre_religion = catholic
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_hre_religion_locked = yes
+		}
+	}
+
+	option = {
+		name = "religious_leagues.1.a"
+		tooltip = { 
+			set_hre_religion_locked = yes 
+		}
+	}
+}
+
+# Victory of the Protestant League
+country_event = {
+	id = religious_leagues.2
+	title = "religious_leagues.2.t"
+	desc = "religious_leagues.2.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		hre_religion = catholic
+		OR = {
+			NOT = { has_country_flag = hre_religion_changed }
+			had_country_flag = { flag = hre_religion_changed days = 30 }
+		}
+	}
+	
+	immediate = {
+		set_country_flag = hre_religion_changed
+		hidden_effect = {
+			set_hre_heretic_religion = catholic
+			set_hre_religion = protestant
+			set_hre_religion_locked = yes			
+		}
+	}
+
+	option = {
+		name = "religious_leagues.2.a"
+		tooltip = { 
+			set_hre_heretic_religion = catholic
+			set_hre_religion = protestant	
+			set_hre_religion_locked = yes			
+		}
+		
+		#Italy removed from HRE
+		if = {
+			limit = {
+				NOT = { has_global_flag = italy_out_of_HRE }
+				NOT = { has_global_flag = bt_ghibelline_victory_in_italy }
+				NOT = { emperor = { capital_scope = { region = italy_region } } }
+				italy_region = {
+					is_part_of_hre = yes
+					owner = {
+						NOT = { has_country_modifier = bt_ghibelline_nation }
+						NOT = { culture_group = germanic }
+						OR = {
+							is_free_or_tributary_trigger = yes
+							AND = {
+								is_subject = yes
+								overlord = { NOT = { is_part_of_hre = yes } }
+							}
+						}
+					}
+				}
+			}
+			custom_tooltip = bt_italy_removed_from_hre
+			hidden_effect = {
+				set_global_flag = italy_out_of_HRE
+				every_country = {
+					limit = {
+						is_part_of_hre = yes
+						capital_scope = { region = italy_region }
+						NOT = { has_country_flag = shadow_kingdom }
+						NOT = { emperor = { overlord_of = PREV } }
+					}
+					country_event = { id = BtPLegacyItalyHRE.1 }
+					set_country_flag = shadow_kingdom #To keep track of info events
+				}
+				italy_region = {
+					limit = {
+						is_part_of_hre = yes
+						owner = { is_part_of_hre = no }
+					}
+					set_in_empire = no
+					owner = {
+						country_event = { id = BtPLegacyItalyHRE.5 } #Info Event
+						set_country_flag = had_shadow_kingdom_info
+					}
+				}
+			}
+		}
+		#Switzerland removed from HRE
+		if = {
+			limit = {
+				NOT = { has_global_flag = bt_ghibelline_victory_in_italy }
+				switzerland_area = {
+					is_part_of_hre = yes
+					owner = {
+						OR = {
+							is_free_or_tributary_trigger = yes
+							AND = {
+								is_subject = yes
+								overlord = { NOT = { is_part_of_hre = yes } }
+							}
+						}
+					}
+				}
+			}
+			custom_tooltip = bt_switzerland_removed_from_hre
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_part_of_hre = yes
+						OR = {
+							capital_scope = { area = switzerland_area }
+							capital_scope = { area = romandie_area }
+						}
+					}
+					country_event = { id = BtPLegacyItalyHRE.6 }
+				}
+				switzerland_area = {
+					limit = {
+						is_part_of_hre = yes
+						owner = { is_part_of_hre = no }
+					}
+					set_in_empire = no
+				}
+				romandie_area = {
+					limit = {
+						is_part_of_hre = yes
+						owner = { is_part_of_hre = no }
+					}
+					set_in_empire = no
+				}
+			}
+		}
+	}
+}
+
+# Victory of the Catholic League
+country_event = {
+	id = religious_leagues.3
+	title = "religious_leagues.3.t"
+	desc = "religious_leagues.3.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		hre_religion = protestant
+		OR = {
+			NOT = { has_country_flag = hre_religion_changed }
+			had_country_flag = { flag = hre_religion_changed days = 30 }
+		}
+	}
+	
+	immediate = {
+		set_country_flag = hre_religion_changed
+		hidden_effect = {
+			set_hre_heretic_religion = protestant
+			set_hre_religion = catholic
+			set_hre_religion_locked = yes			
+		}
+	}
+
+	option = {
+		name = "religious_leagues.3.a"
+		tooltip = { 
+			set_hre_heretic_religion = protestant	
+			set_hre_religion = catholic
+			set_hre_religion_locked = yes
+		}
+	}
+}
+
+# Peace of Westphalia
+country_event = {
+	id = religious_leagues.4
+	title = "religious_leagues.4.t"
+	desc = "religious_leagues.4.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_hre_religion_treaty = yes
+		}
+	}
+
+	option = {
+		name = "religious_leagues.4.a"
+		tooltip = { 
+			set_hre_religion_treaty = yes
+		}
+		#Italy removed from HRE
+		if = {
+			limit = {
+				NOT = { has_global_flag = italy_out_of_HRE }
+				NOT = { has_global_flag = bt_ghibelline_victory_in_italy }
+				NOT = { emperor = { capital_scope = { region = italy_region } } }
+				italy_region = {
+					is_part_of_hre = yes
+					owner = {
+						NOT = { has_country_modifier = bt_ghibelline_nation }
+						NOT = { culture_group = germanic }
+						OR = {
+							is_free_or_tributary_trigger = yes
+							AND = {
+								is_subject = yes
+								overlord = { NOT = { is_part_of_hre = yes } }
+							}
+						}
+					}
+				}
+			}
+			custom_tooltip = bt_italy_removed_from_hre
+			hidden_effect = {
+				set_global_flag = italy_out_of_HRE
+				every_country = {
+					limit = {
+						is_part_of_hre = yes
+						capital_scope = { region = italy_region }
+						NOT = { has_country_flag = shadow_kingdom }
+						NOT = { emperor = { overlord_of = PREV } }
+					}
+					country_event = { id = BtPLegacyItalyHRE.1 }
+					set_country_flag = shadow_kingdom #To keep track of info events
+				}
+				italy_region = {
+					limit = {
+						is_part_of_hre = yes
+						owner = { is_part_of_hre = no }
+					}
+					set_in_empire = no
+					owner = {
+						country_event = { id = BtPLegacyItalyHRE.5 } #Info Event
+						set_country_flag = had_shadow_kingdom_info
+					}
+				}
+			}
+		}
+		#Switzerland removed from HRE
+		if = {
+			limit = {
+				NOT = { has_global_flag = bt_ghibelline_victory_in_italy }
+				switzerland_area = {
+					is_part_of_hre = yes
+					owner = {
+						OR = {
+							is_free_or_tributary_trigger = yes
+							AND = {
+								is_subject = yes
+								overlord = { NOT = { is_part_of_hre = yes } }
+							}
+						}
+					}
+				}
+			}
+			custom_tooltip = bt_switzerland_removed_from_hre
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_part_of_hre = yes
+						OR = {
+							capital_scope = { area = switzerland_area }
+							capital_scope = { area = romandie_area }
+						}
+					}
+					country_event = { id = BtPLegacyItalyHRE.6 }
+				}
+				switzerland_area = {
+					limit = {
+						is_part_of_hre = yes
+						owner = { is_part_of_hre = no }
+					}
+					set_in_empire = no
+				}
+				romandie_area = {
+					limit = {
+						is_part_of_hre = yes
+						owner = { is_part_of_hre = no }
+					}
+					set_in_empire = no
+				}
+			}
+		}
+	}
+}
+
+# The Evangelical Union
+country_event = {
+	id = religious_leagues.5
+	title = "religious_leagues.5.t"
+	desc = "religious_leagues.5.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		NOT = { has_global_flag = evangelical_union_happened }
+		hre_leagues_enabled = no
+		hre_religion_locked = no
+		hre_religion_treaty = no
+		is_emperor = yes		
+		is_year = 1550
+		religion = catholic
+		has_global_flag = counter_reformation
+		any_known_country = {
+			is_elector = yes
+			religion = protestant
+			is_free_or_tributary_trigger = yes
+		}
+		NOT = { hre_reform_level = 6 }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.5
+			is_year = 1575
+		}
+		modifier = {
+			factor = 0.1
+			is_year = 1600
+		}		
+	}
+
+	option = {
+		name = "religious_leagues.5.a"
+		enable_hre_leagues = yes
+		set_global_flag = evangelical_union_happened
+	}
+}
+
+# The Imperial Diet (Catholic)
+country_event = {
+	id = religious_leagues.6
+	title = "religious_leagues.6.t"
+	desc = "religious_leagues.6.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		is_emperor = yes
+		is_at_war = no
+		NOT = {
+			any_known_country = {
+				is_in_league_war = yes
+			}
+		}		
+		has_regency = no	
+		hre_religion_locked = no
+		hre_religion_treaty = no
+		religion = catholic
+		OR = {
+			AND = {
+				hre_leagues_enabled = yes
+				had_global_flag = {
+					flag = evangelical_union_happened
+					days = 10950
+				}		
+				NOT = {
+					any_known_country = {
+						is_elector = yes
+						religion = protestant
+						is_league_enemy = ROOT
+						truce_with = ROOT
+					}		
+				}
+			}
+			AND = {
+				NOT = { has_global_flag = evangelical_union_happened }
+				is_year = 1625
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "religious_leagues.6.a"
+		set_hre_religion_locked = yes
+	}
+}
+
+# The Imperial Diet (Protestant)
+country_event = {
+	id = religious_leagues.7
+	title = "religious_leagues.7.t"
+	desc = "religious_leagues.7.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		is_emperor = yes
+		is_at_war = no
+		NOT = {
+			any_known_country = {
+				is_in_league_war = yes
+			}
+		}		
+		has_regency = no	
+		hre_religion_locked = no
+		hre_religion_treaty = no
+		religion = protestant
+		OR = {
+			AND = {
+				hre_leagues_enabled = yes
+				had_global_flag = {
+					flag = evangelical_union_happened
+					days = 10950
+				}		
+				NOT = {
+					any_known_country = {
+						is_elector = yes
+						religion = catholic
+						is_league_enemy = ROOT
+						truce_with = ROOT
+					}		
+				}
+			}
+			AND = {
+				NOT = { has_global_flag = evangelical_union_happened }
+				is_year = 1625
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "religious_leagues.7.a"
+		set_hre_religion_locked = yes
+	}
+}
+
+# The Emperor Triumphant (Protestant)
+country_event = {
+	id = religious_leagues.8
+	title = "religious_leagues.8.t"
+	desc = "religious_leagues.8.d"
+	picture = RELIGIOUS_WARS_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Art of War"
+		hre_religion = protestant
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_hre_religion_locked = yes
+		}
+	}
+
+	option = {
+		name = "religious_leagues.8.a"
+		tooltip = { 
+			set_hre_religion_locked = yes 
+		}
+	}
+}

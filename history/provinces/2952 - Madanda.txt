@@ -1,17 +1,17 @@
 # - Madanda
 
-owner = MDD
-controller = MDD
-add_core = MDD
-culture = madanda
-religion = mhondoro
-capital = "Chibabava"
+owner = ZIM
+controller = ZIM
+add_core = ZIM
+culture = shona
+religion = shamanism
+capital = "Madanda"
 is_city = yes
 base_manpower = 2 
-trade_goods = cloth
+trade_goods = ivory
 hre = no
-base_tax = 3  
-base_production = 3 
+base_tax = 2  
+base_production = 2 
 discovered_by = east_african
 discovered_by = central_african
 

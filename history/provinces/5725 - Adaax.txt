@@ -2,7 +2,7 @@
 
 culture = aleutian
 religion = totemism 
-capital = "Capital"
+capital = "Adak"
 trade_goods = unknown
 hre = no 
 base_tax = 1 

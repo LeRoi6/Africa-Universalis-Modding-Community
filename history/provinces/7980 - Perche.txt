@@ -5,6 +5,7 @@ controller = ENG
 add_core = ENG
 add_core = NRM
 add_core = FRA
+add_core = ALE
 culture = angevin_culture
 religion = catholic
 capital = "Mortagne"
