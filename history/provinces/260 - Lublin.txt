@@ -11,11 +11,12 @@ culture = polish
 religion = catholic
 trade_goods = cloth
 hre = no
-base_tax = 5
-base_production = 5
-base_manpower = 3
+base_tax = 3
+base_production = 2
+base_manpower = 2
+extra_cost = 8
+center_of_trade = 1
 is_city = yes
-estate = estate_nobles
 add_core = POL
 
 discovered_by = KAZ

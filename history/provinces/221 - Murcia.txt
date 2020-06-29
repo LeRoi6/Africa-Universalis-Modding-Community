@@ -5,6 +5,7 @@
 owner = CAS		# Juan II of Castille
 controller = CAS
 add_core = CAS
+add_core = MUR #BTB added: Castilian revolter tag.
 culture = andalucian
 religion = catholic 
 hre = no
@@ -13,7 +14,6 @@ base_production = 5
 trade_goods = silk
 base_manpower = 3
 capital = "Murcia" 
-estate = estate_burghers
 is_city = yes
 
 discovered_by = western

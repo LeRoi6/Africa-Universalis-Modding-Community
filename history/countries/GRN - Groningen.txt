@@ -1,12 +1,12 @@
 government = republic
-add_government_reform = imperial_city
+add_government_reform = free_city
 government_rank = 1
 mercantilism = 0.1
 primary_culture = hannoverian
 religion = catholic
 technology_group = western
-capital = 4382	# Groningen
-fixed_capital = 4382
+capital = 8118	# Groningen
+fixed_capital = 8118
 
 
 1399.1.1 = {

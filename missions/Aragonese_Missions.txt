@@ -55,9 +55,9 @@ aragonese_missions_1 = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
-				PROVINCES=ara_crowns_of_iberia_provinces
-				OWNER_TYPE=country_or_non_sovereign_subject_holds
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=ara_crowns_of_iberia_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -104,9 +104,9 @@ aragonese_missions_2 = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				TOOLTIP=country_holds_highlighted 
-				PROVINCES=integrate_naples_provinces
-				OWNER_TYPE=owned_by
+				tooltip=country_holds_highlighted 
+				provinces=integrate_naples_provinces
+				owner_type=owned_by
 			}
 		}
 		effect = {
@@ -139,9 +139,9 @@ aragonese_missions_2 = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
-				PROVINCES=conquer_athens_provinces
-				OWNER_TYPE=country_or_non_sovereign_subject_holds
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=conquer_athens_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {

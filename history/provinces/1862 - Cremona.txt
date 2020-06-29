@@ -47,15 +47,15 @@ discovered_by = eastern
 	remove_core = HAB
 } # Transpadane Republic
 1797.6.29 = {
-	owner = ITA
-	controller = ITA
-	add_core = ITA
+	owner = ITL
+	controller = ITL
+	add_core = ITL
 } # Cisalpine Republic
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1814.4.11 = {
 	owner = HAB
 	controller = HAB
 	add_core = HAB
-	remove_core = ITA
+	remove_core = ITL
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
 1814.4.20 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # The Milan insurrection

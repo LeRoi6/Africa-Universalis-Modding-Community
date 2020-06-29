@@ -562,6 +562,10 @@
  TRV:0 "Trévise"
  TRV_ADJ:0 "trévisane"
  
+ #1.30
+ HRZ:0 "Hum"            #Duchy of Saint Sava
+ HRZ_ADJ:0 "humaine"          #Yup, going with this 
+ 
  #Institution Overhauls, formerly part of Misc Addon but annexed to BT proper in 10.0 with dev doubling
  tooltip_development_10:0 "Province développée (10 ou plus)"
  tooltip_development_20:0 "Province hautement développée (20 ou plus)"

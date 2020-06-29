@@ -51,14 +51,14 @@ discovered_by = ottoman
 	controller = HAB
 }	#temoprary to Habsburgs
 1384.1.1 = {
-	owner = PAD
-	controller = PAD
-	add_core = PAD
+	owner = PDV
+	controller = PDV
+	add_core = PDV
 }	#to da Carrara
 1388.1.1 = {
 	owner = VEN
 	controller = VEN
-	remove_core = PAD
+	remove_core = PDV
 }	#back to Venice
 1433.1.1 = { hre = no } # Treaty between Doge Francesco Foscari and Emperor Sigismund of the HRE
 
@@ -81,14 +81,14 @@ discovered_by = ottoman
 	add_core = HAB
 } # Treaty of Campo Formio
 1805.12.26 = {
-	owner = ITA
-	controller = ITA
-	add_core = ITA
+	owner = ITL
+	controller = ITL
+	add_core = ITL
 	remove_core = HAB
 } # Treaty of Pressburg
 1814.4.11 = {
 	owner = HAB
 	controller = HAB
 	add_core = HAB
-	remove_core = ITA
+	remove_core = ITL
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally

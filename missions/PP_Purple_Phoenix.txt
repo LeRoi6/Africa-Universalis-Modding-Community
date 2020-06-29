@@ -20,7 +20,7 @@ byz_pp_balkans_north_italy = {
 				area = bulgaria_area
 				area = upper_thrace_area
 				area = danubian_plain_area
-				area = lower_danube_area
+				area = silistria_area
 				area = northern_thrace_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -38,7 +38,7 @@ byz_pp_balkans_north_italy = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			lower_danube_area = {
+			silistria_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -335,7 +335,7 @@ byz_pp_italian = {
 				}
 				add_permanent_claim = ROOT
 			}
-			east_lombardy_area = {
+			po_valley_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -382,7 +382,7 @@ byz_pp_italian = {
 			OR = {
 				area = lombardy_area
 				area = piedmont_area
-				area = east_lombardy_area
+				area = po_valley_area
 				area = north_piedmont_area
 				area = south_piedmont_area
 				area = montferrat_area
@@ -399,7 +399,7 @@ byz_pp_italian = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			east_lombardy_area = {
+			po_valley_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

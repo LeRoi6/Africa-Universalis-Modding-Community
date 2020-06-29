@@ -1,5 +1,4 @@
-#1.25 forcing things to move around a bit. Used to be 4118 
-#3011 - Desmond			Adapted to 4118 with BT 3.0
+#4378 - Killarney
 #Region - Ireland
 #Area - Munster
 
@@ -9,11 +8,11 @@ add_core = MCM
 culture = irish
 religion = catholic
 hre = no
-base_tax = 2  
+base_tax = 1  
 base_production = 2 
 base_manpower = 2 
-trade_goods = fish
-capital = "Tráigh Lí"
+trade_goods = bt_trade_good_beer #Was fish
+capital = "Cill Airne" #"Tráigh Lí"
 is_city = yes
 
 
@@ -90,5 +89,5 @@ discovered_by = eastern
 	controller = GBR
 	add_core = GBR
 	remove_core = ANI
-	capital = "Tralee"
+	capital = "Killarney"
 }	#Act of Union

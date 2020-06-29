@@ -4,11 +4,11 @@ add_government_reform = feudalism_reform
 technology_group = eastern
 primary_culture = bulgarian
 religion = orthodox
-capital = 150	# Tarnovo
+capital = 4704	# Tarnovo
 historical_rival = BYZ
 
 
-1397.7.17 = { capital = 7149 }			#Tarnovo falls. Could move capital about a bunch here, but just moving it directly to Lovech, because simplicity.
+1397.7.17 = { capital = 7706 }			#Tarnovo falls. Could move capital about a bunch here, but just moving it directly to Lovech, because simplicity.
 
 #lovech at this point, by JP
 

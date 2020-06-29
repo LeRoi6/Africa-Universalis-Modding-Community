@@ -30,6 +30,7 @@ china_superregion = {
 	north_china_region
 	xinan_region
 	south_china_region
+	tibet_region
 }
 
 europe_superregion = {
@@ -61,7 +62,6 @@ tartary_superregion = {
 	manchuria_region
 	mongolia_region
 	central_asia_region
-	tibet_region
 }
 
 far_east_superregion = {

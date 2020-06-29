@@ -23,12 +23,13 @@ france_region = {
 		bourgogne_area
 		pyrenees_area
 		savoy_dauphine_area
+		west_burgundy_area
 		#BTADDITIONS
 		poitou_area			#also added by Paradox in 1.25, same id so no change needed.
 		champagne_area			#also added by Paradox in 1.25, same id so no change needed.
 		lower_brittany_area
 		lower_normandy_area
-		maine_anjou_area
+		orleans_area
 		berry_touraine_area
 		lyonnais_area
 		dauphine_area
@@ -37,8 +38,6 @@ france_region = {
 		upper_gascony
 		limousin_area
 		lorraine_area
-		#BTMovedFromFrance
-		franche_comte_area
 	}
 }
 
@@ -73,13 +72,13 @@ low_countries_region = {
 	areas = {
 		wallonia_area
 		flanders_area
-		#holland_area			#New in 1.25, but not yet used in BT. Will almost certainly use it later.
+		holland_area			#New in 1.25, but not yet used in BT. Will almost certainly use it later.
 		brabant_area
-		netherlands_area
+		#netherlands_area		#Cut in 1.30.
 		frisia_area
 		luxemburg_liege_area			#Cut in 1.25, but kept in BT for the moment until I can redo the area.
+		north_brabant_area
 		#BTADDITIONS
-		guelders_area
 		luxembourg_area
 	}
 }
@@ -97,18 +96,18 @@ italy_region = {
 		calabria_area
 		apulia_area
 		emilia_romagna_area
-		central_italy_area
+		lazio_area
 		#BTADDITIONS
 		emilia_area
 		sardinia_area
 		friuli_area
 		carnia_area
 		trentino_area
-		east_lombardy_area
+		po_valley_area
 		north_piedmont_area
 		south_piedmont_area
 		south_tuscany_area
-		north_marche_area
+		central_italy_area
 		umbria_area
 		abruzzo_area
 		upper_emilia_area			#Cut then readded in 12.0
@@ -135,7 +134,8 @@ north_german_region = {
 		mecklenburg_area
 		braunschweig_area
 		#BTADDITIONS
-		muenster_area
+		north_westphalia_area
+		lusatia_area
 	}
 }
 
@@ -147,7 +147,7 @@ south_german_region = {
 		tirol_area
 		austria_proper_area
 		inner_austria_area
-		#carinthia_area			#Temporarily disabled, as it contains only 1 province for the moment
+		carinthia_area			
 		switzerland_area
 		lower_bavaria_area
 		upper_bavaria_area
@@ -162,7 +162,8 @@ south_german_region = {
 		bohemia_area
 		#BTADDITIONS
 		moravia_area
-		carniola_area
+		#carniola_area #Temporarily disabled, as it contains only 1 province for the moment
+		bohemian_forest_area
 	}
 }
 
@@ -259,11 +260,14 @@ british_isles_region = {
 		#southern_isles_area			#Cut to be replaced with kingdom_of_the_isles_area added in 1.25
 		#essex_area			#Cut to be replaced with home_counties_area in 1.25
 		#western_lowlands_area			#Cut to be replaced with scottish_marches_area in 1.25
-		cornwall_area
+		#cornwall_area
 		yorkshire_area		#also added by Paradox in 1.25, same id so no change needed.
 		#lancashire_area			#cut in 1.25, using west_midlands_area as a replacement
 		northern_england_area			#vanilla cut in 1.25, but kept in BT because the new yorkshire_area replacing it was already in BT, and I need an area. This is as good as any and already in triggers
-	}
+		powys_area
+		deheubarth_area
+		grampians_area
+	}	
 }
 
 ireland_area = {
@@ -303,6 +307,7 @@ poland_region = {
 		kuyavia_area			#Repurposing this into BT's old Kalisz area
 		#BTADDITIONS
 		lower_silesia_area
+		middle_silesia_area
 	}
 }
 
@@ -365,7 +370,7 @@ balkan_region = {
 		slavonia_area
 		upper_thrace_area
 		northern_macedonia_area
-		lower_danube_area
+		silistria_area
 		eastern_macedonia_area
 		northern_epirus_area
 		northern_thrace_area
@@ -396,6 +401,8 @@ carpathia_region = {
 		banat_area
 		oltenia_area
 		upper_muntenia_area
+		upper_hungary_area
+		eastern_alfold_area
 	}
 }
 
@@ -634,6 +641,8 @@ east_africa_region = {
 		mozambique_area
 		lower_zambezi_area
 		upper_zambezi_area
+		ruvuma_area
+		#ngonde_area			#Duplicated, figure it out later
 		mascarenes_area
 		madagascar_highlands_area
 		betsimasaraka_area
@@ -641,6 +650,7 @@ east_africa_region = {
 		southern_madagascar
 		uticulo_makuana_area
 		jubba_area
+		#east_african_islands_area			#Cut in 1.20
 		shire_area
 		mombasa_area
 		#BT moved from South Africa
@@ -692,42 +702,19 @@ east_africa_region = {
 
 central_africa_region = {
 	areas = {
+		ngonde_area
 		buha_area
 		katanga_area
 		zambia_area
 		luba_area
 		sankuru_area
+		tanzania_area
 		kenya_area
 		buzinza_area
 		uganda_area
 		rwanda_area
 		chokwe_area
 		bunyoro_area
-		#AUMC New Areas
-		eastern_zambia_area
-	}
-	monsoon = {
-		00.10.01
-		00.12.30
-	}
-	monsoon = {
-		00.01.01
-		00.04.30
-	}
-}
-
-tanzania_region = {
-	areas = {
-		tanzania_area
-		njombe_area
-		makonde_area	
-		ruvuma_area
-		mgunda_mkali_area
-		kilosa_area
-		ikanga_area
-		matogoro_area
-		rukwa_area
-		hehe_area
 	}
 	monsoon = {
 		00.10.01
@@ -1920,7 +1907,7 @@ unused_region = {
 		western_lowlands_area
 		southern_isles_area
 		#Temp unused for BT
-		holland_area
+		#holland_area 				#Reused in 13.0
 		north_karelia
 		volga_area
 		#Removed in 1.26
@@ -1931,7 +1918,7 @@ unused_region = {
 		gujarat_area
 		central_doab_area
 		nepalese_area
-		carinthia_area			#Temporarily disabled
+		#carinthia_area			#Temporarily disabled
 		basque_country
 		oran_area			#repurposing 1.28's new barbary_coast_area into a replacement for this old BT area
 		magadan_area			#removed in vanilla 1.29

@@ -292,8 +292,10 @@ tr_russian_minors_3 = {
 			OR = {
 				area = zaporizhia_area
 				area = sloboda_ukraine_area
-				area = western_zaporizhia_area
 				area = middle_don_area
+				area = yedisan_area
+				area = pryazovia_area
+				area = lower_dnieper_area
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -306,11 +308,19 @@ tr_russian_minors_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
-			western_zaporizhia_area = {
+			middle_don_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
-			middle_don_area = {
+			yedisan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			pryazovia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			lower_dnieper_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
@@ -413,6 +423,41 @@ tr_russian_minors_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			bryansk_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			severia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			oka_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			smolensk_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			white_ruthenia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -424,10 +469,10 @@ tr_russian_minors_4 = {
 			OR = {
 				area = east_dniepr_area
 				area = bryansk_area
-				area = eastern_severia
-				area = western_severia
-				area = chernigov_area
-				area = mstislavl_area
+				area = severia_area
+				area = oka_area
+				area = smolensk_area
+				area = white_ruthenia_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -442,19 +487,19 @@ tr_russian_minors_4 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			eastern_severia = {
+			severia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			western_severia = {
+			oka_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			chernigov_area = {
+			smolensk_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			mstislavl_area = {
+			white_ruthenia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -471,6 +516,48 @@ tr_russian_minors_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
+			}
+			zaporizhia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sloboda_ukraine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			middle_don_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yedisan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pryazovia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_dnieper_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}

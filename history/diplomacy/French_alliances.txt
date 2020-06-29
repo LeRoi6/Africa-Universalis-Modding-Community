@@ -611,6 +611,14 @@ union = {
 	end_date = 1808.6.6
 }
 
+# Napoleonic Grand Duchy of Berg
+union = {
+	first = FRA
+	second = BRG
+	start_date = 1808.8.1
+	end_date = 1809.3.17
+}
+
 # Spain during Joseph Bonaparte's rule
 vassal = {
 	first = FRA

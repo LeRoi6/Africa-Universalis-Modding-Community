@@ -74,9 +74,9 @@ yem_formation = {
 		
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				TOOLTIP=country_holds_highlighted 
-				PROVINCES=yem_gen_recon_one_provinces
-				OWNER_TYPE=owned_by
+				tooltip=country_holds_highlighted 
+				provinces=yem_gen_recon_one_provinces
+				owner_type=owned_by
 			}
 		}
 		
@@ -100,9 +100,9 @@ yem_formation = {
 		trigger = {
 			NOT = { exists = YEM }
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				TOOLTIP=country_holds_highlighted 
-				PROVINCES=yem_gen_recon_two_provinces
-				OWNER_TYPE=owned_by
+				tooltip=country_holds_highlighted 
+				provinces=yem_gen_recon_two_provinces
+				owner_type=owned_by
 			}
 		}
 		

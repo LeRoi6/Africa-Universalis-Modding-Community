@@ -3,6 +3,7 @@
 owner = HAB
 controller = HAB
 add_core = HAB
+add_core = CLI
 culture = slovene
 religion = catholic
 capital = "Skofja Loka"
@@ -11,7 +12,7 @@ base_production = 3
 base_manpower = 2
 trade_goods = grain
 is_city = yes
-hre = no
+hre = yes
 
 discovered_by = KAZ
 discovered_by = CRI

@@ -12,7 +12,8 @@ base_tax = 4
 base_production = 4 
 base_manpower = 2 
 trade_goods = wool
-capital = "Carraig Fhearghais"
+capital = "Cois Abhann Dalla"
+#capital = "Carraig Fhearghais"
 is_city = yes
 
 

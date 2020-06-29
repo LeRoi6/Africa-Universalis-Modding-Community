@@ -40,8 +40,8 @@ center_of_trade = 2
 1806.7.12 = { controller = FRA }
 1807.7.9 = { owner = FRA add_core = FRA } # Treaty of Tilsit
 1808.1.1 = {
-	owner = ITA
-	controller = ITA
+	owner = ITL
+	controller = ITL
 } # Marshal Marmont abolishes the Republic of Ragusa and merges the territory into the Napoleonic Kingdom of Italy
 1810.1.1 = {
 	owner = FRA

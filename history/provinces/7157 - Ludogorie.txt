@@ -12,6 +12,7 @@ base_manpower = 1
 trade_goods = naval_supplies			#the mad forest implies trees
 is_city = yes
 hre = no
+add_local_autonomy = 10
 
 discovered_by = KAZ
 discovered_by = CRI
@@ -33,7 +34,6 @@ discovered_by = western
 	owner = TUR
 	controller = TUR
 	add_core = TUR
-	estate = estate_dhimmi
 } #falls to Turkey, devastated
 #1402.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Interregnum
 1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }

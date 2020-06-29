@@ -146,7 +146,7 @@
  PROV486:0 "Bayaquitiri"
  PROV487:0 "Xaymaca"
  PROV488:0 "Yaguana"                #sources conflict, some saying Yaguana and some saying Guava... but the later sounds like a fruit joke
- PROV489:0 "Guárico"
+ PROV489:0 "Xarama"
  PROV490:0 "Higüey"
  PROV491:0 "Bonay"          #Can't find any indigenous name for Curacao, so just going with Bonay for both... not ideal, but better than a Portuguese name
  PROV493:0 "Tortola"            #Actually a anglicised Dutch name.... but I couldn't find a single native name for any of the islands, and they appear to have been uninhabited after around 1505 until the Dutch landed so.... going with this for now
@@ -734,7 +734,7 @@
  PROV4567:0 "Ghadames"         #Formerly 5308
  
  PROV4618:0 "Gonaibo"         #Formerly 5564
- PROV4619:0 "Xarama"         #Formerly 5562
+ PROV4619:0 "Guárico"         #Formerly 5562
  PROV4620:0 "Maguá"         #Formerly 5566
  PROV4621:0 "Hosama"         #Formerly 5568
  PROV4622:0 "Siwanea"         #Formerly 5570

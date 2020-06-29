@@ -4,18 +4,18 @@ latent_trade_goods = {
 	coal
 }
 
-owner = SIL
-controller = SIL
+owner = RAC
+controller = RAC
 culture = schlesian
 religion = catholic
 hre = yes
-base_tax = 6 
-base_production = 6
+base_tax = 4 
+base_production = 3
 capital = "Ratibor"
 is_city = yes
-trade_goods = wine
-base_manpower = 4 
-add_core = SIL
+trade_goods = cloth #Was wine
+base_manpower = 3 
+add_core = RAC
 
 discovered_by = western
 discovered_by = muslim

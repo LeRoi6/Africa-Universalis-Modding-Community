@@ -47,6 +47,7 @@ discovered_by = eastern
 	owner = CAS
 	controller = CAS
 	add_core = CAS
+	add_core = SVL #BTB added: Castilian revolter tag.
 	culture = andalucian
 	religion = catholic
 }	#Reconquista

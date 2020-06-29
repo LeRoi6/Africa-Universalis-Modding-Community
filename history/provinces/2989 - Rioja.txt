@@ -13,7 +13,6 @@ base_production = 3
 trade_goods = wine 
 base_manpower = 2 
 capital = "Logroño"
-estate = estate_nobles
 is_city = yes
 
 

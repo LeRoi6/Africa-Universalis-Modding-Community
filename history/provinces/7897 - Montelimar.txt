@@ -4,7 +4,6 @@ owner = FRA
 controller = FRA
 add_core = FRA
 add_core = DAU
-add_core = TOU
 culture = aquitaine
 religion = catholic
 capital = "Montélimar"

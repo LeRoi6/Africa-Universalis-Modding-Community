@@ -1,12 +1,10 @@
- ##################################################
- ##### Dub's Mission Work - All credit to Dub for this #####
- ##################################################
-#Updated vanilla missions to BT. Updates done by Dub.
+#Updated and scriptified by Dub.
 hab_holy_roman_ambitions = {
 	slot = 1 #upper left column
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
 	potential = {
+		NOT = { map_setup = map_setup_random }
 		tag = HAB
 	}
 	has_country_shield = yes
@@ -79,7 +77,6 @@ hab_holy_roman_ambitions = {
 	subjugate_bohemia = {
 		icon = mission_empire
 		required_missions = { secure_the_imperial_crown }
-		position = 3
 		
 		completed_by = 1526.8.30
 		
@@ -105,9 +102,9 @@ hab_holy_roman_ambitions = {
 		
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
-				PROVINCES=subjugate_bohemia_provinces
-				OWNER_TYPE=country_or_non_sovereign_subject_holds
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=subjugate_bohemia_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -138,7 +135,6 @@ hab_holy_roman_ambitions = {
 	recover_silesia = {
 		icon = mission_assemble_an_army
 		required_missions = { subjugate_bohemia }
-		position = 5
 		completed_by = 1620.11.8
 		ai_weight = {
 			factor = 2
@@ -148,9 +144,9 @@ hab_holy_roman_ambitions = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
-				PROVINCES=recover_silesia_provinces
-				OWNER_TYPE=country_or_non_sovereign_subject_holds
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=recover_silesia_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		provinces_to_highlight = {
@@ -227,9 +223,9 @@ hab_holy_roman_ambitions = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
-				PROVINCES=partition_poland_provinces
-				OWNER_TYPE=country_or_non_sovereign_subject_holds
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=partition_poland_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -273,6 +269,7 @@ hab_protect_the_balkans = {
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
 	potential = {
+		NOT = { map_setup = map_setup_random }
 		tag = HAB
 	}
 	has_country_shield = yes
@@ -331,7 +328,7 @@ hab_protect_the_balkans = {
 	austrian_hungary = {
 		icon = mission_monarch_in_throne_room
 		required_missions = { subjugate_hungary }
-		position = 3
+		position = 4
 		completed_by = 1490.1.1
 		ai_weight = {
 			factor = 3
@@ -358,9 +355,9 @@ hab_protect_the_balkans = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
-				PROVINCES=austrian_hungary_provinces
-				OWNER_TYPE=country_or_non_sovereign_subject_holds
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=austrian_hungary_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -386,7 +383,7 @@ hab_protect_the_balkans = {
 	austrian_croatia = {
 		icon = mission_galleys_in_port
 		required_missions = { austrian_hungary }
-		position = 5
+		position = 6
 		completed_by = 1526.8.30
 		
 		ai_weight = {
@@ -410,9 +407,9 @@ hab_protect_the_balkans = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
-				PROVINCES=austrian_croatia_provinces
-				OWNER_TYPE=country_or_non_sovereign_subject_holds
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=austrian_croatia_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -469,9 +466,9 @@ hab_protect_the_balkans = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
-				PROVINCES=conquer_transylvania_provinces
-				OWNER_TYPE=country_or_non_sovereign_subject_holds
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=conquer_transylvania_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -528,7 +525,7 @@ hab_protect_the_balkans = {
 				}
 			}
 			else = { #Only Moldavia area for this one. The rest is either already owned (Bukovina) or is Russian (Bessarabia).
-				moldavia_area = {
+				western_moldovia = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
@@ -541,11 +538,12 @@ hab_protect_the_balkans = {
 }
 
 hab_italian_ambitions = {
-	slot = 4 #upper left column
+	slot = 3 #upper left column
 	generic = no
 	ai = yes
 	
 	potential = {
+		NOT = { map_setup = map_setup_random }
 		tag = HAB
 	}
 	
@@ -553,7 +551,7 @@ hab_italian_ambitions = {
 	
 	austrian_italian_ambition = {
 		icon = mission_religious
-		position = 6
+		position = 7
 		completed_by = 1797.10.17
 		
 		ai_weight = {
@@ -583,9 +581,9 @@ hab_italian_ambitions = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				TOOLTIP=country_holds_or_non_sovereign_subject_holds_highlighted 
-				PROVINCES=austrian_italian_ambition_provinces
-				OWNER_TYPE=country_or_non_sovereign_subject_holds
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=austrian_italian_ambition_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -594,50 +592,6 @@ hab_italian_ambitions = {
 				add_province_modifier = {
 					name = "protected_italian_interests"
 					duration = 3650
-				}
-			}
-			#BT added, historical Austrian claims to italian holdings. May need to be adjusted.
-			tuscany_area = { #Adjusted to exclude Lucca which was never under Habsburg
-				limit = {
-					NOT = { province_id = 2980 } #Lucca
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = ROOT
-			}
-			emilia_area = { #Adjusted to exclude Lucca which was never under Habsburg
-				limit = {
-					NOT = { province_id = 2980 } #Lucca
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = ROOT
-			}
-			3042 = { #Massa
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_claim = ROOT
-				}
-			}
-			3043 = { #Parma
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_claim = ROOT
-				}
-			}
-			2979 = { #Novara
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_claim = ROOT
 				}
 			}
 		}

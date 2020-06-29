@@ -84,6 +84,9 @@ country_event = {
 			}
 		}
 		add_prestige = 25
+		PAP = {
+			change_religion = catholic
+		}
 	}
 }
 
@@ -193,6 +196,9 @@ country_event = {
 		}
 		add_papal_influence = 20
 		add_prestige = 25
+		PAP = {
+			change_religion = catholic
+		}
 	}
 	option = {
 		name = "EVTOPTB1082"
@@ -211,9 +217,7 @@ country_event = {
 
 	trigger = {
 		NOT = { has_country_flag = unsupportive_cardinals }
-		OR = {
-			has_reform = papacy_reform
-		}
+		has_reform = papacy_reform
 		overextension_percentage = 0.25
 	}
 

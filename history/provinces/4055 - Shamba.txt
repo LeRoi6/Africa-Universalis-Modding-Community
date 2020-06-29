@@ -1,6 +1,6 @@
 #4055 - Shamba
 
-culture = kimrima
+culture = swahili
 religion = shamanism #Fetishism
 trade_goods = unknown
 hre = no

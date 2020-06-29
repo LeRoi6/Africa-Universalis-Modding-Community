@@ -1,11 +1,11 @@
 #1200 - Tanga
 
-owner = WFZ
-controller = WFZ
-add_core = WFZ
-culture = kimrima
+owner = MBA
+controller = MBA
+add_core = MBA
+culture = swahili
 religion = shamanism #Fetishism
-capital = "Tanga"
+capital = "Vumba Kuu"
 is_city = yes
 base_manpower = 4
 add_local_autonomy = 35

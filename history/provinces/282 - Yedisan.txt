@@ -25,8 +25,8 @@ discovered_by = ottoman
 discovered_by = nomad_group
 
 
-1444.1.1 = { owner = KIE controller = KIE add_core = KIE remove_core = CRI add_local_autonomy = 75 }	#Crimea cedes Yedisan area to Lithuania in exchange for an alliance against the Great Horde, who was threatening the Khanate's existance. Giving it to Kiev rather than Lithuania for obvious reasons.
-1475.6.1 = { owner = TUR controller = TUR add_core = TUR add_local_autonomy = -75 } # Ottomans take Hajibey
+1444.1.1 = { owner = KIE controller = KIE add_core = KIE remove_core = CRI add_local_autonomy = 55 }	#Crimea cedes Yedisan area to Lithuania in exchange for an alliance against the Great Horde, who was threatening the Khanate's existance. Giving it to Kiev rather than Lithuania for obvious reasons.
+1475.6.1 = { owner = TUR controller = TUR add_core = TUR add_local_autonomy = -55 } # Ottomans take Hajibey
  # Ochakov/Kara-kermen fortress built
 1737.7.2 = { controller = RUS } # Occupied by Russia
 1739.9.29 = { controller = TUR } # Treaty of Nish

@@ -16,7 +16,6 @@ trade_goods = bt_trade_good_fruit			#or cloth
 base_manpower = 2 
 add_core = ARA
 add_core = MJO
-estate = estate_nobles
 #fort_15th = yes			#Draiocht removed fort. Aragon was losing too much money and there are already 2 forts right next to Roussillon
 
 discovered_by = western
@@ -25,7 +24,6 @@ discovered_by = ottoman
 discovered_by = eastern
 
 
-1399.1.1 = { add_core = FOI }
 1412.6.29 = { revolt = { type = pretender_rebels size = 1 leader = "Jaume d'Urgell"} controller = REB } # Jaime de Urgell Uprising
 1413.1.1 = { revolt = {} controller = ARA }
 1462.1.1 = { owner = FRA controller = FRA } # Treaty of Bayonne: Aragon sells Roussillon to France

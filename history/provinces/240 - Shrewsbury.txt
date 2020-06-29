@@ -1,19 +1,23 @@
-#240 - Marches
+#240 - Shropshire
 #Region - Britain
-#Area - Mercia
+#Area - Powys
 
-owner = ENG
-controller = ENG
+latent_trade_goods = { 
+	coal 
+}
+owner = WMC
+controller = WMC
 culture = english
 religion = catholic
 hre = no
-base_tax = 4 
-base_production = 4 
-trade_goods = iron
+base_tax = 3
+base_production = 3
 base_manpower = 2 
+trade_goods = wool
 capital = "Shrewsbury"
 is_city = yes
 fort_15th = yes
+add_core = WMC
 add_core = ENG
 
 discovered_by = western

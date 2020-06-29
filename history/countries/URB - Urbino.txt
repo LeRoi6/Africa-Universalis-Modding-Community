@@ -8,6 +8,7 @@ religion = catholic
 capital = 2977	# Urbino
 fixed_capital = 2977 # Cannot move capital away from this province & no power cost to move to it
 add_army_professionalism = 0.05
+set_estate_privilege = estate_church_papal_emissary
 
 
 1291.5.20 = {

@@ -1,8 +1,8 @@
 #BT's Western Europe Overhaul in 12.0
 
-owner = ANJ
-controller = ANJ
-add_core = ANJ
+owner = PRO
+controller = PRO
+add_core = PRO
 culture = angevin_culture
 religion = catholic
 capital = "Saumur"

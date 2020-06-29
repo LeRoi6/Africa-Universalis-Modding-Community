@@ -1,18 +1,18 @@
 
 #3139 - Angus
 #Region - Britain
-#Area - Lowlands
+#Area - Grampians
 
 owner = SCO
 controller = SCO
-culture = scottish
+culture = highland_scottish
 religion = catholic
 hre = no
-base_tax = 4 
-base_production = 4 
-trade_goods = livestock			#changed from base BTP Wiki quote The economy of mediaeval Dundee centred on the export of raw wool, with the production of finished textiles being a reaction to recession in the 15th century. Also known for Angus Cattle
-base_manpower = 4 
-capital = "Dundee"
+base_tax = 2 
+base_production = 3 
+trade_goods = livestock			#Angus cattle.
+base_manpower = 2 
+capital = "Forfar" #"Dundee"
 is_city = yes
 add_core = SCO
 
@@ -21,8 +21,15 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+
+1425.1.1 = {
+	culture = scottish
+}
 1490.8.1 = { trade_goods = cloth }
 1560.8.1 = { religion = reformed }
+1600.1.1 = {
+	capital = "Dundee"
+}
 1644.9.13 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB }
 1645.9.13 = { revolt = {} controller = SCO } # Battle of Philiphaugh
 1707.5.12 = {	owner = GBR

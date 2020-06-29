@@ -1,3 +1,7 @@
+#Updated by C1CK
+#Was Mostly up-to-date except for a few colonial missions and a possible oversight, where subjugate Granada requires you to war Castille for land
+#Has no changes besides updating claims for BT
+#Fixed by Dub.
 gc_morocco_1 = {
 	slot = 1
 	generic = no
@@ -68,26 +72,26 @@ gc_morocco_1 = {
 			}
 		}
 	}
-	gc_mor_saharan_route = {
+	gc_mor_saharan_route = { #Updated by C1CK
 		icon = mission_saharan_route
 		required_missions = { gc_mor_imperial_cities }
 		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 2466
-				province_id = 1110
+				province_id = 346 #Tafilalt
+				province_id = 345 #Asfi
 			}
 		}
 		
 		trigger = {
-			1110 = {
+			345 = { #Safi Node
 				is_strongest_trade_power = ROOT
 			}
 			if = {
 				limit = {
 					has_dlc = "Dharma"
 				}
-				2466 = {
+				346 = { #Tafilalt
 					OR = {
 						province_has_center_of_trade_of_level = 2
 						has_building = marketplace
@@ -95,7 +99,7 @@ gc_morocco_1 = {
 				}
 			}
 			else = {
-				2466 = {
+				346 = { #Tafilalt
 					has_building = marketplace
 				}
 			}
@@ -111,7 +115,7 @@ gc_morocco_1 = {
 					}
 				}
 				set_country_flag = mor_sudanese_expedition
-				country_event = { id = flavor_mor.9 }
+				country_event = { id = flavor_mor.9 } #This event is all messed up, but I don't quite know what the purpose is anyway
 			}
 			add_country_modifier = {
 				name = mor_saharan_trade
@@ -441,11 +445,11 @@ gc_morocco_2 = {
 		position = 2
 		
 		provinces_to_highlight = {
-			province_id = 1293
+			province_id = 224
 		}
 		
 		trigger = {
-			1293 = {
+			224 = {
 				privateer_power = {
 					country = ROOT
 					share = 25
@@ -617,7 +621,14 @@ gc_morocco_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			tafilalt_area = {
+			#tafilalt_area = { #Tafilalt starts owned by MOR and subjects, doesn't seem neccesary in BT
+			#	limit = {
+			#		NOT = { is_permanent_claim = ROOT	}
+			#		NOT = { is_core = ROOT	}
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
+			southern_morocco_area = { #Tagmudant
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -672,7 +683,11 @@ gc_morocco_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
-			tafilalt_area = {
+			#tafilalt_area = { #Tafilalt starts owned by MOR and subjects, doesn't seem neccesary in BT
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT	
+			#}
+			southern_morocco_area = { #Tagmudant
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
@@ -808,7 +823,7 @@ gc_morocco_3 = {
 			}
 		}
 	}
-	gc_mor_north_sea = {
+	gc_mor_north_sea = { #Updated by C1CK
 		icon = mission_corsairs_of_the_north_sea
 		required_missions = { gc_mor_iceland }
 		
@@ -818,6 +833,7 @@ gc_morocco_3 = {
 				area = subarctic_islands_area
 			}
 			NOT = {
+				province_id = 5591 #Jan Mayen, Don't think this should be required
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -835,7 +851,10 @@ gc_morocco_3 = {
 			}
 			subarctic_islands_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					province_id = 5591 #Jan Mayen, Don't think this should be required
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 		
@@ -863,21 +882,37 @@ gc_morocco_4 = {
 	}
 	has_country_shield = yes
 	
-	gc_mor_protect_granada = {
+	gc_mor_protect_granada = { #Updated by C1CK
 		icon = mission_protect_granada
 		required_missions = { gc_mor_ceuta }
 		position = 2
 		
 		provinces_to_highlight = {
-			area = upper_andalucia_area
+			OR = {
+				area = upper_andalucia_area
+				province_id = 8080 #Marbil-la
+				province_id = 226 #Gibraltar
+			}
 			NOT = {
+				province_id = 8081 #Antequara
+				province_id = 8087 ##Huescar
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		
-		trigger = {
+		trigger = { #Updated triggers for 1444 Granada
 			upper_andalucia_area = {
 				type = all
+				OR = {
+					province_id = 8081 #Antequara
+					province_id = 8087 #Huescar
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			8080 = { #Marbil-la
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			226 = { #Gibraltar
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -1014,24 +1049,28 @@ gc_morocco_5 = {
 	}
 	has_country_shield = yes
 	
-	gc_mor_canaries = {
+	gc_mor_canaries = { #Updated by C1CK
 		icon = mission_claim_the_canaries
 		required_missions = {  }
 		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 366
-				province_id = 4565
+				province_id = 366 #Las Palmas
+				province_id = 5096 #Tamaran
+				province_id = 4565 #Achinet
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
 			num_of_explorers = 1
-			366 = {
+			366 = { #Las Palmas
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			4565 = {
+			5096 = { #Tamaran
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4565 = { #Achinet
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -1089,7 +1128,7 @@ gc_morocco_5 = {
 			}
 		}
 	}
-	gc_mor_new_world = {
+	gc_mor_new_world = { #Updated by C1CK
 		icon = mission_new_world_power
 		required_missions = { gc_mor_brazil }
 		
@@ -1110,15 +1149,20 @@ gc_morocco_5 = {
 				limit = {
 					is_random_new_world = no
 				}
-				custom_trigger_tooltip = {
+				custom_trigger_tooltip = { #Carribean
 					tooltip = mor_carib_colony.tooltip
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 10
-						colonial_region = colonial_the_carribean
+						OR = { #Expanded to include all of the Carribean, as it does in vanilla
+							colonial_region = colonial_the_carribean #Lesser Antilles
+							colonial_region = colonial_cuba
+							colonial_region = colonial_hispaniola
+							colonial_region = colonial_bahamas
+						}
 						is_city = yes
 					}
 				}
-				custom_trigger_tooltip = {
+				custom_trigger_tooltip = { #Colombia
 					tooltip = mor_colombia_colony.tooltip
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 10

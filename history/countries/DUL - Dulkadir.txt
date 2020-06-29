@@ -8,7 +8,6 @@ technology_group = ottoman
 capital = 332	# Dulkadir
 religious_school = hanafi_school
 
-
 1398.1.1 = {
 	monarch = {
 		name = "Mehmed"

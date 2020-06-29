@@ -2,16 +2,18 @@
 
 owner = HUN
 controller = HUN 
-culture = hungarian
+culture = cuman
 religion = catholic
-capital = "Kecskemét"
-trade_goods = grain
+#capital = "Kecskemét"
+capital = "Kiskunhalas"
+trade_goods = livestock
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 1
+base_production = 2
 base_manpower = 2
 is_city = yes
 add_core = HUN
+add_core = CUM
 
 discovered_by = KAZ
 discovered_by = CRI

@@ -47,7 +47,7 @@ discovered_by = eastern
 	controller = PAP
 	add_core = PAP
 }
-1750.1.1 = { add_core = ITA } 
+1750.1.1 = { add_core = ITL } 
 1809.4.10 = { controller = FRA } # Occupied by French troops
 1809.10.14 = { owner = FRA add_core = FRA } # Treaty of Schönbrunn
 1814.4.11 = {

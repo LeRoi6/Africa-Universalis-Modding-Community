@@ -49,7 +49,7 @@ discovered_by = eastern
 	remove_core = LAN
 }
 1583.1.1 = { fort_16th = yes } #Medicean Walls
-1750.1.1 = { add_core = ITA } 
+1750.1.1 = { add_core = ITL } 
 1801.2.9 = {
 	owner = FRA
 	controller = FRA

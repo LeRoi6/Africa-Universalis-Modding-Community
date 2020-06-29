@@ -1,4 +1,4 @@
-#3004 - Tyrconnell
+#4380 - Donegal
 #Region - Ireland
 #Area - Ulster
 
@@ -8,9 +8,9 @@ add_core = TRY
 culture = irish
 religion = catholic
 hre = no
-base_tax = 2 
-base_production = 2 
-base_manpower = 2 
+base_tax = 2
+base_production = 2
+base_manpower = 1
 trade_goods = fish
 capital = "Dún na nGall"
 is_city = yes

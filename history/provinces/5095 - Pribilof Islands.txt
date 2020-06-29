@@ -1,7 +1,7 @@
 # No previous file for Beyond Typus province
 
 
-capital = "Capital"
+capital = "St. Paul" #Or Sent-Pol
 trade_goods = unknown
 hre = no 
 base_tax = 1 

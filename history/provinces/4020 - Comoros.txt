@@ -1,6 +1,6 @@
 #4020 - Comoros
 
-culture = shikomori
+culture = madagasque #Malagasy
 religion = sunni
 capital = "Ndzuwani"
 native_size = 40

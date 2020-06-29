@@ -1193,6 +1193,7 @@ gold = {
 			NOT = { region = east_siberia_region }
 			NOT = { region = australia_region }
 			NOT = { region = south_africa_region }
+			NOT = { region = central_africa_region }
 		}
 		modifier = {
 			factor = 0
@@ -2643,7 +2644,7 @@ gems = {
 		modifier = {			#Not the greatest... bit rushed for update, so I'll probably come back and clean this up later
 			factor = 8.0
 			OR = {
-				#province_id = 5377			#Praetoria
+				#province_id = 4781			#Praetoria
 				province_id = 1175			#Orange River
 				province_id = 5386			#Orange River
 				province_id = 5347			#Orange River

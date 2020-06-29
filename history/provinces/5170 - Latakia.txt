@@ -12,7 +12,6 @@ base_tax = 6
 base_production = 4
 base_manpower = 4
 is_city = yes
-estate = estate_dhimmi
 add_core = SYR
 #Crusader Antioch core, possibly
 
@@ -31,7 +30,6 @@ discovered_by = indian
 	owner = TUR
 	controller = TUR
 	add_core = TUR
-	estate = estate_nobles
 	add_local_autonomy = 50
 	religion = shiite
 } # Part of the Ottoman Empire, during this period Alawites dominated this region
