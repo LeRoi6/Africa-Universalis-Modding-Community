@@ -1,8 +1,8 @@
 #4036 - Wayao
 
-owner = RUP
-controller = RUP
-add_core = RUP
+owner = RPP
+controller = RPP
+add_core = RPP
 culture = yao
 religion = pwiyamwene
 capital = "Rupapa"
