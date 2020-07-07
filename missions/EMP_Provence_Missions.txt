@@ -454,9 +454,9 @@ provence_missions_4 = {
 				}
 			}
 			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num 
 				provinces=emp_pro_france_provinces
-				owner_type=num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with
+				owner_type=country_or_non_sovereign_subject_holds
 				value=75
 			}
 		}

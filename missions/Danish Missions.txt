@@ -189,10 +189,8 @@ bt_danish_trade_2 = {
 			38 = {
 				if = {
 					limit = {
-						NOT = {
-							is_core = ROOT
-							is_permanent_claim = ROOT
-						}
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -200,10 +198,8 @@ bt_danish_trade_2 = {
 			43 = {
 				if = {
 					limit = {
-						NOT = {
-							is_core = ROOT
-							is_permanent_claim = ROOT
-						}
+						NOT = { is_core = ROOT }
+						NOT = {	is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -211,10 +207,8 @@ bt_danish_trade_2 = {
 			33 = {
 				if = {
 					limit = {
-						NOT = {
-							is_core = ROOT
-							is_permanent_claim = ROOT
-						}
+						NOT = { is_core = ROOT }
+						NOT = {	is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -252,8 +246,8 @@ bt_danish_trade_2 = {
 						NOT = { is_core = ROOT }
 						NOT = { is_claim = ROOT }
 					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 			livonia_area = { #Rigan domain
 				if = {
@@ -261,8 +255,8 @@ bt_danish_trade_2 = {
 						NOT = { is_core = ROOT }
 						NOT = { is_claim = ROOT }
 					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 			north_livonia_area = { #Rigan domain
 				if = {
@@ -270,8 +264,8 @@ bt_danish_trade_2 = {
 						NOT = { is_core = ROOT }
 						NOT = { is_claim = ROOT }
 					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 			north_karelia_area = { #Nevan domain
 				if = {
@@ -279,8 +273,8 @@ bt_danish_trade_2 = {
 						NOT = { is_core = ROOT }
 						NOT = { is_claim = ROOT }
 					}
+					add_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 			add_country_modifier = {
 				name = "baltic_ambition_new"
@@ -467,10 +461,8 @@ bt_danish_trade = {
 			45 = {
 				if = {
 					limit = {
-						NOT = {
-							is_core = ROOT
-							is_permanent_claim = ROOT
-						}
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -478,10 +470,8 @@ bt_danish_trade = {
 			44 = {
 				if = {
 					limit = {
-						NOT = {
-							is_core = ROOT
-							is_permanent_claim = ROOT
-						}
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -541,10 +531,8 @@ bt_danish_trade = {
 			1874 = {
 				if = {
 					limit = {
-						NOT = {
-							is_core = ROOT
-							is_permanent_claim = ROOT
-						}
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -552,10 +540,8 @@ bt_danish_trade = {
 			54 = {
 				if = {
 					limit = {
-						NOT = {
-							is_core = ROOT
-							is_permanent_claim = ROOT
-						}
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -782,19 +768,15 @@ bt_danish_resist_prussia = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
-			if = { #A bit of ahistoricity for nicer borders.
-				limit = {
-					46 = { 
-						NOT = {
-							is_core = ROOT
-							is_permanent_claim = ROOT 
-						}
+			46 = { #A bit of ahistoricity for nicer borders.
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
-				}
-				46 = {
 					add_permanent_claim = ROOT
 				}
 			}
@@ -846,42 +828,30 @@ bt_danish_resist_prussia = {
 				}
 				add_permanent_claim = ROOT
 			}
-			if = {
-				limit = {
-					1841 = { 
-						NOT = {
-							is_core = ROOT
-							is_permanent_claim = ROOT 
-						}
+			1841 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
-				}
-				1841 = {
 					add_permanent_claim = ROOT
 				}
 			}
-			if = {
-				limit = {
-					42 = { 
-						NOT = {
-							is_core = ROOT
-							is_permanent_claim = ROOT 
-						}
+			42 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
-				}
-				42 = {
 					add_permanent_claim = ROOT
 				}
 			}
-			if = {
-				limit = {
-					1859 = { 
-						NOT = {
-							is_core = ROOT
-							is_permanent_claim = ROOT 
-						}
+			1859 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
-				}
-				1859 = {
 					add_permanent_claim = ROOT
 				}
 			}
@@ -940,10 +910,8 @@ danish_missions_baltic = {
 			35 = { # Ösel
 				if = {
 					limit = {
-						NOT = {
-							is_core = ROOT
-							is_permanent_claim = ROOT
-						}
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}

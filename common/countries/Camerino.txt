@@ -40,7 +40,7 @@ monarch_names = {
 	"Venanzio #0" = 20
 	"Giovanni #0 Maria" = 20
 	
-	"Giulia #0" -5
+	"Giulia #0" = -5
 	
 	#Generic
 	"Cosimo #0" = 15

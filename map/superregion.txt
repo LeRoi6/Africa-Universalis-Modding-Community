@@ -82,6 +82,9 @@ africa_superregion = {
 	egypt_region
 }
 
+southern_africa_superregion = { #New in vanilla, deprecated in BT because I don't know if it's worth splitting. //Dub
+}
+
 south_america_superregion = {
 	brazil_region
 	la_plata_region

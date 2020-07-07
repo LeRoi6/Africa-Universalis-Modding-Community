@@ -657,38 +657,6 @@ east_africa_region = {
 		zimbabwe_area
 		quelimane_area
 		butua_area
-		#AUMC New Areas
-		ngonde_area
-		southern_tumbuka_area
-		kalonga_area
-		western_makuana_area
-		lomwe_area
-		umwalia_area
-		medo_area
-		wayao_area   
-		tete_area
-		manyika_area
-		barue_area
-		teve_area
-		madanda_area
-		dande_area
-		buhera_area
-		shangwe_area
-		naletale_area
-		vuxwa_area
-		northern_maputo_area
-		southern_maputo_area
-		gitonga_area
-		hlengwe_area
-		inhambane_area
-		sofala_area
-		chibuene_area
-		angoche_area
-		quirimbas_islands_area
-		lindi_area
-		zanzibar_area
-		pate_area
-		comoros_area
 	}
 	monsoon = {
 		00.11.01

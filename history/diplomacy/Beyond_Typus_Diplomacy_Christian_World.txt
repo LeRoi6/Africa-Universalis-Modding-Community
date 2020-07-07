@@ -139,19 +139,12 @@ union = {
 ############################################################
 ############################################################
 #French Fiefs
-dependency = {
-	subject_type = "vassal"
-	first = FRA
-	second = ORL
-	start_date = 1444.1.1
-	end_date = 1444.11.16 #BeyondTypus batch edit shortcut second performance start begins
-}
 
 dependency = {
 	subject_type = "vassal"
 	first = FRA
 	second = ORL
-	start_date = 1444.11.18 #BeyondTypus batch edit shortcut second performance start ends
+	start_date = 1444.1.1
 	end_date = 1498.1.1
 }
 
@@ -160,14 +153,6 @@ dependency = {
 	first = FRA
 	second = BOU
 	start_date = 1444.1.1
-	end_date = 1444.11.16 #BeyondTypus batch edit shortcut second performance start begins
-}
-
-dependency = {
-	subject_type = "vassal"
-	first = FRA
-	second = BOU
-	start_date = 1444.11.18 #BeyondTypus batch edit shortcut second performance start ends
 	end_date = 1531.1.1
 }
 
@@ -176,16 +161,19 @@ dependency = {
 	first = FRA
 	second = AMG
 	start_date = 1444.1.1
-	end_date = 1444.11.16 #BeyondTypus batch edit shortcut second performance start begins
+	end_date = 1607.1.1
 }
+
+# Added Foix to France during performance start to keep vanilla setting (questionable)
 
 dependency = {
 	subject_type = "vassal"
 	first = FRA
-	second = AMG
-	start_date = 1444.11.18 #BeyondTypus batch edit shortcut second performance start ends
-	end_date = 1607.1.1
+	second = FOI
+	start_date = 1444.1.16
+	end_date = 1444.11.18 
 }
+
 
 dependency = {
 	subject_type = "vassal"
@@ -717,6 +705,13 @@ dependency = {
 	end_date = 1444.11.13 #BeyondTypus batch edit shortcut the second shattering begins
 }
 
+vassal = {
+	first = PAP
+	second = PGA
+	start_date = 1444.11.16 #BeyondTypus batch edit shortcut second performance start
+	end_date = 1444.11.17
+}
+
 dependency = {
 	subject_type = "papal_subject_bt"
 	first = PAP
@@ -845,6 +840,12 @@ dependency = {
 	end_date = 1442.12.31
 }	#Pre-vanilla start subject info for Urbino, finished in vanilla files as it is a vanilla tag
 
+vassal = {
+	first = PAP
+	second = URB
+	start_date = 1444.11.16
+	end_date = 1444.11.18
+}
 #Papal Fiefs, no longer independent in 1444
 dependency = {
 	subject_type = "papal_subject_bt"
@@ -1025,6 +1026,13 @@ dependency = {
 	end_date = 1444.11.13
 }
 
+vassal = {
+	first = PAP
+	second = BLG
+	start_date = 1444.11.16 #BeyondTypus batch edit shortcut 2nd performance start
+	end_date = 1444.11.18
+}
+
 dependency = {
 	subject_type = "papal_subject_bt"
 	first = PAP
@@ -1147,6 +1155,12 @@ union = {
 	first = MUN
 	second = OSN
 	start_date = 1442.1.1
+	end_date = 1444.11.13
+}
+union = {
+	first = MUN
+	second = OSN
+	start_date = 1444.11.18
 	end_date = 1450.6.3
 }
 
@@ -1154,6 +1168,12 @@ union = {
 	first = KOL
 	second = PAD
 	start_date = 1415.1.1
+	end_date = 1444.11.13 ##Cologne/Munster Shattered/Performance Start accomodation
+}
+union = {
+	first = KOL
+	second = PAD
+	start_date = 1444.11.18
 	end_date = 1463.2.14
 }
 

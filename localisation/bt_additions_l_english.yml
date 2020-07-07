@@ -18,6 +18,18 @@
  CDB:0 "Cordoba"
  CDB_ADJ:0 "Cordoban" #Or Cordobese. Not sure which one, but I'll leave this in for now.
  
+ #New formables
+ lombard_nation_title: "Regno Lombardo"
+ lombard_nation_desc: "The Lombards are a storied people, with a legacy ranging from the Kingdom of Italy following the divide of Charlemagne's empire to the opulent cities of Milan, Mantua, Pavia, and more. Now, we have established ourselves as the pre-eminent power in Lombardy. Let us declare a new Lombard nation!"
+ #romagnol_nation_title: "Granducato Romagnolo"
+ #romagnol_nation_desc: "Romagna has for too long been the playground of the Lombards, Venetians, Tuscans, Umbrians, and more. Through hard work, shrewd diplomacy, and economic prowess, we have etched out a place of our own in Italy, and now we alone can claim to be the protectors of the Romagnol people!"
+ umbrian_nation_title: "Granducato Umbro"
+ umbrian_nation_desc: "Umbrian identity to some is an oxymoron. True, the Papacy has a history of exerting its influence over our lands and keeping our people separated among myriad petty duchies and counties. But this is no longer the case, aye, and we are the ones who have changed the fate and the very nature of Umbria! Truly, we have shaken off the chains of outsider rule, and established for ourselves and our people a true Umbrian nation!"
+ piedmontese_nation_title: "Regno Piemontese"
+ piedmontese_nation_desc: "The fertile fields, mighty mountains, and venerable valleys of Piedmont are the apple of the eyes of many nations across Europe. France, Austria, German states and more all seek to take our land and use its bountiful resources for themselves. No longer! We alone can claim to be rulers of all Piedmont, from Aosta to Turin to Nizza. Viva Piemonte!"
+ 
+ 
+ 
  #New events
  BtPLegacyIberianFlavour.EVTNAME1:0 "The Kingdom of Two Sicilies?"
  BtPLegacyIberianFlavour.EVTDESC1:0 "The Kingdom of Sicily had after the defeat of René of Anjou in 1443 been unified into a single entity under the Crown of Aragon. However, Alfonso V of Aragon had fathered an illegitimate son, and so during his reign decided to once again split up the Two Sicilies into two constituent kingdoms: One controlling the islands of Sicily & Malta, while the other controlled the parts on the Italian Peninsula. Upon his death, the rule of Naples was ceded to this illegitimate son, Ferdinand, while his brother John II of Aragon incorporated Sicily into the Crown of Aragon. This sparked a series of events such as Pope Calixtus III laying claims over all of Naples as a papal fief (Though he died before he could push these claims), as well as causing great unrest among the Neapolitan nobility. Eventually, when the Italian Wars erupted some decades down the line, the French kings claimed rightful succession to Naples itself and attempted its conquest. This ultimately failed, and Naples reunited under the Crown of Aragon 10 years later. And so, the Two Sicilies would remain ruled by Aragonese, and later Spanish, kings for centuries."
@@ -359,7 +371,7 @@
  mur_cartagena:0 "Port of Cartagena"
  mur_cartagena_desc:0 "The port of Cartagena is integral for trade coming from and going to Iberia, and the city owes much of its importance to the Cabo de Palos which extends into the Mediterranean Sea. By prioritizing the port of Cartagena above other ports, we can ensure that our nation is richer and our fleets stronger."
  
- #From Dub, new ideas.
+ #From Dub, Scandinavian ideas.
  SCA_ideas:0 "Scandinavian Ideas"
  SCA_ideas_bonus:0 "Scandinavian Ambition"
  SCA_ideas_start:0 "Scandinavian Traditions"
@@ -377,6 +389,91 @@
  sca_winter_is_coming_desc:0 "Those southern kings and queens have no idea what it means to live in the harsh climates of Scandinavia. Those despicable people will learn to understand what it means when winter comes for them."
  sca_call_of_our_forefathers:0 "Call of our Forefathers"
  sca_call_of_our_forefathers_desc:0 "Once upon a time, Scandinavia was a squabble between petty kingdoms. Some of these kingdoms sought new lands beyond the shores. Today we know that there are new lands out there waiting for us, and to ensure a prosperous and stable nation, we, too, must depart for new shores."
+ 
+ #From Dub & neo, Italian formable ideas.
+ LMV_ideas: "Veneto-Lombard Ideas"
+ LMV_ideas_bonus: "Veneto-Lombard Ambition"
+ LMV_ideas_start: "Veneto-Lombard Traditions"
+ lmv_alpine_wall: "Alpine Wall"
+ lmv_alpine_wall_desc: "The mighty Alps surround us on all sides, forming for us a rich valley that is easy to defend. Even our geography wishes to see us succeed! By constructing forts in the mountain passes of the Alps, we can stop any invasion in its tracks."
+ lmv_age_of_condottieri:0 "The Age of the Condottieri"
+ lmv_age_of_condottieri_desc:0 "With mercenaries forming the mainstay of so many armies we would be wise to ensure that we too have mercenaries to hand. Let us ensure that passing mercenary captains are warmly welcomed in Lombardy-Venetia so they remember us when it comes to hiring."
+ lmv_italian_trade_dominance: "Trade Prowess"
+ lmv_italian_trade_dominance_desc: "Our land sits snugly between the Adriatic and Western Mediterranean Seas, and the many rivers and waterways that transverse our lands mean that getting access to either sea is never a hassle for our traders and merchants."
+ lmv_invite_printers_philosophers: "Printers and Philosophes"
+ lmv_invite_printers_philosophers_desc: "Venetian printing and Milanese philosophy is a match made in Heaven itself. Who else can claim such a proud population of philosophers and the presses they need to spread their intellectual discourse? No one, the answer is, no one indeed."
+ lmv_great_power_sandwich: "Tactful Diplomacy"
+ lmv_great_power_sandwich_desc: "Despite our people's fierce spirit and unwavering loyalty to our homeland, the fact remains that on all sides there exist powers wishing to serve themselves a plate of our pasta without our permission. Luckily, our wit will save us! If we play these nations off each other, we can prevent war in our land, and preserve our independence."
+ lmv_po_valley_textiles: "Prosperity of the Po"
+ lmv_po_valley_textiles_desc: "The Po runs the length of our nation before emptying into the Adriatic at the aptly-named Adria. Its delta contains some of the richest sediment in Italy, and the wildlife that calls the delta home are equally enriching in spirit and mind. Most importantly, though, is that we can dam the river and erect waterwheels to fuel our burgeoning industry! The Po-ssibilities are endless!"
+ lmv_italian_unification: "Spirit of Unification"
+ lmv_italian_unification_desc: "While none in our realm would disagree that our lands are truly the pinnacle of Western civilization, some may contest that others deserve the same quality of life that we do. For indeed, what good is it being the best if our brothers are left out in the rain?"
+ 
+ EMR_ideas: "Emilia-Romagnol Ideas"
+ EMR_ideas_bonus: "Emilia-Romagnol Ambition"
+ EMR_ideas_start: "Emilia-Romagnol Traditions"
+ emr_university_of_bologna: "University of Bologna"
+ emr_university_of_bologna_desc: "The University of Bologna is the oldest university in all of Europe, being founded in the year 1088. Its storied history inspires our scholars to make history of their own."
+ emr_condottieres: "Famed Condottieri"
+ emr_condottieres_desc: "Generals for hire are common in Italy, and no region has produced more famous condottieri than Emilia-Romagna. The legacy of these great men lives on in our people and in the education of our generals. Let our foes fear them!"
+ emr_united_signories: "Union of Signorie"
+ emr_united_signories_desc: "The region of Emilia-Romagna was historically split between many different Signiore, left to govern their cities as they please. Though we have united the region under one banner, we ought not be too proud to realize the efficacy of local governance."
+ emr_renaissance_palaces: "Renaissance Palazzi"
+ emr_renaissance_palaces_desc: "From Ravenna to Reggio, Piacenza to Portico, Bologna to Bobbio, grand palazzi can be found in every city, serving as the residences of governors from the lowest Conte to the Granduca himself! Even the staunchest enemy of our people recognizes their beauty."
+ emr_via_aemilia: "Via Emilia"
+ emr_via_aemilia_desc: "The region of Emilia takes its name from the Via Emilia, a road from Roman times which connected lands north with the great city of Rome and lands south. This road and the many others in our lands make transportation a breeze, improving the ability for merchants and men-at-arms alike to get from place to place."
+ emr_repel_papal_authority: "Reject Papal Sovereignty"
+ emr_repel_papal_authority_desc: "While we respect the Pope and his place in Christendom, historically the Papal States have looked to our lands with their metaphorical mouths watering. We politely reject the Pope's ambitions, and thank him for the flattery."
+ emr_land_reclamation: "Dams and Dredges"
+ emr_land_reclamation_desc: "Near the coast, the waterways of our realm empty into grand deltas with soil of unparalleled quality. However, one side effect of these deltas is that they leave little land for construction. The re-routing of these rivers and the excavation of silt from their beds will allow our people to be prosperous to the greatest degree!"
+ 
+ UMB_ideas: "Umbrian Ideas"
+ UMB_ideas_bonus: "Umbrian Ambition"
+ UMB_ideas_start: "Umbrian Traditions"
+ umb_royal_grounds: "Ducal Domain"
+ umb_royal_grounds_desc: "The lands of Umbria have a proud tradition of standing one step above the rest. While many neighboring polities were relegated to the title of County, the grand Duchy of Spoleto was both larger and more opulent than its neighbors. So they were, so we shall be - larger and more opulent than our neighbors."
+ umb_via_flaminia: "Via Flaminia"
+ umb_via_flaminia_desc: "Roman roads in Italy are a ducat a dozen, to be frank. But the Via Flaminia, which runs to this day from Rome to Rimini, did to Umbria what aqueducts did to water; it allowed the safe and efficient passage of large quantities of goods, people, and wealth from Rome into the lands of Umbria. If we were to keep the road intact and promote travel via it, surely this passage will increase, and we will be all the more richer."
+ umb_papal_independence: "Independence from the Pope"
+ umb_papal_independence_desc: "It is no secret that the Holy Father in Rome controlled much of the lands of Umbria, but it is also no secret that this is no longer the case. Our military prowess has enabled us to assert our independence from the Papal States, and it will enable us to maintain our independence and extend our reach forevermore."
+ umb_bridge_the_tiber: "Cross the Tiber"
+ umb_bridge_the_tiber_desc: "The Tiber runs mightily from the Apennine Mountains to the north of our homeland to the Mediterranean Sea to our west. By bridging the river, in the grandest Roman tradition, we can expedite any and all construction in our lands, even those not lying aside the river."
+ umb_tradition_of_battle: "Combative Tradition"
+ umb_tradition_of_battle_desc: "Unfortunate though it may be, Umbria has seen its fair share of war and battle. But what the combatants that criss-crossed our land left behind is an immense array of battle styles and tactics. To any who dare challenge us, we say - en garde!"
+ umb_strike_the_earth: "Strike the Earth"
+ umb_strike_the_earth_desc: "Our land is rich not just in people and spirit but also in metal, specifically that most valued of construction materials - iron! Dig deep, countrymen, and uncover the vast riches beneath our very feet."
+ umb_roma_delenda_est: "Papatum Delenda Est"
+ umb_roma_delenda_est_desc: "The time has come to forcefully loosen the Papacy's stranglehold on what parts of Italy the Holy Father still claims dominion over. While the Holy Father will be safe, assuredly, his unholy domain shall not be."
+
+ LOM_ideas: "Lombard Ideas"
+ LOM_ideas_bonus: "Lombard Ambition"
+ LOM_ideas_start: "Lombard Traditions"
+ lom_leges_langobardorum: "Edictum Rothari"
+ lom_leges_langobardorum_desc: "The Edictum Rothari, also known as the Leges Langobardorum, was the first codification of Lombard law, compiled in 643 by the Lombard king Rothari. It limited the power of petty feudal lords, reserving more power for the King. A righteous and noble document, indeed!"
+ lom_land_of_comunes: "First Among Many"
+ lom_land_of_comunes_desc: "The myriad comuni, or communes, of Lombardy ruled the great cities of the region independently for generations. Milan was the foremost among them, and as they were to the Lombard comuni we are, and forever shall be, to the states of Italy."
+ lom_lombard_league: "Lombard League"
+ lom_lombard_league_desc: "The disparate nature of Lombard political geography meant that the comuni of Lombardy oftentimes had to band together, most famously the Lombard League of the 12th and 13th centuries that defeated the Holy Roman Emperor Frederick II at Parma. Banding together with those of a similar ambition is a recipe for success, and this is a fact we must never forget."
+ lom_curb_the_families: "Fraternity over Family"
+ lom_curb_the_families_desc: "Family is important in personal life, of course, but when families work as a cohesive unit to further personal gains on a large scale, well, sometimes the family must be put in its place. By emphasizing fraternity in citizenship over familial ties, we can ensure that the estates of our realm never are always loyal to our state."
+ lom_freethinkers: "Independent Thought"
+ lom_freethinkers_desc: "Philosophes and physicians, politicians and popes, musicians and magnates; the list of people of great import and will who hailed from Lombardy goes on and on. Some think it's something in the water that creates great minds of all creeds, but no, it is just their pride in being Lombard that inspires them to be the very finest."
+ lom_not_barbarians: "Refuting Barbarism"
+ lom_not_barbarians_desc: "Many of lesser mind conflate Lombard identity with barbarism. Typical - only a true Lombard could understand the intricacies of Lombard culture, art, lifestyle, et cetera. By sharing this with our allies, we can show them that Lombards are not barbarians. In fact, we are the farthest from it!"
+
+ PIE_ideas: "Piedmontese Ideas"
+ PIE_ideas_bonus: "Piedmontese Ambition"
+ PIE_ideas_start: "Piedmontese Traditions"
+ pie_land_of_marches: "Land of Marches"
+ pie_land_of_marches_desc: "Within the lands of Piedmont there existed many Imperial marches - and no, not the musical sort. The Piedmontese marches' position at the edge of the Empire naturally led to their understanding of the finest defensive tactics. Cowardice? Nay! It's just ingenuity."
+ pie_expand_turin: "Grand Turin"
+ pie_expand_turin_desc: "Even the Dukes of Savoy, with their ancestral homeland across the Alps and not in Piedmont, realized the beauty of the city of Turin. Both the Piazza Reale and the Palazzo Reale were built there, and the city's architecture is world-renowned. Truly, the city is the grandest of all."
+ pie_protect_against_pirates: "Protection from Piracy"
+ pie_protect_against_pirates_desc: "Pirates, bah! Pests though they may be, their impact on our maritime trade is not to be ignored. By establishing anti-piracy bases along our coasts, we can take the wind right out of the sails of pirates and privateers alike."
+ pie_franco_italian_relations: "Franco-Piedmontese Relations"
+ pie_franco_italian_relations_desc: "France, like Piedmont, is a proud and storied nation. Despite this fact, the French are a mite snooty, and do not realize the impressiveness of every aspect of Piedmontese life. Let us make it a bit more obvious, no?"
+ pie_princes_of_piedmont: "Prince of Piedmont"
+ pie_princes_of_piedmont_desc: "Piedmont is more than a county, and more than a duchy too! Indeed, the ruler of Piedmont deserves a more... princely title. First, we shall be Prince of Piedmont, and then, we shall be King of all Italia!"
  
  
  #New trade good events
@@ -409,9 +506,23 @@
  estate_nobles_extremely_strong_duchies_trigger_tooltip:0 "§Y[Root.GetName]§! has at least 6 vassals and marches."
  estate_nobles_extremely_strong_duchies_desc:0 "[Root.GetUsableNameCap] is an extremely decentralized nation in which local dukes and counts have considerable independence from the [Root.Monarch.GetTitle]. This system has its benefits but makes maintaining the primacy of royal power a significant challenge."
  
+ #British estate adjustments.
+ estate_marchers:0 "Marchers"
+ estate_nobles_british_strong_marches:0 "British Strong Marches"
+ estate_nobles_british_strong_marches_desc:0 "[Root.GetUsableNameCap] is a decentralized nation in which local marcher lords and county palatines have considerable independence from the [Root.Monarch.GetTitle]. This system has its benefits but makes maintaining the primacy of royal power in these border regions a significant challenge."
+ 
  #Brewing imporium adjustment
  fruit_bonus_prod:0 "Monastic Breweries"
  desc_grain_bonus_prod:0 "Our breweries are boosting the production of Fruit in this province."
+ dtt_bread_bonus_prod_tt:0 "§YEvery province§! producing §YGrain§! get §Y'The Conquest of Bread'§! until the end of the game, giving the following effects:\nLocal Goods Produced Modifier: §G+20%§!."
+ #Dithmarschen Conquest of Bread adjustment
+ dtt_bread_bonus_prod:0 "The Conquest of Bread"
+ desc_dtt_bread_bonus_prod:0 "All is for all! If the man and the woman bear their fair share of work, they have a right to their fair share of all that is produced by all, and that share is enough to secure them well-being."
+ #Hansa missions fix for diploslot craze
+ hanseatic_league_member_bt_title:0 "Hanseatic League Member"
+ hanseatic_league_member_bt_title_plural:0 "Hanseatic League Members"
+ hanseatic_league_member_bt_long_desc:0 "A Hanseatic League Member is a Trade League Member who has been drawn particularly close to our merchant league."
+ byz_crusader_vassal_is_our:0 "$NAME|Y$ is our Hanseatic League Member."
  
  #Ayyubid mission tree
  hsn_mosques_title:0 "Land of Mosques"
@@ -499,5 +610,5 @@
  #New start dates support
  BT_NATIVE_START:0 "Beyond Typus - Native Start"
  BT_NATIVE_START_DESC:0 "This start sacrifices performance for an increase in detail in the New World with regards to native tags."
- BT_PERFORMANCE_START:0 "BT - Performance Start [WIP]"
+ BT_PERFORMANCE_START:0 "BT - Performance Start (WIP)"
  BT_PERFORMANCE_START_DESC:0 "This start is aimed towards people with toasters or potatoes. It aims to remove all BT-added tags from the map by ceding it to their owners. May introduce bugs with regards to missions. It is currently a work in progress."

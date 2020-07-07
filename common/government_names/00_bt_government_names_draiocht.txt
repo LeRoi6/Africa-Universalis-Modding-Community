@@ -3,7 +3,7 @@
 
 #BT 11.5 is merged the BtP & BT files into one. Sorry for any inconvenience
 
-gov_puppet_kingdom_of_ireland = {
+gov_puppet_kingdom_of_ireland = { #For released anglo-Ireland under England or similar.
 	rank = {
 		2 = KINGDOM
 	}	
@@ -33,11 +33,11 @@ gov_puppet_kingdom_of_ireland = {
 	}
 
 	trigger = {
-		has_reform = anglo_irish_monarchy_reform
+		has_reform = puppet_kingdom_reform
 	}
 }
 
-gov_transitional_government_ireland = {
+gov_transitional_government_ireland = { #Something to do with viceroyalty anglo-Ireland or something.
 	rank = {
 		1 = DUCHY
 		2 = KINGDOM
@@ -81,11 +81,11 @@ gov_transitional_government_ireland = {
 	}
 	
 	trigger = {
-		has_reform = anglo_irish_monarchy_reform
+		has_reform = transitional_government_reform
 	}
 }
 
-gov_irish_clann = {
+gov_irish_clann = { #Starting Irish minors
 	rank = {
 		1 = CLANN
 	}
@@ -119,7 +119,7 @@ gov_irish_clann = {
 	}
 }
 
-gov_provincial_kingdom = {
+gov_provincial_kingdom = { #Provincial Kingdom formables Munster, Leinster, Ulster & Connacht, by Irish
 	rank = {
 		1 = PROVKINGDOM
 	}
@@ -153,7 +153,7 @@ gov_provincial_kingdom = {
 	}
 }
 
-gov_high_kingship = {
+gov_high_kingship = { #Irish Ireland, pretty much. Tanistry.
 	rank = {
 		1 = PROVKINGDOM
 		2 = KINGDOM
@@ -201,7 +201,7 @@ gov_high_kingship = {
 	}
 }
 
-gov_norman_lordship = {
+gov_norman_lordship = { #Starting Old English minors.
 	rank = {
 		1 = EARLDOM
 	}
@@ -235,87 +235,87 @@ gov_norman_lordship = {
 	}
 }
 
-# gov_norman_duchy = {
-	# rank = {
-		# 1 = DUCHY
-	# }
+gov_norman_duchy = { #Norma Duchy formables Munser, Leinster, Ulster & Connacht, by Old English
+	rank = {
+		1 = DUCHY
+	}
 	
-	# ruler_male = {
-		# 1 = DUKE
-	# }
+	ruler_male = {
+		1 = DUKE
+	}
 	
-	# ruler_female = {
-		# 1 = DUCHESS
-	# }
+	ruler_female = {
+		1 = DUCHESS
+	}
 	
-	# consort_male = {
-		# 1 = DUKE
-	# }
+	consort_male = {
+		1 = DUKE
+	}
 
-	# consort_female = {
-		# 1 = DUCHESS
-	# }
+	consort_female = {
+		1 = DUCHESS
+	}
 	
-	# heir_male = {
-		# 1 = HEIR
-	# }
+	heir_male = {
+		1 = HEIR
+	}
 
-	# heir_female = {
-		# 1 = HEIRESSBTP
-	# }
+	heir_female = {
+		1 = HEIRESSBTP
+	}
 	
-	# trigger = {
-		# has_reform = norman_lordship_reform
-	# }
-# }
+	trigger = {
+		has_reform = norman_duchy_reform
+	}
+}
 
-# gov_anglo_irish_monarchy = {
-	# rank = {
-		# 1 = DUCHY
-		# 2 = KINGDOM
-		# 3 = EMPIRE
-	# }	
+gov_anglo_irish_monarchy = { #Anglo-Ireland, pretty much.
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}	
 	
-	# ruler_male = {
-		# 1 = DUKE
-		# 2 = KING
-		# 3 = EMPEROR
-	# }
+	ruler_male = {
+		1 = DUKE
+		2 = KING
+		3 = EMPEROR
+	}
 	
-	# ruler_female = {
-		# 1 = DUCHESS
-		# 2 = QUEEN	
-		# 3 = EMPRESS
-	# }
+	ruler_female = {
+		1 = DUCHESS
+		2 = QUEEN	
+		3 = EMPRESS
+	}
 	
-	# consort_male = {
-		# 1 = DUKE
-		# 2 = KING
-		# 3 = EMPEROR
-	# }
+	consort_male = {
+		1 = DUKE
+		2 = KING
+		3 = EMPEROR
+	}
 
-	# consort_female = {
-		# 1 = DUCHESS
-		# 2 = QUEEN	
-		# 3 = EMPRESS
-	# }
+	consort_female = {
+		1 = DUCHESS
+		2 = QUEEN	
+		3 = EMPRESS
+	}
 	
-	# heir_male = {
-		# 1 = HEIR
-		# 2 = PRINCE
-		# 3 = PRINCE
-	# }
+	heir_male = {
+		1 = HEIR
+		2 = PRINCE
+		3 = PRINCE
+	}
 
-	# heir_female = {
-		# 1 = HEIRESSBTP
-		# 2 = PRINCESS
-		# 3 = PRINCESS
-	# }
+	heir_female = {
+		1 = HEIRESSBTP
+		2 = PRINCESS
+		3 = PRINCESS
+	}
 	
-	# trigger = {
-		# government = anglo_irish_monarchy_legacy
-	# }
-# }
+	trigger = {
+		has_reform = anglo_irish_monarchy_reform
+	}
+}
 
 # gov_florence_republic = {
 	# rank = {

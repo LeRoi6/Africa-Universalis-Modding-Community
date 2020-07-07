@@ -74,21 +74,19 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			owns_core_province = 338			# Algiers
-			calc_true_if = {
-				all_owned_province = {
-					is_core = ROOT
-					OR = {
-						area = hautes_plaines_area
-						area = ouled_nail_area
-						area = kabylia_area
-						area = north_saharan_area
-						area = west_aures_area
-						area = constantine_area
-						area = barbary_coast_area
-					}
+			owns_core_province = 338			# Algiers´
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					area = hautes_plaines_area
+					area = ouled_nail_area
+					area = kabylia_area
+					area = north_saharan_area
+					area = west_aures_area
+					area = constantine_area
+					area = barbary_coast_area
 				}
-				amount = 19			#At least 2/3 of Algeria's 28 provinces
+				value = 19			#At least 2/3 of Algeria's 28 provinces
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -105,31 +103,52 @@ country_decisions = {
 				duration = 7300
 			}
 			north_saharan_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = ALG
 			}
 			hautes_plaines_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = ALG
 			}
 			ouled_nail_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = ALG
 			}
 			kabylia_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = ALG
 			}
 			west_aures_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = ALG
 			}
 			constantine_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = ALG
 			}
 			barbary_coast_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = ALG
 			}
 			if = {
@@ -192,21 +211,17 @@ country_decisions = {
 						has_mission = gra_restore_the_andalusian_caliphate
 					}
 				}
-				calc_true_if = {
-					all_owned_province = {
-						is_core = ROOT
-						region = iberia_region
-					}
-					amount = 103			#At least 2/3 of Iberia's 153 provinces. This is Portugal plus 72 other provinces, roughly half of non Portuguese Iberia.
+				num_of_owned_provinces_with = {
+					is_core = ROOT
+					region = iberia_region
+					value = 103			#At least 2/3 of Iberia's 153 provinces. This is Portugal plus 72 other provinces, roughly half of non Portuguese Iberia.
 				}
 			}
 			else = { #Taifa tags get discount, because their mission tree will not continue unless they form Andalusia, which entails 40 provinces. Hence, the formation of the tag needs to be done earlier.
-				calc_true_if = {
-					all_owned_province = {
-						is_core = ROOT
-						region = iberia_region
-					}
-					amount = 40			#All provinces in the three Andalusia areas (27) + Murcia (7) & Valencia (6) areas, which the missions give claims to.
+				num_of_owned_provinces_with = {
+					is_core = ROOT
+					region = iberia_region
+					value = 40			#All provinces in the three Andalusia areas (27) + Murcia (7) & Valencia (6) areas, which the missions give claims to.
 				}
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
@@ -251,7 +266,7 @@ country_decisions = {
 				}
 				iberia_region = {
 					limit = {
-						NOT = { owned_by = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 						NOT = { is_core = ROOT }
 					}
 					add_permanent_claim = ADU
@@ -382,12 +397,10 @@ country_decisions = {
 			is_at_war = no
 			owns_core_province = 384			#Medina
 			owns_core_province = 385			#Mecca
-			calc_true_if = {
-				all_owned_province = {
-					is_core = ROOT
-					region = arabia_region
-				}
-				amount = 50			#At least 2/3 of Arabia's 74 provinces
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = arabia_region
+				value = 50			#At least 2/3 of Arabia's 74 provinces
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -406,7 +419,7 @@ country_decisions = {
 			add_prestige = 25
 			arabia_region = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ARB
@@ -459,16 +472,14 @@ country_decisions = {
 			#religion_group = christian
 			owns_core_province = 419			#Yerivan
 			owns_core_province = 3254			#Ararat 
-			calc_true_if = {
-				all_owned_province = {
-					is_core = ROOT
-					OR = {
-						area = armenia_area
-						area = north_kurdistan_area
-						area = erzurum_area
-					}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					area = armenia_area
+					area = north_kurdistan_area
+					area = erzurum_area
 				}
-				amount = 12			#At least 2/3 of Greater Armenia's 18 provinces (approximate)
+				value = 12			#At least 2/3 of Greater Armenia's 18 provinces (approximate)
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted Note base in Greater Armenia alone is about 168.
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -487,21 +498,21 @@ country_decisions = {
 			add_prestige = 25
 			armenia_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ARM
 			}
 			north_kurdistan_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ARM
 			}
 			erzurum_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ARM
@@ -647,22 +658,22 @@ country_decisions = {
 			}
 			lower_bavaria_area = {
 				limit = {
-					NOT = { owned_by = root }
-					NOT = { is_permanent_claim = root }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = root
 			}
 			upper_bavaria_area = {
 				limit = {
-					NOT = { owned_by = root }
-					NOT = { is_permanent_claim = root }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = root
 			}
 			east_bavaria_area = {
 				limit = {
-					NOT = { owned_by = root }
-					NOT = { is_permanent_claim = root }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = root
 			}
@@ -762,7 +773,7 @@ country_decisions = {
 			}
 			british_isles_region = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = GBR
@@ -854,7 +865,10 @@ country_decisions = {
 			every_subject_country = {
 				limit = {
 					ai = yes
-					capital_scope = { region = british_isles_region }
+					capital_scope = { 
+						region = british_isles_region 
+						NOT = { province_id = 4365 } #Excluding Mann
+					}
 					OR = {
 						NOT = { num_of_cities = 12 }
 						AND = {
@@ -887,7 +901,7 @@ country_decisions = {
 			}
 			british_isles_region = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = GBR
@@ -948,16 +962,9 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 131			# Zagreb
-				province_id = 4753			# Zadar
-				province_id = 137			# Ragusa
-				province_id = 4756			# Varasd
-				province_id = 1767			# Slavonia
-				province_id = 1826			# Lika
-				province_id = 3190			# Pozega
-				province_id = 4752			# Rijeka
-				province_id = 136			# Split
-				province_id = 3196			# Modrus
+				area = croatia_area #7
+				area = east_adriatic_coast_area #8
+				area = slavonia_area #6
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -970,23 +977,16 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 131			# Zagreb
-			calc_true_if = {
-				all_owned_province = {
-					is_core = ROOT
-					OR = {
-						province_id = 131			# Zagreb
-						province_id = 4753			# Zadar
-						province_id = 137			# Ragusa
-						province_id = 4756			# Varasd
-						province_id = 1767			# Slavonia
-						province_id = 1826			# Lika
-						province_id = 3190			# Pozega
-						province_id = 4752			# Rijeka
-						province_id = 136			# Split
-						province_id = 3196			# Modrus
-					}
+			owns_core_province = 136			# Split. Knin may have been an old capital, but going with Split because major city. Plus point of contention due to Venice
+			owns_core_province = 152			# Varazdin. Probably most important city in in-game Slavonia
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					area = croatia_area #7
+					area = east_adriatic_coast_area #8
+					area = slavonia_area #6
 				}
-				amount = 7			#At least 2/3 of Croatia's 10 provinces (approximate)
+				value = 14			#At least 2/3 of Croatia's 21 provinces (approximate)
 			}
 			total_development = 100			#Normal requirement for rank 2 is 500 dev, so this is 80 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -999,13 +999,24 @@ country_decisions = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
-			every_province = {
+			croatia_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
-					OR = {
-						area = croatia_area
-						area = east_adriatic_coast_area
-					}
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = CRO
+			}
+			east_adriatic_coast_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = CRO
+			}
+			slavonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = CRO
 			}
@@ -1094,49 +1105,49 @@ country_decisions = {
 			}
 			northern_england_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ENG
 			}
 			east_midlands_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ENG
 			}
 			east_anglia_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ENG
 			}
 			wessex_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ENG
 			}
 			home_counties_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ENG
 			}
 			yorkshire_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ENG
 			}
 			west_midlands_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ENG
@@ -1193,12 +1204,10 @@ country_decisions = {
 			owns_core_province = 186			# Rheims, coronation site
 			owns_core_province = 203			# Lyon
 			owns_core_province = 4389			# Tours
-			calc_true_if = {
-				all_owned_province = {
-					is_core = ROOT
-					region = france_region
-				}
-				amount = 111			#At least 2/3 of France's 166 provinces
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = france_region
+				value = 111			#At least 2/3 of France's 166 provinces
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -1218,7 +1227,7 @@ country_decisions = {
 			add_prestige = 25
 			france_region = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 					NOT = { area = brittany_area }
 					NOT = { area = lower_brittany_area }
@@ -1227,14 +1236,14 @@ country_decisions = {
 			}
 			brittany_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_claim = FRA
 			}
 			lower_brittany_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_claim = FRA
@@ -1428,22 +1437,17 @@ country_decisions = {
 			owns_core_province = 146
 			owns_core_province = 1773
 			owns_core_province = 3175
-			custom_trigger_tooltip = {
-				tooltip = half_of_greece_tooltip
-				calc_true_if = {
-					all_owned_province = {
-						is_core = ROOT
-						bt_trigger_modern_greece_areas = yes
-					}
-					amount = 23			#At least 40 percent of Greece's 56 provinces, per historical Kingdom of Greece borders
-				}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				bt_trigger_modern_greece_areas = yes
+				value = 23			#At least 40 percent of Greece's 56 provinces, per historical Kingdom of Greece borders
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
 		}
 		effect = {
 			change_tag = GRE
-			swap_non_generic_missions = yes
+			#swap_non_generic_missions = yes #Greece no missions yet has.
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
@@ -1458,7 +1462,7 @@ country_decisions = {
 				balkan_region = {
 					limit = {
 						bt_trigger_historical_greece_areas = yes
-						NOT = { owned_by = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 						NOT = { is_core = ROOT }
 					}
 					add_permanent_claim = GRE
@@ -1468,7 +1472,7 @@ country_decisions = {
 				balkan_region = {
 					limit = {
 						bt_trigger_modern_greece_areas = yes
-						NOT = { owned_by = ROOT }
+						NOT = { is_claim = ROOT }
 						NOT = { is_core = ROOT }
 					}
 					add_claim = GRE
@@ -1654,11 +1658,17 @@ country_decisions = {
 			}
 			add_prestige = 10
 			braunschweig_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = HAN
 			}
 			weser_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = HAN
 			}
 			if = {
@@ -1715,12 +1725,10 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			calc_true_if = {
-				all_owned_province = {
-					area = iceland_area
-					is_core = owner
-				}
-				amount = 3			#3 of Iceland's 4 provinces
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				area = iceland_area
+				value = 3			#3 of Iceland's 4 provinces
 			}
 		}
 		effect = {
@@ -1861,7 +1869,7 @@ country_decisions = {
 			custom_tooltip = tooltip_bt_starts_tanistry_succession
 			ireland_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = IRE
@@ -1928,16 +1936,10 @@ country_decisions = {
 			owns_core_province = 112	# Venice
 			owns_core_province = 101	# Genoa
 			owns_core_province = 109	# Mantova
-			custom_trigger_tooltip = {
-				tooltip = hegemony_over_italy_tooltip
-				calc_true_if = {
-					all_province = { #Cannot use all_owned_province in this case.
-						region = italy_region
-						country_or_vassal_holds = ROOT
-						is_core = owner
-					}
-					amount = 106			#At least 65 percent of N Italy's 163 provinces. Also note this is 90 percent of continental, non-Neapolitan Italy's 118 provinces. (Italy has 34 in Naples-Sicily and 11 in Sardinia-Corsica)
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = italy_region
+				is_core = owner
+				value = 106			#At least 65 percent of N Italy's 163 provinces. Also note this is 90 percent of continental, non-Neapolitan Italy's 118 provinces. (Italy has 34 in Naples-Sicily and 11 in Sardinia-Corsica)
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -1959,7 +1961,8 @@ country_decisions = {
 				italy_region = {
 					limit = {
 						bt_trigger_italy_areas = yes
-						NOT = { owned_by = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
 						NOT = { owned_by = PAP }
 					}
 					add_permanent_claim = ITA
@@ -1975,7 +1978,8 @@ country_decisions = {
 							area = sardinia_area
 							area = cagliari_area
 						}
-						NOT = { owned_by = ROOT }
+						NOT = { is_claim = ROOT }
+						NOT = { is_core = ROOT }
 						NOT = { owned_by = PAP }
 					}
 					add_claim = ITA
@@ -2212,20 +2216,18 @@ country_decisions = {
 			owns_core_province = 343 #Fez
 			owns_core_province = 344 #Marrekech
 			owns_core_province = 2467 #Meknes
-			calc_true_if = {
-				all_owned_province = {
-					is_core = ROOT
-					OR = {
-						area = northern_morocco_area
-						area = western_morocco_area
-						area = southern_morocco_area
-						area = marrekesh_area
-						area = sus_area
-						area = tafilalt_area
-						area = tagmudant_area
-					}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					area = northern_morocco_area
+					area = western_morocco_area
+					area = southern_morocco_area
+					area = marrekesh_area
+					area = sus_area
+					area = tafilalt_area
+					area = tagmudant_area
 				}
-				amount = 19			#At least 2/3 of Morocco's 28 provinces
+				value = 19			#At least 2/3 of Morocco's 28 provinces
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -2243,31 +2245,52 @@ country_decisions = {
 				duration = 7300
 			}
 			tafilalt_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = MOR
 			}
 			sus_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = MOR
 			}
 			marrekesh_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = MOR
 			}
 			southern_morocco_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = MOR
 			}
 			northern_morocco_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = MOR
 			}
 			western_morocco_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = MOR
 			}
 			tagmudant_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = MOR
 			}
 			add_prestige = 25
@@ -2399,15 +2422,15 @@ country_decisions = {
 			}
 			low_countries_region = {
 				limit = {
-					NOT = { owned_by = ROOT }
 					NOT = { is_permanent_claim = ROOT }
-					NOT = { province_id = 1931 }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = NED
 			}
 			picardy_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = NED
 			}
@@ -2470,15 +2493,11 @@ country_decisions = {
 			owns_core_province = 262	# Krakow
 			owns_core_province = 257	# Warszawa
 			owns_core_province = 260	# Lublin
-			custom_trigger_tooltip = {
-				tooltip = two_thirds_of_poland_tooltip
-				calc_true_if = {
-					all_owned_province = {
-						is_core = ROOT
-						region = poland_region
-					}
-					amount = 24			#At least 67 percent of Greece's 36 provinces, per historical Kingdom of Greece borders
-				}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = poland_region
+				#Note that the below value claims it's Greece's. Not sure if this makes any sense, might just be Draiocht fucking up.
+				value = 24			#At least 67 percent of Greece's 36 provinces, per historical Kingdom of Greece borders
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -2493,7 +2512,8 @@ country_decisions = {
 			}
 			poland_region = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = POL
 			}
@@ -2598,18 +2618,13 @@ country_decisions = {
 						NOT = { exists = STP }
 						NOT = { exists = RUG }
 					}
-					custom_trigger_tooltip = {
-						tooltip = two_thirds_of_pomerania_tooltip
-						calc_true_if = {
-							all_owned_province = {
-								is_core = ROOT
-									OR = {
-										area = vorpommern_area
-										area = hinter_pommern_area
-									}
-							}
-							amount = 10			#At least 2/3 of Pomerania's 15 provinces
+					num_of_owned_provinces_with = {
+						is_core = ROOT
+						OR = {
+							area = vorpommern_area
+							area = hinter_pommern_area
 						}
+						value = 10			#At least 2/3 of Pomerania's 15 provinces
 					}
 					owns_core_province = 1858			#Stettin
 					owns_core_province = 2994			#Griefswald
@@ -2626,13 +2641,15 @@ country_decisions = {
 			add_prestige = 5
 			vorpommern_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = POM
 			}
 			hinter_pommern_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = POM
 			}
@@ -2779,25 +2796,29 @@ country_decisions = {
 			}				#The special thing about this decision, apparently. Monastic TEU gets relation change instead with neighbours
 			west_prussia_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = PRU
 			}
 			east_prussia_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = PRU
 			}
 			masuria_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = PRU
 			}
 			nadruvia_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = PRU
 			}
@@ -2890,25 +2911,29 @@ country_decisions = {
 			}				#The special thing about this decision, apparently, instead of auto culture-flip
 			west_prussia_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = PRU
 			}
 			east_prussia_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = PRU
 			}
 			masuria_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = PRU
 			}
 			nadruvia_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = PRU
 			}
@@ -3040,25 +3065,29 @@ country_decisions = {
 			}
 			west_prussia_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = PRU
 			}
 			east_prussia_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = PRU
 			}
 			masuria_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = PRU
 			}
-			nadruvia_area = {
+			nadruvia_area = { #Moldavia
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = PRU
 			}
@@ -3119,13 +3148,11 @@ country_decisions = {
 					owns_core_province = 4128			# Brasov
 				}
 			}
-			calc_true_if = {
-				all_owned_province = {
-					is_core = ROOT
-					culture = romanian
-				}
-				amount = 10			#Following Vladisvlach's 10 of 19 provinces with Romanian culture for now. This by culture system is great but could cause oddities late-game with culture conversion, so eventually I might tweak the system a bit.
-			}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				culture = romanian
+				value = 23			#Following Vladisvlach's 23 of 46 provinces with Romanian culture for now. This by culture system is great but could cause oddities late-game with culture conversion, so eventually I might tweak the system a bit.
+			} #Wallachia 15, Moldavia 14, Transylvania 10, extra Hungary 6, Dobruja 1.
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
 		}
@@ -3145,25 +3172,57 @@ country_decisions = {
 			add_prestige = 25
 			wallachia_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = RMN
 			}
-			moldavia_area = {
+			oltenia_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = RMN
+			}
+			upper_muntenia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = RMN
+			}
+			moldavia_area = { #Bessarabia
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = RMN
+			}
+			bukovina_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = RMN
+			}
+			western_moldovia = { #Moldavia
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = RMN
 			}
 			transylvania_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = RMN
 			}
 			southern_transylvania_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = RMN
 			}
@@ -3193,8 +3252,9 @@ country_decisions = {
 			OR = {
 				tag = SAV
 				tag = SAR
-				primary_culture = sardinian
+				tag = PIE
 				primary_culture = piedmontese
+				primary_culture = sardinian
 			}
 		}
 		provinces_to_highlight = {
@@ -3214,6 +3274,7 @@ country_decisions = {
 			NOT = { exists = SPI }
 			OR = {
 				NOT = { exists = SAV }
+				NOT = { exists = PIE }
 				NOT = { exists = SAR }
 			}
 			is_at_war = no
@@ -3222,24 +3283,20 @@ country_decisions = {
 			owns_core_province = 205 #Savoy
 			owns_core_province = 103 #Piedmont
 			owns_core_province = 102 #Nice
-			calc_true_if = {
-				all_owned_province = {
-					is_core = ROOT
-					OR = {
-						area = north_piedmont_area #North Piedmont
-						area = piedmont_area #Central Piedmont
-						area = south_piedmont_area #South Piedmont
-						area = savoy_dauphine_area #Savoy
-					}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					area = north_piedmont_area #North Piedmont
+					area = piedmont_area #Central Piedmont
+					area = south_piedmont_area #South Piedmont
+					area = savoy_dauphine_area #Savoy
 				}
-				amount = 18			#Two thirds of Savoy+Piedmont provinces (27)
+				value = 18			#Two thirds of Savoy+Piedmont provinces (27)
 			}
-			calc_true_if = {
-				all_owned_province = {
-					is_core = ROOT
-					area = sardinia_area #Sardinia
-				}
-				amount = 4			#Half of Sardinia's 7 provinces
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				area = sardinia_area #Sardinia
+				value = 4			#Half of Sardinia's 7 provinces
 			}
 			total_development = 150			#Normal requirement for rank 2 is 500 dev, so this is 70 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -3583,17 +3640,15 @@ country_decisions = {
 			NOT = { exists = ADU }			#Special, no doubling up on Iberia superpowers
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
-			owns_or_vassal_of = 208	# Leon
-			owns_or_vassal_of = 214	# Zaragoza
-			owns_or_vassal_of = 215	# Valladolid
-			owns_or_vassal_of = 219	# Toledo
-			owns_or_vassal_of = 1746	# Burgos
-			calc_true_if = {
-				all_owned_province = {
-					is_core = ROOT
-					region = iberia_region
-				}
-				amount = 103			#At least 2/3 of Iberia's 153 provinces (note modern Spain is 123 provinces, 81 in Castile, 41 more in Aragon, Granada, and Navarre, and another 1 in Portugal). This is also 85% of non Portuguese Iberia.
+			owns_core_province = 208	# Leon
+			owns_core_province = 214	# Zaragoza
+			owns_core_province = 215	# Valladolid
+			owns_core_province = 219	# Toledo
+			owns_core_province = 1746	# Burgos
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = iberia_region
+				value = 103			#At least 2/3 of Iberia's 153 provinces (note modern Spain is 123 provinces, 81 in Castile, 41 more in Aragon, Granada, and Navarre, and another 1 in Portugal). This is also 85% of non Portuguese Iberia.
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -3628,7 +3683,7 @@ country_decisions = {
 			add_prestige = 25
 			iberia_region = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 					NOT = { area = macaronesia_area }
 					NOT = { area = alentejo_area }
@@ -3700,16 +3755,10 @@ country_decisions = {
 			owns_or_vassal_of = 215	# Valladolid
 			owns_or_vassal_of = 219	# Toledo
 			owns_or_vassal_of = 1746	# Burgos
-			custom_trigger_tooltip = {
-				tooltip = hegemony_over_iberia_tooltip
-				calc_true_if = {
-					all_province = {
-						region = iberia_region
-						country_or_vassal_holds = ROOT
-						is_core = owner
-					}
-					amount = 115			#At least 75 percent of Iberia's 153 provinces (Note Portugal has 31, so Castile or Aragon needs everything but Portugal and 7 others). This is also 95 percent of non Portuguese Iberia.
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = iberia_region
+				is_core = owner
+				value = 115			#At least 75 percent of Iberia's 153 provinces (Note Portugal has 31, so Castile or Aragon needs everything but Portugal and 7 others). This is also 95 percent of non Portuguese Iberia.
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -3759,7 +3808,7 @@ country_decisions = {
 			add_prestige = 25
 			iberia_region = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 					NOT = { area = macaronesia_area }
 					NOT = { area = alentejo_area }
@@ -3841,31 +3890,28 @@ country_decisions = {
 				limit = { NOT = { primary_culture = scottish } }
 				owns_core_province = 250			#Fife
 			}
-			custom_trigger_tooltip = {
-				tooltip = two_thirds_of_scotland_tooltip
-				calc_true_if = {
-					all_owned_province = {
-						is_core = ROOT
-						OR = {
-							area = lowlands_area
-							area = scottish_marches_area
-							area = highlands_area
-							area = kingdom_of_the_isles_area
-						}
-					}
-					amount = 19			#2/3 of Scotland's 28 provinces
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					area = lowlands_area
+					area = scottish_marches_area
+					area = highlands_area
+					area = kingdom_of_the_isles_area
+					area = grampians_area
 				}
+				value = 19			#2/3 of Scotland's 28 provinces
 			}
 			total_development = 150			#Normal requirement for rank 2 is 500 dev, so this is 70 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
 		}
 		effect = {
-			hidden_effect = {
-				if = {
-					limit = { tag = LOI }
-					complete_mission = sco_highlands_mission
-				}	
-			}
+			#LOI not this mission has.
+			# hidden_effect = {
+				# if = {
+					# limit = { tag = LOI }
+					# complete_mission = sco_highlands_mission
+				# }	
+			# }
 			change_tag = SCO
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
@@ -3884,20 +3930,37 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			lowlands_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = SCO
+			}
+			scottish_marches_area = {
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
 				}
 				add_permanent_claim = SCO
 			}
 			highlands_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
 				}
 				add_permanent_claim = SCO
 			}
 			kingdom_of_the_isles_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = SCO
+			}
+			grampians_area = {
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
 				}
 				add_permanent_claim = SCO
 			}
@@ -4125,17 +4188,15 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 354 #Tripoli
-			calc_true_if = {
-				all_owned_province = {
-					is_core = ROOT
-					OR = {
-						area = tripolitania_area
-						area = fezzan_area
-						area = cyrenaica_area
-						area = nafusa_mountains_area
-					}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					area = tripolitania_area
+					area = fezzan_area
+					area = cyrenaica_area
+					area = nafusa_mountains_area
 				}
-				amount = 13			#At least 2/3 of Libya's 19 provinces
+				value = 13			#At least 2/3 of Libya's 19 provinces
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -4152,19 +4213,31 @@ country_decisions = {
 				duration = 7300
 			}
 			tripolitania_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
 				add_permanent_claim = TRP
 			}
 			fezzan_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
 				add_permanent_claim = TRP
 			}
 			cyrenaica_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
 				add_permanent_claim = TRP
 			}
 			nafusa_mountains_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
 				add_permanent_claim = TRP
 			}
 			if = {
@@ -4185,7 +4258,7 @@ country_decisions = {
 ###################################################################################################
 ################################			Tunisia			 ##############################################
 ###################################################################################################
-	tunisian_nation = {
+	tunisian_nation = { #This formation is just horribly wrong in every sense of the imagination. Needs real fixing at some point.
 		major = yes
 		potential = {
 			bt_generic_can_form_potential_check = yes
@@ -4226,17 +4299,15 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 341 #Tunis
-			calc_true_if = {
-				all_owned_province = {
-					is_core = ROOT
-					OR = {
-						area = tunisia_area
-						area = djerba_area
-						area = djerid_area
-						area = east_aures_area
-					}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					area = tunisia_area
+					area = djerba_area
+					area = djerid_area
+					area = east_aures_area
 				}
-				amount = 10			#At least 2/3 of Tunisia's 15 provinces
+				value = 10			#At least 2/3 of Tunisia's 15 provinces
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -4253,19 +4324,31 @@ country_decisions = {
 				duration = 7300
 			}
 			tunisia_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
 				add_permanent_claim = OTN
 			}
 			djerba_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
 				add_permanent_claim = OTN
 			}
 			djerid_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
 				add_permanent_claim = OTN
 			}
 			east_aures_area = {
-				limit = { NOT = { owned_by = ROOT } }
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
 				add_permanent_claim = OTN
 			}
 			if = {
@@ -4291,6 +4374,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			bt_generic_can_form_potential_check = yes
+			bt_italy_stem_duchy_check = yes
 			NOT = { has_country_flag = formed_tuscany_flag }
 			NOT = { tag = ITL }
 			NOT = { tag = ITA }
@@ -4305,11 +4389,10 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 2978	# Arezzo
+				culture = tuscan
 				province_id = 116	# Firenze
 				province_id = 115	# Pisa
 				province_id = 117	# Siena
-				province_id = 2980	# Lucca
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -4322,28 +4405,28 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 116	# Firenze
-			calc_true_if = {
-				all_owned_province = {
-					is_core = ROOT
-					OR = {
-						province_id = 2978	# Arezzo
-						province_id = 116	# Firenze
-						province_id = 115	# Pisa
-						province_id = 117	# Siena
-						province_id = 2980	# Lucca
-					}
-				}
-				amount = 4			#At least 4 of Tuscany's 5 provinces (approximate)
+			owns_core_province = 115	# Pisa
+			owns_core_province = 117	# Siena
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				culture = tuscan
+				value = 9			#At least 2/3 of 14 Tuscan-cultured provinces
 			}
 		}
 		effect = {
 			change_tag = TUS
 			#remove_non_electors_emperors_from_empire_effect = yes
-			every_province = {
+			tuscany_area = {
+				limit = { 
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = TUS
+			}
+			south_tuscany_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
-					culture = tuscan
-					continent = europe
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
 				}
 				add_permanent_claim = TUS
 			}

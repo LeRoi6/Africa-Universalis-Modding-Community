@@ -29,6 +29,17 @@ discovered_by = ottoman
 extra_cost = 20
 center_of_trade = 2
 
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = CRO
+	controller = CRO
+	add_core = CRO
+	remove_core = RIJ
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = RIJ
+	controller = RIJ
+	add_core = RIJ
+} #Return to proper mod added owners and cuts vanilla core, typically.
 1466.1.1 = {
 	owner = HAB
 	controller = HAB

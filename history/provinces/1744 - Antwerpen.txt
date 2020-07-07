@@ -7,7 +7,6 @@ controller = BRB
 add_core = BRB
 is_city = yes
 capital = "Antwerp"
-estate = estate_burghers
 culture = dutch
 religion = catholic
 hre = yes

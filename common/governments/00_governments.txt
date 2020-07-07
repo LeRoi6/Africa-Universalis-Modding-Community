@@ -38,8 +38,9 @@ monarchy = {
 				austrian_archduchy_reform
 				#Added by Beyond Typus
 				irish_clann_reform
-				provincial_kingdom_reform			#Cut for the moment. New Reform system makes HR's old tiers... difficult to intergrate.
+				provincial_kingdom_reform
 				norman_lordship_reform
+				norman_duchy_reform
 				anglo_irish_monarchy_reform
 				tanistry_reform
 				bt_ayyubid_sultanate_reform

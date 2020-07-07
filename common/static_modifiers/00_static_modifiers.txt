@@ -1780,7 +1780,7 @@ over_governing_capacity_modifier = {
 	# advisor_cost = 1.0
 	# monthly_militarized_society = -1.0
 	# min_autonomy = 50					#BT new: This just makes sense on so many levels: Being over what you could possibly govern means that you can't administrate your territories, hence increased base autonomy. If your economy gets crippled, you have little choice than to unstate some of your provinces to get below.
-	# min_autonomy_in_territories = -45	#BT new: To counteract territories going to 100% after 20% over gov capacity.
+	# min_autonomy_in_territories = 5	#To impact territories 1/10th of what it impacts in regular provinces.
 # }
 
 

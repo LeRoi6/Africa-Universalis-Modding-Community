@@ -48,6 +48,7 @@ add_army_professionalism = 0.05
 		dynasty = "de Lusignan"
 		birth_date = 1418.9.24
 		death_date = 1462.11.11
+        female = yes
 		adm = 2
 		dip = 2
 		mil = 2

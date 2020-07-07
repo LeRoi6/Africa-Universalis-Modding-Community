@@ -23,6 +23,18 @@ discovered_by = eastern
 #First Shattering not used
 
 #Second Shattering not used
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = MAN
+	controller = MAN
+	add_core = MAN
+	remove_core = CRR
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = CRR
+	controller = CRR
+	add_core = CRR
+	remove_core = MAN
+} #Return to proper mod added owners and cuts vanilla core, typically.
 
 1495.1.1 = { hre = no }
 

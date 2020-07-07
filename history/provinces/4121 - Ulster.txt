@@ -22,6 +22,18 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = LOI
+	controller = LOI
+	add_core = LOI
+	remove_core = ANR
+}
+1444.11.18 = { #BT Performance Start Begin
+	owner = ANR
+	controller = ANR
+	add_core = ANR
+	remove_core = LOI
+}
 
 1559.1.1 = {
 	owner = ANI

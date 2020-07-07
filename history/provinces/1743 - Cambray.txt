@@ -75,10 +75,12 @@ discovered_by = eastern
 	owner = BUR
 	controller = BUR
 	add_core = BUR
+	remove_core = CMB
 }
 1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
 	owner = CMB
 	controller = CMB
+	add_core = CMB
 	remove_core = BUR
 }
 1677.4.19 = { owner = FRA controller = FRA add_core = FRA } # Captured by Louis XIV

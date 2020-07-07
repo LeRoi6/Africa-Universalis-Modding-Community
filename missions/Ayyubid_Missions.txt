@@ -485,6 +485,12 @@ hsn_conquest_group = {
 				}
 				set_government_rank = 3
 			}
+			if = {
+				limit = {
+					NOT = { dynasty = "Ayyubid" }
+				}
+				set_dynasty = original_dynasty
+			}
 			add_prestige = 25
 			add_legitimacy = 25
 			add_government_reform = bt_ayyubid_sultanate_reform
@@ -571,7 +577,7 @@ hsn_conquest_group_east = {
 			}
 			basra_area = {
 				limit = {
-					religion = shia
+					religion = shiite
 				}
 				add_province_modifier = {
 					name = "bt_hsn_influx_of_sunni_population"
@@ -580,7 +586,7 @@ hsn_conquest_group_east = {
 			}
 			iraq_arabi_area = {
 				limit = {
-					religion = shia
+					religion = shiite
 				}
 				add_province_modifier = {
 					name = "bt_hsn_influx_of_sunni_population"

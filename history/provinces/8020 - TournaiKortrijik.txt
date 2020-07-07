@@ -55,15 +55,17 @@ discovered_by = eastern
 #	controller = XXX
 #	remove_core = XXX
 #} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
-#1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
-#1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
-#	owner = XXX
-#	controller = XXX
-#	remove_core = XXX
-#} #Return to proper mod added owners and cuts vanilla core, typically.
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = FLA
+	controller = FLA
+	add_core = FLA
+	remove_core = TOA
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = TOA
+	controller = TOA
+	add_core = TOA
+	remove_core = FLA
+} #Return to proper mod added owners and cuts vanilla core, typically.
 
 #1444 on

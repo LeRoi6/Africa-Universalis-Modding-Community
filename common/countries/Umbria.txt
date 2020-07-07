@@ -1,6 +1,8 @@
 graphical_culture = westerngfx
 
-color = { 5  5  5 }
+color = { 66 128 65 } 
+#Perry's alternate colour tests:
+#{ 12 129 67 } #{ 0 148 58 } #{ 244 61 15 } #{ 188 184 185 } #{ 239 180 180 }
 
 historical_idea_groups = {
 	administrative_ideas

@@ -5813,9 +5813,13 @@ estate_nobles_strong_duchies = {
 			vassal = 1
 		}
 		NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
+		NOT = { has_estate_privilege = estate_nobles_british_strong_marches }
 		NOT = {
 			AND = {
-				tag = FRA
+				OR = {
+					tag = FRA
+					has_reform = english_monarchy
+				}
 				NOT = { has_estate_privilege = estate_nobles_strong_duchies }
 			}
 		}

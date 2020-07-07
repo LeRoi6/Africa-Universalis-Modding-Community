@@ -39,3 +39,15 @@ discovered_by = eastern
 1291.1.1 = {
 	capital = "Droim Dhá Thiar"
 }
+1444.11.16 = { #BT Performance Start Begin
+	owner = ECO
+	controller = ECO
+	add_core = ECO
+	remove_core = BIF
+}
+1444.11.18 = { #BT Performance Start Begin
+	owner = BIF
+	controller = BIF
+	add_core = BIF
+	remove_core = ECO
+}

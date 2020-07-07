@@ -55,16 +55,14 @@ discovered_by = eastern
 	add_core = NAP
 } # hashtagged since seperate state in 1444 anyway
 #Remember to add performance start details below if Andria ever added to main start.
-#1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
-#1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
-#	owner = XXX
-#	controller = XXX
-#	remove_core = XXX
-#} #Return to proper mod added owners and cuts vanilla core, typically.
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = NAP
+	controller = NAP
+	remove_core = ADR
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	add_core = ADR
+} #Return to proper mod added owners and cuts vanilla core, typically.
 1482.1.1 = {
 #	owner = NAP
 #	controller = NAP

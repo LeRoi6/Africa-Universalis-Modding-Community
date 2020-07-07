@@ -66,15 +66,17 @@ center_of_trade = 1
 #	controller = XXX
 #	remove_core = XXX
 #} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
-#1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
-#1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
-#	owner = XXX
-#	controller = XXX
-#	remove_core = XXX
-#} #Return to proper mod added owners and cuts vanilla core, typically.
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = FRI
+	controller = FRI
+	add_core = FRI
+	remove_core = GRN
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = GRN
+	controller = GRN
+	add_core = GRN
+	remove_core = FRI
+} #Return to proper mod added owners and cuts vanilla core, typically.
 
 #1444 on

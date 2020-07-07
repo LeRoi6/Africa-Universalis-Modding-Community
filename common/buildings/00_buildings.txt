@@ -1689,6 +1689,14 @@ wharf = {
 		trade_goods_size_modifier = 0.5			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
 		naval_forcelimit = 1			#BTAddOn new - Just a fun little new bonus
 	}
+	
+	keep_trigger = {
+		OR = {
+			trade_goods = naval_supplies
+			trade_goods = fish
+			trade_goods = salt
+		}
+	}
 	onmap = yes
 	
 	ai_will_do = {
@@ -1735,13 +1743,15 @@ wharf = {
 		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
 		modifier = {
 			factor = 1.5
-			is_great_power = yes
+			FROM = { is_great_power = yes }
 		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
 		modifier = {
 			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
+			FROM = {
+				AND = {
+					NOT = { technology_group = western }
+					NOT = { total_development = 100 }
+				}
 			}
 		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above. 
 		modifier = {
@@ -1791,6 +1801,13 @@ weapons = {
 	}
 	onmap = yes
 	
+	keep_trigger = {
+		OR = {
+			trade_goods = copper
+			trade_goods = iron
+		}
+	}
+	
 	ai_will_do = {
 		factor = 12			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
@@ -1834,13 +1851,15 @@ weapons = {
 		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
 		modifier = {
 			factor = 1.5
-			is_great_power = yes
+			FROM = { is_great_power = yes }
 		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
 		modifier = {
 			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
+			FROM = {
+				AND = {
+					NOT = { technology_group = western }
+					NOT = { total_development = 100 }
+				}
 			}
 		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above. 
 		modifier = {
@@ -1893,6 +1912,16 @@ textile = {
 	}
 	onmap = yes
 	
+	keep_trigger = {
+		OR = {
+			trade_goods = wool
+			trade_goods = cloth
+			trade_goods = silk
+			trade_goods = dyes
+			trade_goods = bt_trade_good_books
+		}
+	}
+	
 	ai_will_do = {
 		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
@@ -1936,13 +1965,15 @@ textile = {
 		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
 		modifier = {
 			factor = 1.5
-			is_great_power = yes
+			FROM = { is_great_power = yes }
 		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
 		modifier = {
 			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
+			FROM = {
+				AND = {
+					NOT = { technology_group = western }
+					NOT = { total_development = 100 }
+				}
 			}
 		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above. 
 		modifier = {
@@ -2000,6 +2031,17 @@ plantations = {
 	}
 	onmap = yes
 	
+	keep_trigger = {
+		OR = {
+			trade_goods = coffee
+			trade_goods = cotton
+			trade_goods = sugar
+			trade_goods = tobacco
+			trade_goods = tea
+			trade_goods = cocoa
+		}
+	}
+	
 	ai_will_do = {
 		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
@@ -2043,13 +2085,15 @@ plantations = {
 		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
 		modifier = {
 			factor = 1.5
-			is_great_power = yes
+			FROM = { is_great_power = yes }
 		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
 		modifier = {
 			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
+			FROM = {
+				AND = {
+					NOT = { technology_group = western }
+					NOT = { total_development = 100 }
+				}
 			}
 		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above. 
 		modifier = {
@@ -2093,6 +2137,16 @@ tradecompany = {
 		province_trade_power_modifier = 0.5			#BTAddOn new - Just a fun little new bonus
 	}
 	onmap = yes
+	
+	keep_trigger = {
+		OR = {
+			trade_goods = ivory
+			trade_goods = slaves
+			trade_goods = spices
+			trade_goods = fur
+			trade_goods = incense
+		}
+	}
 
 	ai_will_do = {
 		factor = 7			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
@@ -2137,13 +2191,15 @@ tradecompany = {
 		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
 		modifier = {
 			factor = 1.5
-			is_great_power = yes
+			FROM = { is_great_power = yes }
 		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
 		modifier = {
 			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
+			FROM = {
+				AND = {
+					NOT = { technology_group = western }
+					NOT = { total_development = 100 }
+				}
 			}
 		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above. 
 		modifier = {
@@ -2205,6 +2261,17 @@ farm_estate = {
 	}
 	onmap = yes
 	
+	keep_trigger = {
+		OR = {
+			trade_goods = grain
+			trade_goods = livestock
+			trade_goods = wine
+			trade_goods = bt_trade_good_beer
+			trade_goods = bt_trade_good_fruit
+			trade_goods = bt_trade_good_apiculture
+		}
+	}
+	
 	ai_will_do = {
 		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
@@ -2248,13 +2315,15 @@ farm_estate = {
 		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
 		modifier = {
 			factor = 1.5
-			is_great_power = yes
+			FROM = { is_great_power = yes }
 		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
 		modifier = {
 			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
+			FROM = {
+				AND = {
+					NOT = { technology_group = western }
+					NOT = { total_development = 100 }
+				}
 			}
 		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above. 
 		modifier = {
@@ -2300,6 +2369,16 @@ mills = {
 	}
 	onmap = yes
 	
+	keep_trigger = {
+		OR = {
+			trade_goods = paper
+			trade_goods = gems
+			trade_goods = tropical_wood
+			trade_goods = glass
+			trade_goods = chinaware
+		}
+	}
+	
 	ai_will_do = {
 		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
@@ -2343,13 +2422,15 @@ mills = {
 		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
 		modifier = {
 			factor = 1.5
-			is_great_power = yes
+			FROM = { is_great_power = yes }
 		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
 		modifier = {
 			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
+			FROM = {
+				AND = {
+					NOT = { technology_group = western }
+					NOT = { total_development = 100 }
+				}
 			}
 		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above. 
 		modifier = {
@@ -2408,6 +2489,10 @@ furnace = {
 	onmap = yes
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	
+	keep_trigger = {
+		trade_goods = coal
+	}
+	
 	ai_will_do = {
 		factor = 15			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
@@ -2451,13 +2536,15 @@ furnace = {
 		}	#Much like the university, some technology groups simply did not have the infrastructure, history, or circumstance to evolve and develop in this way.
 		modifier = {
 			factor = 1.5
-			is_great_power = yes
+			FROM = { is_great_power = yes }
 		}	#Great powers get a sustantial bonus, putting Muslims on par with Europeans, other Old World techs on par with Muslims, and rocketing European powers even higher.
 		modifier = {
 			factor = 0.1
-			AND = {
-				NOT = { technology_group = western }
-				NOT = { total_development = 100 }
+			FROM = {
+				AND = {
+					NOT = { technology_group = western }
+					NOT = { total_development = 100 }
+				}
 			}
 		}	#Small non western AI countries shouldn't be grasping like this, institutions can spread to them from bigger neighbours. Further penalty even beyond the tech group penalty above. 
 		modifier = {

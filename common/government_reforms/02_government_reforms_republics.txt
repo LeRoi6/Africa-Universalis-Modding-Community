@@ -140,8 +140,7 @@ prussian_republic_reform = {
 	trigger = {
 		OR = {
 			is_playing_custom_nation = yes
-			religion = protestant
-			religion = reformed
+			religion_group = christian
 		}
 	}
 	valid_for_nation_designer = yes
@@ -658,6 +657,7 @@ free_city = {
 	lock_level_when_selected = yes
 	nation_designer_cost = 40
 	nation_designer_trigger = {
+		has_dlc = "Common Sense"
 		capital_scope = { is_part_of_hre = yes }
 		NOT = { num_custom_nation_provinces = 2 }
 	}

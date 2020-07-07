@@ -767,10 +767,8 @@ trade_ideas = {
 		}
 		modifier = { #Slight nudge if country lacks expansion or exploration so they can get merchants.
 			factor = 1.5
-			NOT = {
-				has_idea_group = exploration_ideas
-				has_idea_group = expansion_ideas
-			}
+			NOT = { has_idea_group = exploration_ideas }
+			NOT = { has_idea_group = expansion_ideas }
 		}
 		#If very low trade income percentage (But less than 50%), pick this up.
 		modifier = {

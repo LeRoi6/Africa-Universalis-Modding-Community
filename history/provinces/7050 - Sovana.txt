@@ -24,6 +24,19 @@ discovered_by = eastern
 
 #Second Shattering not used
 
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = SIE
+	controller = SIE
+	add_core = SIE
+	remove_core = SVN
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = SVN
+	controller = SVN
+	add_core = SVN
+	remove_core = SIE
+} #Return to proper mod added owners and cuts vanilla core, typically.
+
 #1455 vassal of Siena
 
 1562.1.1 = {

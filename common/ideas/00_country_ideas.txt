@@ -951,13 +951,7 @@ VEN_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = VEN
-			AND = {
-				tag = LMV
-				government = republic
-			}
-		}
+		tag = VEN
 	}
 	free = yes		#will be added at load.
 	
@@ -1032,7 +1026,7 @@ PRU_ideas = {
 
 BRA_ideas = {
 	start = {
-		fabricate_claims_cost= -0.2
+		fabricate_claims_cost = -0.2
 		build_cost = -0.15
 	}
 	
@@ -1736,13 +1730,7 @@ MLO_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = MLO
-			AND = {
-				tag = LMV
-				government = monarchy
-			}
-		}
+		tag = MLO
 	}
 	free = yes
 	
@@ -2538,7 +2526,7 @@ SPI_ideas = {
 #		prestige = 0.5
 	}
 	spi_royal_sardinian_army = {
-		discipline = 0.03
+		discipline = 0.05 #BTB Tweak due to vanilla powercreep. 3% discipline isn't worth jack.
 		global_manpower_modifier = 0.1
 	}
 	spi_centralized_state = {

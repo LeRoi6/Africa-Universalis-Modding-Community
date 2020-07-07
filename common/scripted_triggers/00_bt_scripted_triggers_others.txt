@@ -11,6 +11,61 @@
 #############################################################
 
 #Written by Dub
+
+#BT Italy stem duchy check.
+bt_italy_stem_duchy_check = {
+	#Majors, just for backup
+	NOT = { tag = HLR } #HRE
+	NOT = { tag = PAP } #Popeman
+	NOT = { tag = ITA } #Italy
+	NOT = { tag = ITL } #Napoleonic Italy
+	NOT = { tag = TTS } #Two Sicilies
+	NOT = { tag = LMV } #Lombardy-Veneto
+	NOT = { tag = SPI } #Sardinia-Piedmont
+	#"Stem Duchies"
+	NOT = { tag = EMR } #Emilia-Romagna
+	NOT = { tag = LOM }	#Lombardy
+	NOT = { tag = UMB } #Umbria
+	NOT = { tag = TUS } #Tuscany
+	NOT = { tag = PIE } #Piedmont
+	#NOT = { tag = RMG } #Romagna
+	NOT = { tag = SIC } #Sicily
+	NOT = { tag = NAP } #Naples
+	NOT = { tag = VEN } #Venice
+	NOT = { tag = SAV } #Savoy
+	NOT = { tag = SAR } #Sardinia
+	#Upper Lorraine
+	
+	#Majors, just for backup
+	NOT = { was_tag = HLR } #HRE
+	NOT = { was_tag = PAP } #Popeman
+	NOT = { was_tag = ITA } #Italy
+	NOT = { was_tag = ITL } #Napoleonic Italy
+	NOT = { was_tag = TTS } #Two Sicilies
+	NOT = { was_tag = LMV } #Lombardy-Veneto
+	NOT = { was_tag = SPI } #Sardinia-Piedmont
+	#"Stem Duchies"
+	NOT = { was_tag = EMR } #Emilia-Romagna
+	NOT = { was_tag = LOM }	#Lombardy
+	NOT = { was_tag = UMB } #Umbria
+	NOT = { was_tag = TUS } #Tuscany
+	NOT = { was_tag = PIE } #Piedmont
+	#NOT = { was_tag = RMG } #Romagna
+	NOT = { was_tag = SIC } #Sicily
+	NOT = { was_tag = NAP } #Naples
+	NOT = { was_tag = VEN } #Venice
+	NOT = { was_tag = SAV } #Savoy
+	NOT = { was_tag = SAR } #Sardinia
+}
+
+
+
+
+
+
+
+
+
 #------------#
 #Usage:
 #has_fulfiled_province_requirement_for_mission_trigger = {
@@ -51,24 +106,23 @@ has_fulfiled_province_requirement_for_mission_trigger = {
 #}
 #------------#
 #Explanation:
-#tooltip is an unfinished localisation string and can be:
-#	country_holds_or_non_sovereign_subject_holds_highlighted
-#	country_holds_highlighted
+#tooltip is a localisation string that is meant to appear after "At least X (Currently Y) " and can be:
+#	country_holds_or_non_sovereign_subject_holds_highlighted_num
+#	country_holds_highlighted_num
 #	...or anything else that you desire to add.
-#		Note: The code will generate the string of $tooltip$_$value$, so in the above usage example, you would need to localise "country_holds_or_non_sovereign_subject_holds_highlighted_15"
-#		Sidenote: If made dynamic, it will work for any other mission that requires the same value of missions.
 #provinces is a scripted trigger that defines the provinces. These are defined below.
 #owner_type is to define whether the provinces need to be directly owned or can also be owned by a subject. Thus it can be:
-#	num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with
-#	num_of_owned_provinces_with
+#	country_or_non_sovereign_subject_holds
+#	owned_by
 #------------#
 has_fulfiled_num_of_province_requirement_for_mission_trigger = {
-	custom_trigger_tooltip = {
-		tooltip = $tooltip$_$value$
-		$owner_type$ = {
+	calc_true_if = {
+		desc = $tooltip$
+		all_province = {
 			$provinces$ = yes
-			value = $value$
+			$owner_type$ = ROOT
 		}
+		amount = $value$
 	}
 }
 
@@ -309,6 +363,7 @@ subjugate_bohemia_provinces = {
 		area = erzgebirge_area
 		#BT additions
 		area = moravia_area
+		area = bohemian_forest_area
 	}
 }
 recover_silesia_provinces = {
@@ -316,22 +371,22 @@ recover_silesia_provinces = {
 		area = silesia_area
 		#BT additions
 		area = lower_silesia_area
+		area = middle_silesia_area
 	}
 }
 partition_poland_provinces = {
 	OR = {
-		area = slovakia_area
-		area = malopolska_area
 		area = red_ruthenia_area
 		area = central_galicia_area
-		#BT additions
 		province_id = 7274 #Bukovina
 		province_id = 3156 #Suceava
 		province_id = 7272 #Zalishchyky
 		province_id = 1940 #Belz
-	}
-	NOT = {
-		province_id = 7266 #City was not owned by Habsburgs, but they owned some of the province it seems. Again, Draiocht has fucked up historical borders with his overhauls. Yay.
+		province_id = 8223 #Mielec
+		province_id = 2959 #Tarnow
+		province_id = 262 #Krakow
+		province_id = 8222 #Nowy Targ
+		province_id = 2960 #Nowy Sacz
 	}
 }
 austrian_hungary_provinces = {
@@ -2600,6 +2655,7 @@ gc_ara_alexandria_provinces = {
 		province_id = 2325 #El-Alamein
 	}
 }
+
 #Provence, EMP
 emp_pro_aragon_provinces = {
 	gc_cas_spa_reconquista_three_provinces = yes

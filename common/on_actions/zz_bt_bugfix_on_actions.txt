@@ -194,13 +194,6 @@ on_new_monarch = {
 		}
 		clr_global_flag = bt_kalmar_union_power_struggle_pt_I
 	}
-	if = {
-		limit = {
-			tag = ARA
-			NOT = { has_global_flag = bt_two_sicilies_divided_happened }
-		}
-		country_event = { id = BtPLegacyIberianFlavour.1 }
-	}
 }
 
 on_monarch_death = {
@@ -324,7 +317,141 @@ on_new_heir = {
 	}
 }
 
+#BT adjusting brewing emporium to function on right trade goods.
+on_province_owner_change = {
+	#Vanilla
+	events = {
+		japan.1
+	}
+	
+	if = {
+		limit = {
+			OR = {
+				has_province_modifier = wine_bonus_prod
+				has_province_modifier = grain_bonus_prod
+				has_province_modifier = fruit_bonus_prod
+			}
+			FROM = { has_reform = monastic_breweries_reform }
+			NOT = { owner = { has_reform = monastic_breweries_reform } }
+		}
+		remove_province_modifier = wine_bonus_prod
+		remove_province_modifier = grain_bonus_prod
+		remove_province_modifier = fruit_bonus_prod
+	}
+	
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_province_modifier = wine_bonus_prod
+					has_province_modifier = grain_bonus_prod
+					has_province_modifier = fruit_bonus_prod
+				}
+			}
+			owner = { has_reform = monastic_breweries_reform }
+			NOT = { FROM = { has_reform = monastic_breweries_reform } }
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					trade_goods = wine
+				}
+				add_province_modifier = { 
+					name = wine_bonus_prod
+					duration = -1
+					hidden = yes
+				}
+			}
+			if = {
+				limit = {
+					trade_goods = bt_trade_goods_beer
+				}
+				add_province_modifier = { 
+					name = grain_bonus_prod
+					duration = -1
+					hidden = yes
+				}
+			}
+			if = {
+				limit = {
+					trade_goods = bt_trade_goods_fruit
+				}
+				add_province_modifier = { 
+					name = fruit_bonus_prod
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
 
+	if = {
+		limit = {
+			owned_by = SRU
+			exists = ARA
+		}
+		ARA = {
+			set_country_flag = ARA_defeat_saruhan
+		}
+	}
+	if = {
+		limit = {
+			NOT = { owner = { religion_group = muslim } }
+			has_province_modifier = sufi_shrine
+		}
+		remove_province_modifier = sufi_shrine
+	}
+	on_province_owner_change_estate_privileges_effect = yes
+	#BT Dithmarschen production bonus on grain modifier.
+	
+	
+	if = {
+		limit = {
+			has_province_modifier = dtt_bread_bonus_prod
+			FROM = { 
+				tag = DTT 
+				mission_completed = peasants_conquest_of_bread
+			}
+			NOT = { 
+				owner = {
+					tag = DTT 
+					mission_completed = peasants_conquest_of_bread
+				} 
+			}
+		}
+		remove_province_modifier = dtt_bread_bonus_prod
+	}
+	
+	if = {
+		limit = {
+			NOT = {
+				has_province_modifier = dtt_bread_bonus_prod
+			}
+			owner = { 
+				tag = DTT 
+				mission_completed = peasants_conquest_of_bread
+			}
+			NOT = { 
+				FROM = {
+					tag = DTT 
+					mission_completed = peasants_conquest_of_bread
+				} 
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					trade_goods = grain
+				}
+				add_province_modifier = { 
+					name = dtt_bread_bonus_prod
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+}
 
 # province
 on_province_religion_converted = {

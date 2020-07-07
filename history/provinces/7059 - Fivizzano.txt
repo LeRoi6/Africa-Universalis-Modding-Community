@@ -47,6 +47,22 @@ discovered_by = eastern
   add_core = LAN
   remove_core = GEN
   } # to Milan again (NOTE: GIVING IT TO MASSA TO REPRESENT THE HINTERLANDS AND Fosdinovo) 
+
+#Performance start
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = MLO
+	controller = MLO
+	add_core = MLO
+	remove_core = MSS
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = MSS
+	controller = MSS
+	add_core = MSS
+	remove_core = MLO
+} #Return to proper mod added owners and cuts vanilla core, typically.  
+  
+  
 1477.1.1 = {
   owner = LAN
   controller = LAN

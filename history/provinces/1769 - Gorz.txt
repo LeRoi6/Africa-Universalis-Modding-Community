@@ -14,7 +14,6 @@ base_production = 5
 trade_goods = iron
 base_manpower = 4
 capital = "Gorizia"
-estate = estate_nobles
 is_city = yes
 hre = yes
 
@@ -22,6 +21,21 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
+
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+	remove_core = GRZ
+	remove_core = CNL
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = GRZ
+	controller = GRZ
+	add_core = GRZ
+	add_core = CNL
+	remove_core = HAB
+} #Return to proper mod added owners and cuts vanilla core, typically.
 
 1500.4.12 = {	
 	owner = HAB

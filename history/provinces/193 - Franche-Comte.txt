@@ -24,6 +24,17 @@ discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
 
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = BUR
+	controller = BUR
+	add_core = BUR
+	remove_core = BSA
+} 
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = BSA
+	controller = BSA
+	remove_core = BUR
+} 
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA } # Charles the Bold dies and Louis XII of France takes Franche-Comté
 1493.8.19 = { owner = HAB controller = HAB add_core = HAB remove_core = FRA } # Frederick III dies and Charles VII cedes Franch-Comté to Maximilian I von Habsburg
 1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance

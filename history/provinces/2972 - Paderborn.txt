@@ -20,6 +20,19 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = KOL
+	controller = KOL
+	add_core = KOL
+	remove_core = PAD
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = PAD
+	controller = PAD
+	add_core = PAD
+	remove_core = KOL
+} #Return to proper mod added owners and cuts vanilla core, typically.
+
 1566.1.1 = { religion = reformed }
 1585.1.1 = { religion = catholic } # Jesuites are efficient in restoring the catholic faith
 1802.1.1 = {

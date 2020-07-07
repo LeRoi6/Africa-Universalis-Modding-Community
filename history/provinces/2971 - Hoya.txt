@@ -20,6 +20,19 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = BRU
+	controller = BRU
+	add_core = BRU
+	remove_core = HOY
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = HOY
+	controller = HOY
+	add_core = HOY
+	remove_core = BRU
+} #Return to proper mod added owners and cuts vanilla core, typically.
+
 1512.1.1 = {
 	owner = BRU
 	controller = BRU

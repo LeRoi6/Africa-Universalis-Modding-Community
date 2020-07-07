@@ -12,10 +12,14 @@ national_focus = DIP
 
 change_estate_land_share = {
 	estate = estate_church
-	share = -10
+	share = -5
 }
 change_estate_land_share = {
 	estate = estate_burghers
+	share = -5
+}
+change_estate_land_share = {
+	estate = estate_nobles
 	share = -10
 }
 
@@ -365,6 +369,7 @@ change_estate_land_share = {
 		dip = 2
 		mil = 1
 	}
+	set_estate_privilege = estate_nobles_british_strong_marches
 	clear_scripted_personalities = yes
 	add_ruler_personality = infertile_personality
 }

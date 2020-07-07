@@ -21,3 +21,15 @@ discovered_by = eastern
 
 #Province history completed by - 
 
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = SAV
+	controller = SAV
+	add_core = SAV
+	remove_core = TND
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = TND
+	controller = TND
+	add_core = TND
+	remove_core = SAV
+} #Return to proper mod added owners and cuts vanilla core, typically.  

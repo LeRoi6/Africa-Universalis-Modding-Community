@@ -100,6 +100,8 @@ NDefines.NCountry.HORDE_UNITY_PER_RAZE = 0.25			-- from 0p5
 NDefines.NCountry.SETTLMENT_GROWTH_CHANCE_MULTIPLIER = 5.0			-- from 2p5
 NDefines.NCountry.SETTLMENT_GROWTH_CHANCE_MIN = 0.02			-- from 0p05
 
+NDefines.NCountry.ESTATE_CROWNLAND_FROM_DEV = 0.1			-- from 0p2
+
  --NEconomy
 NDefines.NEconomy.GOLD_MINE_DEPLETION_THRESHOLD = 2			-- from 1
 NDefines.NEconomy.GOLD_MINE_DEPLETION_CHANCE = 0.05			-- from 0p1

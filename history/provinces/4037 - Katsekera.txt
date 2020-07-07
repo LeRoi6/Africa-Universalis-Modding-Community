@@ -1,16 +1,21 @@
 #Katsekera
 
-owner = MWE
-controller = MWE
-add_core = MWE
-culture = yao
-religion = pwiyamwene
-capital = "Chipanga"
+owner = MRA
+controller = MRA
+add_core = MRA
+culture = nyasa
+religion = shamanism #Fetishism
+capital = "Katsekera"
 is_city = yes
-base_manpower = 2
+base_manpower = 4
 trade_goods = ivory
 hre = no
-base_tax = 2 #Not sure why 14 total development in BT
-base_production = 3
+base_tax = 4 
+base_production = 6
 discovered_by = central_african
-discovered_by = east_african
+
+1735.1.1 = {
+	owner = MKU
+	controller = MKU
+	add_core = MKU
+}

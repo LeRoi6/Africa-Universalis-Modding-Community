@@ -16,3 +16,5 @@ primary_culture = irish
 		adm = 3
 		dip = 2
 		mil = 3
+	}
+}

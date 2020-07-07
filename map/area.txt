@@ -1830,6 +1830,7 @@ majarteen_area = { #5
 	1206 2024 2783 2784 2788 
 }
 
+
 ########################################
 # South-Eastern Islands				   #
 ########################################
@@ -4119,7 +4120,7 @@ trakai_area = {
 	270 272 770 4536 7218 7219 
 }
 
-western_moldovia = {
+western_moldovia = { #Note: Is Moldavia area and should be switched between some major BT version with moldavia_area. That area in turn can become a bessarabia_area or similar.
 	268 3157 4529 4530 7276 8180 8219
 }
 

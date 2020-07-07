@@ -29,6 +29,19 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = OPL
+	controller = OPL
+	add_core = OPL
+	remove_core = TRO
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = TRO
+	controller = TRO
+	add_core = TRO
+	remove_core = OPL
+} #Return to proper mod added owners and cuts vanilla core, typically.
+
 #1419.12.1 = { revolt = { type = heretic_rebels size = 2 } controller = REB } # Hussite Wars, Battle of Nekmir
 #1436.7.5 = { revolt = {} controller = BOH } # Peace is signed in Jihlava
 1457.1.1 = { unrest = 5 } # George of Podiebrand had to secure recognition from the German and Catholic towns

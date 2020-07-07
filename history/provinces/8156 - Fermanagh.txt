@@ -38,3 +38,15 @@ discovered_by = eastern
 1291.1.1 = {
 	capital = "Inis Ceithleann"
 }
+1444.11.16 = { #BT Performance Start Begin
+	owner = TRY
+	controller = TRY
+	add_core = TRY
+	remove_core = FGH
+}
+1444.11.18 = { #BT Performance Start Begin
+	owner = FGH
+	controller = FGH
+	add_core = FGH
+	remove_core = TRY
+}

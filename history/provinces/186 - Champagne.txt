@@ -22,6 +22,19 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+	remove_core = RHM
+}
+1444.11.18 = { #BT Performance Start Begin
+	owner = RHM
+	controller = RHM
+	add_core = RHM
+	remove_core = FRA
+}
+
 #BT moved the CoT to Paris. Reims was the ritual site of accension for French monarchs, but that should not equal better trade and development. Also odd to have the most important city in Europe for most of the EU4 period without a CoT.
 
 1420.5.12 = { owner = ENG controller = ENG add_core = ENG } # Treaty of Troyes, ceded to the English

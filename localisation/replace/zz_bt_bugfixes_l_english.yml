@@ -65,3 +65,12 @@
  cro_tur_army:0 "Relative army strength ratio is at least §Y80%§! compared to the §YOttomans§!"
  emp_mlo_italian_riches_effect_tooltip:0 "Every owned province of §YLombard§! culture that does NOT have separatism:\n   Gain §Y2§! development."
  
+ #Nuq adjusted some strings.
+ peasant_bremen_claims:0 "§Y[Root.GetName]§! gets a permanent claim on provinces in the §YWeser§! area and counties of §YHamburg§!, §YSaxe-Lauenburg§! and §YLüneburg§! that are not owned by our allies."
+ protect_frisia_tt:1 " provinces in §YFrisia§! and §YGuelders§! are owned by §Y[Root.GetName]§! or a Peasant Republic ally."
+ dtt_peasants_war_tt_2:1 " provinces in area of Schleswig and regions of North or South Germany are owned by countries with the Peasant Republic government"
+ crusader_egypt_tt:0 "At least §Y27§! provinces in the §YEgypt§! region are owned by [Root.GetName] or its non-tributary subjects"
+ crusader_greece_tt:0 "At least §Y12§! provinces (or §Y6§! if Byzantium does not exist) in the §YPeloponnese, Hellas, Crete and Aegean Islands§! areas are owned by [Root.GetName] or its non-tributary subjects"
+ cruader_piracy_tt:0 "At least §Y15§! coastal provinces in the §YMaghreb§! region are owned by [Root.GetName] or its non-tributary subjects"
+ emp_ned_assert_dutch_sovereignty_tt:1 "Own §Y7§! core provinces"
+ ned_south_africa_colony.tooltip:0 "§Y[Root.GetName]§! owns and has fully colonized Cape, Swellendam or Uitenhage."

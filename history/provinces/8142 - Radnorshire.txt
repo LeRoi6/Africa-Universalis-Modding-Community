@@ -37,3 +37,16 @@ discovered_by = ottoman
 discovered_by = eastern
 
 #Histories
+
+1444.11.16 = { #BT Performance Start Begin
+	owner = ENG
+	controller = ENG
+	add_core = ENG
+	remove_core = WMC
+}
+1444.11.18 = { #BT Performance Start Begin
+	owner = WMC
+	controller = WMC
+	add_core = WMC
+	remove_core = ENG
+}

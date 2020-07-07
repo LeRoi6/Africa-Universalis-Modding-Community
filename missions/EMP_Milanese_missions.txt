@@ -486,10 +486,7 @@ emp_mlo_venice_branch = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					OR = {
-						area = tirol_area
-						region = italy_region
-					}
+					region = italy_region
 					country_or_non_sovereign_subject_holds = HAB
 				}
 				AND = {
@@ -503,10 +500,6 @@ emp_mlo_venice_branch = {
 				is_emperor = no
 			}
 			italy_region = {
-				type = all
-				NOT = { country_or_non_sovereign_subject_holds = HAB }
-			}
-			tirol_area = {
 				type = all
 				NOT = { country_or_non_sovereign_subject_holds = HAB }
 			}

@@ -39,11 +39,11 @@ monarch_names = {
 	"Herman #2" = 40
 	"Viljem #1" = 30
 	"Ludvik #0" = 20
-	"Liutpold #0" 20
+	"Liutpold #0" = 20
 	"Barbara #0" = -20
 	"Ana #0" = -20
-	"Katarina #0" -20
-	"Elizabeta #0" -20
+	"Katarina #0" = -20
+	"Elizabeta #0" = -20
 	#Rest is from Carniola
 	"Slavko #0" = 20
 	"Vladko #0" = 20

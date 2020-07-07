@@ -22,6 +22,19 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = PRO
+	controller = PRO
+	add_core = PRO
+	remove_core = VDN
+} 
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = VDN
+	controller = VDN
+	add_core = VDN
+	remove_core = PRO
+} 
+
 1551.3.20 = { controller = FRA } # Franco-Habsburg War (1551-1559): France takes Toul & Verdun
 1559.4.3 = { owner = FRA add_core = FRA } # Peace of Cateau-Cambrésis, France annexes Barrois
 1583.1.1 = { fort_15th = no fort_16th = yes }

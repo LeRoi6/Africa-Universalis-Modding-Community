@@ -36,7 +36,7 @@ estate_nobles =
 		OR = {
 			NOT = { has_dlc = "Common Sense" }
 			AND = {
-				NOT = { has_reform = english_monarchy }
+				#NOT = { has_reform = english_monarchy } #Give nobles to Britain and Scotland
 				NOT = { has_reform = parliamentary_reform }
 				NOT = { has_reform = theocratic_democracy_reform }
 				NOT = { has_reform = regionally_elected_commanders }
@@ -240,6 +240,14 @@ estate_nobles =
 			technology_group = ottoman
 		}
 	}
+	#BT-specific:
+	custom_name = {
+		desc = estate_marchers
+		trigger = {
+			has_reform = english_monarchy
+		}
+	}
+	#End of BT-specific
 	custom_name = {
 		desc = estate_boyars
 		trigger = {
@@ -368,6 +376,7 @@ estate_nobles =
 		#BT-specific privileges
 		estate_nobles_very_strong_duchies
 		estate_nobles_extremely_strong_duchies
+		estate_nobles_british_strong_marches
 		#End of BT-specific privileges
 	}
 

@@ -3,6 +3,7 @@
 owner = HUN
 controller = HUN
 add_core = HUN
+add_core = SER #Serbia controlled this city at least in 1422. Also it's required for a mission.
 culture = serbian
 religion = orthodox
 capital = "Mitrovica"			#Sremska Mitrovica, specifically

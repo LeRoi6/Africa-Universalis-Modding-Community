@@ -4,7 +4,7 @@
 
 owner = MND
 controller = MND
-culture = hannoverian
+culture = lower_saxon
 religion = catholic
 trade_goods = livestock
 capital = "Minden"
@@ -19,6 +19,19 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
+
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = BRG
+	controller = BRG
+	add_core = BRG
+	remove_core = MND
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = MND
+	controller = MND
+	add_core = MND
+	remove_core = BRG
+} #Return to proper mod added owners and cuts vanilla core, typically.
 
 1566.1.1 = { religion = protestant }
 1648.5.15 = {

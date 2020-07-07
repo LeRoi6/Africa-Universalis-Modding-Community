@@ -49,6 +49,18 @@ change_estate_land_share = {
 	set_estate_privilege = estate_nobles_extremely_strong_duchies
 }
 
+1444.11.16 = {
+	remove_estate_privilege = estate_nobles_strong_duchies
+	remove_estate_privilege = estate_nobles_very_strong_duchies
+	remove_estate_privilege = estate_nobles_extremely_strong_duchies
+}
+1444.11.18 = { ##BT Performance Start, removes the things for it's duration
+	set_estate_privilege = estate_nobles_strong_duchies
+	set_estate_privilege = estate_nobles_very_strong_duchies
+	set_estate_privilege = estate_nobles_extremely_strong_duchies
+}
+
+
 # Personal Union with Habsburg under Ladislaus Postumus 1453-1457
 
 1457.11.24 = {

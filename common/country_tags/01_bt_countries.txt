@@ -353,7 +353,6 @@ NAM = "countries/Namslau.txt"
 #Africa
 ########################################
 #Draiocht removed RBR added in vanilla 1.28 as SLE
-#RBR = "countries/RepublicofSale.txt"
 ANF = "countries/Anfa.txt"
 RGR = "countries/Regraga.txt"
 RIF = "countries/Riffans.txt"			#Core only stolen from Neprut

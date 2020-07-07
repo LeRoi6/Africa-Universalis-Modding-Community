@@ -2,6 +2,7 @@
 
 owner = HUN
 controller = HUN 
+add_core = SER
 culture = serbian
 religion = orthodox
 capital = "Belgrade"

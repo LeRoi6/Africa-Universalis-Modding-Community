@@ -6,4 +6,4 @@ government = monarchy
 add_government_reform = feudalism_reform
 
 religion = catholic
-primary_culture = slovak
+primary_culture = hungarian

@@ -12,6 +12,8 @@ NDefines.NCountry.TERRITORY_PENALTY_CAP = 60			-- Same logic as above new provin
 --NDefines.NMilitary.FORT_PER_DEV_RATIO = 30			-- Beyond Typus added more provinces means more forts needed for same dev     Removed as dev is now doubled
 NDefines.NMilitary.FORTRESS_COST = 0.2			-- Beyond Typus added so many new provinces which means more forts but no more dev so everyone was going broke Base 05
 
+NDefines.NReligion.REFORM_DESIRE_PER_YEAR = 0.0025								-- from 0p05. Halving this makes for a slightly smoother reform desire gain curve.
+	
  --NGraphics changes
 NDefines.NGraphics.CITY_SPRAWL_SHRINK_DISTANCE = 90.0			-- from 150p0
 NDefines.NGraphics.CITY_SPRAWL_DRAW_DISTANCE = 120.0			-- from 200p0

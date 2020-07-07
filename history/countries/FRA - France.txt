@@ -11,7 +11,7 @@ historical_rival = HAB
 
 change_estate_land_share = {
 	estate = estate_nobles
-	share = 10
+	share = 20 #Changed from 10 because French king had no influence basically.
 }
 change_estate_land_share = {
 	estate = estate_church

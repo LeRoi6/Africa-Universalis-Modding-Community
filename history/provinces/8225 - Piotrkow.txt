@@ -1,9 +1,9 @@
-#8225 - PiotrkÃ³w
+#8225 - Piotrków
 #Area - Sieradz
 #Region - Poland
 
 #Core Details
-capital = "PiotrkÃ³w"
+capital = "Piotrków"
 is_city = yes
 owner = POL
 controller = POL
