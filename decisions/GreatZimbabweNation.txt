@@ -132,7 +132,6 @@ country_decisions = {
 			
 			set_country_flag = formed_zimbabwe_flag
 			
-			add_government_reform = confederation_of_zimbabwe_reform
 			
 
 		}
