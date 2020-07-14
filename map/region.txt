@@ -641,8 +641,6 @@ east_africa_region = {
 		mozambique_area
 		lower_zambezi_area
 		upper_zambezi_area
-		ruvuma_area
-		#ngonde_area			#Duplicated, figure it out later
 		mascarenes_area
 		madagascar_highlands_area
 		betsimasaraka_area
@@ -650,13 +648,59 @@ east_africa_region = {
 		southern_madagascar
 		uticulo_makuana_area
 		jubba_area
-		#east_african_islands_area			#Cut in 1.20
 		shire_area
 		mombasa_area
 		#BT moved from South Africa
 		zimbabwe_area
 		quelimane_area
 		butua_area
+		#AUMC New Areas
+		ngonde_area
+		southern_tumbuka_area
+		kalonga_area
+		western_makuana_area
+		lomwe_area
+		umwalia_area
+		medo_area
+		wayao_area   
+		tete_area
+		manyika_area
+		barue_area
+		teve_area
+		madanda_area
+		dande_area
+		buhera_area
+		shangwe_area
+		naletale_area
+		vuxwa_area
+		northern_maputo_area
+		southern_maputo_area
+		gitonga_area
+		hlengwe_area
+		inhambane_area
+		sofala_area
+		chibuene_area
+		angoche_area
+		quirimbas_islands_area
+		lindi_area
+		zanzibar_area
+		pate_area
+		comoros_area
+		ruvuma_area
+		njombe_area
+		kilosa_area
+		ikanga_area
+		hehe_area
+		mgunda_mkali_area
+		rukwa_area
+		makonde_area
+		nguru_area
+		hanang_area
+		sandawe_area
+		nyamwezi_area
+		bulungwa_area
+		galla_area
+		mahale_area
 	}
 	monsoon = {
 		00.11.01

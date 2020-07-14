@@ -1,4 +1,4 @@
-# A province can only belong to one area!
+ # A province can only belong to one area!
 #Removed the specific notes that things have been changes, assume everything in Europe, North America, & the Meditterenean has been altered - Draiocht
 
 #Sea Areas:
@@ -1576,11 +1576,39 @@ mgunda_mkali_area = {
 }
 	
 rukwa_area = {
-	4077 9184 9185 9187
+	4077 9184 9185 9187 9291 9292 9294 9295 9296 9297
 }
 
 makonde_area = (
 	4035 9144 9145 9147 9148 9149 9150
+}
+
+nguru_area = {
+	9175 9179 9256 9257 9258
+}
+
+hanang_area = {
+	4057 9259 9260 9261 9262 9263 9265
+}
+
+sandawe_area = {
+	9264 9266 9267 9268 9269
+}
+
+nyamwezi_area = {
+	4071 9270 9271 9272 9273 9274 9275 9276
+}
+
+bulungwa_area = {
+	9277 9278 9279 9280 9282
+}
+
+galla_area = {
+	9281 9283 9284 9288 9289 9290
+}
+
+mahale_area = {
+	9285 9286 9287 9293 9298
 }
 
 angoche_area = { #5
@@ -1684,7 +1712,7 @@ mombasa_area = { #8
 }
 
 kenya_area = {	#5
-	1273 1925 4053 4054 4055 4057 4058 4060
+	1273 1925 4053 4054 4055 4060
 }
 
 jubba_area = { #3
@@ -1696,11 +1724,11 @@ tanzania_area = { #5
 }
 
 matogoro_area = {
-	4043 9188 9189 9190 9191 9193 9194
+	4043 4058 9188 9189 9190 9191 9193 9194
 }
 
 buha_area = { #5
-	4070 4071 4072 4076
+	4070 4072 4076 
 }
 
 buzinza_area = { #3

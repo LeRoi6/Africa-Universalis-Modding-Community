@@ -9255,7 +9255,7 @@ province;red;green;blue;x;x
 9254;228;25;19;Doverove;x
 9255;156;162;243;Tambara;x
 9256;232;119;27;Chimhinda;x
-9257;229;131;27;Rubeho;x
+9257;229;131;27;Ukaguru;x
 9258;234;113;0;Goima;x
 9259;255;156;63;Dudu;x
 9260;255;137;20;Kondoa;x
@@ -9274,7 +9274,7 @@ province;red;green;blue;x;x
 9273;255;139;43;Usiha;x
 9274;229;138;34;Bukune;x
 9275;255;172;20;Unyi;x
-9276;255;186;38;Ugunda;x
+9276;255;186;38;Gonda;x
 9277;255;137;23;Bulungwa;x
 9278;239;121;23;Ukune;x
 9279;246;111;41;Msene;x
@@ -9282,7 +9282,7 @@ province;red;green;blue;x;x
 9281;255;172;20;Urambo;x
 9282;242;159;0;Usagusi;x
 9283;255;123;22;Vinza;x
-9284;181;113;48;Ruguru;x
+9284;242;157;0;Ugunda;x
 9285;255;149;43;Malagarasi;x
 9286;239;117;40;Mahale;x
 9287;255;114;7;Karema;x
@@ -9296,3 +9296,4 @@ province;red;green;blue;x;x
 9295;237;137;23;Milansi;x
 9296;239;119;0;Chalaminwe;x
 9297;255;146;73;Kasanga;x
+9298;255;141;35;Ntakata;x
