@@ -11,10 +11,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/government_upgrade_strip.dds"
 		noOfFrames = 5
 	}
-	
-	
-	
-spriteTypes = {    
     
     spriteType = {
         name = "GFX_icon_religion"
@@ -50,8 +46,7 @@ spriteTypes = {
         texturefile = "gfx//interface//country_icon_religion.dds"
         noOfFrames = 30    
     }
-    
-}
+ 
 	
 	
 	spriteType = {

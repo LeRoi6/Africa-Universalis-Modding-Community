@@ -1,8 +1,8 @@
 #1187 - Sena
 
-owner = SNA
-controller = SNA
-add_core = SNA
+owner = SYA
+controller = SYA
+add_core = SYA
 culture = hatonga
 religion = mhondoro
 capital = "Sena"
