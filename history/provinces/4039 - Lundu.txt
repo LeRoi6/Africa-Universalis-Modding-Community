@@ -1,17 +1,17 @@
 #Lundu
 
-owner = LDU
-controller = LDU
-add_core = LDU
+owner = MSJ
+controller = MSJ
+add_core = MSJ
 culture = nyasa
 religion = shamanism #Fetishism
-capital = "Mbebwe"
+capital = "Bunga"
 is_city = yes
-base_manpower = 8
-trade_goods = cloth #or Cotton
+base_manpower = 2
+trade_goods = copper
 hre = no
-base_tax = 6
-base_production = 4
+base_tax = 2
+base_production = 3
 discovered_by = central_african
 
 1572.1.1 = { discovered_by = POR } #Start of Portuguese Interaction with the Maravis north of the Zambezi

@@ -1,7 +1,7 @@
 #4035 - Ngindo
 
-culture = makua
-religion = shamanism #Fetishism
+culture = makonde
+religion = pwiyamwene
 trade_goods = unknown
 hre = no
 base_tax = 2  

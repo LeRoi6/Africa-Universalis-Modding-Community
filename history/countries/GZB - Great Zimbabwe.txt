@@ -1,6 +1,5 @@
 government = monarchy
 primary_culture = lozvi
-add_government_reform = confederation_of_zimbabwe_reform
 add_accepted_culture = khami
 add_accepted_culture = madanda
 add_accepted_culture = manyika

@@ -1,7 +1,7 @@
 #4042 - Makonde
 
 culture = makua
-religion = shamanism #Fetishism
+religion = shamanism
 trade_goods = unknown
 hre = no
 base_tax = 2  

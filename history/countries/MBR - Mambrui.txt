@@ -10,7 +10,7 @@ religious_school = shafii_school
 
 1444.1.1 = {		#Fictional
 	monarch = {
-		name= ""Bwana Waziri"
+		name= "Bwana Waziri"
 		dynasty = "Bin Mambrui"
 		dip = 3
 		mil = 2

@@ -10,7 +10,7 @@ religious_school = shafii_school
 
 1444.1.1 = {		#Fictional
 	monarch = {
-		name= ""Rashid"
+		name= "Rashid"
 		dynasty = "Bin Gedi"
 		dip = 2
 		mil = 2

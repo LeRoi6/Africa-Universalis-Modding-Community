@@ -3,14 +3,14 @@
 owner = TBK
 controller = TBK
 add_core = TBK
-culture = nyasa
+culture = tumbuka
 religion = shamanism #Fetishism
-capital = "Chilumba"
+capital = "Karonga"
 is_city = yes
 base_manpower = 2 
 trade_goods = ivory
 hre = no
-base_tax = 4 
-base_production = 4
+base_tax = 5 
+base_production = 5
 
 discovered_by = central_african
