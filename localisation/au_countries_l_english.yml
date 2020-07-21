@@ -140,7 +140,7 @@
  MBR:0 "Mambrui"
  WTU:0 "Witu"
  LMU:0 "Lamu"
- MDA:0 "Manda"
+ MDN:0 "Manda"
  FAZ:0 "Faza"
  SYU:0 "Siyu"
  SUD_ADJ:0 "Sudi"
@@ -161,7 +161,7 @@
  MBR_ADJ:0 "Mambrui"
  WTU_ADJ:0 "Wituan"
  LMU_ADJ:0 "Lamuan"
- MDA_ADJ:0 "Mandam"
+ MDN_ADJ:0 "Mandam"
  FAZ_ADJ:0 "Fazan"
  SYU_ADJ:0 "Siyuan"
  

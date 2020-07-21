@@ -1,9 +1,9 @@
 #Created by AUMC
 #9002 - Omwe
 
-owner = PTE
-controller = PTE
-add_core = PTE
+owner = AJU		#Not really, but we'll get there
+controller = AJU
+add_core = AJU
 culture = kiamu #Will be Bajuni but Omwe is a swahili ruin in the area
 religion = sunni
 capital = "Omwe"

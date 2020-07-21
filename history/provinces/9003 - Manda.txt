@@ -1,8 +1,8 @@
 #1204 - Lamu
 
-owner = MDA
-controller = MDA
-add_core = MDA
+owner = MDN
+controller = MDN
+add_core = MDN
 culture = kiamu
 religion = sunni
 capital = "Manda"
