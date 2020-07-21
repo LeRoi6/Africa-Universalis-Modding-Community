@@ -701,6 +701,9 @@ east_africa_region = {
 		bulungwa_area
 		galla_area
 		mahale_area
+		matogoro_area
+		tanzania_area
+		ngonde_area
 	}
 	monsoon = {
 		00.11.01
@@ -714,19 +717,18 @@ east_africa_region = {
 
 central_africa_region = {
 	areas = {
-		ngonde_area
 		buha_area
 		katanga_area
 		zambia_area
 		luba_area
 		sankuru_area
-		tanzania_area
 		kenya_area
 		buzinza_area
 		uganda_area
 		rwanda_area
 		chokwe_area
 		bunyoro_area
+		eastern_zambia_area
 	}
 	monsoon = {
 		00.10.01
