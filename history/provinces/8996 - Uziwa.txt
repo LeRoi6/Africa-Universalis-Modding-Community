@@ -1,8 +1,9 @@
 #Created by AUMC
 #8996 - Uziwa
-owner = PTE
-controller = PTE
-add_core = PTE
+
+owner = LMU
+controller = LMU
+add_core = LMU
 culture = kiamu
 religion = sunni
 capital = "Uziwa"
