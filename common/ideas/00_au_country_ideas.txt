@@ -183,7 +183,7 @@ BUT_ideas = {
 		land_morale = 0.1
 	}
 	but_promote_self_sufficiency = {
-		max_states = 3
+		governing_capacity_modifier = 0.1
 	}
 	but_mwari_shrines = {
 		missionaries = 1
