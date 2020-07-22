@@ -143,6 +143,7 @@
  MDN:0 "Manda"
  FAZ:0 "Faza"
  SYU:0 "Siyu"
+ OZI:0 "Ozi"
  SUD_ADJ:0 "Sudi"
  ZRM_ADJ:0 "Zaramoan"
  MZZ_ADJ:0 "Mziziman"
@@ -164,6 +165,7 @@
  MDN_ADJ:0 "Mandam"
  FAZ_ADJ:0 "Fazan"
  SYU_ADJ:0 "Siyuan"
+ OZI_ADJ:0 "Ozi"
  
  #Mozambique
  BOM:0 "Bombo"

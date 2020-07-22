@@ -1700,7 +1700,7 @@ central_swahili_coast_area = { #4
 }
 
 northern_swahili_coast_area = { #5
-	1204 8994 8995 8996 8997 9003
+	1204 8994 8996 8997 9003
 }
 
 pate_area = { #5
