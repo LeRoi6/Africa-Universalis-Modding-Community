@@ -101,3 +101,6 @@ PND = "countries/Pande.txt"
 HLG = "countries/Hlengwe.txt"
 BIL = "countries/Bila.txt"
 SSO = "countries/Sono.txt"
+
+#Tanzania
+NGL = "countries/Nguruhe.txt"

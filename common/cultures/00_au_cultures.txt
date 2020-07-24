@@ -657,3 +657,10 @@ kongo_group = {
 		Jetta Vandana Zody 
 	}
 }
+
+bena_kinga_group = {
+	graphical_culture = africangfx
+	hehe = {
+	
+	}
+}
