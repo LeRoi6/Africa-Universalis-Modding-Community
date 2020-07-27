@@ -452,8 +452,8 @@
  PROV9159:0 "Muhenge"
  PROV9160:0 "Mlongora"
  PROV9161:0 "Ikombagulu"
- PROV9162:0 "Image" #capital = Lula
- PROV9163:0 "Rugaro"
+ PROV9162:0 "Image"
+ PROV9163:0 "Lukalo"
  PROV9164:0 "Ntsuanda"
  PROV9165:0 "Malangali"
  PROV9166:0 "Madibira"
@@ -589,4 +589,3 @@
  PROV9296:0 "Chalaminwe"
  PROV9297:0 "Kasanga"
  PROV9298:0 "Ntakata"
- PROV9299:0 "Kalinga"
