@@ -1,1 +1,3 @@
+#Changed to Cape Banza by AU
+
 discovered_by = central_african

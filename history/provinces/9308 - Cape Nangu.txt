@@ -1,0 +1,4 @@
+#Created by AUMC
+#9308 - Cape Nangu
+
+discovered_by = central_african
