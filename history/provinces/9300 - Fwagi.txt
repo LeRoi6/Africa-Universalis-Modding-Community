@@ -1,0 +1,15 @@
+#Created by AUMC
+#9300 - Fwagi
+culture = hehe
+religion = shamanism
+capital = "Mkubwasanya"
+trade_goods = cotton
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+owner = FWG
+controller = FWG
+add_core = FWG
+
+discovered_by = central_african

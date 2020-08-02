@@ -451,8 +451,8 @@
  PROV9158:0 "Mungari"
  PROV9159:0 "Muhenge"
  PROV9160:0 "Mlongora"
- PROV9161:0 "Ikombagulu"
- PROV9162:0 "Image" #capital = Lula
+ PROV9161:0 "Ruaha Mbuyuni"
+ PROV9162:0 "Image" 
  PROV9163:0 "Rugaro"
  PROV9164:0 "Ntsuanda"
  PROV9165:0 "Malangali"
@@ -590,3 +590,7 @@
  PROV9297:0 "Kasanga"
  PROV9298:0 "Ntakata"
  PROV9299:0 "Kalinga"
+ PROV9300:0 "Fwagi"
+ PROV9301:0 "Isoliwaya"
+ PROV9302:0 "Lungemba"
+ PROV9303:0 "Ikula"

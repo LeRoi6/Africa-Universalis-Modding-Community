@@ -106,3 +106,8 @@ SSO = "countries/Sono.txt"
 
 #Tanzania
 NGL = "countries/Nguruhe.txt"
+ILO = "countries/Ilole.txt"
+LGE = "countries/Lungemba.txt"
+IMA = "countries/Image.txt"
+FWG = "countries/Fwagi.txt"
+DON = "countries/Dongwe.txt"

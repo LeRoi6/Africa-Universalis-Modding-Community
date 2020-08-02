@@ -1,0 +1,15 @@
+#Created by AUMC
+#9300 - Fwagi
+culture = hehe
+religion = shamanism
+capital = "Ikula"
+trade_goods = ivory
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+owner = DON
+controller = DON
+add_core = DON
+
+discovered_by = central_african

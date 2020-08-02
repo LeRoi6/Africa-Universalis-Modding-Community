@@ -1,0 +1,15 @@
+#Created by AUMC
+#9162 - Image
+culture = hehe
+religion = shamanism
+capital = "Rugaro"
+trade_goods = ivory
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+owner = ILO
+controller = ILO
+add_core = ILO
+
+discovered_by = central_african
