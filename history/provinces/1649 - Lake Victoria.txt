@@ -1,4 +1,4 @@
-#1649 - Lake Victoria
+#1649 - Renamed Speke Gulf by AU
 
 
 discovered_by = central_african
