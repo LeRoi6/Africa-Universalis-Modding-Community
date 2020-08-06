@@ -1,9 +1,9 @@
 #Created by AUMC
 #9099 - Fura
 
-owner = KKE
-controller = KKE
-add_core = KKE
+owner = ZIM
+controller = ZIM
+add_core = ZIM
 culture = tavara
 religion = mhondoro
 capital = "Fura"
