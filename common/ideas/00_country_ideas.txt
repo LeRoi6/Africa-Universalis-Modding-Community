@@ -7760,7 +7760,7 @@ LDK_ideas = {
 	}
 }
 
-ZIM_ideas = {
+ZIM_ideas = { #AUMC Revamped
 	start = {
 		global_trade_goods_size_modifier = 0.1
 		inflation_reduction = 0.1
@@ -7779,23 +7779,23 @@ ZIM_ideas = {
 		discipline = 0.05
 	}
 	zim_rekindling_the_royal_fires = {
-		stability_cost_modifier = -0.1
+		reduced_liberty_desire = 10
 	}
-	zim_mutapa_architecture = {
-		fort_maintenance_modifier = -0.1
+	zim_gather_the_mutumbus = {
+		leader_land_manuever = 1
 	}
-	zim_spokesman_before_the_dead = {
+	zim_vadzimu = {
 		legitimacy = 1
 		devotion = 1
 	}
-	zim_elected_administrators = {
-		global_tax_modifier = 0.1
+	zim_rally_the_dunhu = {
+		vassal_forcelimit_bonus = 1
 	}
 	zim_curva = {
-		trade_efficiency = 0.1
-	}
-	zim_controlling_the_mutapan_riches = {
 		global_own_trade_power = 0.2
+	}
+	zim_mutumwis = {
+		diplomatic_reputation = 1
 	}
 }
 

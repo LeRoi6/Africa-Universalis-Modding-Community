@@ -6,45 +6,6 @@
 
 ### Nation specific idea groups
 
-ZIM_ideas = {
-	start = {
-		global_trade_goods_size_modifier = 0.1
-		inflation_reduction = 0.1
-	}
-
-	bonus = {
-		development_cost = -0.1
-	}
-	
-	trigger = {
-		tag = ZIM
-	}
-	free = yes
-	
-	zim_mwenemutapa = {
-		discipline = 0.05
-	}
-	zim_rekindling_the_royal_fires = {
-		reduced_liberty_desire = 10
-	}
-	zim_gather_the_mutumbus = {
-		leader_land_manuever = 1
-	}
-	zim_vadzimu = {
-		legitimacy = 1
-		devotion = 1
-	}
-	zim_rally_the_dunhu = {
-		vassal_forcelimit_bonus = 1
-	}
-	zim_curva = {
-		global_own_trade_power = 0.2
-	}
-	zim_mutumwis = {
-		diplomatic_reputation = 1
-	}
-}
-
 MNK_ideas = {
 	start = {
 		state_maintenance_modifier = -0.15
