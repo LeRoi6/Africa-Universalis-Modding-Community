@@ -1944,7 +1944,7 @@ western_sahara_area = { #5
 }
 
 cap_verde_area = { #2 
-    1096 1111 
+    1096 1111 9327 9328 9329 9330
 }
 
 jolof_area = { #4

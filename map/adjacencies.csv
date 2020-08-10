@@ -181,4 +181,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 5578;2808;sea;1519;-1;-1;-1;-1;Aruba-Coro
 491;2808;sea;1519;-1;-1;-1;-1;Curacao-Coro
 2807;830;sea;1519;-1;-1;-1;-1;Altagracia-Maracaibo
+1111;9327;sea;1469;-1;-1;-1;-1;Arguin-CapoBlanco
+9327;9330;sea;1793;-1;-1;-1;-1;CapoBlanco-Azougi
+2247;9330;sea;1793;-1;-1;-1;-1;Hodh-Azougi
+5223;9330;sea;1793;-1;-1;-1;-1;Tindouf-Azougi
 -1;-1;;-1;-1;-1;-1;-1;-1;
