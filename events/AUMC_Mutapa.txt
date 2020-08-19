@@ -1,0 +1,388 @@
+namespace = events_zim
+normal_or_historical_nations = yes
+
+#Integration of the Korekore
+country_event = {
+	id = events_zim.1
+	title = "events_zim.1.tt"
+	desc = "events_zim.1.dd"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = ZIM
+		NOT = {
+			KKE = {
+				has_ruler = "Mukombwe"
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}	
+	
+	option = {
+		name = "events_zim.1.a" #Mutapa will continue to grow.
+		inherit = KKE
+		add_prestige = 5
+	}
+}
+
+#Mavura Maobwe
+country_event = {
+	id = events_zim.2
+	title = "events_zim.2.tt"
+	desc = "events_zim.2.dd"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = ZIM
+		NOT = {
+			has_ruler = "Matope"
+		}
+		is_year = 1475
+		NOT = { is_year = 1485 }
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}	
+	
+	option = {
+		name = "events_zim.2.a" #Maybe one day more will be revealed about this man.
+		add_stability = -1
+	}
+}
+
+#Rise of a Soldier
+country_event = {
+	id = events_zim.3
+	title = "events_zim.3.tt"
+	desc = "events_zim.3.dd"
+	picture = ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = ZIM
+		NOT = {
+			has_ruler = "Matope"
+		}
+		is_year = 1460
+		NOT = { is_year = 1470 }
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}	
+
+	option = {
+		name = "events_zim.3.a" #He will make an excellent commander!
+		ai_chance = { factor = 100 }
+		define_general = {
+			name = "Changamire Mwenemutapa"
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 1
+		}
+		hidden_effect = {
+			add_country_flag = zim_enlisted_changamire
+		}
+	}	
+	option = {
+		name = "events_zim.3.b" #We do not need him at this time.
+		add_stability = -2
+	}
+}
+
+#Success of Changamire
+country_event = {
+	id = events_zim.4
+	title = "events_zim.4.tt"
+	desc = "events_zim.4.dd"
+	picture = ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = ZIM
+		had_country_flag = {
+			flag = zim_enlisted_changamire
+			days = 3650
+		}
+		has_leader = "Changamire Mwenemutapa"
+		LZW = {
+			is_subject_of = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}	
+
+	option = {
+		name = "events_zim.4.a" #Make him ruler of Lozvi.
+		ai_chance = { factor = 100 }
+		add_stability = 1
+		kill_leader = {
+			type = "Changamire Mwenemutapa"
+		}
+		LZW = {
+			kill_ruler = yes
+			kill_heir = yes
+			define_ruler = {
+				name = "Changamire"
+				dynasty = "Mbire"
+				adm = 5
+				dip = 5
+				mil = 6
+				age = 35
+				fixed = yes
+				claim = 95
+			}
+			define_heir = {
+				name = "Nelombe Changamire"
+				dynasty = "Mbire"
+				age = 10
+				adm = 3
+				dip = 3
+				mil = 3
+				fixed = yes
+			}
+			define_ruler_to_general = {
+				fire = 4
+				shock = 4
+				manuever = 3
+				siege = 1
+			}
+		}
+	}	
+	option = {
+		name = "events_zim.4.b" #Giving a general power seems like a bad idea.
+		add_stability = -1
+		kill_leader = {
+			type = "Changamire Mwenemutapa"
+		}
+		capital_scope = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				leader = "Changamire"
+				leader_dynasty = "Mbire"
+			}	
+		}
+	}
+}
+
+#Rising Power of Changamire
+country_event = {
+	id = events_zim.5
+	title = "events_zim.5.tt"
+	desc = "events_zim.5.dd"
+	picture = ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = ZIM
+		NOT = {
+			has_ruler = "Matope"
+		}
+		LZW = {
+			has_ruler = "Changamire"
+		}
+		is_year = 1490
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}	
+
+	option = {
+		name = "events_zim.5.a" #Remove him before he gets too powerful.
+		custom_tooltip = zim_oust_attempt_changamire
+		hidden_effect = {
+			country_event = { 
+				id = events_zim.6
+				days = 30		
+			}
+		}
+	}	
+}
+
+#Rise of Changamire
+country_event = {
+	id = events_zim.6
+	title = "events_zim.6.tt"
+	desc = "events_zim.6.dd"
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "events_zim.6.a" #He. Will. Die.
+		custom_tooltip = zim_win_loss_reqs
+		add_stability = -1
+		kill_ruler = yes
+		kill_heir = yes
+		define_ruler = {
+			name = "Chikuyo"
+			dynasty = "Mbire"
+			adm = 2
+			dip = 2
+			mil = 4
+			age = 20
+			fixed = yes
+			claim = 95
+		}
+		add_country_modifier = {
+			name = zim_usurped_throne
+			duration = -1
+		}
+		BUT = {
+			grant_independence = yes
+		}
+		LZW = {
+			grant_independence = yes
+			declare_war_with_cb = {
+				who = ZIM
+				casus_belli = cb_independence_war
+			}
+			add_ruler_modifier = { 
+				name = lzw_changamires_rebellion
+				duration = -1  
+			}
+		}
+		hidden_effect = {
+			add_country_flag = zim_changamire_rebel
+		}
+	}	
+	after = {
+		BUT = {
+			join_all_offensive_wars_of = LZW
+		}
+	}
+}
+
+#Changamire Defeated!
+country_event = {
+	id = events_zim.7
+	title = "events_zim.7.tt"
+	desc = "events_zim.7.dd"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = ZIM
+		at_war_with = LZW
+		had_country_flag = {
+			flag = zim_changamire_rebel
+			days = 730
+		}
+		OR = {
+			AND = {
+				LZW = {
+					capital_scope = {
+						controlled_by = ROOT
+					}
+				}
+				war_score_against = {
+					who = LZW
+					value = 60
+				}
+			}
+			NOT = { has_ruler = "Changamire" }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}	
+	
+	option = {
+		name = "events_zim.7.a" #Mutapa has prevailed!
+		add_stability = 2
+		remove_country_modifier = zim_usurped_throne
+		change_adm = 1
+		change_dip = 1
+		white_peace = LZW
+		add_country_modifier = {
+			name = zim_victorious
+			duration = 9125
+		}
+		LZW = {
+			add_stability = -2
+			remove_country_modifier = lzw_changamires_rebellion
+		}
+	}
+}
+
+#Changamire Has Succeded
+country_event = {
+	id = events_zim.8
+	title = "events_zim.8.tt"
+	desc = "events_zim.8.dd"
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = ZIM
+		at_war_with = LZW
+		had_country_flag = {
+			flag = zim_changamire_rebel
+			days = 730
+		}
+		OR = {
+			AND = {
+				capital_scope = {
+					OR = {
+						controlled_by = LZW
+						AND = {
+							controlled_by = BUT
+							war_with = BUT
+						}
+					}
+				}
+				war_score_against = {
+					who = LZW
+					value = -60
+				}
+			}
+			NOT = { has_ruler = "Changamire" }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}	
+
+	option = {
+		name = "events_zim.8.a" #What a sad day to be us.
+		remove_country_modifier = zim_usurped_throne
+		LZW = {
+			add_stability = 2
+			change_adm = 1
+			change_dip = 1
+			inherit = ZIM
+			add_country_modifier = {
+				name = lzw_victorious
+				duration = 9125
+			}
+		}
+	}
+}
