@@ -201,6 +201,16 @@
  SSO:0 "Sono"
  SSO_ADJ:0 "Sono"
  
+ #Comoros
+ BBO: "Bambao"
+ BBO_ADJ: "Bambaon"
+ MWL: "Mwali"
+ MWL_ADJ: "Mwali"
+ AJU: "Ndzuwani"
+ AJU_ADJ: "Ndzuwani"
+ MAO: "Maore"
+ MAO_ADJ: "Maorean"
+ 
  #Tanzania
  NGL:0 "Ng'uhule"
  NGL_ADJ:0 "Ng'uhule"

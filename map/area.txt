@@ -1462,7 +1462,7 @@ madagascar_highlands_area = { #3
 
 betsimasaraka_area = { #3
 	color = { 29 162 26 }
-	4021 4024 4025
+	4021 4024 4025 9369
 }
 
 sakalava_area = { #5
@@ -1620,7 +1620,7 @@ mozambique_area = { #6
 }
 
 comoros_area = { #1
-	4020
+	4020 9370 9371 9372
 }
 
 quirimbas_islands_area = { #5
@@ -1864,11 +1864,11 @@ majarteen_area = { #5
 ########################################
 
 mascarenes_area = { #3
-	1100 1102 1103
+	1100 1102 1103 9367 9368
 }
 
 indian_ocean_islands_area = { #5
-	574 1101 1248 8581 
+	574 1101 1248 8581 9364 9365 9366
 }
 
 papua_area = { #5 (Papuan Peninsula)

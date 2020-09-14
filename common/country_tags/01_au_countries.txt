@@ -104,6 +104,14 @@ HLG = "countries/Hlengwe.txt"
 BIL = "countries/Bila.txt"
 SSO = "countries/Sono.txt"
 
+#Comoros
+#From Comoros mod by MilkandLettuce
+BBO = "countries/Bambao.txt"
+AJU = "countries/Anjouan.txt"
+MWL = "countries/Mwali.txt"
+MAO = "countries/Maore.txt"
+
+
 #Tanzania
 NGL = "countries/Nguruhe.txt"
 ILO = "countries/Ilole.txt"
