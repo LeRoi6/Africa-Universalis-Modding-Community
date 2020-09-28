@@ -9273,10 +9273,10 @@ province;red;green;blue;x;x
 9272;234;133;18;Usongo;x
 9273;255;159;43;Usiha;x
 9274;229;138;34;Bukune;x
-9275;255;172;20;Unyi;x
+9275;255;172;20;Uyui;x
 9276;255;186;38;Gonda;x
 9277;255;137;23;Bulungwa;x
-9278;239;121;23;Ukune;x
+9278;239;121;23;Isanga;x
 9279;246;111;41;Msene;x
 9280;244;130;36;Igwisi Usishya;x
 9281;255;147;20;Urambo;x
@@ -9325,6 +9325,7 @@ province;red;green;blue;x;x
 9324;99;198;53;Bushiru;x
 9325;97;188;41;Gisaka;x
 9326;111;198;17;Buyogoma;x
+<<<<<<< Updated upstream
 9327;150;100;19;CaboBlanco
 9328;150;100;94;Portendick
 9329;150;100;169;Dakhla
@@ -9371,3 +9372,11 @@ province;red;green;blue;x;x
 9370;3;5;243;Mwali;x
 9371;3;5;244;Ndzuwani;x
 9372;3;5;245;Maore;x
+9373;242;140;35;Itetemia;x
+9374;255;124;0;Ndala;x
+9375;240;121;0;Mwangoye;x
+9376;255;143;34;Lohombo;x
+9377;255;124;39;Nindo;x
+9378;255;151;0;Nsalala;x
+9379;240;167;23;Kahama;x
+
