@@ -664,3 +664,21 @@ bena_kinga_group = {
 	
 	}
 }
+
+takama_group = {
+	graphical_culture = africangfx
+	nyamwezi = {
+	
+	}
+}
+
+northeast_bantu = {
+	graphical_culture = africangfx
+	pare = (
+	
+	)
+	chagga = (
+	
+	)
+}
+
