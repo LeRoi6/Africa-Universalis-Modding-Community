@@ -674,9 +674,12 @@ takama_group = {
 
 northeast_bantu = {
 	graphical_culture = africangfx
-	pare = (
+	kighonu = (
 	
 	)
+	athu = {
+	
+	}
 	chagga = (
 	
 	)
