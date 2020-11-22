@@ -121,7 +121,7 @@
  SGM_ADJ:0 "Songo Mnaran"
  KUA_ADJ:0 "Kuan"
  MFI_ADJ:0 "Mafian"
- 
+ TGE:0 "Tungue"
  SUD:0 "Sudi"
  ZRM:0 "Zaramo"
  MZZ:0 "Mzizima"
@@ -144,6 +144,7 @@
  FAZ:0 "Faza"
  SYU:0 "Siyu"
  OZI:0 "Ozi"
+ TGE_ADJ:0 "Tungi"
  SUD_ADJ:0 "Sudi"
  ZRM_ADJ:0 "Zaramoan"
  MZZ_ADJ:0 "Mziziman"
