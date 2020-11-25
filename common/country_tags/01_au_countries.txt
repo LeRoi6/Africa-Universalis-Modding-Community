@@ -61,7 +61,7 @@ MMW = "countries/MgaoMwanga.txt"
 SGM = "countries/SongoMnara.txt"
 KUA = "countries/Kua.txt"
 MFI = "countries/Mafia.txt"
-
+TGE = "countries/Tungue.txt"
 SUD = "countries/Sudi.txt"
 ZRM = "countries/Zaramo.txt"
 MZZ = "countries/Mzizima.txt"
