@@ -674,10 +674,10 @@ takama_group = {
 
 northeast_bantu = {
 	graphical_culture = africangfx
-	kighonu = (
+	vughonu = (
 	
 	)
-	athu = {
+	wabwambo = {
 	
 	}
 	chagga = (

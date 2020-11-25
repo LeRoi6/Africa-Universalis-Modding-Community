@@ -1,0 +1,38 @@
+﻿l_english:
+#Events By Bukhara
+ events_zim.1.tt: "Integration of the Korekore"
+ events_zim.1.dd: "Early Mutapa History is full of stories and myths. As such, it’s somewhat unclear what exactly happened during the early years of Mutapa. Stories of the founder, Mutota, speak of many friends and family of Mutota joining him and settling in parts of Northern Zimbabwe, holding an unclear amount of power. By the reign of Matope, these names disappear from the record, leaving only Mhondoros in their name. To better portray the history of Mutapa, it is fair to say that by the end of Matope’s reign, these family members and their territory fell back under the rule of Mutapa."
+ events_zim.1.a: "Mutapa will continue to grow."
+ events_zim.2.tt: "Mavura Maobwe"
+ events_zim.2.dd: "Around 1480, Matope died and was succeeded by his son Mavura Maobwe. However, very little is known about his reign, as only more recent genealogies place him in the dynasty list. His reign is listed as only lasting less than a year and was succeeded by his brother Mukombero. Since there is not much info on the ruler besides that future Mutapa rulers would be descended from him and the fact that Mukombero plays a major part in the early history of Mutapa, in game Mavura will not be shown as a ruler, but mentioned in this event instead to represent a monarch transition."
+ events_zim.2.a: "Maybe one day more will be revealed about this man."
+ events_zim.3.tt: "Rise of a Soldier"
+ events_zim.3.dd: "In the ranks of the army, there seems to be a star among them. Going by the name of Changamire, he is alleged to hail from either the Mutapa royal family, or the royal family of Khami. Regardless of origin, he has proved himself as a soldier and even as a leader. We should elevate this rising star through the ranks to give ourselves a tactical advantage on the battlefield."
+ events_zim.3.a: "He will make an excellent commander!"
+ events_zim.3.b: "We have no need for this mysterious man."
+ events_zim.4.tt: "Success of Changamire"
+ events_zim.4.dd: "After being promoted, Changamire has clearly proven himself to be a great commander for our nation. Recently, we have found a need for a governor in our old homeland of Great Zimbabwe. Having Changamire on the throne will give us a loyal commander and governor in our realm. However, not promoting him might not go over very well, and could lead to a revolt, since he is a member of the royal family."
+ events_zim.4.a: "Entrust him with Lozvi."
+ events_zim.4.b: "As history has shown, entrusting generals with land ends badly."
+ events_zim.5.tt: "Rising Power of Changamire"
+ events_zim.5.dd: "After the death of Matope, his son Mukombero took the throne. Unfortunately, his son has proven to be unable to live to his father’s image. Being a coward in battle, he entrusted Changamire as Chief Justice and commander of the entire army, including being sent to Quiteve to install a new ruler of the Mwenemutapa. It has become evident at this point however, that he has begun to do these tasks to improve his power in the kingdom, souring relations between the king and him. Many are calling for his removal before he grows too powerful."
+ events_zim.5.a: "Remove him before he gets too powerful."
+ events_zim.6.tt: "Rise of Changamire"
+ events_zim.6.dd: "Due to the scheming of Changamire, Mukombero tried to remove him from power by poisoning him. Finding out about the plot, Changamire proceeded to kill Mukombero. Additionally, Changamire has now claimed the throne, and has begun executing his heirs. It’s now the duty of one of these sons who have survived to kill Changamire and restore the Mwenemutapa dynasty to the throne."
+ events_zim.6.a: "He. Will. Die."
+ events_zim.7.tt: "Changamire Defeated!"
+ events_zim.7.dd: "In 1490, Changamire usurped the throne and for 4 years Chikuyo fought to remove him from the throne. Historically, Changamire would be killed in a battle in 1494. Whether by defeating Changamire and overrunning his state or by killing him, Changamire’s death has ended the crisis and Mutapa has come out on top. However, the damage he caused has made us unable to reclaim his lands. Only time will tell if we are able to reclaim these states, or if Lozvi will ever pose a threat to us again."
+ events_zim.7.a: "Mutapa has prevailed!"
+ events_zim.8.tt: "Changamire Has Succeded"
+ events_zim.8.dd: "It appears the worst has fallen upon us. Whether by controlling the capital or killing Chikuyo, Changamire has succeeded in taking over our state. Changamire now has full control over our state, and the Mutapa dynasty is effectively no more."
+ events_zim.8.a: "What a sad day to be us."
+ 
+#Modifiers
+ zim_usurped_throne: "Usurped Throne"
+ lzw_changamires_rebellion: "Rise of Changamire"
+ zim_victorious: "Defeated Changamire"
+ lzw_victorious: "Success of Changamire"
+ 
+#Tooltips
+ zim_oust_attempt_changamire: "§YWe will attempt to oust Changamire.§!"
+ zim_win_loss_reqs: "§RMutapa must defend themselves from Changamire by either defeating him in the war or Changamire dying. If Chikuyo dies before Changamire or Mutapa loses control of their capital for a certain period of time, Lozvi will annex Mutapa.§R"
