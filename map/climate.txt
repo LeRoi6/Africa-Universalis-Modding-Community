@@ -314,6 +314,9 @@ impassable = {
 	#5114 5115
 	#Beyond Typus New Wastelands Later Removed
 	#5113 2608 5122 5127 5128 
+	
+	#AUMC Wastelands
+	9197
 }
 
 mild_monsoon = {

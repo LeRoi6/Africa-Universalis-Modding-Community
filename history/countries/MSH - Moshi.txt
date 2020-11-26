@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = chagga
+religion = shamanism #Fetishism
+technology_group = central_african
+unlock_cult = enkai_cult
+unlock_cult = waaq_cult
+unlock_cult = zanahary_cult
+
+unit_type = sub_saharan
+capital = 9394
+
+1444.1.1 = { #Fictional
+	monarch = {
+		name = "Mtengie"
+		dynasty = "Moshi"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+

@@ -636,9 +636,6 @@ horn_of_africa_region = {
 
 east_africa_region = {
 	areas = {
-		northern_swahili_coast_area
-		central_swahili_coast_area
-		mozambique_area
 		lower_zambezi_area
 		upper_zambezi_area
 		mascarenes_area
@@ -649,7 +646,6 @@ east_africa_region = {
 		uticulo_makuana_area
 		jubba_area
 		shire_area
-		mombasa_area
 		#BT moved from South Africa
 		zimbabwe_area
 		quelimane_area
@@ -680,12 +676,20 @@ east_africa_region = {
 		inhambane_area
 		sofala_area
 		chibuene_area
-		angoche_area
-		quirimbas_islands_area
-		lindi_area
-		zanzibar_area
-		pate_area
-		comoros_area
+		ngonde_area
+	}
+	monsoon = {
+		00.11.01
+		00.12.30
+	}
+	monsoon = {
+		00.01.01
+		00.04.30
+	}
+}
+
+tanzania_region = { #AUMC
+	areas = {
 		ruvuma_area
 		njombe_area
 		kilosa_area
@@ -703,7 +707,9 @@ east_africa_region = {
 		mahale_area
 		matogoro_area
 		tanzania_area
-		ngonde_area
+		northern_pare_area
+		southern_pare_area
+		kilimanjaro_area
 	}
 	monsoon = {
 		00.11.01
@@ -715,6 +721,28 @@ east_africa_region = {
 	}
 }
 
+swahili_region = {
+	areas = {
+		northern_swahili_coast_area
+		central_swahili_coast_area
+		mozambique_area
+		angoche_area
+		quirimbas_islands_area
+		lindi_area
+		zanzibar_area
+		pate_area
+		comoros_area
+		mombasa_area
+	}
+	monsoon = {
+		00.11.01
+		00.12.30
+	}
+	monsoon = {
+		00.01.01
+		00.04.30
+	}
+}
 central_africa_region = {
 	areas = {
 		buha_area

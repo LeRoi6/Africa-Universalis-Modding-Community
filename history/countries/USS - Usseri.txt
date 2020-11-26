@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = chagga
+religion = shamanism #Fetishism
+technology_group = central_african
+unlock_cult = enkai_cult
+unlock_cult = waaq_cult
+unlock_cult = zanahary_cult
+
+unit_type = sub_saharan
+capital = 9396
+
+1444.1.1 = { #To quote the source, genealogy is doubtful, but there's no other source that provides one afaik
+	monarch = {
+		name = "Uchewa"
+		dynasty = "Usseri"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
