@@ -1,0 +1,16 @@
+#9396 - Usseri
+#Created by AUMC
+
+owner = USS
+controller = USS
+add_core = USS
+culture = chagga
+religion = shamanism #Fetishism
+trade_goods = ivory
+capital = "Usseri"
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+discovered_by = central_african

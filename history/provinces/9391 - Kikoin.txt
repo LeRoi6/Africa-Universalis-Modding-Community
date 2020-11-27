@@ -1,0 +1,16 @@
+#9391 - Kikoin
+#Created by AUMC
+
+owner = KKO
+controller = KKO
+add_core = KKO
+culture = kahe
+religion = shamanism #Fetishism
+trade_goods = sugar
+capital = "Kikoin"
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 2
+
+discovered_by = central_african

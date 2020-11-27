@@ -1,0 +1,16 @@
+#9393 - Kibosho
+#Created by AUMC
+
+owner = KIB
+controller = KIB
+add_core = KIB
+culture = chagga
+religion = shamanism #Fetishism
+trade_goods = bt_trade_good_fruit
+capital = "Nchona"
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+discovered_by = central_african

@@ -1,0 +1,16 @@
+#9392 - Kibonoto
+#Created by AUMC
+
+owner = KKB
+controller = KKB
+add_core = KKB
+culture = chagga
+religion = shamanism #Fetishism
+trade_goods = bt_trade_good_fruit
+capital = "Komboko"
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 2
+
+discovered_by = central_african
