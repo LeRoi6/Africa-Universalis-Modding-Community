@@ -316,7 +316,7 @@ impassable = {
 	#5113 2608 5122 5127 5128 
 	
 	#AUMC Wastelands
-	9197
+	9397
 }
 
 mild_monsoon = {

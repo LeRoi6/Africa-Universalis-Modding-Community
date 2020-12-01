@@ -9371,7 +9371,7 @@ province;red;green;blue;x;x
 9370;3;5;243;Mwali;x
 9371;3;5;244;Ndzuwani;x
 9372;3;5;245;Maore;x
-9373;242;140;35;Itetemia;x
+9373;230;140;35;Itetemia;x
 9374;255;124;0;Ndala;x
 9375;240;121;0;Mwangoye;x
 9376;255;143;34;Lohombo;x
@@ -9389,10 +9389,10 @@ province;red;green;blue;x;x
 9388;234;91;9;Kihurio;x
 9389;232;103;34;Kizungo;x
 9390;255;104;22;Ugweno;x
-9391:255;88;28;Kikoin;x
+9391;255;88;30;Kikoin;x
 9392;255;80;0;Kibonoto;x
 9393;255;140;0;Kibosho;x
-9394;255;125;61;Moshi;x
+9394;255;120;61;Moshi;x
 9395;255;89;0;Marangu;x
 9396;244;138;24;Usseri;x
 9397;198;186;167;Kilimanjaro;x

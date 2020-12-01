@@ -672,7 +672,7 @@ takama_group = {
 	}
 }
 
-northeast_bantu = {
+northeast_bantu_group = {
 	graphical_culture = africangfx
 	vughonu = (
 	
@@ -680,14 +680,14 @@ northeast_bantu = {
 	wabwambo = {
 	
 	}
-	chagga = (
-	
-	)
-	kahe = {
+	chagga = {
 	
 	}
 	taveta = {
 	
 	}
+	kahe = (
+	
+	)
 }
 

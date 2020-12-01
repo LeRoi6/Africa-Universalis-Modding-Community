@@ -203,14 +203,14 @@
  SSO_ADJ:0 "Sono"
  
  #Comoros
- BBO: "Bambao"
- BBO_ADJ: "Bambaon"
- MWL: "Mwali"
- MWL_ADJ: "Mwali"
- AJU: "Ndzuwani"
- AJU_ADJ: "Ndzuwani"
- MAO: "Maore"
- MAO_ADJ: "Maorean"
+ BBO:0 "Bambao"
+ BBO_ADJ:0 "Bambaon"
+ MWL:0 "Mwali"
+ MWL_ADJ:0 "Mwali"
+ NDZ:0 "Ndzuwani"
+ NDZ_ADJ:0 "Ndzuwani"
+ MAO:0 "Maore"
+ MAO_ADJ:0 "Maorean"
  
  #Tanzania
  NGL:0 "Ng'uhule"
@@ -233,7 +233,7 @@
  GWE_ADJ:0 "Vughonu"
  KKB:0 "Siha"
  KKB_ADJ:0 "Sihan"
- KIB: 0 "Kibosho"
+ KIB:0 "Kibosho"
  KIB_ADJ:0 "Kibosho"
  MSH:0 "Moshi"
  MSH_ADJ:0 "Moshi"
