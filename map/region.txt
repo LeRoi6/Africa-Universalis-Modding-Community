@@ -704,6 +704,7 @@ tanzania_region = { #AUMC
 		western_nyamwezi_area
 		eastern_nyamwezi_area
 		sukuma_area
+		babinza_area
 		ukerewe_area
 		galla_area
 		mahale_area
@@ -754,6 +755,7 @@ central_africa_region = {
 		sankuru_area
 		kenya_area
 		buzinza_area
+		karagwe_area
 		uganda_area
 		rwanda_area
 		chokwe_area
