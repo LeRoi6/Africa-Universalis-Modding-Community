@@ -1,15 +1,16 @@
 #Buzinza
+#Revised by AUMC
 
-owner = KRW
-controller = KRW
-add_core = KRW
-culture = takama
+owner = BBZ
+controller = BBZ
+add_core = BBZ
+culture = zinza
 religion = shamanism #Fetishism
-capital = "Buzinza"
-trade_goods = iron
+capital = "Bugando"
+trade_goods = fish
 hre = no
-base_tax = 4 
-base_production = 4
-base_manpower = 4
+base_tax = 2
+base_production = 1
+base_manpower = 1
 is_city = yes
 discovered_by = central_african

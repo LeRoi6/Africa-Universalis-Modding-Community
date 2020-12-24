@@ -676,6 +676,9 @@ takama_group = {
 	babinza = {
 	
 	}
+	sumbwa = {
+	
+	}
 }
 
 northeast_bantu_group = {

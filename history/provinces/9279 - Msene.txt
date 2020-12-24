@@ -1,0 +1,16 @@
+#9279 - Msene
+#Created by AUMC
+
+owner = USB
+controller = USB
+add_core = USB
+culture = sumbwa
+religion = shamanism #Fetishism
+trade_goods = ivory
+capital = "Msene"
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+discovered_by = central_african

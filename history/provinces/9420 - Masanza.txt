@@ -1,0 +1,16 @@
+#9420 - Masanza
+#Created by AUMC
+
+native_size = 10
+native_ferocity = 5
+native_hostileness = 5
+culture = sukuma
+religion = shamanism #Fetishism
+trade_goods = unknown
+capital = "Masanza"
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+discovered_by = central_african

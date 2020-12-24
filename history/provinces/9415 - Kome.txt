@@ -1,0 +1,16 @@
+#9415 - Kome
+#Created by AUMC
+
+owner = BBZ
+controller = BBZ
+add_core = BBZ
+culture = zinza
+religion = shamanism #Fetishism
+trade_goods = fish
+capital = "Kome"
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+discovered_by = central_african

@@ -136,3 +136,7 @@ SKM = "countries/Sukuma.txt"
 KMW = "countries/Kwimba.txt"
 MWN = "countries/Ng'wanza.txt"
 NGW = "countries/Ng'wagala.txt"
+USB = "countries/Sumbwa.txt"
+
+#Great Lakes
+BBZ = "countries/Buzinza.txt"
