@@ -1,0 +1,16 @@
+#9402 - Ng'wagala
+#Created by AUMC
+
+owner = NGW
+controller = NGW
+add_core = NGW
+culture = babinza
+religion = shamanism #Fetishism
+trade_goods = livestock
+capital = "Sang'ombe"
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 3
+
+discovered_by = central_african

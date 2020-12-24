@@ -12,8 +12,8 @@ capital = 9404
 
 1444.1.1 = { #Fictional
 	monarch = {
-		name = "Kadaso"
-		dynasty = "Buhungukila"
+		name = "Wile"
+		dynasty = "Batusi"
 		adm = 2
 		dip = 2
 		mil = 2

@@ -1,0 +1,16 @@
+#9421 - Bukumbi
+#Created by AUMC
+
+owner = KUM
+controller = KUM
+add_core = KUM
+culture = sukuma
+religion = shamanism #Fetishism
+trade_goods = livestock
+capital = "Nyegezi"
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+discovered_by = central_african

@@ -1,0 +1,16 @@
+#9406 - Kagehyi
+#Created by AUMC
+
+owner = SKM
+controller = SKM
+add_core = SKM
+culture = sukuma
+religion = shamanism #Fetishism
+trade_goods = livestock
+capital = "Kagehyi"
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+discovered_by = central_african

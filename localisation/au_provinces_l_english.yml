@@ -570,7 +570,7 @@
  PROV9275:0 "Unyi"
  PROV9276:0 "Gonda"
  PROV9277:0 "Bulungwa"
- PROV9278:0 "Ukune"
+ PROV9278:0 "Isanga"
  PROV9279:0 "Msene"
  PROV9280:0 "Igwisi"
  PROV9281:0 "Urambo"
@@ -666,7 +666,7 @@
  PROV9401:0 "Buduhe"
  PROV9402:0 "Ng'wagala"
  PROV9403:0 "Ntuzu"
- PROV9404:0 "Nera"
+ PROV9404:0 "Buhungukila"
  PROV9405:0 "Ng'wanza"
  PROV9406:0 "Kagehyi"
  PROV9407:0 "Nassa"
@@ -686,4 +686,5 @@
  PROV9421:0 "Kitongo"
  PROV9422:0 "Usambiro"
  PROV9423:0 "Maisome"
+ PROV9424:0 "Bulima"
  
