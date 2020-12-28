@@ -13,7 +13,6 @@ country_decisions = {
 			NOT = { tag = ZIM }
 			NOT = { tag = LZW }
 			NOT = { tag = RZW }
-			religion = shamanism
 			
 			
 			OR = {
@@ -59,6 +58,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 1184
+			religion = mhondoro
 			calc_true_if = {
 				all_owned_province = {
 					is_core = ROOT
@@ -73,8 +73,8 @@ country_decisions = {
 				}
 				amount = 20			
 			}
-			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
-			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
+			total_development = 100			
+			prestige = 25			
 		}
 		
 		
@@ -104,6 +104,11 @@ country_decisions = {
 				change_government = monarchy 
 			}
 				
+			1184 = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 2			
+			}
 			if = {
 				limit = {
 				NOT = { owned_by = ROOT }
