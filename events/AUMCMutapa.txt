@@ -1,11 +1,11 @@
-namespace = events_zim
+namespace = events_mut
 normal_or_historical_nations = yes
 
 #Integration of the Korekore
 country_event = {
-	id = events_zim.1
-	title = "events_zim.1.tt"
-	desc = "events_zim.1.dd"
+	id = events_mut.1
+	title = "events_mut.1.tt"
+	desc = "events_mut.1.dd"
 	picture = DIPLOMACY_eventPicture
 	
 	fire_only_once = yes
@@ -25,7 +25,7 @@ country_event = {
 	}	
 	
 	option = {
-		name = "events_zim.1.a" #Mutapa will continue to grow.
+		name = "events_mut.1.a" #Mutapa will continue to grow.
 		inherit = KKE
 		add_prestige = 5
 	}
@@ -33,9 +33,9 @@ country_event = {
 
 #Mavura Maobwe
 country_event = {
-	id = events_zim.2
-	title = "events_zim.2.tt"
-	desc = "events_zim.2.dd"
+	id = events_mut.2
+	title = "events_mut.2.tt"
+	desc = "events_mut.2.dd"
 	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	fire_only_once = yes
@@ -55,16 +55,16 @@ country_event = {
 	}	
 	
 	option = {
-		name = "events_zim.2.a" #Maybe one day more will be revealed about this man.
+		name = "events_mut.2.a" #Maybe one day more will be revealed about this man.
 		add_stability = -1
 	}
 }
 
 #Rise of a Soldier
 country_event = {
-	id = events_zim.3
-	title = "events_zim.3.tt"
-	desc = "events_zim.3.dd"
+	id = events_mut.3
+	title = "events_mut.3.tt"
+	desc = "events_mut.3.dd"
 	picture = ADVISOR_eventPicture
 	
 	fire_only_once = yes
@@ -84,7 +84,7 @@ country_event = {
 	}	
 
 	option = {
-		name = "events_zim.3.a" #He will make an excellent commander!
+		name = "events_mut.3.a" #He will make an excellent commander!
 		ai_chance = { factor = 100 }
 		define_general = {
 			name = "Changamire Mwenemutapa"
@@ -98,16 +98,16 @@ country_event = {
 		}
 	}	
 	option = {
-		name = "events_zim.3.b" #We do not need him at this time.
+		name = "events_mut.3.b" #We do not need him at this time.
 		add_stability = -2
 	}
 }
 
 #Success of Changamire
 country_event = {
-	id = events_zim.4
-	title = "events_zim.4.tt"
-	desc = "events_zim.4.dd"
+	id = events_mut.4
+	title = "events_mut.4.tt"
+	desc = "events_mut.4.dd"
 	picture = ADVISOR_eventPicture
 	
 	fire_only_once = yes
@@ -130,7 +130,7 @@ country_event = {
 	}	
 
 	option = {
-		name = "events_zim.4.a" #Make him ruler of Lozvi.
+		name = "events_mut.4.a" #Make him ruler of Lozvi.
 		ai_chance = { factor = 100 }
 		add_stability = 1
 		kill_leader = {
@@ -167,7 +167,7 @@ country_event = {
 		}
 	}	
 	option = {
-		name = "events_zim.4.b" #Giving a general power seems like a bad idea.
+		name = "events_mut.4.b" #Giving a general power seems like a bad idea.
 		add_stability = -1
 		kill_leader = {
 			type = "Changamire Mwenemutapa"
@@ -185,9 +185,9 @@ country_event = {
 
 #Rising Power of Changamire
 country_event = {
-	id = events_zim.5
-	title = "events_zim.5.tt"
-	desc = "events_zim.5.dd"
+	id = events_mut.5
+	title = "events_mut.5.tt"
+	desc = "events_mut.5.dd"
 	picture = ADVISOR_eventPicture
 	
 	fire_only_once = yes
@@ -209,11 +209,11 @@ country_event = {
 	}	
 
 	option = {
-		name = "events_zim.5.a" #Remove him before he gets too powerful.
+		name = "events_mut.5.a" #Remove him before he gets too powerful.
 		custom_tooltip = zim_oust_attempt_changamire
 		hidden_effect = {
 			country_event = { 
-				id = events_zim.6
+				id = events_mut.6
 				days = 30		
 			}
 		}
@@ -222,16 +222,16 @@ country_event = {
 
 #Rise of Changamire
 country_event = {
-	id = events_zim.6
-	title = "events_zim.6.tt"
-	desc = "events_zim.6.dd"
+	id = events_mut.6
+	title = "events_mut.6.tt"
+	desc = "events_mut.6.dd"
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = "events_zim.6.a" #He. Will. Die.
+		name = "events_mut.6.a" #He. Will. Die.
 		custom_tooltip = zim_win_loss_reqs
 		add_stability = -1
 		kill_ruler = yes
@@ -277,9 +277,9 @@ country_event = {
 
 #Changamire Defeated!
 country_event = {
-	id = events_zim.7
-	title = "events_zim.7.tt"
-	desc = "events_zim.7.dd"
+	id = events_mut.7
+	title = "events_mut.7.tt"
+	desc = "events_mut.7.dd"
 	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	fire_only_once = yes
@@ -313,9 +313,9 @@ country_event = {
 	}	
 	
 	option = {
-		name = "events_zim.7.a" #Mutapa has prevailed!
+		name = "events_mut.7.a" #Mutapa has prevailed!
 		add_stability = 2
-		remove_country_modifier = zim_usurped_throne
+		remove_country_modifier = mut_usurped_throne
 		change_adm = 1
 		change_dip = 1
 		white_peace = LZW
@@ -332,9 +332,9 @@ country_event = {
 
 #Changamire Has Succeded
 country_event = {
-	id = events_zim.8
-	title = "events_zim.8.tt"
-	desc = "events_zim.8.dd"
+	id = events_mut.8
+	title = "events_mut.8.tt"
+	desc = "events_mut.8.dd"
 	picture = BAD_WITH_MONARCH_eventPicture
 	
 	fire_only_once = yes
@@ -372,7 +372,7 @@ country_event = {
 	}	
 
 	option = {
-		name = "events_zim.8.a" #What a sad day to be us.
+		name = "events_mut.8.a" #What a sad day to be us.
 		remove_country_modifier = zim_usurped_throne
 		LZW = {
 			add_stability = 2
