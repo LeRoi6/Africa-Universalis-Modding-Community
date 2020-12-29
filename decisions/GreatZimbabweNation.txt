@@ -58,6 +58,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 1184
+			owns_core_province = 1185
 			religion = mhondoro
 			calc_true_if = {
 				all_owned_province = {
