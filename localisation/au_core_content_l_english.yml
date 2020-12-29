@@ -15,8 +15,7 @@
  #10) Events
  #11) Decisions
  #12) Missions
- #13) Interactions
- #14) Temporary content & bugfixes
+ #13) Temporary content & bugfixes
 
  #################################################################################
  #################################################################################
@@ -236,12 +235,14 @@
  ###########################
  #New Nation Formation Decisions
  ###########################
- 
+ zimbabwe_nation_title:0 "Reform Great Zimbabwe"
+ zimbabwe_nation_desc:0 "The decline of Great Zimbabwe marks an end of Southern Zimbabwe's power. No longer would the local centers here hold sway over political or trade power. However, to change this, we must revitalize the region. Not only will we need to rebuild Great Zimbabwe, we must unite the surrounding areas and break ourselves from our northern brethren. Great Zimbabwe will rise from the ashes to reclaim its spot as the trade center of the Highveld."
+ rozvi_nation_title:0 "Form the Rozvi Empire"
+ rozvi_nation_desc:0 "The revolt of Changamire created a new state that rivalled Mutapa. As our state lives on, we must grow stronger to defeat our northern rivals. The southern lands must unify if we wish to succeed. We will create the Rozvi Empire to overthrow Mutapa and become the dominant power in the region."
  ###########################
  #Other Decisions
  ###########################
- #European
- #New details to BtP Stuff
+
  
  
  #################################################################################
@@ -257,18 +258,7 @@
  #################################################################################
  #################################################################################
  #################################################################################
- # 14 - Temporary content & bugfixes
- #################################################################################
- #################################################################################
- #################################################################################
- 
- 
- 
- 
- #################################################################################
- #################################################################################
- #################################################################################
- # 14 - Temporary content & bugfixes
+ # 13 - Temporary content & bugfixes
  #################################################################################
  #################################################################################
  #################################################################################

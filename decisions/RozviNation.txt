@@ -1,0 +1,100 @@
+country_decisions = {
+	
+	rozvi_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_rozvi_flag }
+			OR = {
+				primary_culture = lozvi
+				tag = LZW
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1185
+				province_id = 9120
+				province_id = 9121
+				province_id = 9136
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = RZW }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 1185
+			owns_core_province = 9120
+			owns_core_province = 9121
+			owns_core_province = 9136
+			religion = mhondoro
+			total_development = 150		
+			prestige = 25
+			mil = 4
+			dip = 4
+			adm = 4
+		}
+		
+		
+		effect = {
+			change_tag = LZW
+			swap_non_generic_missions = yes
+			
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			
+			add_prestige = 25
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 3650
+			}
+			
+			set_capital = 9136 #Dhlo Dhlo
+			
+			if = {
+				limit = {
+					government = tribal
+				}
+				change_government = monarchy 
+			}
+				
+			9136 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1			
+			}
+			if = {
+				limit = {
+				NOT = { owned_by = ROOT }
+				}
+			 zimbabwe_area = {
+				add_permanent_claim = ROOT
+			}
+			 butua_area = {
+				add_permanent_claim = ROOT
+			}
+			 naletale_area = {
+				add_permanent_claim = ROOT
+			}
+			 vuxwa_area = {
+				add_permanent_claim = ROOT
+			}
+			}
+			
+			
+			
+			set_country_flag = formed_rozvi_flag
+			
+			
+
+		}
+	}
+}

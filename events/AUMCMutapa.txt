@@ -324,6 +324,10 @@ country_event = {
 			duration = 9125
 		}
 		LZW = {
+			if = {
+				limit = { has_ruler = "Changamire" }
+				kill_ruler = yes
+				}				
 			add_stability = -2
 			remove_country_modifier = lzw_changamires_rebellion
 		}
