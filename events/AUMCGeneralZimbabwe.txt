@@ -12,7 +12,6 @@ country_event = {
 	trigger = {
 		is_year = 1450
 		owns = 1184			
-		1184 = { province_has_center_of_trade_of_level = 1 }
 	}
 	
 	mean_time_to_happen = {
@@ -22,10 +21,9 @@ country_event = {
 	option = {
 		name = "au_events_zim.1.a" #What a sad state it has become
 		1184 = (
-			add_base_tax = -2
-			add_base_production = -2
-			add_base_manpower = -2
-			add_center_of_trade = -2
+			add_base_tax = -3
+			add_base_production = -3
+			add_base_manpower = -3
 			}
 		add_prestige = -10
 		

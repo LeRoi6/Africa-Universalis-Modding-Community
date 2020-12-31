@@ -1,5 +1,5 @@
 ﻿l_english:
-#Events By Bukhara
+#Events By Bukhara and Ajsieg
  events_mut.1.tt: "Integration of the Korekore"
  events_mut.1.dd: "Early Mutapa History is full of stories and myths. As such, it’s somewhat unclear what exactly happened during the early years of Mutapa. Stories of the founder, Mutota, speak of many friends and family of Mutota joining him and settling in parts of Northern Zimbabwe, holding an unclear amount of power. By the reign of Matope, these names disappear from the record, leaving only Mhondoros in their name. To better portray the history of Mutapa, it is fair to say that by the end of Matope’s reign, these family members and their territory fell back under the rule of Mutapa."
  events_mut.1.a: "Mutapa will continue to grow."
@@ -20,6 +20,8 @@
  events_mut.7.tt: "Rise of Changamire"
  events_mut.7.dd: "Due to the scheming of Changamire, Mukombero tried to remove him from power by poisoning him. Finding out about the plot, Changamire proceeded to kill Mukombero. Additionally, Changamire has now claimed the throne, and has begun executing his heirs. It’s now the duty of one of these sons who have survived to kill Changamire and restore the Mwenemutapa dynasty to the throne."
  events_mut.7.a: "He. Will. Die."
+ events_mut.8.tt: "Rise of Changamire"
+ events_mut.8.dd: "Oral history of Changamire speak of his ancestory as coming from the royal family of either Mutapa or Butua. Either way, the rebellion of Changamire freed the southern region from Mutapan rule. Even after he died in 1494, Butua and Lozvi became permanetly independent. Torwa involvement in the crisis is not full clear. While some say Changamire was a Torwa and attacked Mutapa, others say the Torwa dynasty aided Changamire. Either way, Butua in AUMC will aid Lozvi in the war.
  events_mut.10.tt: "Changamire Defeated!"
  events_mut.10.dd: "In 1490, Changamire usurped the throne and for 4 years Chikuyo fought to remove him from the throne. Historically, Changamire would be killed in a battle in 1494. Whether by defeating Changamire and overrunning his state or by killing him, Changamire’s death has ended the crisis and Mutapa has come out on top. However, the damage he caused has made us unable to reclaim his lands. Only time will tell if we are able to reclaim these states, or if Lozvi will ever pose a threat to us again."
  events_mut.10.a: "Mutapa has prevailed!"
