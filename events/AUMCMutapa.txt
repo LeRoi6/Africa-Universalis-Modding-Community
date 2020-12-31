@@ -87,7 +87,7 @@ country_event = {
 		name = "events_mut.3.a" #He will make an excellent commander!
 		ai_chance = { factor = 100 }
 		define_general = {
-			name = "Changamire Mwenemutapa"
+			name = "Changamire Mbire"
 			shock = 4
 			fire = 4
 			manuever = 3
@@ -134,11 +134,41 @@ country_event = {
 		ai_chance = { factor = 100 }
 		add_stability = 1
 		kill_leader = {
-			type = "Changamire Mwenemutapa"
+			type = "Changamire Mbire"
 		}
+		LZW = { country_event = { id = events_mut.5 days = 1 } } 
+
+	}	
+	option = {
+		name = "events_mut.4.b" #Giving a general power seems like a bad idea.
+		add_stability = -1
+		kill_leader = {
+			type = "Changamire Mbire"
+		}
+		capital_scope = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				leader = "Changamire"
+				leader_dynasty = "Mbire"
+			}	
+		}
+	}
+}
+
+#Changamire promoted to Ruler
+country_event = {
+	id = events_mut.5
+	title = "events_mut.5.tt"
+	desc = "events_mut.5.dd"
+	picture = TRIBES_MEETING_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = { #Changamire will do great things
+		name = "events_mut.5.a"
 		LZW = {
-			kill_ruler = yes
-			kill_heir = yes
 			define_ruler = {
 				name = "Changamire"
 				dynasty = "Mbire"
@@ -165,29 +195,14 @@ country_event = {
 				siege = 1
 			}
 		}
-	}	
-	option = {
-		name = "events_mut.4.b" #Giving a general power seems like a bad idea.
-		add_stability = -1
-		kill_leader = {
-			type = "Changamire Mwenemutapa"
-		}
-		capital_scope = {
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 3
-				leader = "Changamire"
-				leader_dynasty = "Mbire"
-			}	
-		}
 	}
 }
 
 #Rising Power of Changamire
 country_event = {
-	id = events_mut.5
-	title = "events_mut.5.tt"
-	desc = "events_mut.5.dd"
+	id = events_mut.6
+	title = "events_mut.6.tt"
+	desc = "events_mut.6.dd"
 	picture = ADVISOR_eventPicture
 	
 	fire_only_once = yes
@@ -209,11 +224,11 @@ country_event = {
 	}	
 
 	option = {
-		name = "events_mut.5.a" #Remove him before he gets too powerful.
+		name = "events_mut.6.a" #Remove him before he gets too powerful.
 		custom_tooltip = zim_oust_attempt_changamire
 		hidden_effect = {
 			country_event = { 
-				id = events_mut.6
+				id = events_mut.7
 				days = 30		
 			}
 		}
@@ -222,16 +237,16 @@ country_event = {
 
 #Rise of Changamire
 country_event = {
-	id = events_mut.6
-	title = "events_mut.6.tt"
-	desc = "events_mut.6.dd"
+	id = events_mut.7
+	title = "events_mut.7.tt"
+	desc = "events_mut.7.dd"
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = "events_mut.6.a" #He. Will. Die.
+		name = "events_mut.7.a" #He. Will. Die.
 		custom_tooltip = zim_win_loss_reqs
 		add_stability = -1
 		kill_ruler = yes
@@ -250,36 +265,72 @@ country_event = {
 			name = zim_usurped_throne
 			duration = -1
 		}
+		
 		BUT = {
 			grant_independence = yes
 		}
 		LZW = {
 			grant_independence = yes
-			declare_war_with_cb = {
-				who = ZIM
-				casus_belli = cb_independence_war
-			}
-			add_ruler_modifier = { 
-				name = lzw_changamires_rebellion
-				duration = -1  
-			}
 		}
+		BUT = { country_event = { id = events_mut.8 days = 1 } } 
+		
+		LZW = { country_event = { id = events_mut.9 days = 1 } } 
+
 		hidden_effect = {
 			add_country_flag = zim_changamire_rebel
 		}
 	}	
-	after = {
+}
+
+#Rise of Changamire (Butua)
+country_event = {
+	id = events_mut.8
+	title = "events_mut.8.tt"
+	desc = "events_mut.8.dd"
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = { #We will defeat Mutapa
+		name = "events_mut.8.a"
+
 		BUT = {
-			join_all_offensive_wars_of = LZW
+				join_all_offensive_wars_of = LZW
+		}
+	}
+}
+
+#Changamire's Rebellion
+country_event = {
+	id = events_mut.9
+	title = "events_mut.9.tt"
+	desc = "events_mut.9.dd"
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = { 
+	name = "events_mut.9.a" #Changamire will win
+		LZW = {
+			declare_war_with_cb = {
+				who = ZIM
+				casus_belli = cb_independence_war
+			}
+			add_country_modifier = { 
+				name = lzw_changamires_rebellion
+				duration = -1  
+			}
 		}
 	}
 }
 
 #Changamire Defeated!
 country_event = {
-	id = events_mut.7
-	title = "events_mut.7.tt"
-	desc = "events_mut.7.dd"
+	id = events_mut.10
+	title = "events_mut.10.tt"
+	desc = "events_mut.10.dd"
 	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	fire_only_once = yes
@@ -313,7 +364,7 @@ country_event = {
 	}	
 	
 	option = {
-		name = "events_mut.7.a" #Mutapa has prevailed!
+		name = "events_mut.10.a" #Mutapa has prevailed!
 		add_stability = 2
 		remove_country_modifier = mut_usurped_throne
 		change_adm = 1
@@ -323,6 +374,23 @@ country_event = {
 			name = zim_victorious
 			duration = 9125
 		}
+		LZW = { country_event = { id = events_mut.11 days = 1 } } 
+
+	}
+}
+
+#Mutapa Succeeds
+country_event = {
+	id = events_mut.11
+	title = "events_mut.11.tt"
+	desc = "events_mut.11.dd"
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = { 
+	name = "events_mut.11.a" #It is a sad day
 		LZW = {
 			if = {
 				limit = { has_ruler = "Changamire" }
@@ -336,9 +404,9 @@ country_event = {
 
 #Changamire Has Succeded
 country_event = {
-	id = events_mut.8
-	title = "events_mut.8.tt"
-	desc = "events_mut.8.dd"
+	id = events_mut.12
+	title = "events_mut.12.tt"
+	desc = "events_mut.12.dd"
 	picture = BAD_WITH_MONARCH_eventPicture
 	
 	fire_only_once = yes
@@ -376,8 +444,24 @@ country_event = {
 	}	
 
 	option = {
-		name = "events_mut.8.a" #What a sad day to be us.
+		name = "events_mut.12.a" #What a sad day to be us.
 		remove_country_modifier = zim_usurped_throne
+		LZW = { country_event = { id = events_mut.13 days = 1 } } 
+	}
+}
+
+#Changamire Succeeds
+country_event = {
+	id = events_mut.11
+	title = "events_mut.11.tt"
+	desc = "events_mut.11.dd"
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = { 
+	name = "events_mut.11.a" #Mwenemutapa is no more
 		LZW = {
 			add_stability = 2
 			change_adm = 1

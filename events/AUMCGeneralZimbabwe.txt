@@ -3,9 +3,9 @@ normal_or_historical_nations = yes
 
 #Decline of Great Zimbabwe
 country_event = {
-	id = events_zim.1
-	title = "au_events_zim.1.tt"
-	desc = "au_events_zim.1.dd"
+	id = au_events_zim.1
+	title = "au_events_zim.1.t"
+	desc = "au_events_zim.1.d"
 	picture = FORT_eventPicture
 	
 	fire_only_once = yes
