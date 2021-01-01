@@ -323,6 +323,7 @@ country_event = {
 				duration = -1  
 			}
 		}
+		custom_tooltip = zim_oust_attempt_changamire
 	}
 }
 
@@ -452,16 +453,16 @@ country_event = {
 
 #Changamire Succeeds
 country_event = {
-	id = events_mut.11
-	title = "events_mut.11.tt"
-	desc = "events_mut.11.dd"
+	id = events_mut.13
+	title = "events_mut.13.tt"
+	desc = "events_mut.13.dd"
 	picture = CIVIL_WAR_eventPicture
 	
 	major = yes
 	is_triggered_only = yes
 
 	option = { 
-	name = "events_mut.11.a" #Mwenemutapa is no more
+	name = "events_mut.13.a" #Mwenemutapa is no more
 		LZW = {
 			add_stability = 2
 			change_adm = 1

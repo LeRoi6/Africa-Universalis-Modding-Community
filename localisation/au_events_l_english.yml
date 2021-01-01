@@ -1,5 +1,5 @@
 ﻿l_english:
-#Events By Bukhara and Ajsieg
+#Mutapan Events By Bukhara and Ajsieg
  events_mut.1.tt: "Integration of the Korekore"
  events_mut.1.dd: "Early Mutapa History is full of stories and myths. As such, it’s somewhat unclear what exactly happened during the early years of Mutapa. Stories of the founder, Mutota, speak of many friends and family of Mutota joining him and settling in parts of Northern Zimbabwe, holding an unclear amount of power. By the reign of Matope, these names disappear from the record, leaving only Mhondoros in their name. To better portray the history of Mutapa, it is fair to say that by the end of Matope’s reign, these family members and their territory fell back under the rule of Mutapa."
  events_mut.1.a: "Mutapa will continue to grow."
@@ -21,14 +21,25 @@
  events_mut.7.dd: "Due to the scheming of Changamire, Mukombero tried to remove him from power by poisoning him. Finding out about the plot, Changamire proceeded to kill Mukombero. Additionally, Changamire has now claimed the throne, and has begun executing his heirs. It’s now the duty of one of these sons who have survived to kill Changamire and restore the Mwenemutapa dynasty to the throne."
  events_mut.7.a: "He. Will. Die."
  events_mut.8.tt: "Rise of Changamire"
- events_mut.8.dd: "Oral history of Changamire speak of his ancestory as coming from the royal family of either Mutapa or Butua. Either way, the rebellion of Changamire freed the southern region from Mutapan rule. Even after he died in 1494, Butua and Lozvi became permanetly independent. Torwa involvement in the crisis is not full clear. While some say Changamire was a Torwa and attacked Mutapa, others say the Torwa dynasty aided Changamire. Either way, Butua in AUMC will aid Lozvi in the war.
+ events_mut.8.dd: "Oral history of Changamire speak of his ancestory as coming from the royal family of either Mutapa or Butua. Either way, the rebellion of Changamire freed the southern region from Mutapan rule. Even after he died in 1494, Butua and Lozvi became permanetly independent. Torwa involvement in the crisis is not full clear. While some say Changamire was a Torwa and attacked Mutapa, others say the Torwa dynasty aided Changamire. Either way, Butua in AUMC will aid Lozvi in the war."
+ events_mut.8.a: "We will defeat Mutapa."
+ events_mut.9.tt: "Changamire's Rebellion"
+ events_mut.9.dd: "In 1490, as a result of Mutapa's pushback on Changamire, Changamire executed the ruler Mukombero, and proclaimed himself ruler of Mutapa. This would turn into a civil war between Changamire and the new ruler Chikuyo. While historically Changamire was killed in 1494, this war can be won by either side if the other capital is occupied, or if the other ruler dies."
+ events_mut.9.a: "Changamire will win!" 
  events_mut.10.tt: "Changamire Defeated!"
  events_mut.10.dd: "In 1490, Changamire usurped the throne and for 4 years Chikuyo fought to remove him from the throne. Historically, Changamire would be killed in a battle in 1494. Whether by defeating Changamire and overrunning his state or by killing him, Changamire’s death has ended the crisis and Mutapa has come out on top. However, the damage he caused has made us unable to reclaim his lands. Only time will tell if we are able to reclaim these states, or if Lozvi will ever pose a threat to us again."
  events_mut.10.a: "Mutapa has prevailed!"
+ events_mut.11.tt: "Mutapa Succeeds"
+ events_mut.11.dd: "Mutapa appears to have been blessed by their local Mhondoros. Changamire's revolt has failed, and Chikuyo has secured his claim to the throne. On the bright side, Lozvi has broken free from Mutapa, and maybe one day we can challenge Mutapa again."
+ events_mut.11.a: "It is a sad day."
  events_mut.12.tt: "Changamire Has Succeded"
  events_mut.12.dd: "It appears the worst has fallen upon us. Whether by controlling the capital or killing Chikuyo, Changamire has succeeded in taking over our state. Changamire now has full control over our state, and the Mutapa dynasty is effectively no more."
  events_mut.12.a: "What a sad day to be us."
+ events_mut.13.tt: "Changamire Suceeds"
+ events_mut.13.dd: "Changamire has achieved victory. Mutapan nobles have flocked to his banner, and the Mutapan ruler is either dead, or has lost all authority. This is the end of Mutapa, but signifies the rise of the Lozvi state."
+ events_mut.13.a: "Mwenemutapa is no more!"
  
+ #General Zimbabwe Events by Ajsieg
  au_events_zim.1.t: "Decline of Great Zimbabwe"
  au_events_zim.1.d: "After 250 years of prominence, Great Zimbabwe had declined to the point where it was no longer used as a trading center. Due to the rise of Mutapa and its gold mines, as well as the better access of the Zambezi River, Great Zimbabwe was no longer used for trade and was for all intents and purposes abandoned. However, the site would stand as a relic of an old era, and would eventually become a holy site."
  au_events_zim.1.a: "What a sad state it has become"
