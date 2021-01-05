@@ -636,8 +636,6 @@ horn_of_africa_region = {
 
 east_africa_region = {
 	areas = {
-		lower_zambezi_area
-		upper_zambezi_area
 		mascarenes_area
 		madagascar_highlands_area
 		betsimasaraka_area
@@ -647,9 +645,7 @@ east_africa_region = {
 		jubba_area
 		shire_area
 		#BT moved from South Africa
-		zimbabwe_area
 		quelimane_area
-		butua_area
 		#AUMC New Areas
 		ngonde_area
 		southern_tumbuka_area
@@ -659,6 +655,32 @@ east_africa_region = {
 		umwalia_area
 		medo_area
 		wayao_area   
+		northern_maputo_area
+		southern_maputo_area
+		gitonga_area
+		hlengwe_area
+		inhambane_area
+		sofala_area
+		chibuene_area
+		ngonde_area
+	}
+	monsoon = {
+		00.11.01
+		00.12.30
+	}
+	monsoon = {
+		00.01.01
+		00.04.30
+	}
+}
+
+zimbabwe_region = {
+	areas = {
+		lower_zambezi_area
+		upper_zambezi_area
+		zimbabwe_area
+		butua_area
+		#AUMC New Areas
 		tete_area
 		manyika_area
 		barue_area
@@ -669,14 +691,6 @@ east_africa_region = {
 		shangwe_area
 		naletale_area
 		vuxwa_area
-		northern_maputo_area
-		southern_maputo_area
-		gitonga_area
-		hlengwe_area
-		inhambane_area
-		sofala_area
-		chibuene_area
-		ngonde_area
 	}
 	monsoon = {
 		00.11.01

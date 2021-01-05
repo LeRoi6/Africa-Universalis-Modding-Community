@@ -1,6 +1,6 @@
 country_decisions = {
 	
-	zimbabwe_nation = {
+	zimbabwe_nation = { #Original by Hirohitoguard, modified by Ajsieg
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes

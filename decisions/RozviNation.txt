@@ -41,7 +41,7 @@ country_decisions = {
 		
 		
 		effect = {
-			change_tag = LZW
+			change_tag = RZW
 			swap_non_generic_missions = yes
 			
 			if = {

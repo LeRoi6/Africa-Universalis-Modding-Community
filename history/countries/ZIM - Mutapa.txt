@@ -4,7 +4,7 @@ primary_culture = shona
 religion = mhondoro
 technology_group = central_african
 unit_type = sub_saharan
-capital = 1184	
+capital = 9102	
 
 1380.1.1 = {
 	monarch = {

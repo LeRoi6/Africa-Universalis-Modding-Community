@@ -10,6 +10,7 @@ TEV = "countries/Quiteve.txt"
 BUT = "countries/Khami.txt"
 BWE = "countries/Barue.txt"
 GZB = "countries/Great Zimbabwe.txt"
+MIE = "countries/Mbire.txt"
 #Malawi
 NSE = "countries/Nsenga.txt"
 MSJ = "countries/Msinja.txt"

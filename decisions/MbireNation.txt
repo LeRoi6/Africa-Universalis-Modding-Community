@@ -1,0 +1,105 @@
+country_decisions = {
+	
+	mbire_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_mbire_flag }
+			OR = {
+				tag = ZIM
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1184
+				province_id = 1185
+				province_id = 1188
+				province_id = 1191
+				province_id = 2951
+				province_id = 2952
+				province_id = 9020
+				province_id = 9022
+				province_id = 9102
+				province_id = 9106
+				province_id = 9110
+				province_id = 9116
+				province_id = 9215
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = MIE }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 1184
+			owns_core_province = 1185
+			owns_core_province = 1188
+			owns_core_province = 1191
+			owns_core_province = 2951
+			owns_core_province = 2952
+			owns_core_province = 9020
+			owns_core_province = 9022
+			owns_core_province = 9102
+			owns_core_province = 9106
+			owns_core_province = 9110
+			owns_core_province = 9116
+			owns_core_province = 9215
+			religion = mhondoro
+			total_development = 250		
+			prestige = 25
+		}
+		
+		
+		effect = {
+			change_tag = MIE
+			swap_non_generic_missions = yes
+			
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			
+			add_prestige = 25
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 3650
+			}
+			
+			set_capital = 9102
+			
+			if = {
+				limit = {
+					government = tribal
+				}
+				change_government = monarchy 
+			}
+				
+			9102 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2			
+			}
+			if = {
+				limit = {
+				NOT = { owned_by = ROOT }
+				}
+			 zimbabwe_region = {
+				add_permanent_claim = ROOT
+			}
+
+			
+			
+			
+			set_country_flag = formed_mbire_flag
+			
+			
+
+		}
+	}
+}
