@@ -661,7 +661,7 @@ kongo_group = {
 bena_kinga_group = {
 	graphical_culture = africangfx
 	hehe = {
-	
+		primary = NGL
 	}
 }
 
@@ -671,32 +671,32 @@ takama_group = {
 	
 	}
 	sukuma = {
-	
+		primary = MWN
 	}
 	babinza = {
-	
+		primary = NGW
 	}
 	sumbwa = {
-	
+		primary = USB
 	}
 }
 
 northeast_bantu_group = {
 	graphical_culture = africangfx
 	vughonu = {
-	
+		primary = GWE
 	}
 	wabwambo = {
 	
 	}
 	chagga = {
-	
+		primary = MSH
 	}
 	taveta = {
-	
+		primary = TAV
 	}
 	kahe = {
-	
+		primary = KAH
 	}
 }
 
@@ -712,7 +712,7 @@ great_lakes_group = {
 
 	}
 	zinza = {
-	
+		primary = BBZ
 	}
 	dynasty_names = { 
 			Ngonge Nkima Kkobe Ffumbe Mamba Ndiga Ngeye Lugave Ngabi Mbogo Nsenene Mpindi Basoga
