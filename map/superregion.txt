@@ -76,6 +76,7 @@ africa_superregion = {
 	sahel_region
 	horn_of_africa_region
 	east_africa_region
+	zimbabwe_region
 	tanzania_region
 	kongo_region
 	south_africa_region
