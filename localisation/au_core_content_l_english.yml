@@ -77,13 +77,16 @@
  batonga:0 "Batonga"
  henga:0 "Henga"
  ngonde:0 "Ngonde"
- #Makua
+ #Yao
  yao_group:0 "Yao"
  yao:0 "Yao"
  lomwe:0 "Lomwe"
  lolo:0 "Lolo"
  medo:0 "Medo"
  makonde:0 "Makonde"
+ mwera:0 "Mwera"
+ ngindo:0 "Ngindo"
+ ndendeule:0 "Ndendeule"
  #Swahili
  swahili:0 "Swahili"
  sofala:0 "Wasofala"
@@ -123,6 +126,9 @@
  chagga:0 "Chagga"
  kahe:0 "Kahe"
  taveta:0 "Taveta"
+ ruvu_group:0 "Ruvu"
+ vidunda:0 "Vidunda"
+ gogo:0 "Gogo"
  #Great Lakes
  zinza:0 "Zinza"
 

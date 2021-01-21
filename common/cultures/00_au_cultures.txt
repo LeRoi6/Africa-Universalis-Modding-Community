@@ -593,6 +593,17 @@ yao_group = {
 			Achieng Nuru Nyalak
 		}
 	}
+	mwera = {
+	
+	}
+	
+	ngindo = {
+	
+	}
+	
+	ndenduele = {
+	
+	}
 }
 
 kongo_group = {
@@ -663,8 +674,26 @@ bena_kinga_group = {
 	hehe = {
 		primary = NGL
 	}
+	
+	pogoro = {
+	
+	}
+	
+	bena = {
+	
+	}
 }
 
+ruvu_group = {
+	graphical_culture = africangfx
+	vidunda = {
+	
+	}
+	gogo = {
+	
+	}
+}
+	
 takama_group = {
 	graphical_culture = africangfx
 	nyamwezi = {
