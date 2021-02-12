@@ -604,6 +604,10 @@ yao_group = {
 	ndenduele = {
 	
 	}
+	
+	nindi = {
+	
+	}
 }
 
 kongo_group = {

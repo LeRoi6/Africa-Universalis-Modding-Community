@@ -1,0 +1,17 @@
+#Created by AUMC
+#9157 - Ligera
+
+culture = nindi
+religion = shamanism
+capital = "Ligera"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+native_size = 2
+native_ferocity = 2
+native_hostileness = 2
+discovered_by = central_african
+discovered_by = east_african
+
