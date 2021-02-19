@@ -11,5 +11,5 @@ native_size = 6
 native_ferocity = 4
 native_hostileness = 8
 
-capital = "Henga"
+capital = "Hanga"
 discovered_by = central_african

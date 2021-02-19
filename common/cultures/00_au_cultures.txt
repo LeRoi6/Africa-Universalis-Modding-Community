@@ -513,6 +513,9 @@ nyasa_group = {
 	ngonde = {
 		
 	}
+	mbamba = {
+	
+	}
 }
 
 yao_group = {
@@ -606,6 +609,10 @@ yao_group = {
 	}
 	
 	nindi = {
+	
+	}
+	
+	matengo = {
 	
 	}
 }
