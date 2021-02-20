@@ -39,3 +39,57 @@ zimbabwe_minor_ideas = {
 	}
 }
 
+yao_ideas = {
+	start = {
+	movement_speed = 0.25
+        reinforce_speed=0.33
+	}
+	
+	bonus = {
+	leader_land_manuever = 1	
+	}
+	
+	
+	trigger = {
+		primary_culture=yao
+	}
+
+	free = yes
+
+	yao_travelling_people= {
+	land_attrition = -0.20			
+	}
+
+        yao_slash_and_burn= {
+	core_creation = -0.15		
+	}
+
+        yao_tree_trunk= {
+        global_unrest = -2		
+	}
+
+        yao_swahili_connections= {
+	global_trade_goods_size_modifier = 0.10
+        trade_efficiency=0.10		
+	}
+
+        yao_slave_raiders= {
+        infantry_power=0.10		
+	}
+
+
+        yao_religious_syncretism= {
+	religious_unity = 0.25
+        idea_cost = -0.1	
+	}
+
+        yao_aggressive_migration= {
+        province_warscore_cost = -0.15
+        ae_impact = -0.15		
+	}
+
+
+
+
+	
+}
