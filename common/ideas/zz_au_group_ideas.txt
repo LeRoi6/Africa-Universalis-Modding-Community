@@ -93,3 +93,51 @@ yao_ideas = {
 
 	
 }
+
+
+hehe_ideas = {
+	start = {
+        infantry_cost = -0.20
+        global_unrest = -1
+	}
+	
+	bonus = {
+	land_morale=0.10
+	}
+	
+	
+	trigger = {
+	primary_culture=hehe	
+	}
+
+	free = yes
+
+	hehe_iringa_hills= {
+	land_attrition = -0.20			
+	}
+
+	hehe_iron_weapons= {
+	shock_damage = 0.10			
+	}
+
+	hehe_control_of_land= {
+	global_autonomy = -0.05			
+	}
+
+	hehe_royal_tomb_ceremonies= {
+	tolerance_own = 2			
+	}
+
+	hehe_paramount_chief= {
+	years_of_nationalism = -5			
+	}
+
+	hehe_absolute_power= {
+	yearly_absolutism = 0.5			
+	}
+
+	hehe_adopt_age_regiments= {
+	infantry_power = 0.10			
+	}
+
+}
