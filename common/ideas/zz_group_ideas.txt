@@ -1088,7 +1088,7 @@ swahili_ideas = {
 	}
 
 	trigger = {
-		primary_culture = swahili
+		culture_group=swahili
 	}
 	free = yes
 

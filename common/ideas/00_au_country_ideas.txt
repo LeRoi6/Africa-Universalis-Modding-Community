@@ -311,3 +311,50 @@ TDE_ideas = {
 		local_hostile_attrition = 1
 	}
 }
+
+NSE_ideas = {
+	start = {
+	global_trade_goods_size_modifier = 0.1
+        land_maintenance_modifier = -0.10
+	}
+
+	bonus = {
+	advisor_cost = -0.15	
+	}
+	
+	trigger = {
+		tag = NSE
+	}
+
+	free = yes
+	
+	nse_nyanja_ties= {
+	diplomatic_upkeep = 1	
+	}
+
+	nse_luangwa_valley= {
+	development_cost = -0.15
+	}
+
+        nse_maravi_government= {
+	autonomy_change_time = -0.33
+	}
+
+        nse_bemba_raids= {
+	rival_border_fort_maintenance = -0.5
+	}
+
+        nse_improved_army= {
+	infantry_power=0.10
+	}
+
+        nse_subordinate_chiefs= {
+	core_creation = -0.15
+	}
+
+        nse_ngoni_armies= {
+	discipline = 0.05
+	}
+
+}
+	

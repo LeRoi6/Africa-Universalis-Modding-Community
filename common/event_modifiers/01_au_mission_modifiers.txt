@@ -1,0 +1,32 @@
+butua_indipendence={
+land_morale = 0.10
+prestige = 0.5
+}
+
+butua_gold_mine_control={
+inflation_reduction = 0.1
+inflation_action_cost = -0.2
+}
+
+butua_sphere_of_influence={
+vassal_forcelimit_bonus = 1
+diplomatic_upkeep = 1
+}
+
+
+butua_firearms={
+leader_land_fire = 1
+}
+
+
+butua_trade={
+global_own_trade_power = 0.33
+global_trade_goods_size_modifier = 0.1
+}
+
+
+
+butua_modernization={
+all_power_cost=-0.05
+free_policy = 1
+}

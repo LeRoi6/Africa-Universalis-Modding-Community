@@ -1,0 +1,249 @@
+butua_main_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+                primary_culture=khami
+	}
+
+	has_country_shield = yes
+	
+	but_indipendence_from_mutapa= { 
+		icon=mission_conquer_benin
+
+                required_missions = {  
+                 
+                }
+		  position=1
+
+		trigger = {
+		NOT={is_vassal = yes}	
+		}
+		effect = {
+		add_prestige = 20
+                add_legitimacy=10
+add_country_modifier = { 
+    name = butua_indipendence
+    duration = 7300  
+
+}	
+			}
+		}
+
+	but_control_gold_mines= { 
+	icon=mission_high_income
+
+		required_missions = {  
+	but_indipendence_from_mutapa
+                }
+		                position=2
+		
+		trigger = {
+		gold=6	
+		}
+		effect = {
+		add_country_modifier = { 
+    name = zimbabwe_gold_mine_control
+    duration = 14600  
+
+}	
+			}
+		}
+
+	but_subjugate_mutapa= { 
+	
+                icon=mission_invade_kanem
+		   required_missions = {  
+                but_control_gold_mines 
+                }
+		                position=3
+		
+		trigger = {
+		NOT={exists = ZIM}	
+		}
+		effect = {
+		add_mil_power=100
+                create_general = { tradition = 50 }	
+			}
+		}
+
+
+
+
+	but_sphere_of_influence= { 
+		
+          icon=mission_conquer_benin
+		  required_missions = {  
+                but_subjugate_mutapa
+                }
+		                position=4
+		
+		trigger = {
+		num_of_subjects = 2	
+		}
+		effect = {
+    add_country_modifier = { 
+    name = butua_sphere_of_influence
+    duration = -1 
+
+}	
+			}
+		}
+
+
+
+	but_empire= { 
+		
+          icon=mission_african_soldier
+		required_missions = {  
+               but_sphere_of_influence
+                }
+		                position=5
+		
+		trigger = {
+		development_in_provinces = {
+	value = 200
+	region = zimbabwe_region
+}	
+		}
+		effect = {
+		add_prestige = 20
+                add_adm_power=60
+              	add_mil_power=60
+                add_dip_power=60	
+			}
+		}
+
+
+	but_firearms= { 
+	
+        icon=mission_invade_kanem
+		required_missions = {  
+               but_commercial_power
+                }
+		                position=7
+		
+		trigger = {
+		artillery_fraction = 0.1	
+		}
+		effect = {
+                    add_country_modifier = { 
+    name = butua_firearms
+    duration = -1 
+
+}	
+			}
+		}
+}
+
+rozwi_and_butua_secondary_missions = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR={primary_culture=lozvi
+                primary_culture=khami}
+	}
+
+	has_country_shield = yes
+
+	but_military_tradition= { 
+		
+        icon=mission_african_soldier
+		required_missions = {  
+                but_control_gold_mines 
+                }
+		                position = 3
+		
+		trigger = {
+		army_tradition = 45	
+		}
+		effect = {
+				add_mil_power=100
+                create_general = { tradition = 50 }	
+			}
+		}
+
+	but_production_centres= { 
+		 
+    icon= mission_dominate_home_trade_node
+		required_missions = {  
+               but_subjugate_mutapa
+                }
+		              position = 4
+		
+		trigger = {
+		workshop=5
+                marketplace=5	
+		}
+		effect = {
+                   add_country_modifier = { 
+    name = butua_trade
+    duration = 14600 
+
+}			
+			}
+		}
+
+	but_coastal_foothold= { 
+		
+     icon=mission_galleys_in_port
+		required_missions = {  
+               but_production_centres
+                }
+		           position = 5
+		
+		trigger = {
+		num_of_owned_provinces_with = {
+	value = 2
+        has_port=yes
+}	
+		}
+		effect = {
+		add_dip_power=100	
+			}
+		}
+
+	but_commercial_power= { 
+		
+   icon= mission_dominate_home_trade_node
+		required_missions = {  
+               but_coastal_foothold
+               but_empire
+                }
+		                position = 6
+		
+		trigger = {
+		1448 = { #Zanzibar
+	trade_share = {
+		country = ROOT
+		share = 30}
+}	
+		}
+		effect = {
+		add_dip_power=100
+                add_mercantilism=3	
+			}
+		}
+
+	but_modernization= { 
+		
+      icon= scramble_for_africa
+		required_missions = {  
+               but_commercial_power
+                }
+		          position = 7
+		
+		trigger = {
+		has_institution = feudalism
+                has_institution = renaissance	
+		}
+		effect = {
+		                   add_country_modifier = { 
+    name = butua_modernization
+    duration = 14600 
+
+}	
+			}
+		}
+}
