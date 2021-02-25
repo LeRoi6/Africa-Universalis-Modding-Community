@@ -141,3 +141,53 @@ hehe_ideas = {
 	}
 
 }
+
+
+chagga_ideas = {
+	start = {
+        legitimacy = 1
+        years_of_nationalism = -5
+	}
+	
+	bonus = {
+        build_cost = -0.1
+	}
+	
+	
+	trigger = {
+	primary_culture=chagga	
+	}
+
+	free = yes
+
+
+	chagga_clan_migration= {
+	diplomatic_reputation = 1		
+	}
+
+
+	chagga_intensive_agriculture= {
+	development_cost = -0.15		
+	}
+
+	chagga_kisusa= {
+	tolerance_own=2		
+	}
+	
+        chagga_rusi= {
+	recover_army_morale_speed = 0.075		
+	}	
+
+	chagga_initiation_groups= {
+	same_culture_advisor_cost = -0.25		
+	}
+
+
+	chagga_coast_traders= {
+	global_trade_goods_size_modifier = 0.1		
+	}
+
+	chagga_coffee= {
+	production_efficiency = 0.15		
+	}
+}
