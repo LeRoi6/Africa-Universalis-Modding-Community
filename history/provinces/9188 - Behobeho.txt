@@ -1,7 +1,7 @@
 #Created by AUMC
 #9188 - Behobeho
 
-culture = zigua
+culture = luguru
 religion = shamanism
 capital = "Beho Beho"
 trade_goods = unknown

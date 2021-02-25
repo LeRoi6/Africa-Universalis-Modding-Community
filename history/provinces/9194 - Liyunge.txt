@@ -1,0 +1,16 @@
+#Created by AUMC
+#9194 - Liyunge
+
+native_size = 2
+native_ferocity = 3
+native_hostileness = 3
+culture = vidunda
+religion = shamanism #Fetishism
+capital = "Liyunge"
+trade_goods = unknown
+hre = no
+base_tax = 2  
+base_production = 1 
+base_manpower = 1
+discovered_by = central_african
+discovered_by = east_african
