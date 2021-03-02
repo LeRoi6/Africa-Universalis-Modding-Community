@@ -8993,7 +8993,7 @@ province;red;green;blue;x;x
 8992;91;239;229;Gedi;x
 8993;83;169;170;Mambrui;x
 8994;76;158;165;Ozi;x
-8995;24;221;221;LeRoiRemoved1;x
+8995;255;128;0;Itumba;x
 8996;66;200;210;Uziwa;x
 8997;0;188;198;Mgine;x
 8998;232;155;97;Mpembeno;x
@@ -9423,3 +9423,6 @@ province;red;green;blue;x;x
 9422;65;168;53;Usambiro;x
 9423;70;191;15;Maisome;x
 9424;232;81;0;Bulima;x
+9425;255;167;24;Sangaiwe;x
+9426;244;151;43;Kwaraa;x
+9427;252;144;31;Kisiriri;x

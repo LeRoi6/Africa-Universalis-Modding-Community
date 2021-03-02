@@ -736,6 +736,10 @@ ruvu_group = {
 	
 	}
 	
+	kaguru = {
+	
+	}
+	
 	sagara = {
 	
 	}
@@ -782,6 +786,60 @@ northeast_bantu_group = {
 		primary = KAH
 	}
 }
+
+southern_cushitic_group = {
+	graphical_culture = africangfx
+	burunge = {
+	
+	}
+	
+	iraqw = {
+	
+	}
+	
+}
+
+sandawe_group = {
+	graphical_culture = africangfx	
+	sandawe = {
+	
+	}
+}
+
+hadza_group = {
+	graphical_culture = africangfx		
+	hadza = {
+	
+	}
+}
+
+mbugwe_rangi_group = {
+	graphical_culture = africangfx	
+	mbugwe = {
+	
+	}
+	
+	rangi = {
+	
+	}
+}
+
+nyaturu_nilamba_group = {
+	graphical_culture = africangfx
+	nyaturu = {
+	
+	}
+	
+	nilamba = {
+	
+	}
+	
+	isanzu = {
+	
+	}
+}
+
+
 
 great_lakes_group = {
 	graphical_culture = africangfx

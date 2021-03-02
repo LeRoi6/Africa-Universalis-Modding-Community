@@ -143,7 +143,24 @@
  gogo:0 "Gogo"
  sagara:0 "Sagara"
  luguru:0 "Luguru"
+ kaguru:0 "Kaguru"
  zigua:0 "Zigua"
+ southern_cushitic:0 "Southern Cushitic"
+ burunge:0 "Burunge"
+ iraqw:0 "Iraqw"
+ sandawe_group:0 "Sandawe"
+ sandawe:0 "Sandawe"
+ hadza_group:0 "Hadza"
+ hadza:0 "Hadza"
+ mbugwe_rangi_group:0 "Mbugwe-Rangi"
+ mbugwe:0 "Mbugwe"
+ rangi:0 "Rangi"
+ nyaturu_nilamba_group:0 "Nyaturu-Nilamba"
+ nyaturu:0 "Nyaturu"
+ nilamba:0 "Iramba"
+ isanzu:0 "Ihanzu"
+ 
+ 
  #Great Lakes
  zinza:0 "Zinza"
 
