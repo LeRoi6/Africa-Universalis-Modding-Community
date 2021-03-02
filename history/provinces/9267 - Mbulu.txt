@@ -1,0 +1,15 @@
+#Created by AUMC
+#9267 - Mbulu
+native_size = 5
+native_ferocity = 4
+native_hostileness = 4
+culture = iraqw
+religion = shamanism #Fetishism
+capital = "Mbulu"
+trade_goods = unknown
+hre = no
+base_tax = 2 
+base_production = 3
+base_manpower = 2
+discovered_by = central_african
+discovered_by = east_african

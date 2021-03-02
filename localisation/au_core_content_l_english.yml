@@ -77,6 +77,7 @@
  batonga:0 "Batonga"
  henga:0 "Henga"
  ngonde:0 "Ngonde"
+ mbamba:0 "Mbamba"
  #Yao
  yao_group:0 "Yao"
  yao:0 "Yao"
@@ -89,6 +90,7 @@
  ndendeule:0 "Ndonde"
  matengo:0 "Matengo"
  nindi:0 "Nindi"
+
  #Swahili
  swahili:0 "Swahili"
  sofala:0 "Wasofala"
@@ -115,6 +117,7 @@
  #Zambia
  citonga:0 "Citonga"
  #Tanzania
+ bena_kinga_group:0 "Bena-Kinga"
  hehe:0 "Hehe"
  sangu:0 "Sangu"
  bena:0 "Bena"
@@ -145,7 +148,9 @@
  luguru:0 "Luguru"
  kaguru:0 "Kaguru"
  zigua:0 "Zigua"
- southern_cushitic:0 "Southern Cushitic"
+ kwere:0 "Kwere"
+ doe:0 "Doe"
+ southern_cushitic_group:0 "Southern Cushitic"
  burunge:0 "Burunge"
  iraqw:0 "Iraqw"
  sandawe_group:0 "Sandawe"
@@ -155,7 +160,7 @@
  mbugwe_rangi_group:0 "Mbugwe-Rangi"
  mbugwe:0 "Mbugwe"
  rangi:0 "Rangi"
- nyaturu_nilamba_group:0 "Nyaturu-Nilamba"
+ takama_group:0 "Takama"
  nyaturu:0 "Nyaturu"
  nilamba:0 "Iramba"
  isanzu:0 "Ihanzu"

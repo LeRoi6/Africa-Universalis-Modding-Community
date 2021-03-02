@@ -1,6 +1,6 @@
 #4043 - Phangwa
 
-culture = ndenduele
+culture = ndendeule
 religion = shamanism #Fetishism
 trade_goods = unknown
 hre = no

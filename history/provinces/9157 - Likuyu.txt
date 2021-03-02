@@ -1,7 +1,7 @@
 #Created by AUMC
 #9157 - Likuyu
 
-culture = ndenduele
+culture = ndendeule
 religion = shamanism
 capital = "Likuyu"
 trade_goods = unknown

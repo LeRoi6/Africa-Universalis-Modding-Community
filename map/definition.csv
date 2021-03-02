@@ -9331,7 +9331,7 @@ province;red;green;blue;x;x
 9330;150;100;244;Azougi;x
 9331;128;219;43;Kigezi;x
 9332;19;174;58;Kajara;x
-9333;234;150;72;Mugoda Mutitu;x
+9333;255;147;47;Mugoda Mutitu;x
 9334;120;225;70;Buddu;x
 9335;19;248;85;Bwera;x
 9336;12;206;15;Nshenyi;x
@@ -9426,3 +9426,4 @@ province;red;green;blue;x;x
 9425;255;167;24;Sangaiwe;x
 9426;244;151;43;Kwaraa;x
 9427;252;144;31;Kisiriri;x
+9428;255;147;31;Shakini;x 

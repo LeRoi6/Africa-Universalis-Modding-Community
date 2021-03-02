@@ -23,6 +23,9 @@
  PROV2950:0 "Tshindi"
  PROV2951:0 "Manyika"
  PROV2952:0 "Madanda"
+ PROV4056:0 "Mgunda Mkali"
+ PROV4057:0 "Siuyu"
+ PROV4057:0 "Siuyu"
  PROV4061:0 "Bugando"
  PROV8732:0 "8732"
  PROV8733:0 "8733"
@@ -688,4 +691,8 @@
  PROV9422:0 "Usambiro"
  PROV9423:0 "Maisome"
  PROV9424:0 "Bulima"
+ PROV9425:0 "Sangaiwe"
+ PROV9426:0 "Kwaraa"
+ PROV9427:0 "Kisiriri"
+ PROV9428:0 "Shakini"
  

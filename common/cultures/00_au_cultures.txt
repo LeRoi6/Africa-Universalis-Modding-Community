@@ -604,7 +604,7 @@ yao_group = {
 	
 	}
 	
-	ndenduele = {
+	ndendeule = {
 	
 	}
 	
@@ -747,6 +747,14 @@ ruvu_group = {
 	zigua = {
 	
 	}
+	
+	kwere = {
+	
+	}
+	
+	doe = {
+	
+	}
 }
 	
 takama_group = {
@@ -824,7 +832,7 @@ mbugwe_rangi_group = {
 	}
 }
 
-nyaturu_nilamba_group = {
+takama_group = {
 	graphical_culture = africangfx
 	nyaturu = {
 	
