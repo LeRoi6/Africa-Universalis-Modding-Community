@@ -805,6 +805,10 @@ southern_cushitic_group = {
 	
 	}
 	
+	gorowa = {
+	
+	}
+	
 }
 
 sandawe_group = {

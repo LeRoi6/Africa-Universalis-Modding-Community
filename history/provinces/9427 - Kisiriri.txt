@@ -1,15 +1,15 @@
 #Created by AUMC
-#9256 - Chimhinda
+#9427 - Kisiriri
 native_size = 4
-native_ferocity = 4
-native_hostileness = 4
-culture = kaguru
+native_ferocity = 8
+native_hostileness = 9
+culture = nilamba
 religion = shamanism #Fetishism
-capital = "Chimhinda"
+capital = "Kisiriri"
 trade_goods = unknown
 hre = no
-base_tax = 2  
+base_tax = 2 
 base_production = 2
 base_manpower = 2
 discovered_by = central_african
-
+discovered_by = east_african
