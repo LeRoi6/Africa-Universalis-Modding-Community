@@ -1,7 +1,7 @@
 #4077 - Rukwa
 
 culture = fipa
-religion = shamanism #Fetishism
+religion = waganga
 trade_goods = unknown
 hre = no
 base_tax = 3 

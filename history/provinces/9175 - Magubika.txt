@@ -1,7 +1,7 @@
 #Created by AUMC
 #9175 - Magubika
 
-culture = gogo
+culture = zigua
 religion = waganga
 capital = "Magubika"
 trade_goods = unknown

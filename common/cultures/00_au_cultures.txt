@@ -707,6 +707,7 @@ bena_kinga_group = {
 	}
 }
 
+
 rukwa_group = {
 	graphical_culture = africangfx
 	fipa = {
@@ -723,45 +724,19 @@ rukwa_group = {
 
 }
 
-ruvu_group = {
-	graphical_culture = africangfx
-	vidunda = {
-	
-	}
-	gogo = {
-	
-	}
-	
-	luguru = (
+
+mbugwe_rangi_group = {
+	graphical_culture = africangfx	
+	mbugwe = {
 	
 	}
 	
-	kaguru = {
-	
-	}
-	
-	sagara = {
-	
-	}
-	
-	zigua = {
-	
-	}
-	
-	ruvu_zigua = {
-	
-	}
-	
-	kwere = {
-	
-	}
-	
-	doe = {
+	rangi = {
 	
 	}
 }
-	
-takama_group = {
+
+sukuma_nyamwezi_group = {
 	graphical_culture = africangfx
 	nyamwezi = {
 	
@@ -822,23 +797,45 @@ sandawe_group = {
 	}
 }
 
-hadza_group = {
-	graphical_culture = africangfx		
-	hadza = {
+
+ruvu_group = {
+	graphical_culture = africangfx
+	vidunda = {
+	
+	}
+	gogo = {
+	
+	}
+	
+	luguru = (
+	
+	}
+	
+	kaguru = {
+	
+	}
+	
+	sagara = {
+	
+	}
+	
+	zigua = {
+	
+	}
+	
+	ruvu_zigua = {
+	
+	}
+	
+	kwere = {
+	
+	}
+	
+	doe = {
 	
 	}
 }
 
-mbugwe_rangi_group = {
-	graphical_culture = africangfx	
-	mbugwe = {
-	
-	}
-	
-	rangi = {
-	
-	}
-}
 
 takama_group = {
 	graphical_culture = africangfx
@@ -854,8 +851,6 @@ takama_group = {
 	
 	}
 }
-
-
 
 great_lakes_group = {
 	graphical_culture = africangfx
@@ -882,5 +877,13 @@ great_lakes_group = {
 	}
 	female_names = {
 			Nyiramavugo Kanjogera Nyirarukangaga Balambi Bawedde Sikyayinza Nakamu
+	}
+}
+
+
+hadza_group = {
+	graphical_culture = africangfx		
+	hadza = {
+	
 	}
 }
