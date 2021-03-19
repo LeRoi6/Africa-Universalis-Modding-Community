@@ -2,7 +2,7 @@
 #9181 - Utengule
 
 culture = rori
-religion = shamanism
+religion = waganga
 capital = "Utengule"
 trade_goods = unknown
 hre = no

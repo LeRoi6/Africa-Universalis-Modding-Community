@@ -2,7 +2,7 @@
 #9183 - Mpuguso
 
 culture = nyakyusa
-religion = shamanism
+religion = waganga
 capital = "Kieyo"
 trade_goods = unknown
 hre = no

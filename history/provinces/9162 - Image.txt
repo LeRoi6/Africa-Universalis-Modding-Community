@@ -1,7 +1,7 @@
 #Created by AUMC
 #9162 - Image
 culture = hehe
-religion = shamanism
+religion = waganga
 capital = "Lula"
 trade_goods = livestock
 hre = no

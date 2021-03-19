@@ -2,7 +2,7 @@
 #9173 - Litembo
 
 culture = matengo
-religion = shamanism
+religion = waganga
 capital = "Litembo"
 trade_goods = unknown
 hre = no

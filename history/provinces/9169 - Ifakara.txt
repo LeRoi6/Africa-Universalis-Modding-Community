@@ -2,7 +2,7 @@
 #9169 - Ifakara
 
 culture = hehe
-religion = shamanism
+religion = waganga
 capital = "Ifakara"
 trade_goods = unknown
 hre = no

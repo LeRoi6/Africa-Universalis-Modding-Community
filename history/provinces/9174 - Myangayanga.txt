@@ -2,7 +2,7 @@
 #9174 - Myangayanga
 
 culture = matengo
-religion = shamanism
+religion = waganga
 capital = "Myangayanga"
 trade_goods = unknown
 hre = no

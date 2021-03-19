@@ -1,7 +1,7 @@
 #Created by AUMC
 #9200 - Pawaga
 culture = hehe
-religion = shamanism
+religion = waganga
 capital = "Pawaga"
 trade_goods = unknown
 hre = no

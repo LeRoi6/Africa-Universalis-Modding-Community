@@ -2,7 +2,7 @@
 #9155 - Kingwichiro
 
 culture = ngindo
-religion = shamanism
+religion = waganga
 capital = "Kingwichiro"
 trade_goods = unknown
 hre = no

@@ -2,7 +2,7 @@
 #9157 - Likuyu
 
 culture = ndendeule
-religion = shamanism
+religion = waganga
 capital = "Likuyu"
 trade_goods = unknown
 hre = no

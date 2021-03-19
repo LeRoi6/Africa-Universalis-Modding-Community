@@ -2,7 +2,7 @@
 #9179 - Gendagenda
 
 culture = zigua
-religion = shamanism
+religion = waganga
 capital = "Genda Genda"
 trade_goods = unknown
 hre = no

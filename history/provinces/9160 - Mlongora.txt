@@ -2,7 +2,7 @@
 #9160 - Mlongora
 
 culture = pogoro
-religion = shamanism
+religion = waganga
 capital = "Mlongora"
 trade_goods = unknown
 hre = no

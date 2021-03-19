@@ -2,7 +2,7 @@
 #9185 - Kiwombwe
 
 culture = kimbu
-religion = shamanism
+religion = waganga
 capital = "Kiwombwe"
 trade_goods = unknown
 hre = no

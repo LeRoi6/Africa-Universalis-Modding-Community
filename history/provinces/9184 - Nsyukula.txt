@@ -2,7 +2,7 @@
 #9184 - Nsyukula
 
 culture = kimbu
-religion = shamanism
+religion = waganga
 capital = "Nsyukula"
 trade_goods = unknown
 hre = no

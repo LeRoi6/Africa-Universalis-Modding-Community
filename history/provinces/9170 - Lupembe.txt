@@ -2,7 +2,7 @@
 #9170 - Lupembe
 
 culture = bena
-religion = shamanism
+religion = waganga
 capital = "Lupembe"
 trade_goods = unknown
 hre = no

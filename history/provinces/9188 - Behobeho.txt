@@ -2,7 +2,7 @@
 #9188 - Behobeho
 
 culture = luguru
-religion = shamanism
+religion = waganga
 capital = "Beho Beho"
 trade_goods = unknown
 hre = no

@@ -2,7 +2,7 @@
 #9152 - Mpenga
 
 culture = rufiji
-religion = shamanism
+religion = waganga
 capital = "Mpenga"
 trade_goods = unknown
 hre = no

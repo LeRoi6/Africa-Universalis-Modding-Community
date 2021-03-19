@@ -2,7 +2,7 @@
 #9180 - Mfumbi
 
 culture = rori
-religion = shamanism
+religion = waganga
 capital = "Mfumbi"
 trade_goods = unknown
 hre = no

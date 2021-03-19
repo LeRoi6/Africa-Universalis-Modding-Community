@@ -2,7 +2,7 @@
 #9176 - Ulanga
 
 culture = pogoro
-religion = shamanism
+religion = waganga
 capital = "Mbarika"
 trade_goods = unknown
 hre = no

@@ -2,7 +2,7 @@
 #9154 - Madaba
 
 culture = ngindo
-religion = shamanism
+religion = waganga
 capital = "Madaba"
 trade_goods = unknown
 hre = no

@@ -2,7 +2,7 @@
 #9165 - Malangali
 
 culture = bena
-religion = shamanism
+religion = waganga
 capital = "Malangali"
 trade_goods = unknown
 hre = no

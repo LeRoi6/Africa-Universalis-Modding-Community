@@ -2,7 +2,7 @@
 #9182 - Selya
 
 culture = nyakyusa
-religion = shamanism
+religion = waganga
 capital = "Lufilio"
 trade_goods = unknown
 hre = no

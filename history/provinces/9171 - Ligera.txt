@@ -2,7 +2,7 @@
 #9171 - Ligera
 
 culture = nindi
-religion = shamanism
+religion = waganga
 capital = "Ligera"
 trade_goods = unknown
 hre = no

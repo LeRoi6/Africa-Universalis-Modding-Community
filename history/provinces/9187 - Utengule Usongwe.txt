@@ -2,7 +2,7 @@
 #9187 - Utengule Usongwe
 
 culture = safwa
-religion = shamanism
+religion = waganga
 capital = "Utengule Usongwe"
 trade_goods = unknown
 hre = no

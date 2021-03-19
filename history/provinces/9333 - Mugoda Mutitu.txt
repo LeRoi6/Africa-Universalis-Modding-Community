@@ -2,7 +2,7 @@
 #9333 - Mugoda Mutitu
 
 culture = bena
-religion = shamanism
+religion = waganga
 capital = "Mugoda Mutitu"
 trade_goods = unknown
 hre = no

@@ -2,7 +2,7 @@
 #9161 - Ikombagulu
 
 culture = vidunda
-religion = shamanism
+religion = waganga
 capital = "Ikombagulu"
 trade_goods = unknown
 hre = no

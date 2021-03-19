@@ -2,7 +2,7 @@
 #9159 - Muhenge
 
 culture = pogoro
-religion = shamanism
+religion = waganga
 capital = "Vigoi"
 trade_goods = unknown
 hre = no

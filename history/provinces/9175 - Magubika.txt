@@ -2,7 +2,7 @@
 #9175 - Magubika
 
 culture = gogo
-religion = shamanism
+religion = waganga
 capital = "Magubika"
 trade_goods = unknown
 hre = no

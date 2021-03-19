@@ -1,7 +1,7 @@
 #Created by AUMC
 #9299 - Usungwa
 culture = hehe
-religion = shamanism
+religion = waganga
 capital = "Kalinga"
 trade_goods = unknown
 hre = no

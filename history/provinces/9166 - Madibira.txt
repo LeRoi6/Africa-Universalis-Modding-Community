@@ -2,7 +2,7 @@
 #9166 - Madibira
 
 culture = hehe
-religion = shamanism
+religion = waganga
 capital = "Madibira"
 trade_goods = unknown
 hre = no

@@ -2,7 +2,7 @@
 #9178 - Ikombe
 
 culture = kisi
-religion = shamanism
+religion = waganga
 capital = "Ikombe"
 trade_goods = unknown
 hre = no

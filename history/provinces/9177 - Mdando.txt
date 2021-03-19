@@ -2,7 +2,7 @@
 #9177 - Mdando
 
 culture = pangwa
-religion = shamanism
+religion = waganga
 capital = "Milo"
 trade_goods = unknown
 hre = no

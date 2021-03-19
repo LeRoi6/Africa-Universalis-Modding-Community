@@ -1,7 +1,7 @@
 #Created by AUMC
 #9300 - Fwagi
 culture = hehe
-religion = shamanism
+religion = waganga
 capital = "Ikula"
 trade_goods = ivory
 hre = no

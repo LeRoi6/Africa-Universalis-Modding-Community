@@ -2,7 +2,7 @@
 #9153 - Ngarembe
 
 culture = rufiji
-religion = shamanism
+religion = waganga
 capital = "Ngarembe"
 trade_goods = unknown
 hre = no
