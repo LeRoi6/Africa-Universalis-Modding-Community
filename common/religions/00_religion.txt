@@ -1481,6 +1481,8 @@ pagan = {
 		}
 		
 		heretic = { JINI UCHAWI }
+	}
+	
 	totemism = {
 		color = { 127 115 115 }
 		icon = 13

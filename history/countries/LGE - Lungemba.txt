@@ -1,7 +1,7 @@
 government = tribal
 add_government_reform = tribal_despotism
 primary_culture = hehe
-religion = shamanism
+religion = waganga
 technology_group = central_african
 unit_type = sub_saharan
 capital = 9302

@@ -1,7 +1,7 @@
 #4056 - Gogo
 
 culture = gogo
-religion = shamanism #Fetishism
+religion = waganga
 trade_goods = unknown
 hre = no
 base_tax = 2  

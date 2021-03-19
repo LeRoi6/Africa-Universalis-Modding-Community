@@ -1,7 +1,7 @@
 #1273 - Taveta
 
 culture = taveta
-religion = shamanism #Fetishism
+religion = waganga
 trade_goods = unknown
 hre = no
 capital = "Mboghoni"

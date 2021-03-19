@@ -2,7 +2,7 @@
 #9149 - Lumesule
 
 culture = ngindo
-religion = shamanism
+religion = waganga
 capital = "Lumesule"
 trade_goods = unknown
 hre = no

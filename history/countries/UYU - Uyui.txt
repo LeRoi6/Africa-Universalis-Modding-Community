@@ -1,11 +1,8 @@
 government = tribal
 add_government_reform = tribal_despotism
 primary_culture = nyamwezi
-religion = shamanism #Fetishism
+religion = waganga
 technology_group = central_african
-unlock_cult = enkai_cult
-unlock_cult = waaq_cult
-unlock_cult = zanahary_cult
 
 unit_type = sub_saharan
 capital = 9275

@@ -4,7 +4,7 @@
 native_size = 4
 native_ferocity = 4
 native_hostileness = 3
-culture = wabwambo
+culture = zigua
 religion = waganga
 capital = "Nguu"
 trade_goods = unknown

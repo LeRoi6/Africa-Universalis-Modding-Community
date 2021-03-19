@@ -1,7 +1,7 @@
 #4057 - Nyatura
 
 culture = nyaturu
-religion = shamanism #Fetishism
+religion = waganga
 trade_goods = unknown
 hre = no
 base_tax = 2  

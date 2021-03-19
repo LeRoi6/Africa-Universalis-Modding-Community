@@ -1,11 +1,11 @@
 #1199 - Bagamoyo
 
 culture = zaramo
-religion = shamanism #Fetishism
+religion = waganga
 capital = "Bagamayo"
 is_city = yes
 base_manpower = 2 
-trade_goods = salt
+trade_goods = unknown #salt
 hre = no
 base_tax = 2  
 base_production = 2 

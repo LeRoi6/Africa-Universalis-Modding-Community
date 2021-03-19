@@ -2,7 +2,7 @@
 #9148 - Tunguru
 
 culture = mwera
-religion = shamanism
+religion = waganga
 capital = "Tunguru"
 trade_goods = unknown
 hre = no
