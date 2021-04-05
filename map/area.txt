@@ -1735,6 +1735,14 @@ kilimanjaro_area = (
 	9391 9392 9393 9394 9395 9396 9398
 }
 
+southern_maasai_area = {
+	9439 9440 9441 9442 9443 9444 9445 9446
+}
+
+serengeti_area = {
+	9447 9448
+}
+
 taita_hills_area = {
 	1273 9433 9436 9437 9438
 }

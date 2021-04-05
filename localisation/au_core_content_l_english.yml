@@ -144,7 +144,7 @@
  chagga:0 "Chagga"
  kahe:0 "Kahe"
  taveta:0 "Taveta"
- taita:0 "Taita"
+ meru:0 "Meru"
  ruvu_group:0 "Ruvu"
  vidunda:0 "Vidunda"
  gogo:0 "Gogo"
@@ -159,6 +159,7 @@
  burunge:0 "Burunge"
  iraqw:0 "Iraqw"
  gorowa:0 "Gorowa"
+ engaruka:0 "Engaruka"
  sandawe_group:0 "Sandawe"
  sandawe:0 "Sandawe"
  hadza_group:0 "Hadza"
@@ -170,12 +171,23 @@
  nyaturu:0 "Nyaturu"
  nilamba:0 "Iramba"
  isanzu:0 "Ihanzu"
+ mara_group:0 "Mara"
+ sonjo:0 "Sonjo" 
  
  #Kenya
- eastern_cushitic_group:0 "Eastern Cushitic Group"
+ eastern_cushitic_group:0 "Eastern Cushitic"
  sanye:0 "Sanye"
  taita_cushitic:0 "Taita Cushitic"
- 
+ shungwaya_group: "Shungwaya Bantu"
+ shungwaya:0 "Shungwaya"
+ taita:0 "Taita"
+ maasai_group:0 "Maasai"
+ kisongo:0 "Kisongo"
+ loitokitok:0 "Loitokitok"
+ purko:0 "Purko"
+ loita:0 "Loita"
+ serenget:0 "Serenget"
+  
  #Great Lakes
  zinza:0 "Zinza"
 
