@@ -1483,6 +1483,24 @@ pagan = {
 		heretic = { JINI UCHAWI }
 	}
 	
+	thunga = (#AU, known by the Tumbuka as Chikang'ombe
+		color = { 0 99 26 }
+		icon = 32
+		country = {
+			tolerance_heretic = 2
+			global_trade_goods_size_modifier = 0.1
+		}
+		
+		province = {
+			local_missionary_strength = 0.01
+		}
+		country_as_secondary = {
+			production_efficiency = 0.10
+			tolerance_heretic = 1
+		}
+	
+		heretic = { KANDIWONA MFWITI UFITI }
+	}
 	totemism = {
 		color = { 127 115 115 }
 		icon = 13
