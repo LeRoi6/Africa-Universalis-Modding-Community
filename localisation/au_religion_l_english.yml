@@ -38,3 +38,12 @@ thunga_rebels_title: "Religious"
 thunga_rebels_name: "$RELIGION$ Zealots"
 thunga_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers.
 thunga_rebels_army:0 "$RELIGION$ Army"
+enkai:0 "Enkai"
+enkai_religion_desc:1 "Enkai, which is under other variant names, was the supreme god of the Central Kenyan peoples. What stands out from neighboring religions was that Enkai was a monotheistic god, unlike the neighboring Bantu. Engai was believed to be represented by colors. Black or dark blue was the sign of Enkai being happy, while red signifies Enkai being angry. Another significant color was white, which one representation of it was childbirth. The Maasai spiritual leaders, named Laibon, held a high role in their society, and were involved in healing, divination, and prophesying. It's believed by the Maasai that cattle was created by Enkai and that every cattle is rightfully theirs."
+ILASAKUTOK: "Ilasakutok"
+enkai_rebels_demand: "Convert $COUNTRYNAME$"
+enkai_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+enkai_rebels_title: "Religious"
+enkai_rebels_name: "$RELIGION$ Zealots"
+enkai_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers.
+enkai_rebels_army:0 "$RELIGION$ Army"
