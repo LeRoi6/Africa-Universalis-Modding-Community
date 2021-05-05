@@ -1740,7 +1740,15 @@ southern_maasai_area = {
 }
 
 serengeti_area = {
-	9447 9448
+	9447 9448 9451 9452 9453 9454
+}
+
+northern_maasai_area = {
+	4059 9455 9456 9457 9458 9460
+}
+
+ngong_area = {#placeholder name
+	4058
 }
 
 taita_hills_area = {
@@ -1764,7 +1772,7 @@ tanzania_area = { #5
 }
 
 matogoro_area = {
-	4058 9188 9189 9190 9191 9192 9193 9194 9428
+	9188 9189 9190 9191 9192 9193 9194 9428
 }
 
 buha_area = { #5
@@ -1800,7 +1808,7 @@ rwanda_area = { #3
 }
 
 uganda_area = { #3
-	4059 4062 4064 4066
+	4062 4064 4066
 }
 
 bunyoro_area = { #3
