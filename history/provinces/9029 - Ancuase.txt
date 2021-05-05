@@ -3,7 +3,7 @@
 
 culture = nyasa
 religion = shamanism
-capital = "Ancuase" #Lundu - Dzambawe
+capital = "Ancuase"
 trade_goods = unknown
 hre = no
 base_tax = 1
