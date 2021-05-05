@@ -161,20 +161,20 @@ chagga_ideas = {
 	free = yes
 
 
-	chagga_clan_migration = {
+	chagga_clan_migration= {
 	diplomatic_reputation = 1		
 	}
 
 
-	chagga_intensive_agriculture = {
+	chagga_intensive_agriculture= {
 	development_cost = -0.15		
 	}
 
-	chagga_kisusa = {
+	chagga_kisusa= {
 	tolerance_own=2		
 	}
 	
-    chagga_rusi= {
+        chagga_rusi= {
 	recover_army_morale_speed = 0.075		
 	}	
 
@@ -183,7 +183,7 @@ chagga_ideas = {
 	}
 
 
-	chagga_coast_traders = {
+	chagga_coast_traders= {
 	global_trade_goods_size_modifier = 0.1		
 	}
 
@@ -219,24 +219,25 @@ nyamwezi_ideas = {
 	land_attrition = -0.10		
 	}
 
-	nyamwezi_ntemi_ancestors={
+	nyamwezi_ntemi_ancestors {
 	years_of_nationalism = -5		
 	}
 
-    nyamwezi_secret_societies={
+        nyamwezi_secret_societies{
         advisor_pool = 1
-    }
+        }
 
 	nyamwezi_trade_routes= {
 	global_trade_goods_size_modifier=0.10		
 	}
-
+#Mirambo's ascension is outside EU4's time period, but we can speculate someone could unify the nyamwezi
 	nyamwezi_nation= {
-	land_morale = 0.15		#Mirambo's ascension is outside EU4's time period, but we can speculate someone could unify the nyamwezi
+	land_morale = 0.15		
 	}
 
-	nyamwezi_sungusungu= { 
-	legitimacy = 1		#Though created in the 1980s, we can speculate that they could be founded if a Nyamwezi nation existed
+#Though created in the 1980s, we can speculate that they could be founded if a Nyamwezi nation existed
+	nyamwezi_sungusungu= {
+	legitimacy = 1		
 	}
 
 }

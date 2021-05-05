@@ -328,15 +328,15 @@ NSE_ideas = {
 
 	free = yes
 	
-		nse_nyanja_ties= {
+	nse_nyanja_ties= {
 	diplomatic_upkeep = 1	
 	}
 
-		nse_luangwa_valley= {
+	nse_luangwa_valley= {
 	development_cost = -0.15
 	}
 
-		nse_maravi_government= {
+        nse_maravi_government= {
 	autonomy_change_time = -0.33
 	}
 

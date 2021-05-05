@@ -1868,7 +1868,7 @@ province;red;green;blue;x;x
 1867;84;64;32;Freiburg;x
 1868;212;66;79;Augsburg;x
 1869;84;68;126;Zürich;x
-1870;213;70;173;St Gallen;x
+1870;213;70;173;S:t Gallen;x
 1871;85;72;32;Wallis;x
 1872;86;84;126;Ulm;x
 1873;85;76;126;Chur;x
@@ -8960,7 +8960,7 @@ province;red;green;blue;x;x
 8959;91;36;0;Chinde;x
 8960;255;53;66;Linde;x
 8961;19;36;219;Bajone;x
-8962;4;82;249;Morrua;x
+8962;4;82;249;Morrua:x
 8963;3;50;153;Moma;x
 8964;35;50;221;Sangage;x
 8965;32;0;216;Kivolane;x
@@ -9457,7 +9457,7 @@ province;red;green;blue;x;x
 9456;255;150;150;Loliondo;x
 9457;211;101;10;Sonjo;x
 9458;196;107;107;Amboseli;x
-9459;10;225;225;Lake Natron;x
+9459;30;225;225;Lake Natron;x
 9460;196;107;107;Longido;x
 
 
