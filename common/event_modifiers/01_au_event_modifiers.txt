@@ -13,5 +13,5 @@ zim_victorious = {
 }
 lzw_victorious = {
 	infantry_power = 0.1
-	ae_impact: -0.1
+	ae_impact = -0.1
 }

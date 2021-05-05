@@ -1483,7 +1483,7 @@ pagan = {
 		heretic = { JINI UCHAWI }
 	}
 	
-	thunga = (#AU, known by the Tumbuka as Chikang'ombe
+	thunga = {#AU, known by the Tumbuka as Chikang'ombe
 		color = { 0 99 26 }
 		icon = 32
 		country = {
@@ -1502,7 +1502,7 @@ pagan = {
 		heretic = { KANDIWONA MFWITI UFITI }
 	}
 	
-	enkai = (#AU
+	enkai = {#AU
 		color = { 34 66 229 }
 		icon = 33
 		country = {
