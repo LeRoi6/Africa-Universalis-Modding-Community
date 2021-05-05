@@ -190,8 +190,6 @@ chagga_ideas = {
 	chagga_coffee= {
 	production_efficiency = 0.15		
 	}
-<<<<<<< HEAD
-=======
 }
 
 nyamwezi_ideas = {
@@ -241,5 +239,4 @@ nyamwezi_ideas = {
 	legitimacy = 1		#Though created in the 1980s, we can speculate that they could be founded if a Nyamwezi nation existed
 	}
 
->>>>>>> parent of 507f59d (Revert "trying to hunt down a crash")
 }
