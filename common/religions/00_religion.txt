@@ -1501,6 +1501,23 @@ pagan = {
 	
 		heretic = { KANDIWONA MFWITI UFITI }
 	}
+	
+	enkai = (#AU
+		color = { 34 66 229 }
+		icon = 33
+		country = {
+			tolerance_own = 2
+			shock_damage = 0.10
+		}
+		
+		country_as_secondary = {
+			infantry_power = 0.10
+			tolerance_own = 2
+		}
+	
+		heretic = { ILASAKUTOK }
+	}		
+		
 	totemism = {
 		color = { 127 115 115 }
 		icon = 13
