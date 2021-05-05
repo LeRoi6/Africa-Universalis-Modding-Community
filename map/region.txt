@@ -729,7 +729,6 @@ tanzania_region = { #AUMC
 		kilimanjaro_area
 		southern_maasai_area
 		serengeti_area
-		northern_maasai_area
 		
 	}
 	monsoon = {
@@ -747,7 +746,6 @@ kenya_region = { #AUMC
 		kenya_area
 		taita_hills_area
 		mombasa_hinterland_area
-		ngong_area #placeholder name
 		
 	}
 	monsoon = {
