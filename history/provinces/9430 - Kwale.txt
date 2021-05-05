@@ -1,0 +1,15 @@
+#Created by AUMC
+#9430 - Kwale
+native_size = 3
+native_ferocity = 3
+native_hostileness = 2
+culture = sanye
+religion = shamanism
+capital = "Kwale"
+trade_goods = unknown
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 2
+discovered_by = central_african
+discovered_by = east_african

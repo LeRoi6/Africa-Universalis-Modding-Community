@@ -72,6 +72,9 @@
  #Malawi
  nyasa_group:0 "Nyasa"
  nyasa:0 "Chewa"
+ banda:0 "Banda"
+ phiri:0 "Phiri"
+ mano:0 "Mano"
  nsenga:0 "Nsenga"
  tumbuka:0 "Tumbuka"
  batonga:0 "Batonga"
@@ -141,6 +144,7 @@
  chagga:0 "Chagga"
  kahe:0 "Kahe"
  taveta:0 "Taveta"
+ taita:0 "Taita"
  ruvu_group:0 "Ruvu"
  vidunda:0 "Vidunda"
  gogo:0 "Gogo"
@@ -167,6 +171,10 @@
  nilamba:0 "Iramba"
  isanzu:0 "Ihanzu"
  
+ #Kenya
+ eastern_cushitic_group:0 "Eastern Cushitic Group"
+ sanye:0 "Sanye"
+ taita_cushitic:0 "Taita Cushitic"
  
  #Great Lakes
  zinza:0 "Zinza"

@@ -1,0 +1,15 @@
+#Created by AUMC
+#9432 - Bwiti
+native_size = 2
+native_ferocity = 2
+native_hostileness = 2
+culture = sanye
+religion = shamanism
+capital = "Bwiti"
+trade_goods = unknown
+hre = no
+base_tax = 2 
+base_production = 1
+base_manpower = 1
+discovered_by = central_african
+

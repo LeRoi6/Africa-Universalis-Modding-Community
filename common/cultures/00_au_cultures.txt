@@ -470,6 +470,19 @@ nyasa_group = {
 			Achieng Nuru
 		}
 	}
+	
+	banda = {
+	
+	}
+	
+	phiri = {
+	
+	}
+	
+	mano = {
+	
+	}
+	
 	nsenga = {
 		primary = NSE
 		dynasty_names = {
@@ -772,6 +785,9 @@ northeast_bantu_group = {
 	kahe = {
 		primary = KAH
 	}
+	taita = {
+	
+	}
 }
 
 southern_cushitic_group = {
@@ -837,21 +853,6 @@ ruvu_group = {
 }
 
 
-takama_group = {
-	graphical_culture = africangfx
-	nyaturu = {
-	
-	}
-	
-	nilamba = {
-	
-	}
-	
-	isanzu = {
-	
-	}
-}
-
 great_lakes_group = {
 	graphical_culture = africangfx
 	rwandan = {
@@ -884,6 +885,33 @@ great_lakes_group = {
 hadza_group = {
 	graphical_culture = africangfx		
 	hadza = {
+	
+	}
+}
+
+
+takama_group = {
+	graphical_culture = africangfx
+	nyaturu = {
+	
+	}
+	
+	nilamba = {
+	
+	}
+	
+	isanzu = {
+	
+	}
+}
+
+eastern_cushitic_group = {
+	graphical_culture = africangfx		
+	sanye = {
+	
+	}
+	
+	taita_cushitic = {
 	
 	}
 }
