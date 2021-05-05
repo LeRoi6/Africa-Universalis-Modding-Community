@@ -1501,6 +1501,8 @@ pagan = {
 	
 		heretic = { KANDIWONA MFWITI UFITI }
 	}
+<<<<<<< HEAD
+=======
 	
 	enkai = {#AU
 		color = { 34 66 229 }
@@ -1518,6 +1520,7 @@ pagan = {
 		heretic = { ILASAKUTOK }
 	}		
 		
+>>>>>>> parent of 507f59d (Revert "trying to hunt down a crash")
 	totemism = {
 		color = { 127 115 115 }
 		icon = 13
