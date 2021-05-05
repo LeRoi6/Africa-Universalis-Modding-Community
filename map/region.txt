@@ -727,26 +727,6 @@ tanzania_region = { #AUMC
 		northern_pare_area
 		southern_pare_area
 		kilimanjaro_area
-		southern_maasai_area
-		serengeti_area
-		
-	}
-	monsoon = {
-		00.11.01
-		00.12.30
-	}
-	monsoon = {
-		00.01.01
-		00.04.30
-	}
-}
-
-kenya_region = { #AUMC
-	areas = {
-		kenya_area
-		taita_hills_area
-		mombasa_hinterland_area
-		
 	}
 	monsoon = {
 		00.11.01
@@ -787,6 +767,7 @@ central_africa_region = {
 		zambia_area
 		luba_area
 		sankuru_area
+		kenya_area
 		buzinza_area
 		karagwe_area
 		uganda_area

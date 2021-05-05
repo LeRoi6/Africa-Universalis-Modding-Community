@@ -785,7 +785,7 @@ northeast_bantu_group = {
 	kahe = {
 		primary = KAH
 	}
-	meru = {
+	taita = {
 	
 	}
 }
@@ -804,9 +804,6 @@ southern_cushitic_group = {
 	
 	}
 	
-	engaruka = {
-	
-	}
 }
 
 sandawe_group = {
@@ -915,43 +912,6 @@ eastern_cushitic_group = {
 	}
 	
 	taita_cushitic = {
-	
-	}
-}
-
-shungwaya_group = {
-	graphical_culture = africangfx
-	shungwaya = {
-	
-	}
-	
-	taita = {
-	
-	}
-}
-
-mara_group = {
-	graphical_culture = africangfx
-	sonjo = {
-	
-	}
-}
-
-maasai_group = {
-	graphical_culture = africangfx
-	kisongo = {
-	
-	}
-	loitokitok = {
-	
-	}
-	purko = {
-	
-	}
-	loita = {
-	
-	}
-	serenget = {
 	
 	}
 }
