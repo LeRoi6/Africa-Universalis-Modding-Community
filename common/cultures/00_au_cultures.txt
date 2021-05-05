@@ -470,19 +470,15 @@ nyasa_group = {
 			Achieng Nuru
 		}
 	}
-	
 	banda = {
-	
+		
 	}
-	
 	phiri = {
-	
+		
 	}
-	
 	mano = {
-	
+		
 	}
-	
 	nsenga = {
 		primary = NSE
 		dynasty_names = {
@@ -518,7 +514,7 @@ nyasa_group = {
 		}
 	}
 	batonga = {
-
+		
 	}
 	henga = {
 		
@@ -527,7 +523,7 @@ nyasa_group = {
 		
 	}
 	mbamba = {
-	
+		
 	}
 }
 

@@ -1731,7 +1731,7 @@ northern_pare_area = {
 	9386 9387 9388 9389 9390
 }
 
-kilimanjaro_area = (
+kilimanjaro_area = {
 	9391 9392 9393 9394 9395 9396 9398
 }
 
