@@ -1,11 +1,11 @@
 #Created by AUMC
-#9436 - Ndara
-native_size = 2
-native_ferocity = 2
-native_hostileness = 2
-culture = taita_cushitic
+#9440 - Ngasserai
+native_size = 3
+native_ferocity = 4
+native_hostileness = 5
+culture = kisongo
 religion = enkai
-capital = "Ndara"
+capital = "Ngasserai"
 trade_goods = unknown
 hre = no
 base_tax = 2 

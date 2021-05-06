@@ -931,6 +931,12 @@ mara_group = {
 	sonjo = {
 	
 	}
+	ikoma = {
+	
+	}
+	ngorime = {
+	
+	}
 }
 
 maasai_group = {

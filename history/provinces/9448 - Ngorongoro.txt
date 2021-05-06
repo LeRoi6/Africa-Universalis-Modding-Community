@@ -1,0 +1,14 @@
+#Created by AUMC
+#9448 - Ngorongoro
+native_size = 3
+native_ferocity = 5
+native_hostileness = 4
+culture = serenget
+religion = enkai
+capital = "Ngorongoro"
+trade_goods = unknown 
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 2
+discovered_by = central_african

@@ -1,11 +1,11 @@
 #Created by AUMC
-#9436 - Ndara
-native_size = 2
-native_ferocity = 2
-native_hostileness = 2
-culture = taita_cushitic
+#9441 - Ol Doinyo Kisale
+native_size = 5
+native_ferocity = 5
+native_hostileness = 4
+culture = kisongo
 religion = enkai
-capital = "Ndara"
+capital = "Kisale"
 trade_goods = unknown
 hre = no
 base_tax = 2 

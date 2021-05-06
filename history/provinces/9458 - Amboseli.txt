@@ -1,0 +1,14 @@
+#Created by AUMC
+#9458 - Amboseli
+native_size = 4
+native_ferocity = 5
+native_hostileness = 5
+culture = loitokitok
+religion = enkai
+capital = "Amboseli"
+trade_goods = unknown #salt
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 2
+discovered_by = central_african

@@ -1,0 +1,14 @@
+#Created by AUMC
+#9451 - Serengeti
+native_size = 2
+native_ferocity = 5
+native_hostileness = 5
+culture = serenget
+religion = enkai
+capital = "Serengeti"
+trade_goods = unknown 
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+discovered_by = central_african

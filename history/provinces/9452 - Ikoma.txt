@@ -1,0 +1,14 @@
+#Created by AUMC
+#9452 - Ikoma
+native_size = 5
+native_ferocity = 4
+native_hostileness = 3
+culture = ikoma
+religion = waganga
+capital = "Ikoma"
+trade_goods = unknown 
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+discovered_by = central_african

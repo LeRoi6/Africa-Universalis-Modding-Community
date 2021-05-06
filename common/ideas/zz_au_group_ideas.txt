@@ -219,11 +219,11 @@ nyamwezi_ideas = {
 	land_attrition = -0.10		
 	}
 
-	nyamwezi_ntemi_ancestors {
+	nyamwezi_ntemi_ancestors = {
 	years_of_nationalism = -5		
 	}
 
-        nyamwezi_secret_societies{
+        nyamwezi_secret_societies = {
         advisor_pool = 1
         }
 

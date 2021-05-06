@@ -1,0 +1,14 @@
+#Created by AUMC
+#9445 -Engurdoto
+native_size = 3
+native_ferocity = 4
+native_hostileness = 4
+culture = loitokitok
+religion = enkai
+capital = "Sanya"
+trade_goods = unknown #salt
+hre = no
+base_tax = 1
+base_production = 2
+base_manpower = 1
+discovered_by = central_african
