@@ -185,10 +185,13 @@
  taita:0 "Taita"
  maasai_group:0 "Maasai"
  kisongo:0 "Kisongo"
- loitokitok:0 "Loitokitok"
  purko:0 "Purko"
  loita:0 "Loita"
- serenget:0 "Serenget"
+ loikop:0 "Loikop"
+ datooga_group:0 "Datooga"
+ datooga:0 "Datooga"
+ kalenjin_group:0 "Kalenjin"
+ ogiek:0 "Ogiek"
   
  #Great Lakes
  zinza:0 "Zinza"

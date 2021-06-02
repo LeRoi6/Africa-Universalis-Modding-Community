@@ -1,9 +1,9 @@
 #Created by AUMC
-#9445 -Engurdoto
+#9445 - Engurdoto
 native_size = 3
 native_ferocity = 4
 native_hostileness = 4
-culture = loitokitok
+culture = loikop
 religion = enkai
 capital = "Sanya"
 trade_goods = unknown #salt

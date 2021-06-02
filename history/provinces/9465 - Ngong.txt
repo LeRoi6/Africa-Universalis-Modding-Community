@@ -1,0 +1,14 @@
+#Created by AUMC
+#9465 - Ngong
+native_size = 5
+native_ferocity = 5
+native_hostileness = 4
+culture = loikop
+religion = enkai
+capital = "Ngong"
+trade_goods = unknown 
+hre = no
+base_tax = 3
+base_production = 2
+base_manpower = 2
+discovered_by = central_african

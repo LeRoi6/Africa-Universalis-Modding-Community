@@ -3,7 +3,7 @@
 native_size = 3
 native_ferocity = 4
 native_hostileness = 5
-culture = loitokitok
+culture = loikop
 religion = enkai
 capital = "Longido"
 trade_goods = unknown #salt

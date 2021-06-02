@@ -3,7 +3,7 @@
 native_size = 3
 native_ferocity = 5
 native_hostileness = 4
-culture = serenget
+culture = purko
 religion = enkai
 capital = "Ngorongoro"
 trade_goods = unknown 

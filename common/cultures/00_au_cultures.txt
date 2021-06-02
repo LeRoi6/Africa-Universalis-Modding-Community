@@ -939,12 +939,16 @@ mara_group = {
 	}
 }
 
+datooga_group = {
+	graphical_culture = africangfx
+	datooga = {
+	
+	}
+}
+
 maasai_group = {
 	graphical_culture = africangfx
 	kisongo = {
-	
-	}
-	loitokitok = {
 	
 	}
 	purko = {
@@ -953,7 +957,15 @@ maasai_group = {
 	loita = {
 	
 	}
-	serenget = {
+	loikop = {
 	
 	}
+}
+
+kalenjin_group = {
+	graphical_culture = africangfx
+	ogiek = {
+	
+	}
+	
 }

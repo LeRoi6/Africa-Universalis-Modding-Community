@@ -3,7 +3,7 @@
 native_size = 2
 native_ferocity = 4
 native_hostileness = 4
-culture = loitokitok
+culture = kisongo
 religion = enkai
 capital = "Kitumbin"
 trade_goods = unknown 

@@ -3,9 +3,9 @@
 native_size = 2
 native_ferocity = 5
 native_hostileness = 5
-culture = serenget
+culture = datooga
 religion = enkai
-capital = "Serengeti"
+capital = "Fuweid" #Datooga province name - Shilinget
 trade_goods = unknown 
 hre = no
 base_tax = 1
