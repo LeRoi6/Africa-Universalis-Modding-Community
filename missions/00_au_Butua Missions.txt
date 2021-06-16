@@ -141,8 +141,8 @@ rozwi_and_butua_secondary_missions = {
 	generic = no
 	ai = yes
 	potential = {
-		OR={primary_culture=lozvi
-                primary_culture=khami}
+		
+                primary_culture=khami
 	}
 
 	has_country_shield = yes
