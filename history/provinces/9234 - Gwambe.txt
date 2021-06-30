@@ -1,7 +1,7 @@
 #Created by AUMC
 #9234 - Gwambe
 
-culture = gitonga
+culture = wutonga
 religion = mhondoro
 capital = "Gwambe"
 trade_goods = cloth
@@ -9,9 +9,9 @@ hre = no
 base_tax = 2
 base_production = 2
 base_manpower = 2
-owner = WUT
-controller = WUT
-add_core = WUT
+owner = PND
+controller = PND
+add_core = PND
 add_core = GWB
 
 discovered_by = east_african

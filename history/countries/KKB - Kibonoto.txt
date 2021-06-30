@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = tribal_despotism
-primary_culture = vughonu
+primary_culture = chagga
 religion = waganga
 technology_group = central_african
 

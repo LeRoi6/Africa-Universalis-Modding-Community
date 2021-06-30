@@ -79,6 +79,7 @@ africa_superregion = {
 	zimbabwe_region
 	tanzania_region
 	kenya_region
+	swahili_region
 	kongo_region
 	south_africa_region
 	maghreb_region

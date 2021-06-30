@@ -4,7 +4,7 @@
 owner = BZR
 controller = BZR
 add_core = BZR
-culture = gitonga 
+culture = sofala
 religion = sunni
 capital = "Gengareme"
 is_city = yes
