@@ -4,7 +4,7 @@
 owner = CLO
 controller = CLO
 add_core = CLO
-culture = madanda 
+culture = sofala
 religion = sunni
 capital = "Chiloane"
 is_city = yes

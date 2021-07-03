@@ -4,7 +4,7 @@
 owner = MBY
 controller = MBY
 add_core = MBY
-culture = madanda 
+culture = sofala
 religion = sunni
 capital = "Malbuyuni"
 is_city = yes
