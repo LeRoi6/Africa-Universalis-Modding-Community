@@ -94,7 +94,7 @@ country_event = {
 			siege = 1
 		}
 		hidden_effect = {
-			add_country_flag = zim_enlisted_changamire
+			set_country_flag = zim_enlisted_changamire
 		}
 	}	
 	option = {
@@ -277,7 +277,7 @@ country_event = {
 		LZW = { country_event = { id = events_mut.9 days = 1 } } 
 
 		hidden_effect = {
-			add_country_flag = zim_changamire_rebel
+			set_country_flag = zim_changamire_rebel
 		}
 	}	
 }
@@ -339,7 +339,7 @@ country_event = {
 	
 	trigger = {
 		tag = ZIM
-		at_war_with = LZW
+		war_with = LZW
 		had_country_flag = {
 			flag = zim_changamire_rebel
 			days = 730
@@ -415,7 +415,7 @@ country_event = {
 	
 	trigger = {
 		tag = ZIM
-		at_war_with = LZW
+		war_with = LZW
 		had_country_flag = {
 			flag = zim_changamire_rebel
 			days = 730
