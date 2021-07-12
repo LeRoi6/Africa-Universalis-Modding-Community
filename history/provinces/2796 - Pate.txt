@@ -3,8 +3,8 @@
 owner = PTE
 controller = PTE
 add_core = PTE
-culture = waamu
-religion = sunni
+culture = kiamu
+religion = ibadi
 capital = "Pate"
 is_city = yes
 base_manpower = 4

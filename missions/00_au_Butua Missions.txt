@@ -11,26 +11,28 @@ butua_main_missions = {
 	but_indipendence_from_mutapa= { 
 		icon=mission_conquer_benin
 
-                required_missions = {  
+        required_missions = {  
                  
-                }
-		  position=1
+        }
+		position=1
 
 		trigger = {
 		NOT={is_vassal = yes}	
 		}
 		effect = {
 		add_prestige = 20
-                add_legitimacy=10
-add_country_modifier = { 
-    name = butua_indipendence
-    duration = 7300  
+        add_legitimacy = 10
+	
+			
+		add_country_modifier = { 
+			name = butua_indipendence
+			duration = 7300  
 
-}	
+				}	
 			}
-		}
+}
 
-	but_control_gold_mines= { 
+but_control_gold_mines= { 
 	icon=mission_high_income
 
 		required_missions = {  
@@ -46,11 +48,11 @@ add_country_modifier = {
     name = zimbabwe_gold_mine_control
     duration = 14600  
 
-}	
+				}	
 			}
-		}
+}
 
-	but_subjugate_mutapa= { 
+but_subjugate_mutapa= { 
 	
                 icon=mission_invade_kanem
 		   required_missions = {  
@@ -70,7 +72,7 @@ add_country_modifier = {
 
 
 
-	but_sphere_of_influence= { 
+but_sphere_of_influence= { 
 		
           icon=mission_conquer_benin
 		  required_missions = {  
@@ -86,13 +88,13 @@ add_country_modifier = {
     name = butua_sphere_of_influence
     duration = -1 
 
-}	
+				}	
 			}
-		}
+}
 
 
 
-	but_empire= { 
+but_empire= { 
 		
           icon=mission_african_soldier
 		required_missions = {  
@@ -131,7 +133,7 @@ add_country_modifier = {
     name = butua_firearms
     duration = -1 
 
-}	
+				}	
 			}
 		}
 }
@@ -174,14 +176,14 @@ rozwi_and_butua_secondary_missions = {
 		
 		trigger = {
 		workshop=5
-                marketplace=5	
+        marketplace=5	
 		}
 		effect = {
                    add_country_modifier = { 
     name = butua_trade
     duration = 14600 
 
-}			
+				}			
 			}
 		}
 
@@ -197,7 +199,7 @@ rozwi_and_butua_secondary_missions = {
 		num_of_owned_provinces_with = {
 	value = 2
         has_port=yes
-}	
+		}	
 		}
 		effect = {
 		add_dip_power=100	
@@ -215,18 +217,19 @@ rozwi_and_butua_secondary_missions = {
 		
 		trigger = {
 		1448 = { #Zanzibar
-	trade_share = {
-		country = ROOT
-		share = 30}
-}	
+				trade_share = {
+					country = ROOT
+				share = 30
+				}
+			}	
 		}
 		effect = {
 		add_dip_power=100
-                add_mercantilism=3	
+        add_mercantilism=3	
 			}
-		}
+}
 
-	but_modernization= { 
+but_modernization= { 
 		
       icon= scramble_for_africa
 		required_missions = {  
@@ -239,11 +242,11 @@ rozwi_and_butua_secondary_missions = {
                 has_institution = renaissance	
 		}
 		effect = {
-		                   add_country_modifier = { 
+	add_country_modifier = { 
     name = butua_modernization
     duration = 14600 
 
-}	
+				}	
 			}
 		}
 }

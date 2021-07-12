@@ -186,7 +186,6 @@ country_event = {
 				adm = 3
 				dip = 3
 				mil = 3
-				fixed = yes
 			}
 			define_ruler_to_general = {
 				fire = 4
@@ -367,7 +366,7 @@ country_event = {
 	option = {
 		name = "events_mut.10.a" #Mutapa has prevailed!
 		add_stability = 2
-		remove_country_modifier = mut_usurped_throne
+		remove_country_modifier = zim_usurped_throne
 		change_adm = 1
 		change_dip = 1
 		white_peace = LZW
