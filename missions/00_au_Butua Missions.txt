@@ -45,7 +45,7 @@ but_control_gold_mines= {
 		}
 		effect = {
 		add_country_modifier = { 
-    name = zimbabwe_gold_mine_control
+    name = butua_gold_mine_control
     duration = 14600  
 
 				}	

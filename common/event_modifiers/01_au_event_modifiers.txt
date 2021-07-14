@@ -15,3 +15,13 @@ lzw_victorious = {
 	infantry_power = 0.1
 	ae_impact = -0.1
 }
+
+au_forbid_trade = {
+land_morale = 0.10
+tolerance_heathen = -2
+}
+
+au_allowed_trade = {
+trade_efficiency = 0.1
+tolerance_heathen = 1
+}

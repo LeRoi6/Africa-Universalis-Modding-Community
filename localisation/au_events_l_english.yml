@@ -44,12 +44,23 @@
  au_events_zim.1.d: "After 250 years of prominence, Great Zimbabwe had declined to the point where it was no longer used as a trading center. Due to the rise of Mutapa and its gold mines, as well as the better access of the Zambezi River, Great Zimbabwe was no longer used for trade and was for all intents and purposes abandoned. However, the site would stand as a relic of an old era, and would eventually become a holy site."
  au_events_zim.1.a: "What a sad state it has become"
 
+ #General Zimbabwe Events by Valerio C
+ au_events_zim.2.t: "Arrival of Portuguese Traders"
+ au_events_zim.2.d: "White-skinned strangers have recently came to the court of [Root.Monarch.GetName]. They claim to come from the faraway kingdom of Portugal, and apparently want to trade with us. They have strange weapons which allow them to kill from impressive distances, as well as other interesting commodities. However some in the court think that it might be dangerous to allow strangers into our kingdom. It is now up to [Root.Monarch.GetName] to decide."
+ au_events_zim.2.a: "We cannnot trust them"
+ au_events_zim.2.b: "They are welcome!"
+
 #Modifiers
  zim_usurped_throne: "Usurped Throne"
  lzw_changamires_rebellion: "Rise of Changamire"
  zim_victorious: "Defeated Changamire"
  lzw_victorious: "Success of Changamire"
+ au_allowed_trade: "Allowed trade with the Portuguese"
+ au_forbid_trade: "Denied trade with the Portuguese"
+ au_opinion_forbids_trade: "Forbids trade between us"
+ au_opinion_allows_trade: "Allows trade between us"
  
 #Tooltips
  zim_oust_attempt_changamire: "§YWe will attempt to oust Changamire.§!"
  zim_win_loss_reqs: "§RMutapa must defend themselves from Changamire by either defeating him in the war or Changamire dying. If Chikuyo dies before Changamire or Mutapa loses control of their capital for a certain period of time, Lozvi will annex Mutapa.§R"
+ au_allow_trade_tooltip:"§RPortuguese trades will bring wealth to our kingdom, but in time they may become difficult to control§"

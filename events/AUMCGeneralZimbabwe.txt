@@ -29,3 +29,50 @@ country_event = {
 		
 }
 
+
+#Arrival of Portuguese Traders
+country_event = {
+	id = au_events_zim.2
+	title ="au_events_zim.2.t"
+	desc = "au_events_zim.2.d"
+	picture = COLONIZATION_eventPicture
+	
+	trigger = {
+	}
+	
+	mean_time_to_happen = {
+		months = 0
+	}	
+	
+	option = {
+		name = "au_events_zim.2.a" #Forbid trade with Portugal
+		
+	reverse_add_opinion = {
+   who = POR
+   modifier = au_opinion_forbids_trade}
+	
+	add_country_modifier = { 
+    name = au_forbid_trade
+    duration = -1  }
+	
+		reverse_add_casus_belli = {
+   target = POR
+    type = cb_border_war 
+    months = 24}
+	}
+		option = {
+		name = "au_events_zim.2.b" #Allow trade with Portugal
+		custom_tooltip = au_allow_trade_tooltip
+		
+	reverse_add_opinion = {
+   who = POR
+    modifier = au_opinion_allows_trade}
+	
+	add_country_modifier = { 
+    name = au_allowed_trade
+    duration = -1  }
+	}
+
+}
+
+

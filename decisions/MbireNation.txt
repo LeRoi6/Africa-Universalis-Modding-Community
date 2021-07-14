@@ -95,11 +95,13 @@ country_decisions = {
 
 			
 			
-			
+			}
 			set_country_flag = formed_mbire_flag
 			
 			
 
-		}
+		
 	}
+}
+
 }

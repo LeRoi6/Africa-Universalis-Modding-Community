@@ -1,0 +1,14 @@
+
+##### Africa universalis opinion modifiers
+
+au_opinion_allows_trade = {
+	opinion = 75
+	years = 25
+	yearly_decay = 3
+}
+
+au_opinion_forbids_trade = {
+	opinion = -75
+	years = 25
+	yearly_decay = 3
+}
