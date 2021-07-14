@@ -138,6 +138,8 @@ KMW = "countries/Kwimba.txt"
 MWN = "countries/Ng'wanza.txt"
 NGW = "countries/Ng'wagala.txt"
 USB = "countries/Sumbwa.txt"
+MKE = "countries/Makonde.txt"
+NGI = "countries/Ngindo.txt"
 
 #Great Lakes
 BBZ = "countries/Buzinza.txt"

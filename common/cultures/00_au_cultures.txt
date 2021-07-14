@@ -582,6 +582,7 @@ yao_group = {
 		}
 	}
 	makonde = {
+		primary = MKE
 		dynasty_names = { Angoni Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa Mtika Nyanjagha Chiluba }
 		male_names = {
 			Gallo Bano Maurusa Tondo Mcepera Mcocoma Sosola Muzura Chunzo Bakili Capampo Chicanda 
@@ -610,7 +611,7 @@ yao_group = {
 	}
 	
 	ngindo = {
-	
+		primary = NGI
 	}
 	
 	ndendeule = {
