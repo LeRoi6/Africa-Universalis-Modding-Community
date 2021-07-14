@@ -20,12 +20,13 @@ country_event = {
 	
 	option = {
 		name = "au_events_zim.1.a" #What a sad state it has become
-		1184 = (
+		1184 = {
 			add_base_tax = -3
 			add_base_production = -3
 			add_base_manpower = -3
 			}
 		add_prestige = -10
+	}
 		
 }
 
@@ -36,41 +37,45 @@ country_event = {
 	title ="au_events_zim.2.t"
 	desc = "au_events_zim.2.d"
 	picture = COLONIZATION_eventPicture
-	
+	fire_only_once = yes
 	trigger = {
 	}
 	
 	mean_time_to_happen = {
-		months = 0
+		months = 1
 	}	
+	
 	
 	option = {
 		name = "au_events_zim.2.a" #Forbid trade with Portugal
-		
-	reverse_add_opinion = {
-   who = POR
-   modifier = au_opinion_forbids_trade}
+		reverse_add_opinion = {
+			who = POR
+			modifier = au_opinion_forbids_trade
+		}
 	
-	add_country_modifier = { 
-    name = au_forbid_trade
-    duration = -1  }
+		add_country_modifier = { 
+			name = au_forbid_trade
+			duration = -1  
+		}
 	
 		reverse_add_casus_belli = {
-   target = POR
-    type = cb_border_war 
-    months = 24}
+			target = POR
+			type = cb_border_war 
+			months = 24
+		}
 	}
-		option = {
+	option = {
 		name = "au_events_zim.2.b" #Allow trade with Portugal
-		custom_tooltip = au_allow_trade_tooltip
-		
-	reverse_add_opinion = {
-   who = POR
-    modifier = au_opinion_allows_trade}
+		reverse_add_opinion = {
+			who = POR
+			modifier = au_opinion_allows_trade
+		}
 	
-	add_country_modifier = { 
-    name = au_allowed_trade
-    duration = -1  }
+		add_country_modifier = { 
+			name = au_allowed_trade
+			duration = -1  
+		}
+		custom_tooltip = au_allow_trade_tooltip
 	}
 
 }

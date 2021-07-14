@@ -251,7 +251,7 @@
  KKO:0 "Kikoin"
  KKO_ADJ:0 "Kikoin"
  KAH:0 "Kahe"
- KAH_ADJ:0 "Kahian"
+ KAH_ADJ:0 "Kahe"
  TAV:0 "Taveta"
  TAV_ADJ:0 "Tavetan"
  KUM:0 "Bukumbi"
@@ -266,6 +266,10 @@
  NGW_ADJ:0 "Ng'wagalan"
  USB:0 "Usumbwa"
  USB_ADJ:0 "Usumbwan"
+ MKE:0 "Makonde"
+ MKE_ADJ:0 "Makonde"
+ NGI:0 "Ngindo"
+ NGI_ADJ:0 "Ngindoan"
  
  #Great Lakes
  BBZ:0 "Bubinza"
