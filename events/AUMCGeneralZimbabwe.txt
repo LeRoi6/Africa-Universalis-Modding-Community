@@ -37,8 +37,14 @@ country_event = {
 	title ="au_events_zim.2.t"
 	desc = "au_events_zim.2.d"
 	picture = COLONIZATION_eventPicture
-	fire_only_once = yes
+	
 	trigger = {
+	NOT={has_country_modifier = au_allowed_traders}
+	#is_neighbor=POR
+	OR={
+	capital_scope={region=east_africa_region}
+	capital_scope={region=zimbabwe_region}
+	}
 	}
 	
 	mean_time_to_happen = {
@@ -54,7 +60,7 @@ country_event = {
 		}
 	
 		add_country_modifier = { 
-			name = au_forbid_trade
+			name = au_forbid_traders
 			duration = -1  
 		}
 	
@@ -72,7 +78,7 @@ country_event = {
 		}
 	
 		add_country_modifier = { 
-			name = au_allowed_trade
+			name = au_allowed_traders
 			duration = -1  
 		}
 		custom_tooltip = au_allow_trade_tooltip
@@ -81,3 +87,222 @@ country_event = {
 }
 
 
+#Portuguese request prazos
+country_event = {
+	id = au_events_zim.3
+	title = "au_events_zim.3.t"
+	desc = "au_events_zim.3.d"
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	trigger = {
+	#is_neighbor=POR
+    has_country_modifier = au_allowed_traders
+	NOT={ has_country_modifier=au_portuguese_prazos}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}	
+	
+	
+	option = {
+		name = "au_events_zim.3.a" #Allow the establishment of prazos
+				reverse_add_opinion = {
+			who = POR
+			modifier = au_opinion_allows_prazos}
+	
+		add_country_modifier = { 
+			name = au_portuguese_prazos
+			duration = -1  }
+		add_years_of_income=3
+		custom_tooltip = au_prazos_tooltip
+	}
+	option = {
+		name = "au_events_zim.3.b" #Forbid the establishment of prazos
+			reverse_add_opinion = {
+			who = POR
+			modifier = au_opinion_forbids_prazos}
+		
+			reverse_add_casus_belli = {
+			target = POR
+			type = cb_border_war 
+			months = 24}
+}
+
+
+#Portuguese firearms
+country_event = {
+	id = au_events_zim.4
+	title ="au_events_zim.4.t"
+	desc = "au_events_zim.4.d"
+	picture = 
+	
+	trigger = {
+    has_country_modifier = au_allowed_traders
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}	
+	
+	
+	option = {
+		name = "au_events_zim.4.a" #
+		
+	}
+	option = {
+		name = "au_events_zim.4.b" #
+	
+}
+
+#Portuguese prazero becomes autonomous
+country_event = {
+	id = au_events_zim.5
+	title ="au_events_zim.5.t"
+	desc = "au_events_zim.5.d"
+	picture = 
+	
+	trigger = {
+    has_country_modifier = au_allowed_traders
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}	
+	
+	
+	option = {
+		name = "au_events_zim.5.a" #
+		
+	}
+	option = {
+		name = "au_events_zim.5.b" #
+	
+}
+
+
+#Slave trade destabilizes region
+country_event = {
+	id = au_events_zim.6
+	title ="au_events_zim.6.t"
+	desc = "au_events_zim.6.d"
+	picture = 
+	
+	trigger = {
+    has_country_modifier = au_allowed_traders
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}	
+	
+	
+	option = {
+		name = "au_events_zim.6.a" #
+		
+	}
+	option = {
+		name = "au_events_zim.6.b" #
+	
+}
+
+#Portuguese attempt a coup
+country_event = {
+	id = au_events_zim.7
+	title ="au_events_zim.7.t"
+	desc = "au_events_zim.7.d"
+	picture = 
+	
+	trigger = {
+    has_country_modifier = au_allowed_traders
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}	
+	
+	
+	option = {
+		name = "au_events_zim.7.a" #
+		
+	}
+	option = {
+		name = "au_events_zim.4.b" #
+	
+}
+
+
+#Portuguese alliance offer
+country_event = {
+	id = au_events_zim.8
+	title ="au_events_zim.8.t"
+	desc = "au_events_zim.8.d"
+	picture = 
+	
+	trigger = {
+    has_country_modifier = au_allowed_traders
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}	
+	
+	
+	option = {
+		name = "au_events_zim.8.a" #
+		
+	}
+	option = {
+		name = "au_events_zim.8.b" #
+	
+}
+
+#Prazero separates from the country
+country_event = {
+	id = au_events_zim.9
+	title ="au_events_zim.9.t"
+	desc = "au_events_zim.9.d"
+	picture = 
+	
+	trigger = {
+    has_country_modifier = au_allowed_traders
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}	
+	
+	
+	option = {
+		name = "au_events_zim.9.a" #
+		
+	}
+	option = {
+		name = "au_events_zim.9.b" #
+	
+}
+
+#Portuguese intervene in our war
+country_event = {
+	id = au_events_zim.10
+	title ="au_events_zim.10.t"
+	desc = "au_events_zim.10.d"
+	picture = 
+	
+	trigger = {
+    has_country_modifier = au_allowed_traders
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}	
+	
+	
+	option = {
+		name = "au_events_zim.10.a" #
+		
+	}
+	option = {
+		name = "au_events_zim.10.b" #
+	
+}
