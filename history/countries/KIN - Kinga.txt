@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = kinga
+religion = waganga
+technology_group = central_african
+unit_type = sub_saharan
+capital = 4041
+
+
+
+1440.1.1 = {
+	monarch = {
+		name = "Lwenbe"
+		dynasty = "Kinga"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+

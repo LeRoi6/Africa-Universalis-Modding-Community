@@ -1,0 +1,17 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = nyamwanga
+religion = waganga
+technology_group = central_african
+
+unit_type = sub_saharan
+capital = 9472
+1444.1.1 = {
+	monarch = {
+		name = "Musyani" #Founder claiming to be from Luba. Date unknown, but it seems like events that involve Nyamwanga happened before the Ngonde, so this will work.
+		dynasty = "Msiani"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

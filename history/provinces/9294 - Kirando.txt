@@ -1,0 +1,15 @@
+#Created by AUMC
+#9294 - Kirando
+
+culture = fipa
+religion = waganga
+capital = "Kirando"
+trade_goods = iron
+hre = no
+base_tax = 3
+base_production = 2
+base_manpower = 2
+owner = FIP
+controller = FIP
+add_core = FIP
+discovered_by = central_african

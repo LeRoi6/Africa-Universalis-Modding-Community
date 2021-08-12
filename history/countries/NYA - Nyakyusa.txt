@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = nyiha
+religion = waganga
+technology_group = central_african
+unit_type = sub_saharan
+capital = 9182
+
+
+
+1440.1.1 = {
+	monarch = {
+		name = "Mwaihojo"
+		dynasty = "Abilema"
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+

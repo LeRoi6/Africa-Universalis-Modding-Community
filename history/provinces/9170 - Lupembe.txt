@@ -4,12 +4,12 @@
 culture = bena
 religion = waganga
 capital = "Lupembe"
-trade_goods = unknown
+trade_goods = livestock
 hre = no
 base_tax = 2
 base_production = 1
 base_manpower = 1
-native_size = 6
-native_ferocity = 6
-native_hostileness = 4
+owner = BEA
+controller = BEA
+add_core = BEA
 discovered_by = central_african

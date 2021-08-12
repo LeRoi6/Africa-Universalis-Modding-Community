@@ -32,6 +32,11 @@
  NSE_ADJ:0 "Nsengan"
  MSJ:0 "Msinja"
  MSJ_ADJ:0 "Msinjan"
+ LAM:0 "Sikwese" #Would become Lambya
+ LAM_ADJ:0 "Sikwese" #Lambyan
+ SKW:0 "Silumbu" #Would become Sukwa
+ SKW_ADJ:0 "Silumbu" #Sukwan
+ 
  #Makua
  KAO:0 "Karoa"
  KAO_ADJ:0 "Karoan"
@@ -270,6 +275,37 @@
  MKE_ADJ:0 "Makonde"
  NGI:0 "Ngindo"
  NGI_ADJ:0 "Ngindoan"
+ BEA:0 "Bena"
+ BEA_ADJ:0 "Benan"
+ KIN: "Kinga"
+ KIN_ADJ:0 "Kingan"
+ KIS:0 "Kisi"
+ KIS_ADJ:0 "Kisi"
+ NDA:0 "Nyika" #Would become Ndali
+ NDA_ADJ:0 "Nyikan" #Ndalian
+ FIP:0 "Fipa"
+ FIP_ADJ:0 "Fipan"
+ LYN:0 "Lyangalile"
+ LYN_ADJ:0 "Lyangalilian"
+ NKA:0 "Nkansi"
+ NKA_ADJ:0 "Nkansi"
+ MTN:0 "Matengo"
+ MTN_ADJ:0 "Matengoan"
+ NYA:0 "Abilema" #Would become Nyakyusa
+ NYA_ADJ:0 "Abileman" #Nyakyusan
+ NYH:0 "Nyiha"
+ NYH_ADJ:0 "Nyihan"
+ PGW:0 "Pangwa"
+ PGW_ADJ:0 "Pangwan"
+ NYM:0 "Nyamwanga"
+ NYM_ADJ:0 "Nyamwangan"
+ WND:0 "Wanda"
+ WND_ADJ:0 "Wandan"
+ RGU:0 "Rungu"
+ RGU_ADJ:0 "Rungu"
+ SNG:0 "Sangu"
+ SNG_ADJ:0 "Sangu"
+ 
  
  #Great Lakes
  BBZ:0 "Bubinza"

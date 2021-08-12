@@ -1,0 +1,17 @@
+#Created by AUMC
+#9473 - Misuku
+
+owner = SKW
+controller = SKW
+add_core = SKW
+culture = nyiha
+religion = waganga
+capital = "Misuku"
+is_city = yes
+base_manpower = 1
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 2
+
+discovered_by = central_african

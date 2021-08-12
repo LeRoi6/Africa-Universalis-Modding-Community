@@ -1,15 +1,15 @@
 #Created by AUMC
-#9167 - Mugoda Mutitu
+#9167 - Ikilavugi
 
 culture = bena
 religion = waganga
 capital = "Ikilavugi"
-trade_goods = unknown
+trade_goods = iron
 hre = no
 base_tax = 3
 base_production = 3
 base_manpower = 2
-native_size = 3
-native_ferocity = 8
-native_hostileness = 5
+owner = BEA
+controller = BEA
+add_core = BEA
 discovered_by = central_african

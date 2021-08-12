@@ -623,7 +623,7 @@ yao_group = {
 	}
 	
 	matengo = {
-	
+		primary = MTN
 	}
 }
 
@@ -701,14 +701,19 @@ bena_kinga_group = {
 	}
 	
 	bena = {
+		primary = BEA
+	}
 	
+	kinga = {
+		primary = KIN
 	}
 	
 	pangwa = {
-	
+		primary = PGW
 	}
 	
 	kisi = {
+		primary = KIS
 	
 	}
 	
@@ -721,15 +726,31 @@ bena_kinga_group = {
 rukwa_group = {
 	graphical_culture = africangfx
 	fipa = {
-	
+		primary = FIP
 	}
-	
 	nyakyusa = {
-	
+		primary = NYA
 	}
-	
 	safwa = {
 	
+	}
+	nyamwanga = {
+		primary = NYM
+	}
+	lambya = {
+		primary = LAM
+	}
+	ndali = {
+		primary = NDA
+	}
+	nyiha = {
+		primary = NYH
+	}
+	sukwa = {
+		primary = SNG
+	}
+	rungu = {
+		primary = RGU
 	}
 
 }

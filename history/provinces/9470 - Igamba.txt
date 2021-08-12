@@ -1,0 +1,17 @@
+#Created by AUMC
+#9470 - Igamba
+
+owner = NDA
+controller = NDA
+add_core = NDA
+culture = nyiha
+religion = waganga
+capital = "Igamba"
+is_city = yes
+base_manpower = 1
+trade_goods = iron
+hre = no
+base_tax = 2
+base_production = 2
+
+discovered_by = central_african

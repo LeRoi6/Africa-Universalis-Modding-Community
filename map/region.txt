@@ -711,6 +711,8 @@ tanzania_region = { #AUMC
 		hehe_area
 		mgunda_mkali_area
 		rukwa_area
+		ikombe_area
+		mbozi_area
 		makonde_area
 		nguru_area
 		hanang_area

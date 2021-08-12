@@ -1,0 +1,17 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = nyiha
+religion = waganga
+technology_group = central_african
+
+unit_type = sub_saharan
+capital = 9473
+1444.1.1 = {
+	monarch = {
+		name = "Salimu" 
+		dynasty = "Silumbu"
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}

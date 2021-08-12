@@ -1,11 +1,11 @@
 #Created by AUMC
-#9092 - Chilumba
+#9093 - Chitipa
 
-owner = TBK
-controller = TBK
-add_core = TBK
-culture = tumbuka
-religion = shamanism #Fetishism
+owner = LAM
+controller = LAM
+add_core = LAM
+culture = nyiha
+religion = waganga
 capital = "Chitipa"
 is_city = yes
 base_manpower = 2

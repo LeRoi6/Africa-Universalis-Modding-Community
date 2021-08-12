@@ -1,0 +1,16 @@
+#Ngonde
+
+owner = TBK
+controller = TBK
+add_core = TBK
+culture = tumbuka
+religion = shamanism #Fetishism
+capital = "Mbande"
+is_city = yes
+base_manpower = 3 
+trade_goods = livestock
+hre = no
+base_tax = 4 
+base_production = 3
+
+discovered_by = central_african
