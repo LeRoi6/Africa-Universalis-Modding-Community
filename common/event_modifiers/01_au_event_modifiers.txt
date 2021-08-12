@@ -17,12 +17,21 @@ lzw_victorious = {
 	ae_impact = -0.1
 }
 
-au_forbid_trade = {
+au_forbid_traders = {
 	land_morale = 0.10
 	tolerance_heathen = -2
 }
 
-au_allowed_trade = {
+au_allowed_traders = {
 	trade_efficiency = 0.1
 	tolerance_heathen = 1
+}
+
+au_portuguese_prazos = {
+ 	trade_efficiency = 0.2
+	merchants = 1
+	technology_cost = -0.1
+    idea_cost=-0.1
+	global_autonomy = 0.05
+	legitimacy=-0.5
 }

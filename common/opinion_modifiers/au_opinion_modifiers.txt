@@ -12,3 +12,15 @@ au_opinion_forbids_trade = {
 	years = 25
 	yearly_decay = 3
 }
+
+au_opinion_forbids_prazos={
+   opinion=-100
+   years=25
+   yearly_decay=4
+}
+
+au_opinion_allows_prazos={
+      opinion=50
+   years=25
+   yearly_decay=2
+}
