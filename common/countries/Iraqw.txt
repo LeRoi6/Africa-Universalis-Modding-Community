@@ -1,0 +1,60 @@
+#Country Name: Please seefilename.
+
+graphical_culture = africangfx
+
+color = {205 205 155}
+
+historical_idea_groups = {
+	trade_ideas
+	offensive_ideas
+	defensive_ideas
+	religious_ideas
+	influence_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+}
+
+historical_units = {
+	african_spearmen
+	bantu_tribal_warfare
+	bantu_plains_warfare
+	bantu_gunpowder_warfare
+	westernized_bantu
+	african_western_franchise_warfare
+	african_somali_cavalry
+	african_abyssinian_cavalry
+	african_abyssinian_light_cavalry
+	african_hussar
+	african_dragoon			
+}
+
+
+monarch_names = {  
+	"Makame #0" = 20
+	"Madi  #0" = 20
+	"Kombo  #0" = 20
+	"Mkuu #0" = 20
+	"Luti #0" = 20
+	
+	"Kondwani #0" = -1
+	"Kumbukani #0" = -1 
+	"Kunto  #0" = -1
+	"Lerato  #0" = -1
+	"Lesedi #0" = -1
+}
+
+leader_names = {
+	Yomba
+	Jumbe
+	Kawawe
+	Dato
+	Sokoine
+	Suja
+}
+
+ship_names = {
+	Mlima moto moshi homu ukungu nyota
+	jua maji mwezi mnyama samaki ndege
+	mbwa nyoka ua damu
+}

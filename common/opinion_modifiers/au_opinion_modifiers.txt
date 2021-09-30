@@ -24,3 +24,15 @@ au_opinion_allows_prazos={
    years=25
    yearly_decay=2
 }
+
+au_opinion_portuguese_approval={
+   opinion=30
+   years=15
+   yearly_decay=2
+}
+
+au_opinion_portuguese_coup={
+   opinion=-100
+   years=50
+   yearly_decay=2
+}

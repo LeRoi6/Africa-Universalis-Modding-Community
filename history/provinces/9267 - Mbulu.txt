@@ -12,3 +12,8 @@ base_tax = 2
 base_production = 3
 base_manpower = 2
 discovered_by = central_african
+1444.1.1 = {
+	owner = IRA
+	controller = IRA
+	add_core = IRA
+}

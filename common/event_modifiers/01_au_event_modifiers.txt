@@ -35,3 +35,11 @@ au_portuguese_prazos = {
 	global_autonomy = 0.05
 	legitimacy=-0.5
 }
+
+au_portuguese_firearms = {
+    fire_damage=0.20
+	fire_damage_received=-0.10
+	mil_technology_cost=-0.10
+	global_tax_modifier=-0.10
+	
+}

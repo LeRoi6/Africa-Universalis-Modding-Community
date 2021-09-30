@@ -40,6 +40,7 @@ country_event = {
 	
 	trigger = {
 	NOT={has_country_modifier = au_allowed_traders}
+	NOT={has_country_modifier = au_forbid_traders}
 	#is_neighbor=POR
 	OR={
 	capital_scope={region=east_africa_region}
@@ -61,7 +62,7 @@ country_event = {
 	
 		add_country_modifier = { 
 			name = au_forbid_traders
-			duration = -1  
+			duration = 3600  
 		}
 	
 		reverse_add_casus_belli = {
@@ -129,16 +130,19 @@ country_event = {
 			months = 24}
 }
 
+}
+
 
 #Portuguese firearms
 country_event = {
 	id = au_events_zim.4
 	title ="au_events_zim.4.t"
 	desc = "au_events_zim.4.d"
-	picture = 
+	picture = ADVISOR_eventPicture
 	
 	trigger = {
     has_country_modifier = au_allowed_traders
+	NOT={has_country_modifier=au_portuguese_firearms}
 	}
 	
 	mean_time_to_happen = {
@@ -147,23 +151,29 @@ country_event = {
 	
 	
 	option = {
-		name = "au_events_zim.4.a" #
-		
+		name = "au_events_zim.4.a" #Adopt Portuguese Firearms
+		add_country_modifier = { 
+			name = au_portuguese_firearms
+			duration = -1  }
+			add_legitimacy=-5
 	}
 	option = {
-		name = "au_events_zim.4.b" #
-	
-}
+		name = "au_events_zim.4.b" #Refuse Portuguese Aid
+	   add_mil_power=-50
+	   }
+	   
+	   }
 
 #Portuguese prazero becomes autonomous
-country_event = {
+province_event = {
 	id = au_events_zim.5
 	title ="au_events_zim.5.t"
 	desc = "au_events_zim.5.d"
-	picture = 
+	picture = COURT_eventPicture
 	
 	trigger = {
-    has_country_modifier = au_allowed_traders
+	NOT={is_capital = yes}
+    owner={has_country_modifier = au_portuguese_prazos}
 	}
 	
 	mean_time_to_happen = {
@@ -172,24 +182,39 @@ country_event = {
 	
 	
 	option = {
-		name = "au_events_zim.5.a" #
-		
+		name = "au_events_zim.5.a" #We cannot tolerate this!
+		 	 	ROOT =  {
+			spawn_rebels = {
+    type = particularist_rebels
+    size = 3}
 	}
-	option = {
-		name = "au_events_zim.5.b" #
 	
+add_adm_power=-100
+}
+
+
+
+	option = {
+		name = "au_events_zim.5.b" #Give him autonomy
+	
+		add_local_autonomy = 50	
+	
+		}
+
+
 }
 
 
 #Slave trade destabilizes region
-country_event = {
+province_event = {
 	id = au_events_zim.6
 	title ="au_events_zim.6.t"
 	desc = "au_events_zim.6.d"
-	picture = 
+	picture = BORDER_TENSION_eventPicture
 	
 	trigger = {
-    has_country_modifier = au_allowed_traders
+	NOT={is_capital = yes}
+   owner={has_country_modifier = au_portuguese_prazos}
 	}
 	
 	mean_time_to_happen = {
@@ -198,12 +223,32 @@ country_event = {
 	
 	
 	option = {
-		name = "au_events_zim.6.a" #
-		
+		name = "au_events_zim.6.a" #We cannot do anything
+
+		add_devastation = 5
+		add_local_autonomy=50
+		change_trade_goods = slaves
 	}
 	option = {
-		name = "au_events_zim.6.b" #
-	
+		name = "au_events_zim.6.b" #We will change our policy 
+		custom_tooltip = au_prazos_removal_tooltip
+		
+	    add_devastation = 5
+		add_local_autonomy=50
+		change_trade_goods = slaves
+		
+		owner={remove_country_modifier = au_portuguese_prazos	
+			
+			reverse_add_opinion = {
+			who = POR
+			modifier = au_opinion_forbids_prazos}
+			
+			reverse_add_casus_belli = {
+			target = POR
+			type = cb_border_war 
+			months = 24}
+		}
+		}
 }
 
 #Portuguese attempt a coup
@@ -211,10 +256,12 @@ country_event = {
 	id = au_events_zim.7
 	title ="au_events_zim.7.t"
 	desc = "au_events_zim.7.d"
-	picture = 
+	picture = REVOLUTION_eventPicture
 	
 	trigger = {
     has_country_modifier = au_allowed_traders
+	#NOT={army_size = POR}
+	#is_neighbor=POR
 	}
 	
 	mean_time_to_happen = {
@@ -223,12 +270,40 @@ country_event = {
 	
 	
 	option = {
-		name = "au_events_zim.7.a" #
-		
+		name = "au_events_zim.7.a" #How dare they!
+		random_owned_province={
+	spawn_rebels = {
+    type = pretender_rebels
+    size = 3}
+		}
+	remove_country_modifier = au_portuguese_prazos
+    remove_country_modifier = au_allowed_traders
+	add_adm_power=-100
+    add_dip_power=-100
+	add_mil_power=-100
 	}
-	option = {
-		name = "au_events_zim.4.b" #
 	
+	option = {
+		name = "au_events_zim.7.b" #Give the portuguese money in exchange for supporting us
+
+	     kill_ruler = yes
+		 define_ruler = {
+    max_random_adm = 3
+    max_random_dip = 3
+    max_random_mil = 3
+    culture = ROOT
+    religion = ROOT
+}
+add_prestige=-30
+add_legitimacy=-25
+add_adm_power=-250
+add_dip_power=-250
+add_mil_power=-250
+
+	
+           }
+
+
 }
 
 
@@ -240,7 +315,7 @@ country_event = {
 	picture = 
 	
 	trigger = {
-    has_country_modifier = au_allowed_traders
+    has_country_modifier=au_portuguese_prazos
 	}
 	
 	mean_time_to_happen = {
@@ -256,8 +331,11 @@ country_event = {
 		name = "au_events_zim.8.b" #
 	
 }
+}
 
-#Prazero separates from the country
+
+
+#Portuguese intervene in our war
 country_event = {
 	id = au_events_zim.9
 	title ="au_events_zim.9.t"
@@ -281,28 +359,4 @@ country_event = {
 		name = "au_events_zim.9.b" #
 	
 }
-
-#Portuguese intervene in our war
-country_event = {
-	id = au_events_zim.10
-	title ="au_events_zim.10.t"
-	desc = "au_events_zim.10.d"
-	picture = 
-	
-	trigger = {
-    has_country_modifier = au_allowed_traders
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}	
-	
-	
-	option = {
-		name = "au_events_zim.10.a" #
-		
-	}
-	option = {
-		name = "au_events_zim.10.b" #
-	
 }

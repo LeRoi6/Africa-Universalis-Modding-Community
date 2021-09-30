@@ -159,6 +159,9 @@ NYM = "countries/Nyamwanga.txt"
 WND = "countries/Wanda.txt"
 RGU = "countries/Rungu.txt"
 SNG = "countries/Sangu.txt"
+GOG = "countries/Gogo.txt"
+IRA = "countries/Iraqw.txt"
+HDZ = "countries/Hadza.txt"
 
 #Great Lakes
 BBZ = "countries/Buzinza.txt"

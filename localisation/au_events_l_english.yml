@@ -51,10 +51,29 @@
  au_events_zim.2.b: "They are welcome!"
  
  au_events_zim.3.t: "Portuguese Prazos"
- au_events_zim.3.d: "The portuguese have asked us to allow the establishment of prazos (lands conceded by us to portuguese traders) within our territory. They will pay us well for this, but it will make them even more difficult to control."
- au_events_zim.3.a: "We can trust them"
- au_events_zim.3.b: "This is too much"
+ au_events_zim.3.d: "The Portuguese have asked us to allow the establishment of prazos (lands whose tax collection is conceded by us to them) within our territory. They will pay us well for this, but it will make them even more difficult to control."
+ au_events_zim.3.a: "This is an opportunity"
+ au_events_zim.3.b: "We cannot accept"
 
+au_events_zim.4.t: "The Portuguese offer Firearms"
+au_events_zim.4.d: "Portuguese traders have offered us to trade some firearms for a part of our tax revenue. This trade will go on for many years, and might prove beneficial to us."
+au_events_zim.4.a: "Accept their proposal"
+au_events_zim.4.b: "Decline their proposal" 
+
+au_events_zim.5.t: "Prazeros growing stronger"
+au_events_zim.5.d: "Since their establishment, prazos have steadily become larger and their overlords, the prazeros, more powerful. The prazero of [Root.GetName] had the gall to collect in his province far more taxes than he should. He also ordered our subjects to be sold to portuguese traders without our consent. This is clearly outrageous, but is it wise to challenge such a powerful man?"
+au_events_zim.5.a: "We cannot allow this"
+au_events_zim.5.b: "Give him what he wants"
+
+au_events_zim.6.t: "The Consequences of the Slave Trade"
+au_events_zim.6.d: "Portuguese slave traders have over time started to get more influential and powerful, often acting without obeying to our laws. But in [Root.GetName}, this has gotten really out of hand. The traders and their Chikunda soldiers are now the overlords of the province, and the population, tired of being exploited, has revolted against the prazero. The ensuing conflict devastated the province, and now we need to decide what we can do to prevent this from happening again"
+au_events_zim.6.a: "There is nothing we can do"
+au_events_zim.6.b: "Conceding land to strangers was a bad idea"
+
+au_events_zim.7.t: "The Portuguese attempt a Coup"
+au_events_zim.7.d: "When we decided to let the Portuguese trade with us, we would not expect them to become as powerful as they are now. They are so influential, that they are trying to oust our [Root.Monarch.GetTitle] and replace him with a pretender! While this is clearly outragous,  the Portuguese can support [Root.Monarch.GetName] if we pay them."
+au_events_zim.7.a: "Death to the pretender!"
+au_events_zim.7.b: "It's better not to anger the portuguese"
 
 #Modifiers
  zim_usurped_throne: "Usurped Throne"
@@ -71,8 +90,14 @@
  au_opinion_forbids_prazos:"Forbids  Prazos"
  au_opinion_allows_prazos:"Allows Prazos"
  
+ au_portuguese_firearms: "Importing Firearms"
+ 
+ au_portuguese_approval: "Paid our support"
+ au_portuguese_coup: "Resisted the pretender we backed"
+ 
 #Tooltips
  zim_oust_attempt_changamire: "§YWe will attempt to oust Changamire.§!"
- zim_win_loss_reqs: "§RMutapa must defend themselves from Changamire by either defeating him in the war or Changamire dying. If Chikuyo dies before Changamire or Mutapa loses control of their capital for a certain period of time, Lozvi will annex Mutapa.§R"
- au_allow_trade_tooltip:"§RPortuguese trades will bring wealth to our kingdom, but in time they may become difficult to control.§"
- au_prazos_tooltip: "§RGiving prazos would make the portuguese even more influential, making them potentially even difficult to control.§"
+ zim_win_loss_reqs: "§RMutapa must defend themselves from Changamire by either defeating him in the war or Changamire dying. If Chikuyo dies before Changamire or Mutapa loses control of their capital for a certain period of time, Lozvi will annex Mutapa.§"
+ au_allow_trade_tooltip:"§YPortuguese trades will bring wealth to our kingdom, but in time they may become difficult to control.§"
+ au_prazos_tooltip: "§YGiving prazos would make the portuguese even more influential, making them potentially even difficult to control.§"
+ au_prazos_removal_tooltip: "§YWhile the portuguese will be upset by this decision, it will remove the chance of this happening again.§"
