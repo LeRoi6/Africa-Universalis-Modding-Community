@@ -1773,6 +1773,14 @@ kenya_area = {	#5
 	1925 4053 4054 4060
 }
 
+southern_kavirondo_area = { #AUMC
+	9477 9478 9479 9480 9481 9482 9483 9484 9485 9486
+}
+
+northern_kavirondo_area = { #AUMC
+	9487 9488 9489 9490 9491 9492 9493 9494 9495
+}
+
 jubba_area = { #3
 	2777 4051 4052
 }

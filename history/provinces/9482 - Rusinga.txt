@@ -1,0 +1,17 @@
+#Created by AUMC
+#9482 - Rusinga
+
+native_size = 8
+native_ferocity = 4
+native_hostileness = 3
+culture = suba
+religion = waganga
+capital = "Rusinga"
+is_city = yes
+base_manpower = 2
+trade_goods = unknown 
+hre = no
+base_tax = 3
+base_production = 3
+
+discovered_by = central_african

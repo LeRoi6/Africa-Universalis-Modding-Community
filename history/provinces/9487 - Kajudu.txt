@@ -1,0 +1,17 @@
+#Created by AUMC
+#9487 - Kajudu
+
+native_size = 6
+native_ferocity = 4
+native_hostileness = 5
+culture = kavirondo
+religion = waganga
+capital = "Kajudu"
+is_city = yes
+base_manpower = 2
+trade_goods = unknown 
+hre = no
+base_tax = 3
+base_production = 3
+
+discovered_by = central_african

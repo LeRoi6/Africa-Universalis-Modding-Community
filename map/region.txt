@@ -751,6 +751,8 @@ kenya_region = { #AUMC
 		taita_hills_area
 		mombasa_hinterland_area
 		ngong_area 
+		northern_kavirondo_area
+		southern_kavirondo_area
 		
 	}
 	monsoon = {

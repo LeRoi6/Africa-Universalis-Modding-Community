@@ -990,3 +990,19 @@ kalenjin_group = {
 	}
 	
 }
+
+kavirondo_group = {
+	graphical_culture = africangfx
+	kavirondo = {
+	
+	}
+	suba = {
+	
+	}
+	kisii = {
+	
+	}
+	kuria = {
+	
+	}
+}

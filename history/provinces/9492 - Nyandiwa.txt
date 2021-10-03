@@ -1,0 +1,17 @@
+#Created by AUMC
+#9492 - Nyandiwa
+
+native_size = 2
+native_ferocity = 2
+native_hostileness = 3
+culture = kavirondo
+religion = waganga
+capital = "Nyandiwa"
+is_city = yes
+base_manpower = 1
+trade_goods = unknown 
+hre = no
+base_tax = 1
+base_production = 1
+
+discovered_by = central_african

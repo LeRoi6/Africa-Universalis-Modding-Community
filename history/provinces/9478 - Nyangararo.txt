@@ -1,0 +1,17 @@
+#Created by AUMC
+#9478 - Nyangararo
+
+native_size = 1
+native_ferocity = 2
+native_hostileness = 2
+culture = kavirondo
+religion = waganga
+capital = "Nyangararo"
+is_city = yes
+base_manpower = 1
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+
+discovered_by = central_african
