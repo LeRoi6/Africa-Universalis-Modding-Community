@@ -1749,28 +1749,40 @@ southern_maasai_area = {
 	9439 9440 9441 9442 9443 9444 9445 9446
 }
 
-serengeti_area = {
+serengeti_area = { #AUMC
 	9447 9448 9451 9452 9453 9454
 }
 
-northern_maasai_area = {
+northern_maasai_area = { #AUMC
 	4059 9455 9456 9457 9458 9460
 }
 
-ngong_area = {#placeholder name
+ngong_area = {#placeholder name #AUMC
 	4058 9461 9462 9463 9464 9465 9466 9467
 }
 
-taita_hills_area = {
+njemps_area = { #AUMC
+	4054 9496 9497 9498 9499
+}
+
+uasin_gishu_area = { #AUMC
+	9500 9501 9502 9503 9504 
+}
+
+ukambani_area = { #AUMC
+	1925 9507 9508 9509 9510 9511 9512 9513 9514
+}
+
+taita_hills_area = { #AUMC
 	1273 9433 9436 9437 9438
 }
 
-mombasa_hinterland_area = {
+mombasa_hinterland_area = { 
 	9430 9431 9432 9434 9435 
 }
 
 kenya_area = {	#5
-	1925 4053 4054 4060
+	4053 4060
 }
 
 southern_kavirondo_area = { #AUMC

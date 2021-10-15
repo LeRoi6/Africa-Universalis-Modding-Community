@@ -753,6 +753,9 @@ kenya_region = { #AUMC
 		ngong_area 
 		northern_kavirondo_area
 		southern_kavirondo_area
+		njemps_area
+		uasin_gishu_area
+		ukambani_area
 		
 	}
 	monsoon = {

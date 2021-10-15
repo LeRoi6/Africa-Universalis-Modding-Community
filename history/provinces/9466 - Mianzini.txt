@@ -3,7 +3,7 @@
 native_size = 4
 native_ferocity = 5
 native_hostileness = 4
-culture = loikop
+culture = athi
 religion = enkai
 capital = "Mianzini" 
 trade_goods = unknown 

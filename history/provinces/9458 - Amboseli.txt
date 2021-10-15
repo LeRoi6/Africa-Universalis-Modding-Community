@@ -3,7 +3,7 @@
 native_size = 4
 native_ferocity = 5
 native_hostileness = 5
-culture = loikop
+culture = matapato
 religion = enkai
 capital = "Embusel"
 trade_goods = unknown #salt

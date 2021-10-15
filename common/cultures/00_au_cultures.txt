@@ -978,6 +978,9 @@ maasai_group = {
 	loita = {
 	
 	}
+	matapato = {
+	
+	}
 	loikop = {
 	
 	}
@@ -988,7 +991,30 @@ kalenjin_group = {
 	ogiek = {
 	
 	}
+	sengwer = {
 	
+	}
+	sirikwa = {
+	
+	}
+	
+}
+
+thagicu_group = {
+	graphical_culture = africangfx
+	aembu = {
+	
+	}
+	agikuyu = {
+	
+	}
+	ameru = {
+	
+	}
+	akamba = {
+	
+	}
+
 }
 
 kavirondo_group = {
@@ -1005,4 +1031,23 @@ kavirondo_group = {
 	kuria = {
 	
 	}
+}
+
+kikuyu_group = {
+	graphical_culture = africangfx
+	athi = {
+	
+	}
+	kikuyu = {
+	
+	}
+
+}
+
+masaba_group = {
+	graphical_culture = africangfx
+	luhya = {
+	
+	}
+
 }
