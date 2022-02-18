@@ -5,7 +5,7 @@ native_ferocity = 2
 native_hostileness = 3
 culture = sirikwa #Seems uninhabited until 1800's, but I honestly don't know. 
 religion = enkai
-capital = "Eineet Tui" #Encompasses Laipikia. Ewaso Narok converted to Kalenjin (Sirikwa seems related to the Kalenjin group). Thanks Brandon for your help.  
+capital = "Eineet Tui" #Encompasses Laipikia. Ewaso Narok converted to Kalenjin (Sirikwa seems related to the Kalenjin group). Thanks Xargin for your help. Maasai = Naiurruur
 trade_goods = unknown 
 hre = no
 base_tax = 1

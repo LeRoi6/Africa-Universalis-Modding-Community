@@ -1517,7 +1517,25 @@ pagan = {
 	
 		heretic = { ILASAKUTOK }
 	}		
+	
+	waaq = {
+		color = { 173 204 38 }
+		icon = 34
+		country = {
+			global_unrest = -1
+			tolerance_heretic = 2
+		}
 		
+		country_as_secondary = {
+			global_heathen_missionary_strength = 0.02
+			tolerance_heretic = 1
+		}
+	
+		heretic = { ADDII_QALLAUU }
+	
+	
+	}
+	
 	totemism = {
 		color = { 127 115 115 }
 		icon = 13

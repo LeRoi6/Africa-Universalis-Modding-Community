@@ -1,3 +1,0 @@
-#Created by AUMC
-
-discovered_by = central_african
