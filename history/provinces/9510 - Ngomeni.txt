@@ -1,9 +1,9 @@
 #Created by AUMC
 #9510 - Ngomeni
 native_size = 2
-native_ferocity = 5
-native_hostileness = 6
-culture = athi
+native_ferocity = 6
+native_hostileness = 5
+culture = kamba
 religion = enkai
 capital = "Ngomeni"
 trade_goods = unknown 

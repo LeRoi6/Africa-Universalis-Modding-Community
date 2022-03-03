@@ -1000,22 +1000,6 @@ kalenjin_group = {
 	
 }
 
-thagicu_group = {
-	graphical_culture = africangfx
-	aembu = {
-	
-	}
-	agikuyu = {
-	
-	}
-	ameru = {
-	
-	}
-	akamba = {
-	
-	}
-
-}
 
 kavirondo_group = {
 	graphical_culture = africangfx
@@ -1033,7 +1017,7 @@ kavirondo_group = {
 	}
 }
 
-kikuyu_group = {
+thagicu_group = {
 	graphical_culture = africangfx
 	athi = {
 	
@@ -1041,7 +1025,35 @@ kikuyu_group = {
 	kikuyu = {
 	
 	}
+	kamba = {
+	
+	}
+	mbeere = {
+	
+	}
+	embu = {
+	
+	}
+	thagicu = {
+	
+	}
+	meru = {
+	
+	}
+	tharaka = {
+	
+	}
+	chuka = {
+	
+	}
 
+}
+
+yaaku_group = {
+	graphical_culture = africangfx
+	yaaku = {
+	
+	}
 }
 
 masaba_group = {

@@ -756,6 +756,7 @@ kenya_region = { #AUMC
 		njemps_area
 		uasin_gishu_area
 		ukambani_area
+		turkana_area
 		
 	}
 	monsoon = {

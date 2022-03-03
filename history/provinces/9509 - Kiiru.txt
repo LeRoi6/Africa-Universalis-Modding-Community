@@ -3,7 +3,7 @@
 native_size = 3
 native_ferocity = 5
 native_hostileness = 5
-culture = athi
+culture = kamba
 religion = enkai
 capital = "Kiiru"
 trade_goods = unknown 
