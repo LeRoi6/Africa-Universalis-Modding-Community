@@ -1,3 +1,4 @@
+ 
 #214 - Aragón
 #Region - Iberia
 #Area - Aragon
@@ -21,8 +22,7 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
-extra_cost = 20
-center_of_trade = 2
+center_of_trade = 1
 
 1516.1.23 = {	controller = SPA
 	owner = SPA

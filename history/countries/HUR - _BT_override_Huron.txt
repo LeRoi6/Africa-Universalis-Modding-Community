@@ -1,0 +1,4 @@
+
+capital = 5037	# Huron
+historical_friend = YZI
+historical_rival = IRO

@@ -1,0 +1,11 @@
+
+
+
+#History
+
+#Note it appears removing accepted cultures might need to be given dates? In at least one test, doing it without dates failed to take effect. I suspect it bugged out when trying to add more accepted cultures than allowed.
+
+1291.1.1 = { remove_accepted_culture = pontic_greek }
+1291.1.2 = { add_accepted_culture = cypriot }
+
+#Note above is temp & sloppy. FoA proper work needs to be completed, which will almost certainly put a date on acceptance of various things. Also note Pontic out due to new subject owning that land.

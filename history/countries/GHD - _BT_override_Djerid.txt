@@ -1,0 +1,4 @@
+
+add_government_reform = tribal_federation
+primary_culture = berber
+capital = 5316

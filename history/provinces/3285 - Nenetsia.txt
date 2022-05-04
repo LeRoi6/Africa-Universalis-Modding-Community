@@ -1,3 +1,4 @@
+ 
 #3285 - Nenetsia
 #Region - Russia
 #Area - Pomorye
@@ -16,7 +17,7 @@ native_hostileness = 1
 
 discovered_by = eastern
 discovered_by = western
-discovered_by = KAZ
+1444.1.1 = { discovered_by = KAZ }
 
 extra_cost = 10
 

@@ -1,3 +1,4 @@
+ 
 #BT Scandinavia and Baltics reoverhaul
 
 owner = LAU
@@ -6,9 +7,9 @@ add_core = LAU
 culture = lower_saxon
 religion = catholic
 capital = "Neuhaus"
-base_tax = 3
-base_production = 3
-base_manpower = 2
+base_tax = 2
+base_production = 2
+base_manpower = 1
 trade_goods = salt
 is_city = yes
 hre = yes

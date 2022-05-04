@@ -1,8 +1,8 @@
-discovered_by = ANU
-discovered_by = HOD
-discovered_by = CHU
-discovered_by = CHV
-discovered_by = KMC
+1444.1.1 = { discovered_by = ANU }
+1444.1.1 = { discovered_by = HOD }
+1444.1.1 = { discovered_by = CHU }
+1444.1.1 = { discovered_by = CHV }
+1444.1.1 = { discovered_by = KMC }
 discovered_by = north_american
 
 1818.1.1 = { discovered_by = RUS }			#Lieutenant Otto von Kotzebue while searching for the Northeast Passage in the service of Russia.

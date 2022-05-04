@@ -1,0 +1,41 @@
+#GBG - Grubenhagen
+
+#Political Situation
+capital = 8288
+fixed_capital = 8288 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = lower_saxon
+religion = catholic
+
+#Tech and Military
+technology_group = western
+1427.1.1 = {
+	monarch = {
+		name = "Heinrich III"
+		dynasty = "von Welf"
+		birth_date = 1416.1.1
+		dip = 3
+		adm = 1
+		mil = 2
+	}
+}
+
+1427.1.1 = {
+	heir = {
+		name = "Albert"
+		monarch_name = "Albert II"
+		dynasty = "von Welf"
+		birth_date = 1419.1.1
+		death_date = 1485.12.17
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

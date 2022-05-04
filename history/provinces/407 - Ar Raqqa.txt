@@ -1,18 +1,19 @@
 #407 - Ar-Raqqah
 
-owner = FAD
-controller = FAD
-culture = al_suryah_arabic
+owner = AKK
+controller = AKK
+culture = al_iraqiya_arabic
 religion = sunni				#The city retained an active Christian community well into the Middle Ages
-capital = "Raqqah"			#Many versions in latin alphabet, just going with this one for fun, plus I have no idea what the differences are.
-trade_goods = grain			#Al-Raqqah experienced a second blossoming, based on agriculture and industrial production, during the Zangid and Ayyubid period in the 12th and first half of the 13th century. Most famous is the blue-glazed so-called Raqqa ware.
+capital = "Rakka"			#Many versions in latin alphabet, just going with this one for fun, plus I have no idea what the differences are.
+trade_goods = livestock #(JP) Pretty abandoned area, tribal and rural
 hre = no
 base_tax = 1  				#Al-Raqqah was destroyed during the Mongol wars in the 1260s. There is a report about the killing of the last inhabitants of the urban ruin in 1288.
-base_production = 1 			#In the 17th century the famous Ottoman traveler and author Evliya Çelebi only noticed Arab and Turkoman nomad tents in the vicinity of the ruins.
-base_manpower = 1 			
+base_production = 2 			#In the 17th century the famous Ottoman traveler and author Evliya Çelebi only noticed Arab and Turkoman nomad tents in the vicinity of the ruins.
+base_manpower = 2 			
 is_city = yes
-add_core = FAD
+add_core = AKK
 add_core = SYR
+fort_15th = yes
 
 discovered_by = east_african
 discovered_by = muslim
@@ -22,6 +23,14 @@ discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = indian
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = SYR
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = SYR
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1516.8.24 = {
 	owner = TUR
 	controller = TUR

@@ -4,7 +4,6 @@ primary_culture = vietnamese
 religion = mahayana
 technology_group = chinese
 capital = 2373 # Hue
-government_rank = 1
 
 # Nguyen Lords
 
@@ -274,8 +273,6 @@ government_rank = 1
 		mil = 2
 	}
 }
-
-1802.1.1 = { government_rank = 2 }
 
 1820.2.3 = {
 	monarch = {

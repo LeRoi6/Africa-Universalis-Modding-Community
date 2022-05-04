@@ -1,0 +1,119 @@
+
+fixed_capital = 4727 # Cannot move capital away from this province & no power cost to move to it
+
+
+
+#History
+
+1395.1.1 = {
+	monarch = {
+		name = "Thomas III"
+		dynasty = "del Vasto"
+		birth_date = 1356.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+#Vanilla has stuffs... basically mostly kinda the same as we had. Close enough anyway.
+
+1495.3.26 = {
+	heir = {
+		name = "Michele Antonio"
+		monarch_name = "Michele Antonio"
+		dynasty = "del Vasto"
+		birth_date = 1495.3.26
+		death_date = 1528.10.18
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1504.1.17 = {
+	monarch = {
+		name = "Michele Antonio"
+		dynasty = "del Vasto"
+		birth_date = 1495.3.26
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1504.1.17 = {
+	heir = {
+		name = "Giovanni Ludovico"
+		monarch_name = "Giovanni Ludovico"
+		dynasty = "del Vasto"
+		birth_date = 1496.4.28
+		death_date = 1563.10.18
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1528.10.18 = {
+	monarch = {
+		name = "Giovanni Ludovico"
+		dynasty = "del Vasto"
+		birth_date = 1495.3.26
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1528.10.18 = {
+	heir = {
+		name = "Francesco Ludovico"
+		monarch_name = "Francesco Ludovico"
+		dynasty = "del Vasto"
+		birth_date = 1498.2.25
+		death_date = 1537.3.28
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1529.9.28 = {
+	monarch = {
+		name = "Francesco Ludovico"
+		dynasty = "del Vasto"
+		birth_date = 1495.3.26
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1529.9.28 = {
+	heir = {
+		name = "Gian Gabriele"
+		monarch_name = "Gian Gabriele I"
+		dynasty = "del Vasto"
+		birth_date = 1501.9.26
+		death_date = 1548.7.29
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1537.3.28 = {
+	monarch = {
+		name = "Gian Gabriele I"
+		dynasty = "del Vasto"
+		birth_date = 1501.9.26
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}

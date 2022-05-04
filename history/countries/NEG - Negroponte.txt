@@ -1,0 +1,36 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 25
+primary_culture = venetian
+add_accepted_culture = greek
+religion = catholic
+technology_group = western #eastern
+capital = 3003 # Euboea
+historical_friend = VEN
+historical_friend = LES
+historical_friend = CDA
+
+1426.1.1 = {
+	monarch = {
+		name = "Crusino I"
+		dynasty = "Sommaripa"
+		birth_date = 1400.1.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+1430.1.1 = {
+	heir = {
+		name = "Domenico"
+		monarch_name ="Domenico"
+		dynasty = "Sommaripa"
+		birth_date = 1430.1.1
+		death_Date = 1466.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}

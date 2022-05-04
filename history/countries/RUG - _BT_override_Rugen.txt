@@ -1,0 +1,3 @@
+
+primary_culture = polabian_culture
+add_accepted_culture = pommeranian

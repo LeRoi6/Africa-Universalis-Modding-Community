@@ -1,11 +1,10 @@
-government = republic
-add_government_reform = free_city
+government = theocracy
+add_government_reform = leading_clergy_reform
 government_rank = 1
 mercantilism = 0.25
 technology_group = western
 religion = catholic
-primary_culture = burgundian
-add_accepted_culture = hessian
+primary_culture = lorraine_culture
 capital = 188	# Metz
 fixed_capital = 188 # Cannot move capital away from this province & no power cost to move to it
 

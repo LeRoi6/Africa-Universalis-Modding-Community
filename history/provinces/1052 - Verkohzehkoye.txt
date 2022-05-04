@@ -1,3 +1,4 @@
+ 
 #1052 - Verkohzehkoye
 
 culture = yakut
@@ -15,10 +16,10 @@ native_hostileness = 5
 
 
 discovered_by = nomad_group
-discovered_by = CHU
-discovered_by = CHV
-discovered_by = KMC
-discovered_by = BRT
+1444.1.1 = { discovered_by = CHU }
+1444.1.1 = { discovered_by = CHV }
+1444.1.1 = { discovered_by = KMC }
+1444.1.1 = { discovered_by = BRT }
 
 1643.1.1 = { discovered_by = RUS } # Vasily Poyarkov
 

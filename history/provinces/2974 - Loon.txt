@@ -1,3 +1,4 @@
+ 
 # Loon
 #Region - Low Countries
 #Area - Liege
@@ -7,7 +8,7 @@ controller = LIE
 add_core = LIE
 is_city = yes
 capital = "Loon"
-culture = hessian
+culture = dutch
 religion = catholic
 hre = yes
 base_tax = 5

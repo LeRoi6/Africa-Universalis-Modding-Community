@@ -1,3 +1,4 @@
+
 #8143 - Carmarthen
 #Area - Deheubarth
 #Region - 
@@ -35,6 +36,20 @@ discovered_by = ottoman
 discovered_by = eastern
 
 #Histories
+
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = WLS
+	add_core = PEM
+	owner = PEM
+	controller = PEM
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = WLS
+	remove_core = PEM
+	owner = WMC
+	controller = WMC
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 
 1444.11.16 = { #BT Performance Start Begin
 	owner = ENG

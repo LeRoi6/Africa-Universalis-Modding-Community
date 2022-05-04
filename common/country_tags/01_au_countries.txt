@@ -11,6 +11,7 @@ BUT = "countries/Khami.txt"
 BWE = "countries/Barue.txt"
 GZB = "countries/Great Zimbabwe.txt"
 MIE = "countries/Mbire.txt"
+
 #Malawi
 NSE = "countries/Nsenga.txt"
 MSJ = "countries/Msinja.txt"
@@ -34,6 +35,7 @@ LOS = "countries/Losewa.txt"
 MLL = "countries/Mluluka.txt"
 MWE = "countries/Mwembe.txt"
 RPP = "countries/Rupapa.txt"
+
 #Swahili Coast
 BZR = "countries/Bazaruto.txt"
 CBN = "countries/Chibuene.txt"
@@ -89,7 +91,6 @@ MDN = "countries/Manda.txt"
 FAZ = "countries/Faza.txt"
 SYU = "countries/Siyu.txt"
 OZI = "countries/Ozi.txt"
-
 
 #Mozambique
 BOM = "countries/Bombo.txt"

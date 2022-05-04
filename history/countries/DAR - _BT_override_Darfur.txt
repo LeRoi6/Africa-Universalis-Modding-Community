@@ -1,0 +1,3 @@
+
+primary_culture = fur_culture
+religious_school = zaidi_school

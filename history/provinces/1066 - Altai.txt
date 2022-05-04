@@ -1,3 +1,4 @@
+ 
 #1066 - Altai
 
 owner = OIR
@@ -16,8 +17,8 @@ is_city = yes
 
 
 discovered_by = nomad_group
-discovered_by = OIR
-discovered_by = KHA
+1444.1.1 = { discovered_by = OIR }
+1444.1.1 = { discovered_by = KHA }
 
 
 1552.1.1 = {

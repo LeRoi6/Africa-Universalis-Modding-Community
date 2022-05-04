@@ -1,3 +1,4 @@
+ 
 #3178 - Achaea/Patras
 
 owner = BYZ
@@ -19,11 +20,11 @@ add_local_autonomy = 25
 extra_cost = 8
 center_of_trade = 1
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
@@ -33,6 +34,26 @@ discovered_by = western
 	owner = BYZ
 	controller = BYZ
 } # To Morea
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = MOE
+	remove_core = BYZ
+	add_core = ACH
+	owner = ACH
+	controller = ACH
+	add_local_autonomy = -25
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = MOE
+	add_core = BYZ
+	remove_core = ACH
+	owner = BYZ
+	controller = BYZ
+	add_local_autonomy = 25
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1453.5.29 = {
 	owner = ACH
 	controller = ACH

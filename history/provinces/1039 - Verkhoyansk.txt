@@ -1,3 +1,4 @@
+ 
 #1039 - Verkhoyansk
 
 latent_trade_goods = {

@@ -4,8 +4,7 @@ primary_culture = tunisian
 religion = sunni
 technology_group = muslim
 capital = 341	# Tunis
-add_accepted_culture = kabylian
-add_accepted_culture = berber
+fixed_capital = 341 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
 
 change_estate_land_share = {
@@ -164,8 +163,7 @@ change_estate_land_share = {
 		mil = 2
 		leader = { 
 			name = "Ahmad III"	
-			type = general	
-	
+			type = general		
 			fire = 3	
 			shock = 2	
 			manuever = 3	

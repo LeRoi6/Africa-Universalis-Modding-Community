@@ -1,9 +1,10 @@
+ 
 #1099 - Socotra
 
 owner = SOC
 controller = SOC
 culture = mahri_culture
-religion = coptic
+religion = nestorian
 capital = "Suq"
 trade_goods = fish
 hre = no

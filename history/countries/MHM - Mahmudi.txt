@@ -1,0 +1,18 @@
+#MHM - Mahmudi
+
+#Political Situation
+capital = 6113
+fixed_capital = 6113 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1	
+government = monarchy
+add_government_reform = iqta
+
+#Demographics
+primary_culture = kurdish
+religion = yazidi
+#add_accepted_culture
+
+#Tech and Military
+technology_group = muslim

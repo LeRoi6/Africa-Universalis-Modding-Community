@@ -1,0 +1,16 @@
+ 
+# ex 5615
+
+culture = crow_culture # BT; kiowa
+religion = totemism
+capital = "Gixáa-iccá" # BT; "Hunkpapha"
+hre = no
+base_tax = 1 # BT; 3
+base_production = 1 # BT; 2
+base_manpower = 1
+trade_goods = unknown
+native_size = 10 # BT; 5
+native_ferocity = 1
+native_hostileness = 3 # BT; 6
+
+discovered_by = north_american

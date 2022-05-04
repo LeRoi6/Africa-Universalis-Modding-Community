@@ -1,3 +1,4 @@
+ 
 #3034 - Brycheiniog
 #Region - Britain
 #Area - Wales
@@ -27,6 +28,21 @@ discovered_by = eastern
 #1399.1.1 = { unrest = 20 } # Buildup to the Welsh Revolt
 #1400.9.16 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # The Welsh Revolt
 #1415.1.1 = { unrest = 0 revolt = {} controller = ENG } # English rule is restored
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = ENG
+	remove_core = WLS
+	owner = BRC
+	controller = BRC
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = ENG
+	add_core = WLS
+	owner = ENG
+	controller = ENG
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
 	owner = ENG
 	controller = ENG
@@ -38,6 +54,7 @@ discovered_by = eastern
 	controller = WMC
 	remove_core = ENG
 }
+#1444 onwards
 #1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 #1461.6.1 = { unrest = 2 } # Coronation of Edward IV
 #1467.1.1 = { unrest = 5 } # Rivalry between Edward IV & Warwick

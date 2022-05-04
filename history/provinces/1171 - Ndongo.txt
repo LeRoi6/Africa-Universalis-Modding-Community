@@ -1,3 +1,4 @@
+ 
 #1171 - Ndongo
 
 owner = NDO
@@ -13,9 +14,9 @@ base_manpower = 6
 is_city = yes
 add_core = NDO
 discovered_by = central_african
-discovered_by = KON
-discovered_by = LOA
-discovered_by = NDO
+1444.1.1 = { discovered_by = KON }
+1444.1.1 = { discovered_by = LOA }
+1444.1.1 = { discovered_by = NDO }
 discovered_by = sub_saharan
 extra_cost = 8
 center_of_trade = 1

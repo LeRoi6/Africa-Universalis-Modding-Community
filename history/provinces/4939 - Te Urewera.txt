@@ -1,0 +1,19 @@
+ 
+# new in 1.31
+
+owner = MAA
+controller = MAA
+add_core = MAA
+culture = maori
+religion = animism
+capital = "Tauwhare"
+is_city = yes
+hre = no
+base_tax = 3 # ???
+base_production = 4 # ???
+base_manpower = 1
+trade_goods = naval_supplies
+
+discovered_by = polynesian_tech
+
+1642.1.1 = { discovered_by = NED } # Abel Tasman

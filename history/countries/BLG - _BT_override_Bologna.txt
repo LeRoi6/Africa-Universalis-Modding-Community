@@ -1,0 +1,48 @@
+
+mercantilism = 10
+
+
+
+#history
+1291.5.19 = {
+	add_country_modifier = {
+		name = bt_guelph_nation
+		duration = -1
+	}
+}
+
+1444.1.1 = {
+	monarch = {
+		name = "Sante I"
+		dynasty = "Bentivoglio"
+		birth_date = 1426.1.1
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+	heir = {
+		name = "Giovanni"
+		monarch_name = "Giovanni II"
+		dynasty = "Bentivoglio"
+		birth_date = 1443.2.12
+		death_date = 1508.2.15
+		claim = 50
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1462.6.24 = {
+	monarch = {
+		name = "Giovanni II"
+		birth_date = 1443.2.12
+		dynasty = "Bentivoglio"
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1648.1.1 = { remove_country_modifier = bt_guelph_nation }
+

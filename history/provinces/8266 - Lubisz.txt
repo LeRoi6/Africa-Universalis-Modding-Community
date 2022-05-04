@@ -1,3 +1,4 @@
+
 #8266 - Lubusz
 #Area - Neumark
 #Region - North Germany
@@ -9,13 +10,13 @@ owner = BRA
 controller = BRA
 
 #Demographics
-culture = saxon
+culture = markish
 religion = catholic
 
 #Development and Trade
-base_tax = 2
-base_production = 2
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 3
 trade_goods = livestock
 
 #Cores and Occupation (Alphabetical after current)

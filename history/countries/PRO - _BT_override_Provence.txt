@@ -1,0 +1,6 @@
+
+primary_culture = angevin_culture
+add_accepted_culture = aquitaine
+national_focus = DIP
+historical_friend = ANJ
+historical_friend = FRA

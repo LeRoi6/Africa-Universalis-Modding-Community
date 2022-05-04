@@ -1,0 +1,2 @@
+
+add_accepted_culture = pommeranian

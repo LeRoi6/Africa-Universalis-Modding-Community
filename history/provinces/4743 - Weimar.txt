@@ -1,3 +1,4 @@
+ 
 #4743 - Weimar
 #Region - Germany
 #Area - Thuringia
@@ -9,9 +10,9 @@ religion = catholic
 capital = "Weimar"
 trade_goods = grain
 hre = yes
-base_tax = 6
-base_production = 6
-base_manpower = 2 
+base_tax = 4
+base_production = 4
+base_manpower = 3 
 is_city = yes
 add_core = THU
 

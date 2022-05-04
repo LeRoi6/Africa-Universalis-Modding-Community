@@ -49,6 +49,20 @@ monarch_names = {
 	"Lettice #0" = 0
 	"Edward #0" = 0
 	"Augustus #0" = 0
+	
+	#Research is all of 2 sec search & personal knowledge after a bug report. Probably terrible, definitely subject to later correction. -Draiocht
+	"Mary" #0" = -7
+	"Elizabeth" #0" = -5
+	"Anne" #0" = -3
+	"Sarah" #0" = -3
+	"Jane" #0" = -3
+	"Abigail" #0" = -1
+	"Charlotte" #0" = -1
+	"Amy" #0" = -1
+	"Caroline" #0" = -1
+	"Molly" #0" = -1
+	"Hannah" #0" = -1
+	"Margaret" #0" = -1
 }
 
 leader_names = {

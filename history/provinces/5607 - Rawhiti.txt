@@ -1,6 +1,7 @@
+ 
 #New Beyond Typus Provinces
 
-culture = maori_culture
+culture = maori # Brian
 religion = animism
 capital = "Turanganui-a-Kiwa"
 trade_goods = unknown

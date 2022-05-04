@@ -1,3 +1,4 @@
+ 
 #1030 - Owari
 
 owner = ODA
@@ -14,11 +15,11 @@ is_city = yes
 add_core = ODA
 add_core = SBA
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
-discovered_by = ANU
+1444.1.1 = { discovered_by = MCH }
+1444.1.1 = { discovered_by = KHA }
+1444.1.1 = { discovered_by = OIR }
+1444.1.1 = { discovered_by = QNG }
+1444.1.1 = { discovered_by = ANU }
 
 1532.1.1 = { capital = "Nagoya" }
 1532.1.1 = { fort_15th = yes } # Kiyosu Castle, the capital of the Oda clan

@@ -1,3 +1,4 @@
+ 
 #3098 - Huelva
 #Region - Iberia
 #Area - Lower Andalucia
@@ -29,6 +30,22 @@ discovered_by = eastern
 #	duration = -1
 #}
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = CAS
+	owner = SVL
+	controller = SVL
+	culture = andalusi_culture
+	religion = sunni
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = CAS
+	owner = CAS
+	controller = CAS
+	culture = andalucian
+	religion = catholic
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1516.1.23 = {
 	controller = SPA
 	owner = SPA

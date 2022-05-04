@@ -1,6 +1,7 @@
+
 #966 - Nipmuc (Western Massachusetts)
 
-culture = pequot
+culture = massachusset
 religion = totemism 
 capital = "Nipmuc" 
 trade_goods = unknown 
@@ -16,6 +17,7 @@ native_hostileness = 3
 
 discovered_by = north_american
 
+1444.1.1 = { tribal_owner = WAM }
 1614.1.1 = { discovered_by = NED } # Adriaen Block (may or may not have reached this far north)
 1633.1.1 = { discovered_by = ENG }
 

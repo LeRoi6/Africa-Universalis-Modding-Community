@@ -1,0 +1,32 @@
+#SRN - Soran
+
+#Political Situation
+capital = 6123
+fixed_capital = 6123 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1	
+government = monarchy
+add_government_reform = iqta
+
+#Demographics
+primary_culture = kurdish
+religion = sunni
+religious_school = shafii_school
+#add_accepted_culture
+
+#Tech and Military
+technology_group = muslim
+
+#History
+
+1444.1.1 = {
+	monarch = { 
+		name = "Seyfeddin"
+		dynasty = "Pir Budak"
+		birth_date = 1423.1.1
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}

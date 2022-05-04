@@ -1,0 +1,11 @@
+#Courtesy of Cinnamon Ryce (& co., including Mariposa & JP (Chariman Meow), among others probably)
+
+
+religion = mahayana
+government_rank = 1
+
+
+
+#History
+
+1802.1.1 = { government_rank = 2 }

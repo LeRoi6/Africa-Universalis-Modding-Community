@@ -1,0 +1,5 @@
+
+primary_culture = shilha
+add_accepted_culture = moroccan
+capital = 5212 # Sus
+fixed_capital = 5212 # Cannot move capital away from this province & no power cost to move to it

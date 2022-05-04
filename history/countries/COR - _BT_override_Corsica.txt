@@ -1,0 +1,27 @@
+
+primary_culture = corsican_culture
+
+
+1441.1.1 = {
+	monarch = {
+		name = "Giudice"
+		dynasty = "Della Rocca"
+		birth_date = 1403.1.1
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+1444.1.1 = {
+	heir = {
+		name = "Paolo"
+		monarch_name ="Paolo II"
+		dynasty = "Della Rocca"
+		birth_date = 1424.1.1
+		death_Date = 1493.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

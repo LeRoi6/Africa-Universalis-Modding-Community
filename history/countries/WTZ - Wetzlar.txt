@@ -1,0 +1,19 @@
+#WTZ - Weztlar
+
+#Political Situation
+capital = 8428
+fixed_capital = 8428 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = republic
+add_government_reform = free_city
+
+#Demographics
+primary_culture = hessian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History

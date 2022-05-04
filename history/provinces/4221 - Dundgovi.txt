@@ -1,3 +1,4 @@
+ 
 #4221 - Dundgovi
 
 owner = KHA
@@ -16,6 +17,20 @@ add_core = OIR
 discovered_by = chinese
 discovered_by = nomad_group
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = KHA
+	add_core = KLK
+	owner = KLK
+	controller = KLK
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = KHA
+	remove_core = KLK
+	owner = KHA
+	controller = KHA
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1510.1.1 = {
 	owner = KHA
 	controller = KHA

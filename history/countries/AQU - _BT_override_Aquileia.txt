@@ -1,0 +1,11 @@
+
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = friulian_culture
+add_accepted_culture = venetian
+
+
+
+#History
+
+# To Venice in 1402 in BT, even though vanilla has 1412 & 1439 rulers declared

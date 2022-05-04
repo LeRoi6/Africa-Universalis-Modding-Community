@@ -1,3 +1,4 @@
+ 
 #102 - Nice
 #Region - Italy
 #Area - Liguria
@@ -29,6 +30,17 @@ discovered_by = ottoman
 	controller = SAV
 	add_core = SAV
 } # Random, finish later
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = SAV
+	owner = NZZ
+	controller = NZZ
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = SAV
+	owner = SAV
+	controller = SAV
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 1495.1.1 = { hre = no }
 1713.4.12 = {
 	owner = SIC

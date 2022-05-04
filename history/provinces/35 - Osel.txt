@@ -1,3 +1,4 @@
+ 
 #Ösel and Dagö, incl. Sonnenburg and Arensburg.
 #Region - Baltic
 #Area - Estonia
@@ -26,7 +27,13 @@ discovered_by = eastern
 
 #1291 - 1444
 
-#2nd Shattering unused
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = EST
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = EST
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
 	owner = LIV
 	controller = LIV

@@ -1,3 +1,4 @@
+ 
 #127 - Sardinia
 #Region - Italy
 #Area - Corsica and Sardinia
@@ -54,7 +55,21 @@ discovered_by = ottoman
 	controller = SAR
 	add_core = SAR
 }	#Aragon wins the battle Sanluri, and claims most of southern and western Sardinia
-#Second Shattering not used
+#Second Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	owner = GLL
+	controller = GLL
+	add_core = GLL
+	remove_core = SAR
+	remove_core = ARR
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	remove_core = GLL
+	add_core = ARR
+	add_core = SAR
+	owner = SAR
+	controller = SAR
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 	owner = ARA
 	controller = ARA

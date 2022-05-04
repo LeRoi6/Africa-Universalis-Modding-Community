@@ -1,0 +1,41 @@
+#ZOS - Zossen
+
+#Political Situation
+capital = 8269
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = markish
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1428.1.1 = {
+	monarch = {
+		name = "Theodericus"#random, first ruler name
+		dynasty = "von Torgow"
+		birth_date = 1420.1.1
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+1444.1.1 = {
+	heir = {
+		name = "Bernhard"
+		monarch_name ="Bernhard"
+		dynasty = "von Torgow"
+		birth_date = 1439.1.1
+		death_Date = 1490.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}

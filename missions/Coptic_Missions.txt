@@ -44,23 +44,24 @@ coptic_missions = {
 			}
 		}
 	}
-	coptic_conquest_of_yerevan = {
-		icon = mission_european_church
+	#BT: Replaced Yerevan
+	coptic_conquest_of_jerusalem = {
+		icon = mission_arabian_fort
 		required_missions = { }
 		provinces_to_highlight = {
-			province_id = 419
+			province_id = 379
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			has_discovered = ROOT
 		}
 		trigger = {
-			419 = {
+			379 = {
 				owned_by = ROOT
 			}
 		}
 		effect = {
-			set_country_flag = yerevan_mission_flag
+			set_country_flag = jerusalem_mission_flag
 			tooltip = { add_prestige = 10 }
 			hidden_effect = {
 				country_event = { id = coptic_flavor.5 }

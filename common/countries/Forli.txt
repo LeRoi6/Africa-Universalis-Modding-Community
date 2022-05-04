@@ -91,6 +91,7 @@ monarch_names = {
 	"Viola #0" = -1
 	"Zaira #0" = -1
 	"Angelica #0" = -1
+	"Caterina #0" = -1
 }
 
 leader_names = {
@@ -106,6 +107,7 @@ leader_names = {
 	"dalla Rosa" "della Rovere"
 	"di Saluzzo" "di Savoia" Sfondrati Sforza Spinola
 	"della Torre" "della Ubaldini" Vico Visconti
+	Ordelaffi Riario Mestaguerra Manzoni Neri Orsi Padovani Pansecchi
 }
 
 ship_names = {

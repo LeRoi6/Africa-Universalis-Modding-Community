@@ -1,0 +1,41 @@
+#REU - Reuss
+
+#Political Situation
+capital = 8281
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = saxon
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1408.1.1 = {
+	monarch = {
+		name = "Heinrich XI"
+		dynasty = "von Reuss"
+		birth_date = 1400.1.1
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+1444.1.1 = {
+	heir = {
+		name = "Heinrich"
+		monarch_name ="Heinrich XII"
+		dynasty = "von Reuss"
+		birth_date = 1444.1.1
+		death_Date = 1535.1.1
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}

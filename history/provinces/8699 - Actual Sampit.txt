@@ -1,3 +1,4 @@
+
 #Sampit
 
 culture = banjarese
@@ -12,50 +13,50 @@ native_size = 20
 native_ferocity = 7
 native_hostileness = 5
 
-discovered_by = ATJ
-discovered_by = MAJ
-discovered_by = MKS
-discovered_by = BLI
-discovered_by = BAN
-discovered_by = BEI
-discovered_by = BLM
-discovered_by = BTN
-discovered_by = CRB
-discovered_by = DMK
-discovered_by = PGR
-discovered_by = PLB
-discovered_by = PSA
-discovered_by = SAK
-discovered_by = SUN
-discovered_by = KUT
-discovered_by = BNJ
-discovered_by = LFA
-discovered_by = LNO
-discovered_by = LUW
-discovered_by = MGD
-discovered_by = TER
-discovered_by = TID
+1444.1.1 = { discovered_by = ATJ }
+1444.1.1 = { discovered_by = MAJ }
+1444.1.1 = { discovered_by = MKS }
+1444.1.1 = { discovered_by = BLI }
+1444.1.1 = { discovered_by = BAN }
+1444.1.1 = { discovered_by = BEI }
+1444.1.1 = { discovered_by = BLM }
+1444.1.1 = { discovered_by = BTN }
+1444.1.1 = { discovered_by = CRB }
+1444.1.1 = { discovered_by = DMK }
+1444.1.1 = { discovered_by = PGR }
+1444.1.1 = { discovered_by = PLB }
+1444.1.1 = { discovered_by = PSA }
+1444.1.1 = { discovered_by = SAK }
+1444.1.1 = { discovered_by = SUN }
+1444.1.1 = { discovered_by = KUT }
+1444.1.1 = { discovered_by = BNJ }
+1444.1.1 = { discovered_by = LFA }
+1444.1.1 = { discovered_by = LNO }
+1444.1.1 = { discovered_by = LUW }
+1444.1.1 = { discovered_by = MGD }
+1444.1.1 = { discovered_by = TER }
+1444.1.1 = { discovered_by = TID }
 #New
-discovered_by = SKD
-discovered_by = LDA
-discovered_by = BEU
-discovered_by = SPP
-discovered_by = WJO
-discovered_by = BNE
-discovered_by = BMA
-discovered_by = SBW
-discovered_by = SPR
-discovered_by = BLI
-discovered_by = GLU
-discovered_by = JMB
-discovered_by = IDG
-discovered_by = IDP
-discovered_by = ARU
-discovered_by = BRS
-discovered_by = ATJ
-discovered_by = PAH
-discovered_by = KEL
-discovered_by = IFG
-discovered_by = DPT
+1444.1.1 = { discovered_by = SKD }
+1444.1.1 = { discovered_by = LDA }
+1444.1.1 = { discovered_by = BEU }
+1444.1.1 = { discovered_by = SPP }
+1444.1.1 = { discovered_by = WJO }
+1444.1.1 = { discovered_by = BNE }
+1444.1.1 = { discovered_by = BMA }
+1444.1.1 = { discovered_by = SBW }
+1444.1.1 = { discovered_by = SPR }
+1444.1.1 = { discovered_by = BLI }
+1444.1.1 = { discovered_by = GLU }
+1444.1.1 = { discovered_by = JMB }
+1444.1.1 = { discovered_by = IDG }
+1444.1.1 = { discovered_by = IDP }
+1444.1.1 = { discovered_by = ARU }
+1444.1.1 = { discovered_by = BRS }
+1444.1.1 = { discovered_by = ATJ }
+1444.1.1 = { discovered_by = PAH }
+1444.1.1 = { discovered_by = KEL }
+1444.1.1 = { discovered_by = IFG }
+1444.1.1 = { discovered_by = DPT }
 
 1521.1.1 = { discovered_by = POR }

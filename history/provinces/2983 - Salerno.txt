@@ -1,3 +1,4 @@
+ 
 # - Salerno
 #Region - Italy
 #Area - Naples
@@ -35,6 +36,9 @@ discovered_by = eastern
 	#controller = XXX
 	#remove_core = XXX
 #}
+1419.1.1 = {
+	add_local_autonomy = -50 #Appanage ended
+}
 1442.9.1 = { 
 	controller = ARA 
 } # Alfonso V takes the Naples in early June, and uses the momentum to take most of the peninsula by the end of the year
@@ -42,14 +46,16 @@ discovered_by = eastern
 	controller = NAP 
 } # Alfonso V wins the war and Naples united with Aragon in a Personal Union under the Crown of Aragon
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	owner = SIC
-	controller = SIC
+	owner = LCN
+	controller = LCN
+	add_core = LCN
 	remove_core = NAP
 }
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	owner = NAP
 	controller = NAP
 	add_core = NAP
+	remove_core = LCN
 }
 1494.1.1 = { 
 	add_core = FRA 

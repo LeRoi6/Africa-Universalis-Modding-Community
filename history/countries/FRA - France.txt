@@ -11,7 +11,7 @@ historical_rival = HAB
 
 change_estate_land_share = {
 	estate = estate_nobles
-	share = 20 #Changed from 10 because French king had no influence basically.
+	share = 10
 }
 change_estate_land_share = {
 	estate = estate_church
@@ -143,7 +143,6 @@ change_estate_land_share = {
 
 1444.10.1 = {
 	set_estate_privilege = estate_nobles_french_strong_duchies
-	set_estate_privilege = estate_nobles_very_strong_duchies
 }
 
 1455.1.1 = { add_army_professionalism = 0.1 }
@@ -1044,7 +1043,7 @@ add_government_reform = autocracy_reform }
 	monarch = {
 		name = "Napoléon I"
 		adm = 6
-		dip = 3
+		dip = 6
 		mil = 6
 		culture = sardinian #Corsican
 		dynasty = "Bonaparte"

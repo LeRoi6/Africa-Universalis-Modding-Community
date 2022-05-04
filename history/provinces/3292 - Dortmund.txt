@@ -1,3 +1,4 @@
+ 
 #3292 - Dortmund
 #Region - Germany
 #Area - North Rhine
@@ -5,13 +6,13 @@
 owner = DRT
 controller = DRT
 add_core = DRT
-culture = hessian
+culture = lower_saxon
 religion = catholic
 trade_goods = cloth
 capital = "Dortmund"
-base_tax = 14
-base_production = 14			#An Imperial Free City. Throughout the 13th to 14th centuries, it was the "chief city" of the Rhine, Westphalia, the Netherlands Circle of the Hanseatic League, though those areas were quite as rich as they later became, so such is not quite as impressive boast as it may sound.
-base_manpower = 6
+base_tax = 5
+base_production = 5			#An Imperial Free City. Throughout the 13th to 14th centuries, it was the "chief city" of the Rhine, Westphalia, the Netherlands Circle of the Hanseatic League, though those areas were quite as rich as they later became, so such is not quite as impressive boast as it may sound.
+base_manpower = 4
 is_city = yes
 hre = yes
 

@@ -94,4 +94,8 @@ monarch_names = {
 
 ship_names = {
 	Cambrai
+	"Reginar I" Sigard "Reginar II" Godfrey
+	"Reginar III" Richar Reginald "Godfrey II"
+	Herman Amalric Warin Arnulf "Baldvin I"
+	"Baldvin II"
 }

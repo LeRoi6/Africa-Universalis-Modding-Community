@@ -1,3 +1,4 @@
+ 
 #120 - Abbruzzi
 #Region - Italy
 #Area - Naples
@@ -41,15 +42,18 @@ discovered_by = eastern
 	controller = NAP 
 } # Alfonso V wins the war and Naples united with Aragon in a Personal Union under the Crown of Aragon
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	owner = SIC
-	controller = SIC
 	remove_core = NAP
-}
+	add_core = ABR
+	owner = ABR
+	controller = ABR
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	remove_core = ABR
+	add_core = NAP
 	owner = NAP
 	controller = NAP
-	add_core = NAP
-}
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 1494.1.1 = { 
 	add_core = FRA 
 } # Angevin claims

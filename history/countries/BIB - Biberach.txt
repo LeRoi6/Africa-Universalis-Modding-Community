@@ -1,0 +1,28 @@
+#BIB - Biberach
+
+#Political Situation
+capital = 8445
+fixed_capital = 8445 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = republic
+add_government_reform = free_city
+
+#Demographics
+primary_culture = swabian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1399.1.1 = {
+	monarch = {
+		name = "Stadtrat"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

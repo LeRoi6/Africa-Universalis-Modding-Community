@@ -1,4 +1,4 @@
-#BT Italy reoverhaul
+ 
 
 owner = LEC
 controller = LEC
@@ -6,21 +6,19 @@ add_core = LEC
 culture = griko
 religion = catholic
 capital = "Lecce"
+is_city = yes
+hre = no
 base_tax = 5
 base_production = 5
 base_manpower = 3
 trade_goods = wine
-is_city = yes
-hre = no
-
-extra_cost = 8
 center_of_trade = 1
+extra_cost = 8
 
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
-
 
 #Province history completed by - Chairman Meow (JP) 
 #First Shattering not used
@@ -52,16 +50,16 @@ discovered_by = eastern
 	add_core = NAP
 } # Hashtagged as LEC exists in 1444 so not sure it is necessary.
 #1446.5.9 = {
-#	owner = TAN
-	add_core = TAN
-#	controller = TAN
+#	owner = TAT # changed from TAN
+#	add_core = TAT # changed from TAN
+#	controller = TAT # changed from TAN
 #	remove_core = LEC
 #} # Giannantonio inherits County of Lecce from mother, Mary of Enghien
 #1463.11.15 = {
 #	owner = NAP
 #	add_core = NAP
 #	controller = NAP
-#	remove_core = TAN
+#	remove_core = TAT # changed from TAN
 #} # After Giannantonio dies, Lecce was annexed to crown
 1494.1.1 = { 
 	add_core = FRA 

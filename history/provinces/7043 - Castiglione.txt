@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = SIE
@@ -48,8 +49,19 @@ discovered_by = eastern
 	add_core = ARA
 }
 
-#Second Shattering not used
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	owner = CTG
+	controller = CTG
+	remove_core = ARA
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	owner = ARA
+	controller = ARA
+	add_core = ARA
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
+#1444 onwards
 1449.1.1 = {
  owner = PIO
  controller = PIO

@@ -1,3 +1,4 @@
+ 
 #BT reoverhaul
 
 owner = DAN
@@ -30,7 +31,22 @@ discovered_by = eastern
 	base_manpower = 2
 }	#Capital moved from Roskilde to Copenhagen
 
-#2nd Shattering unused
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = DAN
+	add_core = ZEA
+	owner = ZEA
+	controller = ZEA
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = DAN
+	remove_core = ZEA
+	owner = DAN
+	controller = DAN
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+#2nd Performance Start Unused
+
+#1444 on
 #2nd Performance Start Unused
 
 #1444 on

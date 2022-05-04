@@ -2,16 +2,18 @@
 
 owner = BHT
 controller = BHT
-culture = kurdish
-religion = sunni			#Appears to have been dominantly Yazidi from 1300s to 1800s
+culture = assyrian_culture
+religion = nestorian
 capital = "Cizir"			#Kurdish version
-trade_goods = sugar
+trade_goods = bt_trade_good_books #(JP) Manuscript centre plus Prince had large library
 hre = no
-base_tax = 4
+base_tax = 5
 base_production = 4
-base_manpower = 2 
+base_manpower = 3
 is_city = yes
 add_core = BHT
+center_of_trade = 1
+fort_15th = yes
 
 
 discovered_by = east_african

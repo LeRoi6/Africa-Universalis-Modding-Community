@@ -1,4 +1,5 @@
-#3168 - Marsa
+ 
+ #3168 - Marsa
 
 owner = BYZ
 controller = BYZ
@@ -12,13 +13,12 @@ base_tax = 2
 base_production = 2 
 base_manpower = 1 
 is_city = yes
-add_local_autonomy = 10
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
@@ -33,17 +33,36 @@ discovered_by = western
 1344.1.1 = {
 	owner = BUL
 	controller = BUL
+	add_core = BUL #Noticed there was no core here. Figured there should be one.
 } #taken by Bulgaria during BYZ civil war
 1371.1.1 = {
 	owner = TUR
 	controller = TUR
 	add_core = TUR
 	remove_core = BYZ
+	add_local_autonomy = 10
 } #falls to Turkey, but doesn't seem to have been devastated much
 1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
 1413.1.1 = { revolt = {} controller = TUR }
 
-#2nd Shattering unused
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = TUR
+	remove_core = BUL
+	add_core = PHP
+	owner = PHP
+	controller = PHP
+	add_local_autonomy = -10
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = TUR
+	add_core = BUL
+	remove_core = PHP
+	owner = TUR
+	controller = TUR
+	add_local_autonomy = 10
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 #2nd Performance Start Unused
 
 1500.1.1 = {

@@ -1,0 +1,33 @@
+
+capital = 3156 # Suceava
+
+
+
+#History
+
+1444.1.1 = {
+	monarch = {
+		name = "Petru III"
+		dynasty = "Musat"
+		birth_date = 1400.1.1
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Roman"
+		monarch_name = "Roman II"
+		dynasty = "Musat"
+		birth_date = 1426.1.1
+		death_date = 1448.7.2
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1565.1.1 = { capital = 268 # Iasi }

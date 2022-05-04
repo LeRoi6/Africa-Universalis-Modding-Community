@@ -1,0 +1,10 @@
+#Note in BT this is specifically Sennar
+
+primary_culture = luo_culture
+add_accepted_culture = nubian
+religion = shamanism
+capital = 2799	# Sennar
+
+
+
+#History

@@ -1,0 +1,17 @@
+
+historical_rival = TUR
+historical_friend = POL			#Dub added POL in BT unofficial, and I don't really object. Though if we're going this way, I think I'll add others, too
+historical_friend = BOH
+historical_friend = WAL
+
+
+
+#History
+
+1291.1.1 = { remove_accepted_culture = transylvanian }
+1291.1.2 = {
+	add_accepted_culture = romanian
+	add_accepted_culture = transylvanian_saxons
+	add_accepted_culture = serbian
+	add_accepted_culture = cuman
+}			#Note obviously too many here.... should prioritise in order as tech increases for later starts.

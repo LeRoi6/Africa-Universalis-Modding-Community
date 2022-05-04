@@ -439,7 +439,7 @@ gc_aragon_3 = {
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = { 
                 tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-                provinces=gc_ara_venice_provinces
+                provinces=gc_ara_italy_provinces
                 owner_type=country_or_non_sovereign_subject_holds
             }
 		}

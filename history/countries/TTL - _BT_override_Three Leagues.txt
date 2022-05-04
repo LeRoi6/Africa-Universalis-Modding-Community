@@ -1,0 +1,5 @@
+
+add_government_reform = peasants_republic
+primary_culture = romanch_culture
+add_accepted_culture = swiss
+historical_friend = SWI

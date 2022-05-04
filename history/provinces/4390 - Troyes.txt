@@ -1,3 +1,4 @@
+ 
 #3093 - Troyes
 #Region - France
 #Area - Seine
@@ -26,6 +27,20 @@ center_of_trade = 2
 
 1420.5.12 = { owner = ENG controller = ENG add_core = ENG } # Treaty of Troyes, ceded to the English
 1429.1.1 = { owner = FRA controller = FRA remove_core = ENG } # Retaken by the French
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = FRA
+	owner = CHP
+	controller = CHP
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = FRA
+	owner = FRA
+	controller = FRA
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1466.2.10 = { add_core = BUR } # Treaty of Conflans, Champagne is promised to Charles the Bold as dowry
 1477.1.5 = { remove_core = BUR } # Charles the Bold dies
 1562.3.1 = { unrest = 7 } # Massacre at Wassy, the fuse is put in the French powder keg

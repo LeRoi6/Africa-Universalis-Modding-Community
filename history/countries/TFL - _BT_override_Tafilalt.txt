@@ -1,0 +1,3 @@
+
+primary_culture = shilha
+add_accepted_culture = moroccan

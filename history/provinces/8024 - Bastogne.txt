@@ -1,3 +1,4 @@
+
 #BT's Western Europe Overhaul in 12.0
 
 owner = LUX
@@ -7,7 +8,7 @@ culture = wallonian			#Not perfectly clear. Might have been Walloon like the wes
 religion = catholic
 capital = "Bastogne"
 base_tax = 2
-base_production = 3
+base_production = 2
 base_manpower = 2
 trade_goods = naval_supplies			#Niki says livestock, which is a very valid choice, but I'm making it naval supplies... not much of this is Low Countries and I want a couple, and the area is know for 'forest products'. Plus the eye should be drawn to all the livestock in lower Dutch regions, so no livestock here highlights that a bit.
 is_city = yes

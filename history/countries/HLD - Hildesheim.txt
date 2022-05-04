@@ -1,0 +1,28 @@
+#HLD - Hildesheim
+
+#Political Situation
+capital = 8291
+fixed_capital = 8291 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = theocracy
+add_government_reform = leading_clergy_reform
+
+#Demographics
+primary_culture = lower_saxon
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1424.1.1 = {
+	monarch = {
+		name = "Magnus von Saxe-Lauenburg"
+		birth_date = 1385.1.1
+		dip = 3
+		mil = 3
+		adm = 2
+	}
+}

@@ -1,0 +1,41 @@
+#8486 - Toggenburg
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Lichtensteig"
+is_city = yes
+owner = TGN
+controller = TGN
+
+#Demographics
+culture = swiss
+religion = catholic
+
+#Development and Trade
+base_tax = 4
+base_production = 3
+base_manpower = 2
+trade_goods = livestock
+
+#Cores and Occupation (Alphabetical after current)
+add_core = TGN
+add_core = SGL
+add_core = SWI
+add_core = VOR
+add_core = ZUR
+
+#Other Political
+hre = yes
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Histories 

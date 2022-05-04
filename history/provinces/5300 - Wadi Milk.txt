@@ -1,7 +1,8 @@
+ 
 #New Province
 
 capital = "Wadi al-Malik"			#Poor name, need better
-culture = tungur_culture
+culture = tunjur
 religion = sunni
 trade_goods = unknown
 hre = no

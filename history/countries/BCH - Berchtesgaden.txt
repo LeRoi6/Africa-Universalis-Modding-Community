@@ -1,0 +1,28 @@
+#BCH - Berchtesgaden
+
+#Political Situation
+capital = 8464
+fixed_capital = 8464
+
+#Government
+government_rank = 1
+government = theocracy
+add_government_reform = imperial_abbey_reform
+
+#Demographics
+primary_culture = bavarian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1432.1.1 = {
+	monarch = {
+		name = "Johann II Praun"
+		birth_date = 1375.1.1
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}

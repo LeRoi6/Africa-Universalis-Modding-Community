@@ -1,26 +1,26 @@
-#BT Scandinavia and Baltics reoverhaul
+ 
 
 owner = TEU
 controller = TEU
 add_core = TEU
 add_core = SMG
-culture = lithuanian		#Major centre of Lithuanian culture in an predominantly German region. First ever book in Lithuanian published circa 
+culture = lithuanian # Major centre of Lithuanian culture in an predominantly German region. First ever book in Lithuanian published circa 
 religion = catholic
-capital = "Ragnit"			#Now known of Neman. The neighbouring Tilsit, now known as Sovetsk (growing around 1288 Teutonic castle Schalauer Haus) grew to be fairly larger and more important in later periods, though it seems like for both 1291 and 1444 strart Ragnit was still more important.
+capital = "Ragnit" # Now known of Neman. The neighbouring Tilsit, now known as Sovetsk (growing around 1288 Teutonic castle Schalauer Haus) grew to be fairly larger and more important in later periods, though it seems like for both 1291 and 1444 strart Ragnit was still more important.
+is_city = yes
+hre = no
 base_tax = 5
 base_production = 5
 base_manpower = 3
 trade_goods = grain
-is_city = yes
-hre = no
 fort_15th = yes
+extra_cost = 10
 
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
-extra_cost = 10
 add_permanent_province_modifier = {
 	name = neman_estuary_modifier
 	duration = -1
@@ -52,16 +52,20 @@ add_permanent_province_modifier = {
 
 #1291 - 1444
 
-#1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
-#1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-#	owner = XXX
-#	controller = XXX
-#	remove_core = XXX
-#} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = TEU
+	remove_core = SMG
+	add_core = SMA # changed from SMB
+	owner = SMA # changed from SMB
+	controller = SMA # changed from SMB
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = TEU
+	add_core = SMG
+	remove_core = SMA # changed from SMB
+	owner = TEU
+	controller = TEU
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 #	owner = XXX
 #	controller = XXX
@@ -72,5 +76,3 @@ add_permanent_province_modifier = {
 #	controller = XXX
 #	remove_core = XXX
 #} #Return to proper mod added owners and cuts vanilla core, typically.
-
-#1444 on

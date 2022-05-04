@@ -2,12 +2,11 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = piedmontese
-add_accepted_culture = arpitan
 religion = catholic
 technology_group = western
-capital = 205 # Chambéry
+capital = 205 # Chambery
 add_army_professionalism = 0.05
-
+add_accepted_culture = occitain
 
 1391.1.1 = {
 	monarch = {
@@ -48,10 +47,10 @@ add_army_professionalism = 0.05
 		dynasty = "de Lusignan"
 		birth_date = 1418.9.24
 		death_date = 1462.11.11
-        female = yes
 		adm = 2
 		dip = 2
 		mil = 2
+		female = yes
 	}
 	add_queen_personality = embezzler_personality
 }

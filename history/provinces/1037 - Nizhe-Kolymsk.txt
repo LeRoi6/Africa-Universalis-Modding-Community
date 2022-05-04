@@ -1,3 +1,4 @@
+ 
 #1037 - Nizhe-Kolymsk
 
 owner = HOD
@@ -18,10 +19,10 @@ is_city = yes
 
 
 
-discovered_by = HOD
-discovered_by = CHU
-discovered_by = CHV
-discovered_by = KMC
+1444.1.1 = { discovered_by = HOD }
+1444.1.1 = { discovered_by = CHU }
+1444.1.1 = { discovered_by = CHV }
+1444.1.1 = { discovered_by = KMC }
 
 
 1643.1.1 = {

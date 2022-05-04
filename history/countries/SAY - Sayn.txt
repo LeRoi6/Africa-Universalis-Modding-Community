@@ -1,0 +1,42 @@
+#SAY - Sayn
+
+#Political Situation
+capital = 8414
+fixed_capital = 8414 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = hessian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1419.1.1 = {
+	monarch = {
+		name = "Theodore"
+		dynasty = "von Sayn"
+		birth_date = 1393.1.1
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}
+1444.1.1 = {
+	heir = {
+		name = "Gerhardt"
+		monarch_name ="Gerhardt II"
+		dynasty = "von Sayn"
+		birth_date = 1431.1.1
+		death_Date = 1506.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}

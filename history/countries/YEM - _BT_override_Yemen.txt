@@ -1,0 +1,4 @@
+
+historical_rival = RAS
+historical_friend = HDR
+historical_friend = FDI

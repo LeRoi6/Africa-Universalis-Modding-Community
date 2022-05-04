@@ -1,3 +1,4 @@
+#Re-checked/updated by Nuq for BT15 March 4th '22
 #Updated and scriptified by Dub.
 prussian_missions_main_slot = {
 	slot = 1

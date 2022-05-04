@@ -1,3 +1,4 @@
+ 
 #1138 - Kumasi
 
 culture = aka

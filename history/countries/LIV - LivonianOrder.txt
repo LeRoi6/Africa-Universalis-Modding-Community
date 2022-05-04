@@ -8,11 +8,17 @@ add_accepted_culture = estonian
 religion = catholic
 historical_friend = TEU
 historical_friend = RIG
-historical_friend = OSL
-historical_friend = DRP
-historical_friend = KUR
-capital = 7843
+capital = 37	# Livland
 add_army_professionalism = 0.1
+
+change_estate_land_share = {
+	estate = estate_burghers
+	share = 10
+}
+change_estate_land_share = {
+	estate = estate_nobles
+	share = -10
+}
 
 1389.1.1 = {
 	monarch = {
@@ -85,10 +91,6 @@ add_army_professionalism = 0.1
 		adm = 2
 		mil = 1
 	}
-}
-
-1444.10.1 = {
-	set_estate_privilege = estate_nobles_strong_duchies
 }
 
 1450.9.6 = {

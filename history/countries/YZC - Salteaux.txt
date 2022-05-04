@@ -5,7 +5,7 @@ religion = totemism
 technology_group = north_american
 capital = 5036
 historical_friend = ASI			#Trying to encourge the Iron Confederacy
-historical_friend = YYX
+historical_friend = NEH
 
 
 1444.11.11 = {

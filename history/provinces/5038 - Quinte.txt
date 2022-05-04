@@ -1,9 +1,7 @@
+ 
 # No previous file for Beyond Typus province
 
-owner = HUR
-controller = HUR
-add_core = HUR
-is_city = yes
+is_city = no
 culture = huron
 religion = totemism 
 capital = "Kenhtèke"		# Problem Iroquois village couldnt find a name for pre Iroquois Huron village
@@ -20,6 +18,7 @@ native_hostileness = 3
 
 discovered_by = north_american
 
+1444.1.1 = { tribal_owner = HUR }
 
 1500.1.1 = {
 	owner = XXX

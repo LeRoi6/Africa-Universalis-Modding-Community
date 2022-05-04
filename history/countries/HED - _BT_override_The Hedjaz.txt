@@ -1,0 +1,3 @@
+
+add_accepted_culture = bedouin_arabic
+national_focus = ADM

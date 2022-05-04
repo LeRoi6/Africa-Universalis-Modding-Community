@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus or Beyond the Pale Legacy province
 
 owner = TUR
@@ -6,11 +7,11 @@ add_core = TUR
 culture = turkish
 religion = sunni
 capital = "Iznik"
-trade_goods = glass		#whatever. Probably grain or cloth is best, or silk, maybe fish
+trade_goods = glass		#(JP) Pottery
 hre = no
 base_tax = 4
 base_production = 5 #4
-base_manpower = 4 #3
+base_manpower = 3
 is_city = yes
 
 discovered_by = western

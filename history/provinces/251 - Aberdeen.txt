@@ -1,3 +1,4 @@
+ 
 #251 - Aberdeen
 #Region - Britain
 #Area - Grampians
@@ -14,6 +15,7 @@ base_manpower = 1
 capital = "Aberdeen"
 is_city = yes
 add_core = SCO
+fort_15th = yes #Clear fortifications and was heavily fortified until the 1770s apparently.
 
 extra_cost = 8
 center_of_trade = 1
@@ -24,6 +26,22 @@ discovered_by = eastern
 
 
 1375.1.1 = { culture = scottish }
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = SCO
+	add_core = HSC
+	owner = HSC
+	controller = HSC
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = SCO
+	remove_core = HSC
+	owner = SCO
+	controller = SCO
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1560.8.1 = { religion = reformed }
 1644.9.13 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB }
 1645.9.13 = { revolt = {} controller = SCO } # Battle of Philiphaugh

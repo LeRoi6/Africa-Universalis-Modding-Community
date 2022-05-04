@@ -1,3 +1,4 @@
+ 
 #324 - Karaman
 
 owner = KAR
@@ -6,11 +7,11 @@ add_core = KAR
 culture = turkish
 religion = sunni
 capital = "Karaman"
-trade_goods = livestock			#generic poor trade good
+trade_goods = bt_trade_good_books			#(JP) Important religious and educational centre
 hre = no
 base_tax = 5
 base_production = 5
-base_manpower = 3
+base_manpower = 4
 is_city = yes
 
 discovered_by = western

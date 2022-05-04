@@ -1,0 +1,2 @@
+
+religion = vajrayana

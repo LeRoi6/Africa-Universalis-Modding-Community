@@ -1,3 +1,4 @@
+
 #8167 - Limerick
 #Area - Munster
 #Region - Ireland
@@ -25,6 +26,7 @@ add_core = DMS
 hre = no
 
 #Fort/Other Buildings
+fort_15th = yes #King John's Castle
 
 #Special Modifiers
 add_permanent_province_modifier = {

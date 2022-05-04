@@ -1,3 +1,4 @@
+ 
 #BT Balkans reoverhaul
 
 owner = BUL
@@ -15,11 +16,11 @@ is_city = yes
 hre = no
 add_local_autonomy = 10
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
@@ -64,7 +65,22 @@ discovered_by = western
 	controller = TUR
 } #falls to Turkey
 
-#2nd Shattering unused
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	owner = DRJ
+	controller = DRJ
+	remove_core = WAL
+	remove_core = BUL
+	remove_core = TUR
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	owner = TUR
+	controller = TUR
+	add_core = WAL
+	add_core = BUL
+	add_core = TUR
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 #2nd Performance Start Unused
 
 1600.1.1 = {

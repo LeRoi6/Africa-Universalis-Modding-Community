@@ -1,0 +1,11 @@
+
+1444.1.1 = {
+	monarch = {
+		name = "Bodaw Me" #King's son-in-law
+		dynasty = "Kale"
+                culture = burmese
+		ADM = 3
+		DIP = 3
+		MIL = 1
+	}
+}

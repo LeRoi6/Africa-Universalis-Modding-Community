@@ -1,0 +1,2 @@
+
+add_government_reform = oligarchy_reform			#Don't recall the story here, nor why vanilla peasant republic doesn't work

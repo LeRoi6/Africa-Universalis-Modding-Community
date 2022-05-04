@@ -1,3 +1,4 @@
+ 
 #4370 - Cambridgeshire
 #Region - Britain
 #Area - East Anglia
@@ -21,6 +22,22 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = ENG
+	add_core = DNL
+	owner = DNL
+	controller = DNL
+	seat_in_parliament = no
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = ENG
+	remove_core = DNL
+	owner = ENG
+	controller = ENG
+	seat_in_parliament = yes
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1461.6.1 = { unrest = 2 } # Coronation of Edward IV
 1467.1.1 = { unrest = 5 } # Rivalry between Edward IV & Warwick

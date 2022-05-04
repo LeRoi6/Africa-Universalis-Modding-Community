@@ -1,3 +1,4 @@
+
 #8123 - Surrey
 #Area - Essex
 #Region - Britain
@@ -36,3 +37,19 @@ discovered_by = ottoman
 discovered_by = eastern
 
 #Histories
+
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = ENG
+	add_core = WSX
+	owner = WSX
+	controller = WSX
+	seat_in_parliament = no
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = ENG
+	remove_core = WSX
+	owner = ENG
+	controller = ENG
+	seat_in_parliament = yes
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+

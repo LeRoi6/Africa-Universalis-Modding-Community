@@ -1,0 +1,24 @@
+ 
+# ex 8690
+
+owner = IDP # BT; IND
+controller = IDP # BT; IND
+add_core = IDP # BT; IND
+culture = sumatran
+religion = mahayana # BT; hinduism
+capital = "Inderapura" # BT; "Indrapura"
+is_city = yes
+hre = no
+base_tax = 3  # BT; 2
+base_production = 3 # BT; 2
+base_manpower = 2
+trade_goods = bt_trade_good_fruit # BT; grain
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1405.1.1 = { discovered_by = MNG }
+1509.1.1 = { discovered_by = POR }
+1525.1.1 = { religion = sunni }

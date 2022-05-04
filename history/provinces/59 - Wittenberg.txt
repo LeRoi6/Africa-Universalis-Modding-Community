@@ -1,3 +1,4 @@
+ 
 #59 - Wittenberg
 #Region - Germany
 #Area - South Saxony
@@ -11,9 +12,10 @@ trade_goods = wool
 hre = yes
 base_tax = 4 
 base_production = 4 
-base_manpower = 2 
+base_manpower = 3
 is_city = yes
 add_core = SAX
+center_of_trade = 1
 
 discovered_by = western
 discovered_by = muslim

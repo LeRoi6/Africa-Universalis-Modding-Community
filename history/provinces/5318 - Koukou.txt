@@ -1,3 +1,4 @@
+ 
 #New Beyond Typus Province
 
 owner = TLC
@@ -20,6 +21,20 @@ discovered_by = ottoman
 discovered_by = western
 discovered_by = eastern
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = TLC
+	owner = KBA
+	controller = KBA
+	add_local_autonomy = -75			#Kabylians highly autonomous under Hafsids
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = TLC
+	owner = TLC
+	controller = TLC
+	add_local_autonomy = 75			#Kabylians highly autonomous under Hafsids
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 #Wiki quote on the region. I know... Wiki... but it actually sounds like it outlines it decently enough and I have no access to specialised sources for this region -Draiocht
 #Deux hypothèses sont en concurrence pour expliquer la fondation du royaume de Koukou.
 #L'une voudrait qu'il ait été fondé avant la prise de Béjaïa par les Espagnols en 1510, dans un contexte d'affaiblissement du pouvoir hafside. Cette hypothèse est peu soutenue du fait qu'il est peu probable que les Hafsides tolèrent la constitution de cette principauté avant la prise de Béjaïa.

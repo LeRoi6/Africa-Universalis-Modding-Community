@@ -4,8 +4,32 @@ government_rank = 1
 primary_culture = turkish
 religion = sunni
 technology_group = ottoman
-capital = 2304
+capital = 6035
 religious_school = hanafi_school
 
 
 #No information found, EU4 should auto generate appropriate name from culture list
+1439.1.1 = {
+	monarch = {
+		name = "Ibrahim"
+		dynasty = "Bafranoglu"#based on the country
+		birth_date = 1401.1.1
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1439.1.1 = {
+	heir = {
+		name = "Ali"
+		monarch_name = "Ali"
+		dynasty = "Bafranoglu"
+		birth_date = 1429.1.1
+		death_date = 1485.1.1
+		claim = 80
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}

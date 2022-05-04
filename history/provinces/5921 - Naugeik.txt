@@ -1,0 +1,28 @@
+ 
+# ex 4921
+
+culture = yupik
+religion = totemism
+capital = "Naugeik"
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+native_size = 1
+native_ferocity = 1
+native_hostileness = 3 
+
+discovered_by = north_american
+#discovered_by = bt_athabaskan_tech
+#discovered_by = bt_inuit_tech
+
+1764.1.1 = { discovered_by = RUS } #Stepan Glotov
+1789.1.1 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	capital = "Fort Suvarov" #actually 1821, but whatever
+	is_city = yes
+	trade_goods = fur
+}

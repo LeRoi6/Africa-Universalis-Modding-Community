@@ -1,18 +1,19 @@
-# 100 Friesland - Principal cities: Groningen & Leeuwarden
+ 
+#100 - Westergo
 #Region - Low Countries
 #Area - Frisia
 
 owner = FRI
 controller = FRI
-capital = "Leeuwarden"
+capital = "Sneek"
 is_city = yes
 culture = frisian
 religion = catholic
 hre = yes
-base_tax = 2
-base_production = 3
+base_tax = 3
+base_production = 4
 trade_goods = livestock 			#SUPERCOWS
-base_manpower = 2 
+base_manpower = 4 
 add_core = FRI
 
 discovered_by = western

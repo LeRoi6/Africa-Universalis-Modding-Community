@@ -1,3 +1,4 @@
+ 
 #144 - Epiros
 
 owner = TUR
@@ -18,17 +19,31 @@ add_local_autonomy = 60			#City surrendered in 1430 on a promise to respect loca
 extra_cost = 16
 center_of_trade = 2
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
 1430.1.1 = { owner = TUR add_core = TUR controller = TUR capital = "Janina" }
+
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = TUR
+	owner = EPI
+	controller = EPI
+	add_local_autonomy = -60			#City surrendered in 1430 on a promise to respect local autonomy. Ideally, its own tag for a couple years, probably, but simplifying for now into just Ottoman rule.
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = TUR
+	owner = TUR
+	controller = TUR
+	add_local_autonomy = 60			#City surrendered in 1430 on a promise to respect local autonomy. Ideally, its own tag for a couple years, probably, but simplifying for now into just Ottoman rule.
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 1502.1.1 = { remove_core = BYZ remove_core = EPI }
 1555.1.1 = { unrest = 5 } # General discontent against the Janissaries' dominance
 1556.1.1 = { unrest = 0 }

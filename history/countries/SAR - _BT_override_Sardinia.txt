@@ -1,0 +1,3 @@
+
+capital = 2986 #Cagliari
+fixed_capital = 2986 			#Don't actually love fixed capital here, but vanilla has one, so need to override it here

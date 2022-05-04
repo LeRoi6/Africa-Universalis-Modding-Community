@@ -1,0 +1,5 @@
+
+add_accepted_culture = latvian
+add_accepted_culture = estonian
+capital = 7845	# Riga
+fixed_capital = 7845

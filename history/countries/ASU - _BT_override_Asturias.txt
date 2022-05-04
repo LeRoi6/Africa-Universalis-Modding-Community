@@ -1,0 +1,3 @@
+
+add_accepted_culture = leonese
+add_accepted_culture = galician

@@ -1,3 +1,4 @@
+ 
 #4273 - Karaitan
 
 capital = "Al Ghazalah"

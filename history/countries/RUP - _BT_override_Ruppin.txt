@@ -1,0 +1,15 @@
+
+primary_culture = markish
+
+#History
+
+1420.1.1 = {
+	monarch = {
+		name = "Albrecht VIII"
+		dynasty = "von Lindow-Ruppin"
+		birth_date = 1405.1.1
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}

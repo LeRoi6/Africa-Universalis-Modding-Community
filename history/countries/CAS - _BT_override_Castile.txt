@@ -1,0 +1,14 @@
+
+remove_accepted_culture = leonese
+add_accepted_culture = galician
+historical_friend = HAB			#Dub added. I mean, could be argued either way, but it hurts little. Both should be rivaling Ottomans and/or France, anyway. Not close enough to mess with balance...yeah, hurts nothing.
+capital = 215
+
+
+
+#History 
+
+1444.10.1 = {
+	set_estate_privilege = estate_nobles_nobility_primacy
+	set_estate_privilege = estate_nobles_supremacy_over_crown
+}

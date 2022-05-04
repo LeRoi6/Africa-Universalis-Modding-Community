@@ -649,7 +649,7 @@ emp_sav_missions_conquest_west = {
 			}
 		}
 		effect = {
-			upper_gascony  = {
+			upper_gascony = {  
 				limit = {
 					NOT = { is_core = root }
 					NOT = { is_permanent_claim = root }
@@ -681,7 +681,7 @@ emp_sav_missions_conquest_west = {
 		position = 4
 		provinces_to_highlight = {
 			OR = {
-				area = upper_gascony
+				area = upper_gascony  
 				area = pyrenees_area
 				area = guyenne_area
 			}
@@ -689,7 +689,7 @@ emp_sav_missions_conquest_west = {
 			NOT = { country_or_non_sovereign_subject_holds = root }
 		}
 		trigger = {
-			upper_gascony = {
+			upper_gascony = {  
 				type = all
 				owned_by = ROOT
 			}

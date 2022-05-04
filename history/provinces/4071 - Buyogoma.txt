@@ -1,16 +1,16 @@
-#4071 - Unyamyembe
-#Revamped by AUMC
+ 
+# - Buyogoma
 
-owner = UYU
-controller = UYU
-add_core = UYU
-culture = nyamwezi
-religion = waganga
-trade_goods = ivory
-capital = "Kazeh"
+owner = UBH
+controller = UBH
+add_core = UBH
+culture = rwandan #Ha
+religion = shamanism #Fetishism
+trade_goods = grain
+capital = "Buyogoma"
 hre = no
 base_tax = 4 
 base_production = 4
-base_manpower = 4 
+base_manpower = 2 
 
 discovered_by = central_african

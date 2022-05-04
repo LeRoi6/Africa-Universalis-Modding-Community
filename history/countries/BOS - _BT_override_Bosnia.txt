@@ -1,0 +1,4 @@
+
+add_accepted_culture = serbian
+capital = 3002
+#When I replaced the whole file, I also removed historical friendship w/ Serbia.... but it isn't that big a deal either way, so HF left in to ease updating, basically.

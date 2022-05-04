@@ -1,0 +1,37 @@
+#8402 - Bentheim
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Bentheim"
+is_city = yes
+owner = BTH
+controller = BTH
+
+#Demographics
+culture = lower_saxon
+religion = catholic
+
+#Development and Trade
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = cloth
+
+#Cores and Occupation (Alphabetical after current)
+add_core = BTH
+
+#Other Political
+hre = yes
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Histories 

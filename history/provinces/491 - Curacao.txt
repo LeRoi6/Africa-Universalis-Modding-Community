@@ -1,3 +1,4 @@
+ 
 #491 - Curacao
 
 culture = guajiro
@@ -12,8 +13,8 @@ native_size = 10
 native_ferocity = 1
 native_hostileness = 3
 
-discovered_by = CAB
-discovered_by = ARW
+1444.1.1 = { discovered_by = CAB }
+1444.1.1 = { discovered_by = ARW }
 
 
 1499.6.1 = { discovered_by = CAS } # Alonso de Ojeda

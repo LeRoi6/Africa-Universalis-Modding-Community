@@ -1,16 +1,18 @@
+
 #941 - Cumberland
 
-culture = shawnee
+owner = CCA
+controller = CCA
+add_core = CCA
+culture = yuchi
 religion = totemism
 capital = "Cumberland"
 trade_goods = fur
 hre = no
+is_city = yes
 base_tax = 1 
 base_production = 1 
 base_manpower = 1 
-native_size = 5
-native_ferocity = 1
-native_hostileness = 6
 
 
 

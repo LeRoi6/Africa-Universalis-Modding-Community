@@ -1,0 +1,4 @@
+
+historical_rival = TUR
+historical_friend = HUN			#Dub added HF w/ HUN in BT unofficial for gameplay reasons. Makes sense for historical ones, too, but it is incomplete. Needs BOH, too.
+historical_friend = BOH

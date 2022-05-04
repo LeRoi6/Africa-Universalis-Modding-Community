@@ -1,13 +1,11 @@
+ 
 # No previous file for Beyond Typus province
 
-owner = SAL			#Yeah, I know, the Duwamish and Suquamish weren't merged in the 15th century, and probably didn't even go by these names, but give me a break =p
-controller = SAL
-add_core = SAL
 culture = salish
 religion = totemism 
 capital = "D'Suq'Wub" 
 trade_goods = fish
-is_city = yes
+is_city = no
 hre = no 
 base_tax = 1 
 base_production = 1 
@@ -21,6 +19,7 @@ discovered_by = north_american
 #discovered_by = bt_northwest_tech
 
 
+1444.1.1 = { tribal_owner = SAL }
 1444.11.15 = { #BeyondTypus batch edit shortcut no native start date begin
 	owner = XXX
 	controller = XXX

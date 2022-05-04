@@ -1,17 +1,18 @@
+ 
 #4049 - Ibo
 
-owner = IBO
-controller = IBO
-add_core = IBO
-culture = mwani
+owner = ZAN
+controller = ZAN
+add_core = ZAN
+culture = swahili
 religion = sunni
 capital = "Ibo"
 is_city = yes
 base_manpower = 2 
-trade_goods = dyes
+trade_goods = ivory
 hre = no
-base_tax = 5  
-base_production = 5
+base_tax = 4  
+base_production = 4
 add_local_autonomy = 25
 discovered_by = east_african
 discovered_by = indian

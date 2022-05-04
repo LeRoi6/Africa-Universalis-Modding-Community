@@ -1,6 +1,7 @@
+ 
 # No previous file for Beyond Typus province
 
-culture = huron
+culture = tionontate
 religion = totemism 
 capital = "Teotongniaton"
 trade_goods = unknown
@@ -16,3 +17,6 @@ discovered_by = north_american
 
 
 #Province History
+
+
+1444.1.1 = { tribal_owner = YZI }

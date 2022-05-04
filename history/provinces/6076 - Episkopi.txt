@@ -1,0 +1,40 @@
+#6076 - Episkopi
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Episkopi"
+is_city = yes
+owner = VEN
+controller = VEN
+
+#Demographics
+culture = cypriot
+religion = orthodox
+
+#Development and Trade
+base_tax = 2
+base_production = 5
+base_manpower = 2
+trade_goods = sugar #(JP) Cornaro Venetian family ran a massive sugar processing factory here
+
+#Cores and Occupation (Alphabetical after current)
+add_core = VEN
+add_core = CYP
+add_core = ROC
+
+#Other Political
+hre = no
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group
+
+#Histories 

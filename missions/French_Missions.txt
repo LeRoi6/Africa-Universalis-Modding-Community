@@ -593,7 +593,7 @@ france_expand_south = {
 			OR = {
 				area = guyenne_area
 				area = pyrenees_area
-				area = upper_gascony
+				area = upper_gascony  
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -608,7 +608,7 @@ france_expand_south = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			upper_gascony = {
+			upper_gascony = {  
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

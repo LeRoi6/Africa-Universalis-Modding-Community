@@ -1,3 +1,4 @@
+ 
 #1019 - Harima
 
 owner = YMN
@@ -15,10 +16,10 @@ add_core = YMN
 add_core = HSK
 add_core = AKM
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
+1444.1.1 = { discovered_by = MCH }
+1444.1.1 = { discovered_by = KHA }
+1444.1.1 = { discovered_by = OIR }
+1444.1.1 = { discovered_by = QNG }
 
 
 1468.1.1 = { owner = AKM controller = AKM }

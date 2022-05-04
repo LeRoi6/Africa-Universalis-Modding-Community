@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = CTN
@@ -25,15 +26,26 @@ discovered_by = eastern
 	owner = NAP
 	controller = NAP
 	add_core = NAP
-	} # taken by Ladislaus
+} # taken by Ladislaus
 1411.1.1 = {
-  owner = LAN
-  controller = LAN
-  add_core = LAN
-  remove_core= NAP
-	} # sold to the Medici
-#Second Shattering not used
+	owner = LAN
+	controller = LAN
+	add_core = LAN
+	remove_core= NAP
+} # sold to the Medici
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = LAN
+	owner = CTN
+	controller = CTN
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = LAN
+	owner = LAN
+	controller = LAN
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
+#1444 onwards
 1495.1.1 = { hre = no }
 1527.1.1 = { controller = SPA } # War of the League of Cognac
 1529.8.3 = { controller = LAN } # Treaty of Cambrai

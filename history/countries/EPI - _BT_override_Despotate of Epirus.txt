@@ -1,0 +1,4 @@
+
+primary_culture = greek
+add_accepted_culture = neapolitan
+religion = orthodox

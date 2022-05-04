@@ -1,3 +1,4 @@
+ 
 #3059 - Overijssel
 #Region - Low Countries
 #Area - Frisia
@@ -6,7 +7,7 @@ owner = UTR
 controller = UTR 
 capital = "Zwolle"
 is_city = yes
-culture = hannoverian
+culture = lower_saxon
 religion = catholic
 hre = yes
 base_tax = 4

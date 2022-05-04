@@ -4,7 +4,10 @@ tur_conquerors_of_the_near_east = {
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
 	potential = {
-		tag = TUR
+		OR = {
+			tag = TUR
+			tag = RUM
+		}
 	}
 	has_country_shield = yes
 	
@@ -40,6 +43,12 @@ tur_conquerors_of_the_near_east = {
 				add_claim = ROOT
 			}
 			give_permaclaims_for_mission = { mission=conquer_southern_greece }
+		}
+		ai_priority = {
+			factor = 1000
+		}
+		ai_weight = {
+			factor = 1000
 		}
 	}
 	conquer_southern_greece = {
@@ -239,7 +248,10 @@ tur_eastern_balkans = {
 	ai = yes
 	
 	potential = {
-		tag = TUR
+		OR = {
+			tag = TUR
+			tag = RUM
+		}
 	}
 	
 	has_country_shield = yes
@@ -340,7 +352,10 @@ tur_conquest_of_middle_east = {
 	ai = yes
 	
 	potential = {
-		tag = TUR
+		OR = {
+			tag = TUR
+			tag = RUM
+		}
 	}
 	
 	has_country_shield = yes
@@ -492,7 +507,10 @@ tur_conquest_of_middle_east = {
 tur_black_sea = {
 	slot = 4
 	potential = {
-		tag = TUR
+		OR = {
+			tag = TUR
+			tag = RUM
+		}
 	}
 	
 	has_country_shield = yes
@@ -551,7 +569,10 @@ tur_eastern_mediterrenean_missions = {
 	ai = yes
 	
 	potential = {
-		tag = TUR
+		OR = {
+			tag = TUR
+			tag = RUM
+		}
 	}
 	
 	has_country_shield = yes
@@ -599,7 +620,7 @@ tur_eastern_mediterrenean_missions = {
 			factor = 5
 		}
 		provinces_to_highlight = {
-			conquer_egypt_provinces = yes						
+			conquer_egypt_provinces = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -696,7 +717,10 @@ tur_eastern_mediterrenean_missions = {
 tur_conquer_western_mediterrenean = {
 	slot = 2
 	potential = {
-		tag = TUR
+		OR = {
+			tag = TUR
+			tag = RUM
+		}
 	}
 	
 	has_country_shield = yes
@@ -812,7 +836,10 @@ tur_conquer_western_mediterrenean = {
 tur_indian_ocean = {
 	slot = 4
 	potential = {
-		tag = TUR
+		OR = {
+			tag = TUR
+			tag = RUM
+		}
 	}
 	
 	has_country_shield = yes

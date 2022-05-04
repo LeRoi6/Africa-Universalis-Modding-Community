@@ -1,15 +1,15 @@
+ 
 #BT Italy reoverhaul
 
 owner = BRX
 controller = BRX
 add_core = BRX
-add_core = TIR
-culture = austrian
+culture = bavarian
 religion = catholic
 capital = "Brixen"
 base_tax = 4
-base_production = 4
-base_manpower = 2
+base_production = 5
+base_manpower = 4
 trade_goods = glass			#crystal chandeliers, also elite furniture
 is_city = yes
 hre = yes
@@ -35,11 +35,19 @@ discovered_by = eastern
 
 #By circa 1430 very unclear if this is Austria, an Austrian fief, an Austrian apanage, or an independent HRE bishopric. Calling it independent because people love tags, and Austria has enough dev problems
 
-#Second shattering unused
+#Second shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = TIR
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = TIR
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 	owner = HAB
 	controller = HAB
 	add_core = HAB
+	
 } #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
 1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
 	owner = BRX

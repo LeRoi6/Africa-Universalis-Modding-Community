@@ -1,3 +1,4 @@
+
 #847 - Mixtec
 
 owner = MIX 
@@ -15,9 +16,9 @@ add_core = MIX
 
 
 
-discovered_by = MAY
-discovered_by = ZAP
-discovered_by = AZT
+1444.1.1 = { discovered_by = MAY }
+1444.1.1 = { discovered_by = ZAP }
+1444.1.1 = { discovered_by = AZT }
 
 
 1498.1.1 = { capital = "Huasyacac" } 

@@ -1,0 +1,31 @@
+#ZIE - Ziegenhein
+
+#Political Situation
+capital = 8427
+fixed_capital = 8427 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = hessian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1420.1.1 = {
+	monarch = {
+		name = "Johann II"
+		dynasty = "von Ziegenhein"
+		birth_date = 1380.1.1
+		dip = 1 #outlaw
+		adm = 2
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = infertile_personality
+}

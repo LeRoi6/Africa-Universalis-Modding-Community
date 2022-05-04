@@ -1,10 +1,11 @@
+
 #987 - Niagara
 
 owner = YZI			#Neutrals
 controller = YZI
 add_core = YZI
 is_city = yes
-culture = huron
+culture = tionontate
 religion = totemism
 capital = "Kandoucho"
 trade_goods = grain		#Quote agrarian society with farms admired and marveled over by European leaders writing reports home. Flint was actually primary export, but whatever, there is no flint trade good

@@ -1,8 +1,9 @@
+ 
 # No previous file for Beyond Typus province
 
 culture = beothuk
 religion = totemism 
-capital = "Saint Pierre" 
+capital = "Wen'juikjikan" #(JP) Not perfect, but it is better than no native name imo
 trade_goods = unknown
 hre = no 
 base_tax = 1 

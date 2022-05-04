@@ -1,0 +1,10 @@
+
+historical_rival = TUR
+historical_rival = MOS
+historical_rival = RUS
+
+
+
+#History
+
+1444.10.1 = { set_estate_privilege = estate_nobles_strong_duchies }

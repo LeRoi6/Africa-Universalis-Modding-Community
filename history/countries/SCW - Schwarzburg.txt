@@ -1,0 +1,55 @@
+#SCW - Schwarzburg
+
+#Political Situation
+capital = 8286
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = saxon
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1444.1.1 = {
+	monarch = {
+		name = "Heinrich"
+		monarch_name = "Heinrich XXI"
+		dynasty = "von Schwarzburg"
+		birth_date = 1418.1.1
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+1439.1.2 = {
+	heir = {
+		name = "Gunther"
+		monarch_name ="Gunther XX"
+		dynasty = "von Schwarzburg"
+		birth_date = 1439.1.1
+		death_Date = 1503.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+1476.1.1 = {
+	monarch = {
+		name = "Gunther"
+		monarch_name ="Gunther XX"
+		dynasty = "von Schwarzburg"
+		birth_date = 1439.1.1
+		death_Date = 1503.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

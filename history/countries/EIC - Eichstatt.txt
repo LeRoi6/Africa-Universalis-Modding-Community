@@ -1,0 +1,28 @@
+#EIC - Eichstätt
+
+#Political Situation
+capital = 8456
+fixed_capital = 8456
+
+#Government
+government_rank = 1
+government = theocracy
+add_government_reform = leading_clergy_reform
+
+#Demographics
+primary_culture = bavarian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1444.1.1 = {
+	monarch = {
+		name = "Johann von Eych"
+		birth_date = 1385.1.1
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}

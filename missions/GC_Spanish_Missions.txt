@@ -332,12 +332,12 @@ gc_spain_2 = {
 		position = 2
 
 		provinces_to_highlight = {
-			area = basque_area
+			area = basque_country
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
 		trigger = {
-			basque_area = {
+			basque_country = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -366,6 +366,85 @@ gc_spain_2 = {
 					duration = 7300
 				}
 			}
+			if = {
+				limit = {
+					exists = POR
+					valid_for_personal_unions_trigger = yes
+					POR = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				if = {
+					limit = {
+						mission_completed = gc_cas_spa_reconquista_one
+					}
+					add_casus_belli = {
+						type = cb_restore_personal_union
+						months = 300
+						target = POR
+					}
+				}
+				else = {
+					custom_tooltip = gc_cas_spa_navarra_ct
+				}
+			}
+			else_if = {
+				limit = {
+					mission_completed = gc_cas_spa_reconquista_one
+				}
+				alentejo_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				beieras_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			else = {
+				custom_tooltip = gc_cas_spa_navarra_bt
+			}
+		}
+	}
+
+	gc_cas_spa_reconquista_two = {
+		icon = mission_cannons_firing
+		required_missions = {
+			gc_cas_spa_navarra
+			gc_cas_spa_reconquista_one
+		}
+		position = 3
+
+		# free mission
+
+		provinces_to_highlight = {
+			OR = {
+				area = beieras_area
+				area = alentejo_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+			beieras_area = {
+				type = all
+				owned_by = ROOT
+			}
+			alentejo_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+			add_adm_power = 100
 		}
 	}
 
@@ -377,8 +456,10 @@ gc_spain_2 = {
 
 		provinces_to_highlight = {
 			region = iberia_region
-			NOT = { culture = andalusi_culture }
-			NOT = { culture = andalucian }
+			OR = {
+				culture = andalusi_culture
+				culture = andalucian
+			}
 		}
 
 		trigger = {
@@ -702,7 +783,8 @@ gc_spain_3 = {
 				duration = 5475
 			}
 			give_permaclaims_for_mission = { mission=gc_cas_spa_reconquista_one }
-			basque_area = {
+			give_permaclaims_for_mission = { mission=gc_cas_spa_navarra }
+			basque_country = {
 				if = {
 					limit = {
 						NOT = {
@@ -737,6 +819,50 @@ gc_spain_3 = {
 			set_country_flag = fate_of_granada_mission_flag
 			country_event = {
 				id = flavor_spa.8
+			}
+			if = {
+				limit = {
+					exists = POR
+					valid_for_personal_unions_trigger = yes
+					POR = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				if = {
+					limit = {
+						mission_completed = gc_cas_spa_navarra
+					}
+					add_casus_belli = {
+						type = cb_restore_personal_union
+						months = 300
+						target = POR
+					}
+				}
+				else = {
+					custom_tooltip = gc_cas_spa_reconquista_one_ct
+				}
+			}
+			else_if = {
+				limit = {
+					mission_completed = gc_cas_spa_navarra
+				}
+				alentejo_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				beieras_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			else = {
+				custom_tooltip = gc_cas_spa_reconquista_one_bt
 			}
 		}
 	}
@@ -885,7 +1011,7 @@ gc_spain_3_b = {
 				manuever = 5
 				siege = 1
 			}
-			upper_peru = {
+			upper_peru = {  
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1036,7 +1162,7 @@ gc_spain_3_b = {
 
 		provinces_to_highlight = {
 			OR = {
-				area = upper_peru
+				area = upper_peru  
 				area = potosi_area
 				area = antisuyu_area
 				area = kuntisuyu_area
@@ -1048,7 +1174,7 @@ gc_spain_3_b = {
 		}
 
 		trigger = {
-			upper_peru = {
+			upper_peru = {  
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1286,29 +1412,17 @@ gc_spain_4 = {
 		effect = {
 			if = {
 				limit = {
-					exists = POR
-					is_subject = no
-					government = monarchy
-					religion_group = christian
-					POR = {
-						is_subject = no
-						government = monarchy
+					exists = NAP
+					valid_for_personal_unions_trigger = yes
+					NAP = {
+						valid_for_personal_unions_trigger = yes
 					}
 				}
 				add_casus_belli = {
 					type = cb_restore_personal_union
 					months = 300
-					target = POR
+					target = NAP
 				}
-			}
-			else = {
-				give_permaclaims_for_mission = { mission=gc_cas_spa_reconquista_two }
-			}
-			if = {
-				limit = {
-					NOT = { NAP = { is_subject_of = ROOT } }
-				}
-				give_permaclaims_for_mission = { mission=gc_cas_spa_italian_ambition }
 			}
 			else = { #Special case.
 				if = {
@@ -1701,54 +1815,6 @@ gc_spain_4_d = {
 }
 
 gc_spain_5_a = {
-	slot = 5
-	generic = no
-	ai = yes
-	potential_on_load = {
-		has_dlc = "Golden Century"
-	}
-	potential = {
-		has_dlc = "Golden Century"
-		OR = {
-			tag = CAS
-			AND = {
-				tag = SPA
-				NOT = { primary_culture = aragonese }
-				NOT = { primary_culture = catalan }
-			}
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-
-	gc_cas_spa_reconquista_two = {
-		icon = mission_cannons_firing
-		required_missions = { gc_cas_spa_reconquista_three }
-		position = 2
-
-		# free mission
-
-		provinces_to_highlight = {
-			gc_cas_spa_reconquista_two_provinces = yes
-			NOT = { owned_by = ROOT }
-		}
-
-		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_highlighted 
-				provinces=gc_cas_spa_reconquista_two_provinces
-				owner_type=owned_by
-			}
-		}
-
-		effect = {
-			add_prestige = 25
-			add_adm_power = 100
-		}
-	}
-}
-
-gc_spain_5_b = {
 	slot = 5
 	generic = no
 	ai = yes

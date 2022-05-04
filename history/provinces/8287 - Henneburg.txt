@@ -1,0 +1,37 @@
+#8287 - Henneburg
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Henneburg"
+is_city = yes
+owner = HEN
+controller = HEN
+
+#Demographics
+culture = franconian
+religion = catholic
+
+#Development and Trade
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = dyes
+
+#Cores and Occupation (Alphabetical after current)
+add_core = HEN
+
+#Other Political
+hre = yes
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Histories 

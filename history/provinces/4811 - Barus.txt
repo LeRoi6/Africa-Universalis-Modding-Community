@@ -1,0 +1,26 @@
+ 
+# ex 8607
+# in BT 619 - Batak has capital Barus
+
+owner = ATJ # BT; BRS
+controller = ATJ # BT; BRS
+add_core = ATJ # BT; BRS
+culture = batak # BT; sumatran
+religion = sunni # BT; hinduism
+capital = "Kluet" # BT; "Barus"
+is_city = yes
+hre = no
+base_tax = 3 # BT; 4
+base_production = 3 # BT; 4
+base_manpower = 2 # BT; 3
+trade_goods = bt_trade_good_fruit # BT; spices
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1405.1.1 = { discovered_by = MNG }
+1509.1.1 = { discovered_by = POR }
+1658.1.1 = { owner = NED controller = NED } # The Dutch gradually gained control
+1683.1.1 = { add_core = NED }

@@ -1,0 +1,4 @@
+
+primary_culture = turkoman
+add_accepted_culture = syriac_culture
+capital = 6029	# Elbistan

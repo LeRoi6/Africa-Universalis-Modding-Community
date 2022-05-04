@@ -1,3 +1,4 @@
+ 
 #Lapland, the far north wastelands.
 #Region - Scandinavia
 #Area - Norrland
@@ -32,7 +33,22 @@ add_province_triggered_modifier = bt_birkarls
 	trade_goods = fur
 } 
 
-#2nd Shattering unused
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = SWE
+	add_core = SMI
+	owner = SMI
+	controller = SMI
+	add_local_autonomy = -55 #This stacks with culture and religious starting autonomy, it seems. Reducing from 90.
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	remove_core = SMI
+	add_core = SWE
+	owner = SWE
+	controller = SWE
+	add_local_autonomy = 55 #This stacks with culture and religious starting autonomy, it seems. Reducing from 90.
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 #2nd Performance Start Unused
 
 #1444 on

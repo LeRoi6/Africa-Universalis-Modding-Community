@@ -1,0 +1,40 @@
+#6142 - Kufa
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Kufa"
+is_city = yes
+owner = IRQ
+controller = IRQ
+
+#Demographics
+culture = al_iraqiya_arabic
+religion = shiite
+
+#Development and Trade
+base_tax = 3
+base_production = 3
+base_manpower = 3
+trade_goods = bt_trade_good_books #(JP) Shia Religious Centre
+
+#Cores and Occupation (Alphabetical after current)
+add_core = QAR
+add_core = IRQ
+
+#Other Political
+hre = no
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = indian
+discovered_by = east_african
+
+#Histories 

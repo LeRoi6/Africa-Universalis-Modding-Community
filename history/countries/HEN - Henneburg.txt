@@ -1,0 +1,42 @@
+#HEN - Henneburg
+
+#Political Situation
+capital = 8287
+fixed_capital = 8287 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = franconian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1426.1.1 = {
+	monarch = {
+		name = "Wilhelm III"
+		dynasty = "von Henneburg"
+		birth_date = 1370.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+1426.1.1 = {
+	heir = {
+		name = "Wilhelm IV"
+		monarch_name ="Wilhelm"
+		dynasty = "von Henneburg"
+		birth_date = 1404.1.1
+		death_Date = 1480.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

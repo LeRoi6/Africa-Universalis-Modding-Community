@@ -1,6 +1,7 @@
+ 
 # No previous file for Beyond Typus province
 
-culture = abenaki					#Maliseet
+culture = maliseet					#Maliseet
 religion = totemism 
 capital = "Ska Môraskua" 				
 trade_goods = unknown
@@ -15,6 +16,7 @@ native_hostileness = 3
 
 discovered_by = north_american
 
+1444.1.1 = { tribal_owner = MLS }
 
 1536.5.1 = { discovered_by = FRA } # Jaques Cartier's second voyage
 

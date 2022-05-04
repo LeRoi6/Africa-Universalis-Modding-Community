@@ -1,10 +1,8 @@
+
 #899 - Osage
 
-owner = OSA
-controller = OSA
-add_core = OSA
-is_city = yes
-culture = osage
+is_city = no
+culture = yoron
 religion = totemism
 capital = "Pahatsi"
 trade_goods = grain

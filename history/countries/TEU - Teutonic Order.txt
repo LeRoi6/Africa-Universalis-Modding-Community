@@ -2,7 +2,6 @@ government = theocracy
 add_government_reform = monastic_order_reform
 government_rank = 1
 primary_culture = prussian
-add_accepted_culture = pommeranian
 religion = catholic
 technology_group = western
 historical_friend = LIV
@@ -85,10 +84,6 @@ change_estate_land_share = {
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = silver_tongue_personality
-}
-
-1444.10.1 = {
-	set_estate_privilege = estate_nobles_strong_duchies
 }
 
 1449.11.8 = {

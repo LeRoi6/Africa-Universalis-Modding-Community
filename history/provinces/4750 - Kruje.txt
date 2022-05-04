@@ -1,3 +1,4 @@
+ 
 # 4750 - Krujë, Tirana, central Albania
 
 owner = ALB
@@ -13,11 +14,11 @@ base_manpower = 2
 is_city = yes
 fort_15th = yes # Krujë Castle
 add_core = ALB
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern

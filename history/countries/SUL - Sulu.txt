@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = plutocratic_reform
 technology_group = chinese
 religion = sunni
-primary_culture = bajau
+primary_culture = filipino
 capital = 651	# Jolo
 religious_school = shafii_school
 
@@ -10,7 +10,7 @@ religious_school = shafii_school
 	monarch = {
 		name = "Sharif ul Hashim"
 		dynasty = "Adinda"
-		culture = malay
+		culture = malayan
 		religion = sunni
 		dip = 3
 		adm = 3

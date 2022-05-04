@@ -384,13 +384,13 @@ sco_rb_conquest_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			cornwall_area = { #Added by C1CK
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			# cornwall_area = { #Added by C1CK
+				# limit = {
+					# NOT = { owned_by = ROOT	}
+					# NOT = { is_core = ROOT	}
+				# }
+				# add_permanent_claim = ROOT
+			# }
 			wales_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
@@ -406,7 +406,7 @@ sco_rb_conquest_missions = {
 		provinces_to_highlight = {
 			OR = {
 				region = british_isles_region
-				region = ireland_area #Added by C1CK
+				region = ireland_region # Brian; changed from _area; #Added by C1CK
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -417,7 +417,7 @@ sco_rb_conquest_missions = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			ireland_area = { #Added by C1CK
+			ireland_region = { # Brian; changed from _area; #Added by C1CK
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

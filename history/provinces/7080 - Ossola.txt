@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = MLO
@@ -37,14 +38,17 @@ discovered_by = eastern
 	controller = MLO
 	add_core = MLO
 } # Giovanni Visconti defeats Calcino Tornielli and apparantly claims the region for Milan.
+
+#2nd Shattering
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	owner = NVA
 	controller = NVA
-	add_core = NVA
+	remove_core = MLO
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	owner = MLO
 	controller = MLO
+	add_core = MLO
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #Second Performance Start not used
 #Just ignoring the Visconti to Sforza drama for now. Easier to just change rulers and not mess with tag changes or such nonsense.

@@ -12,7 +12,7 @@ por_african_ambitions = {
 	has_country_shield = yes
 	
 	por_discover_african_coast = {
-		icon = mission_establish_high_seas_navy
+		icon = mission_invade_island
 		required_missions = { }
 		position = 1
 		completed_by = 1445.1.1

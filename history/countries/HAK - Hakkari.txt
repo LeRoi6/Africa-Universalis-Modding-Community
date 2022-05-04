@@ -1,0 +1,35 @@
+#HAK - Hakkari
+
+#Political Situation
+capital = 6114
+fixed_capital = 6114 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1	
+government = monarchy
+add_government_reform = iqta
+
+#Demographics
+primary_culture = kurdish
+religion = sunni
+religious_school = shafii_school
+add_accepted_culture = assyrian_culture #If the assyrians called them back to power, they should be accepted pops
+
+#Tech and Military
+technology_group = muslim
+
+#Technically non-existant in 1444, its northern flank had been conquered by the new Mahmudi, whilst the town itself had been taken by Qara Qoyunlu. 
+#However, some time between 1444 and 1490, the dynasty (who had been in exile in Egypt) return at the request of the Assyrians in the south of the Principality and took control again. 
+#Recommended to be represented as an interegnum. 
+
+#History
+
+1444.1.1 = {
+    monarch = {
+        name = "Interregnum"
+        regent = yes
+        adm = 0
+        dip = 0
+        mil = 0
+    }
+}

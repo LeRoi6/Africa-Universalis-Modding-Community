@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus province
 
 culture = takic
@@ -15,5 +16,6 @@ native_hostileness = 3
 discovered_by = north_american
 
 
+1444.1.1 = { tribal_owner = YYO }
 1772.1.1 = { discovered_by = SPA } #Pedro Fages, or Father Francisco Garces in 1176
 #First settled mid 1800s

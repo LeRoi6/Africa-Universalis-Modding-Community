@@ -163,9 +163,9 @@ bt_norwegian_internal_missions = {
 		position = 3
 		provinces_to_highlight = {
 			OR = {
-				area = northern_norway
-				area = eastern_norway
-				area = western_norway
+				area = northern_norway  
+				area = eastern_norway  
+				area = western_norway  
 				area = southern_norway_area
 				area = trondelag_area
 			}
@@ -183,9 +183,9 @@ bt_norwegian_internal_missions = {
 			development_in_provinces = { #115 dev in the above provinces. Drammen has at least 16 dev because of silver mine mission. 16 other provinces at 3 dev and 4 at 4 dev in 1444 is 64 dev. This totals at 185 dev. Hence, 200 dev seems justifiable. 
 				value = 200
 				OR = {
-					area = northern_norway
-					area = eastern_norway
-					area = western_norway
+					area = northern_norway  
+					area = eastern_norway  
+					area = western_norway  
 					area = southern_norway_area
 					area = trondelag_area
 				}

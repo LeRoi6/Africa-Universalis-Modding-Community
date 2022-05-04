@@ -1,3 +1,4 @@
+
 #908 - Minnesota
 
 culture = dakota
@@ -17,6 +18,7 @@ native_hostileness = 9
 discovered_by = north_american
 
 
+1444.1.1 = { tribal_owner = WCY }
 
 1650.1.1 = {
 	owner = SIO

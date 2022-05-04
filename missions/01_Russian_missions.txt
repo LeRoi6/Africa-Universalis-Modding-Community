@@ -383,13 +383,14 @@ russia_steppe_siberia_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			volga_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			#BT14 cut (?)
+			# volga_area = {
+				# limit = {
+					# NOT = { owned_by = ROOT	}
+					# NOT = { is_core = ROOT	}
+				# }
+				# add_permanent_claim = ROOT
+			# }
 			kama_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
@@ -415,7 +416,8 @@ russia_steppe_siberia_missions = {
 		provinces_to_highlight = {
 			OR = {
 				area = kazan_area
-				area = volga_area
+				#BT14 cut (?)
+				#area = volga_area
 				area = kama_area
 				area = samara_area
 			}
@@ -428,10 +430,11 @@ russia_steppe_siberia_missions = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			volga_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			#BT14 cut (?)
+			# volga_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
 			kama_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -449,13 +452,14 @@ russia_steppe_siberia_missions = {
 					duration = 5475
 				}
 			}
-			volga_area = {
-				limit = { owned_by = ROOT }
-				add_province_modifier = {
-					name = "convert_the_steppes"
-					duration = 5475
-				}
-			}
+			#BT14 cut (?)
+			# volga_area = {
+				# limit = { owned_by = ROOT }
+				# add_province_modifier = {
+					# name = "convert_the_steppes"
+					# duration = 5475
+				# }
+			# }
 			kama_area = {
 				limit = { owned_by = ROOT }
 				add_province_modifier = {

@@ -1,3 +1,4 @@
+ 
 #45 - Lübeck
 #Region - Germany
 #Area - Holstein
@@ -8,10 +9,10 @@ add_core = HSA
 culture = lower_saxon
 religion = catholic
 hre = yes
-base_tax = 14
-base_production = 14
+base_tax = 12
+base_production = 8
 trade_goods = salt
-base_manpower = 6
+base_manpower = 8
 fort_15th = yes
 capital = "Lübeck"
 is_city = yes

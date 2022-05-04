@@ -1,3 +1,4 @@
+ 
 #453 - Qarshi
 
 owner = TIM
@@ -13,7 +14,7 @@ base_manpower = 4
 is_city = yes
 add_core = TIM
 add_core = TRS
-discovered_by = KAS
+1444.1.1 = { discovered_by = KAS }
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = indian

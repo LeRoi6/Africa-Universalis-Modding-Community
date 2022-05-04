@@ -1,0 +1,5 @@
+
+primary_culture = mesquakie
+capital = 944 # Potawatomi
+historical_friend = OTT
+historical_friend = OJI

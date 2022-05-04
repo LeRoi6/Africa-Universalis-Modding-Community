@@ -1,3 +1,4 @@
+
 #948 - Ohio
 
 culture = shawnee
@@ -16,6 +17,7 @@ native_hostileness = 2
 
 discovered_by = north_american
 
+1444.1.1 = { tribal_owner = CLG }
 
 1650.1.1 = {
 	owner = SHA

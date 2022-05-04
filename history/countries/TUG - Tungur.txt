@@ -1,7 +1,7 @@
 government_rank = 1
 government = tribal
 add_government_reform = tribal_kingdom
-primary_culture = tungur_culture
+primary_culture = tunjur
 religion = shamanism
 technology_group = sub_saharan
 unit_type = sub_saharan

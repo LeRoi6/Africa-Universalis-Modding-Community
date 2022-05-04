@@ -1,0 +1,24 @@
+ 
+# ex 8591
+
+owner = KHM
+controller = KHM
+add_core = KHM
+culture = khmer
+religion = buddhism
+capital = "Pursat"
+is_city = yes
+hre = no
+base_tax = 4 # BT; 3
+base_production = 4 # BT; 3
+base_manpower = 2
+trade_goods = tropical_wood # BT; grain
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim # BT
+discovered_by = ottoman # BT
+
+1535.1.1 = { discovered_by = POR }
+1811.1.1 = { unrest = 5 } # The Siamese-Cambodian Rebellion
+1812.1.1 = { unrest = 0 }

@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus or Beyond the Pale Legacy province
 
 owner = ALI
@@ -6,11 +7,11 @@ add_core = ALI
 culture = turkish
 religion = sunni
 capital = "Alaiye"
-trade_goods = grain
+trade_goods = bt_trade_good_fruit			#(JP) Known for Citrus Fruits
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 4
+base_tax = 3
+base_production = 3
+base_manpower = 3
 is_city = yes
 
 discovered_by = western

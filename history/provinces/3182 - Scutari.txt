@@ -1,9 +1,10 @@
+ 
 #3182 - BtP Province repurposed by Draiocht due to 1.19 changes
 
 owner = VEN
 controller = VEN
 culture = albanian
-religion = orthodox
+religion = catholic
 capital = "Shkodra"
 trade_goods = cloth
 hre = no
@@ -18,16 +19,28 @@ add_core = VEN
 extra_cost = 8
 center_of_trade = 1
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = VEN
+	owner = ALB
+	controller = ALB
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = VEN
+	owner = VEN
+	controller = VEN
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1479.10.1 = { owner = TUR controller = TUR add_core = TUR }	#In 1479 the city fell to the Ottomans and the defenders of the citadel emigrated to Venice, whereas many Albanians from the region retreated into the mountains.
 1501.10.1 = { owner = VEN controller = VEN }	#Was actually Lezhe that was retaken, but this coastal province approximates it better
 1507.10.1 = { owner = TUR controller = TUR }	#re-re-taken by the Turks

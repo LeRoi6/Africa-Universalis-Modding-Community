@@ -1,18 +1,19 @@
-#3057 - Ommelanden
+
+#8119 - Oostergo
 #Region - Low Countries
 #Area - Frisia
 
 owner = FRI
 controller = FRI
-capital = "Dokkum"
+capital = "Leeuwarden"
 is_city = yes
 culture = frisian
 religion = catholic
 hre = yes
 base_tax = 2
-base_production = 3
+base_production = 2
 trade_goods = livestock  			#SUPERCOWS
-base_manpower = 2 
+base_manpower = 3 
 add_core = FRI
 
 discovered_by = western

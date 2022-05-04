@@ -1,3 +1,4 @@
+ 
 #323 - Konya
 
 owner = KAR
@@ -6,11 +7,11 @@ add_core = KAR
 culture = turkish
 religion = sunni
 capital = "Konya"
-trade_goods = salt
+trade_goods = salt				#(JP) Lake Tuz
 hre = no
 base_tax = 5
-base_production = 5
-base_manpower = 3
+base_production = 4
+base_manpower = 4
 is_city = yes
 
 extra_cost = 8

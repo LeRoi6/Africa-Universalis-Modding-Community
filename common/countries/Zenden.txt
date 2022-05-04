@@ -85,6 +85,19 @@ leader_names = {
 
 ship_names = {
 	Brig Goms Leuk Raron Sierre Sion Visp
+    Apprieu 
+    Barnave Beaurepaire Bellegarde-Poussieu Bourg-de-Péage "Bourg d'Oisans" "Bourgoin" "Briançon"
+    Cessieu Clelles Crolles
+    Dieu-le-Fit
+    Embrun
+    Gap Grenoble
+    Huez
+    "La Côte Saint André" "La Mure" "La Tour du Pin" "Le Poet-Laval" "Le Pont de Claix" "Le Teil" Livet-et-Gavet "Les Abrets" Loriol "Lus la Croix Haute"
+    Mens Moirans Montélimar
+    Rochemaure Roussillon
+    Saillans "Saint Clair de la Tour" "Saint Etienne en Dévoluy" "Saint Geoir" "Saint Jean de Bournay" "Saint Laurent en Royan" "Saint Roman" Sauzet Serres
+    Tullin
+    Valbonnais Valence Venosc Veynes Vienne Vif Vizille Voiron Voreppe
 }
 
 army_names = {

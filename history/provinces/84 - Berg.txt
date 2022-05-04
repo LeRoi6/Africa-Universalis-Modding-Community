@@ -1,3 +1,4 @@
+
 # 84 - Berg
 #Region - Germany
 #Area - North Rhine
@@ -5,13 +6,13 @@
 owner = BRG #In reality Kleves and Berg are not united before 1510.
 controller = BRG			#Draiocht- I'd like to revisit this Whole Rhein-Ruhr-Rur-Westphalia area eventually. HR's is better than it was, but still some stuff I'd like to see, and there are a few major mistakes left over from vanilla
 add_core = BRG
-culture = hessian
+culture = dutch
 religion = catholic
 trade_goods = cloth
 capital = "Düsseldorf"
 base_tax = 4 			#Today at the heart of the largest metropolitan area in Europe, but at this time, it was quite small, and just recentely founded with the help of Koeln. Leaving it at 5 dev
 base_production = 4 
-base_manpower = 2 
+base_manpower = 3
 is_city = yes
 hre = yes
 

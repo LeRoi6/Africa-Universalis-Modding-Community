@@ -1,0 +1,2 @@
+
+historical_friend = SCO			#Preventing almost guaranteed SCO DAN rivalry without it. Denmark & Scotland kinda-sorta got on most of the time.

@@ -1355,9 +1355,7 @@ emp_pap_slot_5 = {
 				PLC = {
 					country_event = { id = flavor_pap.12 }
 				}
-				custom_tooltip = {
-					tooltip = emp_pap_support_eastern_catholiczation_plc_tt
-				}
+				custom_tooltip = emp_pap_support_eastern_catholiczation_plc_tt
 			}
 			if = {
 				limit = {

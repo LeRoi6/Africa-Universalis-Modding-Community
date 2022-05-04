@@ -1,0 +1,11 @@
+
+add_government_reform = norman_lordship_reform
+primary_culture = anglo_irish
+add_accepted_culture = irish
+fixed_capital = 4120
+
+
+
+#History
+
+#There is a date error in vanilla, but I reintroduced it by changing this to an override file. It isn't ideal, but it is also not a huge deal, and not worth updating effort of a full replace. Maybe someday vanilla'll fix it.

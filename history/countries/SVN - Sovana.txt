@@ -19,6 +19,17 @@ fixed_capital = 7050
 	}
 }
 
+1408.1.1 = {
+	monarch = {
+		name = "Lorenzo"#random
+		dynasty = "Aldobrandeschi"
+		birth_date = 1401.1.1
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
 1648.1.1 = {
 	remove_country_modifier = bt_guelph_nation
 }

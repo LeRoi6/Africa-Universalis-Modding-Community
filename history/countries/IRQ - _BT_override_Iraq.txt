@@ -1,0 +1,50 @@
+
+religious_school = ismaili_school
+
+#Last Jalayrid, Husain II, defeated by Ispend bin Yusuf, after hiding out along the Lower Euphrates in 1431. 
+#Ispend travels eastwards to Baghdad and capturing it from half-brother, and Qara governor Shah Muhammad who flees to Tabriz. 
+#Ispend begins to mint his own coins with his own name, is titled "Emir" and his realm is described as a "kingdom". 
+#Ispend allows refugees from Qara itself to settle in Baghdad after the death of Qara Iskander from 1435. 
+#Ispend tries and fails to invade Anatolia in 1437, defeated by Qara Osman's son, Hamza. 
+
+#Ispend died 8th March 1445, and bequeaths his "kingdom" to his nephew, Alvand Mirza - local nobles prefer to enthrone Fulad Mirza, Ispend's son. 
+#Jahan Shah, backing Fulad alongside these local nobles, invades and conquers the city on the 9th June 1446 after a 7 month siege. 
+#Fulad Mirza is appointed ruler in Jahan Shah's name, with Alvand Mirza given Mosul as governor in return.
+
+1431.1.1 = { 
+	monarch = {
+		name = "Ispend"
+		dynasty = "Qara Qoyunlu"
+		birth_date = 1380.1.1
+		culture = turkoman
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+1440.1.1 = {
+	heir = {
+		name = "Fulad Mirza"
+		monarch_name = "Fulad Mirza"
+		dynasty = "Qara Qoyunlu"
+		birth_date = 1440.1.1
+		death_date = 1450.1.1
+		culture = turkoman
+		claim = 60
+		adm = 1
+		dip = 0
+		mil = 2
+	}
+}
+1445.3.8 = {
+	monarch = {
+		name = "Fulad Mirza"
+		dynasty = "Qara Qoyunlu"
+		birth_date = 1440.1.1
+		culture = turkoman
+		claim = 60
+		adm = 1
+		dip = 0
+		mil = 2
+	}
+}

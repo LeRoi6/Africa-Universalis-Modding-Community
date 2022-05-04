@@ -1,3 +1,4 @@
+ 
 #126 - Malta
 #Region - Italy
 #Area - Sicily
@@ -55,6 +56,7 @@ discovered_by = ottoman
 	owner = NAP
 	controller = NAP
 	add_core = NAP
+	remove_core = ARA
 } # Alfonso V of Aragon conquers Naples and temporarily unites Sicily & Naples again into the Kingdom of Naples. Going with Paradox's 3-3 date instead of 6-2 in order to avoid changes to the diplomacy files
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	owner = JAI

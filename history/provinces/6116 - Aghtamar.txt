@@ -1,0 +1,41 @@
+#6116 - Aghtamar
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Aghtamar"
+is_city = yes
+owner = BTL
+controller = BTL
+
+#Demographics
+culture = armenian
+religion = apostolic
+
+#Development and Trade
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = glass #(JP) Site of Aghtamar Cathedral, a wealth of Armenian pottery, coloured glass and other fancies
+
+#Cores and Occupation (Alphabetical after current)
+add_core = BTL
+add_core = ARM
+
+#Other Political
+hre = no
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group
+discovered_by = indian
+discovered_by = east_african
+
+#Histories 

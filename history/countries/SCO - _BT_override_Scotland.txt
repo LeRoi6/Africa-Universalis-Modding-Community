@@ -1,0 +1,6 @@
+
+add_government_reform = english_monarchy #it had its own Parliament nearly as old as England and so this made logical sense to change
+add_accepted_culture = gallgaidheil
+historical_friend = DAN			#Denmark & Scotland were just auto-rivalling every single time without this... Historically they didn't hate each other that much
+historical_friend = BRI			#This is really just to prevent Scotland and Brittany rivaling each other at day 1, as they historically got on well, but game mechanics encouraged them to rival
+historical_rival = ENG			#I shouldn't really have to explain this?

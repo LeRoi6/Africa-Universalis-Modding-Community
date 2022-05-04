@@ -4,20 +4,20 @@
 
 discovered_by = western
 discovered_by = eastern
-discovered_by = SWE
-discovered_by = NOR
-discovered_by = DAN
-discovered_by = FIN
-discovered_by = GOT
-discovered_by = SHL
-discovered_by = SCA
-discovered_by = NOV
-discovered_by = MOS
-discovered_by = PSK
-discovered_by = RUS
-discovered_by = RYA
-discovered_by = TVE
-discovered_by = YAR
-discovered_by = PLT
-discovered_by = SMO
-discovered_by = NZH
+1444.1.1 = { discovered_by = SWE }
+1444.1.1 = { discovered_by = NOR }
+1444.1.1 = { discovered_by = DAN }
+1444.1.1 = { discovered_by = FIN }
+1444.1.1 = { discovered_by = GOT }
+1444.1.1 = { discovered_by = SHL }
+1444.1.1 = { discovered_by = SCA }
+1444.1.1 = { discovered_by = NOV }
+1444.1.1 = { discovered_by = MOS }
+1444.1.1 = { discovered_by = PSK }
+1444.1.1 = { discovered_by = RUS }
+1444.1.1 = { discovered_by = RYA }
+1444.1.1 = { discovered_by = TVE }
+1444.1.1 = { discovered_by = YAR }
+1444.1.1 = { discovered_by = PLT }
+1444.1.1 = { discovered_by = SMO }
+1444.1.1 = { discovered_by = NZH }

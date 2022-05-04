@@ -19,6 +19,8 @@ tatar_missions_1 = {
 			tag = AST
 			tag = QAS
 			tag = KZH
+			tag = CHG
+			tag = KAS
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -340,6 +342,8 @@ tatar_missions_slot_2 = {
 			tag = AST
 			tag = QAS
 			tag = KZH
+			tag = CHG
+			tag = KAS
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -531,6 +535,7 @@ tatar_missions_slot_2 = {
 			}
 		}
 		trigger = {
+			owns_core_province = 4678
 			owns_core_province = 2190
 			custom_trigger_tooltip = {
 				tooltip = mongol_china_mission_tooltip
@@ -552,7 +557,7 @@ tatar_missions_slot_2 = {
 				}
 				set_government_rank = 3
 			}
-			2190 = {
+			4678 = {
 				add_base_tax = 2
 				add_base_production = 2
 				add_base_manpower = 2
@@ -633,6 +638,8 @@ tatar_missions_2 = {
 			tag = AST
 			tag = QAS
 			tag = KZH
+			tag = CHG
+			tag = KAS
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -645,7 +652,7 @@ tatar_missions_2 = {
 			OR = {
 				area = azov_area
 				area = crimea_area
-				area = northern_crimea_area
+				#area = northern_crimea_area
 				area = lower_dnieper_area
 				area = lower_dnieper_area
 				area = pryazovia_area
@@ -672,10 +679,10 @@ tatar_missions_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			northern_crimea_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			# northern_crimea_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
 			lower_dnieper_area = {
 				type = all
 				OR = {
@@ -764,7 +771,7 @@ tatar_missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			severia_area = {
+			chernigov_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -786,7 +793,7 @@ tatar_missions_2 = {
 				area = podolia_volhynia_area
 				area = pryazovia_area
 				area = lower_dnieper_area
-				area = severia_area
+				area = chernigov_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -825,7 +832,7 @@ tatar_missions_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			severia_area = {
+			chernigov_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

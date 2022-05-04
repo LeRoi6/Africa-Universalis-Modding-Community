@@ -1,15 +1,17 @@
-owner = SWI
-controller = SWI
-culture = swiss
+ 
+owner = VOR
+controller = VOR
+culture = arpitan
 religion = catholic
 capital = "Fribourg"
 trade_goods = livestock
 hre = yes
-base_tax = 6
-base_production = 6
-base_manpower = 4
+base_tax = 5
+base_production = 4
+base_manpower = 3
 is_city = yes
-add_core = SWI
+add_core = VOR
+add_core = SAV
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

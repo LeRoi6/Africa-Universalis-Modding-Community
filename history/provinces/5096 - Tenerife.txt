@@ -1,3 +1,4 @@
+ 
 #5096 - Tenerife
 #Region - Iberia
 #Area - Macaronesia
@@ -14,11 +15,34 @@ native_size = 20
 native_ferocity = 1
 native_hostileness = 0
 
-	discovered_by = western
-	discovered_by = muslim
-	discovered_by = ottoman
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
 
-1494.4.1 = { 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	add_core = MCN
+	owner = MCN
+	controller = MCN
+	is_city = yes	
+	trade_goods = wine
+	culture = castillian
+	religion = catholic
+	trade_goods = sugar
+	capital = "Real de Las Palmas"
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	remove_core = MCN
+	owner = XXX
+	controller = XXX
+	is_city = no
+	trade_goods = unknown
+	religion = animism
+	culture = guanche
+	capital = "Añazo"
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
+1479.1.1 = { #Wiki states city was founded in June 24 1478, but conquest completed on April 29 1483.
 	discovered_by = CAS
 	owner = CAS
 	controller = CAS
@@ -27,7 +51,7 @@ native_hostileness = 0
 	religion = catholic
 	culture = castillian	
 	trade_goods = wine
-	capital = "Santa Cruz"
+	capital = "Real de Las Palmas"
 } # Alonso Fernández de Lugo lands on the island of Tenerife and founds an advance post, the rest of the island falls soon after
 1516.1.23 = {
 	controller = SPA

@@ -4,8 +4,7 @@ primary_culture = moroccan
 religion = sunni
 technology_group = muslim
 capital = 344 # Marrakech
-add_accepted_culture = riffian
-add_accepted_culture = shilha
+add_accepted_culture = berber
 religious_school = maliki_school
 
 change_estate_land_share = {
@@ -25,6 +24,7 @@ change_estate_land_share = {
 	monarch = {
 		name = "Abu-Sa'id Uthman III"
 		dynasty = "Marinid"
+		birth_date = 1383.1.1
 		adm = 1
 		dip = 2
 		mil = 3
@@ -55,11 +55,7 @@ change_estate_land_share = {
 		mil = 1
 	}
 	capital = 343 # Fez
-}
-
-1444.10.1 = {
 	set_estate_privilege = estate_nobles_strong_duchies
-	set_estate_privilege = estate_nobles_very_strong_duchies
 }
 
 1465.1.1 = {
@@ -70,6 +66,7 @@ change_estate_land_share = {
 		dip = 1
 		mil = 0
 	}
+	remove_estate_privilege = estate_nobles_strong_duchies
 }
 
 #1472 - Country is split into various factions, reunited again in 1549

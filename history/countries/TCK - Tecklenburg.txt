@@ -1,0 +1,41 @@
+#TCK - Tecklenburg
+
+#Political Situation
+capital = 8406
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = lower_saxon
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1408.1.1 = {
+	monarch = {
+		name = "Otto VII"
+		dynasty = "von Schwerin"
+		birth_date = 1380.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+1444.1.1 = {
+	heir = {
+		name = "Nikolaus"
+		monarch_name ="Nikolaus III"
+		dynasty = "von Helfenstein"
+		birth_date = 1434.1.1
+		death_Date = 1508.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}

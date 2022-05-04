@@ -1,0 +1,17 @@
+
+historical_rival = HUN
+historical_rival = RUS
+
+change_estate_land_share = {
+	estate = estate_dhimmi
+	share = -20
+}	#Changed from vanilla's values due to Ottomans now having state religion not dominant			<-- This was Dub's in BT unofficial, but actually a good idea.
+
+
+
+#History
+
+1444.10.2 = {
+	set_estate_privilege = estate_dhimmi_lighter_dhimmi_taxes
+	set_estate_privilege = estate_dhimmi_manpower
+}	#			<-- This was Dub's in BT unofficial, but actually a good idea.

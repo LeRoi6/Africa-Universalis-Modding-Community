@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = PGA
@@ -63,18 +64,20 @@ discovered_by = eastern
     base_production = 4
     base_manpower = 2
 } # Sacked by the Papal States and fully annexed after rebellion
+
+#2nd Shattering
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = PAP
 	owner = FLG
 	controller = FLG
-	add_core = FLG
-	remove_core = PAP
-}
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = PAP
 	owner = PAP
 	controller = PAP
-	remove_core = FLG
-	add_core = PAP
-}
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1750.1.1 = { add_core = ITL } 
 1809.4.10 = { controller = FRA } # Occupied by French troops
 1809.10.14 = { owner = FRA add_core = FRA } # Treaty of Schönbrunn

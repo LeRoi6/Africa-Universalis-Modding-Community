@@ -1,0 +1,40 @@
+#6127 - Zab
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Zab"
+is_city = yes
+owner = IRQ
+controller = IRQ
+
+#Demographics
+culture = assyrian_culture
+religion = nestorian
+
+#Development and Trade
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = grain
+
+#Cores and Occupation (Alphabetical after current)
+add_core = QAR
+add_core = IRQ
+
+#Other Political
+hre = no
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = indian
+discovered_by = east_african
+
+#Histories 

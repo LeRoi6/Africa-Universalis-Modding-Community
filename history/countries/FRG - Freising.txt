@@ -1,0 +1,29 @@
+#FRG - Freising
+
+#Political Situation
+capital = 4708
+fixed_capital = 4708
+
+#Government
+government_rank = 1
+government = theocracy
+add_government_reform = leading_clergy_reform
+
+#Demographics
+primary_culture = bavarian
+religion = catholic
+add_accepted_culture = austrian
+
+#Tech and Military
+technology_group = western
+
+#History
+1444.1.1 = {
+	monarch = {
+		name = "Heinrich von Schlick"
+		birth_date = 1395.1.1
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}

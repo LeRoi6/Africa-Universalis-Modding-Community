@@ -3,7 +3,7 @@ add_government_reform = tribal_federation
 primary_culture = degar
 religion = buddhism
 technology_group = chinese
-capital = 8655	# Ma
+capital = 4829	# Ma
 
 1291.1.1 = {
 	monarch = {

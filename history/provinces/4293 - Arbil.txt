@@ -1,18 +1,19 @@
-#4393 - Arbil
+#4393 - Erbil
 
-owner = QAR
-controller = QAR
+owner = IRQ
+controller = IRQ
 culture = kurdish
 religion = sunni
-capital = "Arbil"
-trade_goods = cloth
+capital = "Erbil"
+trade_goods = bt_trade_good_books
 hre = no
 base_tax = 4 
 base_production = 4
 base_manpower = 4
 is_city = yes
 add_core = QAR
-add_core = BHT
+add_core = IRQ
+fort_15th = yes
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = indian

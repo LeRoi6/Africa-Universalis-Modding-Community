@@ -1,0 +1,37 @@
+#8281 - Reuss
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Gera"
+is_city = yes
+owner = REU
+controller = REU
+
+#Demographics
+culture = saxon
+religion = catholic
+
+#Development and Trade
+base_tax = 1
+base_production = 1
+base_manpower = 2 #(JP) Slight joke, lotsa Heinrichs
+trade_goods = grain
+
+#Cores and Occupation (Alphabetical after current)
+add_core = REU
+
+#Other Political
+hre = yes
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Histories 

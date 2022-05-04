@@ -1,3 +1,4 @@
+ 
 #3200 - Mark
 #Region - Germany
 #Area - North Rhine
@@ -5,13 +6,13 @@
 owner = KLE #In reality Kleves and Berg are not united before 1510.
 controller = KLE
 add_core = KLE
-culture = hessian
+culture = lower_saxon
 religion = catholic
 trade_goods = grain
 capital = "Hamm"
-base_tax = 10
-base_production = 10
-base_manpower = 6
+base_tax = 2
+base_production = 2
+base_manpower = 2
 is_city = yes
 hre = yes
 

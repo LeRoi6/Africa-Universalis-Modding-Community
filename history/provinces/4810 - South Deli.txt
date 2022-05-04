@@ -1,0 +1,35 @@
+ 
+# ex 8601
+
+owner = ARU # BT; DLI
+controller = ARU # BT; DLI
+add_core = ARU # BT; DLI
+culture = batak # BT; sumatran
+religion = sunni
+capital = "Asahan" # BT; "Deli"
+is_city = yes
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 2 # BT; 3
+trade_goods = spices
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1405.1.1 = { discovered_by = MNG }
+
+1509.1.1 = { discovered_by = POR }
+1523.1.1 = {
+	owner = ATJ
+	controller = ATJ
+	add_core = ATJ
+}
+
+1632.1.1 = {
+	owner = ARU
+	controller = ARU
+	remove_core = ATJ
+}

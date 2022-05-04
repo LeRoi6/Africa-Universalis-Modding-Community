@@ -1,3 +1,4 @@
+ 
 # 180 Poitou - Principal cities: Poitiers
 #Region - France
 #Area - Guyenne
@@ -23,6 +24,20 @@ discovered_by = eastern
 extra_cost = 20
 center_of_trade = 2
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = FRA
+	add_core = POI
+	owner = POI
+	controller = POI
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	remove_core = POI
+	add_core = FRA
+	owner = FRA
+	controller = FRA
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1560.1.1 = { religion = reformed }
 1565.1.1 = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear
 1568.9.1 = { unrest = 15 } # Catherine de Medici and Charles IX side with the Guise faction, religious intolerance peaks

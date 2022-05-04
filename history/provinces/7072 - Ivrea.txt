@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = IVR			#The HRE bishopric
@@ -53,16 +54,20 @@ discovered_by = eastern
 } #Savoy fortifies the area
 1395.1.1 = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Violent peasant revolt against heavy taxation
 1397.1.1 = { revolt = {} controller = SAV } # Unclear date
-#1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
-#1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-#	owner = XXX
-#	controller = XXX
-#	remove_core = XXX
-#} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	owner = IVR
+	controller = IVR
+	remove_core = SAV
+	remove_core = MFA
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	owner = SAV
+	controller = SAV
+	add_core = SAV
+	add_core = MFA
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 #	owner = XXX
 #	controller = XXX

@@ -1,3 +1,4 @@
+ 
 #3055 - Basel
 #Region - Germany
 #Area - Romandie
@@ -10,8 +11,8 @@ capital = "Basel"
 trade_goods = wool
 hre = yes
 base_tax = 6
-base_production = 6
-base_manpower = 2 
+base_production = 5
+base_manpower = 5
 is_city = yes
 add_core = BSL
 

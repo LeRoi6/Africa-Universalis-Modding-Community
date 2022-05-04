@@ -1,11 +1,17 @@
 #Updated and scriptified by Dub.
+#Re-update for BT14 by Nuq
 hab_holy_roman_ambitions = {
 	slot = 1 #upper left column
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
 	potential = {
+		or = { 
+			tag = HAB
+			tag = STY
+			tag = TIR
+			tag = VOR
+		}
 		NOT = { map_setup = map_setup_random }
-		tag = HAB
 	}
 	has_country_shield = yes
 	
@@ -18,6 +24,8 @@ hab_holy_roman_ambitions = {
 		trigger = {
 			is_emperor = yes
 			custom_trigger_tooltip = {
+				# secure_the_imperial_crown.tooltip:1 "§Y5§! Electors are:\nBacking §Y[Root.GetName]§! to become Emperor.\nHave at least §Y100§! opinion of §Y[Root.GetName]§!."
+				# tmp fix 'cause counter is fucky
 				tooltip = secure_the_imperial_crown.tooltip
 				calc_true_if = {
 					all_elector = {
@@ -269,8 +277,13 @@ hab_protect_the_balkans = {
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
 	potential = {
+		or = { 
+			tag = HAB
+			tag = STY
+			tag = TIR
+			tag = VOR
+		}
 		NOT = { map_setup = map_setup_random }
-		tag = HAB
 	}
 	has_country_shield = yes
 	
@@ -285,10 +298,10 @@ hab_protect_the_balkans = {
 					exists = HUN
 				}
 				total_development = HUN
-				total_development = 200
+				total_development = 400 #Dev doubled finally in BT14 (Nuq)
 			}
 			else = {
-				total_development = 200
+				total_development = 400 #Dev doubled finally in BT14 (Nuq)
 			}
 		}
 		effect = {
@@ -406,10 +419,11 @@ hab_protect_the_balkans = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces=austrian_croatia_provinces
 				owner_type=country_or_non_sovereign_subject_holds
+				value=16 #Vanilla: 7/11, BT 16/26: that allows one to just get Hungarian Croatia and avoid confronation with Venice/Hum/Ragusa for now.
 			}
 		}
 		effect = {
@@ -430,6 +444,17 @@ hab_protect_the_balkans = {
 				every_province = {
 					limit = {
 						austrian_italian_ambition_provinces = yes
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			custom_tooltip = austrian_defeat_the_serbs_claims
+			hidden_effect = {
+				every_province = {
+					limit = {
+						austrian_defeat_the_serbs_provinces = yes
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
@@ -473,6 +498,7 @@ hab_protect_the_balkans = {
 		}
 		effect = {
 			#Give Austria subjugation CBs on Moldavia & Wallachia. Could probably also do Bosnia, but it's just too much work since it doesn't match any areas.
+			#BT14 (Nuq) additions: Claims update, permanent claims on non-core provinces of Wallachia if it can be vassalized.
 			if = {
 				limit = {
 					exists = WAL
@@ -486,28 +512,60 @@ hab_protect_the_balkans = {
 					months = 300
 					target = WAL
 				}
+				# austrian_moesia_silistria_nonromanian_claims:0 "Grants permanent claims on all provinces in [159.GetAreaName] and [3164.GetAreaName] which aren't considered [WAL.GetAdjective] cores."
+				custom_tooltip = austrian_moesia_silistria_nonromanian_claims 
+				hidden_effect = {
+					danubian_plain_area = {
+						limit = {
+							NOT = { is_core = WAL }
+							NOT = { owned_by = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					silistria_area = {
+						limit = {
+							NOT = { is_core = WAL }
+							NOT = { owned_by = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}
 			}
 			else = {
-				wallachia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_claim = ROOT
-				}
 				oltenia_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
-					add_claim = ROOT
+					add_permanent_claim = ROOT
 				}
 				upper_muntenia_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
-					add_claim = ROOT
+					add_permanent_claim = ROOT
+				}
+				wallachia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				danubian_plain_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				silistria_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
 			}
 			if = {
@@ -525,12 +583,12 @@ hab_protect_the_balkans = {
 				}
 			}
 			else = { #Only Moldavia area for this one. The rest is either already owned (Bukovina) or is Russian (Bessarabia).
-				western_moldovia = {
+				western_moldovia_area = {  
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
-					add_claim = ROOT
+					add_permanent_claim = ROOT
 				}
 			}
 		}
@@ -543,8 +601,13 @@ hab_italian_ambitions = {
 	ai = yes
 	
 	potential = {
+		or = { 
+			tag = HAB
+			tag = STY
+			tag = TIR
+			tag = VOR
+		}
 		NOT = { map_setup = map_setup_random }
-		tag = HAB
 	}
 	
 	has_country_shield = yes
@@ -577,21 +640,85 @@ hab_italian_ambitions = {
 		required_missions = { austrian_croatia }
 		provinces_to_highlight = {
 			austrian_italian_ambition_provinces = yes
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			owner = { is_part_of_hre = no }			
 		}
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-				provinces=austrian_italian_ambition_provinces
-				owner_type=country_or_non_sovereign_subject_holds
+			venetia_area = {
+				type = all
+				owner = { is_part_of_hre = yes }
 			}
+			friuli_area = {
+				type = all
+				owner = { is_part_of_hre = yes }
+			}
+			carnia_area = {
+				type = all
+				owner = { is_part_of_hre = yes }
+			}
+			
+			#has_fulfiled_province_requirement_for_mission_trigger = {
+			#	tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+			#	provinces=austrian_italian_ambition_provinces
+			#	owner_type=country_or_non_sovereign_subject_holds
+			#}
 		}
 		effect = {
 			add_mercantilism = 5
 			venetia_area = {
+				limit = { owned_by = HAB }
 				add_province_modifier = {
 					name = "protected_italian_interests"
 					duration = 3650
+				}
+			}
+			friuli_area = {
+				limit = { owned_by = HAB }
+				add_province_modifier = {
+					name = "protected_italian_interests"
+					duration = 3650
+				}
+			}
+			carnia_area = {
+				limit = { owned_by = HAB }
+				add_province_modifier = {
+					name = "protected_italian_interests"
+					duration = 3650
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Emperor"
+				}
+				if = {
+					limit = {
+						exists = MLO
+						valid_for_personal_unions_trigger = yes
+						MLO = {
+							valid_for_personal_unions_trigger = yes
+							owns = 104
+						}
+					}
+					add_casus_belli = {
+						type = cb_restore_personal_union
+						months = 300
+						target = MLO
+					}
+				}
+				else = {
+					lombardy_area = {
+						limit = {
+							NOT = { is_core = root }
+							NOT = { is_permanent_claim = root }
+						}
+						add_permanent_claim = root
+					}
+					po_valley_area = {
+						limit = {
+							NOT = { is_core = root }
+							NOT = { is_permanent_claim = root }
+						}
+						add_permanent_claim = root
+					}
 				}
 			}
 		}

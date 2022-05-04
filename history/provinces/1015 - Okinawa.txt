@@ -1,3 +1,4 @@
+ 
 #1015 - Okinawa
 
 owner = RYU
@@ -13,10 +14,10 @@ base_manpower = 2
 is_city = yes
 add_core = RYU
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
+1444.1.1 = { discovered_by = MCH }
+1444.1.1 = { discovered_by = KHA }
+1444.1.1 = { discovered_by = OIR }
+1444.1.1 = { discovered_by = QNG }
 
 1542.1.1 = { discovered_by = POR }
 1624.1.1 = { religion = shinto } # The Amami islands are annexed

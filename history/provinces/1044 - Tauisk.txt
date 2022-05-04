@@ -1,3 +1,4 @@
+ 
 #1044 - Tauisk
 
 culture = kamchatkan
@@ -14,10 +15,10 @@ native_hostileness = 3
 
 
 
-discovered_by = HOD
-discovered_by = CHU
-discovered_by = CHV
-discovered_by = KMC
+1444.1.1 = { discovered_by = HOD }
+1444.1.1 = { discovered_by = CHU }
+1444.1.1 = { discovered_by = CHV }
+1444.1.1 = { discovered_by = KMC }
 
 1647.1.1 = { discovered_by = RUS } # V. Atlasov
 

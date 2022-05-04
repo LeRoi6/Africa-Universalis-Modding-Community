@@ -1,10 +1,11 @@
+ 
 #New Beyond Typus Provinces
 
 latent_trade_goods = {
 	coal
 }
 
-culture = maori_culture
+culture = maori # Brian
 religion = animism
 capital = "Kawatiri"
 trade_goods = unknown

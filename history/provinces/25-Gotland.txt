@@ -1,3 +1,4 @@
+ 
 #Gotland- Visby etc
 #Region - Scandinavia
 #Area - Gotaland
@@ -72,7 +73,15 @@ discovered_by = eastern
 	controller = GOT
 } # Eric settles at Visborg Castle, living off piracy
 
-#2nd Shattering unused
+#2nd Shattering
+
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = DAN
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = DAN
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 	owner = DAN
 	controller = DAN

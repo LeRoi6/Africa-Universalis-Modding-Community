@@ -1,17 +1,20 @@
-#4396 - Bitlis and Hakkari
+#4396 - Bitlis
 
 owner = BTL
 controller = BTL
 culture = kurdish
 religion = sunni
 capital = "Bitlis"
-trade_goods = livestock
+trade_goods = bt_trade_good_books #(JP) Known for producing lots of manuscripts, and also 
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 3
+base_production = 3
 base_manpower = 2 
 is_city = yes
 add_core = BTL
+add_core = ARM
+center_of_trade = 1
+fort_15th = yes
 
 discovered_by = east_african
 discovered_by = muslim

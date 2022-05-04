@@ -177,15 +177,15 @@ lithuanian_missions_2 = {
 			OR = {
 				area = malopolska_area
 				area = mazovia_area
-				area = lublin_area
+				#area = lublin_area
 				area = central_poland_area
 				area = sandomierz_area
 				area = kuyavia_area
 				area = podlasie_area
-				area = central_galicia_area
+				#area = central_galicia_area
 				area = red_ruthenia_area
 				area = eastern_volhynia_area
-				area = western_podolia_area
+				#area = western_podolia_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -206,10 +206,10 @@ lithuanian_missions_2 = {
 						type = all
 						country_or_non_sovereign_subject_holds = ROOT
 					}
-					lublin_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
+					# lublin_area = {
+						# type = all
+						# country_or_non_sovereign_subject_holds = ROOT
+					# }
 					central_poland_area = {
 						type = all
 						country_or_non_sovereign_subject_holds = ROOT
@@ -226,10 +226,10 @@ lithuanian_missions_2 = {
 						type = all
 						country_or_non_sovereign_subject_holds = ROOT
 					}
-					central_galicia_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
+					# central_galicia_area = {
+						# type = all
+						# country_or_non_sovereign_subject_holds = ROOT
+					# }
 					red_ruthenia_area = {
 						type = all
 						country_or_non_sovereign_subject_holds = ROOT
@@ -238,10 +238,10 @@ lithuanian_missions_2 = {
 						type = all
 						country_or_non_sovereign_subject_holds = ROOT
 					}
-					western_podolia_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
+					# western_podolia_area = {
+						# type = all
+						# country_or_non_sovereign_subject_holds = ROOT
+					# }
 				}
 			}
 		}
@@ -548,13 +548,13 @@ lithuanian_missions_slot = {
 					}
 					add_permanent_claim = ROOT
 				}
-				lublin_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
+				# lublin_area = {
+					# limit = {
+						# NOT = { is_permanent_claim = ROOT }
+						# NOT = { is_core = ROOT	}
+					# }
+					# add_permanent_claim = ROOT
+				# }
 				central_poland_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
@@ -583,13 +583,13 @@ lithuanian_missions_slot = {
 					}
 					add_permanent_claim = ROOT
 				}
-				central_galicia_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
+				# central_galicia_area = {
+					# limit = {
+						# NOT = { is_permanent_claim = ROOT }
+						# NOT = { is_core = ROOT	}
+					# }
+					# add_permanent_claim = ROOT
+				# }
 				red_ruthenia_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
@@ -604,13 +604,13 @@ lithuanian_missions_slot = {
 					}
 					add_permanent_claim = ROOT
 				}
-				western_podolia_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
+				# western_podolia_area = {
+					# limit = {
+						# NOT = { is_permanent_claim = ROOT }
+						# NOT = { is_core = ROOT	}
+					# }
+					# add_permanent_claim = ROOT
+				# }
 			}
 			if = {
 				limit =  {

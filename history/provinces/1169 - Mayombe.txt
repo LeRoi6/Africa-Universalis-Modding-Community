@@ -1,3 +1,4 @@
+ 
 #1169 - Anziku
 
 owner = TYO
@@ -13,9 +14,9 @@ base_manpower = 4
 is_city = yes
 add_core = TYO
 discovered_by = central_african
-discovered_by = KON
-discovered_by = NDO
-discovered_by = LOA
+1444.1.1 = { discovered_by = KON }
+1444.1.1 = { discovered_by = NDO }
+1444.1.1 = { discovered_by = LOA }
 discovered_by = sub_saharan
 
 1481.1.1 = { discovered_by = POR } # Bartolomeu Dias

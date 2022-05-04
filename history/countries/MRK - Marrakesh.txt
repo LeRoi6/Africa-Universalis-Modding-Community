@@ -1,10 +1,10 @@
 government = monarchy
 add_government_reform = iqta
-primary_culture = shilha
+primary_culture = moroccan
 religion = sunni
 technology_group = muslim
 capital = 344
-fixed_capital = 344 # Cannot move capital away from this province & no power cost to move to it
+fixed_capital = 343 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
 
 # Hintata Emirs

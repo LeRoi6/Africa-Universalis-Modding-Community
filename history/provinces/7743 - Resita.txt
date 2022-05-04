@@ -1,9 +1,10 @@
+ 
 #BT Balkans reoverhaul
 
 owner = HUN
 controller = HUN
 add_core = HUN
-culture = romanian
+culture = serbian#by the Hungarian ethnic maps, refugees from south of Danube
 religion = orthodox
 capital = "Resita"
 base_tax = 1
@@ -13,11 +14,11 @@ trade_goods = iron
 is_city = yes
 hre = no
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
@@ -50,16 +51,19 @@ discovered_by = western
 
 #1291 - 1444
 
-#1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
-#1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-#	owner = XXX
-#	controller = XXX
-#	remove_core = XXX
-#} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = HUN
+	add_core = SEV
+	owner = SEV
+	controller = SEV
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = HUN
+	remove_core = SEV
+	owner = HUN
+	controller = HUN
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 #	owner = XXX
 #	controller = XXX

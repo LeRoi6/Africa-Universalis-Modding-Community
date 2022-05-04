@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus province
 
 culture = interior_salish
@@ -17,6 +18,7 @@ discovered_by = north_american
 #discovered_by = bt_northwest_tech
 
 
+1444.1.1 = { tribal_owner = YYI }
 1809.1.1 = {
 	discovered_by = GBR
 	owner = GBR

@@ -53,26 +53,28 @@ emp_ita_development_branch = {
 		
 		provinces_to_highlight = {
 			OR = {
+				area = abruzzo_area
 				area = naples_area
 				area = sicily_area
 				area = western_sicily_area
 				area = calabria_area
 				area = apulia_area
 			}
-			NOT = { development = 40 }
+			NOT = { development = 25 }
 		}
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = emp_ita_develop_the_south_tt
 				num_of_owned_provinces_with = {
 					OR = {
+						area = abruzzo_area
 						area = naples_area
 						area = sicily_area
 						area = western_sicily_area
 						area = calabria_area
 						area = apulia_area
 					}
-					development = 40 #Accounting for dev doubling, up from 25.
+					development = 25
 					value = 8 #Up from Vanilla's 5, as well as number of grasslands in BT Southern Italy
 				}
 			}
@@ -83,6 +85,7 @@ emp_ita_development_branch = {
 				every_owned_province = {
 					limit = {
 						OR = {
+							area = abruzzo_area
 							area = naples_area
 							area = sicily_area
 							area = western_sicily_area
@@ -204,7 +207,7 @@ emp_ita_gallia_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
-			upper_gascony = {
+			upper_gascony = {  
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -248,7 +251,7 @@ emp_ita_gallia_branch = {
 				area = west_languedoc_area
 				area = upper_guyenne_area
 				area = limousin_area
-				area = upper_gascony
+				area = upper_gascony  
 				area = guyenne_area
 				area = poitou_area
 				area = pyrenees_area
@@ -280,7 +283,7 @@ emp_ita_gallia_branch = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			upper_gascony = {
+			upper_gascony = {  
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -448,7 +451,7 @@ emp_ita_war_branch = {
 				area = north_piedmont_area
 				area = lombardy_area
 				area = po_valley_area
-				area = trentino_area
+				# area = trentino_area		#cut in BT14, merged into tirol_area
 				area = carnia_area
 				area = friuli_area
 			}
@@ -465,7 +468,7 @@ emp_ita_war_branch = {
 								area = north_piedmont_area
 								area = lombardy_area
 								area = po_valley_area
-								area = trentino_area
+								# area = trentino_area		#cut in BT14, merged into tirol_area
 								area = carnia_area
 								area = friuli_area
 							}
@@ -482,7 +485,12 @@ emp_ita_war_branch = {
 									NOT = { mil_tech = 14 }
 								}
 							}
-							has_building = fort_15th
+							OR = {
+								has_building = fort_15th
+								has_building = fort_16th
+								has_building = fort_17th
+								has_building = fort_18th
+							}
 						}
 						else_if = {
 							limit = {
@@ -574,7 +582,7 @@ emp_ita_war_branch = {
 					area = north_piedmont_area
 					area = lombardy_area
 					area = po_valley_area
-					area = trentino_area
+					# area = trentino_area		#cut in BT14, merged into tirol_area
 					area = carnia_area
 					area = friuli_area
 				}
@@ -584,7 +592,12 @@ emp_ita_war_branch = {
 							NOT = { mil_tech = 14 }
 						}
 					}
-					has_building = fort_15th
+					OR = {
+						has_building = fort_15th
+						has_building = fort_16th
+						has_building = fort_17th
+						has_building = fort_18th
+					}
 				}
 				else_if = {
 					limit = {

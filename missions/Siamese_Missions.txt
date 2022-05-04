@@ -8,6 +8,7 @@ siamese_missions_1 = {
 			tag = AYU
 			tag = SIA
 		}
+		NOT = { has_dlc = "Leviathan" } #Leviathan users have a grander mission tree that should be replaced by this.
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -126,6 +127,7 @@ siamese_missions_2 = {
 			tag = AYU
 			tag = SIA
 		}
+		NOT = { has_dlc = "Leviathan" } #Leviathan users have a grander mission tree that should be replaced by this.
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes

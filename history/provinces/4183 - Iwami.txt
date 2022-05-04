@@ -1,3 +1,4 @@
+ 
 #4183 - Iwami
 
 owner = YMN
@@ -13,10 +14,10 @@ base_production = 4
 is_city = yes
 add_core = YMN
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
+1444.1.1 = { discovered_by = MCH }
+1444.1.1 = { discovered_by = KHA }
+1444.1.1 = { discovered_by = OIR }
+1444.1.1 = { discovered_by = QNG }
 
 1495.1.1 = { add_core = OUC owner = OUC controller = OUC }
 1521.1.1 = { add_core = AMA } 

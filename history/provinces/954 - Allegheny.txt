@@ -1,10 +1,13 @@
 #954 - Allegheny
-
-culture = susquehannock
+owner = ERI
+controller = ERI
+add_core = ERI
+culture = tionontate
 religion = totemism
 capital = "Allegheny"
 trade_goods = unknown
 hre = no
+is_city = yes
 base_tax = 1 
 base_production = 2
 base_manpower = 2

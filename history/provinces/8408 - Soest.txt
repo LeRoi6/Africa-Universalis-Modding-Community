@@ -1,0 +1,38 @@
+#8408 - Soest
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Soest"
+is_city = yes
+owner = KLE
+controller = KLE
+
+#Demographics
+culture = lower_saxon
+religion = catholic
+
+#Development and Trade
+base_tax = 6
+base_production = 6
+base_manpower = 5
+trade_goods = grain
+
+#Cores and Occupation (Alphabetical after current)
+add_core = KLE
+add_core = KOL#soest feud
+
+#Other Political
+hre = yes
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Histories 

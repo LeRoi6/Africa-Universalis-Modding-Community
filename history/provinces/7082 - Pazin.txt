@@ -1,9 +1,11 @@
+ 
 #BT Italy reoverhaul
 
 owner = GRZ
 controller = GRZ
 add_core = GRZ
 add_core = AQU			#part of the province was Aquileian
+add_core = IST			#Margraviate of Istria
 culture = croatian			#the Croat part of the penninsula
 religion = catholic
 capital = "Mitterburg"	#Slavic Pazin, Italian Pisino
@@ -36,16 +38,31 @@ discovered_by = eastern
 #First performance start unused
 
 1374.1.1 = {
-	owner = HAB
-	controller = HAB
-	add_core = HAB
+	owner = STY
+	controller = STY
+	add_core = STY
 }	#sold to the Habsburgs
 1420.1.1 = { remove_core = AQU } # Aquileia conquered by Venice, so removing Aquilea cores in non-core lands to give Istria a better chance to revolt
 
-1420.1.1 = {
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	owner = RIJ
+	controller = RIJ
+	add_core = RIJ
+	remove_core = HAB
+	remove_core = STY
+	remove_core = GRZ
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	owner = HAB
+	controller = HAB
+	remove_core = RIJ
+	add_core = HAB
 	add_core = STY
-} # To the Habsburgs
+	add_core = GRZ
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
+#1444 onwards
 1452.1.1 = {
 	owner = STY
 	controller = STY

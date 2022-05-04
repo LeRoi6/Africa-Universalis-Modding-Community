@@ -1,3 +1,4 @@
+ 
 #BT Scandinavia and Baltics reoverhaul
 
 owner = SWE
@@ -21,9 +22,9 @@ add_province_triggered_modifier = bt_birkarls
 
 #Province history completed by - Draiocht
 1291.5.21 = { #BeyondTypus batch edit shortcut the first shattering begins
-	owner = FIN
-	controller = FIN
-	add_core = FIN
+	owner = TAV
+	controller = TAV
+	add_core = TAV
 	remove_core = SWE
 	add_local_autonomy = -55
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
@@ -31,7 +32,7 @@ add_province_triggered_modifier = bt_birkarls
 	owner = SWE
 	controller = SWE
 	add_core = SWE
-	remove_core = FIN
+	remove_core = TAV
 	add_local_autonomy = 55 #This stacks with culture and religious starting autonomy, it seems. Reducing from 90.
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #1st Performance Start Unused
@@ -39,9 +40,9 @@ add_province_triggered_modifier = bt_birkarls
 #1291 - 1444
 
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	owner = FIN
-	controller = FIN
-	add_core = FIN
+	owner = TAV
+	controller = TAV
+	add_core = TAV
 	remove_core = SWE
 	add_local_autonomy = -55
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
@@ -49,7 +50,7 @@ add_province_triggered_modifier = bt_birkarls
 	owner = SWE
 	controller = SWE
 	add_core = SWE
-	remove_core = FIN
+	remove_core = TAV
 	add_local_autonomy = 55 #This stacks with culture and religious starting autonomy, it seems. Reducing from 90.
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #2nd Performance Start Unused

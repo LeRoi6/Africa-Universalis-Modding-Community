@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus province
 
 capital = "Chichijima"
@@ -13,35 +14,35 @@ native_ferocity = 0
 native_hostileness = 0
 
 #Japan
-discovered_by = CBA
-discovered_by = UES
-discovered_by = ASK
-discovered_by = IMG
-discovered_by = TKG
-discovered_by = ODA
-discovered_by = STK
-discovered_by = DTE
-discovered_by = UTN
-discovered_by = TKD
-discovered_by = OGS
-discovered_by = TKI
-discovered_by = HTK
-discovered_by = SBA
-discovered_by = KTB
-discovered_by = TTI
-discovered_by = HSK
-discovered_by = AKT
-discovered_by = RFR
-discovered_by = ISK
-discovered_by = YMN
-discovered_by = KNO
-discovered_by = OUC
-discovered_by = AMA
-discovered_by = OTM
-discovered_by = ITO
-discovered_by = SMZ
-discovered_by = KKC
-discovered_by = SHN
-discovered_by = RYU
+1444.1.1 = { discovered_by = CBA }
+1444.1.1 = { discovered_by = UES }
+1444.1.1 = { discovered_by = ASK }
+1444.1.1 = { discovered_by = IMG }
+1444.1.1 = { discovered_by = TKG }
+1444.1.1 = { discovered_by = ODA }
+1444.1.1 = { discovered_by = STK }
+1444.1.1 = { discovered_by = DTE }
+1444.1.1 = { discovered_by = UTN }
+1444.1.1 = { discovered_by = TKD }
+1444.1.1 = { discovered_by = OGS }
+1444.1.1 = { discovered_by = TKI }
+1444.1.1 = { discovered_by = HTK }
+1444.1.1 = { discovered_by = SBA }
+1444.1.1 = { discovered_by = KTB }
+1444.1.1 = { discovered_by = TTI }
+1444.1.1 = { discovered_by = HSK }
+1444.1.1 = { discovered_by = AKT }
+1444.1.1 = { discovered_by = RFR }
+1444.1.1 = { discovered_by = ISK }
+1444.1.1 = { discovered_by = YMN }
+1444.1.1 = { discovered_by = KNO }
+1444.1.1 = { discovered_by = OUC }
+1444.1.1 = { discovered_by = AMA }
+1444.1.1 = { discovered_by = OTM }
+1444.1.1 = { discovered_by = ITO }
+1444.1.1 = { discovered_by = SMZ }
+1444.1.1 = { discovered_by = KKC }
+1444.1.1 = { discovered_by = SHN }
+1444.1.1 = { discovered_by = RYU }
 
 1543.1.1 = { discovered_by = SPA }

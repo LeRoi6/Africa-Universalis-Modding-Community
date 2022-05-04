@@ -1,3 +1,4 @@
+ 
 #107 - Brescia
 #Region - Italy
 #Area - Lombardy
@@ -68,10 +69,12 @@ discovered_by = eastern
 	owner = BSC
 	controller = BSC
 	remove_core = VEN
+	remove_core = MLO
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	owner = VEN
 	controller = VEN
+	add_core = MLO
 	add_core = VEN
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #Second performance start unused

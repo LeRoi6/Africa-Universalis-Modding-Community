@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = GUB
@@ -31,8 +32,19 @@ discovered_by = eastern
 1414.8.6 = { owner = URB controller = URB remove_core = NAP }
 
 
-#Second Shattering not used
+#Second Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	owner = GUB
+	controller = GUB
+	remove_core = URB
+}
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	owner = URB
+	controller = URB
+	add_core = URB
+}
 
+#1444 onwards
 1502.6.1 = {
 	owner = RMG
 	controller = RMG

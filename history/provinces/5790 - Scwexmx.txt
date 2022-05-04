@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus province
 
 culture = shuswap			#Nicolas/Thompsons, also note the Nicola Athabaskans, who migrated here and existed as a minority until the 19th century. Though their numbers were small and extact territory ambiguous. The Salish group was certainly in the majority.

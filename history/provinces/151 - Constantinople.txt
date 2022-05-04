@@ -1,3 +1,4 @@
+ 
 #151 - Constantinople
 
 owner = BYZ
@@ -5,14 +6,14 @@ controller = BYZ
 culture = greek
 religion = orthodox
 capital = "Constantinople"
-trade_goods = cloth #Overwrote BT's glass because it broke some of my events. Band-aid fix, I know.			
+trade_goods = cloth #Overwrote BT's glass because it broke some of my events. Band-aid fix, I know.
 #Was formerly silk and cloth, but this seems a good fit. Constantinople was a known centre of knowledge, main centre of a major religion, and advanced urban town... Also note glass, in the early period especially, would be a wonderful choice.
 hre = no
 base_tax = 10
-base_production = 10			# In 1453, when the Ottoman Turks captured the city, it contained approximately 50,000 people. Still very large, but nothing compared to the great capitals in the west, like Paris 200k+, Brugge, 150K+, Milan 175k+, etc.
+base_production = 10 # In 1453, when the Ottoman Turks captured the city, it contained approximately 50,000 people. Still very large, but nothing compared to the great capitals in the west, like Paris 200k+, Brugge, 150K+, Milan 175k+, etc.
 base_manpower = 5
 is_city = yes
-fort_15th = yes 
+fort_16th = yes # Brian says they deserve it; fort_15th
 add_core = BYZ
 
 discovered_by = western

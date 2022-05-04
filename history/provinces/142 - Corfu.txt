@@ -1,3 +1,4 @@
+ 
 #142 - Corfu
 
 owner = CEP
@@ -14,11 +15,11 @@ is_city = yes
 fort_15th = yes
 add_core = CEP
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
@@ -29,6 +30,18 @@ discovered_by = western
 	owner = VEN 
 	controller = VEN
 }
+
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = VEN
+	owner = CEP
+	controller = CEP
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = VEN
+	owner = VEN
+	controller = VEN
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 1610.1.1 = { unrest = 7 } # Exploatation by the nobles, several minor revolts
 1650.1.1 = { unrest = 0 }
 1750.1.1 = { add_core = GRE }

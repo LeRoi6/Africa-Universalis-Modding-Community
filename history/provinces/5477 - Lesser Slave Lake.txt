@@ -1,0 +1,5 @@
+# Brian
+# wasteland
+# 5477 - Lesser Slave Lake
+
+discovered_by = north_american

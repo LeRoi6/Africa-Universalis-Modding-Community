@@ -1,3 +1,4 @@
+ 
 #1172 - Benguela
 
 culture = mbundu
@@ -11,9 +12,9 @@ base_manpower = 4
 native_size = 50
 native_ferocity = 1
 native_hostileness = 7
-discovered_by = KON
-discovered_by = NDO
-discovered_by = LOA
+1444.1.1 = { discovered_by = KON }
+1444.1.1 = { discovered_by = NDO }
+1444.1.1 = { discovered_by = LOA }
 discovered_by = sub_saharan
 extra_cost = 8
 center_of_trade = 1

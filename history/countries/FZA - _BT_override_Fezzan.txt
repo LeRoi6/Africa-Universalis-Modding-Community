@@ -1,0 +1,4 @@
+
+primary_culture = fezzan_arabic
+capital = 2474	# Murzuk
+fixed_capital = 2474 # Cannot move capital away from this province & no power cost to move to it

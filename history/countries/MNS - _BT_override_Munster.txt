@@ -1,0 +1,9 @@
+
+add_government_reform = irish_clann_reform
+capital = 4118	# Cork
+
+
+
+#History
+
+#Previously, I had completely emptied this file because I repurposed it into a formable. But meh, who really cares. Leaving vanilla so it doesn't need to be checked & updated each patch

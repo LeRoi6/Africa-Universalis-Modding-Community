@@ -1,0 +1,13 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+religion = catholic
+primary_culture = catalan
+add_accepted_culture = greek
+technology_group = western #eastern
+capital = 7108 #Neopatria
+
+1444.1.1 = {
+ remove_accepted_culture = greek
+ primary_culture = greek#repurposing it as a Greek revolter
+}

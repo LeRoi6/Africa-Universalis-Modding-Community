@@ -1,3 +1,4 @@
+ 
 #New Beyond Typus Province
 
 owner = TUN
@@ -20,7 +21,20 @@ discovered_by = ottoman
 discovered_by = western
 discovered_by = eastern
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = TUN
+	owner = KBA
+	controller = KBA
+	add_local_autonomy = -75			#Kabylians highly autonomous under Hafsids
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = TUN
+	owner = TUN
+	controller = TUN
+	add_local_autonomy = 75			#Kabylians highly autonomous under Hafsids
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
+#1444 onwards
 1510.1.1 = {
 	owner = AAB
 	controller = AAB

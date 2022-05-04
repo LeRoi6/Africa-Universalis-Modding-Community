@@ -1,0 +1,37 @@
+#8424 - Bussendorf
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Bussendorf"
+is_city = yes
+owner = LOR
+controller = LOR
+
+#Demographics
+culture = hessian
+religion = catholic
+
+#Development and Trade
+base_tax = 4
+base_production = 3
+base_manpower = 2
+trade_goods = salt
+
+#Cores and Occupation (Alphabetical after current)
+add_core = LOR
+
+#Other Political
+hre = yes
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Histories 

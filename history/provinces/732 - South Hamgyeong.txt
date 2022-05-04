@@ -1,3 +1,4 @@
+ 
 #732 - Hamgyeong
 
 owner = KOR
@@ -15,6 +16,20 @@ add_core = KOR
 discovered_by = chinese
 discovered_by = nomad_group
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = KOR
+	add_core = NKR
+	owner = NKR
+	controller = NKR
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = KOR
+	remove_core = NKR
+	owner = KOR
+	controller = KOR
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1542.1.1 = { discovered_by = POR }
 1592.7.18 = { controller = ODA } # Japanese invasion - Battle of Haejungchang
 1593.2.22 = { controller = KOR } # Kato retreats to Seoul

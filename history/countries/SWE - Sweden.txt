@@ -455,20 +455,6 @@ add_government_reform = feudalism_reform }
 	add_ruler_personality = just_personality
 }
 
-1568.9.30 = {
-	heir = {
-		name = "Sigismund"
-		monarch_name = "Sigismund III"
-		dynasty = "Vasa"
-		birth_date = 1566.6.20
-		death_date = 1632.4.30
-		claim = 95
-		adm = 2
-		dip = 2
-		mil = 3
-	}
-}
-
 1569.7.10 = { #Official Coronation + Tag Switch POL -> PLC
 	queen = {
 		country_of_origin = PLC
@@ -480,6 +466,20 @@ add_government_reform = feudalism_reform }
 		adm = 3
 		dip = 3
 		mil = 1
+	}
+}
+
+1568.9.30 = {
+	heir = {
+		name = "Sigismund"
+		monarch_name = "Sigismund III"
+		dynasty = "Vasa"
+		birth_date = 1566.6.20
+		death_date = 1632.4.30
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
 	}
 }
 

@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus province
 
 culture = mikmaq					# 
@@ -16,6 +17,7 @@ native_hostileness = 3
 discovered_by = north_american
 
 
+1444.1.1 = { tribal_owner = MIK }
 1534.6.24 = { discovered_by = FRA } # Jacques Cartier
 
 1575.1.1 = { 

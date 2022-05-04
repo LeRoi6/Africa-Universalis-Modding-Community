@@ -1,3 +1,4 @@
+ 
 #405 - Tadmor
 
 owner = FAD
@@ -5,11 +6,11 @@ controller = FAD
 add_core = FAD
 culture = al_suryah_arabic
 religion = sunni
-capital = "Tadmur"
-trade_goods = gems			#The primary income-generating trade good was silk, which was exported from the East to the West. Other exported goods included jade, muslin, spices, ebony, ivory and precious stones. Going with muslin, read cotton, because ivory should be mostly African and there is no gem trade good
+capital = "Palmyra"
+trade_goods = bt_trade_good_fruit #(JP) Surrounded, literally surrounded in Orchards
 hre = no
-base_tax = 4			#Taxing the cavaran trade routes was primary income here, according to most scholars
-base_production = 3 
+base_tax = 3				#Taxing the cavaran trade routes was primary income here, according to most scholars
+base_production = 2 
 base_manpower = 1 
 is_city = yes
 add_core = SYR
@@ -22,6 +23,14 @@ discovered_by = nomad_group
 discovered_by = indian
 discovered_by = east_african
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = SYR
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = SYR
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1516.8.24 = {	owner = TUR
 	controller = TUR
 	add_core = TUR

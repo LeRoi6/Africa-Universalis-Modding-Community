@@ -1,0 +1,24 @@
+ 
+# renamed in 1.31
+
+owner = BEU
+controller = BEU
+add_core = BEU
+culture = kutainese # BT; bornean
+religion = hinduism
+capital = "Berau" # BT; "Sambaliung"
+is_city = yes
+hre = no
+base_tax = 5 # BT; 2
+base_production = 5 # BT; 2
+base_manpower = 2
+trade_goods = fish
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1521.1.1 = { discovered_by = POR }
+
+1675.1.1 = { religion = sunni }

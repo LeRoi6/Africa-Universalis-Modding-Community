@@ -1,15 +1,16 @@
-owner = TTL
-controller = TTL
-culture = swiss
+ 
+owner = GRB
+controller = GRB
+culture = romanch_culture
 religion = catholic
 capital = "Illanz"
 trade_goods = livestock
 hre = yes
-base_tax = 6
-base_production = 4
+base_tax = 3
+base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = TTL
+add_core = GRB
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

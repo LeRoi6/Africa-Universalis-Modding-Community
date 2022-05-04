@@ -1,3 +1,4 @@
+ 
 #359 - Faiyum
 
 owner = MAM
@@ -7,8 +8,8 @@ religion = coptic
 capital = "Al Fayyum"
 trade_goods = paper
 hre = no
-base_tax = 6
-base_production = 6
+base_tax = 5
+base_production = 5
 base_manpower = 4 
 is_city = yes
 add_core = MAM
@@ -21,7 +22,14 @@ discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = east_african
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = KEM
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = KEM
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
+#1444 onwards
 1517.1.1 = {
 	owner = TUR
 	controller = TUR

@@ -1,0 +1,4 @@
+
+1393.1.1 = { monarch = { name = "Barom Reachea II" dynasty = "Khmer" adm = 5 dip = 3 mil = 2 }
+}
+1430.1.1 = { leader = {	name = "Jao Yat"	type = general	fire = 0	shock = 1	manuever = 1	siege = 1	death_date = 1446.1.1 } }

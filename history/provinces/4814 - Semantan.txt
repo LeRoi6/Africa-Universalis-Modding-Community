@@ -1,0 +1,40 @@
+ 
+# ex 8595
+
+owner = PAH
+controller = PAH
+add_core = PAH
+add_core = JOH # BT
+culture = orang_asli # BT; malayan
+religion = mahayana
+capital = "Kuala Semantan" # BT; "Semantan"
+is_city = yes
+hre = no
+base_tax = 3 # BT; 2
+base_production = 3 # BT; 2
+base_manpower = 2 # BT; 1
+trade_goods = livestock # BT; tropical_wood
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1454.1.1 = {
+	owner = MLC
+	controller = MLC
+	add_core = MLC
+	add_core = JOH
+}
+
+1470.1.1 = {
+	religion = sunni #Established as a vassal state
+}
+
+1516.1.1 = { discovered_by = POR }
+
+1528.1.1 = {
+	owner = JOH
+	controller = JOH
+	remove_core = MLC
+}

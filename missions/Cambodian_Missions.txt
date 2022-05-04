@@ -8,6 +8,7 @@ cambodian_missions_1 = {
 			tag = KHM
 			tag = KME
 		}
+		NOT = { has_dlc = "Leviathan" } #Leviathan users have a grander mission tree that should be replaced by this.
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -95,14 +96,14 @@ cambodian_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			south_laos_area = {
+			champasak_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			sukothai_area = {
+			sukhothai_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -123,7 +124,7 @@ cambodian_missions_1 = {
 		required_missions = { khm_conquer_the_siamese_heartland }
 		provinces_to_highlight = {
 			OR = {
-				area = sukothai_area
+				area = sukhothai_area
 				area = north_tenasserim_area
 			}
 			NOT = {
@@ -131,7 +132,7 @@ cambodian_missions_1 = {
 			}
 		}
 		trigger = {
-			sukothai_area = {
+			sukhothai_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -156,6 +157,7 @@ cambodian_missions_2 = {
 			tag = KHM
 			tag = KME
 		}
+		NOT = { has_dlc = "Leviathan" } #Leviathan users have a grander mission tree that should be replaced by this.
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -166,7 +168,7 @@ cambodian_missions_2 = {
 		provinces_to_highlight = {
 			OR = {
 				area = north_laos_area
-				area = south_laos_area
+				area = champasak_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -177,7 +179,7 @@ cambodian_missions_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			south_laos_area = {
+			champasak_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

@@ -1,3 +1,4 @@
+ 
 #74 - Baden
 #Region - Germany
 #Area - Upper Rhineland
@@ -9,9 +10,9 @@ capital = "Baden"
 trade_goods = wine
 religion = catholic
 culture = swabian
-base_tax = 6
-base_production = 6
-base_manpower = 4 
+base_tax = 3
+base_production = 3
+base_manpower = 3
 is_city = yes
 hre = yes
 

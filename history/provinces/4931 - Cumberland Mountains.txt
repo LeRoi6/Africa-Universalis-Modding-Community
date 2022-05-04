@@ -1,0 +1,6 @@
+# new in 1.31
+
+discovered_by = north_american
+
+1610.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }

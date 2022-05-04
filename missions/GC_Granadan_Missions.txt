@@ -1285,7 +1285,7 @@ andalusia_slot_4_missions_c = {
 					add_center_of_trade_level = 1
 				}
 			}
-			persian_gulf_coast = {
+			persian_gulf_coast = {  
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }

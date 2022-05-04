@@ -1,3 +1,4 @@
+ 
 #325 - Kastamonu
 
 owner = CND
@@ -6,11 +7,11 @@ add_core = CND
 culture = turkish
 religion = sunni
 capital = "Kastamonu"
-trade_goods = naval_supplies		#No particular reason, though there are many trees and orchards around here
+trade_goods = copper 			#(JP) Historical cotton mines
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 3
+base_tax = 3
+base_production = 3
+base_manpower = 2
 is_city = yes
 
 

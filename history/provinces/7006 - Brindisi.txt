@@ -1,4 +1,4 @@
-#BT Italy reoverhaul
+ 
 
 owner = NAP
 controller = NAP
@@ -6,51 +6,53 @@ add_core = NAP
 culture = griko
 religion = catholic
 capital = "Brindisi"
+is_city = yes
+hre = no
 base_tax = 3
 base_production = 2
 base_manpower = 2
 trade_goods = livestock
-is_city = yes
-hre = no
 
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
-
 #Province history completed by - Chairman Meow (JP) 
 1291.5.21 = { #BeyondTypus batch edit shortcut the first shattering begins
-	owner = TAN
-	controller = TAN
-	add_core = TAN
+	owner = LEC
+	controller = LEC
+	add_core = LEC
 	remove_core = NAP
 }
 1291.5.23 = { #BeyondTypus batch edit shortcut the first shattering ends
 	owner = NAP
 	controller = NAP
 	add_core = NAP
-	remove_core = TAN
+	remove_core = LEC
 }
 #First performance start unused
 #Not messing with vassals of vassals at the moment, but leaving this here for the future
 1421.5.4 = {
-#	owner = TAN
-#	controller = TAN
-	add_core = TAN
+#	owner = TAT # changed from TAN
+#	controller = TAT # changed from TAN
+	add_core = TAT # changed from TAN
 #	remove_core = NAP
-} # technically a seperate duchy and given to Raimondello in 1385, I've just given it Tarantoan history to simplify it since TAN only exists under Raimondello from 1393
+} # technically a seperate duchy and given to Raimondello in 1385, I've just given it Tarantoan history to simplify it since Taranto only exists under Raimondello from 1393
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	owner = TAN
-	controller = TAN
-	#add_core = TAN
+	owner = LEC
+	controller = LEC
+	add_core = LEC
+	remove_core = TAT # changed from TAN
 	remove_core = NAP
 }
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	owner = NAP
 	controller = NAP
 	add_core = NAP
-} # Hashtagged as TAN exists in 1444 so not sure it is necessary.
+	add_core = TAT # changed from TAN
+	remove_core = LEC
+} # Hashtagged as Taranto exists in 1444 so not sure it is necessary.
 #Remember to add performance start details below if Taranto ever added to main start.
 #1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 #	owner = XXX
@@ -69,14 +71,14 @@ discovered_by = eastern
 #	owner = NAP
 #	add_core = NAP
 #	controller = NAP
-#	remove_core = TAN
+#	remove_core = TAT # changed from TAN
 #} # Giannantonio's heir was wife of king. On her death in 1465 annexed to crown.
-# Hashtagged as TAN exists in 1444 so not sure it is necessary.
+# Hashtagged as Taranto exists in 1444 so not sure it is necessary.
 1465.3.30 = {
 	owner = NAP
 	add_core = NAP
 	controller = NAP
-	remove_core = TAN
+	remove_core = TAT # changed from TAN
 } # Giannantonio's heir was wife of king. On her death in 1465 annexed to crown.
 1494.1.1 = { 
 	add_core = FRA 

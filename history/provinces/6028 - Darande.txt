@@ -1,0 +1,50 @@
+#6028 - Darende
+#Area - 
+#Region - Anatolia
+
+#Core Details
+capital = "Darende"
+is_city = yes
+owner = DUL
+controller = DUL
+
+#Demographics
+culture = cappadocian
+religion = orthodox
+
+#Development and Trade
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = wine
+
+#Cores and Occupation (Alphabetical after current)
+add_core = DUL
+
+#Other Political
+hre = no
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = nomad_group
+
+#Histories
+
+#1444 onwards
+1514.8.23 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR		
+}
+1623.1.1 = { unrest = 8 } # The empire fell into anarchy, Janissaries stormed the palace
+1625.1.1 = { unrest = 0 } # Murad tries to quell the corruption
+1718.1.1 = { unrest = 3 } # Lale Devri (the tulip age), not appreciated by everyone 
+1720.1.1 = { unrest = 0 }
+1795.1.1 = { unrest = 6 } # Reforms by Sultan Selim III, tried to replace the Janissary corps

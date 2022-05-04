@@ -1,3 +1,4 @@
+ 
 #265 - Moravia
 #Region - Germany
 #Area - Moravia
@@ -15,12 +16,13 @@ base_manpower = 2
 is_city = yes
 add_core = BOH
 add_core = MRV
+center_of_trade = 1
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -28,6 +30,20 @@ discovered_by = ottoman
 
 1419.12.1 = { revolt = { type = heretic_rebels size = 2 } controller = REB } # Hussite Wars, Battle of Nekmir
 1436.7.5 = { revolt = {} controller = BOH } # Peace is signed in Jihlava
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = BOH
+	owner = MRV
+	controller = MRV
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = BOH
+	owner = BOH
+	controller = BOH
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1457.1.1 = { unrest = 5 } # George of Podiebrand had to secure recognition from the German and Catholic towns
 1464.1.1 = { unrest = 1 } # The Catholic nobility is still undermines the crown.
 1471.1.1 = { unrest = 0 }

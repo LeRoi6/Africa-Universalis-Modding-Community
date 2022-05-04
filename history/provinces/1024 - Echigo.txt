@@ -1,3 +1,4 @@
+ 
 #1024 - Echigo
 
 owner = UES
@@ -16,11 +17,11 @@ add_core = UES
 
 
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
-discovered_by = ANU
+1444.1.1 = { discovered_by = MCH }
+1444.1.1 = { discovered_by = KHA }
+1444.1.1 = { discovered_by = OIR }
+1444.1.1 = { discovered_by = QNG }
+1444.1.1 = { discovered_by = ANU }
 
 
 1507.7.1 = { fort_15th = yes } # Kasugayama Castle, the capital of the Nagao(Uesugi) clan

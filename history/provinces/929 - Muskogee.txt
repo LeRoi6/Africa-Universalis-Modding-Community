@@ -1,6 +1,7 @@
+
 #929 - Muskogee
 
-culture = creek
+culture = yamasee
 religion = totemism
 capital = "Guale"
 trade_goods = cotton

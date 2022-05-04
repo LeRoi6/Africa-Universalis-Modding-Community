@@ -1,3 +1,4 @@
+ 
 # 182 Vermandois - Principal cities: Compiègne
 #Region - France
 #Area - Picardy
@@ -22,6 +23,22 @@ discovered_by = eastern
 
 1420.5.12 = { owner = ENG controller = ENG add_core = ENG } # Treaty of Troyes, ceded to the English
 1429.1.1 = { owner = ORL controller = ORL remove_core = ENG } # Retaken by the French
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = ORL
+	add_core = LAO
+	owner = LAO
+	controller = LAO
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	remove_core = LAO
+	add_core = ORL
+	owner = ORL
+	controller = ORL
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onward
 1588.12.1 = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
 1594.1.1 = { unrest = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
 1636.9.10 = { controller = HAB } # Habsburg forces ravage North Eastern France

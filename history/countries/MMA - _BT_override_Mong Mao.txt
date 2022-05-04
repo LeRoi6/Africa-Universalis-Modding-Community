@@ -1,0 +1,70 @@
+
+historical_rival = MNG
+
+
+
+#History
+
+1432.1.1 = {
+	heir = {
+		name = "Sao Hki Hpa"
+		monarch_name = "Sao Hsi Hpa"
+		dynasty = "Mong Mao"
+		birth_date = 1400.1.1
+		death_date = 1465.1.1
+		claim = 95
+		ADM = 3
+		DIP = 2
+		MIL = 3
+		leader = {	
+			name = "Sao Hki Hpa"
+			type = general
+			fire = 1
+			shock = 2
+			manuever = 5
+			siege = 0 
+		}
+	}
+}
+
+1444.1.1 = {
+	monarch = {
+		name = "Sao Hki Hpa"
+		dynasty = "Mong Mao"
+		ADM = 3
+		DIP = 2
+		MIL = 3
+		leader = {	
+			name = "Sao Hki Hpa"
+			type = general
+			fire = 1
+			shock = 2
+			manuever = 5
+			siege = 0 
+		}
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Sao Hung Hpa"
+		monarch_name = "Sao Hung Hpa"
+		dynasty = "Mong Mao"
+		birth_date = 1430.1.1
+		death_date = 1492.1.1
+		claim = 95
+		ADM = 2
+		DIP = 3
+		MIL = 2
+	}
+}
+
+1465.1.1 = {
+	monarch = {
+		name = "Sao Hung Hpa"
+		dynasty = "Mong Mao"
+		ADM = 2
+		DIP = 3
+		MIL = 2
+	}
+}

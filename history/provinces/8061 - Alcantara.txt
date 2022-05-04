@@ -1,3 +1,4 @@
+
 #BT's Western Europe Overhaul in 12.0
 
 owner = CAS
@@ -47,16 +48,20 @@ discovered_by = eastern
 
 1350.1.1 = { culture = castillian }
 
-#1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
-#1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-#	owner = XXX
-#	controller = XXX
-#	remove_core = XXX
-#} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = CAS
+	remove_core = TLD
+	owner = LON
+	controller = LON
+	culture = leonese
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = CAS
+	add_core = TLD
+	owner = CAS
+	controller = CAS
+	culture = castillian
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 #	owner = XXX
 #	controller = XXX

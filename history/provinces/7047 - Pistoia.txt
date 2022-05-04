@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = PST
@@ -28,19 +29,31 @@ discovered_by = eastern
 	owner = LUC
 	controller = LUC
 	add_core = LUC
-	} # Castruccio Castracini in power
+} # Castruccio Castracini in power
 1328.1.1 = {
 	owner = PST
 	controller = PST
 	remove_core = LUC
-	} # Castracini dies
+} # Castracini dies
 
 1401.1.1 = {
-  owner = LAN
-  controller = LAN
-	} # Pistoian civil war and suppresion of independence
-	
-#Second Shattering not used
+	owner = LAN
+	controller = LAN
+} # Pistoian civil war and suppresion of independence
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = LAN
+	owner = PST
+	controller = PST
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = LAN
+	owner = LAN
+	controller = LAN
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1495.1.1 = { hre = no }
 1527.1.1 = { controller = SPA } # War of the League of Cognac
 1529.8.3 = { controller = LAN } # Treaty of Cambrai

@@ -1,15 +1,16 @@
+ 
 # 4748 - Brandenburg
 
 owner = BRA
 controller = BRA
 add_core = BRA
-culture = saxon
+culture = markish
 religion = catholic
 hre = yes
-base_tax = 8
-base_production = 6
+base_tax = 5							#(JP) Lowering dev as dev moved around to new provinces
+base_production = 5
 trade_goods = iron
-base_manpower = 6
+base_manpower = 4
 capital = "Brandenburg an der Havel"
 is_city = yes
 

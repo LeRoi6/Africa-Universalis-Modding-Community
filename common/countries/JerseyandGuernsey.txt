@@ -34,6 +34,16 @@ historical_units = {
 }
 
 monarch_names = {	
+	"Pierre #0" = 10
+	"Colin #0" = 10
+	"Guillaume #0" = 10
+	"Lucas #0" = 10
+	"Roger #0" = 10
+	"Guille #0" = 10
+	"Jean #0" = 10
+	"Reginald #0" = 10
+	"Clement #0" = 10
+	"Helier #0" = 10
 	"Henry #0" = 5
 	"Edward #0" = 5
 	"Charles #0" = 5
@@ -90,24 +100,13 @@ monarch_names = {
 }
 
 leader_names = {
-	Albemarle Amherst Anson
-	Buckingham Braddock Byron Burgoyne Beresford Brock Benbow Blake Bedford Boscawen Baffin Button
-	Clarence "de Clifford" Cromwell Cumberland Clinton Cornwallis Clive Cabot Carleton Cavendish Cook
-	Dampier Davis Drake
-	Essex
-	Fairfax Frobisher
-	Gloucester Gilbert
-	Howe Howard Herbert Hawke Hood Hastings Hudson
-	Leicester
-	Marlborough Middleton Moore
-	Northumberland Norfolk
-	Procter
-	Rooke Rodney Raleigh
-	Salisbury Somerset Suffolk Saunders Smith
-	Talbot Tarleton
-	Uxbridge
-	Warwick Wolfe
-	York
+	"de Carteret" Levesque Hasteyn "de St. Martin" Longynnour Ugoun "de Espyard" "de la Haye"
+	"de Vyncheleys" Loreour Brasdefer Hastings Powderham Cockerels Lempriere "le Petit" "de Layc"
+	Danyel Bernard "de la Cour" Payn Poingdestre Morin Hareby Hardy Nicolle Dumaresq Paulett Herault
+	Parkhurst Granville "Le Breton" "de Trubleville" "de St. Remi" Ashwell Cheney "Le Marchant"
+	"de Gand" Comberwell "de Haverland" "de Newent" Gaultier "de la Hogue" "de Souslemont" "de Garis"
+	Esterfield "de la Lande" "de Clermont" Cocquerel Cartier "de Beauvoir" Fouaschin Blondel Martin
+	Guille Compton Haryvell Wigmore "de Vic" "de Quetteville" Andros "de Sausmarez" Bonamy "de Havilland"
 }
 
 ship_names = {
@@ -164,5 +163,5 @@ army_names = {
 }
 
 fleet_names = {
-	"Blue Squadron" "Red Squadron" "White Squadron" 
+	"Channel Squadron" "Norman Squadron" "Islands Squadron" 
 }

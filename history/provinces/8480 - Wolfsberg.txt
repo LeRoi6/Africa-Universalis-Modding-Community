@@ -1,0 +1,38 @@
+#8480 - Wolsberg
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Wolfsberg"
+is_city = yes
+owner = BAM
+controller = BAM
+
+#Demographics
+culture = austrian
+religion = catholic
+
+#Development and Trade
+base_tax = 2
+base_production = 4
+base_manpower = 3
+trade_goods = grain
+
+#Cores and Occupation (Alphabetical after current)
+add_core = BAM
+add_core = CNT
+
+#Other Political
+hre = yes
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Histories 

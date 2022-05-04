@@ -1,3 +1,4 @@
+ 
 #BT Balkans reoverhaul
 
 owner = MRK
@@ -5,7 +6,7 @@ controller = MRK
 add_core = MRK
 culture = shilha
 religion = sunni
-capital = "Chichaoua"
+capital = "Ben Guerir" #Chichaoua wasn't even in the province.
 base_tax = 3
 base_production = 3
 base_manpower = 2

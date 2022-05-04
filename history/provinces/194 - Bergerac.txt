@@ -1,3 +1,4 @@
+ 
 # 194 Périgord - Principal cities: Bergerac
 #Region - France
 #Area - Guyenne
@@ -16,6 +17,7 @@ base_manpower = 2
 fort_15th = yes
 add_core = FRA
 add_core = ENG
+add_core = GUY
 
 discovered_by = western
 discovered_by = muslim
@@ -24,6 +26,22 @@ discovered_by = eastern
 
 #Possible Province Modifier
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = FRA
+	remove_core = ENG
+	add_core = GUY
+	owner = GUY
+	controller = GUY
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	remove_core = GUY
+	add_core = FRA
+	add_core = ENG
+	owner = FRA
+	controller = FRA
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1560.1.1 = { religion = reformed }
 1565.1.1 = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear
 1568.9.1 = { unrest = 15 } # Catherine de Medici and Charles IX side with the Guise faction, religious intolerance peaks

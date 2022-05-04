@@ -1,0 +1,49 @@
+
+primary_culture = acehnese
+
+1444.1.1 = {
+	monarch = {
+		name = "Muhammad Shâh"
+		dynasty = "Malik"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+	add_piety = -0.1
+}
+
+1503.1.1 = {
+	monarch = {
+		name = "Muhammad Shâh II"
+		dynasty = "Malik"
+                culture = cham
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+	add_piety = -0.1
+}
+
+1511.1.1 = {
+	monarch = {
+		name = "'Alî Mugâyat Shâh"
+		dynasty = "Mugâyat"
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1511.1.1 = {
+	heir = {
+		name = "Salâh ad-Dîn Ibrâhîm"
+		monarch_name = "Salâh ad-Dîn Ibrâhîm"
+		dynasty = "Mugàyat"
+		birth_date = 1500.1.1
+		death_Date = 1537.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}

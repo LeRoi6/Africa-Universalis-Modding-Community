@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = PIS
@@ -52,7 +53,22 @@ discovered_by = eastern
 	controller = SAR
 	add_core = SAR
 }	#Aragon wins the battle Sanluri, and claims most of southern and western Sardinia
-#Second Shattering not used
+#Second Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	owner = CAG
+	controller = CAG
+	add_core = CAG
+	remove_core = SAR
+	remove_core = ARR
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	remove_core = CAG
+	add_core = ARR
+	add_core = SAR
+	owner = SAR
+	controller = SAR
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 	owner = ARA
 	controller = ARA

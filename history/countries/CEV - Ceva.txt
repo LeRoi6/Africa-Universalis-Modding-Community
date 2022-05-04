@@ -12,3 +12,26 @@ fixed_capital = 7062
 
 
 #History, currently empty.
+1440.1.1 = {
+	monarch = {
+		name = "Guglielmo"
+		dynasty = "del Vasto"
+		adm = 0#broken between a dozen lordships
+		birth_date = 1403.1.1
+		dip = 1
+		mil = 2
+	}
+}
+1444.1.1 = {
+	heir = {
+		name = "Giovanni"
+		monarch_name ="Giovanni"
+		dynasty = "del Vasto"
+		birth_date = 1434.1.1
+		death_Date = 1493.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

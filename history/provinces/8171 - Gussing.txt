@@ -1,3 +1,4 @@
+
 #8171 - Güssing
 #Area - Austria Proper
 #Region - 
@@ -9,7 +10,7 @@ owner = HUN
 controller = HUN
 
 #Demographics
-culture = hungarian
+culture = austrian
 religion = catholic
 
 #Development and Trade
@@ -30,11 +31,11 @@ hre = no
 #Special Modifiers
 
 #Discoveries
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -1,0 +1,16 @@
+
+add_accepted_culture = al_iraqiya_arabic
+primary_culture = bedouin_arabic
+religion = sunni
+fixed_capital = 408	# Basra
+religious_school = shafii_school
+
+1444.1.1 = {
+	monarch = {
+		name = "Suhari"				#Made up
+		dynasty = "al-Muntafiq" 
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}

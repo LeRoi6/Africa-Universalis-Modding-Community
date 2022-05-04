@@ -1,0 +1,3 @@
+
+historical_friend = BRI
+historical_friend = WLS

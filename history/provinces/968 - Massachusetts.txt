@@ -1,6 +1,7 @@
+
 #968 - Massachusetts
 
-culture = pequot
+culture = massachusset
 religion = totemism
 capital = "Massachusetts"
 trade_goods = unknown
@@ -15,6 +16,7 @@ discovered_by = north_american
 extra_cost = 8
 center_of_trade = 1
 
+1444.1.1 = { tribal_owner = WAM }
 1602.1.1 = { discovered_by = ENG } # Bartholomew Gosnold
 1606.1.1 = { discovered_by = FRA } # Samuel de Champlain
 1623.1.1 = {

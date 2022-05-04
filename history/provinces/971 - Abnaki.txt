@@ -1,10 +1,15 @@
+
 #971 - Abnaki
 
+owner = PEN
+controller = PEN
+add_core = PEN
 culture = abenaki
 religion = totemism
 capital = "Pannawambskek"
-trade_goods = unknown
+trade_goods = fish
 hre = no
+is_city = yes
 base_tax = 1 
 base_production = 1
 base_manpower = 1

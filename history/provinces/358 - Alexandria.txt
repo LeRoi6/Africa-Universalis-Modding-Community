@@ -1,3 +1,4 @@
+ 
 #358 - Alexandria
 
 owner = MAM
@@ -7,7 +8,7 @@ religion = coptic
 capital = "Eskendereya"
 trade_goods = fish			#spices in vanilla... what spices? or Even what trade route for others' spices? This was a major port, but the spice trade was elsewhere after Arab conquest
 hre = no
-base_tax = 8
+base_tax = 7
 base_production = 8
 base_manpower = 4
 is_city = yes
@@ -26,6 +27,22 @@ discovered_by = east_african
 add_province_triggered_modifier = coptic_alexandria
 #CoT moved to Rosetta
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = MAM
+	remove_core = KEM
+	add_core = ALX
+	owner = ALX
+	controller = ALX
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = MAM
+	add_core = KEM
+	remove_core = ALX
+	owner = MAM
+	controller = MAM
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 #1477.1.1 = { } #Citadel of Qaitbay
 1517.1.1 = {
 	owner = TUR

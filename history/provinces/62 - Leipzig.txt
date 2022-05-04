@@ -1,3 +1,4 @@
+ 
 #62 - Leipzig
 #Region - Germany
 #Area - South Saxony
@@ -6,18 +7,19 @@ latent_trade_goods = {
 	coal
 }
 
-owner = SAX
-controller = SAX 
+owner = MEI
+controller = MEI 
 culture = saxon
 religion = catholic
 capital = "Leipzig"
 trade_goods = bt_trade_good_beer
 hre = yes
-base_tax = 8
-base_production = 6
-base_manpower = 2 
+base_tax = 5
+base_production = 4
+base_manpower = 4
 is_city = yes
-add_core = SAX
+add_core = MEI
+center_of_trade = 1
 
 discovered_by = western
 discovered_by = muslim

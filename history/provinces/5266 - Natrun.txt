@@ -1,7 +1,8 @@
+ 
 #New Province
 
 capital = "Bir Natrum"
-culture = tungur_culture
+culture = tunjur
 religion = sunni
 trade_goods = unknown
 hre = no

@@ -1,3 +1,4 @@
+ 
 #Region - Germany
 #Area - Lower Swabia
 
@@ -8,9 +9,9 @@ add_core = WUR
 capital = "Stuttgart"
 religion = catholic
 trade_goods = grain
-base_tax = 8
-base_production = 8
-base_manpower = 6
+base_tax = 4
+base_production = 4
+base_manpower = 3
 is_city = yes
 hre = yes
 

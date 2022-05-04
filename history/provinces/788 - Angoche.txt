@@ -1,14 +1,15 @@
-#788 - Angoche
+ 
+# - Angoche
 
-owner = AGC
-controller = AGC
-add_core = AGC
-culture = koti
+owner = ZAN
+controller = ZAN
+add_core = ZAN
+culture = swahili
 religion = sunni
 capital = "Angoche"
 is_city = yes
-base_manpower = 4 
-trade_goods = slaves
+base_manpower = 2 
+trade_goods = ivory
 hre = no
 base_tax = 6
 base_production = 6

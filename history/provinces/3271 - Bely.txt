@@ -1,3 +1,4 @@
+ 
 #3271 - Bely
 
 owner = SMO
@@ -26,6 +27,20 @@ discovered_by = ottoman
 1404.1.1 = { owner = LIT controller = LIT add_core = LIT } # Vytautas strikes back once more
 1440.1.1 = { unrest = 10 }			#Major rebellion lasting 1440-1442
 1442.1.1 = { unrest = 0 add_local_autonomy = 50 }
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = LIT
+	owner = SMO
+	controller = SMO
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = LIT
+	owner = LIT
+	controller = LIT
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 #1503.4.1 = {}	#Paradox date for Moscovy becoming Russia. I'm not actually 100 percent sure what Paradox is on about here, and feel like I must be missing something, but as I can't figure out what it is, I'm going with the 1547 date. There were terms like Gospodar or Hetman of all Rus', but 'Russia' itself came later.
 1503.4.1 = { owner = MOS controller = MOS add_core = MOS remove_core = LIT add_local_autonomy = -50 culture = russian } # Treaty of the Annunciation
 #1506.1.1 = { fort_15th = yes }

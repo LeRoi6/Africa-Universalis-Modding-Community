@@ -1,8 +1,9 @@
+ 
 #Kalonga
 
-owner = MSJ
-controller = MSJ
-add_core = MSJ
+owner = MRA
+controller = MRA
+add_core = MRA
 culture = nyasa
 religion = shamanism #Fetishism
 capital = "Manthimba"

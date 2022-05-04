@@ -1,0 +1,7 @@
+
+add_accepted_culture = transylvanian_saxons			#Transylvanian Saxons, evidently invited by Wallachian princes to settle Tirgoviste and Campulung after the areas were devastated by the Golden Horde in the 13th century, by all indications got along amicably with the Vlachs.
+capital = 7752	#Arges, moved to Bucharest shortly after start, then flipped between the two a bunch. Note Bucharest is 3160
+
+
+
+#History

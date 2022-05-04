@@ -1,0 +1,47 @@
+#Please note as of 14.0, BT is moving to a new system of overriding minimal files for maximal compatibility, minimal size, easiest updating, and general organisation.
+
+#Perry discovered a delightful new feature (or if old, I've never before encountered it), nor spoken to a modder who knew of it), where new files can apply targetted changes, without requiring  the whole file to be repeated,
+#this both allows smaller sizes, and also removes the need to update for minor changes every patch. Huzzah for Perry.
+
+#The following are several notes on vanilla tags changed in some way by BT:
+
+
+
+##########
+#Random notes on random tags
+##########
+
+#ABB - Dongola (note)			#Beyond Typus reworking this into a unified Al-Kanz tag... realistically the same number of historical compromises, just a different approach
+#FEO - Theodoro			#Cut this file, because its sole change was dynasty name from 'of Gothia' to 'Gabras'. I mean, I don't actually object, but it isn't worth the effort to check the file every update. Further checking revealed this to be an updating oversight in 13.0, apparently
+#KID - Kildare			#There is a date error in vanilla, which I had fixed in BT, but I reintroduced it because it is quite minor and not worth a full replace.
+#PDV - Padua			#Reverted from a monarchy in BT to a republic, as vanilla. I don't actually know, but it is a minor change not really meritting a replace & need to update.
+#VRN - Verona			#Reverted from a monarchy in BT to a republic, as vanilla. I don't actually know, but it is a minor change not really meritting a replace & need to update.
+
+##########
+#The following tags get fully vanilla replace entries, rather than targetted overrides. They must be manually updated for vanilla changes. Generally because there are sooo many changes an override would be more work.
+##########
+
+#AYU - Ayutthaya			#CR's good work
+#BLI - Bali			#CR's good work
+#CHA - Champa			#CR's good work
+#BRI - Brittany			#Math's good work
+#HSE - Hsenwi			#CR's good work
+#LIG - Ligor			#CR's good work
+#KUT - Kutai			#CR's good work
+#LNA - LanNa			#CR's good work
+#LUW - Luwu			#CR's good work
+#PGR - Pagarruyung			#CR's good work. Note here, even more than most, a bunch of vanilla's stuff is labeled 'fictional', while CR and/or Mariposa were apparently able to dig up some historical rulers. Bravo.
+#PAT - Pattani			#CR's good work
+#PGA - Perugia			#Either Niki or JP, not sure which
+#PLB - Palembang			#CR's good work
+#SAK - Siak			#CR's good work
+#SST - Shan			#CR's good work
+#TID - Tidore			#CR's good work
+#WOL - Wolgast			#JP's good work
+
+
+
+
+
+
+

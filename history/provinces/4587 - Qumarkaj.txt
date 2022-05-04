@@ -1,3 +1,4 @@
+ 
 # No previous file for Qumarkaj
 
 owner = KIC 
@@ -15,9 +16,9 @@ add_core = KIC
 
 
 
-discovered_by = MAY
-discovered_by = ZAP
-discovered_by = AZT
+1444.1.1 = { discovered_by = MAY }
+1444.1.1 = { discovered_by = ZAP }
+1444.1.1 = { discovered_by = AZT }
 discovered_by = mesoamerican
 
 1524.1.1 = {

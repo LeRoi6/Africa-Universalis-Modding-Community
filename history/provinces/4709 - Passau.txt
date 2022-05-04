@@ -1,3 +1,4 @@
+ 
 owner = PSS
 controller = PSS
 capital = "Passau"
@@ -5,10 +6,10 @@ is_city = yes
 culture = bavarian
 religion = catholic
 hre = yes
-base_tax = 10
-base_production = 10
-base_manpower = 2
-trade_goods = fish
+base_tax = 5
+base_production = 4
+base_manpower = 4
+trade_goods = salt
 add_core = PSS
 
 discovered_by = eastern

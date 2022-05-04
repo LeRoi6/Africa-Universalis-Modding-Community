@@ -1,3 +1,4 @@
+ 
 #BT Balkans reoverhaul
 
 owner = BYZ
@@ -12,12 +13,13 @@ base_manpower = 1
 trade_goods = grain			#Also some great agricultural potential here
 is_city = yes
 hre = no
+add_core = TUR 			#(JP) Long discussion had in IR server. These territories were held by Byzantium only because the Ottomans let them after the Treaty of Gallipoli
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern

@@ -12,3 +12,12 @@ fixed_capital = 7051
 
 
 #History, currently empty.
+1440.1.1 = {
+	monarch = {
+		name = "Roberto Cavalcanti"
+		birth_date = 1385.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}

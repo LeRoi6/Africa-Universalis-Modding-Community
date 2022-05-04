@@ -10,7 +10,7 @@ capital = 454 # Samarkand
 historical_rival = DLH
 historical_rival = MUL
 religious_school = hanafi_school
-historical_friend = SRV
+
 change_estate_land_share = {
 	estate = estate_church
 	share = -12
@@ -108,11 +108,6 @@ change_estate_land_share = {
 		dip = 3
 		mil = 2
 	}
-}
-
-1444.10.1 = {
-	set_estate_privilege = estate_nobles_strong_duchies
-	set_estate_privilege = estate_nobles_very_strong_duchies
 }
 
 1447.3.13 = { # Death of Shah Rukh. The Timurid Empire is broken apart.

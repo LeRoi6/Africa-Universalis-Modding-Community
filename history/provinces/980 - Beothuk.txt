@@ -1,3 +1,4 @@
+
 #980 - Beothuk
 
 culture = beothuk

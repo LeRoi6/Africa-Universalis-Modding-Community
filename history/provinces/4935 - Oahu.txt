@@ -1,0 +1,40 @@
+ 
+# ex 5029
+# owned in 1.31
+
+owner = OAH
+controller = OAH
+add_core = OAH
+culture = hawaiian # BT; polynesian
+religion = animism
+capital = "Waikiki" # BT; "Honolulu"
+is_city = yes
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = cloth # BT had fish
+# ??? below
+#native_size = 20
+#native_ferocity = 1
+#native_hostileness = 5
+
+discovered_by = polynesian_tech # 1.31
+#discovered_by = YZW
+
+#1444.11.15 = { #BeyondTypus batch edit shortcut no native start date begin
+#	owner = XXX
+#	controller = XXX
+#	is_city = no
+#	trade_goods = unknown
+#}
+#1444.11.17 = { #BeyondTypus batch edit shortcut no native start date end
+#	owner = YZW
+#	controller = YZW
+#	add_core = YZW
+#	is_city = yes
+#	trade_goods = fish
+#}
+
+1555.1.1 = { discovered_by = SPA }
+1778.1.1 = { discovered_by = GBR } #James Cook

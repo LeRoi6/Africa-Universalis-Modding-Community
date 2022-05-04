@@ -25,14 +25,14 @@ byz_western = {
 				area = aegean_archipelago_area
 				area = eastern_mediterrenean_islands_area
 				area = northern_greece_area
-				area = northern_peloponnesus_area
+				#area = northern_peloponnesus_area # Brian; doesn't exist in BT
 				area = aetolia_area
-				area = euboea_area
+				#area = euboea_area # Brian; doesn't exist in BT
 				area = thessaly_area
 				area = northern_epirus_area
-				area = western_thrace_area
+				#area = western_thrace_area # Brian; doesn't exist in BT
 				area = eastern_macedonia_area
-				area = western_macedonia_area
+				#area = western_macedonia_area # Brian; doesn't exist in BT
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -66,18 +66,18 @@ byz_western = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			northern_peloponnesus_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			#northern_peloponnesus_area = { # Brian; doesn't exist in BT
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
 			aetolia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			euboea_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			#euboea_area = { # Brian; doesn't exist in BT
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
 			thessaly_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -86,18 +86,18 @@ byz_western = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			western_thrace_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			#western_thrace_area = { # Brian; doesn't exist in BT
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
 			eastern_macedonia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			western_macedonia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			#western_macedonia_area = { # Brian; doesn't exist in BT
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
 		}
 		effect = {
 			add_country_modifier = {
@@ -210,13 +210,13 @@ byz_western = {
 				}
 				add_permanent_claim = ROOT
 			}
-			capitanata_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			# capitanata_area = {
+				# limit = {
+					# NOT = { is_core = ROOT }
+					# NOT = { owned_by = ROOT }
+				# }
+				# add_permanent_claim = ROOT
+			# }
 			abruzzo_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -224,13 +224,13 @@ byz_western = {
 				}
 				add_permanent_claim = ROOT
 			}
-			lucania_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			# lucania_area = {
+				# limit = {
+					# NOT = { is_core = ROOT }
+					# NOT = { owned_by = ROOT }
+				# }
+				# add_permanent_claim = ROOT
+			# }
 			add_permanent_claim = 7016
 			add_permanent_claim = 7017
 		}
@@ -244,9 +244,9 @@ byz_western = {
 				area = apulia_area
 				area = calabria_area
 				area = naples_area
-				area = capitanata_area
+				#area = capitanata_area
 				area = abruzzo_area
-				area = lucania_area
+				#area = lucania_area
 				province_id = 7016
 				province_id = 7017
 			}
@@ -265,18 +265,18 @@ byz_western = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			capitanata_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			# capitanata_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
 			abruzzo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			lucania_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			# lucania_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
 			7016 = { country_or_non_sovereign_subject_holds = ROOT }
 			7017 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -298,8 +298,8 @@ byz_western = {
 		provinces_to_highlight = {
 			OR = {
 				area = sicily_area
-				area = demone_area
-				area = noto_area
+				#area = demone_area
+				#area = noto_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -308,14 +308,14 @@ byz_western = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			demone_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			noto_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			# demone_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+			# noto_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
 		}
 		effect = {
 			add_country_modifier = {

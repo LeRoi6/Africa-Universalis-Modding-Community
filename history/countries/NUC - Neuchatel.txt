@@ -1,0 +1,43 @@
+#NUC - Neuchatel
+
+#Political Situation
+capital = 8490
+fixed_capital = 8490 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = arpitan
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1444.1.1 = {
+	monarch = {
+		name = "Rudolf IV"
+		birth_date = 1407.3.1
+		adm = 1
+		dip = 2
+		mil = 3
+		dynasty = "von Zähringen"
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Philipp"
+		monarch_name = "Philipp"
+		birth_date = 1444.1.1
+		death_date = 1517.7.15
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+		dynasty = "von Zähringen"		
+	}
+}

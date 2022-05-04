@@ -1,0 +1,31 @@
+#SIN - Sinjar
+
+#Political Situation
+capital = 2309
+fixed_capital = 2309 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1	
+government = monarchy
+add_government_reform = iqta
+
+#Demographics
+primary_culture = kurdish
+religion = yazidi
+#add_accepted_culture
+
+#Tech and Military
+technology_group = muslim
+
+#History
+
+1444.1.1 = {
+	monarch = { 
+		name = "Hussein Beg"
+		dynasty = "Dasini"
+		birth_date = 1421.1.1
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}

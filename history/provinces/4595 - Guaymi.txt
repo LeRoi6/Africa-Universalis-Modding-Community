@@ -1,7 +1,8 @@
+ 
 # No previous file for Guaymi
 
 culture = muisca
-discovered_by = MCA
+1444.1.1 = { discovered_by = MCA }
 religion = animism
 capital = "Guaymi"
 trade_goods = unknown

@@ -1,0 +1,16 @@
+
+capital = 1008	# Winnipeg
+historical_friend = YZC			#Trying to encourge the Iron Confederacy
+historical_friend = NEH
+
+
+
+#History
+
+1715.1.1 = {
+	capital = 2005	# Regina
+}
+
+1735.1.1 = {
+	capital = 2598	# Moose Jaw
+}

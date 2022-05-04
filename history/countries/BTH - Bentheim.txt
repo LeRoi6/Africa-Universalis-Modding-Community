@@ -1,0 +1,38 @@
+#BTH - Bentheim
+
+#Political Situation
+capital = 8402
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = lower_saxon
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1432.1.1 = {
+	monarch = {
+		name = "Eberwin"
+		dynasty = "Gotterswyk"
+		birth_date = 1395.1.1
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+	heir = {
+		name = "Bernard"
+		monarch_name = "Bernard"
+		dynasty = "Gotterswyk"
+		birth_date = 1430.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}

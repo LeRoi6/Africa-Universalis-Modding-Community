@@ -13,7 +13,7 @@ fixed_capital = 7035
 
 #History, currently empty.
 
-1433.1.1  = {
+1433.1.1 = {
 	monarch = {
 		name = "Vittelozzo"		#He was not really the ruler of the city because he struggled to impose his power but he was the leader of the most influent family, and his son will later be the legitimate ruler.
 		dynasty = "Vitelli"

@@ -1,7 +1,7 @@
 # Barents Sea
 
 discovered_by = eastern
-discovered_by = FIN
-discovered_by = NOV
-discovered_by = MOS
-discovered_by = RUS
+1444.1.1 = { discovered_by = FIN }
+1444.1.1 = { discovered_by = NOV }
+1444.1.1 = { discovered_by = MOS }
+1444.1.1 = { discovered_by = RUS }

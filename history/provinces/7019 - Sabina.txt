@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = TIV
@@ -40,7 +41,6 @@ discovered_by = eastern
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	owner = TIV
 	controller = TIV
-	add_core = TIV
 	remove_core = PAP
 }
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends

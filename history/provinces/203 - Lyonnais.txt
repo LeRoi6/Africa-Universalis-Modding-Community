@@ -1,3 +1,4 @@
+ 
 # 203 Lyonnais - Principal cities: Lyon
 #Region - France
 #Area - Savoy
@@ -27,6 +28,21 @@ extra_cost = 20
 center_of_trade = 2
 
 #1399.1.1 = { add_core = DAU }
+
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = FRA
+	add_core = VNE
+	owner = VNE
+	controller = VNE
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	remove_core = VNE
+	add_core = FRA
+	owner = FRA
+	controller = FRA
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1446.9.27 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Dauphiné is ruled as a separate kingdom by Louis
 1457.1.1 = { add_local_autonomy = -35 }
 1461.7.22 = { revolt = {} controller = FRA } # Louis is proclaimed king of France

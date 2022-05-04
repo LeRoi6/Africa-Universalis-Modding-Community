@@ -1,3 +1,4 @@
+ 
 #372 - Tyrone
 #Region - Ireland
 #Area - Ulster
@@ -14,6 +15,7 @@ base_manpower = 2
 trade_goods = livestock
 capital = "Dún Geanainn" #"Doire"
 is_city = yes
+fort_15th = yes #Dungannon, Geanann's fort. Castle on the hill, etc. etc. Tyrone is a major power in the region and so this place deserves a fort.
 
 
 discovered_by = western

@@ -1,3 +1,4 @@
+ 
 #3263 - Beishto
 
 owner = GOL
@@ -20,6 +21,22 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = GOL
+	remove_core = AST
+	add_core = CIR
+	owner = CIR
+	controller = CIR
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = GOL
+	add_core = AST
+	remove_core = CIR
+	owner = GOL
+	controller = GOL
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1459.1.1 = {
  	owner = AST
 	controller = AST

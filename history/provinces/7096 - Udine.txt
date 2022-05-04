@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = AQU
@@ -47,7 +48,6 @@ discovered_by = eastern
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	owner = AQU
 	controller = AQU
-	add_core = AQU
 	remove_core = VEN
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends

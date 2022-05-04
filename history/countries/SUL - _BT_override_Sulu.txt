@@ -1,0 +1,14 @@
+
+primary_culture = bajau
+
+1405.1.2 = {			#Replacing vanilla, which has a typo causing errors
+	monarch = {
+		name = "Sharif ul Hashim"
+		dynasty = "Adinda"
+		culture = malay
+		religion = sunni
+		dip = 3
+		adm = 3
+		mil = 1
+	}
+}

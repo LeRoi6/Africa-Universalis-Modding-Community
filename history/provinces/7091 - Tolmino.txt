@@ -1,10 +1,11 @@
+ 
 #BT Italy reoverhaul
 
 owner = AQU
 controller = AQU
 add_core = AQU
-culture = friulian_culture	#Appears borderline, but I think this is probably accurate enough
-religion = catholic
+culture = slovene			#Appears borderline, but I think this is probably accurate enough
+religion = catholic			#(JP) Switched from Friulian to Slovene. Replacement of Rhaetians begun in the 7th Century AD.
 capital = "Tolmino"
 base_tax = 2
 base_production = 2

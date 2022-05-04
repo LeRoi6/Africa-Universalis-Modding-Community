@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = FTR
@@ -50,19 +51,21 @@ discovered_by = eastern
 1390.6.1 = {
 	owner = PDV
 	controller = PDV
+	add_core = PDV
 	remove_core = MLO
 }	#to di Carrara
 1404.1.1 = {
 	owner = VEN
 	controller = VEN
 	add_core = VEN
+	remove_core = PDV
 } # To Venice
 1433.1.1 = { hre = no } # Treaty between Doge Francesco Foscari and Emperor Sigismund of the HRE
 
+#2nd Shattering
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	owner = FTR
 	controller = FTR
-	add_core = FTR
 	remove_core = VEN
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends

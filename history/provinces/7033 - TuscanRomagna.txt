@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = DOV
@@ -26,7 +27,19 @@ discovered_by = eastern
 	owner = LAN
 	add_core = LAN
 }
-#Second Shattering not used
+#Second Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = LAN
+	owner = DOV
+	controller = DOV
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = LAN
+	owner = LAN
+	controller = LAN
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1495.1.1 = { hre = no }
 1531.1.1 = { controller = SPA owner = SPA add_core = SPA }
 1552.1.1 = { controller = FRA owner = FRA add_core = FRA }

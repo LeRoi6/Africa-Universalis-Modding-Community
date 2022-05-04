@@ -1,3 +1,4 @@
+ 
 #3110 - Channel Islands
 #Region - France
 #Area - Normandy
@@ -27,14 +28,25 @@ discovered_by = eastern
 1345.1.1 = { controller = JER } # England takes it back
 1372.1.1 = { controller = FRA } # Owain Lawgoch employed by the French take it back
 1378.1.1 = { controller = JER } # Richard II of England grants a charter and reasserts English control
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = NRM
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = NRM
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
 	owner = ENG
 	controller = ENG
 	add_core = ENG
+	remove_core = JER
 }
 1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
 	owner = JER
 	controller = JER
+	add_core = JER
 	remove_core = ENG
 }
 1461.1.1 = { controller = FRA } # Occupied by the French during the War of the Roses, with Lancastrian permission

@@ -1,23 +1,22 @@
-#BT Scandinavia and Baltics reoverhaul
+ 
 
-owner = SMB
-controller = SMB
-add_core = SMB
+owner = SMA # changed from SMB
+controller = SMA # changed from SMB
+add_core = SMA # changed from SMB
 culture = prussian
 religion = catholic
 capital = "Georgenburg"
-base_tax = 3 
-base_production = 3 
-base_manpower = 2 
-trade_goods = grain
 is_city = yes
 hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = grain
 
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
-
 
 #Province history completed by - Draiocht
 #1291.5.21 = { #BeyondTypus batch edit shortcut the first shattering begins
@@ -65,5 +64,3 @@ discovered_by = western
 #	controller = XXX
 #	remove_core = XXX
 #} #Return to proper mod added owners and cuts vanilla core, typically.
-
-#1444 on

@@ -6,12 +6,11 @@ religion = catholic
 technology_group = western
 capital = 134 # Wien
 historical_friend = HUN
-#Added historical friendship with Castille/Spain to try and nudge an alliance between the two.
-historical_friend = CAS
-historical_friend = SPA
 historical_rival = TUR
 historical_rival = FRA
 national_focus = ADM
+
+add_accepted_culture = slovene
 
 1395.8.29 = {
 	monarch = {
@@ -137,7 +136,7 @@ national_focus = ADM
 	change_price = {
 		trade_goods = gems
 		key = FACETING
-		value = 0.2			#BTAddOn changed from 0.25
+		value = 0.25
 		duration = -1
 	}
 }
@@ -224,7 +223,7 @@ national_focus = ADM
 	change_price = {
 		trade_goods = spices
 		key = SPICE_TRADE
-		value = 0.25			#BTAddOn changed from 0.5
+		value = 0.5
 		duration = -1
 	}
 	change_price = {
@@ -236,7 +235,7 @@ national_focus = ADM
 	change_price = {
 		trade_goods = salt
 		key = GREAT_FISHERIES
-		value = 0.25			#BTAddOn changed from 0.1
+		value = 0.1
 		duration = -1
 	}
 }
@@ -307,31 +306,31 @@ national_focus = ADM
 	change_price = {
 		trade_goods = cloth
 		key = NEW_DRAPERIES
-		value = 0.2			#BTAddOn changed from 0.25
+		value = 0.25
 		duration = -1
 	}
 	change_price = {
 		trade_goods = wool
 		key = NEW_DRAPERIES
-		value = -0.2			#BTAddOn changed from -0.25
+		value = -0.25
 		duration = -1
 	}
 	change_price = {
 		trade_goods = tea
 		key = JAPANESE_TEA_CULTURE
-		value = 0.2			#BTAddOn changed from 0.25
+		value = 0.25
 		duration = -1
 	}
 	change_price = {
 		trade_goods = incense
 		key = JAPANESE_TEA_CULTURE
-		value = 0.05			#BTAddOn changed from 0.1
+		value = 0.10
 		duration = -1
 	}
 	change_price = {
 		trade_goods = incense
 		key = REFORMED_REJECTION_OF_INCENSE
-		value = -0.1			#BTAddOn changed from -0.25
+		value = -0.25
 		duration = -1
 	}
 }
@@ -379,12 +378,6 @@ add_government_reform = autocracy_reform }
 			value = -0.20
 			duration = -1
 	}
-	change_price = {
-			trade_goods = livestock
-			key = COLUMBIAN_EXCHANGE
-			value = 0.25
-			duration = -1
-	}			#BTAddOn added. Appears to be missing in vanilla
 }
 
 1564.7.27 = {
@@ -430,13 +423,13 @@ add_government_reform = autocracy_reform }
 	change_price = {
 			trade_goods = fur
 			key = DEPLETION_OF_EUROPEAN_BEAVER
-			value = 0.3			#BTAddOn changed from 0.4
+			value = 0.4
 			duration = -1
 	}
 	change_price = {
 			trade_goods = tropical_wood
 			key = VENEERING
-			value = 0.4			#BTAddOn changed from 0.35
+			value = 0.35
 			duration = -1
 	}
 }
@@ -447,7 +440,7 @@ add_government_reform = autocracy_reform }
 	change_price = {
 			trade_goods = slaves
 			key = TRIANGLE_TRADE
-			value = 0.8
+			value = 0.5
 			duration = -1
 		}
 }
@@ -491,13 +484,13 @@ add_government_reform = autocracy_reform }
 	change_price = {
 		trade_goods = coffee
 		key = COFFEE_BOOM
-		value = 0.25			#BTAddOn changed from 0.5
+		value = 0.5
 		duration = -1
 	}
 	change_price = {
 		trade_goods = fur
 		key = FELT_HATS
-		value = 0.1			#BTAddOn changed from 0.35
+		value = 0.35
 		duration = -1
 	}
 	change_price = {
@@ -509,7 +502,7 @@ add_government_reform = autocracy_reform }
 	change_price = {
 		trade_goods = glass
 		key = BOHEMIAN_GLASS
-		value = 0.2			#BTAddOn changed from 0.25
+		value = 0.25
 		duration = -1
 	}
 }
@@ -646,7 +639,7 @@ add_government_reform = autocracy_reform }
 	change_price = {
 		trade_goods = glass
 		key = MODERN_OPTICS
-		value = 0.4			#BTAddOn changed from 0.25
+		value = 0.25
 		duration = -1
 	}
 }
@@ -719,13 +712,13 @@ add_government_reform = autocracy_reform }
 	change_price = {
 			trade_goods = tea
 			key = TEA_AND_SUGAR
-			value = 0.4			#BTAddOn changed from 0.25
+			value = 0.25
 			duration = -1
 		}
 		change_price = {
 			trade_goods = sugar
 			key = TEA_AND_SUGAR
-			value = 0.2			#BTAddOn changed from 0.25
+			value = 0.25
 			duration = -1
 		}
 }
@@ -761,7 +754,7 @@ add_government_reform = autocracy_reform }
 	change_price = {
 		trade_goods = coffee
 		key = JAVA_COFFEE
-		value = -0.35			#BTAddOn changed from -0.4
+		value = -0.4
 		duration = -1
 	}
 }
@@ -773,13 +766,13 @@ add_government_reform = autocracy_reform }
 	change_price = {
 		trade_goods = spices
 		key = DECLINE_OF_SPICE_TRADE
-		value = -0.5			#BTAddOn changed from -0.4
+		value = -0.4
 		duration = -1
 	}
 	change_price = {
 		trade_goods = sugar
 		key = POPULARIZATION_OF_SUGAR
-		value = 0.4			#BTAddOn changed from 0.5
+		value = 0.5
 		duration = -1
 	}
 }
@@ -807,13 +800,13 @@ add_government_reform = autocracy_reform }
 	change_price = {
 		trade_goods = wine
 		key = WINE_CORKS
-		value = 0.4			#BTAddOn changed from 0.25
+		value = 0.25
 		duration = -1
 	}
 	change_price = {
 		trade_goods = glass
 		key = WINE_CORKS
-		value = 0.1			#BTAddOn changed from 0.25
+		value = 0.25
 		duration = -1
 	}
 	change_price = {
@@ -825,7 +818,7 @@ add_government_reform = autocracy_reform }
 	change_price = {
 		trade_goods = wool
 		key = REGULATED_UNIFORMS
-		value = 0.05			#BTAddOn changed from 0.1
+		value = 0.1
 		duration = -1
 	}
 	change_price = {
@@ -843,7 +836,7 @@ add_government_reform = autocracy_reform }
 	change_price = {
 		trade_goods = glass
 		key = LEAD_CRYSTAL
-		value = -0.5			#BTAddOn changed from 0.25 --- Appears to be a vanilla mistake. This should make glass cheaper, not more expecsive?
+		value = 0.25
 		duration = -1
 	}
 }
@@ -906,27 +899,27 @@ add_government_reform = autocracy_reform }
 	change_price = {
 		trade_goods = cotton
 		key = CALICOES
-		value = 0.4			#BTAddOn changed from 0.45
+		value = 0.45
 		duration = -1
 	}
 	change_price = {
 		trade_goods = naval_supplies
 		key = PERMANENT_NAVIES
-		value = 0.4			#BTAddOn changed from 0.5
+		value = 0.5
 		duration = -1
 	}
-	#change_price = {
-	#	trade_goods = glass
-	#	key = PERMANENT_NAVIES
-	#	value = 0.15
-	#	duration = -1
-	#}
-	#change_price = {
-	#	trade_goods = livestock
-	#	key = PERMANENT_NAVIES
-	#	value = 0.10
-	#	duration = -1
-	#}
+	change_price = {
+		trade_goods = glass
+		key = PERMANENT_NAVIES
+		value = 0.15
+		duration = -1
+	}
+	change_price = {
+		trade_goods = livestock
+		key = PERMANENT_NAVIES
+		value = 0.10
+		duration = -1
+	}
 }
 
 1685.1.1 = { leader = {	name = "Prinz Eugen"           	type = general	fire = 5	shock = 5	manuever = 5	siege = 1	death_date = 1730.1.1 } }
@@ -1011,13 +1004,13 @@ add_government_reform = autocracy_reform }
 	change_price = {
 		trade_goods = gems
 		key = BRAZILIAN_DIAMONDS
-		value = -0.3			#BTAddOn changed from -0.5
+		value = -0.5
 		duration = -1
 	}
 	change_price = {
 		trade_goods = livestock
 		key = SELECTIVE_BREEDING
-		value = 0.25			#BTAddOn changed from 0.5
+		value = 0.5
 		duration = -1
 	}
 	change_price = {
@@ -1135,13 +1128,13 @@ add_government_reform = autocracy_reform }
 	change_price = {
 		trade_goods = ivory
 		key = IVORY_SHORTAGE
-		value = 0.5			#BTAddOn changed from 0.25
+		value = 0.25
 		duration = -1
 	}
 	change_price = {
 		trade_goods = incense
 		key = GROWTH_OF_PERFUME_BUSINESS
-		value = 0.3			#BTAddOn changed from 0.35
+		value = 0.35
 		duration = -1
 	}
 }
@@ -1187,7 +1180,7 @@ add_government_reform = autocracy_reform }
 	change_price = {
 			trade_goods = slaves
 			key = ABOLITIONISM
-			value = -1.0			#BTAddOn changed from -0.4
+			value = -0.4
 			duration = -1
 		}
 }

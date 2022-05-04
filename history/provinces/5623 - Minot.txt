@@ -1,3 +1,4 @@
+ 
 #New Beyond Typus Province
 
 culture = nakota
@@ -13,3 +14,7 @@ native_ferocity = 3
 native_hostileness = 5
 
 discovered_by = north_american
+
+
+
+1444.1.1 = { tribal_owner = ASI }

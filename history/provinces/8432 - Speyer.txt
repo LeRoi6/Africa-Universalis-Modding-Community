@@ -1,0 +1,37 @@
+#8432 - Speyer
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Speyer"
+is_city = yes
+owner = SPY
+controller = SPY
+
+#Demographics
+culture = hessian
+religion = catholic
+
+#Development and Trade
+base_tax = 4
+base_production = 3
+base_manpower = 2
+trade_goods = wine
+
+#Cores and Occupation (Alphabetical after current)
+add_core = SPY
+
+#Other Political
+hre = yes
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Histories 

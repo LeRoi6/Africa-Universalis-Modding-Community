@@ -1,9 +1,11 @@
+ 
 #112 - Venezia
 #Region - Italy
 #Area - Venetia
 
 owner = VEN
 controller = VEN
+add_core = VEN
 culture = venetian 
 religion = catholic 
 hre = no 
@@ -14,7 +16,6 @@ base_manpower = 7
 capital = "Venezia" 
 is_city = yes	# Estimated 
 #shipyard = yes
-add_core = VEN
 
 
 

@@ -1,0 +1,3 @@
+
+add_accepted_culture = tunisian
+add_accepted_culture = kabylian

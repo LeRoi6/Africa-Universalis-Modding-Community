@@ -1,4 +1,5 @@
 
+
 #Region - Germany
 #Area - Lower Rhineland
 
@@ -8,11 +9,11 @@ culture = hessian
 religion = catholic
 trade_goods = grain
 capital = "Trier"
-base_tax = 10
-base_production = 10
+base_tax = 7
+base_production = 6
 is_city = yes
 add_core = TRI
-base_manpower = 6
+base_manpower = 5
 hre = yes
 
 discovered_by = western

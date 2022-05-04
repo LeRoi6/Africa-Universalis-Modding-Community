@@ -1,9 +1,10 @@
+
 #BT's Western Europe Overhaul in 12.0
 
 owner = GEL
 controller = GEL
 add_core = GEL
-culture = hannoverian
+culture = lower_saxon
 religion = catholic
 capital = "Zutphen"
 base_tax = 4

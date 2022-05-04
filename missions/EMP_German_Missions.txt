@@ -1,3 +1,4 @@
+#Adjusted by Nuq for Emperor update and for BT15 update of BT.
 emp_germany_hlr_1 = {
 	slot = 1
 	generic = no
@@ -63,6 +64,7 @@ emp_germany_hlr_1 = {
 				area = north_rhine_area
 				area = lower_rhineland_area
 				area = palatinate_area
+				area = nassau_area
 			}
 			OR = {
 				NOT = {
@@ -73,11 +75,12 @@ emp_germany_hlr_1 = {
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
-				value = 16 #Up to 16/18 from 10/11.
+				value = 25 #Up to 25/28 from 10/11.
 				OR = {
 					area = north_rhine_area
 					area = lower_rhineland_area
 					area = palatinate_area
+					area = nassau_area
 				}
 				has_manufactory_trigger = yes
 			}
@@ -520,7 +523,7 @@ emp_germany_hlr_3 = {
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
-				value = 64 #Up from Vanilla's 50.
+				value = 111 #Up from Vanilla's 50.
 				OR = {
 					region = north_german_region
 					region = south_german_region
@@ -639,7 +642,7 @@ emp_germany_hlr_3 = {
 					share = 75
 				}
 			}
-			134 = { ##Wien
+			85 = { ##Cologne
 				trade_share = {
 					country = ROOT
 					share = 75
@@ -649,6 +652,12 @@ emp_germany_hlr_3 = {
 				trade_share = {
 					country = ROOT
 					share = 75
+				}
+			}
+			134 = { ##Wien
+				trade_share = {
+					country = ROOT
+					share = 50
 				}
 			}
 		}
@@ -723,6 +732,7 @@ emp_germany_hlr_3_ger = {
 		position = 6
 		trigger = {
 			power_projection = 75
+			total_development = 4000		#Moderately adjusted for BT dev doubling, from vanilla 2500
 			any_ally = {
 				total_own_and_non_tributary_subject_development = 1000 #Up from Vanilla's 500
 			}
@@ -893,6 +903,9 @@ emp_germany_hlr_4 = {
 				}
 			}
 			1 = {
+				is_strongest_trade_power = ROOT
+			}
+			43 = {
 				is_strongest_trade_power = ROOT
 			}
 		}

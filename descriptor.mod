@@ -3,4 +3,4 @@ path="C:/Users/Valer/Documents/Paradox Interactive/Europa Universalis IV/mod/Afr
 tags={
 	"Map"
 }
-supported_version="1.30.*.*"
+supported_version="1.33.*.*"

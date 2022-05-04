@@ -1,15 +1,16 @@
+ 
 # 4742 - Goslar
 
 owner = GOS
 controller = GOS
 add_core = GOS
-culture = saxon
+culture = lower_saxon
 religion = catholic
 hre = yes
-base_tax = 10
-base_production = 10
+base_tax = 4
+base_production = 4
 trade_goods = iron #Rammelsberg
-base_manpower = 2
+base_manpower = 3
 capital = "Goslar"
 is_city = yes
 

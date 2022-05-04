@@ -1,3 +1,4 @@
+ 
 # 197 Roussillon - Principal cities: Perpignan
 #Region - Iberia
 #Area - Catalonia
@@ -26,6 +27,24 @@ discovered_by = eastern
 
 1412.6.29 = { revolt = { type = pretender_rebels size = 1 leader = "Jaume d'Urgell"} controller = REB } # Jaime de Urgell Uprising
 1413.1.1 = { revolt = {} controller = ARA }
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = ARA
+	remove_core = CAT
+	owner = MJO
+	controller = MJO
+	fort_15th = yes
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = ARA
+	add_core = CAT
+	owner = ARA
+	controller = ARA
+	fort_15th = no
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1462.1.1 = { owner = FRA controller = FRA } # Treaty of Bayonne: Aragon sells Roussillon to France
 1493.1.19 = { owner = ARA controller = ARA } # Treaty of Barcelona: Charles VIII restores Roussillon to Aragon
 1516.1.23 = {

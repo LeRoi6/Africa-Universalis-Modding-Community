@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus province
 
 culture = sahtu
@@ -17,6 +18,7 @@ discovered_by = north_american
 #discovered_by = bt_inuit_tech
 
 
+1444.1.1 = { tribal_owner = SLV }
 1770.1.1 = { discovered_by = GBR } # Hearne
 
 #No real European settlement in the time period

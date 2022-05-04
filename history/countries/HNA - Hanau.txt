@@ -1,0 +1,42 @@
+#HNA - Hanau
+
+#Political Situation
+capital = 8429
+fixed_capital = 8429 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = hessian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1429.1.1 = {
+	monarch = {
+		name = "Reinhard II"
+		dynasty = "von Hanau"
+		birth_date = 1369.1.1
+		adm = 6
+		dip = 6
+		mil = 5
+	}
+}
+1429.1.1 = {
+	heir = {
+		name = "Reinhard"
+		monarch_name ="Reinhard III"
+		dynasty = "von Hanau"
+		birth_date = 1417.1.1
+		death_Date = 1453.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

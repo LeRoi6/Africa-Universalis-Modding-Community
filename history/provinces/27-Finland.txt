@@ -1,3 +1,4 @@
+ 
 #Finland, incl. Åbo.
 #Region - Scandinavia
 #Area - Finland
@@ -16,7 +17,7 @@ base_manpower = 1
 capital = "Turku"
 is_city = yes
 add_local_autonomy = 25
-#fort_15th = yes			#removing, Sweden was going broke
+fort_15th = yes			#Turun linna, Åbo Slott.
 
 discovered_by = western
 discovered_by = muslim
@@ -29,12 +30,14 @@ discovered_by = eastern
 	owner = FIN
 	controller = FIN
 	remove_core = SWE
+	culture = finnish
 	add_local_autonomy = -25
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1291.5.23 = { #BeyondTypus batch edit shortcut the first shattering ends
 	owner = SWE
 	controller = SWE
 	add_core = SWE
+	culture = swedish
 	add_local_autonomy = 25
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #1st Performance Start Unused
@@ -45,12 +48,14 @@ discovered_by = eastern
 	owner = FIN
 	controller = FIN
 	remove_core = SWE
+	culture = finnish
 	add_local_autonomy = -25
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	owner = SWE
 	controller = SWE
 	add_core = SWE
+	culture = swedish
 	add_local_autonomy = 25
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #2nd Performance Start Unused

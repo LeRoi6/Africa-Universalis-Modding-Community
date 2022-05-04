@@ -267,7 +267,7 @@ bt_danish_trade_2 = {
 					add_claim = ROOT
 				}
 			}
-			north_karelia_area = { #Nevan domain
+			north_karelia = { #Nevan domain
 				if = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -604,9 +604,9 @@ bt_danish_internal_missions = {
 		position = 3
 		provinces_to_highlight = {
 			OR = {
-				area = northern_norway
-				area = eastern_norway
-				area = western_norway
+				area = northern_norway  
+				area = eastern_norway  
+				area = western_norway  
 				area = southern_norway_area
 				area = trondelag_area
 			}
@@ -619,9 +619,9 @@ bt_danish_internal_missions = {
 			development_in_provinces = { #35 dev in the above provinces. Drammen has at least 16 dev because of silver mine mission. 15 other provinces at 3 dev, 5 at 4, 2 at 5, 1 at 7 and 1 at 13 in 1444 is 95 dev. This totals at 146 dev. Hence, 175 dev seems justifiable. 
 				value = 175
 				OR = {
-					area = northern_norway
-					area = eastern_norway
-					area = western_norway
+					area = northern_norway  
+					area = eastern_norway  
+					area = western_norway  
 					area = southern_norway_area
 					area = trondelag_area
 				}

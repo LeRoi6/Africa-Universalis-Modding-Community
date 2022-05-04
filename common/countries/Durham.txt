@@ -47,50 +47,42 @@ leader_names = {
 	Percy
 	Radcliffe Robinson Robson
 	Scott Shafto Swinburne
-	Todhunter Tyson	
+	Todhunter Tyson
+	Walcher "de Saint-Calais" Flambard Rufus
+	Cumin "de Puiset" "de Poitou" Poore "de Gray"
+	Marsh "de Melonsby" Farnham Kirkham Stitchill
+	"of Holy Island" Kellaw "de Beaumont" "de Bury"
+	Hatfield Fordham Skirlaw Langley Booth Dudley
+	Sherwood Foxe Senhouse Bainbridge Ruthall Wolsey
+	Tunstall Pilkington Barnes Hutton Neile
+	Montaigne Howson Morton Crewe Talbot Chandler
+	Butler Trevor Egerton Thurlow Barrington
 }
 
 monarch_names = {
-	"Henry #0" = 140
-	"Algernon #0" = 40
-	"Hugh #0" = 20
-	"Henry Algernon #0" = 20
-	"Josceline #0" = 20
-	"Thomas #0" = 20
-	"Charles #0" = 10
-	"George #0" = 10
-	"William #0" = 10
-	"Richard #0" = 5
-	"Alan #0" = 5
-	"Ingelram #0" = 5
-	"Ralph #0" = 5
-	"John #0" = 1
-	"Ashton #0" = 0
-	"Bruce #0" = 0
-	"Clarence #0" = 0
-	"Curtis #0" = 0
-	"Darrell #0" = 0
-	"Edgar #0" = 0
+	"William #5" = 40
+	"Geoffrey #1" = 20
+	"Hugh #1" = 20
+	"Phillip #1" = 20
+	"Richard #5" = 20
+	"John #2" = 10
+	"Thomas #3" = 10
+	"Nicholas #1" = 10
+	"Walter #2" = 10
+	"Robert #2" = 10
+	"Morgan #1" = 0
+	"Anthony #1" = 0
+	"Lewis #1" = 0
+	"Lawrence #0" = 0
+	"Christopher #0" = 0
+	"James #0" = 0
+	"Matthew #0" = 0
+	"Tobias #0" = 0
+	"George #0" = 0
+	"Nathaniel #0" = 0
 	"Edward #0" = 0
-	"Fulk #0" = 0
-	"Gabriel #0" = 0
-	"Hector #0" = 0
-	"Jasper #0" = 0
-	"Keith #0" = 0
-	"Daniel #0" = 0
-	"Malcolm #0" = 0
-	"Michael #0" = 0
-	"Nathan #0" = 0
-	"Ned #0" = 0
-	"Osborn #0" = 0
-	"Patrick #0" = 0
-	"David #0" = 0
-	"Sean #0" = 0
-	"Timothy #0" = 0
-	"Robert #0" = 0
-	"Victor #0" = 0
-	"Walter #0" = 0
-	"Zachariah #0" = 0
+	"Joseph #0" = 0
+	"Shute #0" = 0
 	
 	"Arabella #0" = -1
 	"Breanna #0" = -1

@@ -1,3 +1,4 @@
+ 
 #BT Balkans reoverhaul
 
 owner = BYZ
@@ -14,11 +15,11 @@ is_city = yes
 hre = no
 fort_15th = yes
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
@@ -58,7 +59,20 @@ discovered_by = western
 	base_manpower = 3
 } #Byzantines forced to give Gallipoli up to the Turks again, but Greek populous allowed to remain, though they are rejoined by Turks
 
-#2nd Shattering unused
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = TUR
+	add_core = BYZ
+	owner = BYZ
+	controller = BYZ
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = TUR
+	remove_core = BYZ
+	owner = TUR
+	controller = TUR
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 #2nd Performance Start Unused
 
 #1444 on

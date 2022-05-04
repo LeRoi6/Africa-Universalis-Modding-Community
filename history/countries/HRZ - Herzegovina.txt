@@ -1,12 +1,10 @@
 government = monarchy
 add_government_reform = feudalism_reform
-primary_culture = serbian
+primary_culture = bosnian
 religion = orthodox
 technology_group = eastern
 government_rank = 1
 capital = 1831
-historical_friend = ARA
-historical_friend = SER
 
 
 1435.1.1 = {

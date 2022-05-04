@@ -2,7 +2,6 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = lower_saxon
-add_accepted_culture = danish
 religion = catholic
 technology_group = western
 capital = 1775	# Kiel

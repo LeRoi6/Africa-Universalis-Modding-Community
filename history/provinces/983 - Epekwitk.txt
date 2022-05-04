@@ -1,3 +1,4 @@
+
 #983 - Epekwitk
 
 culture = mikmaq
@@ -16,6 +17,7 @@ native_hostileness = 3
 
 discovered_by = north_american
 
+1444.1.1 = { tribal_owner = MIK }	
 
 1500.1.1 = { discovered_by = ENG } # John Cabot
 

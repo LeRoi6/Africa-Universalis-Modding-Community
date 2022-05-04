@@ -1,0 +1,30 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = angevin_culture
+add_accepted_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+capital = 7988 # Sablé
+fixed_capital = 177 # Le Mans, will return capital here once reconquered
+
+1441.7.1 = {
+	monarch = {
+		name = "Charles IV"
+		dynasty = "de Valois"
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+	queen = {
+		country_of_origin = TRN		#de Luxembourg-Saint-Pol
+		name = "Isabelle"
+		dynasty = "de Luxembourg"
+		birth_date = 1414.1.1
+		death_date = 1472.1.1
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}

@@ -1,15 +1,17 @@
-#1092 - Bundjalung
+ 
 
 culture = aboriginal
-religion = animism
-capital = "Bundjalung"
-trade_goods = unknown
+religion = dreamtime # 1.31
+capital = "Bundjalung" # BT; "Gubbi-Gubbi"
 hre = no
-base_tax = 3 
+base_tax = 3
 base_production = 3
 base_manpower = 2
+trade_goods = unknown
 native_size = 10
 native_ferocity = 1
 native_hostileness = 2
+
+discovered_by = aboriginal_tech # 1.31
 
 1770.1.1 = { discovered_by = GBR } # James Cook

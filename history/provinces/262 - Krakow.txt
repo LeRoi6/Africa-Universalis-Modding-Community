@@ -1,3 +1,4 @@
+ 
 #262 - Krakow
 
 latent_trade_goods = {
@@ -19,11 +20,11 @@ fort_15th = yes
  #Jagiellonian University established in 1364 by Casimir III the Great
 add_core = POL
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
@@ -34,6 +35,23 @@ extra_cost = 15
 
 center_of_trade = 2
 
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = POL
+	add_core = KRA
+	owner = KRA
+	controller = KRA
+	hre = yes #Just a bit of flavour.
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = POL
+	remove_core = KRA
+	owner = POL
+	controller = POL
+	hre = no #Just a bit of flavour.
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1569.7.1 = {
 	owner = PLC
 	controller = PLC

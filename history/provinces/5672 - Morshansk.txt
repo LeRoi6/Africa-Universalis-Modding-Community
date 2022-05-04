@@ -1,3 +1,4 @@
+ 
 #New Beyond Typus Province
 
 owner = KAZ
@@ -18,7 +19,20 @@ discovered_by = western
 discovered_by = nomad_group
 discovered_by = ottoman
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = KAZ
+	add_core = QAS
+	owner = QAS
+	controller = QAS
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = KAZ
+	remove_core = QAS
+	owner = KAZ
+	controller = KAZ
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
+#1444 onwards
 1552.10.2 = { owner = RUS controller = RUS add_core = RUS remove_core = KAZ } # Russian conquest of Kazan
 1641.1.1 = { religion = orthodox culture = russian } # fortresses of Saransk and Penza founded
 1670.3.1 = { unrest = 6 }

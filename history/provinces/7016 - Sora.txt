@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = NAP
@@ -49,7 +50,6 @@ discovered_by = eastern
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	owner = SRA
 	controller = SRA
-	add_core = SRA
 	remove_core = NAP
 }
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends

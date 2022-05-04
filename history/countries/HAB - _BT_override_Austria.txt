@@ -1,0 +1,386 @@
+
+add_accepted_culture = slovene
+historical_friend = CAS			#Dub added. I mean, could be argued either way, but it hurts little. Both should be rivaling Ottomans and/or France, anyway. Not close enough to mess with balance...yeah, hurts nothing.
+historical_friend = SPA			#Dub added. I mean, could be argued either way, but it hurts little. Both should be rivaling Ottomans and/or France, anyway. Not close enough to mess with balance...yeah, hurts nothing.
+
+
+
+#History			#Note the price change events are fired for later starts in this Austrian file, for whatever reason. That is what basically all this crap is below.
+
+1485.1.1 = {
+	set_global_flag = faceting_happened
+	change_price = {
+		trade_goods = gems
+		key = FACETING
+		value = 0.2			#BTAddOn changed from 0.25
+		duration = -1
+	}
+}
+
+1510.1.1 = {
+	set_global_flag = great_fisheries_happened
+	set_global_flag = spice_trade_happened
+	change_price = {
+		trade_goods = spices
+		key = SPICE_TRADE
+		value = 0.25			#BTAddOn changed from 0.5
+		duration = -1
+	}
+	change_price = {
+		trade_goods = fish
+		key = GREAT_FISHERIES
+		value = -0.1
+		duration = -1
+	}
+	change_price = {
+		trade_goods = salt
+		key = GREAT_FISHERIES
+		value = 0.25			#BTAddOn changed from 0.1
+		duration = -1
+	}
+}
+
+1540.1.1 = {
+	set_global_flag = new_draperies_happened
+	set_global_flag = japanese_tea_happened
+	set_global_flag = cotton_imports_global
+	set_global_flag = incense_rejected
+	change_price = {
+		trade_goods = wool
+		key = COTTON_IMPORTS
+		value = -0.10
+		duration = -1
+	}
+	change_price = {
+		trade_goods = cotton
+		key = COTTON_IMPORTS
+		value = 0.20
+		duration = -1
+	}
+	change_price = {
+		trade_goods = cloth
+		key = NEW_DRAPERIES
+		value = 0.2			#BTAddOn changed from 0.25
+		duration = -1
+	}
+	change_price = {
+		trade_goods = wool
+		key = NEW_DRAPERIES
+		value = -0.2			#BTAddOn changed from -0.25
+		duration = -1
+	}
+	change_price = {
+		trade_goods = tea
+		key = JAPANESE_TEA_CULTURE
+		value = 0.2			#BTAddOn changed from 0.25
+		duration = -1
+	}
+	change_price = {
+		trade_goods = incense
+		key = JAPANESE_TEA_CULTURE
+		value = 0.05			#BTAddOn changed from 0.1
+		duration = -1
+	}
+	change_price = {
+		trade_goods = incense
+		key = REFORMED_REJECTION_OF_INCENSE
+		value = -0.1			#BTAddOn changed from -0.25
+		duration = -1
+	}
+}
+
+1560.1.2 = {
+	set_global_flag = columbian_exchange_happened
+	change_price = {
+			trade_goods = grain
+			key = COLUMBIAN_EXCHANGE
+			value = -0.20
+			duration = -1
+	}
+	change_price = {
+			trade_goods = livestock
+			key = COLUMBIAN_EXCHANGE
+			value = 0.25
+			duration = -1
+	}			#BTAddOn added. Appears to be missing in vanilla
+}
+
+1570.1.1 = {
+	set_global_flag = depleted_beaver_happened
+	set_global_flag = veneering_happened
+	change_price = {
+			trade_goods = fur
+			key = DEPLETION_OF_EUROPEAN_BEAVER
+			value = 0.3			#BTAddOn changed from 0.4
+			duration = -1
+	}
+	change_price = {
+			trade_goods = tropical_wood
+			key = VENEERING
+			value = 0.4			#BTAddOn changed from 0.35
+			duration = -1
+	}
+}
+
+1575.1.1 = {
+	set_global_flag = triangle_happened
+	change_price = {
+			trade_goods = slaves
+			key = TRIANGLE_TRADE
+			value = 0.8
+			duration = -1
+		}
+}
+
+1600.1.1 = {
+	set_global_flag = coffee_boom_happened
+	set_global_flag = felt_hats_happened
+	set_global_flag = popularization_of_tobacco_happened
+	set_global_flag = bohemian_glass
+	change_price = {
+		trade_goods = coffee
+		key = COFFEE_BOOM
+		value = 0.25			#BTAddOn changed from 0.5
+		duration = -1
+	}
+	change_price = {
+		trade_goods = fur
+		key = FELT_HATS
+		value = 0.1			#BTAddOn changed from 0.35
+		duration = -1
+	}
+	change_price = {
+		trade_goods = tobacco
+		key = POPULARIZATION_OF_TOBACCO
+		value = 0.5
+		duration = -1
+	}
+	change_price = {
+		trade_goods = glass
+		key = BOHEMIAN_GLASS
+		value = 0.2			#BTAddOn changed from 0.25
+		duration = -1
+	}
+}
+
+1635.1.1 = {
+	set_global_flag = popular_silk_happened
+	set_global_flag = iron_working_happened
+	set_global_flag = development_of_optics
+	change_price = {
+		trade_goods = silk
+		key = POPULAR_SILK_FABRICS
+		value = 0.25
+		duration = -1
+	}
+	change_price = {
+		trade_goods = iron
+		key = IRON_WORKING
+		value = 0.5
+		duration = -1
+	}
+	change_price = {
+		trade_goods = copper
+		key = IRON_WORKING
+		value = -0.35
+		duration = -1
+	}
+	change_price = {
+		trade_goods = glass
+		key = MODERN_OPTICS
+		value = 0.4			#BTAddOn changed from 0.25
+		duration = -1
+	}
+}
+
+1650.1.1 = {
+	set_global_flag = europeans_in_china_happened
+	set_global_flag = tea_and_sugar_happened
+	change_price = {
+			trade_goods = chinaware
+			key = EUROPEANS_IN_CHINA
+			value = 0.5
+			duration = -1
+		}
+	change_price = {
+			trade_goods = tea
+			key = TEA_AND_SUGAR
+			value = 0.4			#BTAddOn changed from 0.25
+			duration = -1
+		}
+		change_price = {
+			trade_goods = sugar
+			key = TEA_AND_SUGAR
+			value = 0.2			#BTAddOn changed from 0.25
+			duration = -1
+		}
+}
+
+1650.1.1 = {
+	set_global_flag = mocha_killed
+	change_price = {
+		trade_goods = coffee
+		key = JAVA_COFFEE
+		value = -0.35			#BTAddOn changed from -0.4
+		duration = -1
+	}
+}
+
+1660.1.1 = {
+	set_global_flag = decline_of_spices_happened
+	set_global_flag = popularization_of_sugar_happened
+	change_price = {
+		trade_goods = spices
+		key = DECLINE_OF_SPICE_TRADE
+		value = -0.5			#BTAddOn changed from -0.4
+		duration = -1
+	}
+	change_price = {
+		trade_goods = sugar
+		key = POPULARIZATION_OF_SUGAR
+		value = 0.4			#BTAddOn changed from 0.5
+		duration = -1
+	}
+}
+
+1670.1.1 = {
+	set_global_flag = wine_corks_happened
+	set_global_flag = regulated_uniforms_happened
+	set_global_flag = hollender_beater_flag
+	set_global_flag = lead_crystal_happened
+	change_price = {
+		trade_goods = wine
+		key = WINE_CORKS
+		value = 0.4			#BTAddOn changed from 0.25
+		duration = -1
+	}
+	change_price = {
+		trade_goods = glass
+		key = WINE_CORKS
+		value = 0.1			#BTAddOn changed from 0.25
+		duration = -1
+	}
+	change_price = {
+		trade_goods = cloth
+		key = REGULATED_UNIFORMS
+		value = 0.15
+		duration = -1
+	}
+	change_price = {
+		trade_goods = wool
+		key = REGULATED_UNIFORMS
+		value = 0.05			#BTAddOn changed from 0.1
+		duration = -1
+	}
+	change_price = {
+		trade_goods = dyes
+		key = REGULATED_UNIFORMS
+		value = 0.25
+		duration = -1
+	}
+	change_price = {
+		trade_goods = paper
+		key = HOLLENDER_BEATER
+		value = -0.5
+		duration = -1
+	}
+	change_price = {
+		trade_goods = glass
+		key = LEAD_CRYSTAL
+		value = -0.5			#BTAddOn changed from 0.25 --- Appears to be a vanilla mistake. This should make glass cheaper, not more expecsive?
+		duration = -1
+	}
+}
+
+1680.1.1 = {
+	set_global_flag = calicoes_happened
+	set_global_flag = permanent_navies_happened
+	change_price = {
+		trade_goods = cotton
+		key = CALICOES
+		value = 0.4			#BTAddOn changed from 0.45
+		duration = -1
+	}
+	change_price = {
+		trade_goods = naval_supplies
+		key = PERMANENT_NAVIES
+		value = 0.4			#BTAddOn changed from 0.5
+		duration = -1
+	}
+	#change_price = {
+	#	trade_goods = glass
+	#	key = PERMANENT_NAVIES
+	#	value = 0.15
+	#	duration = -1
+	#}
+	#change_price = {
+	#	trade_goods = livestock
+	#	key = PERMANENT_NAVIES
+	#	value = 0.10
+	#	duration = -1
+	#}
+}
+
+1710.1.1 = {
+	set_global_flag = bottger_happened
+	set_global_flag = popular_literacy
+	set_global_flag = brazilian_gems_happened
+	set_global_flag = selective_breeding_happened
+	change_price = {
+		trade_goods = chinaware
+		key = JOHAN_FRIEDRICH_BOTTGER
+		value = -0.5
+		duration = -1
+	}
+	change_price = {
+		trade_goods = paper
+		key = LENDING_LIBRARIES
+		value = 0.35
+		duration = -1
+	}
+	change_price = {
+		trade_goods = gems
+		key = BRAZILIAN_DIAMONDS
+		value = -0.3			#BTAddOn changed from -0.5
+		duration = -1
+	}
+	change_price = {
+		trade_goods = livestock
+		key = SELECTIVE_BREEDING
+		value = 0.25			#BTAddOn changed from 0.5
+		duration = -1
+	}
+	change_price = {
+		trade_goods = wool
+		key = SELECTIVE_BREEDING
+		value = 0.25
+		duration = -1
+	}
+}
+
+1750.1.1 = {
+	set_global_flag = ivory_shortage_happened
+	set_global_flag = perfume_industry
+	change_price = {
+		trade_goods = ivory
+		key = IVORY_SHORTAGE
+		value = 0.5			#BTAddOn changed from 0.25
+		duration = -1
+	}
+	change_price = {
+		trade_goods = incense
+		key = GROWTH_OF_PERFUME_BUSINESS
+		value = 0.3			#BTAddOn changed from 0.35
+		duration = -1
+	}
+}
+
+1790.1.1 = {
+	set_global_flag = abolitionism_happened
+	change_price = {
+			trade_goods = slaves
+			key = ABOLITIONISM
+			value = -1.0			#BTAddOn changed from -0.4
+			duration = -1
+		}
+}

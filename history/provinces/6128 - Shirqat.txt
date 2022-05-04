@@ -1,0 +1,40 @@
+#6128 - Shirqat
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Shirqat"
+is_city = yes
+owner = IRQ
+controller = IRQ
+
+#Demographics
+culture = al_iraqiya_arabic
+religion = sunni
+
+#Development and Trade
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = bt_trade_good_fruit
+
+#Cores and Occupation (Alphabetical after current)
+add_core = QAR
+add_core = IRQ
+
+#Other Political
+hre = no
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = indian
+discovered_by = east_african
+
+#Histories 

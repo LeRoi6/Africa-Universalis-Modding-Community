@@ -85,15 +85,15 @@ polish_missions_main_slot = {
 					add_permanent_claim = ROOT
 				}
 			}
-			7829 = { #Marienwerder
-				if = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			#7829 = { #Marienwerder
+			#	if = {
+			#		limit = {
+			#			NOT = { is_permanent_claim = ROOT }
+			#			NOT = { is_core = ROOT	}
+			#		}
+			#		add_permanent_claim = ROOT
+			#	}
+			#}
 			1859 = { #Kulmerland
 				if = {
 					limit = {
@@ -123,7 +123,7 @@ polish_missions_main_slot = {
 			OR = {
 				area = west_prussia_area
 				province_id = 1841 #Marienburg
-				province_id = 7829 #Marienwerder
+				#province_id = 7829 #Marienwerder
 				province_id = 1859 #Kulmerland
 				province_id = 42 #Ermland
 			}
@@ -139,10 +139,6 @@ polish_missions_main_slot = {
 				is_core = ROOT
 			}
 			1841 = { #Marienburg
-				owned_by = ROOT
-				is_core = ROOT
-			}
-			7829 = { #Marienwerder
 				owned_by = ROOT
 				is_core = ROOT
 			}

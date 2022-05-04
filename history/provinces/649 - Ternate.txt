@@ -1,3 +1,4 @@
+ 
 #649 - Ternate
 
 owner = TER
@@ -5,7 +6,7 @@ controller = TER
 culture = moluccan
 religion = animism
 capital = "Ternate"
-trade_goods = spices
+trade_goods = cloves
 hre = no
 base_tax = 6
 base_production = 6

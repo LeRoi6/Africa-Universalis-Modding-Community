@@ -1,3 +1,4 @@
+ 
 #3202 - Minden
 #Region - Germany
 #Area - Westphalia
@@ -8,8 +9,8 @@ culture = lower_saxon
 religion = catholic
 trade_goods = livestock
 capital = "Minden"
-base_tax = 4 
-base_production = 4 
+base_tax = 2
+base_production = 2
 base_manpower = 2 
 hre = yes
 is_city = yes

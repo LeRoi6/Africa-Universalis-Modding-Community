@@ -1,0 +1,2 @@
+
+fixed_capital = 2981	# AI won't move capital from here.

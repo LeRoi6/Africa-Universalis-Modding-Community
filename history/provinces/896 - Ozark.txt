@@ -1,3 +1,4 @@
+
 #896 - Ozark
 
 culture = wichita # Old plains people
@@ -16,6 +17,7 @@ native_hostileness = 9
 
 discovered_by = north_american
 
+1444.1.1 = { tribal_owner = WIC }
 1541.1.1 = { discovered_by = SPA } # Francisco Vásquez de Coronado
 
 1760.1.1 = {

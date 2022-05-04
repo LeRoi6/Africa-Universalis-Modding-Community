@@ -1,0 +1,4 @@
+
+add_government_reform = iqta
+primary_culture = malayan
+add_accepted_culture = acehnese

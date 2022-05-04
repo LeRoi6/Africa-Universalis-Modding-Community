@@ -2,7 +2,8 @@
 
 graphical_culture = easterngfx
 
-color = { 216 232 229 }
+color = { 242  188  81 }
+revolutionary_colors = { 1  8  0 }
 
 preferred_religion = catholic
 
@@ -34,68 +35,63 @@ historical_units = {
 }
 
 monarch_names = {
-	"István #5" = 40
-	"László #4" = 40
-	"Lajos #1" = 20
-	"Albert #1" = 20
-	"János #0" = 20
-	"Ulászló #1" = 20
-	"Mátyás #1" = 20
-	"András #3" = 15
-	"Károly #2" = 15
-	"Zsigmond #1" = 10
-	"Béla #4" = 5
-	"Anasztáz #0" = 0
-	"Barnabás #0" = 0
-	"Bertalan #0" = 0
-	"Boldizsár #0" = 0
-	"Dávid #0" = 0
-	"Dömötör #0" = 0
-	"Edvárd #0" = 0
-	"Ernö #0" = 0
-	"Ferenc #0" = 0
-	"Gábor #0" = 0
-	"György #0" = 0
-	"Izsák #0" = 0
-	"Jenö #0" = 0
-	"József #0" = 0
-	"Kálmán #1" = 0
-	"Kázmér #0" = 0
-	"Lörinc #0" = 0
-	"Lukács #0" = 0
-	"Márk #0" = 0
-	"Miklós #0" = 0
-	"Oszkár #0" = 0
-	"Ottó #0" = 0
+	"Bonyak #1" = 40
+	"Koten #1" = 40
+	"Bacman #1" = 40
+	"Maniak #0" = 20
+	"Konchak #1" = 20
+	"Kobyak #1" = 20
+	"Kopek #0" = 20
+	"Isac #0" = 20
+	"Daniel #0" = 20
+	"Chilbuk #1" = 15
+	"Roman #0" = 15
+	"Gzak #1" = 10
+	"David #0" = 10
+	"Edvard #0" = 10
+	"Syrchan #1" = 10
+	"Turgokan #1" = 5
+	"Koza #0" = 5
+	"Kopti #1" = 5
+	"Eldechyuk #1" = 5
+	"Toksobich #0" = 5
+	"Sharokun #0" = 5
+	"Ayepa #0" = 0
+	"Andrei #0" = 0
+	"Toglyy #0" = 0
+	"Sokal #0" = 0
+	"Kutesk #0" = 0
+	"Otrok #0" = 0
+	"Jozsef #0" = 0
+	"Arbuz #0" = 0
+	"Zeyhan #0" = 0
+	"Begovars #0" = 0
+	"Tortul #0" = 0
+	"Uzur #0" = 0
+	"Sytzigan #0" = 0
+	"Bortz #0" = 0
+	"Otto #0" = 0
 	"Patrik #0" = 0
-	"Péter #0" = 0
+	"Peter #0" = 0
 	"Simon #0" = 0
-	"Tamás #0" = 0
-	"Vencel #0" = 0
+	"Tamas #0" = 0
+	"Baytursun #0" = 0
+	"Saraga #0" = 0
+	"Membrok #0" = 0
+
+	"Konchakovna #0" = -10
+	"Gurandukht #0" = -10
 	"Anna #0" = -10
-	"Erzsébet #0" = -5
+	"Erzsebet #0" = -5
 	"Agnes #0" = -1
 	"Katalin #0" = -1
 }
 
 leader_names = {
-	Andrássy Alvinczy
-	Bocskay Bethlen Báthory Batthyány Benovský Beleznay
-	Csák
-	Dessewffy
-	Esterházy
-	Festetics Frangepán
-	Garay
-	Hunyadi Hadik Horthy
-	Kinizsi Károlyi Kán "de Kovats" Kemeny
-	Lackovic' Losonci
-	Mészáros Milványi
-	Nadasdy
-	Ozoray
-	Rákóczi Rozgonyi
-	Šubic' Széchenyi
-	Thököly Teleki
-	Zrinski Zápolya Zichy
+	Osenevich Terteroba Turgay Kimak Askarid Adirlu Gutkeled Kolbasz Olas Kunev Kumanov Folban Qoun Polovtsy
+	Kipchak Kuman Thocomer Bazaraads Kunsag Nagykunsag Kiskunsag Bortz Bahariyya Klobuky Dentumoger Andjogli Durut
+	Kochoba Toksoba Urosoba Laktan Turai Karachay Kuni Kopek Bakhchisaray Varzas Tana Itil Ochak Akhtuba Zhezdi
+	Ishim Talash Illi Ubeni Sarener Tasyru Sariyi Turani Tengay Oshani
 }
 
 ship_names = {
@@ -109,4 +105,6 @@ ship_names = {
 	"Nagy Lajos"
 	Laszlo
 	Kalman
+	Polovtsy
+	Kipchak
 }

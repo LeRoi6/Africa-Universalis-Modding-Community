@@ -1,3 +1,4 @@
+ 
 #60 - Lausitz
 
 owner = BOH
@@ -13,6 +14,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
+fort_15th = yes #Ortensburg on the hill in old Bautzen. Seems to have been fortified and besieged until finally destroyed in the 100 years war.
 
 discovered_by = western
 discovered_by = muslim
@@ -21,6 +23,20 @@ discovered_by = eastern
 
 1419.12.1 = { unrest = 10 } # Hussite Wars, Battle of Nekmir
 1436.7.5 = { unrest = 0 } # Peace is signed in Jihlava
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = BOH
+	owner = SOR
+	controller = SOR
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = BOH
+	owner = BOH
+	controller = BOH
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1453.1.1 = { add_core = POL }
 1457.1.1 = { unrest = 5 } # George of Podiebrand had to secure recognition from the German and Catholic towns. Pilsen is very hostile towards him, the Roman church being dominant throughout Pilsen's history.
 1466.1.1 = {

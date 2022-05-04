@@ -1,3 +1,4 @@
+ 
 # - Arezzo
 #Region - Italy
 #Area - Tuscan
@@ -30,9 +31,19 @@ discovered_by = eastern
 	add_core = LAN
 }
 
-#Second Shattering not used
+#Second Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	owner = ARE
+	controller = ARE
+	remove_core = LAN
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	owner = LAN
+	controller = LAN
+	add_core = LAN
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
-
+#1444 onwards
 1495.1.1 = { hre = no }
 1527.1.1 = { controller = SPA } # War of the League of Cognac
 1529.8.3 = { controller = LAN } # Treaty of Cambrai

@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = SIE
@@ -23,20 +24,31 @@ discovered_by = eastern
 #Province history completed by - Nikicaga
 #First Shattering not used
 1310.1.1 = {
- owner = GRO
- controller = GRO
- remove_core = SIE
+	owner = GRO
+	controller = GRO
+	remove_core = SIE
 }
 1336.1.1 = {
-owner = SIE
-controller = SIE
-add_core = SIE
+	owner = SIE
+	controller = SIE
+	add_core = SIE
 }
 1399.1.1 = { unrest = 3 owner = MLO controller = MLO } # The city's seigniory given to Gian Galeazzo, Visconti of Milan
 1404.1.1 = { unrest = 0 owner = SIE controller = SIE } # Visconti is driven out
 
-#Second Shattering not used
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	owner = GRO
+	controller = GRO
+	remove_core = SIE
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	owner = SIE
+	controller = SIE
+	add_core = SIE
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
+#1444 onwards
 1495.1.1 = { hre = no }
 1531.1.1 = { controller = SPA owner = SPA add_core = SPA }
 1552.1.1 = { controller = FRA owner = FRA add_core = FRA }

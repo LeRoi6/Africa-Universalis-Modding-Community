@@ -1,3 +1,4 @@
+ 
 #4314 - Kirsehir
 
 owner = KAR
@@ -6,10 +7,10 @@ add_core = KAR
 culture = turkish
 religion = sunni
 capital = "Koçhisar"
-trade_goods = salt
+trade_goods = salt			#(JP) Lake Tuz
 hre = no
-base_tax = 2 
-base_production = 5
+base_tax = 3
+base_production = 2
 base_manpower = 2 
 is_city = yes
 

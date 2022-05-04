@@ -1,13 +1,14 @@
+ 
 #77 - Heidelberg
 
 capital = "Heidelberg"
 culture = hessian
 religion = catholic
-trade_goods = wine
+trade_goods = bt_trade_good_books #the greatest university of mainland Europe
 owner = PAL
-base_tax = 10
-base_production = 10
-base_manpower = 6
+base_tax = 4
+base_production = 4
+base_manpower = 3
 is_city = yes
 controller = PAL
 add_core = PAL

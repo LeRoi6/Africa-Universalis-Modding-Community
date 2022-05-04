@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = MOD # taken by the Este in 1289
@@ -75,7 +76,20 @@ discovered_by = eastern
 	controller = MOD
 	remove_core = FER
 }
-#Second Shattering not used
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	owner = RGO
+	controller = RGO
+	remove_core = MOD
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	owner = MOD
+	controller = MOD
+	add_core = MOD
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1495.1.1 = { hre = no }
 1513.1.1 = {
 	owner = URB

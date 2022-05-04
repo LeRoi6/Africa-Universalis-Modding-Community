@@ -1,9 +1,7 @@
+ 
 # No previous file for Hualapai
 
-owner = YAQ
-controller = YAQ
-add_core = YAQ
-is_city = yes
+is_city = no
 culture = cahita
 religion = totemism
 capital = "Guaymas"			#No good name of a settlement found, going with prov name
@@ -20,6 +18,7 @@ discovered_by = north_american
 discovered_by = mesoamerican
 
 
+1444.1.1 = { tribal_owner = YAQ }
 1444.11.15 = { #BeyondTypus batch edit shortcut no native start date begin
 	owner = XXX
 	controller = XXX

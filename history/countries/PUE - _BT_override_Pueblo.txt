@@ -1,0 +1,4 @@
+
+primary_culture = keres
+capital = 2495
+}

@@ -1,3 +1,4 @@
+ 
 #51 - Ruppin
 #Region - Germany
 #Area - Mittelmark
@@ -5,13 +6,13 @@
 owner = RUP
 controller = RUP
 add_core = RUP
-culture = saxon
+culture = markish
 religion = catholic
 hre = yes
-base_tax = 6
-base_production = 6
+base_tax = 2					#(JP) Lowering dev as dev moved around to new provinces
+base_production = 2
 trade_goods = livestock
-base_manpower = 4 
+base_manpower = 2
 capital = "Neuruppin"
 is_city = yes
 

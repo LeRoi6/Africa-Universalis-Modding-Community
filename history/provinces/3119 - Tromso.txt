@@ -1,3 +1,4 @@
+ 
 #3119 - Tromsø
 #Region - Scandinavia
 #Area - Northern Norway
@@ -25,7 +26,22 @@ discovered_by = eastern
 
 #1291 - 1444
 
-#2nd Shattering unused
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	add_core = SMI
+	remove_core = NOR
+	owner = SMI
+	controller = SMI
+	add_local_autonomy = -55 #This stacks with culture and religious starting autonomy, it seems. Reducing from 90.
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = NOR
+	remove_core = SMI
+	owner = NOR
+	controller = NOR
+	add_local_autonomy = 55 #This stacks with culture and religious starting autonomy, it seems. Reducing from 90.
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 #2nd Performance Start Unused
 
 #1444 on

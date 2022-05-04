@@ -1,3 +1,4 @@
+ 
 #1096 - Cape Verde
 
 capital = "Cape Verde"

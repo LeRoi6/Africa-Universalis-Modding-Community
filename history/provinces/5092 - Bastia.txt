@@ -1,3 +1,4 @@
+ 
 #1247 - Corsica
 #Region - Italy
 #Area - Corsica and Sardinia
@@ -32,9 +33,19 @@ discovered_by = ottoman
 	remove_core = PIS
 }	#Proper fall of Pisa, loses overseas cores
 
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = GEN
+	owner = COR
+	controller = COR
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = GEN
+	owner = GEN
+	controller = GEN
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
-
-
+#1444 onwards
 1464.1.1 = {
 	owner = MLO
 	controller = MLO

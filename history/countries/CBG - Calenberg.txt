@@ -1,0 +1,39 @@
+#CBG - Calenberg
+
+#Political Situation
+capital = 1758
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = lower_saxon
+religion = catholic
+
+#Tech and Military
+technology_group = western
+1432.10.16 = {
+	monarch = {
+		name = "Wilhelm III"
+		dynasty = "von Welf"
+		birth_date = 1392.1.1
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+1432.1.1 = {
+	heir = {
+		name = "Wilhelm"
+		monarch_name = "Wilhelm IV"
+		dynasty = "von Welf"
+		birth_date = 1425.1.1
+		death_date = 1503.12.17
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}

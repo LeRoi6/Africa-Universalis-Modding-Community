@@ -1,3 +1,4 @@
+ 
 #BT's Western Europe Overhaul in 12.0
 
 owner = TOL
@@ -5,10 +6,10 @@ controller = TOL
 add_core = TOL
 culture = lorraine_culture
 religion = catholic
-capital = "Toul"
-base_tax = 7
-base_production = 7
-base_manpower = 4
+capital = "Tull"
+base_tax = 4
+base_production = 4
+base_manpower = 3
 trade_goods = cloth			#one of the first major cloth centres, and also one of the first truly industrialised areas in the world
 is_city = yes
 hre = yes

@@ -1,0 +1,4 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = tunisian
+add_accepted_culture = berber

@@ -1,3 +1,4 @@
+ 
 #216 - Salamanca
 #Region - Iberia
 #Area - Leon
@@ -23,6 +24,22 @@ discovered_by = eastern
 
 
 1350.1.1 = { culture = castillian }
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = CAS
+	owner = LON
+	controller = LON
+	culture = leonese
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = CAS
+	owner = CAS
+	controller = CAS
+	culture = castillian
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1464.5.1 = { unrest = 3 } # Nobiliary uprising against King Enrique, Castilla goes into anarchy
 1468.9.18 = { unrest = 0 } # Pactos de los Toros de Guisando. Isabel of Castille becomes heir to the throne and a temporary peace is achieved
 1470.1.1 = { unrest = 3 } # Isabel marries with Fernando of Aragon, breaking the Pacts of Guisando. King Enrique choses his daughter Juana ("La Beltraneja") as new heiress and a succession War erupts.

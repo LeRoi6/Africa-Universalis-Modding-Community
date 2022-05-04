@@ -1,9 +1,7 @@
+ 
 # No previous file for Beyond Typus province
 
-owner = CHS			#Chumash
-controller = CHS
-add_core = CHS
-is_city = yes
+is_city = no
 culture = chumash
 religion = totemism 
 capital = "Lompo'" 
@@ -19,6 +17,7 @@ native_hostileness = 3
 discovered_by = north_american
 
 
+1444.1.1 = { tribal_owner = CHS }
 1444.11.15 = { #BeyondTypus batch edit shortcut no native start date begin
 	owner = XXX
 	controller = XXX

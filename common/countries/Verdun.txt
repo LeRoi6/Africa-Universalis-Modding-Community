@@ -80,5 +80,9 @@ monarch_names = {
 }
 
 ship_names = {
-	Verdun
+	Verdun 
+	"l'Empereur Lothaire" "le Lorraine"
+	"le René II de Lorraine" "le Barrois" "le Metz"
+	"Toul" "le Verdun" "le Warding" "le Skirmjan"
+	"le Bera" "le Scoc" "le Sekjan"
 }

@@ -1,3 +1,4 @@
+ 
 #322 - Küthaya
 
 owner = TUR
@@ -6,10 +7,10 @@ add_core = TUR
 culture = turkish
 religion = sunni
 capital = "Eskisehir"
-trade_goods = grain			#Cloth as in vanilla isn't the worst, either
+trade_goods = glass			#(JP) Famed ceramics productions
 hre = no
-base_tax = 3 #2
-base_production = 3 #2
+base_tax = 3
+base_production = 2
 base_manpower = 2
 is_city = yes
 

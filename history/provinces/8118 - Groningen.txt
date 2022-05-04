@@ -1,3 +1,4 @@
+
 #3057 - Ommelanden
 #Region - Low Countries
 #Area - Frisia
@@ -6,7 +7,7 @@ owner = GRN
 controller = GRN
 capital = "Groningen"
 is_city = yes
-culture = hannoverian
+culture = lower_saxon
 religion = catholic
 hre = yes
 base_tax = 5			#Population/economic centre of the Northern Netherlands (probably around 10k people) and one of the more important settlements until the formation of the united Netherlands

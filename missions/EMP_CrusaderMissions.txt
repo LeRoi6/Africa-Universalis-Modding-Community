@@ -295,15 +295,16 @@ EMP_crusader_2 = {
 			}
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = crusader_egypt_tt
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 27
+			calc_true_if = {
+				desc = crusader_egypt_tt
+				amount = 27
+				all_province = { # Brian added
 					OR = { 
 						region = egypt_region
 						area = syrian_desert_area
 						area = cyrenaica_area
 					}
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 			owns_core_province = 358
@@ -452,32 +453,34 @@ EMP_crusader_3 = {
 		}
 		trigger = {
 			OR = {
-				custom_trigger_tooltip = {
-					tooltip = crusader_greece_tt
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 12
-						OR = {
-							area = morea_area
-							area = western_aegean_area
-							area = aegean_archipelago_area
-							area = eastern_mediterrenean_islands_area
-						}
-					}
-				}
-				AND = {
-					custom_trigger_tooltip = {
-						tooltip = crusader_greece_tt
-						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-							value = 6
+				AND = { # Brian; changed order
+					NOT = { exists = BYZ }
+					calc_true_if = {
+						desc = crusader_greece_tt
+						amount = 6
+						all_province = { # Brian added
 							OR = {
 								area = morea_area
 								area = western_aegean_area
 								area = aegean_archipelago_area
 								area = eastern_mediterrenean_islands_area
 							}
+							country_or_non_sovereign_subject_holds = ROOT
 						}
 					}
-					NOT = { exists = BYZ }
+				}
+				calc_true_if = {
+					desc = crusader_greece_tt
+					amount = 12
+					all_province = { # Brian added
+						OR = {
+							area = morea_area
+							area = western_aegean_area
+							area = aegean_archipelago_area
+							area = eastern_mediterrenean_islands_area
+						}
+						country_or_non_sovereign_subject_holds = ROOT
+					}
 				}
 			}
 		}
@@ -925,14 +928,15 @@ EMP_crusader_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = cruader_piracy_tt
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 15
-					region = maghreb_region
-					has_port = yes
+				calc_true_if = {
+					desc = cruader_piracy_tt
+					amount = 15
+					all_province = { # Brian added
+						region = maghreb_region
+						has_port = yes
+						country_or_non_sovereign_subject_holds = ROOT
+					}
 				}
-			}
 		}
 		effect = {
 			add_country_modifier = {

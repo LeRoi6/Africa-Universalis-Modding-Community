@@ -1,0 +1,43 @@
+#MNF - Mansfeld
+
+#Political Situation
+capital = 8272
+fixed_capital = 8272 #Cannot move capital away from this province & no power cost to move to it
+#historical_friend = 
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = saxon
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1438.1.1 = {
+	monarch = {
+		name = "Gebhard VI"
+		dynasty = "von Mansfeld"
+		birth_date = 1410.1.1
+		adm = 4
+		dip = 4
+		mil = 1
+	}
+}
+1444.1.1 = {
+	heir = {
+		name = "Gebhard"
+		monarch_name ="Gebhard VII"
+		dynasty = "von Mansfeld"
+		birth_date = 1434.1.1
+		death_Date = 1493.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}

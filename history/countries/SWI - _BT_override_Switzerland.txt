@@ -1,0 +1,3 @@
+
+#historical_friend = TTL			#Beyond Typus only
+historical_friend = TGN			#I'm Assuming this is new tag id for the above

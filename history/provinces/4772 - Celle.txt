@@ -1,3 +1,4 @@
+ 
 #4772 - Celle
 
 owner = LUN
@@ -9,8 +10,8 @@ capital = "Celle"
 trade_goods = livestock
 hre = yes
 base_tax = 4
-base_production = 4
-base_manpower = 4
+base_production = 3
+base_manpower = 3
 is_city = yes
 
 

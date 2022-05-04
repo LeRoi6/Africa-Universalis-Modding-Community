@@ -1,0 +1,28 @@
+#KMP - Kempten
+
+#Political Situation
+capital = 8446
+fixed_capital = 8446 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = theocracy
+add_government_reform = imperial_abbey_reform
+
+#Demographics
+primary_culture = swabian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1444.1.1 = {
+	monarch = {
+		name = "Pilgrim II von Wernau"
+		birth_date = 1395.1.1
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}

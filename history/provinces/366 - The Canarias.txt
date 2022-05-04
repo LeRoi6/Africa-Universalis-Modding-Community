@@ -1,10 +1,11 @@
+ 
 #366 - The Canarias
 #Region - Iberia
 #Area - Macaronesia
 
 culture = berber
 religion = animism
-capital = "Tamarán"
+capital = "Erbania" #Found on the wiki to be indigenous name of Fuerteventura, which seems to be what the province mostly corresponds to in BT.
 trade_goods = unknown
 hre = no
 base_tax = 2 
@@ -29,7 +30,23 @@ native_hostileness = 0
 	trade_goods = sugar
 	capital = "Betancuria"
 } # Castilian control
-1478.6.24 = { capital = "Las Palmas" }
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = CAS
+	add_core = MCN
+	owner = MCN
+	controller = MCN
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = CAS
+	remove_core = MCN
+	owner = CAS
+	controller = CAS
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
+#1478.6.24 = { capital = "Las Palmas" } #For PROV5065
 1516.1.23 = {
 	controller = SPA
 	owner = SPA

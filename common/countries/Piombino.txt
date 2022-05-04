@@ -94,6 +94,10 @@ leader_names = {
 
 ship_names = {
 	Piombino Elba Cecina Follonica Bastia
+	"San Bernardino" "San Domenico" "San Francesco" "San Galgano"
+	"San Giovanni" "San Miniato" "Sant'Ansano" "Santa Caterina"
+	"Santa Maria dei Servi" "Santissima Annunziata" Senius Sovicille 
+	"Taverne d'Arbia" 
 }
 
 army_names = {

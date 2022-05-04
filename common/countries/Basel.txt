@@ -88,6 +88,9 @@ leader_names = {
 ship_names = {
 	Basel Rheinfelden Mutenz Pratteln Augst
 	Liestal Oberwil Therwil Rhein
+	Uri Schwyz Unterwalden Glarus Zug
+	Lucerne Zürich Berne "Wilhelm Tell"
+	Dufour Rhöne Inn Ticino
 }
 
 army_names = {

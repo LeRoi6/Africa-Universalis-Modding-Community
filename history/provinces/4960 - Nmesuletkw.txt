@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus province
 
 culture = interior_salish
@@ -16,6 +17,7 @@ discovered_by = north_american
 #discovered_by = bt_athabaskan_tech
 #discovered_by = bt_northwest_tech
 
+1444.1.1 = { tribal_owner = YYI }
 1805.1.1 = { discovered_by = USA } #Lewis and Clarke
 1811.1.1 = { discovered_by = GBR } #David Thompson
 #Hell's Gate village established here in 1860

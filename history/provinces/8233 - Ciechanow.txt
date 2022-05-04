@@ -1,3 +1,4 @@
+
 #8233 - Ciechanow
 #Area - Mazovia
 #Region - Poland
@@ -16,7 +17,7 @@ religion = catholic
 base_tax = 2
 base_production = 1
 base_manpower = 1
-#trade_goods = 
+trade_goods = grain # Brian; added missing
 
 #Cores and Occupation (Alphabetical after current)
 add_core = MAZ

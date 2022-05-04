@@ -1,0 +1,27 @@
+#KIL - Kilis
+
+#Political Situation
+capital = 6095 #Kilis
+fixed_capital = 6095
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = iqta
+
+#Demographics
+primary_culture = kurdish
+religion = yazidi
+
+#Tech and Military
+technology_group = muslim
+
+1421.1.1 = { 
+	monarch = {
+		name = "Îzedîn"
+		dynasty = "Shamsani" #(JP) Fakhraddin, founder of the dynasty was the "first of the Shamsanis"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}

@@ -1,3 +1,4 @@
+ 
 #4360 - Mikawa
 
 owner = TKG
@@ -13,11 +14,11 @@ base_production = 4
 is_city = yes
 add_core = TKG
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
-discovered_by = ANU
+1444.1.1 = { discovered_by = MCH }
+1444.1.1 = { discovered_by = KHA }
+1444.1.1 = { discovered_by = OIR }
+1444.1.1 = { discovered_by = QNG }
+1444.1.1 = { discovered_by = ANU }
 
 1549.4.3 = { owner = IMG controller = IMG add_core = IMG }
 1560.6.12 = { owner = TKG controller = TKG remove_core = IMG }

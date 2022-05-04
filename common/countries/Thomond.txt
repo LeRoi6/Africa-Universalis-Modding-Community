@@ -84,6 +84,8 @@ ship_names = {
 	"Lar Mumhan" Limerick
 	Tipperary "Tuad Mhuman"
 	"Urh Mumhan"  
+	Órfhlaith Affraic Aíbinn Aibilín Aileann Áine Brigit Cacht Caisséne Catríona Dubchoblaig Eithne Emer Étaín Gormflaith Gráinne Imag Íte Lann Lasairfíona Lerthan Muirenn Malmure Máire
+	Máiread Mór Nuala Finnguala Órlaith Róis Sadb Seonaid Sinech Siobán Sisuile Sláíne Sorcha Sáerlaith Tailefhlaith Tailltiu Úna Éua
 }  
 
 leader_names = {

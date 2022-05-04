@@ -1,9 +1,7 @@
+ 
 # No previous file for Beyond Typus province
 
-owner = CNK
-controller = CNK
-add_core = CNK
-is_city = yes
+is_city = no
 culture = chinook
 religion = totemism 
 capital = "Cathlapotle" 
@@ -24,6 +22,7 @@ extra_cost = 20
 center_of_trade = 2
 
 
+1444.1.1 = { tribal_owner = CNK }
 1444.11.15 = { #BeyondTypus batch edit shortcut no native start date begin
 	owner = XXX
 	controller = XXX

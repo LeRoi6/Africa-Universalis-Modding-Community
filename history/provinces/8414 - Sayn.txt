@@ -1,0 +1,37 @@
+#8414 - Sayn
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Sayn"
+is_city = yes
+owner = SAY
+controller = SAY
+
+#Demographics
+culture = hessian
+religion = catholic
+
+#Development and Trade
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = copper
+
+#Cores and Occupation (Alphabetical after current)
+add_core = SAY
+
+#Other Political
+hre = yes
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Histories 

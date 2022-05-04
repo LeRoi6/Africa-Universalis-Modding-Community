@@ -1,15 +1,16 @@
+ 
 # 4744 - Zwickau
 
-owner = SAX
-controller = SAX
-add_core = SAX
+owner = MEI
+controller = MEI
+add_core = MEI
 culture = saxon
 religion = catholic
 hre = yes
 base_tax = 4
-base_production = 6
+base_production = 4
 trade_goods = cloth
-base_manpower = 4
+base_manpower = 2
 capital = "Zwickau"
 is_city = yes
 

@@ -1,6 +1,7 @@
+
 #902 - Missouri
 
-culture = chiwere
+culture = wichita
 religion = totemism
 capital = "Missouri"
 trade_goods = unknown

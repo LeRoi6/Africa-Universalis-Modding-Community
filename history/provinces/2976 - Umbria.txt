@@ -1,3 +1,4 @@
+ 
 # - Umbria
 #Region - Italy
 #Area - Central Italy
@@ -37,16 +38,6 @@ center_of_trade = 1
 }
 1408.1.1 = { owner = NAP controller = NAP add_core = NAP } # Ladislas takes control of Ancona
 1414.8.6 = { owner = PGA controller = PGA remove_core = NAP }
-#1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
-#	owner = PAP
-#	controller = PAP
-#	add_core = PAP
-#}
-#1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
-#	owner = PGA
-#	controller = PGA
-#	remove_core = PAP
-#}
 1540.6.3 = {
 	owner = PAP
 	controller = PAP

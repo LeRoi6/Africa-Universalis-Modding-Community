@@ -1,0 +1,2 @@
+
+capital = 1809 #for now, look into this more later

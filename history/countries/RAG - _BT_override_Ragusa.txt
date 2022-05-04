@@ -1,0 +1,4 @@
+
+remove_accepted_culture = croatian
+add_accepted_culture = serbian
+historical_friend = SER

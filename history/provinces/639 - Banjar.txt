@@ -1,3 +1,4 @@
+ 
 #639 - Banjar
 
 owner = BNJ
@@ -5,7 +6,7 @@ controller = BNJ
 culture = banjarese
 religion = hinduism
 capital = "Banjar"
-trade_goods = tropical_wood
+trade_goods = cloth
 hre = no
 base_tax = 3
 base_production = 3

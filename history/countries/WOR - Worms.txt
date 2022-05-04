@@ -1,0 +1,18 @@
+#WOR - Worms
+
+#Political Situation
+capital = 1761
+
+#Government
+government_rank = 1
+government = republic
+add_government_reform = free_city
+
+#Demographics
+primary_culture = hessian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History

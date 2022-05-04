@@ -1,0 +1,42 @@
+#WLD - Waldeck
+
+#Political Situation
+capital = 8425
+fixed_capital = 8425 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = hessian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1408.1.1 = {
+	monarch = {
+		name = "Heinrich VII"
+		dynasty = "von Waldeck"
+		birth_date = 1380.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+1444.1.1 = {
+	heir = {
+		name = "Otto"
+		monarch_name ="Otto IV"
+		dynasty = "von Waldeck"
+		birth_date = 1424.1.1
+		death_Date = 1495.1.1
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}

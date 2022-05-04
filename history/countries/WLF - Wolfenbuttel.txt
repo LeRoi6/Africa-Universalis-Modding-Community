@@ -1,0 +1,44 @@
+#WLF - Wolfenbuttel
+
+#Political Situation
+capital = 57
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = lower_saxon
+religion = catholic
+
+#Tech and Military
+technology_group = western
+1432.10.16 = {
+	monarch = {
+		name = "Heinrich II"
+		dynasty = "von Welf"
+		birth_date = 1411.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = calm_personality
+	add_ruler_personality = careful_personality
+	add_ruler_personality = craven_personality
+}
+
+1436.1.1 = {
+	queen = {
+		country_of_origin = KLE
+		name = "Helen"
+		dynasty = "von der Mark"
+		birth_date = 1423.1.1
+		death_date = 1471.1.1
+		female = yes
+		adm = 1 
+		dip = 1
+		mil = 1
+	}
+}

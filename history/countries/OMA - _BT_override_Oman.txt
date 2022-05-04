@@ -1,0 +1,3 @@
+
+add_accepted_culture = mahri_culture
+government_rank = 2 #Sultanate

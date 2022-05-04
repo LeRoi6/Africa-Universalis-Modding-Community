@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus province
 
 culture = shastan			#Karuk. A possible language isolate, or possibly Algonquian according to some? Best Info I've seen places them with Sapir's unproven but compelling Hokan group, so that is where they go.

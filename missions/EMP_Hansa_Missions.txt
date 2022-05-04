@@ -425,11 +425,18 @@ hanseatic_sound_toll_tree = {
 		position = 2
 	
 		provinces_to_highlight = {
-			province_id = 1926 # Baltic Sea
+			province_id = 1 #Stockholm
+			province_id = 43 #Danzig
 		}
 	
 		trigger = {
-			1926 = {
+			1 = {
+				trade_share = {
+					country = ROOT
+					share = 30
+				}
+			}
+			43 = {
 				trade_share = {
 					country = ROOT
 					share = 30
@@ -503,7 +510,7 @@ hanseatic_sound_toll_tree = {
 				}
 			}
 			else = {
-				western_norway = { #Added/shifted claims to accomodate all Norwegian culture provinces vanilla covers
+				western_norway = {  
 					limit = {
 						NOT = { is_core = root }
 						NOT = { is_permanent_claim = root }
@@ -517,7 +524,7 @@ hanseatic_sound_toll_tree = {
 					}
 					add_permanent_claim = ROOT
 				}
-				eastern_norway = {
+				eastern_norway = {  
 					limit = {
 						NOT = { is_core = root }
 						NOT = { is_permanent_claim = root }
@@ -531,7 +538,8 @@ hanseatic_sound_toll_tree = {
 					}
 					add_permanent_claim = ROOT
 				}
-				#northern_norway = { 
+				# Brian; disabled below because...?
+				#northern_norway = {  
 				#	limit = {
 				#		NOT = { is_core = root }
 				#		NOT = { is_permanent_claim = root }
@@ -1182,6 +1190,7 @@ hanseatic_united_tree_2 = {
 						subject = PREV
 						}
 					}
+					add_historical_friend = ROOT
 					hidden_effect = { country_event = { id = emp_mission_events.14 } }
 				}
 			}
@@ -1220,6 +1229,7 @@ hanseatic_united_tree_2 = {
 						subject = PREV
 						}
 					}
+					add_historical_friend = ROOT
 					hidden_effect = { country_event = { id = emp_mission_events.14 } }
 				}
 				if = {

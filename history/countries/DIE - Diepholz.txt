@@ -1,0 +1,42 @@
+#DIE - Diepholz
+
+#Political Situation
+capital = 8405
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = lower_saxon
+religion = catholic
+
+#Tech and Military
+technology_group = western
+#add_army_professionalism
+
+#History
+1440.1.1 = {
+	monarch = {
+		name = "Otto IV"
+		dynasty = "von Diepholz"
+		birth_date = 1410.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+1444.1.1 = {
+	heir = {
+		name = "Otto"
+		monarch_name ="Otto V"
+		dynasty = "von Diepholz"
+		birth_date = 1434.1.1
+		death_Date = 1493.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}

@@ -1,9 +1,10 @@
+ 
 # 185 Nemours
 #Region - France
 #Area - Seine
 
-owner = FRA
-controller = FRA
+owner = AMG
+controller = AMG
 capital = "Nemours"
 is_city = yes
 culture = cosmopolitan_french
@@ -13,13 +14,27 @@ base_tax = 4
 base_production = 4
 trade_goods = livestock			#Brie cheese
 base_manpower = 2
-add_core = FRA
+add_core = AMG
 
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = FRA
+	add_core = PRI
+	owner = PRI
+	controller = PRI
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	remove_core = PRI
+	add_core = FRA
+	owner = FRA
+	controller = FRA
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1588.12.1 = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
 1594.1.1 = { unrest = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
 1621.1.1 = { base_tax = 10 

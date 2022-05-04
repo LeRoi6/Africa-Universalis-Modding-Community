@@ -5,11 +5,8 @@ religion = catholic
 technology_group = eastern
 historical_friend = LIT
 historical_rival = TEU
-historical_rival = TUR
 capital = 262 # Krakow
 add_accepted_culture = ruthenian
-#Bugfixes added Hungary as historical friend to try and make love, not war. Will go away upon forming Commonwealth.
-historical_friend = HUN
 
 national_focus = ADM
 
@@ -19,7 +16,6 @@ national_focus = ADM
 
 1444.11.11 = {
 	monarch = {
-		name = "(Interregnum)"
 		adm = 0
 		mil = 0
 		dip = 0

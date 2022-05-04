@@ -1,9 +1,10 @@
 government = monarchy
-add_government_reform = mandala_reform
+add_government_reform = autocracy_reform
 primary_culture = musi
 religion = hinduism
 technology_group = chinese
 capital = 622	# Palembang
+religious_school = shafii_school
 
 1399.1.1 = {
 	add_piety = -0.1

@@ -1,3 +1,4 @@
+ 
 #4373 - Devon
 #Region - Britain
 #Area - Wessex
@@ -15,6 +16,7 @@ capital = "Exeter"
 is_city = yes
 add_core = ENG
 add_core = CRN
+fort_15th = yes #Key to crushing Cornish rebellions and decently sized according to JP.
 
 add_permanent_province_modifier = {
 	name = stannery_law_modifier
@@ -28,6 +30,22 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = ENG
+	owner = CRN
+	controller = CRN
+	culture = cornish
+	add_local_autonomy = -25
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = ENG
+	owner = ENG
+	controller = ENG
+	culture = english
+	add_local_autonomy = 25
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1461.6.1 = { unrest = 2 } # Coronation of Edward IV
 1467.1.1 = { unrest = 5 } # Rivalry between Edward IV & Warwick

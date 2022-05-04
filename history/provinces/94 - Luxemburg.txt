@@ -1,3 +1,4 @@
+
 # 94 Luxembourg - Principal cities: Luxembourg
 #Region - Low Countries
 #Area - Liege
@@ -14,8 +15,8 @@ is_city = yes
 culture = hessian
 religion = catholic 
 hre = yes
-base_tax = 5
-base_production = 5
+base_tax = 4
+base_production = 4
 trade_goods = iron
 base_manpower = 3
 fort_15th = yes

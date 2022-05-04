@@ -1,3 +1,4 @@
+ 
 # 4767 - Zweibrücken
 
 capital = "Zweibrücken"
@@ -5,9 +6,9 @@ culture = hessian
 religion = catholic
 trade_goods = cloth
 owner = PAL
-base_tax = 6
-base_production = 6
-base_manpower = 4
+base_tax = 2
+base_production = 2
+base_manpower = 2
 is_city = yes
 controller = PAL
 add_core = PAL

@@ -1,10 +1,8 @@
+
 #988 - Huron
 
-owner = YZI			#Neutrals
-controller = YZI
-add_core = YZI
-is_city = yes
-culture = huron
+is_city = no
+culture = tionontate
 religion = totemism
 capital = "Khioetoa"			#I formerly had Bkejwanong, but OmanOZ found a mention of a neutral settlement named Khioetoa along the banks of Lake St. Clair, certainly much much older, so going with that instead. 
 trade_goods = grain
@@ -21,6 +19,7 @@ native_hostileness = 3
 discovered_by = north_american
 
 
+1444.1.1 = { tribal_owner = YZI }
 1444.11.15 = { #BeyondTypus batch edit shortcut no native start date begin
 	owner = XXX
 	controller = XXX

@@ -1,3 +1,4 @@
+ 
 #3076 - Touraine
 #Region - France
 #Area - Loire
@@ -14,6 +15,7 @@ base_production = 9
 trade_goods = cloth
 base_manpower = 5 
 add_core = FRA
+fort_15th = yes #Castle of Tours
 
 discovered_by = western
 discovered_by = muslim
@@ -23,6 +25,21 @@ discovered_by = eastern
 extra_cost = 20
 center_of_trade = 2
 
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = FRA
+	add_core = BER
+	owner = BER
+	controller = BER
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = FRA
+	remove_core = BER
+	owner = FRA
+	controller = FRA
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1560.1.1 = { religion = reformed }
 1562.3.1 = { unrest = 3 } # Huguenots organise themselves along the Loire
 1563.3.19 = { unrest = 0 } # Temporary truce after the assassination of de Guise

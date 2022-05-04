@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus or Beyond the Pale Legacy province
 
 owner = TRE
@@ -6,11 +7,11 @@ add_core = TRE
 culture = pontic_greek
 religion = orthodox
 capital = "Kerasous"
-trade_goods = naval_supplies
+trade_goods = bt_trade_good_fruit		#(JP) Cherries are named after this place
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 3
+base_tax = 3
+base_production = 3
+base_manpower = 2
 is_city = yes
 
 

@@ -1,6 +1,7 @@
+
 #926 - Seminole
 
-culture = creek
+culture = yamasee
 religion = totemism
 capital = "Seminole"
 trade_goods = unknown

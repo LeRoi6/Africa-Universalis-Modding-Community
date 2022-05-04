@@ -1,0 +1,3 @@
+
+primary_culture = lower_saxon
+add_accepted_culture = hessian

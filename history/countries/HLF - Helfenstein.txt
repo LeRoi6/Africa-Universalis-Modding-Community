@@ -1,0 +1,42 @@
+#HLF - Helfenstein
+
+#Political Situation
+capital = 8438
+fixed_capital = 8438 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = swabian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1408.1.1 = {
+	monarch = {
+		name = "Friedrich II"
+		dynasty = "von Helfenstein"
+		birth_date = 1400.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+1444.1.1 = {
+	heir = {
+		name = "Ludwig"
+		monarch_name ="Ludwig IV"
+		dynasty = "von Helfenstein"
+		birth_date = 1424.1.1
+		death_Date = 1493.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}

@@ -1,3 +1,4 @@
+ 
 #154 - Szepes
 
 latent_trade_goods = {
@@ -12,17 +13,17 @@ capital = "Ipolyság"
 trade_goods = copper
 hre = no
 base_tax = 2
-base_production = 1
+base_production = 2
 base_manpower = 1
 is_city = yes
 add_core = HUN
 add_core = LHU
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -32,6 +33,22 @@ discovered_by = ottoman
 1434.1.1 = { unrest = 0 }
 1440.1.1 = { unrest = 10 } # Struggles between the supporters of Ladislaus and Elisabeth of Hungary
 1443.1.1 = { unrest = 0 }
+
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = HUN
+	remove_core = LHU
+	add_core = SLO
+	owner = SLO
+	controller = SLO
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	remove_core = SLO
+	add_core = HUN
+	add_core = LHU
+	owner = HUN
+	controller = HUN
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
 1490.1.1 = { controller = HAB } # Occupied
 1491.11.7 = { controller = HUN }
 1526.8.30 = {

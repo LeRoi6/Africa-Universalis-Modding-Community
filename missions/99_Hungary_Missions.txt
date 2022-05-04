@@ -198,7 +198,7 @@ hun_south_group = {
 					duration = 10950
 				}
 			}
-			western_moldovia = {
+			western_moldovia_area = {  
 				add_province_modifier = {
 					name = "hun_moldavia_mod"
 					duration = 10950
@@ -285,15 +285,13 @@ hun_ottoman_group = {
 						}
 					}
 				}
-				custom_trigger_tooltip = {
-					tooltip = hun_ottoman_borders.tooltip
-					calc_true_if = {
-						amount = 3
-						all_owned_province = {
-							fort_level = 1
-							any_neighbor_province = {
-								owned_by = TUR
-							}
+				calc_true_if = {
+					desc = hun_ottoman_borders.tooltip
+					amount = 3
+					all_owned_province = {
+						fort_level = 1
+						any_neighbor_province = {
+							owned_by = TUR
 						}
 					}
 				}

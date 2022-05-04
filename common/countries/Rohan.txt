@@ -38,9 +38,18 @@ monarch_names = {
 }
 
 leader_names = {
-	Eorl
+	Eorl "de Saint-Malo" "de Rhuys" "de Porhoët" "de Poher" "de Cornouaille" "de Trégor" "de Quimperlé" "de Vannes" "de Goüyon" Urvoy "de Groix" "de Coëtlogon"
+	"de Rennes" "de Nantes"
 }
 
 ship_names = {
 	Aldburg Edoras
+	"l'Aimable" "l'Alliance" "l'Audacieux" "l'Avenant" "la Barbue" "le Belliqueux"
+	"le Bien-Aimé" "le Bienfaisant" "le Bon" "la Bretonne" "la Bretagne" "le Brillant"
+	"le Célèbre" "le Comte" "le Courage" "le Défenseur" "le Diadème" "le Diligent" "le Duc"
+	"le Fleuron" "le Formidable" "le Fortuné" "le Fougueux" "le Furieux" "le Glorieux"
+	"la Grande Hermine" "l'Impétueux" "l'Idomptable" "la Loire" "la Petite Hermine"
+	"le Sévère" "le Solide" "le Solitaire" "le Souverain" "le Superbe" "le Téméraire"
+	"le Terrible" "l'Union" "le Vaillant" "le Vengeur"  "la Victoire" "le Vigilant"
+	"la Volante"
 }

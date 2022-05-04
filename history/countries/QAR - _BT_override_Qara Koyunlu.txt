@@ -1,0 +1,4 @@
+
+primary_culture = turkoman
+add_accepted_culture = azerbaijani
+historical_rival = SRV

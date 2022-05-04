@@ -1,3 +1,4 @@
+ 
 #4535 - Wilkimierz
 
 owner = LIT
@@ -17,11 +18,11 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 
 1543.1.1 = { unrest = 3 } # Counter reformation
 1569.7.1 = {

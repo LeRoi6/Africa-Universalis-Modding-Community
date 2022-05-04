@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = albanian
 religion = catholic
 technology_group = eastern
-capital = 4750 # Kruje
+capital = 4175 # Lezhe
 
 # The League of Lezhe
 1443.3.4 = {

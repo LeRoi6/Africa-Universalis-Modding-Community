@@ -1,0 +1,30 @@
+#KTZ - Katzenelnbogen
+
+#Political Situation
+capital = 8430
+fixed_capital = 8430 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = hessian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+
+1444.1.1 = {
+	monarch = {
+		name = "Philipp I"
+		dynasty = "von Katzenelnbogen"
+		birth_date = 1402.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

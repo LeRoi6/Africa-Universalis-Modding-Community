@@ -1,0 +1,13 @@
+
+capital = 7843
+historical_friend = OSL
+historical_friend = DRP
+historical_friend = KUR
+
+
+
+#History
+
+1444.10.1 = {
+	set_estate_privilege = estate_nobles_strong_duchies
+}

@@ -1,3 +1,4 @@
+
 #962 - Unami
 
 culture = delaware
@@ -16,6 +17,7 @@ native_hostileness = 8
 
 discovered_by = north_american
 
+1444.1.1 = { tribal_owner = LEN }
 1609.1.1 = { discovered_by = NED } # Henry Hudson
 
 1643.1.1 = {

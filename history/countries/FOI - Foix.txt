@@ -3,8 +3,6 @@ add_government_reform = feudalism_reform
 technology_group = western
 religion = catholic
 primary_culture = gascon
-add_accepted_culture = occitain
-government_rank = 1
 capital = 176	# Pau
 fixed_capital = 176 # Cannot move capital away from this province & no power cost to move to it
 

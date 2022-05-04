@@ -11,3 +11,26 @@ historical_friend = GLC			#Great Feudal War specific ally
 
 
 #Couldn't quickly find information, might fill this in later
+1427.1.1 = {
+	monarch = {
+		name = "Nazariy"
+		dynasty = "Rurikovich"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1437.1.1 = {
+	heir = {
+		name = "Sergey"
+		monarch_name = "Sergey"
+		dynasty = "Rurikovich"
+		birth_date = 1437.1.1
+		death_date = 1483.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}

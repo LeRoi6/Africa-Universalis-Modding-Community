@@ -1,3 +1,4 @@
+ 
 owner = ING
 controller = ING
 capital = "Wasserburg"
@@ -7,7 +8,7 @@ religion = catholic
 hre = yes
 base_tax = 4
 base_production = 4
-base_manpower = 4
+base_manpower = 3
 trade_goods = salt #Bad Reichenhall
 add_core = ING
 

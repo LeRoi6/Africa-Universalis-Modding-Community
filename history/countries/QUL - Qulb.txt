@@ -1,0 +1,21 @@
+#QUL - Qulb
+
+#Political Situation
+capital = 6108
+fixed_capital = 6108 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1	
+government = monarchy
+add_government_reform = iqta
+
+#Demographics
+primary_culture = kurdish
+religion = sunni
+religious_school = shafii_school
+#add_accepted_culture
+
+#Tech and Military
+technology_group = muslim
+
+#History

@@ -1,0 +1,25 @@
+ 
+# ex 5818
+# owned in 1.31
+
+owner = KAA
+controller = KAA
+add_core = KAA
+culture = hawaiian # BT; polynesian
+religion = animism
+capital = "Kauai" # BT; "Tapaa"
+is_city = yes
+hre = no
+base_tax = 1 # BT; 2
+base_production = 1 # BT; 2
+base_manpower = 1
+trade_goods = fish
+# ??? below
+#native_size = 10
+#native_ferocity = 1
+#native_hostileness = 3
+
+discovered_by = polynesian_tech # 1.31
+
+1555.1.1 = { discovered_by = SPA }
+1778.1.1 = { discovered_by = GBR } #James Cook

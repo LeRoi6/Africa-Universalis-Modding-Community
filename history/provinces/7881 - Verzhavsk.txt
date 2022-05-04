@@ -1,3 +1,4 @@
+ 
 #BT Scandinavia and Baltics reoverhaul
 
 owner = SMO
@@ -51,15 +52,18 @@ discovered_by = ottoman
 1440.1.1 = { unrest = 10 }			#Major rebellion lasting 1440-1442
 1442.1.1 = { unrest = 0 add_local_autonomy = 50 }
 
-#1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
-#1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-#	owner = XXX
-#	controller = XXX
-#	remove_core = XXX
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = LIT
+	owner = SMO
+	controller = SMO
+	add_local_autonomy = -50
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = LIT
+	owner = LIT
+	controller = LIT
+	add_local_autonomy = 50
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 #	owner = XXX

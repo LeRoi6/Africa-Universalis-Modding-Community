@@ -2,21 +2,19 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = castillian
 add_accepted_culture = andalucian
-add_accepted_culture = galician
+add_accepted_culture = leonese
 religion = catholic
 technology_group = western
 historical_rival = GRA
 historical_friend = POR
-#Added historical friendship with Austria to try and nudge an alliance between the two.
-historical_friend = HAB
-capital = 215
+capital = 219 # Toledo
 national_focus = MIL
 
 add_army_professionalism = 0.1
 
 change_estate_land_share = {
 	estate = estate_nobles
-	share = 20
+	share = 10
 }
 change_estate_land_share = {
 	estate = estate_church
@@ -50,10 +48,10 @@ change_estate_land_share = {
 
 1406.12.26 = {
 	monarch = {
-		name = "(Regency)"
 		adm = 2
 		dip = 2
 		mil = 2
+		regent = yes
 	}
 }
 
@@ -99,11 +97,6 @@ change_estate_land_share = {
 	add_ruler_personality = naive_personality
 	add_ruler_personality = zealot_personality
 	add_ruler_personality = well_advised_personality
-}
-
-1444.10.1 = {
-	set_estate_privilege = estate_nobles_nobility_primacy
-	set_estate_privilege = estate_nobles_supremacy_over_crown
 }
 
 1447.8.17 = {

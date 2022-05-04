@@ -1,0 +1,3 @@
+
+historical_rival = ABD
+historical_rival = FNJ

@@ -1,3 +1,4 @@
+ 
 #137 - Ragusa
 
 owner = RAG			#Between the 14th century and 1808, Dubrovnik ruled itself as a free state, although it was a vassal from 1382 to 1804 of the Ottoman Empire and paid an annual tribute to its sultan.
@@ -13,11 +14,11 @@ base_manpower = 3			#Population estimated at 30k in 1808, extrapolated to probab
 is_city = yes
 add_core = RAG
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

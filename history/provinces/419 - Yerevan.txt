@@ -1,9 +1,10 @@
+ 
 #419 - Yerevan
 
 owner = TIM
 controller = TIM
 culture = armenian
-religion = coptic
+religion = apostolic
 capital = "Yerevan"
 trade_goods = wine
 hre = no

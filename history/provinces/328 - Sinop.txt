@@ -1,16 +1,17 @@
+ 
 #328 - Sinope
 
 owner = CND
 controller = CND
 add_core = CND
-culture = turkish
+culture = pontic_greek		#Converted to Islam but still many Greeks, often practicising Christianity in secret
 religion = sunni
 capital = "Sinop"
-trade_goods = naval_supplies
+trade_goods = cotton
 hre = no
-base_tax = 5
-base_production = 5
-base_manpower = 3
+base_tax = 4
+base_production = 4
+base_manpower = 4
 is_city = yes
 
 extra_cost = 8

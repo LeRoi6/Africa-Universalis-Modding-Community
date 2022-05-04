@@ -14,3 +14,12 @@ add_army_professionalism = 0.1
 
 
 #History, currently empty.
+1444.11.13 = {
+	capital = 364 #Shattered start.
+	add_accepted_culture = al_misr_arabic
+
+}
+1444.11.15 = {
+	capital = 7011 #Back to normal.
+	remove_accepted_culture = al_misr_arabic
+}

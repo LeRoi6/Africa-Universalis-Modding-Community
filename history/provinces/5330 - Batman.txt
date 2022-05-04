@@ -1,12 +1,12 @@
 #4395 - Hisn Kayfa
 
-owner = BTL
-controller = BTL
-add_core = BTL
-capital = "Farqin"			#Kurdish name for Silvan
-culture = armenian			#Borderline between armenian, syriac, kurdish, turkish, or arab, but going with Armenian for now.
-religion = coptic
-trade_goods = wool			#no particular reason
+owner = ZIR
+controller = ZIR
+add_core = ZIR
+capital = "Silvan"	
+culture = kurdish
+religion = sunni
+trade_goods = grain
 hre = no
 base_tax = 2 
 base_production = 2 

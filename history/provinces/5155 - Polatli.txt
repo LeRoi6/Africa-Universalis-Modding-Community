@@ -1,8 +1,10 @@
+ 
 # No previous file for Beyond Typus or Beyond the Pale Legacy province
 
 owner = TUR
 controller = TUR
 add_core = TUR
+add_core = GRM
 culture = turkish
 religion = sunni
 capital = "Potlatli"
@@ -10,7 +12,7 @@ trade_goods = grain		#Polatli is one of the most productive agricultural distric
 hre = no
 base_tax = 2 
 base_production = 2 
-base_manpower = 2 #1 
+base_manpower = 2 
 is_city = yes
 
 discovered_by = western
@@ -19,7 +21,20 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = nomad_group
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = TUR
+	owner = GRM
+	controller = GRM
+	add_core = GRM
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = TUR
+	owner = TUR
+	controller = TUR
+	remove_core = GRM
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
+#1444 onwards
 1481.6.1 = { revolt = { type = pretender_rebels size = 0 leader = "Jem Osmanoglu" } controller = REB } # Civil war, Bayezid & Jem
 1482.7.26 = { revolt = {} controller = TUR } # Jem escapes to Rhodes
 1509.1.1 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Civil war

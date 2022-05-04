@@ -1,10 +1,15 @@
 government = monarchy
 add_government_reform = mandala_reform
-government_rank = 2
+government_rank = 1
 primary_culture = central_thai
 religion = buddhism
 technology_group = chinese
 capital = 593	# Nakhon Si Thammarat
+religious_school = shafii_school
+
+1399.1.1 = {
+	add_piety = -0.1
+}
 
 1430.1.1 = {
 	monarch = {

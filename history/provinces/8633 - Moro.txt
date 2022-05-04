@@ -1,3 +1,4 @@
+
 #4628 - Moro
 
 owner = TER
@@ -5,7 +6,7 @@ controller = TER
 culture = moluccan
 religion = animism
 capital = "Morotai"
-trade_goods = spices
+trade_goods = cloves
 hre = no
 base_tax = 2
 base_production = 2

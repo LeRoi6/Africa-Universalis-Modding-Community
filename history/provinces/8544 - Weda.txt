@@ -1,3 +1,4 @@
+
 #New
 
 owner = TID
@@ -5,7 +6,7 @@ controller = TID
 culture = moluccan
 religion = animism
 capital = "Weda"
-trade_goods = spices
+trade_goods = cloves
 hre = no
 base_tax = 4
 base_production = 4

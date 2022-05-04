@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = MRT
@@ -40,11 +41,12 @@ discovered_by = eastern
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	owner = MRT
 	controller = MRT
-	add_core = MRT
+	remove_core = MRC
 }
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	owner = MRC
 	controller = MRC
+	add_core = MRC
 }
 1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 	owner = PAP

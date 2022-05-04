@@ -23,10 +23,10 @@ papal_missions_slot = {
 		trigger = {
 			NOT = {
 				calc_true_if = {
-						all_country = {
-							is_subject_of_type = papal_subject_bt
-						}
-						amount = 2
+					all_country = {
+						is_subject_of_type = papal_subject_bt
+					}
+					amount = 2
 				}
 			}
 		}

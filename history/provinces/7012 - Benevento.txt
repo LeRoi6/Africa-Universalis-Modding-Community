@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = PAP
@@ -30,16 +31,21 @@ discovered_by = eastern
 #	controller = XXX
 #	remove_core = XXX
 #}
-#1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-#	owner = SIC
-#	controller = SIC
-#	remove_core = NAP
-#}
-#1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-#	owner = NAP
-#	controller = NAP
-#	add_core = NAP
-#}
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	owner = NAP
+	controller = NAP
+	add_core = NAP
+	remove_core = PAP
+}
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	owner = PAP
+	controller = PAP
+	add_core = PAP
+	remove_core = NAP
+}
+
+#1444 onwards
 1806.3.11 = {
 	controller = FRA
 } # France beats Neapolitan Army, whole Kingdom falls to French forces

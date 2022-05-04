@@ -1,10 +1,11 @@
+ 
 #BT Scandinavia and Baltics reoverhaul
 
 owner = TEU
 controller = TEU
 add_core = TEU
 add_core = BRA
-culture = saxon
+culture = markish
 religion = catholic
 capital = "Zantoch"
 base_tax = 2 
@@ -46,16 +47,19 @@ discovered_by = western
 
 #1291 - 1444
 
-#1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
-#1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-#	owner = XXX
-#	controller = XXX
-#	remove_core = XXX
-#} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	owner = NEU
+	controller = NEU
+	add_core = NEU
+	remove_core = TEU
+	remove_core = BRA
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	owner = TEU
+	controller = TEU
+	add_core = TEU
+	remove_core = NEU
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 #	owner = XXX
 #	controller = XXX

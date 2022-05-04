@@ -5,14 +5,13 @@ religion = buddhism
 technology_group = chinese
 capital = 600 # Ayutthaya
 
-
 1395.1.1 = {
 	monarch = {
 		name = "Ramaracha"
 		dynasty = "Uthong"
 		adm = 2
 		dip = 1
-		mil = 1	
+		mil = 1
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = naive_personality
@@ -36,14 +35,15 @@ capital = 600 # Ayutthaya
 		birth_date = 1408.1.1 # Actual unknown
 		death_date = 1448.1.1
 		claim = 95
-		adm = 1
-		dip = 2
-		mil = 3
-		leader = { 
+		adm = 1 # BT; 3
+		dip = 2 # BT; 2
+		mil = 3 # BT; 4
+		leader = {
 			name = "Sam Phraya"
-			type = general			fire = 2	
-			shock = 4	
-			manuever = 3	
+			type = general
+			fire = 2
+			shock = 4
+			manuever = 3
 			siege = 1 
 		}
 		
@@ -54,10 +54,10 @@ capital = 600 # Ayutthaya
 	monarch = {
 		name = "Borommaracha II"
 		dynasty = "Suphannaphum"
-		adm = 1
-		dip = 2
-		mil = 3
-		leader = { name = "Borommaracha II"      	type = general	fire = 2	shock = 4	manuever = 3	siege = 1 }
+		adm = 1 # BT; 3
+		dip = 2 # BT; 2
+		mil = 3 # BT; 4
+		leader = { name = "Borommaracha II"	type = general	fire = 2	shock = 4	manuever = 3	siege = 1 }
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality
@@ -73,8 +73,8 @@ capital = 600 # Ayutthaya
 		death_date = 1488.1.1
 		claim = 95
 		adm = 6
-		dip = 2
-		mil = 2
+		dip = 2 # BT; 3
+		mil = 2 # BT; 3
 	}
 }
 
@@ -131,7 +131,7 @@ capital = 600 # Ayutthaya
 		adm = 2
 		dip = 1
 		mil = 1
-		leader = { name = "Chettathirat Suphannaphum"      type = general	fire = 1	shock = 3	manuever = 4	siege = 0 }
+		leader = { name = "Chettathirat Suphannaphum"	type = general	fire = 1	shock = 3	manuever = 4	siege = 0 }
 	}
 }
 
@@ -142,7 +142,7 @@ capital = 600 # Ayutthaya
 		adm = 2
 		dip = 1
 		mil = 1
-		leader = { name = "Ramathibodi Suphannaphum"      type = general	fire = 1	shock = 3	manuever = 4	siege = 0 }
+		leader = { name = "Ramathibodi Suphannaphum"	type = general	fire = 1	shock = 3	manuever = 4	siege = 0 }
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = strict_personality
@@ -246,7 +246,7 @@ capital = 600 # Ayutthaya
 		mil = 3
 		dip = 2
 		regent = yes
-                female = yes
+		female = yes
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = cruel_personality
@@ -277,7 +277,7 @@ capital = 600 # Ayutthaya
 		adm = 2
 		dip = 1
 		mil = 3
-		leader = { name = "Worawongasa"      type = general	fire = 0	shock = 2	manuever = 1	siege = 0 }
+		leader = { name = "Worawongasa"	type = general	fire = 0	shock = 2	manuever = 1	siege = 0 }
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = martial_educator_personality
@@ -320,7 +320,7 @@ capital = 600 # Ayutthaya
 		adm = 2
 		dip = 1
 		mil = 2
-		leader = { name = "Maha Chakkraphat Suphannaphum"      type = general	fire = 1	shock = 1	manuever = 2	siege = 0 }
+		leader = { name = "Maha Chakkraphat Suphannaphum"	type = general	fire = 1	shock = 1	manuever = 2	siege = 0 }
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = strict_personality
@@ -759,7 +759,7 @@ capital = 600 # Ayutthaya
 	monarch = {
 		name = "Rama I"
 		dynasty = "Chakri"
-                culture = mon #Debatable
+		culture = mon #Debatable
 		adm = 5
 		dip = 4
 		mil = 5

@@ -1,3 +1,4 @@
+ 
 #4717 = Bayreuth
 #Region - Germany
 #Area - Franconia
@@ -7,8 +8,8 @@ controller = BYT
 add_core = BYT
 culture = franconian
 religion = catholic
-base_tax = 4 
-base_production = 4 
+base_tax = 3
+base_production = 3
 trade_goods = copper
 base_manpower = 2 
 capital = "Bayreuth"

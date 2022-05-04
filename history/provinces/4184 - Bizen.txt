@@ -1,3 +1,4 @@
+ 
 #4184 - Bizen
 
 owner = YMN
@@ -14,10 +15,10 @@ is_city = yes
 add_core = YMN
 add_core = AKM
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
+1444.1.1 = { discovered_by = MCH }
+1444.1.1 = { discovered_by = KHA }
+1444.1.1 = { discovered_by = OIR }
+1444.1.1 = { discovered_by = QNG }
 
 1467.1.1 = { owner = AKM controller = AKM }
 1488.1.1 = { remove_core = YMN }

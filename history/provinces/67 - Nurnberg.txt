@@ -1,3 +1,4 @@
+ 
 # 67 - Franken
 #Region - Germany
 #Area - Franconia
@@ -7,13 +8,14 @@ controller = NUM
 add_core = NUM
 culture = franconian
 religion = catholic
-base_tax = 16
-base_production = 16			#Consistantly one of the richest, most populous, and politically important polities in Central Europe. Around our start date, almost certainly the largest city in Germany outside of Prague and Koeln. Before Habsburg dominance, even considered one of the primary HRE capital contenders.
+base_tax = 13
+base_production = 12			#Consistantly one of the richest, most populous, and politically important polities in Central Europe. Around our start date, almost certainly the largest city in Germany outside of Prague and Koeln. Before Habsburg dominance, even considered one of the primary HRE capital contenders.
 trade_goods = bt_trade_good_books
-base_manpower = 8
+base_manpower = 9
 capital = "Nürnberg"
 is_city = yes
 hre = yes
+center_of_trade = 1
 
 discovered_by = western
 discovered_by = muslim

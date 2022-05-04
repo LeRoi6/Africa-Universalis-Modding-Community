@@ -1,0 +1,3 @@
+
+primary_culture = silesian_german
+add_accepted_culture = polish

@@ -67,7 +67,17 @@ leader_names = {
 	"Al Nubi"
 	"Akil"
 	Surur
+        Saadi
 	Atef
+	Ubaydat
+        Baraasa
+	Hasa
+	Derasa
+        "Aylay Fayid"
+	Magharba
+        Majabira
+	Aryibat
+	Baraghith
 	Madani
 	"Al Jaber"
 	Billah

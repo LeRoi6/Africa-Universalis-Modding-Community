@@ -1,3 +1,4 @@
+ 
 #4299 - Shamakhi
 
 owner = SRV
@@ -20,8 +21,8 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = nomad_group
 
-1459.1.1 = { revolt_risk = 3 } # Attacked by Safavids
-1460.1.1 = { revolt_risk = 0 }
+1459.1.1 = { unrest = 3 } # Attacked by Safavids
+1460.1.1 = { unrest = 0 }
 1499.1.1 = { revolt = { type = religious_rebels size = 0 name = "Qizilbash Tribesmen" leader = "Ismail Safavid" } controller = REB }
 1501.7.1 = {
 	owner = PER
@@ -41,9 +42,9 @@ discovered_by = nomad_group
 	remove_core = PER
 	revolt = { }
 } # Shirvan Khanate given to the Shamkhals by Persia
-1747.1.1 = { revolt_risk = 3 } # Shah Nadir is killed, local khanates emerged
-1748.1.1 = { revolt_risk = 4 } # The empire began to decline
-1779.1.1 = { revolt_risk = 0 } # With the Qajar dynasty the situation stabilized
+1747.1.1 = { unrest = 3 } # Shah Nadir is killed, local khanates emerged
+1748.1.1 = { unrest = 4 } # The empire began to decline
+1779.1.1 = { unrest = 0 } # With the Qajar dynasty the situation stabilized
 1813.10.24 = {
 	owner = RUS
 	controller = RUS

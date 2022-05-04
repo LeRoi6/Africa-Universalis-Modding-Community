@@ -1,0 +1,18 @@
+#TSJ - Transjordan
+
+#Political Situation
+capital = 6067 #Amman #(JP) Does not exist in 1444, modern capital
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = iqta
+
+#Demographics
+primary_culture = al_suryah_arabic
+religion = sunni
+religious_school = shafii_school
+add_accepted_culture = bedouin_arabic
+
+#Tech and Military
+technology_group = muslim

@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus or Beyond the Pale Legacy province
 
 owner = CYP
@@ -6,12 +7,12 @@ add_core = CYP
 add_core = RAM
 add_core = CIL
 culture = cilician
-religion = catholic			#At this point, the Kingdom of Cyprus had had control of the castle and surrounding area for over 80 years. Former Armenian kingdom merged all three branches of Christianity, and would have readily accepted catholicism. DE wiki says area was catholic, too
+religion = apostolic
 capital = "Corycus"
 trade_goods = fish			#No strong evidence of other, other than an ancient mint, long abandoned
 hre = no
-base_tax = 3
-base_production = 3
+base_tax = 2
+base_production = 2
 base_manpower = 2 
 is_city = yes
 fort_15th = yes
@@ -22,7 +23,20 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = nomad_group
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = RAM
+	remove_core = CYP
+	owner = CIL
+	controller = CIL
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = RAM
+	add_core = CYP
+	owner = RAM
+	controller = RAM
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
+#1444 onwards
 1448.1.1 = {
 	owner = KAR
 	controller = KAR

@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus province
 
 culture = tlingit
@@ -17,6 +18,7 @@ discovered_by = north_american
 #discovered_by = bt_northwest_tech
 
 
+1444.1.1 = { tribal_owner = TGI }
 1741.1.1 = { discovered_by = RUS } # Aleksei Chirikov under Vitus Bering
 1778.1.1 = { discovered_by = GBR } # James Cook
 1788.1.1 = { discovered_by = SPA } # Esteban José Martínez and Gonzalo López de Haro

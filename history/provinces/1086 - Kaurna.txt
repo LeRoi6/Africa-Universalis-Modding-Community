@@ -1,15 +1,23 @@
-#1086 - Kaurna
+ 
+# owned in 1.31
 
-culture = aboriginal
-religion = animism
+owner = KAU
+controller = KAU
+add_core = KAU
+culture = yura # 1.31
+religion = dreamtime # 1.31
 capital = "Kaurna"
-trade_goods = unknown
+is_city = yes
 hre = no
-base_tax = 3 
+base_tax = 3
 base_production = 3
-base_manpower = 1 
+base_manpower = 1
+trade_goods = fish
 native_size = 10
 native_ferocity = 1
 native_hostileness = 9
+center_of_trade = 1 # 1.31
+
+discovered_by = aboriginal_tech # 1.31
 
 1802.1.1 = { discovered_by = GBR } # Matthew Flinders

@@ -17,7 +17,7 @@ tr_russian_minors_1 = {
 			tag = UKR
 			tag = YAR
 			tag = PLT
-			#tag = PRM			#Disabling Perm. Eventually I ought to do some uralic missions, but in the meantime this makes no sense for Perm, imho
+			#tag = PRM # Disabling Perm. Eventually I ought to do some uralic missions, but in the meantime this makes no sense for Perm, imho
 			tag = BLO
 			tag = RSO
 			tag = SMO
@@ -26,7 +26,7 @@ tr_russian_minors_1 = {
 			#BT Added
 			tag = ZBT
 			tag = GLC
-			tag = MLG
+			tag = MLA # changed from MLG
 			tag = SPK
 			tag = MOZ
 			tag = PRS
@@ -104,7 +104,7 @@ tr_russian_minors_2 = {
 			#BT Added
 			tag = ZBT
 			tag = GLC
-			tag = MLG
+			tag = MLA # changed from MLG
 			tag = SPK
 			tag = MOZ
 			tag = PRS
@@ -236,7 +236,7 @@ tr_russian_minors_3 = {
 			#BT Added
 			tag = ZBT
 			tag = GLC
-			tag = MLG
+			tag = MLA # changed from MLG
 			tag = SPK
 			tag = MOZ
 			tag = PRS
@@ -377,7 +377,7 @@ tr_russian_minors_4 = {
 			#BT Added
 			tag = ZBT
 			tag = GLC
-			tag = MLG
+			tag = MLA # changed from MLG
 			tag = SPK
 			tag = MOZ
 			tag = PRS
@@ -430,7 +430,7 @@ tr_russian_minors_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			severia_area = {
+			chernigov_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -469,7 +469,7 @@ tr_russian_minors_4 = {
 			OR = {
 				area = east_dniepr_area
 				area = bryansk_area
-				area = severia_area
+				area = chernigov_area
 				area = oka_area
 				area = smolensk_area
 				area = white_ruthenia_area
@@ -487,7 +487,7 @@ tr_russian_minors_4 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			severia_area = {
+			chernigov_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -620,7 +620,7 @@ tr_russian_minors_5 = {
 			#BT Added
 			tag = ZBT
 			tag = GLC
-			tag = MLG
+			tag = MLA # changed from MLG
 			tag = SPK
 			tag = MOZ
 			tag = PRS

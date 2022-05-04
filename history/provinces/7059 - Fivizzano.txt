@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = MSS
@@ -24,29 +25,37 @@ discovered_by = eastern
 
 #Second Shattering not used
 1331.1.1 = {
-  owner = VRN
-  controller = VRN
-  add_core = VRN
-  } # sold to Verona
+	owner = VRN
+	controller = VRN
+	add_core = VRN
+} # sold to Verona
 1339.1.1 = {
-  owner = MLO
-  controller = MLO
-  add_core = MLO
-  remove_core = VRN
-  } # taken by Milan
+	owner = MLO
+	controller = MLO
+	add_core = MLO
+	remove_core = VRN
+} # taken by Milan
 1406.1.1 = {
-  owner = GEN
-  controller = GEN
-  add_core = GEN
-  remove_core = MLO
-  } # to Fieschi family
- 1433.1.1 = {
-  owner = MSS
-  controller = MSS
-  add_core = MSS
-  add_core = LAN
-  remove_core = GEN
-  } # to Milan again (NOTE: GIVING IT TO MASSA TO REPRESENT THE HINTERLANDS AND Fosdinovo) 
+	owner = GEN
+	controller = GEN
+	add_core = GEN
+	remove_core = MLO
+} # to Fieschi family
+1433.1.1 = {
+	owner = MSS
+	controller = MSS
+	add_core = MSS
+	add_core = LAN
+	remove_core = GEN
+} # to Milan again (NOTE: GIVING IT TO MASSA TO REPRESENT THE HINTERLANDS AND Fosdinovo) 
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = LAN
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = LAN
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
 #Performance start
 1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins

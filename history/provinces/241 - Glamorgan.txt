@@ -1,3 +1,4 @@
+ 
 #241 - Glamorgan
 #Region - Britain
 #Area - Deheubarth
@@ -34,6 +35,24 @@ add_local_autonomy = 75
 #1399.1.1 = { unrest = 20 } # Buildup to the Welsh Revolt
 #1400.9.16 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # The Welsh Revolt
 #1415.1.1 = { unrest = 0 revolt = {} controller = ENG } # English rule is restored
+
+#2nd Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = ENG
+	remove_core = WLS
+	owner = GLA
+	controller = GLA
+	add_local_autonomy = -75
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = ENG
+	add_core = WLS
+	owner = ENG
+	controller = ENG
+	add_local_autonomy = 75
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
 	owner = ENG
 	controller = ENG

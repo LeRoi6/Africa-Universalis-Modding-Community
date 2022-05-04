@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = BLL
@@ -62,7 +63,6 @@ discovered_by = eastern
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	owner = BLL
 	controller = BLL
-	add_core = BLL
 	remove_core = VEN
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends

@@ -1,19 +1,20 @@
-#3214 - Saale
+ 
+#3214 - Weiﬂenfels
 #Region - Germany
 #Area - Thuringia
 
-owner = SAX
-controller = SAX 
+owner = THU
+controller = THU 
 culture = saxon
 religion = catholic
-capital = "Naumburg"
+capital = "Weiﬂenfels"
 trade_goods = salt
 hre = yes
-base_tax = 2 
-base_production = 4 
-base_manpower = 2 
+base_tax = 2
+base_production = 2 
+base_manpower = 1 
 is_city = yes
-add_core = SAX
+add_core = THU
 
 discovered_by = western
 discovered_by = muslim

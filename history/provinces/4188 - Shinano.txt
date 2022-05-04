@@ -1,3 +1,4 @@
+ 
 #2017 - Shinano
 
 owner = OGS
@@ -13,11 +14,11 @@ base_production = 4
 is_city = yes
 add_core = OGS
 discovered_by = chinese
-discovered_by = MCH
-discovered_by = KHA
-discovered_by = OIR
-discovered_by = QNG
-discovered_by = ANU
+1444.1.1 = { discovered_by = MCH }
+1444.1.1 = { discovered_by = KHA }
+1444.1.1 = { discovered_by = OIR }
+1444.1.1 = { discovered_by = QNG }
+1444.1.1 = { discovered_by = ANU }
 
 1542.1.1   = { discovered_by = POR }
 1542.6.1 = { add_core = TKD } # Takeda Shingen expands into Shinano

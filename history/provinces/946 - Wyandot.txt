@@ -1,6 +1,7 @@
+
 #946 - Wyandot
 
-culture = huron
+culture = miami
 religion = totemism
 capital = "Wyandot"
 trade_goods = unknown
@@ -16,6 +17,7 @@ native_hostileness = 4
 
 discovered_by = north_american
 
+1444.1.1 = { tribal_owner = POT }
 
 1650.1.1 = {
  	owner = HUR

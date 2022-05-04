@@ -1,5 +1,5 @@
 government = theocracy
-add_government_reform = leading_clergy_reform
+add_government_reform = imperial_abbey_reform
 government_rank = 1
 primary_culture = wallonian
 religion = catholic
@@ -8,3 +8,12 @@ capital = 8025
 
 
 #History not yet done
+1399.1.1 = {
+	monarch = {
+		name = "Die Abte"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

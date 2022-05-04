@@ -1,3 +1,4 @@
+ 
 #3066 - Arlon
 #Region - Low Countries
 #Area - Liege
@@ -7,8 +8,8 @@ controller = LUX
 add_core = LUX 
 capital = "Arlon"
 is_city = yes
-culture = hessian			#Strongly germanic majority from all accurate censuses until 1920. Not 100 percent perfectly clear that germanic was in the majority in 1200s, too, but it seems likely considering close ties with neighbouring Luxembourg, and France's historically more westerly position.
-religion = catholic 
+culture = wallonian			#Strongly germanic majority from all accurate censuses until 1920. Not 100 percent perfectly clear that germanic was in the majority in 1200s, too, but it seems likely considering close ties with neighbouring Luxembourg, and France's historically more westerly position.
+religion = catholic 		#(JP) overriding here. Areland, the German area, is extremely small, and the province as a whole is likely more French
 hre = yes
 base_tax = 2
 base_production = 3

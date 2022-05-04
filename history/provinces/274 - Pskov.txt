@@ -1,3 +1,4 @@
+ 
 #274 - Pskov
 #Region - Russia
 #Area - Pskov
@@ -16,11 +17,11 @@ is_city = yes
 fort_15th = yes			# The Pskov Krom (or Kremlin) withstood twenty-six sieges in the 15th century alone. At one point, five stone walls ringed it, making the city practically impregnable.   -Draiocht taking fort down to level 1, because I didn't want an unbuildable fort in 1444, however strong it may have been
 add_core = PSK
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = western
 discovered_by = eastern
 

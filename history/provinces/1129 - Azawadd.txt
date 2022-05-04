@@ -1,3 +1,4 @@
+ 
 #1129 - Azawadd
 
 owner = TMB
@@ -19,7 +20,7 @@ native_hostileness = 10
 
 
 discovered_by = sub_saharan
-discovered_by = MOR
+1444.1.1 = { discovered_by = MOR }
 
 
 1517.1.1 = {	

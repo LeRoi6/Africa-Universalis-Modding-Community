@@ -1,0 +1,3 @@
+
+primary_culture = shilha
+fixed_capital = 344 # Cannot move capital away from this province & no power cost to move to it

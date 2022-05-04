@@ -1,3 +1,4 @@
+ 
 # No previous file for Variquicimeto
 
 culture = guajiro
@@ -5,7 +6,7 @@ culture = guajiro
 
 
 discovered_by = south_american
-discovered_by = MCA
+1444.1.1 = { discovered_by = MCA }
 
 religion = animism
 capital = "Variquicimeto"

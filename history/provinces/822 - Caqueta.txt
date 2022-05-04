@@ -1,3 +1,4 @@
+
 #822 - Caqueta
 
 culture = jivaro
@@ -6,7 +7,7 @@ culture = jivaro
 
 discovered_by = south_american
 discovered_by = andean
-discovered_by = MCA
+1444.1.1 = { discovered_by = MCA }
 
 religion = animism
 capital = "Mocoa"

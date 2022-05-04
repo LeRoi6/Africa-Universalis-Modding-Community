@@ -1,3 +1,4 @@
+ 
 
 culture = coast_penutian
 religion = totemism

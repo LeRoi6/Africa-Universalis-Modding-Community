@@ -1,0 +1,19 @@
+ 
+# new in 1.31
+
+owner = VNL
+controller = VNL
+add_core = VNL
+culture = polynesian # ??? BT; melanesian
+religion = animism
+capital = "Labasa"
+is_city = yes
+hre = no
+base_tax = 2 # ???
+base_production = 2 # ???
+base_manpower = 1
+trade_goods = fish
+
+discovered_by = polynesian_tech
+
+1643.1.1 = { discovered_by = NED } # Abel Tasman

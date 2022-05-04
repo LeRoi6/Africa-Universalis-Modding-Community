@@ -1,12 +1,13 @@
+ 
 #Jixi
 
 latent_trade_goods = {
 	coal
 }
 
-owner = NHX
-controller = NHX
-add_core = NHX
+owner = EJZ
+controller = EJZ
+add_core = EJZ
 culture = manchu
 religion = tengri_pagan_reformed
 capital = "Jixi"

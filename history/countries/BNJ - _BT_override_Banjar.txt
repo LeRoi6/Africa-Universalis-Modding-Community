@@ -1,0 +1,29 @@
+
+add_government_reform = plutocratic_reform
+primary_culture = banjarese
+religion = hinduism
+
+1440.1.1 = {
+	monarch = {
+		name = "Raden Sakar Sungsang"
+		dynasty = "Negara Daha"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1486.1.1 = {
+	monarch = {
+		name = "Raden Sukarama"
+		dynasty = "Negara Daha"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1524.9.24 = {
+    religion = sunni
+    religious_school = shafii_school
+}

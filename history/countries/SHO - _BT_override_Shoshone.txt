@@ -1,0 +1,2 @@
+
+capital = 5016	# Bannock

@@ -1,3 +1,4 @@
+ 
 # - Regensburg
 #Region - Germany
 #Area - Lower Bavaria
@@ -7,10 +8,10 @@ controller = REG
 add_core = REG
 culture = bavarian
 religion = catholic
-base_tax = 16
-base_production = 16			#No longer one the largest city in the Europe, perhaps second to Paris, as it once was (in the 11th century it was considerably larger than even Rome) and also no longer a contender for the title of capital of the HRE, but still quite a metropolis by EM standards, comparable size to Vienna
+base_tax = 8
+base_production = 7			#No longer one the largest city in the Europe, perhaps second to Paris, as it once was (in the 11th century it was considerably larger than even Rome) and also no longer a contender for the title of capital of the HRE, but still quite a metropolis by EM standards, comparable size to Vienna
 trade_goods = cloth #Fustians
-base_manpower = 6
+base_manpower = 7
 capital	= "Regensburg" 
 is_city = yes
 hre = yes

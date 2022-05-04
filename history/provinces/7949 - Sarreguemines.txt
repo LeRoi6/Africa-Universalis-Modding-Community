@@ -1,3 +1,4 @@
+ 
 #BT's Western Europe Overhaul in 12.0
 
 latent_trade_goods = {
@@ -10,8 +11,8 @@ add_core = LOR
 culture = hessian
 religion = catholic
 capital = "Sarreguemines"			#Niki wanted Bitche
-base_tax = 3
-base_production = 3
+base_tax = 2
+base_production = 2
 base_manpower = 2
 trade_goods = glass
 is_city = yes

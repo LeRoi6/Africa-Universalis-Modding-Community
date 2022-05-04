@@ -1,3 +1,4 @@
+
 #4593 - Muang Xay
 
 latent_trade_goods = {

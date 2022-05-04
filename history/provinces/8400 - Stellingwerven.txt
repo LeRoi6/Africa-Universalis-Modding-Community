@@ -1,0 +1,37 @@
+#8400 - Stellingwerven
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Wolvega"
+is_city = yes
+owner = FRI
+controller = FRI
+
+#Demographics
+culture = lower_saxon
+religion = catholic
+
+#Development and Trade
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = naval_supplies
+
+#Cores and Occupation (Alphabetical after current)
+add_core = FRI
+
+#Other Political
+hre = yes
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Histories 

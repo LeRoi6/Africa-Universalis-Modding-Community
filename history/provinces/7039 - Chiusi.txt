@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = CUI
@@ -26,8 +27,19 @@ discovered_by = eastern
   controller = SIE
   add_core = SIE
  }
-#Second Shattering not used
+#Second Shattering
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	owner = CUI
+	controller = CUI
+	remove_core = SIE
+}
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	owner = SIE
+	controller = SIE
+	add_core = SIE
+}
 
+#1444 onwards
 1495.1.1 = { hre = no }
 1531.1.1 = { controller = SPA owner = SPA add_core = SPA }
 1552.1.1 = { controller = FRA owner = FRA add_core = FRA }

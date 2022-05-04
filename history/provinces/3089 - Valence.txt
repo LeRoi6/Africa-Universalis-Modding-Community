@@ -1,3 +1,4 @@
+ 
 #3089 - Valence
 #Region - France
 #Area - Savoy
@@ -22,6 +23,20 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = FRA
+	owner = DAU
+	controller = DAU
+	add_local_autonomy = -35			#Added to represent relative autonomy until 1457
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = FRA
+	owner = FRA
+	controller = FRA
+	add_local_autonomy = 35			#Added to represent relative autonomy until 1457
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1446.9.27 = { revolt = { type = pretender_rebels size = 1 leader = "Louis" } controller = REB } # Dauphiné is ruled as a separate kingdom by Louis
 1457.1.1 = { add_local_autonomy = -35 }
 1461.7.22 = { revolt = {} controller = FRA } # Louis is proclaimed king of France

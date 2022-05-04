@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = NAP
@@ -44,14 +45,16 @@ discovered_by = eastern
 	controller = NAP 
 } # Alfonso V wins the war and Naples united with Aragon in a Personal Union under the Crown of Aragon
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	owner = SIC
-	controller = SIC
+	owner = SRA
+	controller = SRA
+	add_core = SRA
 	remove_core = NAP
 }
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	owner = NAP
 	controller = NAP
 	add_core = NAP
+	remove_core = SRA
 }
 1494.1.1 = { 
 	add_core = FRA 

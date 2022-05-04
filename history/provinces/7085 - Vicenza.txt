@@ -1,3 +1,4 @@
+ 
 #BT Italy reoverhaul
 
 owner = PDV #controlled by Padua since 1266
@@ -52,16 +53,16 @@ discovered_by = eastern
 1433.1.1 = { hre = no } # Treaty between Doge Francesco Foscari and Emperor Sigismund of the HRE
 
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	owner = PDV
-	controller = PDV
-	add_core = PDV
+	owner = VCZ
+	controller = VCZ
+	add_core = VCZ
 	remove_core = VEN
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	owner = VEN
 	controller = VEN
 	add_core = VEN
-	remove_core = PDV
+	remove_core = VCZ
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #Second performance start unused
 

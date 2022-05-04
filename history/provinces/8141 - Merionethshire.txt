@@ -1,3 +1,4 @@
+
 #8141 - Merioneth
 #Area - Gwynedd
 #Region - Britain
@@ -35,6 +36,8 @@ discovered_by = ottoman
 discovered_by = eastern
 
 #Histories
+
+#2nd Shattering unused.
 
 1444.11.16 = { #BT Performance Start Begin
 	owner = ENG

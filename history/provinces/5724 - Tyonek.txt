@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus province
 
 culture = denaina
@@ -18,3 +19,4 @@ discovered_by = north_american
 
 
 #
+1444.1.1 = { tribal_owner = YYA }

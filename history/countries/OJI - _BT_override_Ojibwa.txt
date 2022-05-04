@@ -1,0 +1,4 @@
+
+historical_friend = OTT
+historical_friend = POT
+capital = 1001 # Nipigon

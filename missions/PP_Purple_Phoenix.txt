@@ -356,13 +356,13 @@ byz_pp_italian = {
 				}
 				add_permanent_claim = ROOT
 			}
-			montferrat_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			# montferrat_area = {
+				# limit = {
+					# NOT = { owned_by = ROOT	}
+					# NOT = { is_core = ROOT	}
+				# }
+				# add_permanent_claim = ROOT
+			# }
 			upper_emilia_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
@@ -385,7 +385,7 @@ byz_pp_italian = {
 				area = po_valley_area
 				area = north_piedmont_area
 				area = south_piedmont_area
-				area = montferrat_area
+				#area = montferrat_area
 				area = upper_emilia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -411,10 +411,10 @@ byz_pp_italian = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			montferrat_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			# montferrat_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
 			upper_emilia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -481,13 +481,13 @@ byz_pp_maritime = {
 				}
 				add_permanent_claim = ROOT
 			}
-			cagliari_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			# cagliari_area = {
+				# limit = {
+					# NOT = { owned_by = ROOT	}
+					# NOT = { is_core = ROOT	}
+				# }
+				# add_permanent_claim = ROOT
+			# }
 		}
 	}
 	recover_west_islands = {
@@ -500,7 +500,7 @@ byz_pp_maritime = {
 				area = corsica_sardinia_area
 				area = sardinia_area
 				area = baleares_area
-				area = cagliari_area
+				#area = cagliari_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -517,10 +517,10 @@ byz_pp_maritime = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			cagliari_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			# cagliari_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
 		}
 		effect = {
 			tripolitania_area = {
@@ -584,27 +584,27 @@ byz_pp_maritime = {
 				}
 				add_permanent_claim = ROOT
 			}
-			east_aures_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			constantine_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			west_aures_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			# east_aures_area = {
+				# limit = {
+					# NOT = { owned_by = ROOT	}
+					# NOT = { is_core = ROOT	}
+				# }
+				# add_permanent_claim = ROOT
+			# }
+			# constantine_area = {
+				# limit = {
+					# NOT = { owned_by = ROOT	}
+					# NOT = { is_core = ROOT	}
+				# }
+				# add_permanent_claim = ROOT
+			# }
+			# west_aures_area = {
+				# limit = {
+					# NOT = { owned_by = ROOT	}
+					# NOT = { is_core = ROOT	}
+				# }
+				# add_permanent_claim = ROOT
+			# }
 		}
 	}
 	
@@ -618,9 +618,9 @@ byz_pp_maritime = {
 				area = tunisia_area
 				area = kabylia_area
 				area = djerba_area
-				area = east_aures_area
-				area = constantine_area
-				area = west_aures_area
+				#area = east_aures_area
+				#area = constantine_area
+				#area = west_aures_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -637,18 +637,18 @@ byz_pp_maritime = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			east_aures_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			constantine_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			west_aures_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			# east_aures_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+			# constantine_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+			# west_aures_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
 		}
 		effect = {
 			lower_andalucia_area = {

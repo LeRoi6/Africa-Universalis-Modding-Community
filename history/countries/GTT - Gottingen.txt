@@ -1,0 +1,32 @@
+#GTT - Gottingen
+
+#Political Situation
+capital = 4773
+fixed_capital = 4773 #Cannot move capital away from this province & no power cost to move to it
+
+#Government
+government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+
+#Demographics
+primary_culture = lower_saxon
+religion = catholic
+
+#Tech and Military
+
+#History
+technology_group = western
+
+#1427.1.1 = {
+#	monarch = {
+#		name = "Otto II the One-Eyed"
+#		dynasty = "von Welf"
+#		birth_date = 1380.1.1
+#		dip = 3
+#		adm = 2
+#		mil = 4
+#	}
+#	clear_scripted_personalities = yes
+#	add_ruler_personality = infertile_personality
+#}

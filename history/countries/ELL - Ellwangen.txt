@@ -1,0 +1,28 @@
+#ELL - Ellwangen
+
+#Political Situation
+capital = 8437
+fixed_capital = 8437
+
+#Government
+government_rank = 1
+government = theocracy
+add_government_reform = imperial_abbey_reform
+
+#Demographics
+primary_culture = franconian
+religion = catholic
+
+#Tech and Military
+technology_group = western
+
+#History
+1443.1.1 = {
+	monarch = {
+		name = "Johann von Hurnheim"
+		birth_date = 1400.1.1
+		adm = 5#reformed from monastery to abbey
+		dip = 3
+		mil = 1
+	}
+}

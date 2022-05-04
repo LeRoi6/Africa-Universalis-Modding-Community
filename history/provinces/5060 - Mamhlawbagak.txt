@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus province
 
 culture = laurentian					# 
@@ -60,7 +61,7 @@ discovered_by = north_american
 } # Treaty of Paris - With the departure of their French allies, the Abenakis position of former semi-protectorates becomes untenable here and the land effctively defaults to Britain
 
 1779.1.1 = {
-	culture = canadien
+	culture = quebecois
 	religion = catholic
 }	#First European presence Jean-Baptiste Nolain
 

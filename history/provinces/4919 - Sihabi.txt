@@ -1,0 +1,20 @@
+ 
+# ex 5624
+
+culture = nakota
+religion = totemism
+capital = "Qu'appelle" # BT; "Sihabi"; BT placeholder
+hre = no
+base_tax = 1 # BT; 3
+base_production = 1 # BT; 2
+base_manpower = 1
+trade_goods = unknown
+native_size = 10 # BT; 5
+native_ferocity = 3 # BT; 1
+native_hostileness = 5 # BT; 6
+
+discovered_by = north_american
+
+
+
+1444.1.1 = { tribal_owner = ASI }

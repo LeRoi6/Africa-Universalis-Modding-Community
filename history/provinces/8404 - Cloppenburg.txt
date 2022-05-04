@@ -1,0 +1,37 @@
+#8404 - Cloppenburg
+#Area - 
+#Region - 
+
+#Core Details
+capital = "Cloppenburg"
+is_city = yes
+owner = MUN
+controller = MUN
+
+#Demographics
+culture = lower_saxon
+religion = catholic
+
+#Development and Trade
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = livestock
+
+#Cores and Occupation (Alphabetical after current)
+add_core = MUN
+
+#Other Political
+hre = yes
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Histories 

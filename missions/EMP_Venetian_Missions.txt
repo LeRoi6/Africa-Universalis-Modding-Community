@@ -139,12 +139,55 @@ emp_ven_slot_2 = {
 		position = 3
 		required_missions = { emp_ven_patronize_the_scuole_grandi }
 		
+		provinces_to_highlight = {
+			province_id = 112
+			OR = {
+				NOT = { is_core = ROOT }
+				NOT = { owned_by = ROOT }
+			}
+		}
+		
 		trigger = {
 			treasury = 3000
 			legitimacy_equivalent = 90
+			owns_core_province = 112
 		}
 		effect = {
 			add_prestige = 50
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				if = {
+					limit = {
+						112 = {
+							NOT = {
+								has_great_project = {
+									type = doges_palace
+									tier = 3
+								}
+							}
+						}
+					}
+					112 = {
+						add_great_project_tier = {
+							type = doges_palace
+							tier = 1
+						}
+					}
+					add_treasury = -3000
+				}
+				else =  {
+					112 = {
+						add_base_tax = 2
+					}
+				}
+			}
+			else = {
+				112 = {
+					add_base_tax = 2
+				}
+			}
 		}
 	}
 	
@@ -386,13 +429,6 @@ emp_ven_slot_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			trentino_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 	
@@ -401,19 +437,12 @@ emp_ven_slot_3 = {
 		position = 5
 		required_missions = { emp_ven_north_italian_rivals }
 		
-		provinces_to_highlight = {
-			OR = {	
-				area = tirol_area
-				area = trentino_area 
-			}
+		provinces_to_highlight = {	
+			area = tirol_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			tirol_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			trentino_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

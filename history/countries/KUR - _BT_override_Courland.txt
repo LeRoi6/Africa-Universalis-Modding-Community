@@ -1,0 +1,21 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+add_accepted_culture = latvian
+capital = 3227
+
+1425.1.1 = {
+	monarch = {
+		name = "Johann IV Tiergart"
+		birth_date = 1380.1.1
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1561.11.27 = { 			#Date one day early, just because I don't feel like testing what same-day entries do in override at the moment.
+	government = monarchy
+	add_government_reform = feudalism_reform 
+	religion = protestant 
+	capital = 1935 
+}

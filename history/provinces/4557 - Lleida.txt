@@ -1,3 +1,4 @@
+ 
 
 owner = ARA		# Alfons V of Aragon
 controller = ARA
@@ -18,6 +19,18 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = ARA
+	owner = CAT
+	controller = CAT
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = ARA
+	owner = ARA
+	controller = ARA
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1516.1.23 = {	controller = SPA
 	owner = SPA
 	add_core = SPA

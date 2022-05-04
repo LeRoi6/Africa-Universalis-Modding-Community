@@ -1,0 +1,186 @@
+
+historical_friend = BRI			#Burgundy allied several times with Brittany, often secretly, to counter France. Will probably need to be removed due the 1291 start date.
+national_focus = DIP
+
+
+
+#History overhauled by Math.				#5 star work here, my compliments -Draiocht
+
+1272.1.1 = {
+	monarch = {
+		name = "Robert II"
+		dynasty = "de Bourgogne"
+		birth_date = 1248.1.1		#Exact date of his birth is unknown.
+		adm = 4			#He managed the royal funds and occupied prestigious titles at the French court.
+		dip = 4			#A good diplomat, he served the French king during negociations with Castile, England or Rome.
+		mil = 3			#Good warchief, he helped the French king during the Sicilian Vespers and other revolts in France.
+	}
+	add_ruler_personality = silver_tongue_personality
+}
+
+1279.1.1 = {
+	queen = {
+		country_of_origin = FRA
+		name = "Agnès"
+		dynasty = "Capet"
+		birth_date = 1265.1.1		#Exact date of her birth is unknown.
+		death_date = 1325.12.19
+		female = yes
+		adm = 2			#Nothing particular.
+		dip = 2			#Nothing particular.
+		mil = 2			#Nothing particular.
+	}
+}
+
+1294.1.1 = {
+	heir = {
+		name = "Hugues"
+		monarch_name = "Hugues V"
+		dynasty = "de Bourgogne"
+		birth_date = 1294.1.1		#Exact date of his birth is unknown.
+		death_date = 1315.5.9
+		claim = 95
+		adm = 2			#Nothing particular.
+		dip = 2			#Nothing particular.
+		mil = 3			#It seems that he was a good knight.
+	}
+}
+
+1306.3.21 = {
+	monarch = {
+		name = "Hugues V"
+		dynasty = "de Bourgogne"
+		birth_date = 1294.1.1		#Exact date of his birth is unknown.
+		adm = 2			#Nothing particular.
+		dip = 2			#Nothing particular.
+		mil = 3			#It seems that he was a good knight.
+	}
+}
+
+1295.1.1 = {
+	heir = {
+		name = "Eudes"
+		monarch_name = "Eudes IV"
+		dynasty = "de Bourgogne"
+		birth_date = 1295.1.1		#Exact date of his birth is unknown.
+		death_date = 1349.4.3
+		claim = 95
+		adm = 1			#He didn't manage to placate the crisis in Artois.
+		dip = 2			#Nothing particular.
+		mil = 2			#He participated to some battles.
+	}
+}
+
+1315.5.9 = {
+	monarch = {
+		name = "Eudes IV"
+		dynasty = "de Bourgogne"
+		birth_date = 1295.1.1		#Exact date of his birth is unknown.
+		adm = 2			#Nothing particular.
+		dip = 2			#Nothing particular.
+		mil = 3			#It seems that he was a good knight.
+	}
+}
+
+1318.6.18 = {
+	queen = {
+		country_of_origin = FRA
+		name = "Jeanne"
+		dynasty = "Capet"
+		birth_date = 1308.5.1
+		death_date = 1347.8.10
+		female = yes
+		adm = 2			#Nothing particular.
+		dip = 2			#Nothing particular.
+		mil = 2			#Nothing particular.
+	}
+}
+
+1349.4.3 = {
+	monarch = {
+		name = "Philippe I"
+		dynasty = "de Bourgogne"
+		birth_date = 1346.1.1 		#Exact date of his birth is unknown.
+		adm = 1 		#He never reached his majority.
+		dip = 1 		#He never reached his majority.
+		mil = 1			#He never reached his majority.
+	}
+}
+
+#Philippe died without any heir which leads to the annexion of the duchy by Jean II, king of France.
+
+1363.9.6 = {
+	monarch = {
+		name = "Philippe II"
+		dynasty = "de Bourgogne"
+		birth_date = 1342.1.17
+		adm = 4			#A really good manager of its numerous and scattered territories to which he brought wealth (especially to Flanders). 
+		dip = 4			#He was a great diplomat and so managed to expand its territories especially through marriages. This is the birth of the Burgundian State.
+		mil = 4			#A good warchief, nicknamed the 'Bold', he participated in numerous battles with the French king.
+		leader = { name = "Philippe II"   	type = general	fire = 1	shock = 2	manuever = 3	siege = 2 }
+	}
+	add_ruler_personality = charismatic_negotiator_personality		#An expansion based on diplomacy and marriages.
+}
+
+1369.6.19 = {
+	queen = {
+		country_of_origin = FLA
+		name = "Marguerite"
+		dynasty = "de Dampierre"
+		birth_date = 1350.4.13
+		death_date = 1405.3.16
+		female = yes
+		adm = 2			#Nothing particular.
+		dip = 2			#Nothing particular.
+		mil = 2			#Nothing particular.
+	}
+}
+
+1371.5.28 = {
+	heir = {
+		name = "Jean"
+		monarch_name = "Jean I"
+		dynasty = "de Bourgogne"
+		birth_date = 1371.5.28
+		death_date = 1419.9.10
+		claim = 95
+		dip = 2			#
+		adm = 2			#
+		mil = 1			#
+	}
+}
+
+1404.1.1 = { }			#Don't actually know, but I'm hoping against hope this disables the wrong-date vanilla entry. I should test someday
+
+1404.4.27 = {
+	monarch = {
+		name = "Jean I"
+		dynasty = "de Bourgogne"
+		birth_date = 1371.5.28
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+	queen = {
+		country_of_origin = BAV
+		name = "Margarete"
+		dynasty = "von Wittelsbach"
+		birth_date = 1363.1.1		#Exact date of her birth is unknown.
+		death_date = 1424.1.24
+		female = yes
+		adm = 2			#Nothing particular.
+		dip = 2			#Nothing particular.
+		mil = 2			#Nothing particular.
+	}
+	heir = {
+		name = "Philippe"
+		monarch_name = "Philippe III"
+		dynasty = "de Bourgogne"
+		birth_date = 1396.7.31
+		death_date = 1467.6.15
+		claim = 95
+		dip = 5
+		adm = 5
+		mil = 5
+	}
+}

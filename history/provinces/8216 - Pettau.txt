@@ -1,3 +1,4 @@
+
 #8216 - Pettau
 #Area - Carniola
 #Region - South Germany
@@ -9,7 +10,7 @@ owner = SLZ
 controller = SLZ
 
 #Demographics
-culture = austrian
+culture = slovene
 religion = catholic
 
 #Development and Trade
@@ -20,6 +21,7 @@ trade_goods = cloth
 
 #Cores and Occupation (Alphabetical after current)
 add_core = SLZ
+add_core = STY
 
 #Other Political
 hre = yes
@@ -29,11 +31,11 @@ hre = yes
 #Special Modifiers
 
 #Discoveries
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

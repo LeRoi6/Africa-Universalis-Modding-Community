@@ -1,0 +1,22 @@
+ 
+# ex 8579
+
+owner = PAT
+controller = PAT
+add_core = PAT
+culture = malayan
+religion = sunni
+capital = "Gerik"
+is_city = yes
+hre = no
+base_tax = 2
+base_production = 3 # BT; 2
+base_manpower = 2
+trade_goods = tropical_wood
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1516.1.1 = { discovered_by = POR } # Godinho de Eredia

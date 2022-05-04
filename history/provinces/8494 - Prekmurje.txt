@@ -1,0 +1,42 @@
+#8494 - Prekmurje/Vendvidék
+#Area - 
+#Region - Carpathia
+
+#Core Details
+capital = "Muraszombat" #Murska Sobota
+is_city = yes
+owner = HUN
+controller = HUN
+
+#Demographics
+culture = slovene
+religion = catholic
+
+#Development and Trade
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = livestock
+
+#Cores and Occupation (Alphabetical after current)
+add_core = HUN
+
+#Other Political
+hre = no
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Histories

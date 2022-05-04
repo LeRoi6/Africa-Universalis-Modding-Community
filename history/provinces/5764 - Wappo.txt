@@ -1,3 +1,4 @@
+ 
 # No previous file for Beyond Typus province
 
 culture = yuki_wappo			#Actually appear the Santa Rose area was controlled by the Bitakomtara, a Pomo people, but giving it to Wappo for the moment. Eventually (after dev doubling) I'll probably fix this situation

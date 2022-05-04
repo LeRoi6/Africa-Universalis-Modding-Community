@@ -1,3 +1,4 @@
+ 
 #Akershus, incl. Oslo (Christiania), Sarpsborg, Tönsberg
 #Region - Scandinavia
 #Area - Eastern Norway
@@ -14,7 +15,7 @@ trade_goods = fish
 base_manpower = 3 
 capital = "Oslo"
 is_city = yes
-fort_15th = no
+fort_15th = yes #Akershus Fortress
 
 extra_cost = 8
 center_of_trade = 1

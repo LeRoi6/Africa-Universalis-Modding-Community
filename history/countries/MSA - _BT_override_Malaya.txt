@@ -1,0 +1,3 @@
+
+primary_culture = javanese
+religion = hinduism

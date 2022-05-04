@@ -1,3 +1,4 @@
+ 
 #Estland, incl. Reval, Hapsal, Weissenstein, Wesenberg and Pernau.
 #Region - Baltic
 #Area - Estonia
@@ -17,17 +18,29 @@ capital = "Reval"
 is_city = yes
 #fort_15th = yes #Fortifications of Reval, Wesenberg, Toompea Castle
 
-discovered_by = KAZ
-discovered_by = CRI
-discovered_by = GOL
-discovered_by = AST
-discovered_by = QAS
+1444.1.1 = { discovered_by = KAZ }
+1444.1.1 = { discovered_by = CRI }
+1444.1.1 = { discovered_by = GOL }
+1444.1.1 = { discovered_by = AST }
+1444.1.1 = { discovered_by = QAS }
 discovered_by = western
 discovered_by = eastern
 
 extra_cost = 10
 center_of_trade = 1
 
+1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = LIV
+	owner = EST
+	controller = EST
+} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = LIV
+	owner = LIV
+	controller = LIV
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+
+#1444 onwards
 1542.1.1 = { religion = protestant} # Unknown date
 1561.1.1 = {
 	owner = SWE

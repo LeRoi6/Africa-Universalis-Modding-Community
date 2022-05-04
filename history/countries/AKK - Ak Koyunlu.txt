@@ -1,9 +1,8 @@
 government = tribal
 add_government_reform = tribal_federation
 primary_culture = turkish
-add_accepted_culture = armenian
 add_accepted_culture = kurdish
-add_accepted_culture = syriac_culture
+add_accepted_culture = armenian
 religion = sunni
 technology_group = muslim
 capital = 418
@@ -50,7 +49,7 @@ religious_school = hanafi_school
 		name = "Cihangir"
 		monarch_name = "Cihangir"
 		dynasty = "Aq Qoyunlu"
-		birth_date = 1424.1.1
+		birth_date = 1414.1.1
 		death_date = 1453.1.1
 		claim = 95
 		adm = 2
@@ -63,7 +62,7 @@ religious_school = hanafi_school
 	monarch = {
 		name = "Cihangir"
 		dynasty = "Aq Qoyunlu"
-		birth_date = 1424.1.1
+		birth_date = 1414.1.1
 		adm = 2
 		dip = 3
 		mil = 2
@@ -101,9 +100,9 @@ religious_school = hanafi_school
 		dynasty = "Aq Qoyunlu"
 		birth_date = 1423.1.6
 		adm = 4
-		dip = 4
-		mil = 5
-		leader = {	name = "Uzun Hasan"            	type = general	fire = 4	shock = 5	manuever = 5	siege = 0}
+		dip = 5
+		mil = 6
+		leader = {	name = "Uzun Hasan"            	type = general	fire = 4	shock = 5	manuever = 5	siege = 0 }
 	}
 	add_ruler_personality = bold_fighter_personality
 	clear_scripted_personalities = yes

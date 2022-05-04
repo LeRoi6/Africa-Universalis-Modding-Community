@@ -1,11 +1,12 @@
+ 
 #BT's Western Europe Overhaul in 12.0
 
-owner = LOR
-controller = LOR
-add_core = LOR
-culture = hessian
+owner = MTZ
+controller = MTZ
+add_core = MTZ
+culture = lorraine_culture
 religion = catholic
-capital = "Sarrebourg"			#or Chateau-Salins
+capital = "Sarrebourg"			
 base_tax = 3
 base_production = 3
 base_manpower = 2

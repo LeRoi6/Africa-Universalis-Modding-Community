@@ -87,4 +87,8 @@ ship_names = {
 	"Rene II Lothringen" Metz
 	Warding Skirmjan
 	Bera Scoc Sekjan
+	"l'Empereur Lothaire" "le Lorraine"
+	"le René II de Lorraine" "le Barrois" "le Metz"
+	"Toul" "le Verdun" "le Warding" "le Skirmjan"
+	"le Bera" "le Scoc" "le Sekjan"
 }

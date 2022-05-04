@@ -1,0 +1,24 @@
+ 
+# ex 8575
+
+owner = LNA
+controller = LNA
+add_core = LNA
+culture = northern_thai
+religion = buddhism
+capital = "Lamphun"
+is_city = yes
+hre = no
+base_tax = 4
+base_production = 4 # BT; 3
+base_manpower = 3
+trade_goods = bt_trade_good_fruit # BT; grain
+
+discovered_by = chinese
+discovered_by = indian
+
+1535.1.1 = { discovered_by = POR }
+1558.4.2 = { add_core = TAU } # Burmese vassal
+1727.1.1 = { unrest = 6 } # Lan Na revolter against Taungu
+1732.1.1 = { unrest = 0 }
+1775.1.1 = { add_core = AYU } # Siamese vassal

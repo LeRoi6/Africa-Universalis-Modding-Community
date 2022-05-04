@@ -1,7 +1,8 @@
 government = monarchy
 add_government_reform = plutocratic_reform
+government_rank = 1
 technology_group = chinese
-primary_culture = ilocano
+primary_culture = filipino
 capital = 2698 #Pangasinan
 religion = mahayana
 government_rank = 2

@@ -1,3 +1,4 @@
+ 
 #3198 - Saarland
 #Region - Germany
 #Area - Lower Rhineland
@@ -11,9 +12,9 @@ culture = hessian
 religion = catholic
 trade_goods = iron
 owner = SAA
-base_tax = 6 
-base_production = 6			#Minor province, compared to its many lofty neighbours, but still a rich region of the France-Germany border
-base_manpower = 4 
+base_tax = 3
+base_production = 2			#Minor province, compared to its many lofty neighbours, but still a rich region of the France-Germany border
+base_manpower = 2
 is_city = yes
 controller = SAA
 add_core = SAA
