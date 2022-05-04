@@ -1,0 +1,40 @@
+#Contributions from a wide range, including Draiocht, JP, 
+#(JP) Norse-Gael, will overwrite gaelic.txt. Mostly will use Scots Gaelic names, though also seperate Manx/Norse-Gaelic where it applies
+#(JP) I have reorganised and cleaned up all the prior Irish/Gaelic naming to try and make it more legible, consistant and keep it easier to edit in future
+#(JP) I make absolutely 0 claim to speak, understand, or even comprehend celtic languages. Please correct me when I am wrong!
+
+#Scotland
+248 = { "Lodainn" "Dùn Èideann" }
+249 = { "Inbhir Àir" "Inbhir Àir" }
+250 = { "Peairt" "Peairt" }
+251 = { "Obar Dheathain" "Obar Dheathain" }
+252 = { "Inbhir Nis" "Inbhir Nis" }
+253 = { "Eileanan Siar" "Steòrnabhagh" }
+3008 = { "Gall-Ghàidhealaibh" "Baile na h-Ùige" }
+3019 = { "Srath Chluaidh" "Lannraig" } #(JP) Later "Glasgu" or modern "Glaschu"
+3137 = { "Rois" "Inbhir Pheofharain" }
+3138 = { "Athall" "Blàr Athall" }
+
+#Ireland
+372 = { "Tìr Eoghain" "Dùn Geanainn" }
+373 = { "Divlyn" "Divlyn" }
+374 = { "Laighin" "Fearna" }
+375 = { "Tuamhain" "Inis Cluana Ràmhfhada" }
+376 = { "Baile na Gailbhinn" "Baile na Gailbhinn" }
+3005 = { "Ard Mhacha" "Ard Mhacha" }
+3006 = { "Beul Feirste" "Beul Feirste" }
+4380 = { "Tìr Chonaill" "Dùn na nGall" }
+
+#Scandinavia
+369 = { "Arcaibh" "Bàgh na h-Eaglaise" }
+1978 = { "Sealtainn" "Liùrabhaig" } #(JP) Archaically "Innse Catt"
+1979 = { "Na Scigirì" "Tùrshabhn" }
+
+#Alba
+4365 = "Mannin"
+4110 = "Gallaibh"
+4363 = "Earra-Ghàidheal"
+4362 = "Dùn Phris"
+4361 = "Salcraig"
+3139 = "Gobharaidh"
+4364 = "Eileanan Sear"

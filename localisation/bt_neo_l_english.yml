@@ -1,0 +1,15 @@
+﻿l_english:
+ ABBACY:0 "Abbacy"
+ ABBOT:0 "Abbot"
+ ABBOT_fem:0 "Abbess"
+
+ bt_string_ruler_name: "[Root.Monarch.GetName]"
+ bt_string_overlord_name: "[Root.Overlord.Monarch.GetName]"
+
+ #Pompeii monument event
+ bt_monuments.1.title:0 "The Ruins of Pompeii"
+ bt_monuments.1.desc:0 "At long last, and by sheer serendipity, the ruins of the near-mythical Roman city of Pompeii have finally been unearthed! During the excavation of the site of a new summer palace for [Root.BTGetRulerOrOverlordName] near Mount Vesuvius in [121.GetName], the workers discovered stone homes, concrete roads, and casts of humans and animals - all encased in ash! After consulting local historians and experts in Roman history, our presumptions were confirmed: this can be nothing but the ancient Roman city of Pompeii!"
+ bt_monuments.1.a:0 "Incredible!"
+ bt_pompeii_has_been_discovered: "The ruins of Pompeii have been unearthed."
+
+ take_capital_support_rebels_desc:0 "Go to war to help a spawned rebel faction to enforce their demands."

@@ -53,29 +53,11 @@ estate_church =
 		church_power_modifier = -0.2			#BTAddOn changed from -0.25 - estates rebalancing
 		monthly_fervor_increase = -1
 		stability_cost_modifier = 0.33			#BTAddOn changed from 0.1 - estates rebalancing
+		global_unrest = 2
 	}
-	# These do not scale, but only applied in provinces owned by the estate
-#	province_modifier_happy = {
-#		local_missionary_strength = 0.02
-#		local_missionary_maintenance_cost = -0.25
-#		local_tax_modifier = 0.1
-#		#local_unrest = -2			#BTAddOn removed - estates rebalancing
-#	}
-#	province_modifier_neutral = {
-#		local_missionary_strength = 0.01			#BTAddOn new - estates rebalancing
-#		local_missionary_maintenance_cost = -0.10
-#		#local_unrest = -2			#BTAddOn removed - estates rebalancing
-#	}	
-#	province_modifier_angry = {
-#		local_unrest = 5
-#		local_missionary_strength = -0.02			#BTAddOn new - estates rebalancing
-#		local_missionary_maintenance_cost = 0.25			#BTAddOn new - estates rebalancing
-#		local_tax_modifier = -0.1
-#	}
 	
-	#New in 1.30. Seems to be a modifier scaled to the percentage of crown land.
 	land_ownership_modifier = {
-		church_loyalty_modifier = 0.2 #+0.2% loyalty equilibrium per 1% owned land.
+		church_loyalty_modifier = 0.2
 	}
 
 	province_independence_weight = {
@@ -100,7 +82,7 @@ estate_church =
 	
 	# Influence modifiers
 	base_influence = 10
-	influence_modifier = { #Should be a gov reform for Hejaz, imo.
+	influence_modifier = {
 		desc = EST_VAL_SHARIFS
 		trigger = {
 			tag = HED
@@ -218,11 +200,53 @@ estate_church =
 			religion = confucianism
 		}
 	}	
+	custom_name = {
+		desc = estate_kahuna
+		trigger = {
+			capital_scope = {
+				area = northern_polynesia_area
+			}
+			primary_culture = polynesian
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_tohunga
+		trigger = {
+			primary_culture = maori
+			religion = animism
+		}
+	}		
+	custom_name = {
+		desc = estate_taula_otua
+		trigger = {
+			tag = TOG
+			religion = animism
+		}
+	}	
+	custom_name = {
+		desc = estate_taula_aitu
+		trigger = {
+			tag = SAM
+			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_bete
+		trigger = {
+			OR = {
+				tag = LGN # changed from LAI
+				tag = VIL
+				tag = VNL
+			}
+			religion = animism
+		}
+	}
 
 	contributes_to_curia_treasury = yes
 	color = { 200 150 0 }
 
-	privileges = { #Now edited in separate files
+	privileges = {
 		estate_church_land_rights
 		estate_church_papal_emissary
 		estate_church_religious_state
@@ -233,14 +257,26 @@ estate_church =
 		estate_church_inwards_perfection
 		estate_church_enforced_one_faith
 		estate_church_for_the_faith
+		estate_church_karma_temples
+		estate_church_influence_temples
+		estate_church_brahmins_at_court
+		estate_church_lao_animism
 		estate_church_monopoly_of_incense
 		estate_church_monopoly_of_wool
 		estate_church_monopoly_of_wine
 		estate_church_monopoly_of_slaves
 		estate_church_statutory_rights
+		estate_church_yakobs_churches
+		estate_church_one_faith_one_culture
+		estate_church_religious_diplomats
+		estate_church_heir_shrine
+		estate_church_embrace_singluar_cult
+		estate_church_flexible_cults
+		estate_church_scholar_connections
+		estate_church_integrated_school
 	}
 
-	agendas = { #Now edited in separate files
+	agendas = {
 		estate_church_develop_x
 		estate_church_build_temple_in_y
 		estate_church_build_university_in_y

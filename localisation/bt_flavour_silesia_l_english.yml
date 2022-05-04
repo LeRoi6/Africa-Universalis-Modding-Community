@@ -1,0 +1,28 @@
+﻿l_english:
+ # by schockocraft
+
+ BtFlavourSilesia.1.title:0 "The Duchy of Oswiecim and the Crown of Bohemia"
+ BtFlavourSilesia.1.desc:0 "While Silesia was for long time an integral part to the Polish Crown, it was lost to Bohemia after the Fragmentation of Poland and the following Treaty of Trentschin in 1335, after which the silesian duchies were considered subjects of the Bohemian Crown. An exception to this are the duchies of Oswiecim and Zator, which while de facto ruled by Bohemia aswell, are not undisputably a part of the treaty. \n\nThat means, that with the right approach we might return to the Polish Crown."
+ BtFlavourSilesia.1.switch:0 "Pledge Allegiance to the Polish"
+ BtFlavourSilesia.1.stay:0 "We stand with the Bohemians"
+
+ #BtFlavourSilesia.2 is copy of BtFlavourSilesia.1 but for PLC
+
+ BtFlavourSilesia.3.title:0 "The Duchy of Oswiecim and the Crown of Poland"
+ BtFlavourSilesia.3.desc:0 "While Silesia was for long time an integral part to the Polish Crown, we managed to aquire it after the Fragmentation of Poland and the following Treaty of Trentschin in 1335, after which the silesian duchies were considered subjects of the Bohemian Crown. An exception to this are the duchies of Oswiecim and Zator, which while de facto ruled by us aswell, are not undisputably a part of the treaty.\n\nThis is what the scheming Duke of Oswiecim is using now as a reason to defect to the Polish Crown."
+ BtFlavourSilesia.3.accept:0 "We cannot afford war just because of this"
+ BtFlavourSilesia.3.intervene:0 "We cannot let that slip"
+ BtFlavourSilesia.3.intervene_tooltip:0 "£diplomacy_action_covert£ §O[target_ASC_polish_crown.GetName] will be warned to not interfere in this matter§!"
+
+ BtFlavourSilesia.4.title:0 "The Duchy of Oswiecim"
+ BtFlavourSilesia.4.desc:0 "While Silesia was for long time an integral part to the Polish Crown, it was lost to Bohemia after the Fragmentation of Poland and the following Treaty of Trentschin in 1335, after which the silesian duchies were considered subjects of the Bohemian Crown. An exception to this are the duchies of Oswiecim and Zator, which while de facto ruled by Bohemia aswell, are not undisputably a part of the treaty.\n\nAgreeing to this, the Duke of Oswiecim has proposed to become our vassal instead, returning our rightful land to us\n\n\nWe are also told, that the Bohemians seem to not care at all"
+ BtFlavourSilesia.4.desc_warned:0 "While Silesia was for long time an integral part to the Polish Crown, it was lost to Bohemia after the Fragmentation of Poland and the following Treaty of Trentschin in 1335, after which the silesian duchies were considered subjects of the Bohemian Crown. An exception to this are the duchies of Oswiecim and Zator, which while de facto ruled by Bohemia aswell, are not undisputably a part of the treaty.\n\nAgreeing to this, the Duke of Oswiecim has proposed to become our vassal instead, returning our rightful land to us\n\n\nWe are also told, that the Bohemians strongly advise us to not do anything stupid..."
+ BtFlavourSilesia.4.a:0 "Welcome them to our realm"
+ BtFlavourSilesia.4.b:0 "They are more trouble then gain"
+
+ # opinion modifiers
+ bt_sc_loyal_subject:0 "Loyal Subject"
+ bt_sc_disloyal_subject:0 "Disloyal Subject"
+ bt_sc_rejected_subject:0 "Rejected Vassalage"
+ bt_sc_took_disloyal_subject:0 "Stole Disloyal Subject"
+ bt_sc_reject_disloyal_subject:0 "Rejected Disloyal Subject"

@@ -21,6 +21,7 @@ mount_athos_modifier_orthodox = {
 		owner = {
 			religion = orthodox
 		}
+		NOT = { has_dlc = "Leviathan" } #Gets replaced by monument
 	}
 
 	trigger = {
@@ -65,6 +66,7 @@ ecumenical_patriarch_modifier_orthodox = {
 		owner = {
 			religion = orthodox
 		}
+		NOT = { has_dlc = "Leviathan" } #Gets replaced by monument
 	}
 
 	trigger = {

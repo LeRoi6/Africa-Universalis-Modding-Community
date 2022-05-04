@@ -1,0 +1,168 @@
+#Contributions from a wide range, including Arga and JP
+#(JP) Illyrian, basically only Albanian. Will technically be overwritten if Albanian is (for whatever reason) split, however unlikely
+#(JP) I have reorganised and cleaned up all the prior Albania/Illyrian naming to try and make it more legible, consistant and keep it easier to edit in future
+
+#Balkans
+137 = { "Ragusë" "Ragusë" }
+138 = { "Podogoricë" "Podogoricë" }
+142 = { "Korfuz" "Korfuz" }
+143 = { "Berat" "Berat" }
+144 = { "Janinë" "Janinë" }
+146 = { "Athinë" "Athinë" }
+147 = { "Larisë" "Larisë" }
+148 = { "Selonik" "Selonik" }
+149 = { "Adrianopojë" "Adrianopojë" }
+151 = { "Konstantinopojë" "Konstantinopojë" }
+1765 = { "Sofje" "Sofje" }
+1766 = { "Artanë" "Artanë" } #(JP) or "Novobërdë"
+1831 = { "Nikshiqi" "Nikshiqi" }
+1853 = { "Kostur" "Kostur" }
+2750 = { "Filipopojë" "Filipopojë" }
+3001 = { "Shkup" "Shkup" }
+3002 = { "Sarajevë" "Sarajevë" } #(JP) Technically "Lasva"/"Visoko", but in the province
+3164 = { "Konstancë" "Konstancë" }
+3174 = { "Tërkallë" "Tërkallë" }
+3175 = { "Vrachori" "Vrachori" } #(JP) Medieval name
+3177 = { "Thives" "Thives" }
+3178 = { "Patër" "Patër" }
+3181 = { "Vlorë" "Vlorë" }
+3182 = { "Shkodër" "Shkodër" }
+3183 = { "Manastir" "Manastir" }
+3185 = { "Krushevë" "Krushevë" }
+4698 = { "Qefalinia" "Qefalinia" }
+4699 = { "Nartë" "Nartë" }
+4174 = { "Durrës" "Durrës" }
+4175 = { "Lezhë" "Lezhë" }
+4239 = { "Beograd" "Beograd" }
+4750 = { "Krujë" "Krujë" }
+4752 = { "Rieka" "Rieka" }
+4753 = { "Zara" "Zara" }
+4754 = { "Kotorr" "Kotorr" }
+4780 = { "Ohër" "Ohër" }
+5094 = { "Kukës" "Kukës" }
+7102 = { "Tripolicë" "Tripolicë" }
+7108 = { "Batrajik" "Batrajik" }
+7111 = { "Livadhja" "Livadhja" }
+7112 = { "Epahtoi" "Epahtoi" }
+7113 = { "Zeitunë" "Zeitunë" }
+7114 = { "Salunë" "Salunë" }
+#7115 Amfilochia
+7117 = { "Koloz" "Koloz" }
+7118 = { "Fërslja" "Fërsalja" }
+7122 = { "Verjia" "Verija" }
+7123 = { "Vodenë" "Vodenë" }
+7124 = { "Kozhani" "Kozhani" } #(JP) "Kozani", technically should be named after "Servia"
+7125 = { "Ajamaura" "Ajamaura" }
+7126 = { "Zantë" "Zantë" }
+7127 = { "Kavallë" "Kavallë" }
+7132 = { "Pargë" "Pargë" }
+7133 = { "Meçovë" "Meçovë" }
+7140 = { "Butrinti" "Butrinti" }
+7141 = { "Gjirokastër" "Gjirokastër" }
+7142 = { "Korçë" "Korçë" }
+7143 = { "Myzeqeja" "Fier" }
+7144 = { "Peshkopi" "Peshkopi" }
+7146 = { "Përlep" "Përlep" }
+7147 = { "Kratovë" "Kratovë" }
+7148 = { "Shtip" "Shtip" }
+7700 = { "Prizren" "Prizren" }
+7701 = { "Pejë" "Pejë" } #(JP) Or "Peja"?
+7702 = { "Zveçan" "Zveçan" }
+7708 = { "Tivar" "Tivar" }
+7709 = { "Plevlë" "Plevlë" }
+7710 = { "Beranë" "Beranë" }
+7712 = { "Arsa" "Arsa" }
+7715 = { "Negotinë" "Negotinë" }
+7732 = { "Shibeniku" "Shibeniku" }
+
+#Italy
+101 = { "Gjenovë" "Gjenovë" }
+112 = { "Vendik" "Vendik" }
+118 = { "Romë" "Romë" }
+120 = { "Lakvila" "Lakvila" }
+121 = { "Napoli" "Napoli" }
+2986 = { "Kaljari" "Kaljari" }
+4730 = { "Bolonja" "Bolonja" }
+4738 = { "Trieshtë" "Trieshtë" }
+7037 = { "Ferma" "Ferma" }
+7039 = { "Qefsi" "Qefsi" }
+
+#South Germany
+65 = { "Mynih" "Mynih" }
+129 = { "Lubjanë" "Lubjanë" }
+134 = { "Vjena" "Vjena" }
+165 = { "Berna" "Berna" }
+266 = { "Pragë" "Pragë" }
+1867 = { "Lozana" "Lozana" }
+1869 = { "Zyrih" "Zyrih" }
+1873 = { "Kur" "Kur" }
+4712 = { "Konstancë" "Konstancë" }
+4720 = { "Gjeneva" "Gjeneva" }
+8489 = { "Luzern" "Luzern" }
+
+#North Germany
+78 = { "Majnz" "Majnz" }
+80 = { "Triri" "Triri" }
+85 = { "Këln" "Këln" }
+
+#Low Countries
+90 = { "Bryzh" "Bryzh" }
+92 = { "Brukseli" "Brukseli" }
+4383 = { "Hagë" "Hagë" }
+
+#France
+
+#Iberia
+1749 = { "Kadiz" "Kadiz" }
+
+#Britain
+236 = { "Londër" "Londër" }
+
+#Scandinavia
+12 = { "Kopenhagë" "Kopenhagë" }
+
+#Baltic
+36 = { "Talin" "Talin" }
+
+#Poland
+257 = { "Varshavë" "Varshavë" }
+
+#Russia
+33 = { "Shën-Pjetërburgu" "Shën-Pjetërburgu" }
+295 = { "Moska" "Moska" }
+
+#Levant
+378 = { "Tripolicë" "Tripolicë" }
+379 = { "Jeruzalem" "Jeruzalem" }
+5139 = { "Nikozia" "Nikozia" }
+5205 = { "Bejrut" "Bejrut" }
+
+#Egypt
+361 = { "Kajro" "Kajro" }
+
+#Maghreb
+354 = { "Tripolicë" "Tripolicë" }
+
+#North China 
+1816 = { "Pekin" "Pekin" }
+
+#Canada
+2585 = { "Otava" "Otava" }
+
+#Unsorted and Uncapitalised
+284 = "Perekop" #not albanian
+492 = "Port-i-Pasur"
+496 = "Artë"
+500 = "Shenjti Vinsent" #not sure
+968 = "Sallmona"
+970 = "Kështjellë e Re"
+987 = "Shenjt Katarina"
+2013 = "Liman"
+2536 = "Majami"
+2561 = "Moçal"
+2587 = "Malet Blu'"
+3244 = "Feodossija" #not albanian
+5580 = "Liqeni i Shpirtit"
+5581 = "Duhania"
+5584 = "Kryq"
+7190 = "Jaltës"

@@ -1,0 +1,74 @@
+
+
+bt_sc_pirate_daimyo_government = {
+	rank = {
+		1 = PIRATE_DAIMYO
+	}
+	
+	ruler_male = {
+		1 = daimyo_ruler
+	}
+	
+	ruler_female = {
+		1 = daimyo_ruler
+	}
+	
+	trigger = {
+		OR = {
+			has_reform = pirate_republic_reform
+			has_reform = pirate_king_reform
+			has_reform = war_against_the_world_doctrine_reform
+			has_reform = black_market_consortium_reform
+		}
+		is_subject_of_type = daimyo_vassal
+	}
+}
+
+bt_sc_gov_daimyo = {
+	rank = {
+		1 = DAIMYO
+	}
+	
+	ruler_male = {
+		1 = daimyo_ruler
+	}
+	
+	ruler_female = {
+		1 = daimyo_ruler
+	}
+	
+	trigger = {
+		OR = {
+			has_reform = daimyo
+			is_subject_of_type = daimyo_vassal
+		}
+		overlord = {
+			has_reform = shogunate
+		}
+	}
+}
+
+bt_sc_gov_indep_daimyo = {
+	rank = {
+		1 = INDEP_DAIMYO
+		2 = GRAND_INDEP_DAIMYO
+		3 = GREAT_INDEP_DAIMYO
+	}
+	
+	ruler_male = {
+		1 = daimyo_ruler
+		2 = daimyo_ruler
+		3 = daimyo_ruler
+	}
+	
+	ruler_female = {
+		1 = daimyo_ruler
+		2 = daimyo_ruler
+		3 = daimyo_ruler
+	}
+	
+	trigger = {
+		has_reform = indep_daimyo
+	}
+}
+

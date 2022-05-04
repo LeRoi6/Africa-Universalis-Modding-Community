@@ -1,0 +1,79 @@
+﻿l_german:
+ #Chocolate_railroad.1.name: "Ladislaus Postumus, Herrscher von Ungarn und Österreich" 
+ #Chocolate_railroad.1.desc: "Ladislaus Postumus hatte als Sohn König Alberts eine große Chance, ebenfalls König zu werden, wurde aber erst nach dem Tod seines Vaters geboren. Durch eine Verkettung glücklicher Umstände ist es uns gelungen, Ungarn und Österreich wieder unter einem habsburgischen Herrscher zu vereinen. Doch es ist nicht alles gut, denn der steirische Herzog Friedrich III. erhebt Anspruch auf den größten Teil der österreichischen Länder."
+ #Chocolate_railroad.1.a: "Wir brauchen die österreichischen Länder nicht mehr." 
+ #Chocolate_railroad.1.b: "Wir werden keinen Zoll weichen." 
+ 
+ Chocolate_hab_hun.1.name: "Ende der steirischen Kontrolle über Ladislaus" 
+ Chocolate_hab_hun.1.desc: "Ladislaus Postumus, der Sohn von König Albert, hatte die große Chance, ebenfalls König zu werden. Er wird jedoch von seinem Regenten, dem Erzherzog der Steiermark, festgehalten. Wir müssen seine Rückkehr nach Ungarn fordern."
+ Chocolate_hab_hun.1.a: "Befreit Ladislaus" 
+ Chocolate_hab_hun.1.b: "Gebt der Steiermark ganz Österreich, um sie zufriedenzustellen." 
+ 
+ Chocolate_hab_hun.2.t: "Verrat in Österreich" 
+ Chocolate_hab_hun.2.desc: "Da unser Neffe Ladislaus Postumus in Ungarn zum König gewählt wurde, hat er Österreich rechtmäßig mit übernommen. Es besteht die unmittelbare Gefahr, dass diese Länder an Ungarn fallen."
+ Chocolate_hab_hun.2.a: "Wir können dies nicht zulassen." 
+ 
+ Chocolate_hab_hun.3.t: "Ladislaus Postumus, Herrscher von Ungarn und Österreich" 
+ Chocolate_hab_hun.3.desc: "Ladislaus Postumus hatte als Sohn König Alberts eine große Chance, ebenfalls König zu werden, wurde aber erst nach dem Tod seines Vaters geboren. Durch eine Verkettung glücklicher Umstände ist es uns gelungen, Ungarn und Österreich wieder unter einem habsburgischen Herrscher zu vereinen. Mit Erreichen der Volljährigkeit kann er zum König gekrönt werden."
+ Chocolate_hab_hun.3.a: "Krönt Ladislaus zum König" 
+ Chocolate_hab_hun.3.b: "Behaltet Janos Hunyadi." 
+ Chocolate_hab_hun.3.c: ""
+ 
+ Chocolate_hab_hun.4.t: "Unruhen unter den Adligen" 
+ Chocolate_hab_hun.4.desc: "Die Adligen sind mit unserer Situation unzufrieden geworden. Sie bevorzugen einen fähigeren Herrscher, der die Kontrolle übernimmt. Ein nahe gelegener habsburgischer Herrscher könnte vielleicht ein besserer Herrscher sein. Er sollte den Thron besteigen und die Länder verteidigen."
+ Chocolate_hab_hun.4.a: "Wir müssen ihre Wünsche akzeptieren." 
+ Chocolate_hab_hun.4.b: "Wir haben keine Bedenken wegen irgendwelchen Adligen." 
+
+ Chocolate_hab_hun.5.t: "Hunyadis Kinder" 
+ Chocolate_hab_hun.5.desc: "Mit der Krönung von Ladislaus zum König sind die Unruhen noch nicht vorbei. Da Hunyadi immer noch sehr beliebt ist, wäre es am besten, wenn wir seine Kinder loswerden würden."
+ Chocolate_hab_hun.5.a: "Inhaftiert die Kinder"
+ Chocolate_hab_hun.5.b: "Wir müssen sie nicht inhaftieren." 
+
+ Chocolate_hab_hun.500.t: "Michael Szilágyi gewinnt an Boden"
+ Chocolate_hab_hun.500.desc: "Da Michael Szilágyi immer mehr an Boden gewinnt, bleibt nicht viel Zeit für eine Entscheidung: Entweder flieht Ladislaus oder er könnte gefangen genommen und hingerichtet werden."
+ Chocolate_hab_hun.500.a: "Flieht nach Prag!"
+ Chocolate_hab_hun.500.b: "Bleibt und kämpft!"
+
+ Chocolate_hab_hun.6.t: "Tod von Ladislaus"
+ Chocolate_hab_hun.6.desc: "Der junge Ladislaus ist verstorben und sein Berater Georg von Podiebrad wurde von den Ständen zum neuen König gewählt."
+ Chocolate_hab_hun.6.a: "Herrlich!"
+
+ Chocolate_hab_hun.8.t: "Der junge Ladislaus"
+ Chocolate_hab_hun.8.desc: "Ladislaus Postumus, der Sohn von König Albrecht dem Zweiten, wurde kürzlich zum Herrscher in Österreich und Ungarn gekrönt. Er erhebt nach wie vor starke Ansprüche, und da unser Volk noch keinen neuen Herrscher gewählt hat, müssen wir jetzt eine Entscheidung treffen."
+ Chocolate_hab_hun.8.a: "Wählt Ladislaus zum König von Böhmen."
+ Chocolate_hab_hun.8.b: "Georg von Podiebrad ist ein passenderer Herrscher"
+ Chocolate_hab_hun.8.c: "Behaltet die derzeitige Situation bei"
+
+ Chocolate_hab_hun.7.t: "Tod von Ladislaus"
+ Chocolate_hab_hun.7.desc: "Der junge Ladislaus ist verstorben und Friedrichs Bruder Albrecht hat Oberösterreich übernommen. Er erhebt auch Anspruch auf Niederösterreich. Das könnte zu einer sehr brenzligen Situation führen."
+ Chocolate_hab_hun.7.a: "Wir werden uns einige Zeit nehmen, um unsere Optionen abzuwägen."
+ 
+ Chocolate_hab_hun.700.t: "Albrechts Ansprüche auf Österreich"
+ Chocolate_hab_hun.700.desc: "Nach dem Tod von Ladislaus und nachdem Albrecht den größten Teil Österreichs für sich beansprucht hat, müssen wir nun entscheiden, ob wir handeln und dieses Land zurückerobern und die österreichischen Länder wieder vereinen wollen oder nicht."
+ Chocolate_hab_hun.700.a: "Wir müssen Albrecht zwingen, Österreich aufzugeben."
+ Chocolate_hab_hun.700.b: "Einen Krieg können wir uns im Moment nicht leisten."
+ 
+ Chocolate_hab_hun.701.t: "Belagerung von Wien"
+ Chocolate_hab_hun.701.desc: "Da unsere Truppen endlich die Belagerung von Wien gewonnen haben, können wir Friedrich zwingen, diesen Krieg aufzugeben."
+ Chocolate_hab_hun.701.a: "Dies ist ein vernünftiger Frieden."
+ Chocolate_hab_hun.701.b: "Wir müssen den Krieg für einen günstigeren Frieden fortsetzen."
+ 
+ Chocolate_hab_hun.702.t: "Tod von Albrecht"
+ Chocolate_hab_hun.702.desc: "Uns hat die Nachricht erreicht, dass Albrecht verstorben ist. Wir sind der Hauptnutznießer seines Todes und werden den größten Teil seiner Besitztümer erben."
+ Chocolate_hab_hun.702.a: "Wir werden uns nicht mehr mit ihm befassen müssen."
+
+ Chocolate_hab_hun.9.t: "Maximilian ist geboren!"
+ Chocolate_hab_hun.9.desc: "Friedrich ist überglücklich, als er erfährt, dass seine Frau ihm einen Sohn geboren hat."
+ Chocolate_hab_hun.9.a: "Wir werden ihn Maximilian nennen!"
+ Chocolate_hab_hun.9.b: "Unser Bruder Albrecht ist ein besserer Erbe."
+ 
+ Chocolate_hab_hun.10.t: "Königliche Heirat mit Portugal"
+ Chocolate_hab_hun.10.desc: "Friedrich hat noch nicht geheiratet. Dies führt zu Spannungen, da er ohne Heirat keinen rechtmäßigen Erben bekommen kann. Das Land Portugal war uns gegenüber recht freundlich gesinnt, und es wurde vorgeschlagen, Eleonore von Portugal zu heiraten."
+ Chocolate_hab_hun.10.a: "Eleanor wird eine perfekte Ehefrau sein."
+ Chocolate_hab_hun.10.b: "Wir sollten uns nicht an Portugal binden."
+ 
+ Chocolate_hab_hun.99.t: "Tod von Friedrich III."
+ Chocolate_hab_hun.99.desc: "Mit dem Tod von Friedrich III. erbt Albrecht den Thron von Innerösterreich."
+ Chocolate_hab_hun.99.a: "Die Herrschaft in Innerösterreich übernehmen"
+ Chocolate_hab_hun.99.desc: "Wir werden bleiben, wo wir sind."
+ 

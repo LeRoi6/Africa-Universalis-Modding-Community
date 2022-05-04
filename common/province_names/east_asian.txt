@@ -1,0 +1,358 @@
+#Contributions from Arga, Herry Huang
+#(JP) Chinese naming, mostly Mandarin, but often names used under the Ming and Qinq Dynasties.
+#(JP) I have reorganised naming to make it easier to keep on top of it in future
+
+#North China
+687 = { "Nányáng" "Nányáng" }
+691 = { "Jinán" "Jinán" }
+698 = { "Níngxià" "Níngxià" }
+703 = { "Rèhé Sheng" "Chéngdé" }
+707 = { "Yùmén" "Yùmén" }
+708 = { "Ganzhou" "Ganzhou" } #(Arga) Zhangyè
+2136 = { "Xuanhuá" "Xuanhuá" }
+2139 = { "Láizhou" "Láizhou" } #(Arga) under Qing "Dengzhou"
+4223 = { "Ètuokè Qi" "Bayànào'er" } #(Arga) Hatao Banner
+4652 = { "Haichéng" "Anshan" }
+
+#South China
+665 = { "Zhàoqìng" "Zhàoqìng" } #(Arga) shiuhing was cantonese
+667 = { "Guangzhou" "Guangzhou" }
+679 = { "Chéngdu" "Chéngdu" } #(Arga) or Xijing
+1821 = { "Nánjing" "Nánjing" } #Nankin
+2156 = { "Cháozhou" "Cháozhou" } #(Arga) Chaochow was cantonese postal
+2157 = { "Hùizhou" "Hùizhou" } #(Arga) Waichow was cantonese postal
+2158 = { "Sháoguan" "Sháoguan" } #(Arga) shiukwan was cantonese postal
+2159 = { "Léizhou" "Léizhou" } #(Arga) leichow was postal
+2161 = { "Lianzhou" "Lianzhou" } #(Arga) limchow was postal
+2164 = { "Nánníng" "Nánníng" } #(Arga) Namning was mixture between chinese and zhuang
+
+#Xinan
+661 = { "Dàli" "Dàli Shì" } #(Arga) formerly Xiémie
+662 = { "Kunmíng" "Kunmíng" }
+
+#Tibet
+676 = { "Rìkazé" "Rìkazé" }
+677 = { "Lasà" "Lasà" }
+705 = { "Jiégu Zhèn" "Jiégu" }
+706 = { "Qaidam Shamò" "Qaidam Shamò" }
+2130 = { "Línzhi" "Línzhi" }
+2131 = { "Changdu" "Changdu" }
+2132 = { "Mángkang" "Mángkang" }
+2133 = { "Gengqing Zhèn" "Gengqing" }
+2134 = { "Qinghai" "Xining" } #(Arga) Rebong is tibetan for Tongren, There seem to be 2 more or less arbitrary cuts out of Qinghai, but roughly corresponds to the irl province
+2135 = { "Ganzi" "Ganzi" }
+4205 = { "Hala Wusu" "Wu'erguxiong" }
+4482 = { "Xijin" "Xijin" } #Sikkim
+4515 = { "Jílóng" "Jílóng" }
+4517 = { "Naidông" "Naidông" }
+4519 = { "Bange" "Bange" }
+4520 = { "Rì Tu" "Rì Tu" }
+
+#Central Asia
+441 = { "Xï Wa" "Xï Wa" }
+442 = { "Puhe" "Puhe" }
+454 = { "Sama'erhan" "Sama'erhan" }
+453 = { "Kaer Xi" "Kaer Xi" }
+457 = { "Kangju" "Kanka" } #(Arga) Tashkent, named Kangju for flavour purposes
+458 = { "Hàohan" "Hàohan" }
+460 = { "Dayuan" "Dayuan" } #(Arga) Ferghana, in the Book of Han by Zhang Qian
+461 = { "Aermade" "Aermade" }
+710 = { "Hétián" "Hétián" }
+711 = { "Qiemò" "Qiemò" }
+712 = { "Akèsu" "Akèsu" }
+739 = { "Jiashi" "Jiashi" }
+1967 = { "Ku Zhan" "Ku Zhan" }
+1973 = { "Wu'er Gen Qi" "Wu'er Gen Qi" }
+2121 = { "Kuchè" "Kuchè" } #(JP) Going for Kuchè here
+2123 = { "Lop" "Lop" } #(JP) Going for Lop here
+2124 = { "Shache Xiàn" "Shache" }
+2125 = { "Jîerjisi" "Jîerjisi" }
+2127 = { "Badahèshàn" "Huòlugé" }
+2192 = { "Kuerlè" "Kuerlè" }
+2362 = { "Yùlóng Jiechi" "Yùlóng" }
+2747 = { "Lang Shan" "Khangi" }
+4209 = { "Bachu" "Bachu" }
+4210 = { "Yingjisha" "Yingjisha" }
+4343 = { "Talimi" "Talimi" }
+4693 = { "Yútián" "Yútián" }
+
+#Mongolia
+701 = { "E'erduosi" "E'erduosi" }
+702 = { "Huhéhàotè" "Huhéhàotè" } #(Arga) Hohhot
+714 = { "Hefeng" "Hefeng" }
+716 = { "Tángnu Wuliánghai" "Tángnu Wuliánghai" }
+719 = { "Wuliya Sutái" "Wuliya Sutái" }
+720 = { "Dong Gebi" "Tolgoi" }
+723 = { "Xilinguolè Méng" "Xilinhàotè" }
+725 = { "Qiqihar" "Qiqihar" }
+1065 = { "Kùziniècíkè Shan" "Kùziniècíkè Shan" }
+1066 = { "A'ertài Wuliánghai" "A'ertài Wuliánghai" }
+2114 = { "Èrliánhàotè" "Èrliánhàotè" }
+2116 = { "Dà Kùlún" "Dà Kùlún" }
+2118 = { "Wu'er Zha" "Wu'er Zha" }
+2119 = { "Tacheng" "Tacheng" }
+2190 = { "Halahélín" "Halahélín" }
+2191 = { "Éjinà" "Éjinà" }
+4665 = { "Bùtèhaa" "Bùtèhaa" }
+4668 = { "Er Hún" "Er Hún" }
+4669 = { "Saiyin Shanda" "Saiyin Shanda" }
+4670 = { "Wulatè" "Hailiut" }
+4679 = { "Kùsuguer" "Kùsuguer" }
+
+#West Siberia
+1074 = { "Kashén Li Kè" "Kashén Li Kè" }
+1075 = { "Chéngji-Tú Laa" "Chéngji-Tú Laa" }
+
+#East Siberia
+2446 = { "Qia La" "Qia La" }
+
+#Manchuria
+726 = { "Mukden" "Mukden" }
+730 = { "Jilin" "Jilin" }
+731 = { "Yilan" "Yilan" }
+724 = { "Hulúnbèi'er Méng" "Hulúnbèi'er" }
+1053 = { "Dàxing'anling" "Tahé" }
+2106 = { "Haishenwai" "Haishenwai" }
+
+#Korea
+732 = { "Xianxing" "Xianxing" }
+733 = { "Huangzhou" "Huangzhou" }
+734 = { "Yuanzhou" "Yuanzhou" }
+735 = { "Hancheng" "Hancheng" }
+736 = { "Qingshang" "Qingshang" }
+737 = { "Qansanzhou" "Qansanzhou" } 
+1845 = { "Pingrang" "Pingrang" }
+2694 = { "Jiangling" "Jiangling" }
+2741 = { "Jizhou" "Jizhou" }
+2742 = { "Funing" "Funing" }
+2743 = { "Jingcheng" "Jingcheng" }
+2744 = { "Ningbian" "Ningbian" }
+2745 = { "Qingzhou" "Qingzhou" }
+4227 = { "Jinzhou" "Jinzhou" }
+4228 = { "Luozhou" "Luozhou" }
+4229 = { "Zhongzhou" "Zhongzhou" }
+4230 = { "Shuiyuan" "Shuiyuan" }
+4231 = { "Pingshan" "Pingshan" }
+4232 = { "Jiangjie" "Jiangjie" }
+
+#Japan
+1012 = { "Samo" "Shika" }
+1013 = { "Gonghong" "Gonghong" }
+1014 = { "Feng Hou" "Dàfen" }
+1017 = { "Zhou" "Shankou" }
+1018 = { "Chuuyún" "Songjiang" }
+1019 = { "Boomó" "Jilu" }
+1020 = { "Ping An" "Ping An" }
+1021 = { "Shejin" "Dàban" }
+1023 = { "Fújing" "Yuèqián" }
+1024 = { "Xinxi" "Xinxi" }
+1025 = { "Yuqián" "Yuqián" }
+1026 = { "Lùqián" "Lùqián" }
+1027 = { "Chánglù" "Chánglù" }
+1028 = { "Wucang" "Wucang" }
+1029 = { "Jiafei" "Jiafei" }
+1030 = { "Weizhang" "Qingxu" }
+1031 = { "Shàngchuan" "Shàngchuan" }
+1032 = { "Qiandao Qúndao" "Qúndao" } #(JP) Just threw it in so it had a capital
+1056 = { "Ba'er Gujin" "Ba'er Gujin" }
+1057 = { "Wudè" "Wudè" }
+1058 = { "Wò Nán Hé" "Wò Nán Hé" }
+1818 = { "Zhuqian" "Fúgang" }
+1819 = { "Tuzuo" "Tuzuo" }
+1825 = { "Guangdao" "Guangdao" }
+1830 = { "Dànma" "Niaoqu" }
+1835 = { "Meinóng" "Qifù" }
+1837 = { "Jinzé" "Jinzé" }
+1839 = { "Júnhé" "Jinggang" }
+1843 = { "Qiánqiáo" "Qiánqiáo" }
+1847 = { "Hòuzhì" "Hòuzhì" }
+1852 = { "Shíshèng" "Shíshèng" }
+4131 = { "Lù Ào" "Lù Ào" }
+4180 = { "Rixiang" "Gongqí" }
+4181 = { "Féihou" "Xióngben" }
+4182 = { "Féiqian" "Cháng Qí" }
+4183 = { "Shijiàn" "Bintián" }
+4184 = { "Bèiqián" "Gangshan" }
+4185 = { "Danhòu" "Gongjin" }
+4186 = { "Yiyuu" "Songshan" }
+4187 = { "Jiyï" "Hégeshan" }
+4188 = { "Xinnóng" "Zhangye" }
+4189 = { "Xiangmó" "Liáncang" }
+4190 = { "Xià Zhong" "Zuocang" }
+4191 = { "Xiàye" "Yudugong" }
+4192 = { "Yuhòu" "Yuhòu" }
+4193 = { "Dùdao" "Dùdao" }
+4359 = { "Yishi" "Línglù" }
+4360 = { "Sanhé" "Gangqí" }
+4651 = { "Duìma" "Duìma" }
+
+#Burma
+580 = { "Qin" "Qin" }
+581 = { "Shijie" "Shijie" }
+582 = { "Keqin" "Keqin" }
+584 = { "Wacheng" "Wacheng" }
+587 = { "Jingdong" "Jingdong" }
+2396 = { "Mògang" "Mògang" }
+
+#Indochina
+600 = { "Dacheng" "Dacheng" }
+601 = { "Suketai" "Suketai" }
+602 = { "Qinglai" "Qinglai" }
+604 = { "Wudong" "Wudong" }
+606 = { "Bintonglong" "Bintonglong" }
+607 = { "Foshi" "Foshi" }
+609 = { "Wuge" "Wuge" }
+610 = { "Qinghua" "Guteng" } #(Herry Huang) ??? (Qinghua Fu) w. Capital in ??? (Guteng Prefecture) /Ho?ng Hóa, Thanh Hóa Province
+612 = { "Kele" "Kele" }
+613 = { "Jiaozhou" "Dongguan" } #(Herry Huang) ??? (Jiaozhou), Capital in ??? (Dongguan)/Hanoi
+614 = { "Yongzhen" "Yongzhen" }
+615 = { "Chuantong" "Chuantong" }
+616 = { "Gaoping" "Gaoping" } #(Herry Huang) Can't find one for Cao Bang, used the Hanzi of Cao Bang instead
+1016 = { "Xinping" "Xinping" }
+1022 = { "Shenghua" "Shenghua" } #(Herry Huang) ??? (Shenghua), comprised of Sheng, Hua, Si and Yi Prefecture
+1844 = { "Chuankuang" "Chuankuang" }
+2371 = { "Jiaxing" "Jiaxing" } #(Herry Huang) ????? (Jiaxing Direct-controlled Prefecture)/Son La Province
+2372 = { "Xin'an" "Xiashan" }#(Herry Huang) ???, ???/Hai Duong Province
+2373 = { "Shunhua" "Shunhua" }
+2380 = { "Jinbian" "Jinbian" }
+4819 = { "Liangshan" "Liangshan" } #(Herry Huang) ??? (Liangshan)/Lang Son Province
+4821 = { "Yi'an" "Yi'an" } #(Herry Huang) ??? (Yi'an)/ Nghe An Province
+4832 = { "Luowo" "Luowo" }
+4834 = { "Supan" "Supan" }
+4839 = { "Zhanbase" "Zhanbase" }
+8592 = { "Pingyuan" "Pingyuan" } #(Herry Huang) ??? (This should belongs to Xuanhua Fu) /Vi Xuyen, Ha Giang Province
+8593 = { "Xuanhua" "Xuanhua" } #(Herry Huang) ???
+8597 = { "Jianchang" "Jianchang" } #(Herry Huang) ??? (Jianchang), capital in ???
+8648 = { "Ningyuan" "Ningyuan" } #(Herry Huang) ???(Ningyuan)/Lai Chau
+8656 = { "Laojie" "Laojie" } #(Herry Huang) Lao Cai's Hanzi
+#8657 = { "Sanjiang" "Maxi" } #(Herry Huang) ???, ??? #(JP) Wrong ID
+8658 = { "Liangjiang" "Qingyuan" } #(Herry Huang) ??? (Liangjiang), capital in ??? (Qingyuan)/Thai Nguyen Province
+
+#Malaya
+593 = { "Luokun" "Luokun" }
+2390 = { "Wanlun" "Wanlun" }
+
+#Sumatra
+
+#Java
+
+#Borneo
+
+#Philippines
+
+#Lesser Sundas
+
+#Bengal
+562 = { "Ke Hè" "Ke Hè" }
+563 = { "Jin'er Guó" "Jin'er Guó" }
+564 = { "Dá Ka" "Dá Ka" }
+566 = { "A Sà Mu" "A Sà Mu" }
+568 = { "Tsa Ti Kiang" "Tsa Ti Kiang" }
+4477 = { "Mèngjiala" "Sà Tè Gang" } 
+
+#Coromandel
+572 = { "Kee Tè" "Kee Tè" }
+2026 = { "Tan Jiao'er" "Tan Jiao'er" }
+2100 = { "Wàn Ní" "Wàn Ní" }
+4409 = { "Tíng Ke Mali" "Tíng Ke Mali" }
+
+#Deccan
+533 = { "Mài Suo'er" "Mài Suo'er" }
+
+#Western India
+504 = { "Ta Ta" "Ta Ta" }
+4457 = { "Kang Bai" "Kang Bai" }
+4503 = { "Màn Suu La" "Màn Suu La" }
+
+#Hindustan
+506 = { "Mú'er Tan" "Mú'er Tan" }
+507 = { "Lahé'er" "Lahé'er" }
+522 = { "Xïndéli" "Xïndéli" }
+557 = { "Jiadémandu" "Jiadémandu" }
+2071 = { "Lín Bú Zú" "Lín Bú Zú" }
+2074 = { "Ladákè" "Liè" }
+
+#Khorasan
+446 = { "Hèlatè" "Hèlatè" }
+448 = { "Yuanshi" "Ge Jíníng" } #(Arga) yuan dynasty era name
+450 = { "Daxia" "Daxia" }
+451 = { "Gaofu" "Gaofu" }
+452 = { "Xi Badahèshàn" "Fazhabadé" }
+
+#Persia
+412 = { "Awashi" "Awashi" }
+428 = { "Déheilán" "Déheilán" }
+
+#Caucasia
+2201 = { "Alán Liáo" "Hésu" } #(Arga) Yancai, Hésu
+3261 = { "Jié'er Bïn Tè" "Jié'er Bïn Tè" }
+
+#Mesopotamia
+408 = { "Bashila" "Bashila" }
+409 = { "Kabaa La" "Kabaa La" }
+410 = { "Baagédá" "Baagédá" }
+2309 = { "Xin Jia'er" "Xin Jia'er" }
+2310 = { "Tí Kè Lï Tè" "Tí Kè Li Tè" }
+4291 = { "Kasàníyaa" "Kasàníyaa" }
+
+#Arabia
+400 = { "Masikatè" "Masikatè" }
+2999 = { "Huòermuzi Dao" "Huòermuzi" }
+
+#Levant
+379 = { "Gudu Si" "Gudu Si" }
+382 = { "Xùliya" "Sha Mu" }
+405 = { "Ba'er Mila" "Ba'er Mila" }
+
+#Balkans
+151 = { "Gongsidangdinebole" "Gongsidangdinebole" }
+
+#Pontic Steppe
+464 = { "Asitèlaa Han" "Asitèlaa Han" }
+466 = { "Huánghé" "Xin Chéngshi" }
+
+#Ural
+303 = { "Huángshan" "Huángshan" }
+
+#Uncapitalised and Unsorted
+611 = "Ganmeng"
+1823 = "Shangding"
+605 = "Xigong"
+589 = "Qingmai"
+594 = "Dani"
+603 = "Luoyong"
+599 = "Jilandan"
+592 = "Lepi"
+583 = "Mubang"
+588 = "Mengnai"
+585 = "Dongyu"
+640 = "Kundian"
+1033 = "Kuye"
+1832 = "Dahe"
+4224 = "Xiangmo"
+4207 = "Tulufan"
+565 = "Bù Dan"
+2128 = "Ali Diqu"
+2129 = "Qiangtang"
+2193 = "Gebi"
+4221 = "Zhong Gebi"
+668 = "Heong San Ou" 
+1052 = "Wai Xing'an Ling"
+1015 = "Liuqiu"
+738 = "Sakam"
+2154 = "Pak-Kang"
+2155 = "Dàdu Wangguo"
+4920 = "Aliu Shen Qundao"
+4921 = "Gangbei"
+4922 = "Maopizhou"
+4923 = "Jiaotang"
+5778 = "Yuè" 
+727 = "Helióngjiang Chéng"
+1060 = "Yi'erkù"
+709 = "Alashan Méng"
+4676 = "Badanjílín Shamò"
+508 = "Jipin"
+4449 = "Chamó"
+596 = "Maliujia"
+8649 = "Pú Luó Zhong"
+630 = "Gelaba"

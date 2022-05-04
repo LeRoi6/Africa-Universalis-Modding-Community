@@ -20,7 +20,7 @@
 
 
 native_earthwork = {
-	cost = 25			#BTAddOn changed from 50. Part of a comprehensive trend of making buildings cheaper. Natives already have enough penalties though, so not weakening the buildings, at least not yet
+	cost = 50 # BT; 100
 	time = 12
 	build_trigger = {
 		owner = { government = native }
@@ -32,18 +32,18 @@ native_earthwork = {
 		local_defensiveness = 0.25
 	}
 	government_specific = yes
-	
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
 			factor = 2.0
 			is_capital = yes
-		}				
+		}
 	}
 }
 
 native_palisade = {
-	cost = 100			#BTAddOn changed from 50. Forts more expensive to build in BT.
+	cost = 100 # BT; 200
 	time = 12
 	build_trigger = {
 		owner = { government = native }
@@ -56,20 +56,20 @@ native_palisade = {
 	}
 	government_specific = yes
 	influencing_fort = yes
-	
+
 	onmap = yes
-	
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
 			factor = 2.0
 			is_capital = yes
-		}				
+		}
 	}
 }
 
 native_fortified_house = {
-	cost = 25			#BTAddOn changed from 50. Part of a comprehensive trend of making buildings cheaper. Natives already have enough penalties though, so not weakening the buildings, at least not yet
+	cost = 100 # BT; 200
 	time = 12
 	build_trigger = {
 		owner = { government = native }
@@ -82,20 +82,20 @@ native_fortified_house = {
 	}
 	one_per_country = yes
 	government_specific = yes
-	
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
 			factor = 2.0
 			is_capital = yes
-		}				
+		}
 	}
 }
 
 
 
 native_ceremonial_fire_pit = {
-	cost = 25			#BTAddOn changed from 50. Part of a comprehensive trend of making buildings cheaper. Natives already have enough penalties though, so not weakening the buildings, at least not yet
+	cost = 100 # BT; 200
 	time = 12
 	build_trigger = {
 		owner = { government = native }
@@ -105,21 +105,22 @@ native_ceremonial_fire_pit = {
 	}
 	modifier = {
 		advisor_cost = -0.50
+		monthly_reform_progress_building = 0.2
 	}
 	one_per_country = yes
 	government_specific = yes
-	
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
 			factor = 2.0
 			is_capital = yes
-		}				
+		}
 	}
 }
 
 native_irrigation = {
-	cost = 25			#BTAddOn changed from 50. Part of a comprehensive trend of making buildings cheaper. Natives already have enough penalties though, so not weakening the buildings, at least not yet
+	cost = 100 # BT; 200
 	time = 12
 	build_trigger = {
 		owner = { government = native }
@@ -128,21 +129,21 @@ native_irrigation = {
 		owner = { government = native }
 	}
 	modifier = {
-		local_tax_modifier = 0.5
+		tribal_development_growth = 0.02
 	}
 	government_specific = yes
-	
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
 			factor = 2.0
 			is_capital = yes
-		}				
+		}
 	}
 }
 
 native_storehouse = {
-	cost = 25			#BTAddOn changed from 50. Part of a comprehensive trend of making buildings cheaper. Natives already have enough penalties though, so not weakening the buildings, at least not yet
+	cost = 50 # BT; 100
 	time = 12
 	build_trigger = {
 		owner = { government = native }
@@ -154,18 +155,18 @@ native_storehouse = {
 		local_production_efficiency = 0.5
 	}
 	government_specific = yes
-	
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
 			factor = 2.0
 			is_capital = yes
-		}				
+		}
 	}
 }
 
 native_longhouse = {
-	cost = 25			#BTAddOn changed from 50. Part of a comprehensive trend of making buildings cheaper. Natives already have enough penalties though, so not weakening the buildings, at least not yet
+	cost = 50 # BT; 100
 	time = 12
 	build_trigger = {
 		owner = { government = native }
@@ -174,22 +175,21 @@ native_longhouse = {
 		owner = { government = native }
 	}
 	modifier = {
-		tax_income = 1
+		monthly_reform_progress_building = 0.1
 	}
-	one_per_country = yes
 	government_specific = yes
-	
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
 			factor = 2.0
 			is_capital = yes
-		}				
+		}
 	}
 }
 
 native_sweat_lodge = {
-	cost = 25			#BTAddOn changed from 50. Part of a comprehensive trend of making buildings cheaper. Natives already have enough penalties though, so not weakening the buildings, at least not yet
+	cost = 100 # BT; 200
 	time = 12
 	build_trigger = {
 		owner = { government = native }
@@ -202,18 +202,18 @@ native_sweat_lodge = {
 	}
 	one_per_country = yes
 	government_specific = yes
-	
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
 			factor = 2.0
 			is_capital = yes
-		}				
+		}
 	}
 }
 
 native_great_trail = {
-	cost = 25			#BTAddOn changed from 50. Part of a comprehensive trend of making buildings cheaper. Natives already have enough penalties though, so not weakening the buildings, at least not yet
+	cost = 50 # BT; 100
 	time = 12
 	build_trigger = {
 		owner = { government = native }
@@ -226,19 +226,19 @@ native_great_trail = {
 	}
 	government_specific = yes
 
-	
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
 			factor = 2.0
 			is_capital = yes
-		}				
+		}
 	}
 }
 
 
 native_three_sisters_field = {
-	cost = 25			#BTAddOn changed from 50. Part of a comprehensive trend of making buildings cheaper. Natives already have enough penalties though, so not weakening the buildings, at least not yet
+	cost = 50 # BT; 100
 	time = 12
 	build_trigger = {
 		owner = { government = native }
@@ -250,12 +250,12 @@ native_three_sisters_field = {
 		trade_goods_size_modifier = 0.5
 	}
 	government_specific = yes
-	
+
 	ai_will_do = {
 		factor = 100
 		modifier = {
 			factor = 2.0
 			is_capital = yes
-		}				
+		}
 	}
 }

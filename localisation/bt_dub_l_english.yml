@@ -1,0 +1,8 @@
+﻿l_english:
+ bt_american_cot_events.1.t:0 "A Center of Commerce"
+ bt_american_cot_events.1.d:0 "The city of [Root.GetCapitalName] in [Root.GetName] has become the center of attention for merchants travelling the region. Goods are being traded frivolously and the city is flourishing as a result. Several [From.GetNoblemenPoliticians] in our court suggest that [Root.GetCapitalName] should be declared a charter, formally stating the city's importance in trade."
+ #TODO: Change quill to dynamic localisation as the islamic world apparently did not use quills, instead using reed pens. Or so the wiki says. I wonder if this is actually true however.
+ bt_american_cot_events.1.a:0 "Sharpen my quill!"
+ bt_american_cot_events.1.b:0 "[Root.GetCapitalName] is not a worthy candidate."
+ bt_american_cot_events.1.b_tooltip:0 "This will prevent the province of [Root.GetName] from §Rever§! getting a center of trade from this event."
+ 

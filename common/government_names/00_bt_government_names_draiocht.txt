@@ -231,7 +231,13 @@ gov_norman_lordship = { #Starting Old English minors.
 	}
 	
 	trigger = {
-		has_reform = norman_lordship_reform
+		OR = {
+			has_reform = norman_lordship_reform
+			AND = {
+				tag = WMC
+				is_subject = yes
+			}
+		}
 	}
 }
 
@@ -397,7 +403,7 @@ scottish_vassal_monarchy = {
 	}
 	
 	consort_male = {
-		1 = EARLDOM
+		1 = LORD
 		2 = KING
 		3 = EMPEROR
 	}

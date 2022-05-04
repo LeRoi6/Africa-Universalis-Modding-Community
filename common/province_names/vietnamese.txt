@@ -1,0 +1,549 @@
+
+#By Cinnamon Ryce as part of his SEA addon
+605 = "Gia Dinh"
+606 = "Phan Rang"
+607 = "Qui Nhon"
+1022 = "Da Nang"
+1844 = "Trân Ninh"
+2371 = "Son La"
+2374 = "Nha Trang"
+2375 = "Gia Lai"
+2376 = "Cân Tho"
+2377 = "Cà Mau"
+2380 = "Nam Vinh"
+8573 = "Sâm Châu"
+8596 = "Dák Lák"
+8624 = "Châu Dôc"
+8625 = "Tây Ninh"
+8628 = "Quang Ngai"
+8629 = "Dà Lat"
+8648 = "Lai Châu"
+8652 = "Phan Thiêt"
+8653 = "Hai Phô"
+8654 = "Dak Mil"
+8655 = "Phuóc Long"
+
+
+
+#Localised naming by Arga 2018 Jun 30 (Not a speaker, nor am I. If you have any corrections, please feel free to suggest them). 
+
+#china
+661 = "Dai Lý"
+662 = "Vân Nam"
+663 = "Quang Nam"
+664 = "Lang Vân"
+674 = "Quý Duong"
+1840 = "Quê´Lâm"
+2158 = "Thiêu Quan"
+2161 = "Hop Phô´"
+2162 = "Ngô Châu"
+2163 = "Liêu Châu"
+2164 = "Nam Ninh"
+2165 = "Phô Nhi"
+2168 = "Bac Châu"
+
+#SEA
+660 = "Sipsong Panna"
+1844 = "Xiengkhuang"
+2166 = "Dúc Hoành" 
+
+#Arga Mar 2019
+
+#vietnam
+610 = "Thanh Hóa"
+613 = "Dông Kinh" #in 1802 becomes "Bac Thành"
+1016 = "Hà Tinh"
+2372 = "Hai Phòng"
+2373 = "Thuân Hóa" #"Huê"
+
+#laos
+611 = "Kham Muôn"
+614 = "Viêng Chan"
+
+#bhutan
+565 = "Thimphu"
+4481 = "Bu-tan"
+
+#india
+574 = "Quân dao Andaman"
+4482 = "Xích Kim"
+
+#china using a lot of han-viet
+669 = "Phúc Châu"
+670 = "Cám Châu"
+671 = "Truòng Sa"
+672 = "Vu Lang"
+673 = "Trân Viên"
+675 = "Tât Tiêt"
+676 = "Xigazê"
+677 = "Lap Tát"
+683 = "Nam Xuong"
+689 = "Hán Trung"
+697 = "Dai Dông"
+700 = "Tây An"
+703 = "Thùa Dúc"
+707 = "Ngoc Môn"
+708 = "Truong Dich"
+726 = "Thâm Duong"
+738 = "Dài Nam"
+1829 = "Tuyên Châu"
+1833 = "Cát An"
+2113 = "Cái Châu"
+2115 = "Sát Cáp"
+2123 = "Nhuoc Khuong"
+2135 = "Garzê"
+2151 = "Bà Duong"
+2152 = "Kiên Ninh"
+2154 = "Dài Bâc"
+2155 = "Dài Trung"
+2167 = "Lê Giang"
+2171 = "Tuong Duong"
+2173 = "Nguyên Lang"
+2174 = "Hánh Duong"
+2177 = "Ninh Vu"
+2182 = "Luong Châu"
+2184 = "Tây Ninh"
+2748 = "Kiên Xuong"
+4204 = "An Dinh"
+4205 = "Na Khúc dia khu"
+4213 = "Lô Châu"
+4519 = "Duong Húng" 
+
+#manchuria
+725 = "Tê Tê Cáp"
+730 = "Cát Lâm"
+
+#japan
+1015 = "Quân dao Nansei"
+
+#korea
+2141 = "Tê Châu" #han-viet
+
+#tian shan and himalaya
+2124 = "Toa Xa" #han-viet
+
+#Arga Dec 2019
+
+#ayutthaya
+600 = "Thuong Thành"
+612 = "Cô Lac"
+8556 = "Vong Các"
+8567 = "La Hôc"
+8568 = "Sô Phân"
+
+#north tenasserim
+8638 = "Bâc Liêt"
+
+#khorat
+2384 = "Muòng Nông"
+8728 = "Lac Hoàn"
+
+#south laos
+608 = "Cham-pa-sac"
+2382 = "Xa Vanh"
+
+#tai cantons
+8646 = "Phông-xa-lì"
+
+#taiwan
+8548 = "Ngoc Son" #yushan mountain
+
+#johor
+8649 = "Xin-ga-po"
+
+#north anhui
+1838 = "Hop Phì"
+
+#south anhui
+686 = "An Khánh"
+2147 = "Huy Châu"
+
+#hubei
+681 = "Nghi Xuong"
+682 = "Vu Xuong"
+2172 = "Kinh Châu"
+4197 = "Hoàng Châu"
+
+#yun-gui hinterland
+4199 = "Dông Nhân"
+
+#sichuan
+679 = "Thành Dô"
+680 = "Trùng Khánh"
+4212 = "Nha An"
+
+#chuanbei
+2169 = "Lang Trung"
+4211 = "Dat Châu"
+
+#shaanxi
+4198 = "Phuong Tuòng"
+
+#east gansu
+698 = "Ninh Ha"
+699 = "Lan Châu"
+2180 = "Thiên Thuy"
+2181 = "Bình Luong"
+
+#kham
+2133 = "Dúc Cách"
+
+#bruney
+636 = "Bò-ru-nay"
+
+#tanjore
+2026 = "Thanjavur"
+
+#ordos
+701 = "Ngac Nhï Da Tu" #han viet
+
+#west heilongjiangord
+724 = "Hô Luân Boi Nhï"
+1053 = "Dai Hung An Lïnh"
+
+#south ilin hala
+731 = "Y Lan"
+
+#turpan-kumul
+4207 = "Thô Lo Phiên" #han viet, alternatively "Turfan"
+
+#southern australia
+1090 = "Day Núi Xanh" #blue mountains
+
+#tannu uriankhai
+716 = "Duòng No Ô Luong Hai" #han viet
+
+#gobi
+2193 = "Sa mac Han hai" #gobi desert
+
+#southern korea, han viet
+737 = "Toàn Châu"
+1013 = "Thanh Châu"
+2741 = "Te Châu Dao"
+4228 = "La Châu"
+4229 = "Trung Châu"
+
+#western korea
+735 = "Xê-Un" #or "Thu Nhï" han viet
+4230 = "Thuy Nguyên"
+4231 = "Hai Châu"
+
+#eastern korea, han viet
+734 = "Nguyên Châu"
+736 = "Thuong Châu"
+2745 = "Khánh Châu"
+4227 = "Khánh Thuong"
+
+#pyongan
+1845 = "Binh Nhuõng"
+
+#By Arga Jun 2020
+#asia
+#south anhui
+2146 = "Ninh Quôc"
+
+#north anhui
+2143 = "Phuong Duong"
+2144 = "Phu Duong"
+
+#south henan
+687 = "Nam Duong"
+
+#north henan
+688 = "Khai Phong"
+1836 = "Lac Duong"
+
+#shandong
+691 = "Tê Nam"
+
+#shanxi
+693 = "Thái Nguyên"
+694 = "Bình Duong"
+2178 = "Loan"
+
+#shaanxi
+2179 = "Diên An"
+
+#kham
+2131 = "Xuong Dô" #han viet
+2132 = "Mang Khang" #han viet
+
+#U
+2130 = "Lâm Tri" #han viet
+4517 = "Nãi Dông" #han viet
+
+#tsang
+4514 = "Tát-Ca Phái"
+4515 = "Cát Long" #han viet
+
+#liaoning
+2112 = "An Dông"
+4652 = "Hai Thành"
+
+#south jilin
+4201 = "Giang Châu"
+
+#ordos
+709 = "A Lap Thiên"
+
+#xilin gol
+723 = "Tich Lâm Quách Lac"
+
+#outer mongolia
+2116 = "Trai Lón"
+
+#north moluccas
+648 = "Jilolo"
+
+#southern indian islands
+5093 = "Phiên Muôn"
+
+#west java
+630 = "Gia-Các-Ta"
+
+#johor
+8559 = "Quân Dao Natuna"
+
+#polynesia
+#micronesia
+1235 = "Quân Dao Mariana"
+
+#africa
+#west cape
+1177 = "Diem Bão"
+1179 = "Bãi Biên Rông"
+5340 = "Mat Trang Nhó"
+
+#east cape
+5350 = "Vinh Ngao"
+
+#north america
+#cook inlet
+978 = "Cang Tuyêt"
+5778 = "Mat Trang"
+
+#san francisco bay
+2021 = "Công Vàng"
+4638 = "Luu Huynh"
+5030 = "Thung Lung Côi Xay Gió"
+5767 = "Vinh Miên Phí"
+5814 = "Nhung Cây Sôi"
+
+#quadra and vancouver island
+4940 = "Bãi Biên Dông Kinh"
+5735 = "Dât Tseshaht"
+
+#lower columbia
+873 = "Bãi Biên Hoàng Hôn"
+
+#By Arga Sep 2020
+#unsorted 1.30 parametre updates
+574 = { "Quân Dao Andeman" "An De Man" } #Quân Dao
+600 = { "Thuong Thành" "Thuong Thành" } #
+605 = { "Gia Dinh" "Gia Dinh" } #
+606 = { "Phan Rang" "Phan Rang" } #
+607 = { "Qui Nhon" "Qui Nhon" } #
+608 = { "Cham Pa Sac" "Cham Pa Sac" } #
+610 = { "Thanh Hóa" "Thanh Hóa" } #
+611 = { "Kham Muôn" "Thá Khet" } #
+612 = { "Cô Lac" "Cô Lac" } #
+613 = { "Dông Kinh" "Dông Kinh" } #
+614 = { "Viêng Chan" "Viêng Chan" } #
+616 = { "Cao Bang" "Cao Bang" } #
+661 = { "Dai Lý" "Dai Lý" } #
+662 = { "Vân Nam" "Vân Nam" } #
+663 = { "Quang Nam" "Quang Nam" } #
+664 = { "Lang Vân" "Lang Vân" } #
+665 = { "Triêu Khánh" "Triêu Khánh" } #
+666 = { "Kinh Châu" "Kinh Châu" } #
+667 = { "Quang Châu" "Quang Châu" } #
+668 = { "Ma Cao" "Ma Cao" } #
+669 = { "Phúc Châu" "Phúc Châu" } #
+670 = { "Cám Châu" "Cám Châu" } #
+671 = { "Truòng Sa" "Truòng Sa" } #
+672 = { "Vu Lang" "Vu Lang" } #
+673 = { "Trân Viên" "Trân Viên" } #
+674 = { "Quý Duong" "Quý Duong" } #
+675 = { "Tât Tiêt" "Tât Tiêt" } #
+676 = { "Xigazê" "Xigazê" } #
+677 = { "Lap Tát" "Lap Tát" } #
+679 = { "Thành Dô" "Thành Dô" } #
+680 = { "Trùng Khánh" "Trung Khánh" } #
+681 = { "Nghi Xuong" "Nghi Xuong" } #
+682 = { "Vu Xuong" "Vu Xuong" } #
+683 = { "Nam Xuong" "Nam Xuong" } #
+684 = { "Hâng Châu" "Hâng Châu" } #
+685 = { "Duong Châu" "Duong Châu" } #
+686 = { "An Khánh" "An Khánh" } #
+687 = { "Nam Duong" "Nam Duong" } #
+688 = { "Khai Phong" "Khai Phong" } #
+689 = { "Hán Trung" "Hán Trung" } #
+690 = { "Thanh Châu" "Thanh Châu" } #
+691 = { "Tê Nam" "Tê Nam" } #
+693 = { "Thái Nguyên" "Thái Nguyên" } #
+694 = { "Binh Duong" "Binh Duong" } #
+695 = { "Hà Gian" "Hà Gian" } #
+696 = { "Bao Dinh" "Bao Dinh" } #
+697 = { "Dai Dông" "Dai Dông" } #
+698 = { "Ninh Ha" "Ninh Ha" } #
+699 = { "Lan Châu" "Lan Châu" } #
+700 = { "Tây An" "Tây An" } #
+701 = { "Ngac Nhï Da Tu" "Ngac Nhï Da Tu" } #
+703 = { "Thùa Dúc" "Thùa Dúc" } #
+706 = { "Dâm Muõi" "Dâm Muõi" } #
+707 = { "Ngoc Môn" "Ngoc Môn" } #
+708 = { "Truong Dich" "Truong Dich" } #
+709 = { "A Lap Thiên" "A Lap Thiên" } #
+710 = { "Hòa Diên" "Hòa Diên" } #
+716 = { "Duòng No Ô Luong" "Dò" } #
+723 = { "Tich Lâm Quách Lac" "Tich Lâm Quách Lac" } #
+724 = { "Hô Luân Boi Nhï" "Hô Loân Boi Nhï" } #
+725 = { "Tê Tê Cáp" "Tê Tê Cáp" } #
+726 = { "Thâm Duong" "Thâm Duong" } #
+731 = { "Y Lan" "Y Lan" } #
+732 = { "Hàm Kính" "Hàm Kính" } #
+733 = { "Hoáng Châu" "Hoáng Châu" } #
+734 = { "Nguyên Châu" "Nguyên Châu" } #
+735 = { "Xê Un" "Xê Un" } #
+736 = { "Thuong Châu" "Thuong Châu" } #
+737 = { "Toàn Châu" "Toàn Châu" } #
+738 = { "Dài Nam" "Dài Nam" } #
+1013 = { "Thanh Châu" "Thanh Châu" } #
+1015 = { "Nam Tây Chu Dào" "Thù Lý Thành" } #
+1016 = { "Hà Tinh" "Hà Tinh" } #
+1022 = { "Dà Nang" "Dà Nang" } #
+1053 = { "Dai Hung An Lïnh" "Dai Hung An Lïnh" } #
+1816 = { "Bac Kinh" "Bac Kinh" } #
+1821 = { "Nam Kinh" "Nam Kinh" } #
+1822 = { "Tô Châu" "Tô Châu" } #
+1824 = { "Ôn Châu" "Ôn Châu" } #
+1829 = { "Tuyên Châu" "Tuyên Châu" } #
+1833 = { "Cát An" "Cát An" } #
+1836 = { "Lac Duong" "Lac Duong" } #
+1838 = { "Hop Phì" "Hop Phì" } #
+1840 = { "Quê Lâm" "Quê Lâm" } #
+1845 = { "Binh Nhuõng" "Binh Nhuõng" } #
+2000 = { "An Dinh" "An Dinh" } #
+2112 = { "An Dông" "An Dông" } #
+2113 = { "Cái Châu" "Cái Châu" } #
+2115 = { "Sát Cáp" "Sát Cáp" } #
+2116 = { "Trai Lón" "Trai Lón" } #
+2123 = { "Nhuoc Khuong" "Nhuoc Khuong" } #
+2124 = { "Toa Xa" "Toa Xa" } #
+2130 = { "Lâm Tri" "Lâm Tri" } #
+2131 = { "Xuong Dô" "Xuong Dô" } #
+2132 = { "Mang Khang" "Mang Khang" } #
+2133 = { "Dúc Cách" "Dúc Cách" } #
+2135 = { "Garzê" "Garzê" } #
+2137 = { "Dai Danh" "Dai Danh" } #
+2138 = { "Vu Dinh" "Vu Dinh" } #
+2139 = { "Lai Chãu" "Lai Chãu" } #
+2140 = { "Duyên Châu" "Duyên Châu" } #
+2141 = { "Tê Châu" "Tê Châu" } #
+2142 = { "Hoài An" "Hoài An" } #
+2143 = { "Phuong Duong" "Phuong Duong" } #
+2144 = { "Phu Duong" "Phu Duong" } #
+2145 = { "Trân Giang" "Trân Giang" } #
+2146 = { "Ninh Quôc" "Ninh Quôc" } #
+2147 = { "Huy Châu" "Huy Châu" } #
+2148 = { "Thiêu Hung" "Thiêu Hung" } #
+2149 = { "Ninh Ba" "Ninh Ba" } #
+2150 = { "Kim Hoa" "Kim Hoa" } #
+2151 = { "Bà Duong" "Bà Duong" } #
+2152 = { "Kiên Ninh" "Kiên Ninh" } #
+2153 = { "Tinh Châu" "Tinh Châu" } #
+2154 = { "Dài Bâc" "Dài Bâc" } #
+2155 = { "Dài Trung" "Dài Trung" } #
+2156 = { "Triêu Châu" "Triêu Châu" } #
+2157 = { "Huê Châu" "Huê Châu" } #
+2158 = { "Thiêu Quan" "Thiêu Quan" } #
+2159 = { "Lôi Châu" "Lôi Châu" } #
+2160 = { "Nhai Châu" "Nhai Châu" } #
+2161 = { "Hop Phô" "Hop Phô" } #
+2162 = { "Ngô Châu" "Ngô Châu" } #
+2163 = { "Liêu Châu" "Liêu Châu" } #
+2164 = { "Nam Ninh" "Nam Ninh" } #
+2165 = { "Phô Nhi" "Phô Nhi" } #
+2166 = { "Dúc Hoành" "Dúc Hoành" } #
+2167 = { "Lê Giang" "Lê Giang" } #
+2168 = { "Bac Châu" "Bac Châu" } #
+2169 = { "Lang Trung" "Lang Trung" } #
+2171 = { "Tuong Duong" "Tuong Duong" } #
+2172 = { "Kinh Châu" "Kinh Châu" } #
+2173 = { "Nguyên Lang" "Nguyên Lang" } #
+2174 = { "Hánh Duong" "Hánh Duong" } #
+2175 = { "Trú Mã Diêm" "Trú Mã Diêm" } #different city within same province as Runing wasn't found
+2176 = { "Thuong Khâu" "Thuong Khâu" } #
+2177 = { "Ninh Vu" "Ninh Vu" } #
+2178 = { "Loan" "Loan" } #
+2179 = { "Diên An" "Diên An" } #
+2180 = { "Thiên Thuy" "Thiên Thuy" } #
+2181 = { "Binh Luong" "Binh Luong" } #
+2182 = { "Luong Châu" "Luong Châu" } #
+2184 = { "Tây Ninh" "Tây Ninh" } #
+2371 = { "Son La" "Son La" } #
+2372 = { "Hai Phòng" "Hai Phòng" } #
+2373 = { "Thuân Hóa" "Phú Xuân" } #would be Huê later during colonialism
+2374 = { "Nha Trang" "Nha Trang" } #
+2375 = { "Gia Lai" "Plây Cu" } #
+2376 = { "Cân Tho" "Cân Tho" } #
+2377 = { "Cà Mau" "Cà Mau" } #
+2380 = { "Nam Vinh" "Nam Vinh" } #
+2382 = { "Xa Vanh" "Xa Vanh" } #
+2384 = { "Muòng Nông" "Muòng Nông" } #
+2694 = { "Giang Nguyên" "Giang Nguyên" } #
+2741 = { "Te Châu Dào" "Tê Châu" } #Dào for island
+2744 = { "Bình An Bác" "Bình An Bác" } #
+2745 = { "Khánh Châu" "Khánh Châu" } #
+2748 = { "Kiên Xuong" "Kiên Xuong" } #
+4195 = { "Chính Dinh" "Chính Dinh" } #
+4196 = { "Hai Châu" "Hai Châu" } #
+4197 = { "Hoàng Châu" "Hoàng Châu" } #
+4198 = { "Phuong Tuòng" "Phuong Tuòng" } #
+4199 = { "Dông Nhân" "Dông Nhân" } #
+4205 = { "Na Khúc Dia Khu" "Na Khúc Dia Khu" } #
+4207 = { "Thô Lo Phiên" "Thô Lo Phiên" } #
+4211 = { "Dat Châu" "Dat Châu" } #
+4212 = { "Nha An" "Nha An" } #
+4213 = { "Lô Châu" "Lô Châu" } #
+4227 = { "Khánh Thuong" "Khánh Thuong" } #
+4228 = { "La Châu" "La Châu" } #
+4229 = { "Trung Châu" "Trung Châu" } #
+4230 = { "Thuy Nguyên" "Thuy Nguyên" } #
+4231 = { "Hai Châu" "Hai Châu" } #
+4232 = { "Tù Giang" "Tù Giang" } #
+4514 = { "Tát Ca Phái" "Tát Ca Phái" } #
+4515 = { "Cát Long" "Cát Long" } #
+4517 = { "Nãi Dông" "Nãi Dông" } #
+4519 = { "Duong Húng" "Duong Húng" } #
+4651 = { "Dôi Mã Dào" "Dôi Mã" } #Dào for island
+4652 = { "Hai Thành" "Hai Thành" } #
+4693 = { "Vu Diên" "Vu Diên" } #
+8554 = { "Manh Liên" "Manh Liên" } #
+8555 = { "Dài Dông" "Dài Dông" } #
+8556 = { "Vong Các" "Vong Các" } #
+8567 = { "La Hôc" "La Hôc" } #
+8568 = { "Sô Phân" "Sô Phân" } #
+8573 = { "Sâm Châu" "Sâm Châu" } #
+8581 = { "Qui Lan" "Qui Lan" } #Cui Lan
+8592 = { "Vi Xuyên" "Vi Xuyên" } #
+8594 = { "Nghê An" "Ke Vinh" } #
+8596 = { "Dák Lák" "Buôn Me Thuôt" } #
+8597 = { "Son Nam" "Son Nam" } #was unable to find this place online for Vietnam? Why not Nam Dinh?
+8624 = { "Châu Dôc" "Châu Dôc" } #
+8625 = { "Tây Ninh" "Tây Ninh" } #
+8628 = { "Quang Ngãi" "Quang Ngãi" } #
+8629 = { "Dà Lat" "Dà Lat" } #
+8638 = { "Bâc Liêt" "Bâc Liêt" } #
+8646 = { "Phông Xa Lì" "Phòng Xa Lì" } #
+8648 = { "Lai Châu" "Muòng Lay" } #
+8649 = { "Xin Ga Po" "Xin Ga Po" } #
+8652 = { "Phan Thiêt" "Phan Thiêt" } #
+8653 = { "Hai Phô" "Hai Phô" } #
+8654 = { "Dak Nông" "Dak Mil" } #
+8655 = { "Phuóc Long" "Phuóc Long" } #
+8656 = { "Lào Cai" "Lào Cai" } #
+8658 = { "Thái Nguyên" "Thái Nguyên" } #
+8659 = { "Lang Son" "Lang Son" } #
+8728 = { "Lac Hoàn" "Lac Hoàn" } #
+8731 = { "Cam Cát" "Cam Cát" } #

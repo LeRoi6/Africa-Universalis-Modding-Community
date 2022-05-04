@@ -24,6 +24,9 @@ technology = {
 technology = {
 	# Tech 1
 	year = 1390
+	expects_institution = {
+		feudalism = 0.25
+	}
 	
 	#infantry_shock		= 	0.1			#BTAddOn removed - Part of tech shock and fire overhaul
 	#infantry_fire 		= 	0.1			#BTAddOn removed - Part of tech shock and fire overhaul
@@ -66,11 +69,17 @@ technology = {
 	enable = mamluk_cavalry_charge	
 	enable = south_american_warfare	
 	enable = ha_xantican_warrior
+	enable = aboriginal_boomerang
+	enable = aboriginal_warrior
+	enable = pacific_spearman
 }
 
 technology = {
 	# Tech 2
 	year = 1420
+	expects_institution = {
+		feudalism = 0.5
+	}
 	
 	infantry_shock		= 	0.2
 	cavalry_shock		= 	0.4			#BTAddOn changed from 0.2 - Part of tech shock and fire overhaul
@@ -83,13 +92,20 @@ technology = {
 technology = {
 	# Tech 3
 	year = 1440
+	expects_institution = {
+		feudalism = 0.5
+	}
 	
 	land_morale = 	0.5
+	may_drill = yes
 }
 
 technology = {
 	# Tech 4
 	year = 1453
+	expects_institution = {
+		feudalism = 0.5
+	}
 	
 	#Pike Square
 	
@@ -102,6 +118,10 @@ technology = {
 technology = {
 	# Tech 5
 	year = 1466
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.15
+	}
 	
 	#Standardised Pikes
 	supply_limit 		= 	0.2			#BTAddOn changed from 0.5, reducing tech supply limit bonus and increasing development bonus
@@ -132,6 +152,10 @@ technology = {
 	enable = chinese_footsoldier		
 	enable = japanese_footsoldier	
 	enable = ha_reformed_xantican_warrior
+	enable = aboriginal_ambusher
+	enable = aboriginal_infantry
+	enable = aboriginal_reformed_boomerang
+	enable = pacific_reformed_spearman
 	
 	combat_width = 2
 }
@@ -139,6 +163,10 @@ technology = {
 technology = {
 	# Tech 6
 	year = 1479
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.3
+	}
 	
 	#Arquebus
 	military_tactics 	= 	0.25
@@ -161,6 +189,8 @@ technology = {
 	enable = japanese_samurai	
 	enable = shaybani	
 	enable = high_american_horsemen
+	enable = aboriginal_horseman	
+	enable = pacific_horseman
 	
 	combat_width = 2
 }
@@ -168,6 +198,10 @@ technology = {
 technology = {
 	# Tech 7
 	year = 1492
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+	}
 	
 	#The limber
 	artillery_fire 		= 	1.6			#BTAddOn changed from 1 - Part of tech shock and fire overhaul
@@ -180,6 +214,11 @@ technology = {
 technology = {
 	# Tech 8
 	year = 1505
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+	}
+
 	
 	#Pike and Shot
 	#infantry_fire		= 	0.25			#BTAddOn removed - Part of tech shock and fire overhaul
@@ -194,6 +233,11 @@ technology = {
 	# Tech 9
 	
 	year = 1518
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.15
+	}
 	
 	#Ditch
 	infantry_fire		= 	0.30			#BTAddOn new - Part of tech shock and fire overhaul
@@ -217,6 +261,11 @@ technology = {
 technology = {
 	# Tech 10
 	year = 1531
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.3
+	}
 	
 	#Reiter
 	maneuver_value 		= 	0.25
@@ -243,11 +292,20 @@ technology = {
 	enable = indian_elephant	
 	enable = steppe_riders
 	enable = high_american_rifle_cavalry
+	enable = aboriginal_outback_warriors
+	enable = aboriginal_cavalry
+	enable = pacific_island_warriors
+	enable = pacific_cavalry
 }
 
 technology = {
 	# Tech 11
 	year = 1544
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+	}
 	
 	#Matchlock Musket
 	#infantry_shock		= 	0.20			#BTAddOn removed - Part of tech shock and fire overhaul
@@ -265,6 +323,11 @@ technology = {
 technology = {
 	# Tech 12
 	year = 1557
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+	}
 	
 	#Spanish Square
 	sprite_level = 2
@@ -292,6 +355,12 @@ technology = {
 technology = {
 	# Tech 13
 	year = 1570
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.15
+	}
 	
 	#Trunnions
 	artillery_shock 	= 	0.2			#BTAddOn changed from 0.1 - Part of tech shock and fire overhaul
@@ -304,6 +373,12 @@ technology = {
 technology = {
 	# Tech 14
 	year = 1583
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.3
+	}
 	
 	#Star Bastions
 	fort_16th = yes
@@ -330,6 +405,11 @@ technology = {
 	enable = reformed_mughal_mansabdar	
 	enable = steppe_lancers
 	enable = high_american_hussar
+	enable = aboriginal_hussar
+	enable = aboriginal_arquebusier
+	enable = aboriginal_tasmanian_arquebusier
+	enable = pacific_hussar
+	enable = pacific_arquebusier
 	
 	combat_width = 2
 }
@@ -337,6 +417,12 @@ technology = {
 technology = {
 	# Tech 15
 	year = 1596
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+	}
 	
 	#Maurician Infantry
 	land_morale 		=	0.5			#BTAddOn changed from 1.0, increasing base morale
@@ -360,6 +446,12 @@ technology = {
 technology = {
 	# Tech 16
 	year = 1609
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+	}
 	
 	#Standardisation of Calibre
 	#artillery_shock 	= 	0.1			#BTAddOn removed - Part of tech shock and fire overhaul
@@ -376,6 +468,13 @@ technology = {
 technology = {
 	# Tech 17
 	year = 1622
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.15
+	}
 	
 	#cavalry_shock		=	1.0			#BTAddOn removed - Part of tech shock and fire overhaul
 	infantry_fire		=	0.30			#BTAddOn new - Part of tech shock and fire overhaul
@@ -389,6 +488,13 @@ technology = {
 technology = {
 	# Tech 18
 	year = 1635
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.3
+	}
 	
 	#Carbine
 	maneuver_value 		= 	0.25
@@ -405,6 +511,8 @@ technology = {
 	enable = leather_cannon	
 	enable = steppe_mounted_raiders
 	enable = ha_xoloti
+	enable = aboriginal_swarm_cav
+	enable = pacific_swarm_cav
 	
 	combat_width = 2
 }
@@ -412,6 +520,13 @@ technology = {
 technology = {
 	# Tech 19
 	year = 1648
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+	}
 	
 	#Gustavian Infantry
 	military_tactics 	= 	0.25
@@ -437,17 +552,26 @@ technology = {
 	enable = south_american_swarm
 	enable = steppe_infantry
 	enable = high_american_swarm
+	enable = aboriginal_riflemen
+	enable = pacific_riflemen
 }
 
 technology = {
 	# Tech 20
 	year = 1661
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+	}
 	
 	#Killing Grounds
 	
 	#infantry_fire		= 	0.5			#BTAddOn removed - Part of tech shock and fire overhaul
 	artillery_fire 		= 	0.70			#BTAddOn new - Part of tech shock and fire overhaul
-		
+	
 	enable = swivel_cannon		
 
 	combat_width = 2
@@ -456,6 +580,14 @@ technology = {
 technology = {
 	# Tech 21
 	year = 1674
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.15
+	}
 	
 	#Line Infantry
 	sprite_level = 3
@@ -467,6 +599,14 @@ technology = {
 technology = {
 	# Tech 22
 	year = 1687
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.3
+	}
 	
 	#Cartridge	(1620)?)
 	#cavalry_fire		=	0.5			#BTAddOn removed - Part of tech shock and fire overhaul
@@ -488,6 +628,14 @@ technology = {
 technology = {
 	# Tech 23
 	year = 1700
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+	}
 	
 	#Light Cavalry
 	
@@ -521,11 +669,22 @@ technology = {
 	enable = steppe_cavalry
 	enable = ha_foreign_influenced_infantry
 	enable = high_american_dragoon
+	enable = aboriginal_dragoon
+	enable = pacific_dragoon
 }
 
 technology = {
 	# Tech 24
 	year = 1715
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.15
+	}
 	
 	#Covered Way
 	fort_18th	= yes	
@@ -537,6 +696,15 @@ technology = {
 technology = {
 	# Tech 25
 	year = 1730
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.3
+	}
 	
 	#Metallurgy
 	artillery_shock 	=	0.2			#BTAddOn changed from 0.1 - Part of tech shock and fire overhaul
@@ -548,6 +716,15 @@ technology = {
 technology = {
 	# Tech 26
 	year = 1745
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+	}
 	
 	#Light Infantry Companies
 	sprite_level = 4
@@ -582,6 +759,8 @@ technology = {
 	enable = eastern_skirmisher
 	enable = steppe_rifles
 	enable = ha_reformed_influenced_infantry
+	enable = aboriginal_guerrillas
+	enable = pacific_guerrillas
 	
 	combat_width = 2
 }
@@ -589,6 +768,15 @@ technology = {
 technology = {
 	# Tech 27
 	year = 1760
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+	}
 	
 	#Bayonet
 	supply_limit		=	0.2			#BTAddOn changed from 0.5, reducing tech supply limit bonus and increasing development bonus
@@ -599,6 +787,16 @@ technology = {
 technology = {
 	# Tech 28
 	year = 1775
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+		industrialization = 0.25
+	}
 	
 	#Cuirassier
 	maneuver_value 		= 	0.25
@@ -627,6 +825,16 @@ technology = {
 technology = {
 	# Tech 29
 	year = 1790
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+		industrialization = 0.5
+	}
 	
 	#Defense in Depth
 	artillery_fire		=	0.7			#BTAddOn new - Part of tech shock and fire overhaul
@@ -637,6 +845,16 @@ technology = {
 technology = {
 	# Tech 30
 	year = 1805
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 1
+		industrialization = 0.5
+	}
 	
 	#Impulse Warfare
 	#sprite_level = 5	
@@ -665,6 +883,16 @@ technology = {
 technology = {
 	# Tech 31
 	year = 1820
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.5
+		industrialization = 1
+	}
 	
 	#Rifle
 	#cavalry_shock		=	1.0			#BTAddOn removed - Part of tech shock and fire overhaul
@@ -676,6 +904,16 @@ technology = {
 technology = {
 	# Tech 32
 	year = 1835
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 1
+		enlightenment = 1
+		industrialization = 1
+	}
 	
 	#Field Howitzer
 	military_tactics	=	0.25

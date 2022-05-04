@@ -39,7 +39,7 @@ age_of_discovery = {
 					}
 				}
 			}
-			total_development = 250
+			total_development = 250 # BT; 100
 
 		}
 		
@@ -63,9 +63,11 @@ age_of_discovery = {
 			custom_trigger_tooltip = {
 				tooltip = obj_30_development_city_tooltip
 				any_owned_province = {
-					is_core = ROOT
-					controlled_by = owner
-					development = 50
+					exclude_from_progress = {
+						is_core = ROOT
+						controlled_by = owner
+					}
+					development_discounting_tribal = 50
 				}
 			}
 		}
@@ -290,6 +292,10 @@ age_of_reformation = {
 					value = yes
 				}
 				trading_bonus = {
+					trade_goods = cloves
+					value = yes
+				}
+				trading_bonus = {
 					trade_goods = chinaware
 					value = yes
 				}
@@ -378,7 +384,7 @@ age_of_reformation = {
 
 		ab_prestige_per_development_from_conversion = {
 			modifier = {
-				prestige_per_development_from_conversion = 0.3
+				prestige_per_development_from_conversion = 0.15
 			}
 			ai_will_do = {
 				factor = 10
@@ -437,11 +443,6 @@ age_of_reformation = {
 		}
 	
 	}
-	
-	
-	
-
-	
 }
 
 
@@ -603,7 +604,10 @@ age_of_absolutism = {
 		}	
 		ab_sweden_manpower = {
 			allow = {
+				OR = {
 				tag = SWE
+					tag = SCA
+				}
 			}
 			modifier = {
 				manpower_recovery_speed = 0.35
@@ -666,7 +670,7 @@ age_of_revolutions = {
 		}
 		obj_large_subject = {
 			any_subject_country = {
-				total_development = 500
+				total_development = 500 # BT; 250
 			}
 		}
 		obj_disc_army = {
@@ -678,7 +682,7 @@ age_of_revolutions = {
 		}
 		obj_huge_capital = {
 			capital_scope = {
-				development = 80
+				development = 80 # BT; 50
 			}
 		}
 		obj_great_general = {
@@ -772,7 +776,10 @@ age_of_revolutions = {
 		}
 		ab_pru_military = {
 			allow = {
+				OR = {
 				tag = PRU
+					tag = GER
+				}
 			}
 			modifier = {
 				fire_damage_received = -0.2
@@ -783,7 +790,10 @@ age_of_revolutions = {
 		}
 		ab_gbr_fleet = {
 			allow = {
-				tag = GBR
+				OR = {
+					tag = GBR
+					tag = UNK # BT
+				}
 			}
 			modifier = {
 				naval_maintenance_modifier = -0.33
@@ -805,7 +815,10 @@ age_of_revolutions = {
 		}
 		ab_austria_rep = {
 			allow = {
+				OR = {
 				tag = HAB
+					tag = HLR
+				}
 			}
 			modifier = {
 				diplomatic_reputation = 5

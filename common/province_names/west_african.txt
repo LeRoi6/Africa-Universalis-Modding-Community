@@ -1,0 +1,51 @@
+#By Arga Sep 2020
+341 = { "Tùnísíà" "Tùnísíà" } #Tunis, yorumba
+361 = { "Káírò" "Káírò" } #cairo, yorumba
+365 = { "Sìnáì" "Sìnáì" } #sinai, yorumba
+379 = { "Jerúsálémù" "Jerúsálémù" } #judea, yorumba
+1096 = { "Kepu Ferde" "Kepu Ferde" } #cape verden, yorumba
+1097 = { "Ëtulá Ëria" "Malabo" } #fernando po, yorumba, Ëtulá Ëria is Bubi name
+1126 = { "Etikun Ehin-Erin" "Abidjan" } #Assinie, yorumba
+1139 = { "Aakrá" "Aakrá" } #Accra, yorumba
+1140 = { "Kana" "Kana" } #Abomey, yorumba, Kana is the older town while Aobmey is 17th century onwards
+1141 = { "Ouidah" "Ardra" } #Whydah, yorumba
+1144 = { "Oyo-Ile" "Oyo-Ile" } #Oyo, yorumba
+1145 = { "Oya" "Minna" } #Nupe, yorumba, Nupe was name of people but it corresponds to the Niger State
+1146 = { "Ilé-Ifè" "Ilé-Ifè" } #Ife, yorumba
+1147 = { "Edó" "Benin" } #Benin, yorumba
+1149 = { "Kàtsínà" "Kàtsínà" } #Katsina, yorumba
+1151 = { "Obutong" "Abá" } #Bonny, yorumba, Obutong is old name of Calabar, Abá name of old Igbo market town in area not currently implemented, alternatively Efik-Ibibio for the people
+1152 = { "Ìgàlá" "Ìgàlá" } #Idah, yorumba, Idah is the modern name
+1153 = { "Násáráwá" "Lafia-Bere-Bere" } #Pindinga, yorumba, more recognizable
+1155 = { "Kánò" "Kánò" } #Kano, yorumba
+1157 = { "Bòrnó" "Yerwa" } #borno, yorumba
+1164 = { "Kamerúùnù" "Duala" } #
+2258 = { "Axim" "Axim" } #gold coast, yorumba, change from previous proposal as it was too European oriented
+2289 = { "Kogi" "Okene" } #Ondo, yorumba, Ondo is at completely the wrong place
+2290 = { "Ìjèbú" "Ìjèbú" } #Ijebu, yorumba
+2291 = { "Kétu" "Kétu" } #Ketu
+2292 = { "Parakou" "Parakou" } #Moshi, yorumba, Mossi was the name of the tribe while Parakou city dates to the 16th century
+2293 = { "Ireshe Bino" "Ireshe Bino" } #Yawuri, yorumba, yawuri was mixture of modern Yauri and old name Birnin Yawari
+2294 = { "Nàìjíríà" "Asaba" } #Warri, yorumba, Warri was name of modern oil rig basically
+2295 = { "Atakora" "Natitingou" } #Atakora
+5393 = { "Igun Afefe" "Igun Afefe" } #
+
+#By Arga Nov 2020
+#1.30
+224 = { "Sévillé" "Sévillé" } #
+225 = { "Kórdòba" "Kórdòba" } #
+226 = { "Apata Ti Itan" "Apata Ti Itan" } #
+227 = { "Lisbón" "Lisbón" } #
+338 = { "Àlgéríà" "Àlgéríà " } #
+366 = { "Ope" "Ope" } #
+367 = { "Ologose" "Ologose" } #
+1118 = { "Etikun Ti Kiniun" "Kiniun" } #coast of the lion translated, can be improved on
+1141 = { "Xwéda" "Xwéda" } #
+1751 = { "Arákùnrin Méje" "Arákùnrin Méje" } #
+2246 = { "Ilè Ghánà" "Koumbi Saleh" } #
+2469 = { "Tuntun" "Tuntun" } #
+2470 = { "Mógadoré" "Mógadoré" } #
+3095 = { "Kasulu Ti Ayyub" "Kasulu Ti Ayyub" } #
+5210 = { "Awon Ile Bulu" "Awon Ile Bulu" } #
+8078 = { "Ààlà" "Ààlà" } #
+8106 = { "Alowo Ile Nla" "Alowo Ile Nla" } #

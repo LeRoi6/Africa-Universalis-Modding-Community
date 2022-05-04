@@ -502,7 +502,7 @@ industrialized_province_trigger = { #Province Scope
 }
 
 was_never_end_game_tag_trigger = {	#Country Scope
-	OR = { #TODO: Missing BT tags.
+	OR = {
 		NOT = { end_game_tags_blocked = yes }
 		AND = {
 			NOT = { was_tag = MUG }
@@ -529,6 +529,17 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { was_tag = SYN }
 			NOT = { was_tag = ADU }
 			NOT = { was_tag = LOT }
+			NOT = { was_tag = USA }
+			NOT = { was_tag = CAN }
+			NOT = { was_tag = BRZ }
+			NOT = { was_tag = AUS }
+			NOT = { was_tag = MEX }
+			NOT = { was_tag = ETH }
+			NOT = { was_tag = AKS }
+			NOT = { was_tag = GZI }
+			NOT = { was_tag = SOM }
+			NOT = { was_tag = RZI }
+			NOT = { was_tag = MAL }
 			NOT = { tag = MUG }
 			NOT = { tag = TUR }
 			NOT = { tag = BYZ }
@@ -553,6 +564,17 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { tag = SYN }
 			NOT = { tag = ADU }
 			NOT = { tag = LOT }
+			NOT = { tag = USA }
+			NOT = { tag = CAN }
+			NOT = { tag = BRZ }
+			NOT = { tag = AUS }
+			NOT = { tag = MEX }
+			NOT = { tag = ETH }
+			NOT = { tag = AKS }
+			NOT = { tag = GZI }
+			NOT = { tag = SOM }
+			NOT = { tag = RZI }
+			NOT = { tag = MAL }
 		}
 	}
 }
@@ -581,6 +603,7 @@ was_never_german_regional_tag_trigger = {	#Country Scope
 	NOT = { tag = WES }
 	NOT = { tag = HAN }
 }
+
 
 has_manufactory_trigger = { #Province Scope
 	custom_trigger_tooltip = {
@@ -641,6 +664,7 @@ has_manufactory_no_custom_tooltip_trigger = { #Province Scope
 				trade_goods = ivory
 				trade_goods = slaves
 				trade_goods = spices
+				trade_goods = cloves
 				trade_goods = fur
 				trade_goods = incense
 			}
@@ -699,38 +723,33 @@ has_no_manufactory_trigger = { #Province Scope
 root_can_build_manufactory_here_trigger = {
     has_no_manufactory_trigger = yes
     num_free_building_slots = 1
-    if = {
-        limit = {
+	OR = {
+		AND = {
             OR = {
                 trade_goods = naval_supplies
                 trade_goods = fish
                 trade_goods = salt
             }
-        }
-        ROOT = { dip_tech = 11 }
-    }
-    else_if = {
-        limit = {
+			ROOT = { dip_tech = 11 }
+		}
+		AND = {
             OR = {
                 trade_goods = copper
                 trade_goods = iron
             }
-        }
-        ROOT = { mil_tech = 11 }
-    }
-    else_if = {
-        limit = {
+			ROOT = { mil_tech = 11 }
+		}
+		AND = {
             OR = {
                 trade_goods = wool
                 trade_goods = cloth
                 trade_goods = silk
                 trade_goods = dyes
+				trade_goods = bt_trade_good_books
             }
-        }
-        ROOT = { adm_tech = 11 }
-    }
-    else_if = {
-        limit = {
+			ROOT = { adm_tech = 11 }
+		}
+		AND = {
             OR = {
                 trade_goods = coffee
                 trade_goods = cotton
@@ -739,33 +758,31 @@ root_can_build_manufactory_here_trigger = {
                 trade_goods = tea
                 trade_goods = cocoa
             }
-        }
-        ROOT = { adm_tech = 14 }
-    }
-    else_if = {
-        limit = {
+			ROOT = { adm_tech = 14 }
+		}
+		AND = {
             OR = {
                 trade_goods = ivory
                 trade_goods = slaves
                 trade_goods = spices
+                trade_goods = cloves
                 trade_goods = fur
                 trade_goods = incense
             }
-        }
-        ROOT = { dip_tech = 14 }
-    }
-    else_if = {
-        limit = {
+			ROOT = { dip_tech = 14 }
+		}
+		AND = {
             OR = {
                 trade_goods = grain
                 trade_goods = livestock
                 trade_goods = wine
+				trade_goods = bt_trade_good_beer
+				trade_goods = bt_trade_good_fruit
+				trade_goods = bt_trade_good_apiculture
             }
-        }
-        ROOT = { adm_tech = 6 }
-    }
-    else_if = {
-        limit = {
+			ROOT = { adm_tech = 6 }
+		}
+		AND = {
             OR = {
                 trade_goods = paper
                 trade_goods = gems
@@ -773,15 +790,13 @@ root_can_build_manufactory_here_trigger = {
                 trade_goods = glass
                 trade_goods = chinaware
             }
-        }
-        ROOT = { adm_tech = 16 }
-    }
-    else_if = {
-        limit = {
+			ROOT = { adm_tech = 16 }
+		}
+		AND = {
             trade_goods = coal
-        }
-        ROOT = { adm_tech = 21 }
-    }
+			ROOT = { adm_tech = 21 }
+		}
+	}
 }
 
 has_nobles_trade_good_trigger = {
@@ -813,6 +828,7 @@ has_burghers_trade_good_trigger = {
 		trade_goods = dyes
 		trade_goods = coal
 		trade_goods = spices
+		trade_goods = cloves
 		trade_goods = tropical_wood
 		trade_goods = glass
 		trade_goods = chinaware
@@ -871,7 +887,7 @@ has_dharma_elephants_trigger = {
 has_completed_all_reforms_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = has_completed_all_reforms_trigger_tooltip
-		NOT = { has_dlc = "Emperor" }
+		NOT = { has_dlc = "Origins" }
 		OR = {
 			has_reform = political_absolutism_reform
 			has_reform = legislative_houses_reform
@@ -887,6 +903,8 @@ has_completed_all_reforms_trigger = {
 			has_reform = many_fingers_of_god_reform
 			has_reform = religious_permanent_revolution_reform
 			has_reform = religion_in_one_country_reform
+			has_reform = native_remain_being_native_reform
+			has_reform = tribe_remain_tribal_reform
 		}
 	}
 }
@@ -910,6 +928,8 @@ has_final_tier_reforms_trigger = {
 			has_reform = many_fingers_of_god_reform
 			has_reform = religious_permanent_revolution_reform
 			has_reform = religion_in_one_country_reform
+			has_reform = native_remain_being_native_reform
+			has_reform = tribe_remain_tribal_reform
 		}
 	}
 }
@@ -1028,6 +1048,15 @@ has_courthouse_building_trigger = {
 	OR = {	
 		has_building = courthouse
 		has_building = town_hall
+	}
+}
+
+has_fort_building_trigger = {
+	OR = {
+		has_building = fort_15th
+		has_building = fort_16th
+		has_building = fort_17th
+		has_building = fort_18th
 	}
 }
 
@@ -1160,7 +1189,7 @@ province_has_current_tech_fort_trigger = {
 check_reducing_estate_revolt_size_trigger = {
 	if = {
 		limit = {
-			NOT = { num_of_cities = 8 }
+			NOT = { num_of_cities = 16 }
 		}
 		NOT = {
 			num_of_owned_provinces_with = {
@@ -1171,7 +1200,7 @@ check_reducing_estate_revolt_size_trigger = {
 	}
 	else_if = {
 		limit = {
-			NOT = { num_of_cities = 12 }
+			NOT = { num_of_cities = 24 }
 		}
 		NOT = {
 			num_of_owned_provinces_with = {
@@ -1182,7 +1211,7 @@ check_reducing_estate_revolt_size_trigger = {
 	}
 	else_if = {
 		limit = {
-			NOT = { num_of_cities = 18 }
+			NOT = { num_of_cities = 36 }
 		}
 		NOT = {
 			num_of_owned_provinces_with = {
@@ -1193,7 +1222,7 @@ check_reducing_estate_revolt_size_trigger = {
 	}
 	else_if = {
 		limit = {
-			NOT = { num_of_cities = 28 }
+			NOT = { num_of_cities = 56 }
 		}
 		NOT = {
 			num_of_owned_provinces_with = {
@@ -1204,7 +1233,7 @@ check_reducing_estate_revolt_size_trigger = {
 	}
 	else_if = {
 		limit = {
-			NOT = { num_of_cities = 40 }
+			NOT = { num_of_cities = 80 }
 		}
 		NOT = {
 			num_of_owned_provinces_with = {
@@ -1215,7 +1244,7 @@ check_reducing_estate_revolt_size_trigger = {
 	}
 	else_if = {
 		limit = {
-			NOT = { num_of_cities = 50 }
+			NOT = { num_of_cities = 100 }
 		}
 		NOT = {
 			num_of_owned_provinces_with = {
@@ -1304,12 +1333,11 @@ revolution_event_can_happen_trigger = {
 	OR = {
 		capital_scope = { 
 #			continent = europe 
-			controlled_by = REB
+			controlled_by = revolutionary_rebels
 		}
 		has_country_modifier = just_lost_to_revolutionary_rebels
 		has_country_flag = revolution_disaster_immediate_revolution
 	}
-	num_of_cities = 10
 	is_revolutionary = no
 }
 #country scope, used in election events to check whether generated rulers may be female
@@ -1326,4 +1354,722 @@ is_absolutism_active = {
 		current_age = age_of_absolutism
 		current_age = age_of_revolutions
 	}
+}
+
+is_southeast_tribe = {
+	OR =  {
+		tag = HNI
+		tag = ALT
+		tag = ICH
+		tag = COF
+		tag = JOA
+		tag = ETO
+		tag = SAT
+		tag = CIA
+		tag = COO
+		tag = ABI
+		tag = COW
+		tag = NTZ
+		tag = CAQ
+		tag = PCH
+		tag = QUI
+		tag = CCA
+		tag = ATA
+		tag = KSI
+		tag = OEO
+		tag = ANL
+		tag = NTC
+		tag = OSA
+		tag = CAD
+		tag = POW
+		tag = CLG
+		tag = HWK
+		tag = CHO
+	}
+}
+
+is_iroquois = {
+	OR = {
+		tag = TIO
+		tag = TAH
+		tag = ATT
+		tag = AGG
+		tag = ATW
+		tag = ARN
+		tag = OSH
+		tag = STA
+		tag = ERI
+		tag = WEN
+		tag = MOH
+		tag = ONE
+		tag = ONO
+		tag = CAY
+		tag = SEN
+		tag = TSC
+		tag = IRO
+	}
+}
+
+is_volcanic_area = { #polynesia and indonesia
+	OR = {
+		area = north_sumatra_area #aceh
+		area = batak_area
+		area = minangkabau_area
+		area = south_sumatra_area #lampung
+		area = banten_area
+		area = east_java_area
+		area = central_java_area
+		area = west_java_area
+		area = lesser_sunda_islands_area
+		area = mindanao_area #east mindanao
+		area = west_mindanao_area
+		area = visayas_area
+		area = luzon_area #northern luzon
+		area = southern_luzon_area
+		area = te_ika_a_maui_hauauru_area
+		area = te_ika_a_maui_waho_area
+		area = eastern_polynesia_area #tahiti
+		area = northern_polynesia_area #hawaii
+		area = polynesia_area
+		area = melanesia_area
+		area = papua_area
+	}
+}
+
+#Country scope
+is_or_was_tag = {
+	OR = {
+		tag = $tag$
+		was_tag = $tag$
+	}
+}
+
+#Province scope
+is_european_trade_node_province = {
+	OR = {
+		province_id = 1293
+		province_id = 1295
+		province_id = 1298
+		province_id = 1308
+		province_id = 137
+		province_id = 1320
+		province_id = 1322
+		province_id = 280
+		province_id = 153
+		province_id = 134
+		province_id = 61
+		province_id = 45
+		province_id = 1876
+		province_id = 186
+		province_id = 1269
+		province_id = 1276
+		province_id = 1975
+		province_id = 1926
+		province_id = 33
+		province_id = 1652
+		province_id = 1082
+		province_id = 464
+	}
+}
+
+#Province scope
+is_indian_trade_node_province = {
+	OR = {
+		province_id = 504
+		province_id = 507
+		province_id = 524
+		province_id = 1343
+		province_id = 1948
+		province_id = 1340
+	}
+}
+
+has_any_colonist_idea = {
+	OR = {
+		has_idea = colonial_ventures
+		has_idea = additional_colonists
+		has_idea = general_colonization_law
+		has_idea = pioneer_spirit
+		has_idea = manifest_destiny
+		has_idea = settling_the_interior
+		has_idea = cab_carib_seafaring
+		has_idea = lon_conquistadores
+		has_idea = nzh_expand_to_the_east
+		has_idea = hdr_distant_diplomacy	#Colonist is in the ambition
+		has_idea = AUS_outback_stations
+		has_idea = NZL_pokarekare_ana	#Colonist is in the ambition
+		has_idea = WSI_Colonial_Legacy	#Colonist is in the ambition
+		has_idea = asu_colonialism
+		has_idea = adu_expeditionary_sentiment
+		has_idea = ICE_nationalism	#Colonist is in the ambition
+		has_idea = maj_nusa_tenggara
+	}
+}
+
+has_completed_idea_group_of_category = {
+	[[adm_ideas]
+		custom_trigger_tooltip = {
+			tooltip = has_completed_one_adm_idea_group
+			OR = {
+				full_idea_group = innovativeness_ideas
+				full_idea_group = religious_ideas
+				full_idea_group = economic_ideas
+				full_idea_group = expansion_ideas
+				full_idea_group = administrative_ideas
+				full_idea_group = humanist_ideas
+			}
+		}
+	]
+	[[dip_ideas]
+		custom_trigger_tooltip = {
+			tooltip = has_completed_one_dip_idea_group
+			OR = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = influence_ideas
+			}
+		}
+	]
+	[[mil_ideas]
+		custom_trigger_tooltip = {
+			tooltip = has_completed_one_mil_idea_group
+			OR = {
+				full_idea_group = aristocracy_ideas
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = theocracy_gov_ideas
+				full_idea_group = indigenous_ideas
+				full_idea_group = horde_gov_ideas
+				full_idea_group = plutocracy_ideas
+			}
+		}
+	]
+}
+
+has_religion_of_increased_opinion_for_scope = {
+	OR = {
+		AND = { religion = catholic $who$ = { has_country_flag = has_increased_catholic_opinion } }
+		AND = { religion = anglican $who$ = { has_country_flag = has_increased_anglican_opinion } }
+		AND = { religion = hussite $who$ = { has_country_flag = has_increased_hussite_opinion } }
+		AND = { religion = protestant $who$ = { has_country_flag = has_increased_protestant_opinion } }
+		AND = { religion = reformed $who$ = { has_country_flag = has_increased_reformed_opinion } }
+		AND = { religion = orthodox $who$ = { has_country_flag = has_increased_orthodox_opinion } }
+		AND = { religion = coptic $who$ = { has_country_flag = has_increased_coptic_opinion } }
+		AND = { religion = sunni $who$ = { has_country_flag = has_increased_sunni_opinion } }
+		AND = { religion = shiite $who$ = { has_country_flag = has_increased_shiite_opinion } }
+		AND = { religion = ibadi $who$ = { has_country_flag = has_increased_ibadi_opinion } }
+		AND = { religion = buddhism $who$ = { has_country_flag = has_increased_buddhism_opinion } }
+		AND = { religion = vajrayana $who$ = { has_country_flag = has_increased_vajrayana_opinion } }
+		AND = { religion = mahayana $who$ = { has_country_flag = has_increased_mahayana_opinion } }
+		AND = { religion = confucianism $who$ = { has_country_flag = has_increased_confucianism_opinion } }
+		AND = { religion = shinto $who$ = { has_country_flag = has_increased_shinto_opinion } }
+		AND = { religion = hinduism $who$ = { has_country_flag = has_increased_hinduism_opinion } }
+		AND = { religion = sikhism $who$ = { has_country_flag = has_increased_sikhism_opinion } }
+		AND = { religion = animism $who$ = { has_country_flag = has_increased_animism_opinion } }
+		AND = { religion = shamanism $who$ = { has_country_flag = has_increased_shamanism_opinion } }
+		AND = { religion = totemism $who$ = { has_country_flag = has_increased_totemism_opinion } }
+		AND = { religion = inti $who$ = { has_country_flag = has_increased_inti_opinion } }
+		AND = { religion = nahuatl $who$ = { has_country_flag = has_increased_nahuatl_opinion } }
+		AND = { religion = mesoamerican_religion $who$ = { has_country_flag = has_increased_mesoamerican_religion_opinion } }
+		AND = { religion = norse_pagan_reformed $who$ = { has_country_flag = has_increased_norse_pagan_reformed_opinion } }
+		AND = { religion = tengri_pagan_reformed $who$ = { has_country_flag = has_increased_tengri_pagan_reformed_opinion } }
+		AND = { religion = dreamtime $who$ = { has_country_flag = has_increased_dreamtime_opinion } }
+		AND = { religion = jewish $who$ = { has_country_flag = has_increased_jewish_opinion } }
+		AND = { religion = zoroastrian $who$ = { has_country_flag = has_increased_zoroastrian_opinion } }
+	}
+}
+
+reverse_has_religion_of_increased_opinion_for_scope = {
+	OR = {
+		AND = { $who$ = { religion = catholic } has_country_flag = has_increased_catholic_opinion }
+		AND = { $who$ = { religion = anglican } has_country_flag = has_increased_anglican_opinion }
+		AND = { $who$ = { religion = hussite } has_country_flag = has_increased_hussite_opinion }
+		AND = { $who$ = { religion = protestant } has_country_flag = has_increased_protestant_opinion }
+		AND = { $who$ = { religion = reformed } has_country_flag = has_increased_reformed_opinion }
+		AND = { $who$ = { religion = orthodox } has_country_flag = has_increased_orthodox_opinion }
+		AND = { $who$ = { religion = coptic } has_country_flag = has_increased_coptic_opinion }
+		AND = { $who$ = { religion = sunni } has_country_flag = has_increased_sunni_opinion }
+		AND = { $who$ = { religion = shiite } has_country_flag = has_increased_shiite_opinion }
+		AND = { $who$ = { religion = ibadi } has_country_flag = has_increased_ibadi_opinion }
+		AND = { $who$ = { religion = buddhism } has_country_flag = has_increased_buddhism_opinion }
+		AND = { $who$ = { religion = vajrayana } has_country_flag = has_increased_vajrayana_opinion }
+		AND = { $who$ = { religion = mahayana } has_country_flag = has_increased_mahayana_opinion }
+		AND = { $who$ = { religion = confucianism } has_country_flag = has_increased_confucianism_opinion }
+		AND = { $who$ = { religion = shinto } has_country_flag = has_increased_shinto_opinion }
+		AND = { $who$ = { religion = hinduism } has_country_flag = has_increased_hinduism_opinion }
+		AND = { $who$ = { religion = sikhism } has_country_flag = has_increased_sikhism_opinion }
+		AND = { $who$ = { religion = animism } has_country_flag = has_increased_animism_opinion }
+		AND = { $who$ = { religion = shamanism } has_country_flag = has_increased_shamanism_opinion }
+		AND = { $who$ = { religion = totemism } has_country_flag = has_increased_totemism_opinion }
+		AND = { $who$ = { religion = inti } has_country_flag = has_increased_inti_opinion }
+		AND = { $who$ = { religion = nahuatl } has_country_flag = has_increased_nahuatl_opinion }
+		AND = { $who$ = { religion = mesoamerican_religion } has_country_flag = has_increased_mesoamerican_religion_opinion }
+		AND = { $who$ = { religion = norse_pagan_reformed } has_country_flag = has_increased_norse_pagan_reformed_opinion }
+		AND = { $who$ = { religion = tengri_pagan_reformed } has_country_flag = has_increased_tengri_pagan_reformed_opinion }
+		AND = { $who$ = { religion = dreamtime } has_country_flag = has_increased_dreamtime_opinion }
+		AND = { $who$ = { religion = jewish } has_country_flag = has_increased_jewish_opinion }
+		AND = { $who$ = { religion = zoroastrian } has_country_flag = has_increased_zoroastrian_opinion }
+	}
+}
+
+mal_will_accept_offer = {
+	$province$ = {
+		owner = {
+			OR = {
+				alliance_with = ROOT
+				is_subject_of = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+		}
+	}
+}
+
+mal_very_highly_to_accept_offer = {
+	$province$ = {
+		owner = {
+			has_opinion = {
+				who = ROOT
+				value = 50
+			}
+		}
+	}
+}
+
+mal_might_or_might_not_accept_offer = {
+	$province$ = {
+		owner = {
+			has_opinion = {
+				who = ROOT
+				value = -50
+			}
+			NOT = {
+				has_opinion = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+	}
+}
+
+mal_very_likely_to_not_accept_offer = {
+	$province$ = {
+		owner = {
+			NOT = {
+				has_opinion = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+	}
+}
+
+mal_will_never_accept_offer = {
+	$province$ = {
+		owner = {
+			OR = {
+				is_rival = ROOT
+				is_enemy = ROOT
+				NOT = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}
+	}
+}
+
+has_any_heir_cult_active = {
+	OR = {
+		has_country_modifier = junior_yemoja_cult
+		has_country_modifier = junior_roog_cult
+		has_country_modifier = junior_nyame_cult
+		has_country_modifier = junior_cwezi_cult
+		has_country_modifier = junior_central_african_ancestor_cult
+		has_country_modifier = junior_mwari_cult
+		has_country_modifier = junior_enkai_cult
+		has_country_modifier = junior_waaq_cult
+		has_country_modifier = junior_zanahary_cult
+		has_country_modifier = junior_christianity_cult
+		has_country_modifier = junior_islam_cult
+		has_country_modifier = junior_buddhism_cult
+		has_country_modifier = junior_dharmic_cult
+		has_country_modifier = junior_south_central_american_cult
+		has_country_modifier = junior_norse_cult
+		has_country_modifier = junior_jewish_cult
+		has_country_modifier = junior_zoroastrian_cult
+	}
+}
+
+gained_development_from_building = {
+	has_province_flag = built_dev_$building$
+}
+
+gained_development_from_any_building = {
+	OR = {
+		has_province_flag = built_dev_marketplace
+		has_province_flag = built_dev_workshop
+		has_province_flag = built_dev_temple
+		has_province_flag = built_dev_barracks
+		has_province_flag = built_dev_shipyard
+		has_province_flag = built_dev_courthouse
+		has_province_flag = built_dev_dock
+		has_province_flag = built_dev_regimental_camp
+		has_province_flag = built_dev_cathedral
+		has_province_flag = built_dev_university
+		has_province_flag = built_dev_trade_depot
+		has_province_flag = built_dev_grand_shipyard
+		has_province_flag = built_dev_training_fields
+		has_province_flag = built_dev_stock_exchange
+		has_province_flag = built_dev_counting_house
+		has_province_flag = built_dev_town_hall
+		has_province_flag = built_dev_drydock
+		has_province_flag = built_dev_conscription_center
+		has_province_flag = built_dev_manufactory
+	}
+}
+
+has_primary_cult = {
+	has_country_flag = has_$cult$_as_primary_cult
+}
+
+has_a_primary_cult_selected = {
+	custom_trigger_tooltip = {
+		tooltip = has_a_primary_cult_selected_tt
+		has_country_flag = has_selected_a_primary_cult
+	}
+}
+
+has_better_tech_than_westerns = {
+	custom_trigger_tooltip = {
+		tooltip = has_better_tech_than_westerns_tt
+		NOT = {
+			any_country = {
+				tech_difference = 1
+				technology_group = western
+			}
+		}
+	}
+}
+
+has_more_institutions_than_westerns = {
+	custom_trigger_tooltip = {
+		tooltip = has_more_institutions_than_westerns_tt
+		NOT = {
+			calc_true_if = {
+				all_country = {
+					institution_difference = {
+						who = ROOT
+						value = 1
+					}
+					technology_group = western
+				}
+				amount = 1
+			}
+		}
+	}
+}
+
+has_unlocked_estate_privilege = {
+	has_country_flag = unlocked_privilege_$estate_privilege$
+}
+
+has_unlocked_merc_company = {
+	has_country_flag = unlocked_$merc_company$
+}
+
+mal_target_country_exists_in_region = {
+	OR = {
+		AND = { has_country_flag = mal_journey_to_maghreb			any_country = { capital_scope = { region = maghreb_region			} } }
+		AND = { has_country_flag = mal_journey_to_iberia			any_country = { capital_scope = { region = iberia_region			} } }
+		AND = { has_country_flag = mal_journey_to_france			any_country = { capital_scope = { region = france_region			} } }
+		AND = { has_country_flag = mal_journey_to_italy				any_country = { capital_scope = { region = italy_region				} } }
+		AND = { has_country_flag = mal_journey_to_south_germany		any_country = { capital_scope = { region = south_german_region		} } }
+		AND = { has_country_flag = mal_journey_to_balkans			any_country = { capital_scope = { region = balkan_region			} } }
+		AND = { has_country_flag = mal_journey_to_anatolia			any_country = { capital_scope = { region = anatolia_region			} } }
+		AND = { has_country_flag = mal_journey_to_mashriq			any_country = { capital_scope = { region = mashriq_region			} } }
+		AND = { has_country_flag = mal_journey_to_egypt				any_country = { capital_scope = { region = egypt_region				} } }
+		AND = { has_country_flag = mal_journey_to_arabia			any_country = { capital_scope = { region = arabia_region			} } }
+		AND = { has_country_flag = mal_journey_to_horn_of_africa	any_country = { capital_scope = { region = horn_of_africa_region	} } }
+	}
+}
+
+mal_owns_provinces_in_region = {
+	OR = {
+		AND = { has_country_flag = mal_journey_to_maghreb			any_owned_province = { region = maghreb_region			} }
+		AND = { has_country_flag = mal_journey_to_iberia			any_owned_province = { region = iberia_region			} }
+		AND = { has_country_flag = mal_journey_to_france			any_owned_province = { region = france_region			} }
+		AND = { has_country_flag = mal_journey_to_italy				any_owned_province = { region = italy_region			} }
+		AND = { has_country_flag = mal_journey_to_south_germany		any_owned_province = { region = south_german_region		} }
+		AND = { has_country_flag = mal_journey_to_balkans			any_owned_province = { region = balkan_region			} }
+		AND = { has_country_flag = mal_journey_to_anatolia			any_owned_province = { region = anatolia_region			} }
+		AND = { has_country_flag = mal_journey_to_mashriq			any_owned_province = { region = mashriq_region			} }
+		AND = { has_country_flag = mal_journey_to_egypt				any_owned_province = { region = egypt_region			} }
+		AND = { has_country_flag = mal_journey_to_arabia			any_owned_province = { region = arabia_region			} }
+		AND = { has_country_flag = mal_journey_to_horn_of_africa	any_owned_province = { region = horn_of_africa_region	} }
+	}
+}
+
+province_is_or_accepts_culture = {
+	OR = {
+		has_owner_culture = yes
+		has_owner_accepted_culture = yes
+	}
+}
+
+secondary_religion_group = {
+	[[christian]
+		OR = {
+			secondary_religion = catholic
+			secondary_religion = hussite
+			secondary_religion = coptic
+			secondary_religion = orthodox
+			secondary_religion = protestant
+			secondary_religion = reformed
+			secondary_religion = anglican
+		}
+	]
+	[[muslim]
+		OR = {
+			secondary_religion = sunni
+			secondary_religion = shiite
+			secondary_religion = ibadi
+		}
+	]
+	[[eastern]
+		OR = {
+			secondary_religion = buddhism
+			secondary_religion = vajrayana
+			secondary_religion = mahayana
+			secondary_religion = confucianism
+			secondary_religion = shinto
+		}
+	]
+	[[dharmic]
+		OR = {
+			secondary_religion = hinduism
+			secondary_religion = sikhism
+		}
+	]
+	[[pagan]
+		OR = {
+			secondary_religion = animism
+			secondary_religion = shamanism
+			secondary_religion = totemism
+			secondary_religion = inti
+			secondary_religion = nahuatl
+			secondary_religion = mesoamerican_religion
+			secondary_religion = norse_pagan_reformed
+			secondary_religion = tengri_pagan_reformed
+			secondary_religion = dreamtime
+		}
+	]
+	[[jewish_group]
+		secondary_religion = jewish
+	]
+	[[zoroastrian_group]
+		secondary_religion = zoroastrian
+	]
+}
+
+#Buddhism is its own can of worms due to the so many aspects of it
+#This was one of the few moments where it was almost worth considering putting Buddhism in its own religion group - almost
+province_is_buddhist_or_accepts_buddhism = {
+	OR = {
+		custom_trigger_tooltip = {
+			tooltip = province_is_buddhist_or_accepts_buddhism_at
+			OR = {
+				AND = {
+					religion = buddhism
+					OR = {
+						has_owner_religion = yes
+						owner = { has_harmonized_with = buddhism }
+						owner = { secondary_religion = buddhism }
+					}
+				}
+				AND = {
+					religion = vajrayana
+					OR = {
+						has_owner_religion = yes
+						owner = { has_harmonized_with = vajrayana }
+						owner = { secondary_religion = vajrayana }
+					}
+				}
+				AND = {
+					religion = mahayana
+					OR = {
+						has_owner_religion = yes
+						owner = { has_harmonized_with = mahayana }
+						owner = { secondary_religion = mahayana }
+					}
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = province_is_buddhist_or_accepts_buddhism_bt
+			owner = {
+				OR = {
+					has_harmonized_with = buddhism
+					has_harmonized_with = vajrayana
+					has_harmonized_with = mahayana
+				}
+			}
+			has_owner_religion = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = province_is_buddhist_or_accepts_buddhism_ct
+			owner = {
+				OR = {
+					secondary_religion = buddhism
+					secondary_religion = vajrayana
+					secondary_religion = mahayana
+				}
+			}
+			has_owner_religion = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = province_is_buddhist_or_accepts_buddhism_dt
+			religion = shinto
+			has_owner_religion = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = province_is_buddhist_or_accepts_buddhism_et
+			owner = { has_personal_deity = buddha }
+			has_owner_religion = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = province_is_buddhist_or_accepts_buddhism_ft
+			owner = { has_adopted_cult = buddhism_cult }
+			has_owner_religion = yes
+		}
+		#For the case the province has a religion which the player has already harmonized with and cannot convert
+		#It's a hidden trigger because the tooltip is already super flooded and it is incredibly niche
+		hidden_trigger = {
+			owner = {
+				OR = {
+					has_harmonized_with = buddhism
+					has_harmonized_with = vajrayana
+					has_harmonized_with = mahayana
+				}
+				has_harmonized_with = ROOT
+			}
+		}
+	}
+}
+
+province_is_or_accepts_religion_group = {
+	custom_trigger_tooltip = {
+		tooltip = province_is_or_accepts_$religion_group$_tt
+		OR = {
+			AND = {
+				religion_group = $religion_group$
+				has_owner_religion = yes
+			}
+			AND = {
+				owner = { secondary_religion_group = { $religion_group$ = yes } }
+				OR = {
+					religion_group = $religion_group$
+					has_owner_religion = yes
+				}
+			}
+		}
+	}
+}
+
+province_is_or_accepts_religion = {
+	custom_trigger_tooltip = {
+		tooltip = province_is_or_accepts_$religion$_tt
+		OR = {
+			AND = {
+				religion = $religion$
+				has_owner_religion = yes
+			}
+			AND = {
+				owner = { secondary_religion = $religion$ }
+				OR = {
+					religion = $religion$
+					has_owner_religion = yes
+				}
+			}
+		}
+	}
+}
+
+has_not_any_exploration_ideas = {
+	NOT = { has_idea = quest_for_the_new_world }
+	NOT = { has_idea = call_of_our_forefathers }
+	NOT = { has_idea = tonga_oceanic_empire }
+	NOT = { has_idea = samoa_trade }
+	NOT = { has_idea = legendary_voyagers }
+	NOT = { has_idea_group = ICE_ideas }
+}
+
+has_any_exploration_idea = {
+	OR = {
+		has_idea = quest_for_the_new_world
+		has_idea = call_of_our_forefathers
+		has_idea = tonga_oceanic_empire
+		has_idea = samoa_trade
+		has_idea = legendary_voyagers
+		has_idea_group = ICE_ideas
+	}
+}
+
+has_exempt_from_seize_land_for_estate_nobles = {
+	OR = {
+		has_estate_privilege = estate_nobles_levies
+		has_estate_privilege = estate_nobles_golden_liberty
+		has_estate_privilege = estate_nobles_decentralized_tribe
+		has_estate_privilege = estate_nobles_tribe_unification
+	}
+}
+has_exempt_from_seize_land_for_estate_brahmins = {
+	always = no	#Doesn't have Exempt from Seize Land privileges
+}
+has_exempt_from_seize_land_for_estate_burghers = {
+	always = no	#Doesn't have Exempt from Seize Land privileges
+}
+has_exempt_from_seize_land_for_estate_church = {
+	has_estate_privilege = estate_church_inwards_perfection
+}
+has_exempt_from_seize_land_for_estate_cossacks = {
+	has_estate_privilege = estate_cossacks_establish_the_cossack_regiments
+}
+has_exempt_from_seize_land_for_estate_dhimmi = {
+	always = no	#Doesn't have Exempt from Seize Land privileges
+}
+has_exempt_from_seize_land_for_estate_jains = {
+	always = no	#Doesn't have Exempt from Seize Land privileges
+}
+has_exempt_from_seize_land_for_estate_maratha = {
+	OR = {
+		has_estate_privilege = estate_maratha_levies
+		has_estate_privilege = estate_maratha_special_privilege
+	}
+}
+has_exempt_from_seize_land_for_estate_nomadic_tribes = {
+	always = no	#Doesn't have Exempt from Seize Land privileges
+}
+has_exempt_from_seize_land_for_estate_rajput = {
+	has_estate_privilege = estate_rajput_rajput_regiments
+}
+has_exempt_from_seize_land_for_estate_vaisyas = {
+	has_estate_privilege = estate_vaisyas_wartaxes
+}
+
+estate_has_exempt_from_seize_land_privilege = {
+	has_estate = $estate$
+	has_exempt_from_seize_land_for_$estate$ = yes
 }

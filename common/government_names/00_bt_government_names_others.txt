@@ -339,3 +339,32 @@ barangay_polity_dapitan = {
 		tag = DPT
 	}
 }
+
+###
+# neo
+###
+
+imperial_abbacy = {
+	rank = {
+		1 = PRINCEABBACY
+		2 = ARCHBISHOPRIC
+		3 = PATRIARCHATE
+	}
+	
+	ruler_male = {
+		1 = PRINCEABBOT
+		2 = ARCHBISHOP
+		3 = PATRIARCH
+	}
+	
+	ruler_female = {
+		1 = PRINCEABBOT_fem
+		2 = ARCHBISHOP_fem
+		3 = MATRIARCH
+	}
+	
+	trigger = {
+		has_reform = imperial_abbey_reform
+		government = theocracy
+	}
+}

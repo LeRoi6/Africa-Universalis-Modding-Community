@@ -1,0 +1,43 @@
+#(JP) I've temporarily disabled this due to general naming rules - a non-standard variety which stands out compared to standard Al/As etc...
+#Egyptian Arabic, as opposed to Standard Arabic
+
+##Egypt
+#358 = { "El-Eskendereya" "El-Eskendereya" }
+#359 = { "El-Fayyum" "El-Fayyum" }
+#361 = { "El-Qahera" "El-Qahera" }
+#1233 = { "El-Kharga" "El-Kharga" }
+#2315 = { "Es-Suweis" "Es-Suweis" }
+#2316 = { "El-Gharbeya" "Tanta" }
+#2317 = { "El-Menya" "El-Menya" }
+#2318 = { "El-Bahnasa" "El-Bawiti" }			#modern Bahariya
+#2320 = { "Ras Ghareb" "Ras Ghareb" }
+#2321 = { "El-Qoseir" "El-Qoseir" }
+#2324 = { "Halayeb" "Halayeb" }
+#2325 = { "El-Alamein" "El-Alamein" }			#doubt this dates back to the 15th cenutry, but oh well, couldn't find better.
+#4316 = { "Esh-Sharqeya" "El-Mansura" }
+#4317 = { "Beheira" "Damanhur" }
+#4318 = { "Atfiheya" "Atfih" }
+#4319 = { "El-Uqsor" "El-Uqsor" }
+#4320 = { "Gerga" "Gerga" }
+#4321 = { "Es-Sahra esh-Sharqeya" "Medinet el-Gebali" }
+#4323 = { "Ed-Dakhla" "El-Qasr" }
+#5264 = { "El-Gize" "El-Gize" }
+#5267 = { "Beni Suef" "Beni Suef" }
+#5271 = { "El-Haras" "Medinet el-Haras" }
+#5272 = { "El-Baretun" "El-Baretun" }
+#5273 = { "Es-Siwah" "Es-Siwah" }
+
+##Levant
+#365 = { "El-Tur" "El-Tur" }
+#364 = { "El-Arish" "El-Arish" }
+#5180 = { "Ghazze" "Ghazze" }
+#5181 = { "Nekhel" "Nekhel" }
+#6094 = { "El-Eskenderun" "El-Eskenderun" }
+
+##Maghreb
+#356 = { "Benghazi" "Benghazi" }
+#357 = { "Derna" "Derna" }
+
+##Arabia
+#384 = { "El-Medina" "El-Medina" }
+#385 = { "Mekka" "Mekka" }

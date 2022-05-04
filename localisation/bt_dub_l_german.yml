@@ -1,0 +1,7 @@
+﻿l_german:
+ bt_american_cot_events.1.t:0 "Ein Zentrum des Handels"
+ bt_american_cot_events.1.d:0 "Die Stadt [Root.GetCapitalName] in [Root.GetName] ist zum Anziehungspunkt für Kaufleute geworden, die die Region bereisen. Es wird lebhaft mit Waren gehandelt, und die Stadt floriert entsprechend. Mehrere [From.GetNoblemenPoliticians] an unserem Hof schlagen vor, dass [Root.GetCapitalName] zu einer Charta erklärt werden sollte, die die Bedeutung der Stadt für den Handel formell festhält."
+ #TODO: Change quill to dynamic localisation as the islamic world apparently did not use quills, instead using reed pens. Or so the wiki says. I wonder if this is actually true however.
+ bt_american_cot_events.1.a:0 "Spitzt meine Feder!"
+ bt_american_cot_events.1.b:0 "[Root.GetCapitalName] ist kein würdiger Kandidat."
+ bt_american_cot_events.1.b_tooltip:0 "Dadurch wird verhindert, dass die Provinz von [Root.GetName] von §Rever§! ein Handelszentrum durch dieses Ereignis erhält."

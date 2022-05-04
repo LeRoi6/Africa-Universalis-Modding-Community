@@ -1,0 +1,28 @@
+﻿l_german:
+ # by schockocraft
+
+ BtFlavourSilesia.1.title:0 "Das Herzogtum Auschwitz und die Krone von Böhmen"
+ BtFlavourSilesia.1.desc:0 "Während Schlesien lange Zeit ein fester Bestandteil der polnischen Krone war, ging es nach der Aufteilung Polens und dem darauf folgenden Vertrag von Trentschin im Jahr 1335 an Böhmen verloren, woraufhin die schlesischen Herzogtümer als Untertanen der böhmischen Krone galten. Eine Ausnahme bilden die Herzogtümer Auschwitz und Zator, die zwar de facto ebenfalls unter böhmischer Herrschaft stehen, aber nicht unbestritten Teil des Vertrags sind. \n\nDas bedeutet, dass wir mit dem richtigen Ansatz zur polnischen Krone zurückkehren könnten."
+ BtFlavourSilesia.1.switch:0 "Treueschwur an die Polen"
+ BtFlavourSilesia.1.stay:0 "Wir stehen zu den Böhmen"
+
+ #BtFlavourSilesia.2 is copy of BtFlavourSilesia.1 but for PLC
+
+ BtFlavourSilesia.3.title:0 "Das Herzogtum Auschwitz und die Krone von Böhmen"
+ BtFlavourSilesia.3.desc:0 "Während Schlesien lange Zeit ein fester Bestandteil der polnischen Krone war, gelang es uns, es nach der Aufteilung Polens und dem darauf folgenden Vertrag von Trentschin im Jahr 1335 zu erwerben, wonach die schlesischen Herzogtümer als Untertanen der böhmischen Krone galten. Eine Ausnahme bilden die Herzogtümer Auschwitz und Zator, die zwar de facto auch von uns regiert werden, aber nicht unbestreitbar Teil des Vertrages sind. \n\nDas ist es, was der intrigante Herzog von Auschwitz jetzt als Grund benutzt, um zur polnischen Krone überzulaufen."
+ BtFlavourSilesia.3.accept:0 "Wir können uns einen Krieg allein deswegen nicht leisten"
+ BtFlavourSilesia.3.intervene:0 "Das dürfen wir nicht zulassen"
+ BtFlavourSilesia.3.intervene_tooltip:0 "£diplomacy_action_covert£ §O[target_ASC_polish_crown.GetName] wird gewarnt werden, sich nicht in die Sache einzumischen§!"
+
+ BtFlavourSilesia.4.title:0 "Das Herzogtum Auschwitz"
+ BtFlavourSilesia.4.desc:0 "Während Schlesien lange Zeit ein fester Bestandteil der polnischen Krone war, ging es nach der Aufteilung Polens und dem darauf folgenden Vertrag von Trentschin im Jahr 1335 an Böhmen verloren, woraufhin die schlesischen Herzogtümer als Untertanen der böhmischen Krone galten. Eine Ausnahme bilden die Herzogtümer Auschwitz und Zator, die zwar de facto ebenfalls von Böhmen regiert werden, aber nicht unbestreitbar Teil des Vertrags sind.\n\nDer Herzog von Auschwitz hat uns vorgeschlagen, stattdessen unser Vasall zu werden und uns unser rechtmäßiges Land zurückzugeben.\n\n\nAuch wird uns gesagt, dass es den Böhmen anscheinend völlig egal ist."
+ BtFlavourSilesia.4.desc_warned:0 "Während Schlesien lange Zeit ein fester Bestandteil der polnischen Krone war, ging es nach der Aufteilung Polens und dem darauf folgenden Vertrag von Trentschin im Jahr 1335 an Böhmen verloren, woraufhin die schlesischen Herzogtümer als Untertanen der böhmischen Krone galten. Eine Ausnahme bilden die Herzogtümer Auschwitz und Zator, die zwar de facto ebenfalls von Böhmen regiert werden, aber nicht unbestreitbar Teil des Vertrags sind.\n\nDer Herzog von Auschwitz hat uns vorgeschlagen, stattdessen unser Vasall zu werden und uns unser rechtmäßiges Land zurückzugeben.\n\n\nUns wurde auch gesagt, dass die Böhmen uns dringend raten, keine Dummheiten zu machen..."
+ BtFlavourSilesia.4.a:0 "Heißt sie in unserem Reich willkommen"
+ BtFlavourSilesia.4.b:0 "Sie bringen mehr Ärger als Nutzen"
+
+ # opinion modifiers
+ bt_sc_loyal_subject:0 "Treuer Untertan"
+ bt_sc_disloyal_subject:0 "Untreuer Untertan"
+ bt_sc_rejected_subject:0 "Vasallisierung abgelehnt"
+ bt_sc_took_disloyal_subject:0 "Untreuer Untertan gestohlen"
+ bt_sc_reject_disloyal_subject:0 "Untreuen Untertan abgelehnt"

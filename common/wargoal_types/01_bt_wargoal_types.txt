@@ -1,0 +1,29 @@
+#
+
+bt_tribal_reconquest_wargoal = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.33
+		prestige_factor = 0.5
+		peace_cost_factor = 0.33
+
+		peace_options = {
+			po_demand_provinces
+			po_return_cores
+		}
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 2
+		peace_cost_factor = 0.75
+
+		peace_options = {
+			po_revoke_cores
+			po_gold
+		}
+	}
+	
+	war_name = bt_tribal_reconquest_war_name	
+}

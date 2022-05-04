@@ -1,0 +1,90 @@
+strength_of_the_first_church = {
+	is_blessing = yes
+
+	modifier = {
+		global_heretic_missionary_strength = 0.015
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = {
+				religious_unity = 0.9
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				religious_unity = 0.7
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				religious_unity = 0.5
+			}
+		}
+	}
+}
+
+encourage_use_of_the_septuagint = {
+	is_blessing = yes
+
+	modifier = {
+		technology_cost = -0.1
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+stability_of_the_catholicosate = {
+	is_blessing = yes
+
+	modifier = {
+		stability_cost_modifier = -0.1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = {
+				stability = 3
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				stability = 2
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				stability = 1
+			}
+		}
+	}
+}
+
+reaffirm_independence_of_the_church = {
+	is_blessing = yes
+
+	modifier = {
+		tolerance_own = 1
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+fortify_the_monasteries = {
+	is_blessing = yes
+
+	modifier = {
+		defensiveness = 0.15
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}

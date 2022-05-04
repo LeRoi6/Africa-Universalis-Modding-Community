@@ -1,0 +1,19 @@
+#Contributions from a wide range, including JP
+#(JP) Hiberno-Normans, later Old English, will overwrite british.txt. None-standardised behind a #
+#(JP) I have reorganised and cleaned up all the prior British/English naming to try and make it more legible, consistant and keep it easier to edit in future
+
+#Ireland
+#372 = { "Tyrowen" "Dungannon" }
+#373 = { "Difelin" "Difelin" }
+375 = { "Thomond" "Ennis" }
+#376 = { "Gallive" "Gallive" }
+#3005 = { "Ardmagh" "Ardmagh" }
+#3009 = { "Weiseforthe" "Weiseforthe" }
+4121 = { "The Glens" "Newtownglens" }
+4377 = { "Ormonde" "Tipperary" }
+4379 = { "Offaly" "Dingle" }
+4380 = { "Tirconnell" "Donegal" }
+#4380 = { "Tirconnell" "Dunnagall" }
+8158 = { "Iveagh" "Rathfylan" }
+8159 = { "Coleraine" "Coleraine" }
+8165 = { "Ossory" "Kilkenny" }

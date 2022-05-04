@@ -1,0 +1,144 @@
+
+
+#Localised naming by Arga 2018 Jun 5 (Not a speaker, nor am I. If you have any corrections, please feel free to suggest them)
+
+#Laos
+614 = "Viang Chan" #laotian name but still better than french
+
+#canton
+665 = "Triêu Khánh"
+666 = "Kinh Châu"
+667 = "Quang Châu"
+668 = "Ma Cao"
+2156 = "Triêu Châu"
+2157 = "Huê Châu"
+2159 = "Lôi Châu"
+2160 = "Nhai Châu"
+
+#hebei
+695 = "Hà Gian"
+696 = "Bao Dinh"
+1816 = "Bac Kinh"
+2136 = "Tuyên Hóa"
+2137 = "Dai Danh"
+4195 = "Chính Dinh"
+
+#shandong
+690 = "Thanh Châu"
+2138 = "Vu Dinh"
+2139 = "Lai Chãu"
+2140 = "Duyên Châu"
+
+#Jiangsu
+685 = "Duong Châu"
+1821 = "Nam Kinh"
+1822 = "Tô Châu"
+2141 = "Tù Châu"
+2142 = "Hoài An"
+2145 = "Trân Giang"
+4196 = "Hai Châu"
+
+#zhejiang
+684 = "Hâng Châu"
+1824 = "Ôn Châu"
+2148 = "Thiêu Hung"
+2149 = "Ninh Ba"
+2150 = "Kim Hoa"
+
+#malay
+596 = "Melaka"
+
+#By Arga Nov 2020
+#By Arga Nov 2020
+#1.30 updates
+#asia
+#ayutthaya
+8556 = { "Krung Thep" "Krung Thep" } #
+#lower burma
+586 = { "Hongsaowadi" "Hongsaowadi" } #
+590 = { "Mea Lá Leing" "Mea Lá Leing" } #
+4399 = { "Yangkûng" "Yangkûng" } #
+#upper burma
+581 = { "Sa King" "Sa King" } #
+584 = { "Xang Wa" "Xang Wa" } #Angwa
+#2399 = { "??????" "??????" } #(Chrys) What's the purpose of this?
+#myelat
+4397 = { "Yongwi" "Yongwi" } #
+#hsenwi
+583 = { "Saenwi" "Saenwi" } #
+2400 = { "Si Pho" "Si Pho" } #
+#cambodia
+609 = { "Phra Nakhon" "Phra Nakhon" } #
+8589 = { "Phra Wihan" "Phra Wihan" } #
+8683 = { "Si Santho" "Si Santho" } #
+#mekong delta
+605 = { "Nakhon Wat" "Nakhon Wat" } #
+2376 = { "Praek Russae" "Keìn Thex" } #
+#tonkin
+613 = { "Tang Keiy" "Tang Keiy" } #
+8592 = { "Ceaa" "Ceaa" } #
+#johor
+597 = { "Yahor" "Yahor" } #
+8649 = { "Shingkhpor" "Shingkhpor" } #
+#indian ocean islands
+574 = { "Hmù Kea Xandaman" "Hmù Kea Xandaman" } #
+#guangxi
+2164 = { "Hnanhning" "Hnanhning" } #
+#yun-gui hinterland
+660 = { "Chiang Rung" "Chiang Rung" } #
+661 = { "Tahli" "Tahli" } #
+662 = { "Hyunhnan" "Khunhming" } #
+674 = { "Kuy Hyang" "Kuy Hyang" } #
+#sichuan
+679 = { "Cheing Tu" "Cheing Tu" } #
+680 = { "Changching" "Changching" } #
+4212 = { "Ceiy Cow" "Ceiy Cow" } #
+#chuannan
+2168 = { "Bo Cow" "Bo Cow" } #
+4213 = { "Hiu Cow" "Hiu Cow" } #
+#east guangdong
+667 = { "Kwangtûng" "Kwangtûng" } #
+668 = { "Makéa" "Makéa" } #
+2156 = { "Chea Cow" "Chea Cow" } #
+#north laos
+614 = { "Weingcanthn" "Weingcanthn" } #
+615 = { "Hluang Phra Bang" "Hluang Phra Bang" } #
+8618 = { "Samburi" "Samburi" } #
+#annam
+610 = { "Bar Khemi" "Bar Khemi" } #
+1016 = { "Ha Dibuk" "Ha Dibuk" } #
+2373 = { "Phu Wang" "Phu Wang" } #
+8594 = { "He Nga Xan" "He Nga Xan" } #
+#fujian
+669 = { "Fuu Cow" "Fuu Cow" } #
+#shaanxi
+700 = { "Si Xan" "Si Xan" } #
+#hubei
+682 = { "Hwu Chang" "Hwu Chang" } #
+2172 = { "Cing Cow" "Cing Cow" } #
+#shandong
+690 = { "Ching Cow" "Ching Cow" } #
+691 = { "Ci Hnan" "Ci Hnan" } #
+#south jiangsu
+685 = { "Hyang Cow" "Hyang Cow" } #
+1821 = { "Hnan Cing" "Hnan Cing" } #
+2145 = { "Cein Ceiyng" "Cein Ceiyng" } #
+#north jiangsu
+2141 = { "Suu Cow" "Suu Cow" } #
+4196 = { "Hi Cow" "Hi Cow" } #
+#zhejiang
+684 = { "Hang Cow" "Hang Cow" } #
+1824 = { "He Win Cow" "He Win Cow" } #
+2149 = { "Hning Po" "Hning Po" } #
+#north hebei
+1816 = { "Pak King" "Pak King" } #
+#south hebei
+695 = { "He X Ceiyn" "He X Ceiyn" } #
+#liaoning
+726 = { "Muk Den" "Muk Den" } #
+#upper doab
+522 = { "Delï" "Delï" } #
+#east bengal
+564 = { "Thakaa" "Thakaa" } #
+#papuan peninsula
+2722 = { "Maena Haeng Maelngwan" "Maena Haeng Maelngwan" } #

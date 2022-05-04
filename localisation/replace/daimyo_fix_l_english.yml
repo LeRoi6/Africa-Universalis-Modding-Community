@@ -1,0 +1,43 @@
+﻿l_english:
+
+ # Subject relations
+ daimyo_vassal_title:0 "Sengoku Han"
+ daimyo_vassal_title_plural:0 "Sengoku Han"
+ daimyo_vassal_long_desc:0 "A Han controlled by a loyal Daimyo will follow their Shogun to war, cannot make certain diplomatic actions and will pay a fraction of his income to his Shogun. Daimyo can also fight each other."
+ daimyo_vassal_is_our:0 "$NAME|Y$ is one of our Han."
+
+ # Government Types
+ DAIMYO:0 "Han"
+ GRAND_DAIMYO:0 "Han"
+ GREAT_DAIMYO:0 "Han"
+ INDEP_DAIMYO:0 "Kokka"
+ GRAND_INDEP_DAIMYO:0 "Kokka"
+ GREAT_INDEP_DAIMYO:0 "Kokka"
+ PIRATE_DAIMYO:0 "Wokou-Han"
+ 
+ # Generic
+ daimyo_subject:0 "Han Subject"
+
+ daimyo:0 "Han"
+ daimyo_desc:0 "A powerful Vassal in Japan, ruling their hereditary lands under the shogun.\n§MA Daimyo, the lord of a Han, can become Shogun, overlord of all Han, by taking the province of Kyoto.§!"
+ daimyo_legacy:0 "Han"
+ daimyo_legacy_desc:0 "A powerful Vassal in Japan, ruling their hereditary lands under the shogun.\n§MA Daimyo, the lord of a Han, can become Shogun, overlord of all Han, by taking the province of Kyoto.§!"
+ daimyo_ruler:0 "Daimyo"
+ daimyo_ruler_female:0 "Daimyo"
+ 
+ shogunate_desc:0 "Although nominally appointed by the Emperor, the shogunate became a hereditary military dictatorship and the de facto ruler of Japan between 1192 and 1867.\n§MA Daimyo, the lord of a Han, can become Shogun, overlord of all other Daimyo, by taking the province of Kyoto.§!"
+ shogunate_legacy_desc:0 "Although nominally appointed by the Emperor, the shogunate became a hereditary military dictatorship and the de facto ruler of Japan between 1192 and 1867.\n§MA Daimyo, the lord of a Han, can become Shogun, overlord of all other Daimyo, by taking the province of Kyoto.§!"
+
+ indep_daimyo:0 "Independent Han"
+ indep_daimyo_desc:0 "A powerful Lord in Japan, ruling their hereditary lands independently.\n§MA Daimyo, the lord of a Han, can become Shogun, overlord of all Han, by taking the province of Kyoto.§!"
+ indep_daimyo_legacy:0 "Independent Han"
+ indep_daimyo_legacy_desc:0 "A powerful Lord in Japan, ruling their hereditary lands independently.\n§MA Daimyo, the lord of a Han, can become Shogun, overlord of all Han, by taking the province of Kyoto.§!"
+ indep_daimyo_ruler:0 "Daimyo"
+ indep_daimyo_ruler_female:0 "Daimyo"
+ 
+ claiming_the_shogunate_tooltip:0 "[new_shogunate.GetName] will be the leader of the new Shogunate.\nThe land of all Daimyo loyal to the Shogun will be transferred to [new_shogunate.GetName]."
+
+ cb_daimyo_annex:0 "War for the Emperor"
+ cb_daimyo_annex_desc:0 "We should unite Japan under our banner! By conquering the Imperial capital of Kyoto we will place the Emperor under both our protection and influence to take over the reins of the Shogunate." 
+ cb_independent_daimyo_annex:0 "War for the Emperor"
+ cb_independent_daimyo_annex_desc:0 "We should unite Japan under our banner! By conquering the Imperial capital of Kyoto we will place the Emperor under both our protection and influence to take over the reins of the Shogunate." 

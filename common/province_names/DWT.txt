@@ -1,0 +1,3 @@
+#(JP) So that Donauwörth gets the province name for DWT
+
+8448 = { "Donauwörth" "Donauwörth" }

@@ -1,0 +1,79 @@
+﻿l_english:
+ #Chocolate_railroad.1.name: "Ladislaus Posthumus, Ruler of Hungary and Austria" 
+ #Chocolate_railroad.1.desc: "Ladislaus Posthumus, as the son of King Albert had a great position to become King as well, but he was born after the death of his father. Through a string of lucky circumstances, we have once more been able to unify Hungary and Austria under a Habsburg Ruler. All is not well though, the Styrian Duke Frederick III has laid claim on most of the Austrian Lands."
+ #Chocolate_railroad.1.a: "We have no need of the Austrian Lands any longer." 
+ #Chocolate_railroad.1.b: "We won't surrender an Inch." 
+ 
+ Chocolate_hab_hun.1.name: "End of Styrian Control over Ladislaus" 
+ Chocolate_hab_hun.1.desc: "Ladislaus Posthumus, as the son of King Albert had a great position to become King as well. However, he is held by his Regent, the Archduke of Styria. We must demand his return to Hungary."
+ Chocolate_hab_hun.1.a: "Liberate Ladislaus" 
+ Chocolate_hab_hun.1.b: "Give Styria all of Austria to keep them satisfied." 
+ 
+ Chocolate_hab_hun.2.t: "Treachery in Austria" 
+ Chocolate_hab_hun.2.desc: "With our nephew Ladislaus Postumus elected as king in Hungary, he has taken Austria Proper with him. There is an eminent risk of these lands to fall to Hungary."
+ Chocolate_hab_hun.2.a: "We cannot allow this." 
+ 
+ Chocolate_hab_hun.3.t: "Ladislaus Posthumus, Ruler of Hungary and Austria" 
+ Chocolate_hab_hun.3.desc: "Ladislaus Posthumus, as the son of King Albert had a great position to become King as well, but he was born after the death of his father. Through a string of lucky circumstances, we have once more been able to unify Hungary and Austria under a Habsburg Ruler. With him coming of legal age, he can be crowned King."
+ Chocolate_hab_hun.3.a: "Crown Ladislaus King" 
+ Chocolate_hab_hun.3.b: "Keep Janos Hunyadi." 
+ Chocolate_hab_hun.3.c: ""
+ 
+ Chocolate_hab_hun.4.t: "Unrest amongst the Nobility" 
+ Chocolate_hab_hun.4.desc: "The Nobles have become uneasy with our situation. They prefer a more capable ruler to take control. A nearby Habsburg Ruler could perhaps make a better ruler. He should take the Throne and defend the lands."
+ Chocolate_hab_hun.4.a: "We must accept their wishes." 
+ Chocolate_hab_hun.4.b: "We have no concern about some random Nobles." 
+
+ Chocolate_hab_hun.5.t: "Hunyadi's Children" 
+ Chocolate_hab_hun.5.desc: "With Ladislaus crowned king, the troubles aren't over yet. With Hunyadi's popularity still being great, it's best if we were to get rid of his children."
+ Chocolate_hab_hun.5.a: "Imprison the children"
+ Chocolate_hab_hun.5.b: "We have no to imprison them." 
+
+ Chocolate_hab_hun.500.t: "Michael Szilágyi is Gaining Ground"
+ Chocolate_hab_hun.500.desc: "With Michael Szilágyi gaining ground, there is not that much time to make a decision, either Ladislaus flees or he has a chance to be captured and executed."
+ Chocolate_hab_hun.500.a: "Flee to Prague!"
+ Chocolate_hab_hun.500.b: "Stay and fight!"
+
+ Chocolate_hab_hun.6.t: "Death of Ladislaus"
+ Chocolate_hab_hun.6.desc: "The young Ladislaus has passed away and his advisor George of Podebrady has been elected by the estates as the new King."
+ Chocolate_hab_hun.6.a: "Glorious!"
+
+ Chocolate_hab_hun.8.t: "The Young Ladislaus"
+ Chocolate_hab_hun.8.desc: "Ladislaus Posthumus, the son of King Albrecht the Second, has recently been crowned the ruler in Austria and Hungary. He still holds a strong claim and since our nation has not yet elected a new ruler, we must now make a decision."
+ Chocolate_hab_hun.8.a: "Elect Ladislaus King of Bohemia."
+ Chocolate_hab_hun.8.b: "George Podebrady makes a more suitable ruler"
+ Chocolate_hab_hun.8.c: "Keep the current situation"
+
+ Chocolate_hab_hun.7.t: "Death of Ladislaus"
+ Chocolate_hab_hun.7.desc: "The young Ladislaus has passed away and Friedrich's Brother Albrecht has taken over Upper Austria. He lays claim on Lower Austria as well. This could lead to a very dicey situation."
+ Chocolate_hab_hun.7.a: "We shall take some time to weigh our options."
+ 
+ Chocolate_hab_hun.700.t: "Albrecht's claims on Austria"
+ Chocolate_hab_hun.700.desc: "After Ladislaus death and with Albrecht claiming most of Austria. We must now decide whether or not to take action and retake this land and reunite the Austrian lands once more."
+ Chocolate_hab_hun.700.a: "We need to force Albrecht to surrender Austria."
+ Chocolate_hab_hun.700.b: "We cannot afford a war right now."
+ 
+ Chocolate_hab_hun.701.t: "Siege of Vienna"
+ Chocolate_hab_hun.701.desc: "With our forces finally winning the Siege of Vienna, we can force Friedrich to give up this war."
+ Chocolate_hab_hun.701.a: "This is a reasonable peace."
+ Chocolate_hab_hun.701.b: "We must continue the war for a more favorable peace."
+ 
+ Chocolate_hab_hun.702.t: "Death of Albrecht"
+ Chocolate_hab_hun.702.desc: "Word has reached us that Albrecht has passed away. We are the primary benefactor of his death and will inherit most of his domains."
+ Chocolate_hab_hun.702.a: "We shall no longer have to deal with him."
+
+ Chocolate_hab_hun.9.t: "Maximilian is Born!"
+ Chocolate_hab_hun.9.desc: "Friedrich is ecstatic to learn that his wife has bore him a son."
+ Chocolate_hab_hun.9.a: "We shall name him Maximilian!"
+ Chocolate_hab_hun.9.b: "Our brother Albrecht makes a better heir."
+ 
+ Chocolate_hab_hun.10.t: "Royal Marriage with Portugal"
+ Chocolate_hab_hun.10.desc: "Friedrich has yet to marry. This is causing tension as without a marriage, he cannot get a legal heir. The country of Portugal has been quite amicable to us and it has been proposed to marry Eleanor of Portugal."
+ Chocolate_hab_hun.10.a: "Eleanor will be a perfect Wife."
+ Chocolate_hab_hun.10.b: "We ought not to bind ourselves to Portugal."
+ 
+ Chocolate_hab_hun.99.t: "Death of Friedrich III"
+ Chocolate_hab_hun.99.desc: "With the Death of Friedrich III, Albrecht stands to inherit the throne of Inner Austria."
+ Chocolate_hab_hun.99.a: "Take the reign in Inner Austria"
+ Chocolate_hab_hun.99.desc: "We will remain in Further Austria"
+ 

@@ -84,7 +84,7 @@ bt_generic_can_form_potential_check = {
 	NOT = { tag = UNK }
 	NOT = { tag = CEL }
 	NOT = { tag = LTE }			#Latin Empire, on Dub's request.
-	
+
 	NOT = { was_tag = UNK }
 	NOT = { was_tag = CEL }
 	NOT = { was_tag = LTE }			#Latin Empire, on Dub's request.
@@ -113,7 +113,7 @@ bt_generic_can_form_potential_check = {
 	NOT = { was_tag = SYN }
 	NOT = { was_tag = ADU }
 	NOT = { was_tag = LOT }
-	
+
 	NOT = { tag = MUG }
 	NOT = { tag = TUR }
 	NOT = { tag = BYZ }
@@ -165,7 +165,7 @@ bt_hre_stem_duchy_check = {
 	#Lower Lorraine
 	NOT = { tag = WES }
 	NOT = { tag = SWI }
-	
+
 	NOT = { was_tag = HLR }
 	NOT = { was_tag = GER }
 	NOT = { was_tag = PRU }
@@ -223,7 +223,7 @@ bt_is_very_large_nation = {
 }
 
 bt_downstream_of_india = {
-	home_trade_node = {
+	home_trade_node = { # XXX
 		OR = {
 			#North American nodes
 			province_id = 1516			#Caribbean
@@ -259,7 +259,7 @@ bt_downstream_of_india = {
  ##################################################
  ############### BT's regional triggers ###############			#Incomplete and probably broken. Abandoning this smart way of doing things for the moment in favour of a cheap and easy way.
  ##################################################
- bt_trigger_scotland_areas = {
+bt_trigger_scotland_areas = {
 	OR = {
 		area = kingdom_of_the_isles_area
 		area = highlands_area
@@ -267,8 +267,8 @@ bt_downstream_of_india = {
 		area = scottish_marches_area
 	}
  }
- 
- bt_trigger_england_areas = {
+
+bt_trigger_england_areas = {
 	OR = {
 		area = home_counties_area
 		area = wessex_area
@@ -281,8 +281,8 @@ bt_downstream_of_india = {
 		#Note Wales is excluded.
 	}
  }
- 
- bt_trigger_italy_areas = {			#Specifically continental northern Italy now. About 95 provinces.
+
+bt_trigger_italy_areas = {			#Specifically continental northern Italy now. About 95 provinces.
 	OR = {
 		area = venetia_area
 		area = lombardy_area
@@ -293,7 +293,7 @@ bt_downstream_of_india = {
 		area = emilia_area
 		area = friuli_area
 		area = carnia_area
-		area = trentino_area
+		# area = trentino_area		#cut in BT14, merged into tirol_area
 		area = upper_emilia_area
 		area = po_valley_area
 		area = north_piedmont_area
@@ -301,8 +301,8 @@ bt_downstream_of_india = {
 		area = south_tuscany_area
 	}
  }
- 
- bt_trigger_central_italy_areas = {			#broken off from previous Italy grouping, this corresponds mostly to the Papal states in Lazio, Umbria and Marche. About 19 provinces.
+
+bt_trigger_central_italy_areas = {			#broken off from previous Italy grouping, this corresponds mostly to the Papal states in Lazio, Umbria and Marche. About 19 provinces.
 	OR = {
 		area = lazio_area
 		area = umbria_area
@@ -312,8 +312,8 @@ bt_downstream_of_india = {
 		province_id = 7020
 	}
  }
- 
- bt_trigger_northeastern_italy_areas = {			#broken off from previous Italy grouping, corresponds to the central and northeastern portions. Currently used for BYZ mission only
+
+bt_trigger_northeastern_italy_areas = {			#broken off from previous Italy grouping, corresponds to the central and northeastern portions. Currently used for BYZ mission only
 	OR = {
 		area = lazio_area
 		area = umbria_area
@@ -331,8 +331,8 @@ bt_downstream_of_india = {
 		province_id = 7020
 	}
  }
- 
- bt_trigger_sicily_areas = {			#Corresponding to Kingdom of Naples. 39 provinces
+
+bt_trigger_sicily_areas = {			#Corresponding to Kingdom of Naples. 39 provinces
 	OR = {
 		area = sicily_area
 		area = naples_area
@@ -344,8 +344,8 @@ bt_downstream_of_india = {
 		province_id = 7017
 	}
  }
- 
- bt_trigger_historical_greece_areas = {
+
+bt_trigger_historical_greece_areas = {
 	OR = {
 		area = morea_area
 		area = western_aegean_area
@@ -353,8 +353,8 @@ bt_downstream_of_india = {
 		province_id = 164
 	}
  }
- 
- bt_trigger_modern_greece_areas = {
+
+bt_trigger_modern_greece_areas = {
 	OR = {
 		area = morea_area
 		area = western_aegean_area
@@ -385,8 +385,8 @@ bt_downstream_of_india = {
 		province_id = 7130
 	}
  }
- 
- bt_trigger_southern_russia_areas = {			#More or less Moscovy
+
+bt_trigger_southern_russia_areas = {			#More or less Moscovy
 	OR = {
 		area = moscow_area
 		area = suzdal_area
@@ -398,11 +398,11 @@ bt_downstream_of_india = {
 		area = beloozero_area
 	}
  }
- 
- bt_trigger_northern_russia_areas = {			#More or less Novgorod
+
+bt_trigger_northern_russia_areas = {			#More or less Novgorod
 	OR = {
 		area = novgorod_area
-		area = north_karelia_area
+		area = north_karelia
 		area = vladimir_area
 		area = arkhangelsk_area
 		area = karelia_area
@@ -411,8 +411,8 @@ bt_downstream_of_india = {
 		area = pomor_area
 	}
  }
- 
- bt_trigger_wild_fields_areas = {
+
+bt_trigger_wild_fields_areas = {
 	OR = {
 		area = zaporizhia_area
 		area = yedisan_area
@@ -422,32 +422,32 @@ bt_downstream_of_india = {
 		area = middle_don_area
 	}
  }
- 
- bt_trigger_bulgaria_areas = {
+
+bt_trigger_bulgaria_areas = {
 	OR = {
 		area = bulgaria_area
 		area = danubian_plain_area
 		area = silistria_area
 	}
  }
- 
- bt_trigger_thrace_areas = {
+
+bt_trigger_thrace_areas = {
 	OR = {
 		area = northern_thrace_area
 		area = upper_thrace_area
 		area = thrace_area
 	}
  }
- 
- bt_trigger_macedonia_areas = {
+
+bt_trigger_macedonia_areas = {
 	OR = {
 		area = macedonia_area
 		area = northern_macedonia_area
 		area = eastern_macedonia_area
 	}
  }
- 
- bt_trigger_second_partition_of_poland_areas = {
+
+bt_trigger_second_partition_of_poland_areas = {
 	region = ruthenia_region
 	NOT = {
 		area = volhynia_area
@@ -464,8 +464,8 @@ bt_downstream_of_india = {
 		province_id = 7272
 	}
  }
- 
- bt_trigger_third_partition_of_poland_areas = {
+
+bt_trigger_third_partition_of_poland_areas = {
 	OR = {
 		region = ruthenia_region
 		area = lithuania_area
@@ -477,4 +477,3 @@ bt_downstream_of_india = {
 		province_id = 7272
 	}
  }
- 

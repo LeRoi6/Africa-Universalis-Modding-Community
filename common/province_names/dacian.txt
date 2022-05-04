@@ -1,0 +1,357 @@
+#Contributions from a wide range, including Draiocht, JP, Arga, Vladisvlach, Wielkobabita
+#(JP) Romanian, moved here so Aromanian and future Romanian dialects will get the names
+#(JP) Unless stated other wise, all names are Romanian
+#(JP) I have reorganised and cleaned up all the prior Romanian naming to try and make it more legible, consistant and keep it easier to edit in future
+
+#Carpathia
+#135 Sopron
+153 = { "Pesta" "Pesta" }
+#154 Hont/Sahy
+155 = { "Bichis" "Giula" }
+156 = { "Timis" "Timisoara" }
+157 = { "Oradea" "Oradea Mare" }
+158 = { "Osorhei" "Osorhei" } #(JP) Modern "Târgu Mures", but this *is* a modern name
+160 = { "Craiova" "Craiova" }
+161 = { "Târgoviste" "Târgoviste" }
+162 = { "Susudava" "Susudava" }
+268 = { "Botosani" "Botosani" }
+#1318 Spis/Levoca
+1756 = { "Chilia" "Chilia" }
+1772 = { "Pojon" "Pojon" }
+#1864 Kaposvár
+1951 = { "Hunedoara" "Hunedoara" }
+1952 = { "Hust" "Hust" }
+1953 = { "Sabolciu" "Sabolciu" }
+1954 = { "Panciova" "Panciova" }
+2405 = { "Orhei" "Orhei" }
+2998 = { "Buzau" "Buzau" }
+#3051 Eisenstadt
+3146 = { "Uzhina" "Ujhorod" }
+3148 = { "Solnoca" "Solnoca" }
+#3151 Zala/Zalaegerszeg
+3152 = { "Satmar" "Satmar" } #(JP) From 1925, the name "Satu Mare" was used, though this does not directly relate to Satmar
+3154 = { "Alba Iulia" "Alba Iulia" }
+3156 = { "Suceava" "Suceava" }
+3157 = { "Bacau" "Bacau" }
+3159 = { "Balti" "Balti" }
+3160 = { "Ilfov" "Bucuresti" }
+3167 = { "Nicopole" "Nicopole" }
+#4125 Heves/Eger
+#4126 Kiskunság/Kiskunhalas
+4127 = { "Bistrita" "Bistrita" }
+4128 = { "Brasov" "Brasov" }
+4173 = { "Bodrog" "Zamborul" }
+#4236 Trencsén
+4240 = { "Alba Regala" "Alba Regala" }
+4529 = { "Iasi" "Iasi" }
+4530 = { "Galati" "Galati" }
+4531 = { "Giurgiu" "Giurgiu" }
+4532 = { "Severin" "Severin" }
+7274 = { "Cernauti" "Cernauti" }
+7275 = { "Hotin" "Hotin" }
+7276 = { "Focsani" "Focsani" }
+7277 = { "Tighina" "Tighina" }
+7278 = { "Cetatea Alba" "Cetatea Alba" }
+7740 = { "Bacica" "Baci" }
+7741 = { "Becei" "Becei" }
+7743 = { "Resita" "Resita" }
+7744 = { "Lugoj" "Lugoj" }
+7746 = { "Caransebes" "Caransebes" }
+7748 = { "Calafat" "Calafat" }
+7749 = { "Târgu Jiu" "Târgu Jiu" }
+7750 = { "Râmnicu" "Râmnicu Vâlcea" }
+7751 = { "Dlagopole" "Dlagopole" } #(JP) Old Romanian name
+7752 = { "Arges" "Curtea de Arges" }
+7753 = { "Slatina" "Slatina" }
+7754 = { "Turnu" "Turnu" }
+7755 = { "Prahovei" "Cetatea Buzaului" } #(JP) "Table Butii"
+7756 = { "Lichiresti" "Lichiresti" } #(JP) Modern "Calarasi"
+7757 = { "Floci" "Orasul de Floci" }
+7758 = { "Braila" "Braila" }
+#8171 Gussing
+#8172 Vas/Vasvár
+#8174 Nyitra
+#8175 Komárom
+#8178 Arva
+8180 = { "Neamt" "Piatra Neamt" }
+#8182 Zólyom
+8183 = { "Vaca" "Vaca" }
+8184 = { "Buda" "Buda" }
+8185 = { "Gyar" "Gyar" }
+#8186 Veszprém
+8190 = { "Beci" "Beci" }
+#8191 Tolna/Szekszárd
+#8192 Solt
+#8193 Jászság/Jászberény
+8194 = { "Miscolt" "Miscolt" }
+#8195 Gemer
+8196 = { "Casovia" "Casovia" }
+8197 = { "Saros" "Eperies" }
+8198 = { "Bereg" "Muncaci" }
+8200 = { "Cârceag" "Cârceag" }
+8201 = { "Ciongrad" "Seghedin" }
+8203 = { "Arad" "Arad" }
+8204 = { "Sighet" "Sighet" }
+8205 = { "Dabâca" "Dej" }
+8206 = { "Salaj" "Simleu" }
+8207 = { "Cluj" "Cluj" }
+8208 = { "Sibiu" "Sibiu" }
+8209 = { "Turda" "Turda" }
+8210 = { "Fagaras" "Fagaras" }
+8211 = { "Sfântu Gheorghe" "Sfântu Gheorghe" }
+8212 = { "Sumuleu Ciuc" "Sumuleu Ciuc" }
+8213 = { "Târnava" "Sighisoara" }
+8215 = { "Reghin" "Reghin" }
+8218 = { "Debretin" "Debretin" }
+8219 = { "Vaslui" "Vaslui" }
+8220 = { "Lapusna" "Chisinau" } #(JP) the s has the squiggle, and in most languages this is transliterated as "s" or "sh"
+8493 = { "Zarand" "Zarand" }
+#8494 Prekmurje/Murska Sobota
+#8495 Kanizsa
+
+#Balkans 
+#(JP) 100% completed areas are Bulgaria, North Macedonia, Albania, European Turkey and Mainland Greece, apart from Negroponte and the Peleponnese
+#(JP) Beyond these areas, there are scattered names throughout the rest of the Balkans
+129 = { "Liubliana" "Liubliana" }
+136 = { "Spalato" "Spalato" }
+137 = { "Raguza" "Raguza" }
+138 = { "Podgoritsa" "Podgoritsa" }
+142 = { "Corfu" "Corfu" }
+143 = { "Vãryar" "Vãryar" }
+144 = { "Ianina" "Ianina" }
+146 = { "Atena" "Atena" }
+147 = { "Larisa" "Larisa" }
+148 = { "Sãrunã" "Sãrunã" } #(JP) "Sãrunã" is both Romanian and Aromanian, vs just Aromanian "Sãruna" or just Romanian "Salonic"
+149 = { "Adrianopole" "Adrianopole" }
+150 = { "Plevna" "Plevna" }
+151 = { "Constantinopole" "Constantinopole" }
+159 = { "Dârstor" "Dârstor" }
+163 = { "Iraclion" "Iraclion" }
+320 = { "Rodos" "Rodos" }
+1764 = { "Mesambriu" "Mesambriu" }
+1765 = { "Sofia" "Sofia" } #(JP) Base names
+1766 = { "Noubârdo" "Noubârdo" }
+1853 = { "Custura" "Custura" } #(JP) Aromanian
+2746 = { "Diiu" "Diiu" }
+2750 = { "Filipopole" "Filipopole" } #(JP) Phillip-po-polis
+3000 = { "Nis" "Nis" }
+3001 = { "Scopia" "Scopia" }
+3164 = { "Constanta" "Constanta" } #(JP) Aromanian "Custantsa"
+3165 = { "Varna" "Varna" }
+3168 = { "Hascoviu" "Hascoviu" }
+3169 = { "Beroia" "Beroia" }
+3170 = { "Salmidesia" "Salmidesia" }
+3174 = { "Trikolj" "Trikolj" } #(JP) Aromanian
+3175 = { "Vrachoria" "Vrachoria" }
+3177 = { "Teba" "Teba" }
+3178 = { "Ahaia" "Patriu" }
+3179 = { "Neapole" "Neapole" }
+3180 = { "Hania" "Hania" }
+3181 = { "Amvlona" "Amvlona" } #(JP) Aromanian
+3182 = { "Scutari" "Scutari" }
+3183 = { "Bituli" "Bituli" } #(JP) or Aromanian "Bitule"
+4174 = { "Dures" "Dures" }
+4175 = { "Lezha" "Lezha" }
+4176 = { "Braniceva" "Semendria" }
+4239 = { "Belgrad" "Belgrad" }
+4699 = { "Ambraciu" "Ambraciu" } #(JP) From Latin "Ambracia"
+4701 = { "Corint" "Corint" }
+4702 = { "Sirra" "Sirra"}
+4703 = { "Velebusdui" "Velebusdui" } #(JP) Medieval "Velbazhd" from Latin "Velebusdus"
+4704 = { "Tirnova" "Tirnova" } #(JP) Turkish name, but sounds better than "Tarnovo"
+4705 = { "Comotinui" "Comotinui" }
+4706 = { "Tulcea" "Tulcea" }
+4750 = { "Neoxa" "Neoxa" } #(JP) Province overlaps as Elbasan so this works
+4753 = { "Diadora" "Diadora" }
+4779 = { "Calepole" "Calepole" }
+4780 = { "Ocrida" "Ocrida" }
+5094 = { "Cucesia" "Cucesia" }
+7108 = { "Noupatria" "Noupatria" }
+7111 = { "Levadia" "Levadia" }
+7112 = { "Noupactos" "Noupactos" }
+7113 = { "Setounia" "Setounia" }
+7114 = { "Salona" "Salona" }
+7115 = { "Carvasaria" "Carvasaria" } #(JP) From Ottoman "Karvasaras"
+7117 = { "Volu" "Volu" } #(JP) Aromanian
+7118 = { "Farsalu" "Farsalu" }
+7120 = { "Siderocausia" "Siderocausia" }
+7122 = { "Veryea" "Veryea" } #(JP) Aromanian
+7123 = { "Vudena" "Vudena" }
+7124 = { "Servia" "Servia" }
+7127 = { "Hristopole" "Hristopole" } #(JP) Known in Middle Ages as "Christopolis"
+7128 = { "Diramia" "Diramia" }
+7129 = { "Santhia" "Santhia" }
+7130 = { "Demotica" "Demotica" } #(JP) Western name, fits nicely imo
+7132 = { "Parga" "Parga" }
+7133 = { "Aminciu" "Aminciu" }
+7134 = { "Ainiu" "Ainiu" }
+7136 = { "Rodostiu" "Rodostiu" }
+7137 = { "Selimbria" "Selimbria" }
+7138 = { "Bizyi" "Bizyi" }
+7139 = { "Soscopole" "Soscopole" } #(JP) "Sozopolis", not sure on this one
+7140 = { "Butrintiu" "Butrintiu" }
+7141 = { "Liurocastru" "Liurocastru" } #(JP) or Aromanian "Ljurocastru" 
+7142 = { "Curceauã" "Curceauã" }
+7143 = { "Ferãcã" "Ferãcã" }
+7144 = { "Episcope" "Episcope" }
+7146 = { "Parleap" "Parleap" }
+7147 = { "Crusova" "Crusova" } #(JP) Or Aromanian "Crusuva"
+7148 = { "Estipia" "Estipia" }
+7149 = { "Aneviu" "Aneviu" }
+7150 = { "Kran" "Kran" }
+7151 = { "Isashcovedo" "Isashcovedo" } #(JP) Aromanian
+7152 = { "Iormeniu" "Iormeniu" } #(JP) My attempt of "Ormenio" into Romanian. Probably a failure
+7154 = { "Cavarna" "Cavarna" } #(JP) Could use neighbouring town of "Balcic"
+7155 = { "Iambole" "Iambole" } #(JP) Or "Jambole"
+7156 = { "Sliven" "Sliven" } #(JP) Base names
+7157 = { "Târgoviste Bulgari" "Târgoviste" } #(JP) "Razgrad" is meh as a town, the city location seems to be more "Targovishte". With two so close, I added the "Bulgari" but I am not a Romanian speaker so this could be horrid to a native speaker
+7158 = { "Siumla" "Siumla" }
+7159 = { "Rusciuc" "Rusciuc" }
+7703 = { "Piatatârg" "Piatatârg" } #(JP) Name meant "Market Town"
+7706 = { "Lovcea" "Lovcea" }
+7707 = { "Valva" "Valva" } #(JP) Roman "Valve", meaning door. This became "valva" with a squiglly thing over the a
+7708 = { "Antibaria" "Antibaria" }
+7714 = { "Zaicear" "Zaicear" }
+7715 = { "Cladova" "Cladova" }
+7735 = { "Veglia" "Veglia" }
+7759 = { "Isaccea" "Isaccea" }
+7765 = { "Hârsova" "Hârsova" }
+
+#Pontic Steppe
+282 = { "Moldoveanca" "Moldoveanca" } #(JP) "Hacibey", the Ottoman fortress, could be "Cociuba". "Moldoveanca" however is a Moldovian founded settlement in the middle ages
+291 = { "Harkov" "Harkov" }
+2406 = { "Nicolaev" "Nicolaev" }
+2410 = { "Bahcisarai" "Bahcisarai" }
+3245 = { "Kerci" "Kerci" }
+7195 = { "Vozia" "Vozia" } #(JP) Or "Oceacov"
+7197 = { "Socoletsi" "Socoletsi" } #(JP) Lithuanian fortress of "Sokolets", on the site of modern Voznesensk
+7279 = { "Dubasari" "Dubasari" }
+
+#Ruthenia
+261 = { "Halici" "Halici" }
+272 = { "Vilna" "Vilna" }
+279 = { "Volînskîi" "Volodîmîr" }
+280 = { "Chiu" "Chiu" }
+281 = { "Camenita" "Camenita" }
+292 = { "Movilau" "Movilau" }
+1937 = { "Grodno" "Grodno" }
+1942 = { "Jitomir" "Jitomir" }
+1943 = { "Bratslav" "Bratslav" }
+2424 = { "Peremislia" "Peremislia" }
+2961 = { "Liov" "Liov" }
+2962 = { "Rovno" "Rovno" }
+3239 = { "Izeaslav" "Izeaslav" }
+3241 = { "Cusmîn" "Cusmîn" }
+4115 = { "Homiel" "Homiel" }
+4540 = { "Vinnica" "Vinnica" }
+4541 = { "Drohobîci" "Drohobîci" }
+7206 = { "Umani" "Umani" }
+7208 = { "Medjîbij" "Medjîbij" }
+7209 = { "Rîbnita" "Rîbnita" }
+7242 = { "Cernobâl" "Cernobâl" }
+7254 = { "Usîtea" "Usîtea" }
+7269 = { "Rohatîn" "Rohatîn" }
+7270 = { "Sambirea" "Sambirea" }
+7271 = { "Terebovlea" "Terebovlea" }
+7272 = { "Zalisciîkî" "Zalisciîkî" }
+7273 = { "Pocutia" "Colomeea" }
+
+#Poland
+254 = { "Posnania" "Posnania" }
+255 = { "Setidava" "Setidava" }
+257 = { "Varsovia" "Varsovia" }
+262 = { "Cracovia" "Cracovia" }
+264 = { "Breslavia" "Breslavia" }
+2959 = { "Tarnovia"  "Tarnovia" }
+8223 = { "Resovia" "Resovia" } #(JP) Province is technically "Mielec", but this is close enough
+
+#South Germany
+134 = { "Beci" "Beci" }
+165 = { "Berna" "Berna" }
+266 = { "Praga" "Praga" }
+1870 = { "Saint-Gall" "Saint-Gall" }
+2957 = { "Ratisbona" "Ratisbona" }
+4712 = { "Constanta" "Constanta" }
+4720 = { "Geneva" "Geneva" }
+8489 = { "Lucerna" "Lucerna" }
+
+#Italy
+101 = { "Genova" "Genova" }
+103 = { "Torino" "Torino" }
+104 = { "Milano" "Milano" }
+108 = { "Verona" "Verona" }
+110 = { "Trento" "Trento" }
+112 = { "Venetsia" "Venetsia" }
+114 = { "Ravena" "Ravena" }
+116 = { "Florentsa" "Florentsa" }
+118 = { "Roma" "Roma" }
+121 = { "Neapole" "Neapole" }
+122 = { "Tarent" "Tarent" }
+130 = { "Pola" "Pola" }
+201 = { "Nisa" "Nisa" }
+1769 = { "Gorizia" "Gorizia" }
+2982 = { "Siracuza" "Siracuza" }
+3048 = { "Bolzano" "Bolzano" }
+4729 = { "Padova" "Padova" }
+7047 = { "Piacentsa" "Piacentsa" }
+7082 = { "Pisino" "Pisino" }
+7090 = { "Rovigno" "Rovigno" }
+
+#Iberia
+206 = { "La Coruna" "La Coruna" }
+212 = { "Gerona" "Gerona" }
+220 = { "Valentsia" "Valentsia" }
+224 = { "Sevilia" "Sevilia" }
+225 = { "Cordoba" "Cordoba" }
+227 = { "Lisabona" "Lisabona" }
+4557 = { "Lerida" "Lerida" }
+8067 = { "Cartagina" "Cartagina" }
+
+#France
+201 = { "Marsilia" "Marsilia" }
+4696 = { "Tulon" "Tulon" }
+
+#Britain
+236 = { "Londra" "Londra" }
+
+#Ireland
+
+#Low Countries
+94 = { "Luxemburg" "Luxemburg" }
+1742 = { "Maestricht" "Maestricht" }
+1865 = { "Gent" "Gent" }
+3064 = { "Dunkerque" "Dunkerque" }
+4383 = { "Haga" "Haga" }
+4769 = { "Lille" "Lille" }
+8019 = { "Louvain" "Louvain" }
+
+#North Germany
+61 = { "Dresda" "Dresda" }
+62 = { "Lipsca" "Lipsca" }
+78 = { "Maienta" "Maienta" }
+85 = { "Colonia" "Colonia" }
+1758 = { "Hanovra" "Hanovra" }
+1874 = { "Brema" "Brema" }
+
+#Scandinavia
+12 = { "Copenhaga" "Copenhaga" }
+
+#Baltic
+36 = { "Talin" "Talin" }
+43 = { "Dantsig" "Dantsig" }
+1841 = { "Malborg" "Malborg" }
+1859 = { "Turnu" "Turnu" }
+
+#Russia
+295 = { "Moscova" "Moscova" }
+
+#Caucasia
+
+#Anatolia
+5157 = { "Niceea" "Niceea" }
+
+#Mesopotamia
+
+#Levant
+377 = { "Alep" "Alep" }
+382 = { "Damasc" "Damasc" }

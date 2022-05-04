@@ -1,0 +1,196 @@
+
+
+#Localised naming by Arga 2018 Jun 5 (Not a speaker, nor am I. If you have any corrections, please feel free to suggest them)
+
+#shandong
+690 = "Chheng-Chiu"
+691 = "Chè-Lâm"
+2138 = "Bú-Teng"
+2139 = "Lâi-Chiu"
+2140 = "Lán-Chiu"
+
+#hebei
+695 = "Hô-Kan"
+696 = "Pó-Teng"
+1816 = "Pak-Kian" #or "Pak-Kia"
+2137 = "Tai-Bêng"
+4194 = "Éng-Pêng"
+4195 = "Chèng-Teng"
+
+#jiangsu
+685 = "Lông-Chiu"
+1821 = "Lâm-Kian" #or "Lâm-Kia"
+1822 = "So-Chiu"
+2141 = "Chhî-Chiu"
+2142 = "Hoâi-An"
+2145 = "Tin-Kang"
+4196 = "Hái-Chiu"
+
+#zhejiang
+684 = "Hâng-Chiu"
+1824 = "Un-Chiu"
+2148 = "Siau-Heng"
+2149 = "Lêng-Pho"
+2150 = "Kim-Hoâ"
+
+#fujian
+669 = "Hok-Chiu"
+1829 = "Choân-Chiu"
+2152 = "Gióng-Ning"
+2153 = "Teng-Chiu"
+
+#canton
+665 = "Tiao-Khèng"
+666 = "Hái-Khau"
+667 = "Kng-Chiu"
+668 = "Ò-mng"
+2156 = "Tiô-Chiu"
+2158 = "Siâu-Koan" #or "Jú-Goân"
+2159 = "Lûi-Chiu" #or "Tam-Kang"
+2160 = "Gâi-Chiu"
+
+#jiangxi
+670 = "Kòng-Chiu"
+683 = "Lâm-Chhiong"
+1833 = "Kiat-An"
+
+#okinawa
+1015 = "Liù-Giù"
+
+#taiwan
+738 = "Tang-Lêng"
+2154 = "Ke-Lâng"
+2155 = "Middag Ông" #up to 1684, then "Tâi-Tiong-Chhi"
+
+#vietnam
+605 = "Sài Gòn"
+613 = "Jîn-Kháu" #capital "Hà Nôi"
+1022 = "Dà Nang"
+2372 = "Hai Phòng"
+
+#malay
+596 = "Má-Lák-Kah"
+
+
+
+#2018 Jun 30
+
+#China
+664 = "Lêng-Hûn"
+704 = "Lêng-Oán"
+726 = "Sím-Iông"
+1840 = "Kùi-Lîm"
+2112 = "Tan-Tong"
+2113 = "Kái-Chiu"
+2161 = "Hap-Phó"
+2162 = "Ngô-Chiu"
+2163 = "Liú-Chiu"
+
+#By Arga Oct 2020
+#1.30 update
+661 = { "Tai-Lí" "Tai-Lí" } #
+662 = { "Hùng-Nàng" "Kong-Mìng" } #
+663 = { "Kóng-Lâm" "Kóng-Lâm" } #
+664 = { "Lêng-Hûn" "Lêng-Hûn" } #
+665 = { "Tiao-Khèng" "Tiao-Khèng" } #
+666 = { "Hái-Khau" "Hái-Khau" } #
+667 = { "Kng-Chiu" "Kng-Chiu" } #
+668 = { "Ò-Mng" "Ò-Mng" } #
+669 = { "Hok-Chiu" "Hok-Chiu" } #
+670 = { "Kòng-Chiu" "Kòng-Chiu" } #
+671 = { "Tng-Soa" "Tng-Soa" } #
+672 = { "Bú-Lêng" "Bú-Lêng" } #
+673 = { "Tìn-Oán" "Tìn-Oán" } #
+674 = { "Gói-Iòng" "Gói-Iòng" } #
+679 = { "Sìng-Du" "Sìng-Du" } #
+680 = { "Dùng-Kéng" "Dùng-Kéng" } #
+681 = { "Ngì-Chiong" "Ngì-Chiong" } #
+682 = { "Bú-Chhiong" "Bú-Chhiong" } #
+683 = { "Lâm-Chhiong" "Lâm-Chhiong" } #
+684 = { "Hâng-Chiu" "Hâng-Chiu" } #
+685 = { "Lông-Chiu" "Lông-Chiu" } #
+686 = { "Ang-Kéng" "Ang-Kéng" } #
+688 = { "Kai-Hung" "Kai-Hung" } #
+689 = { "Háng-Dung" "Háng-Dung" } #
+690 = { "Chheng-Chiu" "Chheng-Chiu" } #
+691 = { "Chè-Lâm" "Chè-Lâm" } #
+693 = { "Tái-Nguòng" "Tái-Nguòng" } #
+694 = { "Lìng-Hung" "Lìng-Hung" } #
+695 = { "Hô-Kan" "Hô-Kan" } #
+696 = { "Pó-Teng" "Pó-Teng" } #
+697 = { "Dâi-Dùng" "Dâi-Dùng" } #
+698 = { "Nìng-Hâ" "Nìng-Hâ" } #
+699 = { "Làng-Chiu" "Làng-Chiu" } #
+700 = { "Sa-Ang" "Sa-Ang" } #
+704 = { "Lêng-Oán" "Lêng-Oán" } #
+707 = { "Giók-Bûn" "Giók-Bûn" } #
+708 = { "Diong-Ik" "Diong-Ik" } #
+726 = { "Sím-Iông" "Sím-Iông" } #
+1816 = { "Pak-Kian" "Pak-Kian" } #
+1821 = { "Lâm-Kian" "Lâm-Kian" } #
+1822 = { "So-Chiu" "So-Chiu" } #
+1829 = { "Choân-Chiu" "Choân-Chiu" } #
+1824 = { "Un-Chiu" "Un-Chiu" } #
+1833 = { "Kiat-An" "Kiat-An" } #
+1836 = { "Lok-Iòng" "Lok-Iòng" } #
+1838 = { "Hak-Bùi" "Hak-Bùi" } #
+1840 = { "Kùi-Lîm" "Kùi-Lîm" } #
+2112 = { "Tan-Tong" "Tan-Tong" } #
+2113 = { "Kái-Chiu" "Kái-Chiu" } #
+2136 = { "Soan-Hoà" "Soan-Hoà" } #
+2137 = { "Tai-Bêng" "Tai-Bêng" } #
+2138 = { "Bú-Teng" "Bú-Teng" } #
+2139 = { "Lâi-Chiu" "Lâi-Chiu" } #
+2140 = { "Lán-Chiu" "Lán-Chiu" } #
+2141 = { "Chhî-Chiu" "Chhî-Chiu" } #
+2142 = { "Hoâi-An" "Hoâi-An" } #
+2143 = { "Hong-Iông" "Hong-Iông" } #
+2144 = { "Pâiu-Iòng" "Pâiu-Iòng" } #
+2145 = { "Tin-Kang" "Tin-Kang" } #
+2146 = { "Lêng-Kok" "Lêng-Kok" } #
+2147 = { "Hui-Chiu" "Hui-Chiu" } #
+2148 = { "Siau-Heng" "Siau-Heng" } #
+2149 = { "Lêng-Pho" "Lêng-Pho" } #
+2150 = { "Kim-Hoâ" "Kim-Hoâ" } #
+2151 = { "Phoân-Iông" "Phoân-Iông" } #
+2152 = { "Gióng-Ning" "Gióng-Ning" } #
+2153 = { "Teng-Chiu" "Teng-Chiu" } #
+2156 = { "Tiô-Chiu" "Tiô-Chiu" } #
+2157 = { "Hiê-Chiu" "Hiê-Chiu" } #
+2158 = { "Siâu-Koan" "Siâu-Koan" } #
+2159 = { "Lûi-Chiu" "Lûi-Chiu" } #
+2160 = { "Gâi-Chiu" "Gâi-Chiu" } #
+2161 = { "Hap-Phó" "Hap-Phó" } #
+2162 = { "Ngô-Chiu" "Ngô-Chiu" } #
+2163 = { "Liú-Chiu" "Liú-Chiu" } #
+2164 = { "Nàng-Nìng" "Nàng-Nìng" } #
+2165 = { "Puo-Ngi" "Puo-Ngi" } #
+2167 = { "Lâ-Gong" "Lâ-Gong" } #
+2168 = { "Bok-Chiu" "Bok-Chiu" } #
+2169 = { "Lòng-Tiong" "Lòng-Tiong" } #
+2171 = { "Siong-Iòng" "Siong-Iòng" } #
+2172 = { "Cheng-Chiu" "Cheng-Chiu" } #
+2173 = { "Goân-Lêng" "Goân-Lêng" } #
+2174 = { "Hèng-Iòng" "Hèng-Iòng" } #
+2176 = { "Siong-Kiu" "Siong-Kiu" } #
+2177 = { "Lêng-Bú" "Lêng-Bú" } #
+2178 = { "Lek-Ang" "Lek-Ang" } #
+2179 = { "Lòng-Ang" "Lòng-Ang" } #
+2180 = { "Tieng-Chui" "Tieng-Chui" } #
+2182 = { "Liâng-Chiu" "Liâng-Chiu" } #
+2183 = { "Lîm-Thâm" "Lîm-Thâm" } #
+2748 = { "Se-Chhiong" "Se-Chhiong" } #
+4194 = { "Éng-Pêng" "Éng-Pêng" } #
+4195 = { "Chèng-Teng" "Chèng-Teng" } #
+4196 = { "Hái-Chiu" "Hái-Chiu" } #
+4197 = { "Ng-Chiu" "Ng-Chiu" } #
+4199 = { "Dèng-Ìng" "Dèng-Ìng" } #
+4213 = { "Lù-Chiu" "Lù-Chiu" } #
+4652 = { "Hái-Siân" "Hái-Siân" } #
+
+#By Arga Dec 2020
+#1.30
+613 = { "Jîn-Kháu" "Jîn-Kháu" } #
+738 = { "Tang-Lêng" "Tang-Lêng" } #
+2154 = { "Ke-Lâng" "Ke-Lâng" } #
+8555 = { "Tâi-Tang" "Tâi-Tang" } #

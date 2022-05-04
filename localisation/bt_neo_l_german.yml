@@ -1,0 +1,15 @@
+﻿l_german:
+ ABBACY:0 "Abtei"
+ ABBOT:0 "Abt"
+ ABBOT_fem:0 "Äbtissin"
+
+ bt_string_ruler_name: "[Root.Monarch.GetName]"
+ bt_string_overlord_name: "[Root.Overlord.Monarch.GetName]"
+
+ #Pompeii monument event
+ bt_monuments.1.title:0 "Die Ruinen von Pompeii"
+ bt_monuments.1.desc:0 "Durch einen glücklichen Zufall wurden endlich die Ruinen der fast mythischen römischen Stadt Pompeji ausgegraben! Während der Ausgrabung eines neuen Sommerpalastes für [Root.BTGetRulerOrOverlordName] in der Nähe des Vesuvs in [121.GetName] entdeckten die Arbeiter Häuser aus Stein, Betonstraßen und Abgüsse von Menschen und Tieren - alles umhüllt von Asche! Nachdem wir lokale Historiker und Experten für römische Geschichte konsultiert hatten, wurden unsere Vermutungen bestätigt: Dies kann nichts anderes als die antike römische Stadt Pompeji sein!"
+ bt_monuments.1.a:0 "Unglaublich!"
+ bt_pompeii_has_been_discovered: "Die Ruinen von Pompeji sind ausgegraben worden."
+
+ take_capital_support_rebels_desc:0 "Zieht in den Krieg um einer Rebellenfraktion zu helfen, ihre Forderungen durchzusetzen."

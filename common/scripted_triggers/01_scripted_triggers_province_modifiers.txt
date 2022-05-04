@@ -64,6 +64,7 @@ has_river_estuary_trigger = {
 			has_province_modifier = red_river_estuary_modifier
 			has_province_modifier = irrawaddy_estuary_modifier
 			has_province_modifier = kongo_estuary_modifier
+			has_province_modifier = amur_estuary_modifier
 			#Added estuaries in BT. Thanks for the note in event_modifiers Paradox! =D -Draiocht
 			has_province_modifier = fraiser_estuary_modifier
 			has_province_modifier = yukon_estuary_modifier
@@ -157,6 +158,7 @@ has_no_river_estuary_trigger = {
 			has_province_modifier = red_river_estuary_modifier
 			has_province_modifier = irrawaddy_estuary_modifier
 			has_province_modifier = kongo_estuary_modifier
+			has_province_modifier = amur_estuary_modifier
 			#Added estuaries in BT. Thanks for the note in event_modifiers Paradox! =D -Draiocht
 			has_province_modifier = fraiser_estuary_modifier
 			has_province_modifier = yukon_estuary_modifier
@@ -198,13 +200,13 @@ province_with_special_goods_produced_trigger = {
 		has_province_modifier = spice_islands_modifier
 		has_province_modifier = comet_ore_modifier
 		has_province_modifier = paradise_modifier
-		has_province_modifier = cerro_rico_modifier
 		has_province_modifier = ned_house_of_elzevir
 		has_province_modifier = bookmarket_of_x
 		has_province_modifier = grand_bank_fisheries
 		has_province_modifier = diamond_district
 		has_province_modifier = jingdezhen_kilns
 		has_province_modifier = perfume_capital
+		has_active_triggered_province_modifier = cerro_rico_modifier
 		#Added special goods in BT
 		has_province_modifier = grand_banks_of_newfoundland
 		has_province_modifier = bt_forests_of_cadore
@@ -219,7 +221,6 @@ province_with_special_goods_produced_trigger = {
 		has_province_modifier = bt_mercury_of_almaden
 		has_province_modifier = bt_birthplace_lager
 		province_id = 50 #Berlin #Gets Prussian Blue if held by Prussia or Prussian-cultured Germany.
-		
 	}
 }
 
@@ -235,13 +236,13 @@ province_without_special_goods_produced_trigger = {
 		has_province_modifier = spice_islands_modifier
 		has_province_modifier = comet_ore_modifier
 		has_province_modifier = paradise_modifier
-		has_province_modifier = cerro_rico_modifier
 		has_province_modifier = ned_house_of_elzevir
 		has_province_modifier = bookmarket_of_x
 		has_province_modifier = grand_bank_fisheries
 		has_province_modifier = diamond_district
 		has_province_modifier = jingdezhen_kilns
 		has_province_modifier = perfume_capital
+		has_active_triggered_province_modifier = cerro_rico_modifier
 		has_latent_trade_goods = coal
 		#Added special goods in BT
 		has_province_modifier = grand_banks_of_newfoundland
@@ -255,7 +256,6 @@ province_without_special_goods_produced_trigger = {
 		has_province_modifier = bt_basque_whaling
 		has_province_modifier = bt_la_beauce
 		has_province_modifier = bt_mercury_of_almaden
-		#has_province_modifier = 
 		has_province_modifier = bt_birthplace_lager
 		province_id = 50 #Berlin #Gets Prussian Blue if held by Prussia or Prussian-cultured Germany.
 	}
@@ -272,6 +272,5 @@ is_religious_center_province = {
 		province_id = 409
 		province_id = 2221
 		province_id = 2095
-		#province_id = 8042 #What??
 	}
 }

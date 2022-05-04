@@ -1,0 +1,40 @@
+#Levant
+364 = { "Jorsha" "Jorsha" }
+365 = { "Ta Mefkat" "Ta Mefkat" }
+378 = { "Derbly" "Derbly" }
+379 = { "Uruschalimum" "Uruschalimum" }
+1854 = { "Yapho" "Yapho" }
+1855 = { "Akka" "Akka" }
+4268 = { "Elath" "Elath" }
+5180 = { "Ghazzat" "Ghazzat" }
+5181 = { "Du Mafkat" "Du Mafkat" } #(JP) Technically the region, but you know
+5205 = { "Biruta" "Biruta" }
+6065 = { "Biau" "Biau" }
+6071 = { "Beersheba" "Beersheba" } #(JP) Older Hebrew name
+6072 = { "Asqanu" "Asqanu" }
+6073 = { "Makedo" "Makedo" }
+6074 = { "Surru" "Surru" }
+6075 = { "Djedouna" "Djedouna" }
+
+#Arga's Work
+
+377 = "Chalba"
+
+#egypt
+358 = "Ra-Kedet"
+359 = "Shedet"
+360 = "Gesy"
+361 = "Khere-Ohe" #or "Iunu"
+362 = "Khito" #or "Bolbitinon" (Ptolemaic)
+1231 = "Swenu"
+2315 = "Klysma"
+2317 = "Men'at Khufu"
+2319 = "Zawty"
+2321 = "Tjaou"
+5181 = "Du Kafkat"
+5261 = "Tamiet"
+5263 = "Behdet" #or "Dmi en Hor"
+5264 = "Men-Nefer" #or "Djet-Sut"
+5267 = "Per-Medjed"
+5268 = "This"			#Or "Tjenu"
+5269 = "Waset"

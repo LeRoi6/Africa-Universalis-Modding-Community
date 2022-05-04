@@ -1,0 +1,91 @@
+#Contributions by Arga and Chairman Meow (JP)
+#(JP) Aramaic, Lost Culture NOT culture in syriac_group
+#(JP) For syriac_group.txt, try to use more recent naming where possible, as opposed to ancient Aramaean, though there are some clear similarities
+
+#Mesopotamia
+407 = { "Rakka" "Rakka" }
+408 = { "Prat d-Maishan" "Prat d-Maishan" } #same as current name
+410 = { "Mahoze Hdatta" "Mahoze Hdatta" } #also Baghdad, rn is Mahoze
+411 = { "Ninwe" "Ninwe" } #same as current name
+418 = { "Amid" "Amid" } #rn is Amedu
+2308 = { "Urhay" "Urhay" } #rn is Urhoy
+2309 = { "Shingar" "Shingar" } #not on the wiki list
+2310 = { "Tagrit" "Tagrit" } #not on the wiki list
+2314 = { "Dira Zeurta" "Dira Zeurta" } #(JP) "Deir ez-Zor"
+4292 = { "Merda" "Merda" } #rn is Merdô
+4295 = { "Hesno d-Kifo" "Hesno d-Kifo" } #not on the wiki list
+4298 = { "Ayindab" "Ayindab" }
+5293 = { "Resh Ayna" "Resh Ayna" } #not on the wiki list
+5295 = { "Gazarta" "Gazarta" } #rn is Gzira, Gazarta d-Kardu
+5296 = { "Nsibin" "Nsibin" } #Nasibina
+5331 = { "Si-Reth" "Si-Reth" } #not on the wiki list
+6089 = { "Audattha" "Audattha" }
+6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"
+6092 = { "Mabog" "Mabog" }
+
+#Levant
+365 = { "Raithu" "Raithu" }
+377 = { "Halba" "Halba" }
+378 = { "Tra'ara" "Tra'ara" }
+379 = { "Urislem" "Urislem" }
+382 = { "Darmsûq" "Darmsûq" }
+405 = { "Tadmur" "Tadmur" } #(JP) Palmyrene "TDMR"
+1849 = { "Hamath" "Hamath" }
+1855 = { "Glila" "Safed" } #same as current name
+2313 = { "Antioch" "Antioch" }
+4271 = { "Idlib" "Idlib" } #not on the wiki list
+4297 = { "Balabakk" "Balabakk" }
+4298 = { "Ayin Debo" "Ayin Debo" } #not on the wiki list
+5180 = { "Gaza" "Gaza" }
+5205 = { "Biruta" "Biruta" }
+6065 = { "Sinay" "Mar Katrine" }
+6067 = { "Piladelpia" "Piladelpia" } #(JP) "Amman"
+6070 = { "Saliq" "Saliq" }
+6071 = { "Beersheba" "Beersheba" }
+6074 = { "Sur" "Sur" }
+6075 = { "Saydun" "Saydun" }
+6077 = { "Kurmajit" "Kurmajit" }
+6082 = { "Suada" "Suada" } #(JP) "As-Suwayda"
+6084 = { "Malula" "Malula" }
+6086 = { "Hamat" "Hamat" }
+6088 = { "Sikne" "Sikne" }
+6093 = { "Hazazu" "Hazazu" } #(JP) "Aziz"
+6094 = { "Aleksandrette" "Aleksandrette" }
+6095 = { "Kilizi" "Kilizi" }
+
+#Anatolia
+138 = { "Zmurna" "Zmurna" } #
+323 = { "Iqanewan" "Iqanewan" } #
+324 = { "Luqania" "Laranda" } #
+326 = { "Galatia" "Ankyra" } #
+332 = { "Marqas" "Marqas" } #not on the wiki list
+2296 = { "Troa'os" "Troa'os" } #
+2298 = { "Pamphulia" "Attaleia" } #
+2301 = { "Qapadoqia" "Kaisareia" } #
+5135 = { "Zephyrion" "Zephyrion" } #
+5162 = { "Luqia" "Makre" } #
+5172 = { "Philadelphia" "Philadelphia" } #
+6004 = { "Musia" "Pergamon" } #
+6020 = { "Lustra" "Lustra" } #
+6025 = { "Tarsos" "Tarsos" } #
+
+#persia
+415 = { "Arrapha" "Arrapha" } #
+429 = { "Ispahan" "Ispahan" } #
+2206 = { "Urmia" "Urmia" } #
+4289 = { "Shushtrin" "Shush" } #
+4290 = { "Bet Hozayeh" "Hozayeh" } #
+4293 = { "Arbela" "Arbela" } #
+
+#arabia
+395 = { "Bet Qatraye" "Zubara" } #same as current name
+
+#egypt
+358 = { "Aleksandria" "Aleksandria" } #
+
+#maghreb
+357 = { "Qurine" "Qurine" } #same as current name
+
+#balkans
+148 = { "Tesaloniqe" "Tesaloniqe" } #
+320 = { "Rodos" "Rodos" } #

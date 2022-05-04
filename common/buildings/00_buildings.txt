@@ -145,7 +145,62 @@ temple = {
 		local_missionary_strength = 0.01			#BTAddOn new effect. Giving the temple the same bonus of this building's upgrade, simply weaker. Makes it more useful when it is too late in the game to make money back from building cost.
 		local_tax_modifier = 0.3			#BTAddOn changed from 0.4. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
 	}
-	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						religion = buddhism
+						religion = mahayana
+						religion = vajrayana
+					}
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				add_karma = 3
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = 3
+			}
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						religion = buddhism
+						religion = mahayana
+						religion = vajrayana
+					}
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				add_karma = -3
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = -3
+			}
+		}
+	}
 	ai_will_do = {
 		factor = 1			#BT Addon changed from 1. Changing all base factors to price divided by 100
 		#BT Addon New factors, range 100 percent to 450 percent
@@ -166,29 +221,30 @@ barracks = {
 	modifier = {
 		local_manpower_modifier = 0.25			#BTAddOn changed from 0.5. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
 	}
-
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.005
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.005
-#			}
-#		}
-#	}
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_manpower = 1
+			}
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_manpower = -1
+			}
+		}
+	}
 	
 	ai_will_do = {
 		factor = 40			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings). 
@@ -416,6 +472,7 @@ coastal_defence = {
 	modifier = {
 		blockade_force_required = 0.5
 		hostile_disembark_speed = 1.0
+		block_slave_raid = yes
 	}
 
 	ai_will_do = {
@@ -439,6 +496,10 @@ courthouse = {
 		local_autonomy = -0.1
 		local_governing_cost = -0.25
 	}
+
+	keep_trigger = {
+		is_state = yes
+	}
 	
 	ai_will_do = {
 		factor = 0.5			#BT Addon changed from 1. Changing all base factors to price divided by 100.
@@ -459,6 +520,28 @@ courthouse = {
 			factor = 1.5
 			development = 20			#Encourage if so big the owner should care
 		}
+		modifier = {
+			factor = 4 # BT; 2
+			FROM = { governing_capacity_percentage = 0.8 }
+		}
+		modifier = {
+			factor = 6 # BT; 3
+			FROM = { governing_capacity_percentage = 1 }
+		}
+		modifier = {
+			factor = 10 # BT; 5
+			FROM = { governing_capacity_percentage = 1.1 }
+		}
+		#Provinces in the Capital Area don't need a courthouse
+		modifier = {
+			factor = 0
+			area_for_scope_province = {
+				any_province = {
+					area = PREV
+					is_capital_of = FROM
+				}
+			}
+		}
 	}
 }
 
@@ -470,6 +553,31 @@ dock = {
 	}
 	modifier = {
 		local_sailors_modifier = 0.5
+	}
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = 200
+			}
+		}
+	}
+	
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = -200
+			}
+		}
 	}
 	
 	ai_will_do = {
@@ -518,29 +626,6 @@ regimental_camp = {
 		land_forcelimit = 0.5			#BTAddOn changed from 1.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
 		regiment_recruit_speed = -0.125			#BTAddOn new. Adding this new feature to match the shipyard equivalents, which also speed recruit time.
 	}
-
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.005
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.005
-#			}
-#		}
-#	}
 	
 	ai_will_do = {
 		factor = 60			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings). 
@@ -623,29 +708,6 @@ fort_16th = {
 		local_defensiveness = 0.3			#BTAddOn new
 	}
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.02
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.01
-#			}
-#		}
-#	}
-
 	onmap = yes
 	
 	influencing_fort = yes
@@ -711,6 +773,7 @@ naval_battery = {
 		blockade_force_required = 1.0
 		hostile_disembark_speed = 2.0
 		hostile_fleet_attrition = 5
+		block_slave_raid = yes
 	}
 
 	ai_will_do = {
@@ -730,7 +793,62 @@ cathedral = {
 		local_missionary_strength = 0.02			#BTAddOn changed from 0.03, might slow conversion slightly, but avg dev is also lower, so that might be a good thing
 		local_tax_modifier = 0.6
 	}
-	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						religion = buddhism
+						religion = mahayana
+						religion = vajrayana
+					}
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				add_karma = 3
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = 3
+			}
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						religion = buddhism
+						religion = mahayana
+						religion = vajrayana
+					}
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				add_karma = -3
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = -3
+			}
+		}
+	}
 	ai_will_do = {
 		factor = 4			#BT Addon changed from 1. Changing all base factors to price divided by 100. 
 		#BT Addon New factors, range 100 percent to 450 percent
@@ -932,9 +1050,9 @@ university = {
 				province_id = 4730		#Bologna, 1088
 				province_id = 237			#Oxford, 1096
 				province_id = 183			#Paris (Sorbonne), 1160 (I thought it was older...)
-				province_id = 3027		#Cambrige, 1209
+				province_id = 4370 # Brian fixed; Cambrige, 1209
 				province_id = 216			#Salamanca, 1218
-				province_id = 108			#Padua (actually Verona atm, might add some provinces to Italy in the future), 1222 or older
+				province_id = 4729 # Brian fixed; Padua, 1222 or older
 				province_id = 121			#Naples, 1224
 				province_id = 196			#Toulouse, 1229
 				province_id = 200			#Montpellier, 1289
@@ -1096,33 +1214,35 @@ training_fields = {
 	
 	make_obsolete = barracks
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.02
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.01
-#			}
-#		}
-#	}
+
 	
 	modifier = {
 		local_manpower_modifier = 0.5			#BTAddOn changed from 1.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
 	}
-	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_manpower = 1
+			}
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_manpower = -1
+			}
+		}
+	}
 	ai_will_do = {
 		factor = 160			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings).
 		#BT Addon New factors, range 36 percent to 486 percent
@@ -1381,6 +1501,10 @@ town_hall = {
 	build_trigger = { #BT 13 added to balance states territories and tradecompanies.
 		is_state = yes
 	}
+
+	keep_trigger = {
+		is_state = yes
+	}
 	
 	modifier = {
 		local_state_maintenance_modifier = -0.5
@@ -1407,6 +1531,32 @@ town_hall = {
 			factor = 1.5
 			development = 20			#Encourage if so big the owner should care
 		}
+		modifier = {
+			factor = 5 # BT; 10
+			has_building = courthouse
+		}
+		modifier = {
+			factor = 1.1 # BT; 2
+			FROM = { governing_capacity_percentage = 0.8 }
+		}
+		modifier = {
+			factor = 1.5 # BT; 
+			FROM = { governing_capacity_percentage = 1 }
+		}
+		modifier = {
+			factor = 2.5 # BT; 5
+			FROM = { governing_capacity_percentage = 1.1 }
+		}
+		#Provinces in the Capital Area don't need a courthouse
+		modifier = {
+			factor = 0
+			area_for_scope_province = {
+				any_province = {
+					area = PREV
+					is_capital_of = FROM
+				}
+			}
+		}
 	}
 }
 
@@ -1423,7 +1573,30 @@ drydock = {
 	modifier = {
 		local_sailors_modifier = 1.0
 	}
-	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = 200
+			}
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = -200
+			}
+		}
+	}
 	ai_will_do = {
 		factor = 80			#BT Addon changed from 1. Changing all base factors to price divided by 100 (or equal to cost minus 20 pecent for non economic buildings). Special penalty for Docks because they're worthless
 		#BT Addon New factors, range 36 percent to 216 percent
@@ -1470,28 +1643,7 @@ conscription_center = {
 	
 	make_obsolete = regimental_camp
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.02
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.01
-#			}
-#		}
-#	}
+
 	
 	modifier = {
 		land_forcelimit = 1			#BTAddOn changed from 2.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
@@ -2128,6 +2280,7 @@ tradecompany = {
 		ivory
 		slaves
 		spices
+		cloves
 		fur
 		incense
 	}
@@ -2145,6 +2298,7 @@ tradecompany = {
 			trade_goods = spices
 			trade_goods = fur
 			trade_goods = incense
+			trade_goods = cloves
 		}
 	}
 
@@ -2600,6 +2754,9 @@ soldier_households = {
 		fish
 		livestock
 		wine
+		bt_trade_good_fruit
+		bt_trade_good_beer
+		bt_trade_good_apiculture
 	}
 
 	modifier = {
@@ -2634,9 +2791,13 @@ impressment_offices = {
 
 	modifier = {
 		local_sailors = 250
+		ship_recruit_speed = -0.1
+		local_ship_cost = -0.05
 	}
 	bonus_modifier = {
 		local_sailors = 250
+		ship_recruit_speed = -0.1
+		local_ship_cost = -0.05
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -2656,6 +2817,7 @@ state_house = {
 		paper
 		glass
 		gems
+		bt_trade_good_books
 	}
 
 	build_trigger = {
@@ -2674,6 +2836,7 @@ state_house = {
 	}
 	
 	keep_trigger = {
+		is_state = yes
 		NOT = {
 			area_for_scope_province = {
 				NOT = { province_id = root }

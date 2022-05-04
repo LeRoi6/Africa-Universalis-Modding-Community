@@ -164,3 +164,74 @@ estate_nobles_british_strong_marches = {
 		}
 	}
 }
+estate_nobles_border_forts = {
+	icon = privilege_autonomous_defences
+	max_absolutism = -10
+	#loyalty = 0.1
+	influence = 0.05
+	is_valid = {
+		any_owned_province = {
+			OR = {
+				has_building = fort_15th
+				has_building = fort_16th
+				has_building = fort_17th
+				has_building = fort_18th
+			}
+		}
+	}
+	can_select = {
+		any_owned_province = {
+			OR = {
+				has_building = fort_15th
+				has_building = fort_16th
+				has_building = fort_17th
+				has_building = fort_18th
+			}
+		}
+	}
+	modifier_by_land_ownership = { 
+		fort_maintenance_modifier = -0.75
+	}
+	penalties = {
+	}
+	benefits = {
+		fort_maintenance_modifier = -0.25
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = { #If at least 5 fort provinces, keep privilege.
+			factor = 6
+			num_of_owned_provinces_with = {
+				value = 5
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			NOT = { is_absolutism_active = yes }
+		}
+		modifier = { #If at least 10 fort provinces, take privilege.
+			factor = 2
+			num_of_owned_provinces_with = {
+				value = 10
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			NOT = { is_absolutism_active = yes }
+		}
+		modifier = { #The AI should not try and pass this if it results in the estate becoming too influential.
+			factor = 0.5
+			estate_influence = {
+				estate = estate_nobles
+				influence = 75
+			}
+			NOT = { has_estate_privilege = estate_nobles_border_forts }
+		}
+	}
+}

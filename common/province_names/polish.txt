@@ -1,0 +1,1 @@
+#Dummy File, all Polish naming in west_slavic.txt, to be overwritten by czech, slovak, silesian, sorbian and kashubian where needed.

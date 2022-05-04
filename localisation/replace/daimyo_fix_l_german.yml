@@ -1,0 +1,43 @@
+﻿l_german:
+
+ # Subject relations
+ daimyo_vassal_title:0 "Sengoku Han"
+ daimyo_vassal_title_plural:0 "Sengoku Han"
+ daimyo_vassal_long_desc:0 "Ein Han, der von einem loyalen Daimyo kontrolliert wird, folgt seinem Shogun in den Krieg, kann bestimmte diplomatische Aktionen nicht durchführen und zahlt einen Teil seines Einkommens an seinen Shogun. Daimyo können auch gegeneinander kämpfen."
+ daimyo_vassal_is_our:0 "$NAME|Y$ ist einer unserer Han."
+
+ # Government Types
+ DAIMYO:0 "Han"
+ GRAND_DAIMYO:0 "Han"
+ GREAT_DAIMYO:0 "Han"
+ INDEP_DAIMYO:0 "Kokka"
+ GRAND_INDEP_DAIMYO:0 "Kokka"
+ GREAT_INDEP_DAIMYO:0 "Kokka"
+ PIRATE_DAIMYO:0 "Wokou-Han"
+ 
+ # Generic
+ daimyo_subject:0 "Han-Untertan"
+
+ daimyo:0 "Han"
+ daimyo_desc:0 "Ein mächtiger Vasall in Japan, der seine Erblande unter dem Shogun regiert.\n§MEin Daimyo, der Herr eines Han, kann Shogun werden, Oberherr aller Han, indem er die Provinz Kyoto einnimmt.§!"
+ daimyo_legacy:0 "Han"
+ daimyo_legacy_desc:0 "Ein mächtiger Vasall in Japan, der seine Erblande unter dem Shogun regiert.\n§MEin Daimyo, der Herr eines Han, kann Shogun werden, Oberherr aller Han, indem er die Provinz Kyoto einnimmt.§!"
+ daimyo_ruler:0 "Daimyo"
+ daimyo_ruler_female:0 "Daimyo"
+ 
+ shogunate_desc:0 "Obwohl nominell vom Kaiser ernannt, wurde das Shogunat zu einer erblichen Militärdiktatur und zum faktischen Herrscher Japans zwischen 1192 und 1867.\n§MEin Daimyo, der Herr eines Han, kann Shogun werden, Oberherr aller anderen Daimyo, indem er die Provinz Kyoto einnimmt.§!"
+ shogunate_legacy_desc:0 "Obwohl nominell vom Kaiser ernannt, wurde das Shogunat zu einer erblichen Militärdiktatur und zum faktischen Herrscher Japans zwischen 1192 und 1867.\n§MEin Daimyo, der Herr eines Han, kann Shogun werden, Oberherr aller anderen Daimyo, indem er die Provinz Kyoto einnimmt.§!"
+
+ indep_daimyo:0 "Unabhängiger Han"
+ indep_daimyo_desc:0 "Ein mächtiger Herr in Japan, der seine Erblande unabhängig regiert. \n§MEin Daimyo, der Herr eines Han, kann Shogun werden, Oberherr aller Han, indem er die Provinz Kyoto einnimmt.§!"
+ indep_daimyo_legacy:0 "Unabhängiger Han"
+ indep_daimyo_legacy_desc:0 "Ein mächtiger Herr in Japan, der seine Erblande unabhängig regiert. \n§MEin Daimyo, der Herr eines Han, kann Shogun werden, Oberherr aller Han, indem er die Provinz Kyoto einnimmt.§!"
+ indep_daimyo_ruler:0 "Daimyo"
+ indep_daimyo_ruler_female:0 "Daimyo"
+ 
+ claiming_the_shogunate_tooltip:0 "[new_shogunate.GetName] wird das Oberhaupt des neuen Shogunats sein.\nDie Länder aller Daimyo, die dem Shogun treu ergeben sind, werden auf [new_shogunate.GetName] übertragen."
+
+ cb_daimyo_annex:0 "Krieg für den Kaiser"
+ cb_daimyo_annex_desc:0 "Wir sollten Japan unter unserer Fahne vereinen! Durch die Eroberung der kaiserlichen Hauptstadt Kyoto werden wir den Kaiser unter unseren Schutz und Einfluss stellen, um die Zügel des Shogunats zu übernehmen." 
+ cb_independent_daimyo_annex:0 "Krieg für den Kaiser"
+ cb_independent_daimyo_annex_desc:0 "Wir sollten Japan unter unserer Fahne vereinen! Durch die Eroberung der kaiserlichen Hauptstadt Kyoto werden wir den Kaiser unter unseren Schutz und Einfluss stellen, um die Zügel des Shogunats zu übernehmen."

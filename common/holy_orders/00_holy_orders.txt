@@ -3,7 +3,7 @@ jesuit_order = {
     trigger = {
 		OR = {
 			culture_group = iberian
-			primary_culture = basque
+			primary_culture = basque # BT
 		}
         religion = catholic
     }
@@ -33,7 +33,7 @@ dominican_order = {
     trigger = {
 		OR = {
 			culture_group = iberian
-			primary_culture = basque
+			primary_culture = basque # BT
 		}
         religion = catholic
     }
@@ -78,7 +78,7 @@ franciscan_order = {
     trigger = {
 		OR = {
 			culture_group = iberian
-			primary_culture = basque
+			primary_culture = basque # BT
 		}
         religion = catholic
     }
@@ -110,7 +110,7 @@ franciscan_order = {
 shadhili_order = {
     icon = GFX_holy_order_shadhili
     trigger = {
-        primary_culture = andalusi_culture
+        primary_culture = andalusi_culture # BT; andalucian
         religion_group = muslim
     }
     cost = 50
@@ -139,7 +139,7 @@ shadhili_order = {
 qadiri_order = {
     icon = GFX_holy_order_qadiri
     trigger = {
-        primary_culture = andalusi_culture
+        primary_culture = andalusi_culture # BT; andalucian
         religion_group = muslim
     }
     cost = 50
@@ -168,7 +168,7 @@ qadiri_order = {
 aissawa_order = {
     icon = GFX_holy_order_aissawa
     trigger = {
-        primary_culture = andalusi_culture
+        primary_culture = andalusi_culture # BT; andalucian
         religion_group = muslim
     }
     cost = 50

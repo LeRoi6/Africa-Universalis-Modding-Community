@@ -1,0 +1,130 @@
+#####
+# Government names from vanilla with slight changes to make them work better in BT
+#####
+
+###
+# neo
+###
+
+maine_county = { #frick you paradox
+	
+	rank = {
+		1 = COUNTY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = COUNT
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = COUNTESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	consort_male  = {
+		1 = PRINCE_CONSORT
+		2 = PRINCE_CONSORT
+		3 = PRINCE_CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = QUEEN_CONSORT
+		3 = EMPRESS_CONSORT
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	government_reform = monarchy_mechanic
+
+	trigger = {
+		has_reform = monarchy_mechanic
+		tag = MNE
+		NOT = {
+			total_development = 60
+		}
+	}
+}
+
+hre_county = {
+	rank = {
+		1 = COUNTY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = COUNT
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = COUNTESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	consort_male  = {
+		1 = PRINCE_CONSORT
+		2 = PRINCE_CONSORT
+		3 = PRINCE_CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = QUEEN_CONSORT
+		3 = EMPRESS_CONSORT
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	government_reform = monarchy_mechanic
+
+	trigger = {
+		has_reform = monarchy_mechanic
+		is_part_of_hre = yes
+		OR = {
+			AND = {
+				tag = TIR
+				NOT = {
+					total_development = 60
+				}
+			}
+			AND = {
+				NOT = {
+					total_development = 24	
+					tag = KLE
+					tag = CBG #Split Brunswicks
+					tag = WLF #Split Brunswicks
+					tag = LUN #Split Brunswicks	
+				}
+			}
+		}
+	}
+}

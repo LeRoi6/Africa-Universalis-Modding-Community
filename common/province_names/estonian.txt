@@ -1,0 +1,46 @@
+##Contributions from JP
+#(JP) Estonian naming, will overwrite finno_ugric.txt which will primarily have finnish naming
+
+#Baltic
+35 = { "Saaremaa" "Kuressaarelinn" } 
+36 = { "Rävala" "Rävala" } #(JP) or "Kolõvan" or modern "Tallinn"
+37 = { "Ristilinn" "Ristilinn" }
+38 = { "Riia" "Riia" }
+39 = { "Kuldiga" "Kuldiga" }
+40 = { "Meemel" "Meemel" }
+43 = { "Gdansk" "Gdansk" } #(JP) No Estonian name, using "finnish" name
+271 = { "Raseiniai" "Raseiniai" } #(JP) Lithuanian name
+273 = { "Väinalinn" "Väinalinn" }
+1834 = { "Tarbatu" "Tarbatu" } #(JP) Older Estonian name than just "Tartu"
+1842 = { "Narva" "Narva" }
+1935 = { "Jelgava" "Jelgava" } #(JP) Latviann name
+1936 = { "Kaunas" "Kaunas" } #(JP) Lithuanian name
+3226 = { "Palanga" "Palanga" } #(JP) Lithuanian name
+3227 = { "Piltene" "Piltene" }
+3229 = { "Viljandi" "Viljandi" }
+3230 = { "Vana-Pärnu" "Vana-Pärnu" } #(JP) After c.1600 "Vana-Pärnu"
+3231 = { "Hiiumaa" "Kärdla" } 
+3293 = { "Selija" "Selpils" }
+4241 = { "Lemsalu" "Lemsalu" }
+4534 = { "Upyte" "Upyte" } #(JP) Lithuanian name
+4535 = { "Utena" "Utena" } #(JP) Lithuanian name
+7837 = { "Ragni" "Ragni" }
+7838 = { "Grobina" "Grobina" }
+7839 = { "Vanta" "Vanta" }
+7840 = { "Kandav" "Kandav" }
+7841 = { "Bauska" "Bauska" } #(JP) Latvian name
+7843 = { "Võnnu" "Võnnu" }
+7844 = { "Koknese" "Koknese" } #(JP) Latvian name
+7845 = { "Rauna" "Rauna" } #(JP) Latvian name
+7846 = { "Räisaku" "Räisaku" }
+7847 = { "Vileks" "Vileks" }
+7848 = { "Aluliina" "Aluliina" }
+7849 = { "Volmari" "Volmari" }
+7850 = { "Uus-Pärnu" "Uus-Pärnu" } #(JP) After c.1600 "Uus-Pärnu"
+7851 = { "Vastseliina" "Vastseliina" }
+7852 = { "Põltsamaa" "Põltsamaa" }
+7853 = { "Rakvere" "Rakvere" } 
+7854 = { "Aizpute" "Aizpute" } #(JP) Latvian name
+7855 = { "Paide" "Paide" }
+7856 = { "Rapla" "Rapla" }
+7857 = { "Haapsalu" "Haapsalu" }

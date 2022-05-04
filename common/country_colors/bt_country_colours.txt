@@ -4,3 +4,33 @@ LMV = {
     color2= { 93 29 16 } #Red stolen from Milan T4
     color3= { 36 47 33 } #Green flag but darker.
 }
+# Cumania
+CUM = {
+    color1= { 242 188 81 }
+    color2= { 216 232 229 }
+    color3= { 0 19 130 }
+}
+# Szeklerland
+SZE = {
+    color1= { 18 95 27 }
+    color2= { 13 100 150 }
+    color3= { 202 202 202 }
+}
+# Siebenburgen
+SBG = {
+    color1= { 140 146 170 }
+    color2= { 4 110 177 }
+    color3= { 200 50 50 }
+}
+# Forli
+FRL = {
+    color1= { 60 150 60 }
+    color2= { 240 190 80 }
+    color3= { 64 64 64 }
+}
+# Istria
+IST = {
+    color1= { 20 30 50 }
+    color2= { 240 190 40 }
+    color3= { 180 36 36 }
+}

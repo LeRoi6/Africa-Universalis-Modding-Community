@@ -1,0 +1,1 @@
+#(JP) Moved to thai_group.txt, names are mostly overwritten in tai.txt, northern_thai.txt and lao.txt anyway

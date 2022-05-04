@@ -2,20 +2,18 @@
 # remember to add graphics for relevant ones when you add to this
 #
 # if a modifier is scaled, its multiplied with development in the province.
-
-
 # any_friendly_coast_border_province is a special scope made for institution spread.
 # It checks for adjacent provinces or provinces one seazone away.
 # Friendly is defined as at positive relations or owned by the same country that owns the province.
 
-#Beyond Typus Addon Note - 
+#Beyond Typus Addon Note -
 #Please note that if adding any new tech groups, they will require entries in each institution's embracement speed header, I'd recommend searching 'BT South American Tech Spreads' and adding new entries to the bottom of the list.
 #In general, changes are to speed up spread where there have been many new provinces, slow spread in areas that are getting way too much tech in the new system, and use force potential more often, to clean things up for countries who can never obtain the various region specific bonuses
-#Note BT adds many new provinces to overhauled areas, but also lowers the average development of those provinces (Tags have the same total dev spread over more provinces). As institutions spread from province to province scaled to dev, this means without changes, institution spread will be markedly slower 
+#Note BT adds many new provinces to overhauled areas, but also lowers the average development of those provinces (Tags have the same total dev spread over more provinces). As institutions spread from province to province scaled to dev, this means without changes, institution spread will be markedly slower
 #than in vanilla. This is the justification for speeding up spreads.
 
 #One of the largest and most drastic changes here is halving the AI factor for embracement, making the AI wait until the price is lower (i.e. institution has spread to more provinces) before embracing. The logic follows.
-#Vanilla system (at least with BT dev, not sure about vanilla) has countries embracing new institutions immediately once one, two, or rarely three provinces embrace the institution, even for large-ish countries like Spain, England, and Austria. This will hopefully encourage countries to wait until it has spread 
+#Vanilla system (at least with BT dev, not sure about vanilla) has countries embracing new institutions immediately once one, two, or rarely three provinces embrace the institution, even for large-ish countries like Spain, England, and Austria. This will hopefully encourage countries to wait until it has spread
 #a bit more. Ideally, I'd like to see countries embrace when between 1/4 and 1/2 of their provinces already accept the institution, not every single province, and not just their one richest city, but a moderate portion of the nation.
 
 #Tech group list for reference below. As/if I add new groups I'll try to add them here as well.
@@ -40,21 +38,18 @@
 #south_american	-	original penalty was 250 percent more than western, or 28.571 percent of 100 compared to western	-	now generally 40 percent of western (-60 percent)
 
 #######################################
-# Feudalism.  
-# 
+# Feudalism.
+#
 # Most in the old world start with it.
 #######################################
-
 feudalism = {
-	penalty = 0.5
+	#penalty = 0.5
 	bonus = {
 		diplomatic_upkeep = 1			#BTAddOn new. An idea from PereTercer to clean up the New World alliance mess without interferring with European powers
 		free_leader_pool = 1
 	}
 
-	trade_company_efficiency = 0.0
-
-
+	#trade_company_efficiency = 0.2 # BT removed
 	history = {
 		is_year = 1000
 		OR = {
@@ -78,42 +73,45 @@ feudalism = {
 					}
 				}
 			}
-			culture = persian
-			culture = azerbaijani
-			culture = kurdish
-			culture = armenian
-			culture = mazandarani
-			culture = turkish
-			culture = omani_culture
-			culture = yemeni_culture
-			culture = swahili
-			area = ningguta_area
-			area = jilin_area
-			culture = hejazi_arabic
-			culture = khaliji_arabic
-			culture_group = byzantine
-			culture_group = dravidian
-			culture_group = east_asian
-			culture_group = east_slavic
-			culture_group = eastern_aryan
-			culture_group = japanese_g
-			culture_group = korean_g
-			culture_group = scandinavian
-			culture_group = west_slavic
-			culture_group = western_aryan
-			province_id = 383
-			province_id = 412
-			province_id = 2327
-			province_id = 2329
-			province_id = 2331
-			province_id = 2999
+			AND = {
+				owner = { is_playing_custom_nation = no }
+				OR = {
+					culture = persian
+					culture = azerbaijani
+					culture = kurdish
+					culture = armenian
+					culture = mazandarani
+					culture = turkish
+					culture = omani_culture
+					culture = yemeni_culture
+					culture = swahili
+					area = ningguta_area
+					area = jilin_area
+					culture_group = byzantine
+					culture_group = dravidian
+					culture_group = east_asian
+					culture_group = east_slavic
+					culture_group = eastern_aryan
+					culture_group = japanese_g
+					culture_group = korean_g
+					culture_group = scandinavian
+					culture_group = west_slavic
+					culture_group = western_aryan
+					province_id = 383
+					province_id = 412
+					province_id = 2327
+					province_id = 2329
+					province_id = 2331
+					province_id = 2999
+				}
+			}
 			AND = {
 				region = horn_of_africa_region
 				owner = { NOT = { has_reform = tribal_federation } }
 			}
 			AND = {
 				culture = al_misr_arabic
-				NOT = { area = libyan_desert_area }
+				#NOT = { area = libyan_desert_area } # BT; al_wahat_area
 				NOT = { area = cyrenaica_area }
 			}
 			AND = {
@@ -144,7 +142,7 @@ feudalism = {
 			is_year = 1700
 		}
 	}
-	
+
 	# no need for events, as its there from the start.
 	#can_start = {	is_year = 1000	}
 	#start_chance = 100
@@ -183,12 +181,8 @@ feudalism = {
 		#		}
 		#	}
 		#}
-		#########################################################################
 		###Start of BT Tech group specific spread modifiers - feudalism
-		#########################################################################
-		#########################################################################
 		###BT Western Tech Spreads - dev doubled adjusted Vanilla speed x 1.67. More provinces means slower spread, speeding up to compensate.
-		#########################################################################
 		modifier = {
 			factor = 0.6
 			scale = yes
@@ -215,9 +209,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Eastern Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.95 based on original tech group's 20 percent penalty (i.e. 83 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.57
 			scale = yes
@@ -244,9 +236,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Ottoman Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.90 based on original tech group's 25 percent penalty (i.e. 80 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.54
 			scale = yes
@@ -273,9 +263,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Muslim Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.80 based on original tech group's 40 percent penalty (i.e. 71 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.48
 			scale = yes
@@ -302,9 +290,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Indian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.27
 			scale = yes
@@ -331,9 +317,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT East African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.27
 			scale = yes
@@ -360,9 +344,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
@@ -389,9 +371,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Sub Saharan Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
@@ -418,9 +398,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Central African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 65 percent penalty (i.e. 61 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
@@ -447,9 +425,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Nomad Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.65 based on original tech group's 75 percent penalty (i.e. 57 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.23
 			scale = yes
@@ -476,9 +452,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT High American Tech Spreads - dev doubled adjusted Vanilla speed x 1.67. More provinces means slower spread, speeding up to compensate. Not all regions have new provinces yet, but this tech group was never meant to be 'balanced' anyway
-		#########################################################################
 		modifier = {
 			factor = 0.6
 			scale = yes
@@ -505,9 +479,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Central American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.18
 			scale = yes
@@ -534,9 +506,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Andean Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.18
 			scale = yes
@@ -563,9 +533,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT North American Tech Spreads - dev doubled adjusted Vanilla speed x 1.33. Only half overhauled, so only half the bonus. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.2
 			scale = yes
@@ -592,9 +560,7 @@ feudalism = {
 				}
 			}
 		}
-		#########################################################################
 		###BT South American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.15
 			scale = yes
@@ -611,6 +577,60 @@ feudalism = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				owner = { technology_group = south_american }
+				NOT = { any_friendly_coast_border_province = { feudalism = 100 } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = NEIGHBOR_NOT_OWNED_IS_FEUDAL
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					feudalism = 100
+				}
+			}
+		}
+		###BT Aboriginal Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.15
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = { owner = { technology_group = aboriginal_tech } }
+			custom_trigger_tooltip = {
+				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED
+				any_friendly_coast_border_province = { feudalism = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.03			#Feudalism penalty, was 1/6 normal in vanilla, making it only 1/4, instead of 1/2 common for other tiers
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { technology_group = aboriginal_tech }
+				NOT = { any_friendly_coast_border_province = { feudalism = 100 } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = NEIGHBOR_NOT_OWNED_IS_FEUDAL
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					feudalism = 100
+				}
+			}
+		}
+		###BT Polynesian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.15
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = { owner = { technology_group = polynesian_tech } }
+			custom_trigger_tooltip = {
+				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED
+				any_friendly_coast_border_province = { feudalism = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.03			#Feudalism penalty, was 1/6 normal in vanilla, making it only 1/4, instead of 1/2 common for other tiers
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { technology_group = polynesian_tech }
 				NOT = { any_friendly_coast_border_province = { feudalism = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -642,8 +662,11 @@ feudalism = {
 						estate = estate_nobles
 						loyalty = 40
 					}
+					estate_territory = {
+						estate = estate_nobles
+						territory = 30
+					}
 				}
-				has_estate = estate_nobles
 			}
 		}
 		modifier = {
@@ -676,7 +699,7 @@ feudalism = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = CAPITAL_IN_OLD_WORLD_FEUDAL
-			
+
 				is_capital = yes
 				NOT = { continent = north_america }
 				NOT = { continent = south_america }
@@ -717,10 +740,10 @@ feudalism = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes
@@ -769,21 +792,18 @@ feudalism = {
 
 #######################################
 # Renaissance
-# 
+#
 # Flows from italy
 #######################################
-
 renaissance = {
-	penalty = 0.5
+	#penalty = 0.5
 
 	bonus = {
 		technology_cost = -0.05			#BTAddOn changed from development cost, which is now moved to manufacturing, because I say so =p I like the early tech boost to Europe here and also think tech fits better historically/logically than dev, which should be more an industrialisation thing.
 		build_cost = -0.05
 	}
 
-	trade_company_efficiency = 0.0
-
-
+	#trade_company_efficiency = 0.4 # BT removed
 	historical_start_date = 1450.1.1
 	historical_start_province = 116 # Florence
 
@@ -801,7 +821,6 @@ renaissance = {
 					area = emilia_area
 				}	#BTMiscAddonChange - Slows spread slightly for later start dates
 			}
-			
 			AND = {
 				is_year = 1455
 				OR = {
@@ -809,7 +828,6 @@ renaissance = {
 					region = low_countries_region
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1460
 				OR = {
@@ -820,17 +838,15 @@ renaissance = {
 					region = british_isles_region
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1465
 				OR = {
 					region = scandinavia_region
-					region = ireland_area
+					region = ireland_region # Brian; changed from _area
 					region = baltic_region
 					region = poland_region
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1470
 				OR = {
@@ -840,13 +856,11 @@ renaissance = {
 					region = russia_region
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1475
 				continent = europe
 				NOT = { owner = { technology_group = nomad_group } }
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1500
 				OR = {
@@ -854,7 +868,6 @@ renaissance = {
 					owner = { technology_group = high_american }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1525
 				OR = {
@@ -862,7 +875,6 @@ renaissance = {
 					owner = { technology_group = ottoman }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1550
 				OR = {
@@ -870,7 +882,6 @@ renaissance = {
 					owner = { technology_group = east_african }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1575
 				OR = {
@@ -878,7 +889,6 @@ renaissance = {
 					owner = { technology_group = chinese }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1600
 				OR = {
@@ -886,14 +896,12 @@ renaissance = {
 					owner = { technology_group = sub_saharan }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1660
 				owner = {
 					technology_group = nomad_group
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1720
 				OR = {
@@ -901,11 +909,10 @@ renaissance = {
 					owner = { technology_group = andean }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-
 			is_year = 1780
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1450
 		custom_trigger_tooltip = {
@@ -941,20 +948,12 @@ renaissance = {
 	start_chance = 10		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits.
 	#BTMiscAddonNote - All else being equal and without player interference, likely possiblities to start Renaissance with the new limitations above are - Genoa, Milan, Parma, Verona, Venice, Bologna, Lucca, Romagna, Florence, or Siena.
 	#BTMiscAddonNote - Piedmont, Cremona, Treviso, Mantua, or Ferrara also possible with a minimal dev increase from 1444 start.
-	
-	on_start = institution_events.2
-	
-	
-	
 
-	
-	
+	on_start = institution_events.2
 	can_embrace = {
 		owner = { has_institution = feudalism }
 	}
 
-
-	
 	embracement_speed = {
 		#modifier = {
 		#	scale = yes
@@ -984,12 +983,8 @@ renaissance = {
 		#		}
 		#	}
 		#}
-		#########################################################################
 		###Start of BT Tech group specific spread modifiers - renaissance
-		#########################################################################
-		#########################################################################
 		###BT Western Tech Spreads - dev doubled adjusted Vanilla speed x 1.67. More provinces means slower spread, speeding up to compensate.
-		#########################################################################
 		modifier = {
 			factor = 0.6
 			scale = yes
@@ -1016,9 +1011,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Eastern Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.95 based on original tech group's 20 percent penalty (i.e. 83 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.57
 			scale = yes
@@ -1045,9 +1038,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Ottoman Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.90 based on original tech group's 25 percent penalty (i.e. 80 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.54
 			scale = yes
@@ -1074,9 +1065,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Muslim Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.80 based on original tech group's 40 percent penalty (i.e. 71 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.48
 			scale = yes
@@ -1103,9 +1092,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Indian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.27
 			scale = yes
@@ -1132,9 +1119,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT East African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.27
 			scale = yes
@@ -1161,9 +1146,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
@@ -1190,9 +1173,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Sub Saharan Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
@@ -1219,9 +1200,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Central African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 65 percent penalty (i.e. 61 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
@@ -1248,9 +1227,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Nomad Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.65 based on original tech group's 75 percent penalty (i.e. 57 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.23
 			scale = yes
@@ -1277,9 +1254,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT High American Tech Spreads - dev doubled adjusted Vanilla speed x 1.67. More provinces means slower spread, speeding up to compensate. Not all regions have new provinces yet, but this tech group was never meant to be 'balanced' anyway
-		#########################################################################
 		modifier = {
 			factor = 0.6
 			scale = yes
@@ -1306,9 +1281,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Central American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.18
 			scale = yes
@@ -1335,9 +1308,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Andean Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.18
 			scale = yes
@@ -1364,9 +1335,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT North American Tech Spreads - dev doubled adjusted Vanilla speed x 1.33. Only half overhauled, so only half the bonus. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.2
 			scale = yes
@@ -1393,9 +1362,7 @@ renaissance = {
 				}
 			}
 		}
-		#########################################################################
 		###BT South American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.15
 			scale = yes
@@ -1412,6 +1379,60 @@ renaissance = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				owner = { technology_group = south_american }
+				NOT = { any_friendly_coast_border_province = { renaissance = 100 } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_renaissance
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					renaissance = 100
+				}
+			}
+		}
+		###BT Aboriginal Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.15
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = { owner = { technology_group = aboriginal_tech } }
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_renaissance
+				any_friendly_coast_border_province = { renaissance = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.07
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { technology_group = aboriginal_tech }
+				NOT = { any_friendly_coast_border_province = { renaissance = 100 } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_renaissance
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					renaissance = 100
+				}
+			}
+		}
+		###BT Polynesian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.15
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = { owner = { technology_group = polynesian_tech } }
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_renaissance
+				any_friendly_coast_border_province = { renaissance = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.07
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { technology_group = polynesian_tech }
 				NOT = { any_friendly_coast_border_province = { renaissance = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -1510,7 +1531,7 @@ renaissance = {
 			}
 		}
 		#Half strength later start very high dev only for Asia, after all, who says Asia never had a renaissance? =p Seriously though, this is mainly for gameplay. We want Asia well behind Europe, but not TOO far behind. If Asia can get the renaissance, then it can stay competitive-ish even if no European colonisers
-		#establish treaty ports, and will also boost the rich inland areas like Dehli and more remote areas like Kyoto and Peking. Asia will still be missing the printing press until Europeans spread it, but all other institutions can be obtained organically, albeit with slightly more effort than in Europe and perhaps a 
+		#establish treaty ports, and will also boost the rich inland areas like Dehli and more remote areas like Kyoto and Peking. Asia will still be missing the printing press until Europeans spread it, but all other institutions can be obtained organically, albeit with slightly more effort than in Europe and perhaps a
 		#moderate delay for manufacturing. Depending on tests, might even have to add a post-1650 dev based printing press growth in Asia. Africa gets left out mainly because they will often get colonial borders very early, but also because its much lower population density and development limited growth potential.
 		modifier = {
 			factor = 0.01
@@ -1555,9 +1576,9 @@ renaissance = {
 			potential = {
 				OR = {
 					area = venetia_area
-					area = verona_area
+					#area = verona_area
 					area = tuscany_area
-					area = east_tuscany_area
+					#area = east_tuscany_area
 					area = south_tuscany_area
 					#area = lombardy_area
 					#area = piedmont_area
@@ -1575,9 +1596,9 @@ renaissance = {
 				tooltip = tooltip_flanders_tuscany_venetia
 				OR = {
 					area = venetia_area
-					area = verona_area
+					#area = verona_area
 					area = tuscany_area
-					area = east_tuscany_area
+					#area = east_tuscany_area
 					area = south_tuscany_area
 					#area = lombardy_area
 					#area = piedmont_area
@@ -1606,9 +1627,9 @@ renaissance = {
 						area = sicily_area
 						area = corsica_sardinia_area
 						area = sardinia_area
-						area = cagliari_area
-						area = demone_area
-						area = noto_area
+						#area = cagliari_area
+						#area = demone_area
+						#area = noto_area
 					}
 				}			#BTMiscAddOn note, blocking Sicily and Sardinia/Corsica to prevent spread to North Africa and Aragon too quickly. Also not horrible, neither was poor, but outside of perhaps Palermo, niether was as advanced as the rest of Italy at this point, either. Stronger Sicily and Sardinia came later, I believe
 			}
@@ -1620,9 +1641,9 @@ renaissance = {
 						area = sicily_area
 						area = corsica_sardinia_area
 						area = sardinia_area
-						area = cagliari_area
-						area = demone_area
-						area = noto_area
+						#area = cagliari_area
+						#area = demone_area
+						#area = noto_area
 					}
 				}
 			}
@@ -1691,10 +1712,10 @@ renaissance = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes
@@ -1741,36 +1762,32 @@ renaissance = {
 	}
 }
 
-
 #######################################
 # New World
-# 
+#
 # Colonising is good.. mkay.-.
 #######################################
 new_world_i = {
-	penalty = 0.5
+	#penalty = 0.5
 
 	bonus = {
 		trade_steering = 0.1		#BTAddOn changed from provincial trade power bonus (0.1), For no real reason in particular, other than I didn't really like the former boost and fewer variables to provincial trade power helps me theorise AI triggers better.
 		global_colonial_growth = 10			#BTAddOn new, just a fun little bonus because the UI can fit 2 bonuses per institution... also with all the new provinces we can use some more colonial growth
 	}
 
-	trade_company_efficiency = 0.0
-
-
+	#trade_company_efficiency = 0.6 # BT removed
 	historical_start_date = 1500.1.1
 	historical_start_province = 224 #Sevilla
 
 	history = {
 		OR = {
-		
 			AND = {
 				is_year = 1500
 				OR = {
 					owner = { technology_group = high_american }
 					owner = { colony = 1 }
 					AND = {
-						owner = { has_idea = quest_for_the_new_world }
+						owner = { has_any_exploration_idea = yes }
 						OR = {
 							province_trade_power = 16
 							development = 24
@@ -1778,12 +1795,11 @@ new_world_i = {
 					}
 				}	#BTMiscAddonChange - Slows spread slightly for later start dates
 			}
-			
 			AND = {
 				is_year = 1505
 				OR = {
 					AND = {
-						owner = { has_idea = quest_for_the_new_world }
+						owner = { has_any_exploration_idea = yes }
 						OR = {
 							province_trade_power = 12
 							development = 16
@@ -1795,7 +1811,6 @@ new_world_i = {
 					}
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1510
 				OR = {
@@ -1803,7 +1818,7 @@ new_world_i = {
 					region = france_region
 					region = british_isles_region
 					AND = {
-						owner = { has_idea = quest_for_the_new_world }
+						owner = { has_any_exploration_idea = yes }
 						OR = {
 							province_trade_power = 8
 							development = 12
@@ -1811,7 +1826,6 @@ new_world_i = {
 					}
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1515
 				OR = {
@@ -1819,7 +1833,6 @@ new_world_i = {
 					region = low_countries_region
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1520
 				OR = {
@@ -1830,28 +1843,24 @@ new_world_i = {
 					region = baltic_region
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1525
 				OR = {
-					region = ireland_area
+					region = ireland_region # Brian; changed from _area
 					region = poland_region
 					region = ruthenia_region
 					region = carpathia_region
 					region = balkan_region
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-
 			AND = {
 				is_year = 1550
 				owner = { technology_group = western }	#Note this includes colonies and overseas
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1575
 				owner = { technology_group = eastern }	#Note this includes colonies, overseas and Siberian holdings
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1600
 				OR = {
@@ -1862,7 +1871,6 @@ new_world_i = {
 					owner = { technology_group = ottoman }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-
 			AND = {
 				is_year = 1650
 				OR = {
@@ -1870,7 +1878,6 @@ new_world_i = {
 					owner = { technology_group = east_african }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1675
 				OR = {
@@ -1878,7 +1885,6 @@ new_world_i = {
 					owner = { technology_group = chinese }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1700
 				OR = {
@@ -1886,14 +1892,12 @@ new_world_i = {
 					owner = { technology_group = sub_saharan }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1730
 				owner = {
 					technology_group = nomad_group
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1760
 				OR = {
@@ -1904,7 +1908,7 @@ new_world_i = {
 			is_year = 1790
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1500
 		custom_trigger_tooltip = {
@@ -1940,7 +1944,7 @@ new_world_i = {
 			is_in_capital_area = yes			#BTAddOn note. Don't like this because it blocks a few good alt history options, but leaving it because it also blocks some bad ones
 		}
 		owner = {
-			has_idea = quest_for_the_new_world
+			has_any_exploration_idea = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_bt_add_new_instituiton_details_e			#BTcleaner UI
 				OR = {
@@ -1979,24 +1983,16 @@ new_world_i = {
 		#}
 	}
 	start_chance = 25		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits.
-	
+
 	#BTAddOn Notes
 	#With all changes considered, most likely candidates are Sevilla, Lisbon, Porto, whatever is the Spanish capital, London, Dublin, Bordeaux, Porto, Lothian, Paris, Bergen, or Antwerp when owned by a country with at least one provinces in the New World (making the first 3 Iberian options the most likely)
 	#I wouldn't go so far as to say this is 'ideal' but it seems okay for now.
-	
-	on_start = institution_events.3
-	
-	
-	
 
-	
-	
+	on_start = institution_events.3
 	can_embrace = {
 		owner = { has_institution = feudalism }			#BTAddOn new - this makes it so a province must have feudalism before it can embrace anything else. I'm hoping this improves the 1650-no institutions-10 levels behind-to-1675-all institutions-1 level behind problem introduced in the new institution system.
 	}
 
-
-	
 	embracement_speed = {
 	#	modifier = {
 	#		factor = 1.2
@@ -2007,7 +2003,7 @@ new_world_i = {
 	#				new_world_i = 100
 	#			}
 	#		}
-	#		
+	#
 	#	}
 	#	modifier = {
 	#		factor = 0.5
@@ -2028,12 +2024,8 @@ new_world_i = {
 	#			}
 	#		}
 	#	}
-		#########################################################################
 		###Start of BT Tech group specific spread modifiers - new_world_i   I can't really say I understand what is with the secondary modifer... so it just hits if there is a port, but doesn't slow down if the owner isn't the same, yeah... I'm just reverting to the same system as all the other institutions. Different owner half speed but it hits all provinces, not just ports. There is even a vanilla tooltip for it this already, unused, as far as I can tell.
-		#########################################################################
-		#########################################################################
 		###BT Western Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers), the x 1.67 to compensate for more provinces.
-		#########################################################################
 		modifier = {
 			factor = 1.2			#Special x2 bonus for western. Was moving too slowly now that everyone outside Iberia doesn't pick exploration as 2nd idea
 			scale = yes
@@ -2060,9 +2052,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Eastern Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers), the x 1.67 to compensate for more provinces. Then x 0.95 based on original tech group's 20 percent penalty (i.e. 83 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.76			#Special x1.5 bonus for eastern. Was moving too slowly now that everyone outside Iberia doesn't pick exploration as 2nd idea
 			scale = yes
@@ -2089,9 +2079,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Ottoman Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers), the x 1.67 to compensate for more provinces. Then x 0.90 based on original tech group's 25 percent penalty (i.e. 80 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.54
 			scale = yes
@@ -2118,9 +2106,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Muslim Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers), the x 1.67 to compensate for more provinces. Then x 0.80 based on original tech group's 40 percent penalty (i.e. 71 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.48
 			scale = yes
@@ -2147,9 +2133,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Indian Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers). Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.27
 			scale = yes
@@ -2176,9 +2160,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT East African Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers). Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.27
 			scale = yes
@@ -2205,9 +2187,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers). Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
@@ -2234,9 +2214,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Sub Saharan Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers). Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
@@ -2263,9 +2241,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Central African Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers). Then x 0.70 based on original tech group's 65 percent penalty (i.e. 61 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
@@ -2292,9 +2268,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Nomad Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers). Then x 0.65 based on original tech group's 75 percent penalty (i.e. 57 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.23
 			scale = yes
@@ -2321,9 +2295,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT High American Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers), then x 1.67 to compensate for more provinces. Not all regions have new provinces yet, but this tech group was never meant to be 'balanced' anyway
-		#########################################################################
 		modifier = {
 			factor = 1.2
 			scale = yes
@@ -2350,9 +2322,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Central American Tech Spreads -  dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers). Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.18
 			scale = yes
@@ -2379,9 +2349,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Andean Tech Spreads -  dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers). Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.18
 			scale = yes
@@ -2408,9 +2376,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT North American Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers), then x 1.33 (half overhauled, half bonus). Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.2
 			scale = yes
@@ -2437,9 +2403,7 @@ new_world_i = {
 				}
 			}
 		}
-		#########################################################################
 		###BT South American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.15
 			scale = yes
@@ -2456,6 +2420,60 @@ new_world_i = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				owner = { technology_group = south_american }
+				NOT = { any_friendly_coast_border_province = { new_world_i = 100 } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_colonialism
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					new_world_i = 100
+				}
+			}
+		}
+		###BT Aboriginal Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.15
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = { owner = { technology_group = aboriginal_tech } }
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_colonialism
+				any_friendly_coast_border_province = { new_world_i = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.07
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { technology_group = aboriginal_tech }
+				NOT = { any_friendly_coast_border_province = { new_world_i = 100 } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_colonialism
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					new_world_i = 100
+				}
+			}
+		}
+		###BT Polynesian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.15
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = { owner = { technology_group = polynesian_tech } }
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_colonialism
+				any_friendly_coast_border_province = { new_world_i = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.07
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { technology_group = polynesian_tech }
 				NOT = { any_friendly_coast_border_province = { new_world_i = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -2666,10 +2684,10 @@ new_world_i = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes
@@ -2716,22 +2734,18 @@ new_world_i = {
 	}
 }
 
-
-
 #######################################
 # Printing Press
 #######################################
 printing_press = {
-	penalty = 0.5
+	#penalty = 0.5
 
 	bonus = {
 		stability_cost_modifier = -0.05			#BTAddOn notes - This is a bit of a strange choice for an institution, and very hard to pick bonuses for... Much of the results of this actually destabalised Europe, at least in the short term, so I don't actually like this bonus, but I can't think of a better one, much less two
 		global_missionary_strength = 0.01			#BTAddOn new - Had a hard time choosing a suitable second bonus here... going with missionary strength to follow the whole religious theme. Note base missionary power is reduced in static modifiers, so this just brings it back to vanilla levels.
 	}
 
-	trade_company_efficiency = 0.0
-
-
+	#trade_company_efficiency = 0.8 # BT removed
 	historical_start_date = 1550.1.1
 	historical_start_province = 1876 #Frankfurt
 
@@ -2748,7 +2762,6 @@ printing_press = {
 				development = 28
 				continent = europe
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1555
 				OR = {
@@ -2760,7 +2773,6 @@ printing_press = {
 				development = 24
 				continent = europe
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1560
 				OR = {
@@ -2774,7 +2786,6 @@ printing_press = {
 				development = 20
 				continent = europe
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1565
 				OR = {
@@ -2790,7 +2801,6 @@ printing_press = {
 				development = 16
 				continent = europe
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1570
 				OR = {
@@ -2804,14 +2814,13 @@ printing_press = {
 					region = british_isles_region
 					region = iberia_region
 					region = scandinavia_region
-					region = ireland_area
+					region = ireland_region # Brian; changed from _area
 					region = baltic_region
 					region = poland_region
 				}
 				development = 12
 				continent = europe
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1575
 				OR = {
@@ -2825,7 +2834,7 @@ printing_press = {
 					region = british_isles_region
 					region = iberia_region
 					region = scandinavia_region
-					region = ireland_area
+					region = ireland_region # Brian; changed from _area
 					region = baltic_region
 					region = poland_region
 					region = carpathia_region
@@ -2833,13 +2842,11 @@ printing_press = {
 				development = 8
 				continent = europe
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1600
 				continent = europe
 				owner = { technology_group = western }
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-
 			AND = {
 				is_year = 1625
 				OR = {
@@ -2851,7 +2858,6 @@ printing_press = {
 					owner = { technology_group = high_american }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1650
 				OR = {
@@ -2859,7 +2865,6 @@ printing_press = {
 					owner = { technology_group = ottoman }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1700
 				OR = {
@@ -2867,7 +2872,6 @@ printing_press = {
 					owner = { technology_group = east_african }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
-			
 			AND = {
 				is_year = 1750
 				OR = {
@@ -2877,7 +2881,7 @@ printing_press = {
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1550
 		custom_trigger_tooltip = {
@@ -2904,18 +2908,12 @@ printing_press = {
 		}
 	}
 	start_chance = 10		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits.
-	
-	
 	on_start = institution_events.4
-	
-	
 	can_embrace = {
 		owner = { has_institution = feudalism }			#BTAddOn new - this makes it so a province must have feudalism before it can embrace anything else. I'm hoping this improves the 1650-no institutions-10 levels behind-to-1675-all institutions-1 level behind problem introduced in the new institution system.
 	}
-
-	
 	embracement_speed = {
-	
+
 		#modifier = {
 		#	factor = 0.6
 		#	scale = yes
@@ -2926,7 +2924,7 @@ printing_press = {
 		#		}
 		#	}
 		#}
-		
+
 		#modifier = {
 		#	factor = 0.2
 		#	scale = yes
@@ -2945,13 +2943,9 @@ printing_press = {
 		#		}
 		#	}
 		#}
-		
-		#########################################################################
+
 		###Start of BT Tech group specific spread modifiers - printing_press
-		#########################################################################
-		#########################################################################
 		###BT Western Tech Spreads - dev doubled adjusted Vanilla speed x 1.67. More provinces means slower spread, speeding up to compensate.
-		#########################################################################
 		modifier = {
 			factor = 0.6
 			scale = yes
@@ -2978,9 +2972,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Eastern Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.95 based on original tech group's 20 percent penalty (i.e. 83 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.57
 			scale = yes
@@ -3007,9 +2999,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Ottoman Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.90 based on original tech group's 25 percent penalty (i.e. 80 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.54
 			scale = yes
@@ -3036,9 +3026,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Muslim Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.80 based on original tech group's 40 percent penalty (i.e. 71 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.48
 			scale = yes
@@ -3065,9 +3053,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Indian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.27
 			scale = yes
@@ -3094,9 +3080,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT East African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.27
 			scale = yes
@@ -3123,9 +3107,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
@@ -3152,9 +3134,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Sub Saharan Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
@@ -3181,9 +3161,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Central African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 65 percent penalty (i.e. 61 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
@@ -3210,9 +3188,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Nomad Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.65 based on original tech group's 75 percent penalty (i.e. 57 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.23
 			scale = yes
@@ -3239,9 +3215,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT High American Tech Spreads - dev doubled adjusted Vanilla speed x 1.67. More provinces means slower spread, speeding up to compensate. Not all regions have new provinces yet, but this tech group was never meant to be 'balanced' anyway
-		#########################################################################
 		modifier = {
 			factor = 0.6
 			scale = yes
@@ -3268,9 +3242,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Central American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.18
 			scale = yes
@@ -3297,9 +3269,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Andean Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.18
 			scale = yes
@@ -3326,9 +3296,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT North American Tech Spreads - dev doubled adjusted Vanilla speed x 1.33. Only half overhauled, so only half the bonus. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.2
 			scale = yes
@@ -3355,9 +3323,7 @@ printing_press = {
 				}
 			}
 		}
-		#########################################################################
 		###BT South American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.15
 			scale = yes
@@ -3384,10 +3350,64 @@ printing_press = {
 				}
 			}
 		}
+		###BT Aboriginal Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.15
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = { owner = { technology_group = aboriginal_tech } }
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
+				any_friendly_coast_border_province = { printing_press = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.05			#1/3 of full speed, as vanilla
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { technology_group = aboriginal_tech }
+				NOT = { any_friendly_coast_border_province = { printing_press = 100 } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_printing_press
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					printing_press = 100
+				}
+			}
+		}
+		###BT Polynesian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.15
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = { owner = { technology_group = polynesian_tech } }
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
+				any_friendly_coast_border_province = { printing_press = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.05			#1/3 of full speed, as vanilla
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { technology_group = polynesian_tech }
+				NOT = { any_friendly_coast_border_province = { printing_press = 100 } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_printing_press
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					printing_press = 100
+				}
+			}
+		}
 		#######################################################################
 		###End of BT Tech group specific spread modifiers - printing_press
 		#######################################################################
-		#BTAddOn note. So in vanilla Lappland (which happens to likely be Protestant) gets flat (no scaling) factor 3 to the printing press, while Paris, Rome, Milan, Venice, Sevilla, Cosntantinople, Moscow, Genoa, and Koeln get scaled factor 0.05.... mkay.... Starting to see what the min-maxers are talking about 
+		#BTAddOn note. So in vanilla Lappland (which happens to likely be Protestant) gets flat (no scaling) factor 3 to the printing press, while Paris, Rome, Milan, Venice, Sevilla, Cosntantinople, Moscow, Genoa, and Koeln get scaled factor 0.05.... mkay.... Starting to see what the min-maxers are talking about
 		#when they joke about the Protestant master faith... Rebalancing secondary spreads drastically.
 		modifier = {
 			factor = 0.06
@@ -3407,8 +3427,11 @@ printing_press = {
 						estate = estate_church
 						loyalty = 40
 					}
+					estate_territory = {
+						estate = estate_church
+						territory = 30
+					}
 				}
-				has_estate = estate_church
 			}
 		}			#BTAddOn Note. I don't get it... why does clergy estate boost printing. Something to do with printing the Bible, maybe. Seems a bit thin... and Christian specific as well, maybe even Protestant specific. Anyhow, leaving it until I figure out what it is about, plus it still requires normal spread, so no harm
 		#BTAddOn notes - removing this factor entirely. I don't really like how circular it is... need tech for institution, need institution for tech... makes everything seem futile.
@@ -3563,10 +3586,10 @@ printing_press = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes
@@ -3613,24 +3636,18 @@ printing_press = {
 	}
 }
 
-
-
-
-
 #######################################
 # Global Trade
 #######################################
 global_trade = {
-	penalty = 0.5
+	#penalty = 0.5
 
 	bonus = {
 		merchants = 1
 		trade_range_modifier = 0.2			#BTMiscAddon new - One may almost trade half a world away with this, but that is rather the point, no? I'd like to see some unlikely mercantile states pulling trade even if they don't have any colonies. Was originally 0.5, but I didn't want to overshadow all the other institutions
 	}
 
-	trade_company_efficiency = 0.1
-
-
+	trade_company_efficiency = 0.1 # BT; 1
 	historical_start_date = 1600.1.1
 	historical_start_province = 97 #Holland
 
@@ -3638,7 +3655,7 @@ global_trade = {
 		OR = {
 			AND = {
 				is_year = 1600
-				area = netherlands_area			#BTMiscAddonChange - Slows spread slightly for later start dates
+				area = holland_area			#BTMiscAddonChange - Slows spread slightly for later start dates
 			}
 			AND = {
 				is_year = 1625			#BTMiscAddon Note - 20 year penalty here, everyone was way behind the Dutch historically (VOC founded in 1602), but the English and Portuguese came next
@@ -3656,7 +3673,7 @@ global_trade = {
 					area = home_counties_area
 					area = wessex_area
 					area = east_anglia_area
-					area = mercia_area
+					#area = mercia_area
 					province_id = 248	#Edinburgh
 					province_id = 3019	#Glasgow
 					province_id = 373	#Dublin
@@ -3689,7 +3706,7 @@ global_trade = {
 					region = south_german_region
 					region = scandinavia_region
 					region = italy_region
-					region = ireland_area
+					region = ireland_region # Brian; changed from _area
 				}	#BTMiscAddonChange - Slows spread slightly for later start dates
 			}
 			AND = {
@@ -3732,7 +3749,7 @@ global_trade = {
 					region = mashriq_region
 					region = egypt_region
 					region = maghreb_region
-					region = libya_region
+					#region = libya_region # Brian; doesn't exist in BT
 				}	#BTMiscAddonChange - Slows spread slightly for later start dates
 			}
 			AND = {
@@ -3771,7 +3788,7 @@ global_trade = {
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1600
 		#is_island = no			#BTAddOn removed. Unneccessary detail
@@ -3795,19 +3812,13 @@ global_trade = {
 				owner = { has_institution = new_world_i }			#BTAddOn new - I want to make sure some 3rd world minor can't rush to fulfill these specific requirements and get the the newest institution in the middle of nowhere, skipping all others.
 				is_year = 1625			#BTAddOn new - Just in the case of some oddity where a trade giant has no access to institutions. If after 25 years the country still dominates trade, let it have it, colonialism or not. Not requiring the printing press seems a bit draconian, as much of Europe may not even have it yet.
 			}
-		}	
+		}
 	}				#BTAddOn note. Note that this is the first institution which can plausibly hit outside of Europe without massive player intervention, so be warned, if Europe doesn't get its ---- together it loses out, as it should be. Still spreads from CoTs, though.
 	start_chance = 35		#in 100 for when a province can_start			#BTAddOn change from 25. All the others are 5, why delay this one. Suspense or to allow a player to boost their trade node perhaps... cheeeap =p ..... oh... higher means better chance. Mouth meet foot.
-	
-	
 	on_start = institution_events.5
-	
-	
 	can_embrace = {
 		owner = { has_institution = feudalism }			#BTAddOn new - this makes it so a province must have feudalism before it can embrace anything else. I'm hoping this improves the 1650-no institutions-10 levels behind-to-1675-all institutions-1 level behind problem introduced in the new institution system.
 	}
-
-	
 	embracement_speed = {
 		#These are normally at the top... just the normal province to province spread, replaced by tech group system above
 		#modifier = {
@@ -3821,11 +3832,11 @@ global_trade = {
 		#		has_port = no
 		#		any_neighbor_province = {
 		#			global_trade = 100
-		#			
+		#
 		#		}
 		#	}
 		#}
-		
+
 		#modifier = {
 		#	factor = 0.5
 		#	scale = yes
@@ -3837,16 +3848,12 @@ global_trade = {
 		#		has_port = yes
 		#		any_neighbor_province = {
 		#			global_trade = 100
-		#			
+		#
 		#		}
 		#	}
 		#}
-		#########################################################################
 		###Start of BT Tech group specific spread modifiers - global_trade. Note spread here is quirky compared to others, goes by port or no port, not ownership, and spreads slightly slower compared to others. Also overhauled a few potentials and cleaned up UI a bit
-		#########################################################################
-		#########################################################################
 		###BT Western Tech Spreads - dev doubled adjusted Vanilla speed x 1.67. More provinces means slower spread, speeding up to compensate.
-		#########################################################################
 		modifier = {
 			factor = 0.5
 			scale = yes
@@ -3880,9 +3887,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT Eastern Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.95 based on original tech group's 20 percent penalty (i.e. 83 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.47
 			scale = yes
@@ -3916,9 +3921,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT Ottoman Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.90 based on original tech group's 25 percent penalty (i.e. 80 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.45
 			scale = yes
@@ -3952,9 +3955,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT Muslim Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.80 based on original tech group's 40 percent penalty (i.e. 71 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.4
 			scale = yes
@@ -3988,9 +3989,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT Indian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.23
 			scale = yes
@@ -4024,9 +4023,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT East African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.23
 			scale = yes
@@ -4060,9 +4057,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.21
 			scale = yes
@@ -4096,9 +4091,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT Sub Saharan Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.21
 			scale = yes
@@ -4132,9 +4125,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT Central African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 65 percent penalty (i.e. 61 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.21
 			scale = yes
@@ -4168,9 +4159,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT Nomad Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.65 based on original tech group's 75 percent penalty (i.e. 57 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.2
 			scale = yes
@@ -4204,9 +4193,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT High American Tech Spreads - dev doubled adjusted Vanilla speed x 1.67. More provinces means slower spread, speeding up to compensate. Not all regions have new provinces yet, but this tech group was never meant to be 'balanced' anyway
-		#########################################################################
 		modifier = {
 			factor = 0.5
 			scale = yes
@@ -4240,9 +4227,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT Central American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.15
 			scale = yes
@@ -4276,9 +4261,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT Andean Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.15
 			scale = yes
@@ -4312,9 +4295,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT North American Tech Spreads - dev doubled adjusted Vanilla speed x 1.33. Only half overhauled, so only half the bonus. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.16
 			scale = yes
@@ -4348,9 +4329,7 @@ global_trade = {
 				any_neighbor_province = { global_trade = 100 }
 			}
 		}
-		#########################################################################
 		###BT South American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.12
 			scale = yes
@@ -4373,6 +4352,74 @@ global_trade = {
 			potential = {
 				owner = {
 					technology_group = south_american
+				}
+				OR = {
+					has_port = no
+					NOT = { any_friendly_coast_border_province = { global_trade = 100 } }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_neighbor_non_port_province_global_trade
+				any_neighbor_province = { global_trade = 100 }
+			}
+		}
+		###BT Aboriginal Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.12
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					technology_group = aboriginal_tech
+				}
+				has_port = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_neighbor_port_province_global_trade
+				any_friendly_coast_border_province = { global_trade = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.06
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					technology_group = aboriginal_tech
+				}
+				OR = {
+					has_port = no
+					NOT = { any_friendly_coast_border_province = { global_trade = 100 } }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_neighbor_non_port_province_global_trade
+				any_neighbor_province = { global_trade = 100 }
+			}
+		}
+		###BT Polynesian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.12
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					technology_group = polynesian_tech
+				}
+				has_port = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_neighbor_port_province_global_trade
+				any_friendly_coast_border_province = { global_trade = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.06
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = {
+					technology_group = polynesian_tech
 				}
 				OR = {
 					has_port = no
@@ -4422,9 +4469,8 @@ global_trade = {
 			}			#BTAddOn new - this cleans up UI by making only one spread factor show, instead of all three. Might cause some minor confusion to a player because trade depot and stock exchange don't appear to spread it at first, but in my opinion cleaning it up does more good than harm, even so
 			has_building = stock_exchange
 		}
-		##########################################################################################################################################################################################################################################################
-		#BTAddOn Note - removing trade power factors for global trade spread entirely. They are messy, complicated, don't encourage proper spread, and are redundant as most major factors in tp (CoT/buildings) also spread global trade themselves, estuaries lose out, but oh well. Leaving this here in case I reconsider.
-		##########################################################################################################################################################################################################################################################
+		########################################################################################################################################################		#BTAddOn Note - removing trade power factors for global trade spread entirely. They are messy, complicated, don't encourage proper spread, and are redundant as most major factors in tp (CoT/buildings) also spread global trade themselves, estuaries lose out, but oh well. Leaving this here in case I reconsider.
+		########################################################################################################################################################		
 		#modifier = {
 		#	factor = 0.01 #Not scaled			#BTAddOn changed from 0.4. It is scaled now.
 		#	scale = yes
@@ -4439,7 +4485,7 @@ global_trade = {
 		#	}
 		#}
 		#modifier = {
-		#	factor = 0.05 #Not Scaled			#BTAddOn changed from 0.8 (total 1.2) It is scaled now. 
+		#	factor = 0.05 #Not Scaled			#BTAddOn changed from 0.8 (total 1.2) It is scaled now.
 		#	scale = yes
 		#	force_potential = yes	# Hide the this modifier when potential is false
 		#	potential = {
@@ -4490,7 +4536,7 @@ global_trade = {
 		#		province_trade_power = 60			#BTAddOn new tier for super high trade power provinces (usually requires a CoT and an estuary, a GCoT, or some obscene mercantalism and dev, but it is very possible.)
 		#	}
 		#}
-		#BTAddOn note - spread from a CoT will depend on other embraced institutions. Spread is /4 for no printing, and impossible without colonialism. If a society can't even travel to colonise, it can't develop bonds, stocks, and international trading mechanisms for commerce a world away, no matter how 
+		#BTAddOn note - spread from a CoT will depend on other embraced institutions. Spread is /4 for no printing, and impossible without colonialism. If a society can't even travel to colonise, it can't develop bonds, stocks, and international trading mechanisms for commerce a world away, no matter how
 		#important a local trading centre it might be.
 		modifier = {
 			factor = 0.3			#BTAddOn changed from 0.5. - Colonialism only version
@@ -4558,11 +4604,13 @@ global_trade = {
 						estate = estate_burghers
 						loyalty = 40
 					}
+					estate_territory = {
+						estate = estate_burghers
+						territory = 30
+					}
 				}
-				has_estate = estate_burghers
 			}
 		}
-		
 		#These are normally at the top... just the normal province to province spread, replaced by tech group system above
 		#modifier = {
 		#	factor = 0.25
@@ -4575,11 +4623,10 @@ global_trade = {
 		#		has_port = no
 		#		any_neighbor_province = {
 		#			global_trade = 100
-		#			
+		#
 		#		}
 		#	}
 		#}
-		
 		#modifier = {
 		#	factor = 0.5
 		#	scale = yes
@@ -4591,11 +4638,10 @@ global_trade = {
 		#		has_port = yes
 		#		any_neighbor_province = {
 		#			global_trade = 100
-		#			
+		#
 		#		}
 		#	}
 		#}
-		
 		modifier = {
 			factor = 0.6			#Reduced by 80 percent from original 5.0, like all previous levels. It was contributing to overly fast tech spread in native tags. Also historically, colonies were extensions of their parent country, and conducted relatively little organised international trade (at a federal/governmental level, I should specify). If they tried, it caused a rather large incident, because it would enrich the colonial parent's rivals. Note this is a somewhat simplified explanation and ignores a few notable cases... but whatever, this works for gameplay and matches the other institutions.
 			scale = yes
@@ -4617,7 +4663,6 @@ global_trade = {
 				}
 			}
 		}
-		
 		#modifier = {
 		#	factor = 0.5
 		#	printing_press = 100
@@ -4652,10 +4697,10 @@ global_trade = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes
@@ -4702,19 +4747,18 @@ global_trade = {
 	}
 }
 
-
 #######################################
 # Manufactories
 #######################################
 manufactories = {
-	penalty = 0.5
+	#penalty = 0.5
 
 	bonus = {
 		development_cost = -0.05			#BTAddOn new - actually moved from the renaissance. I like it better here, at the dawn of the industrial age, rather than way back when people were trying to return to Classical thought, which I think is better represented by a tech cost reduction.
 		global_trade_goods_size_modifier = 0.1
 	}
 
-	trade_company_efficiency = 0.2
+	#trade_company_efficiency = 0.2 # BT; 1.25
 
 	historical_start_date = 1650.1.1
 	historical_start_province = 236 #London			#BTAddOn changed. Switching Enlightenment to Paris and Manufacturing to London, instead of the inverse like in vanilla
@@ -4923,7 +4967,7 @@ manufactories = {
 			}
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1650
 		custom_trigger_tooltip = {
@@ -4960,16 +5004,10 @@ manufactories = {
 		}			#This should be automatic already, but I'm not actually sure it is... anyhow, I want to make sure some nothing 3rd world minor without any other institutions can't rush to fulfill these specific requirements and get the the newest institution in the middle of nowhere, skipping all the others.
 	}
 	start_chance = 5		#in 100 for when a province can_start			#BTAddOn changed from 10 - I actually don't mind this one being delayed a bit, and there should be dozens of candidates in pretty much any game.
-	
-	
 	on_start = institution_events.6
-	
-	
 	can_embrace = {
 		owner = { has_institution = feudalism }			#BTAddOn new - this makes it so a province must have feudalism before it can embrace anything else. I'm hoping this improves the 1650-no institutions-10 levels behind-to-1675-all institutions-1 level behind problem introduced in the new institution system.
 	}
-
-	
 	embracement_speed = {
 		#modifier = {
 		#	factor = 0.35
@@ -4999,12 +5037,8 @@ manufactories = {
 		#		}
 		#	}
 		#}
-		#########################################################################
 		###Start of BT Tech group specific spread modifiers - manufactories
-		#########################################################################
-		#########################################################################
 		###BT Western Tech Spreads - dev doubled adjusted Vanilla speed roughly x 1.5. More provinces means slower spread, speeding up to compensate.
-		#########################################################################
 		modifier = {
 			factor = 0.3
 			scale = yes
@@ -5031,9 +5065,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Eastern Tech Spreads - dev doubled adjusted Vanilla speed roughly x 1.5, more provinces means slower spread, speeding up to compensate. Then x 0.95 based on original tech group's 20 percent penalty (i.e. 83 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.28
 			scale = yes
@@ -5060,9 +5092,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Ottoman Tech Spreads - dev doubled adjusted Vanilla speed roughly x 1.5, more provinces means slower spread, speeding up to compensate. Then x 0.90 based on original tech group's 25 percent penalty (i.e. 80 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.27
 			scale = yes
@@ -5089,9 +5119,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Muslim Tech Spreads - dev doubled adjusted Vanilla speed x 1.5, more provinces means slower spread, speeding up to compensate. Then x 0.80 based on original tech group's 40 percent penalty (i.e. 71 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.24
 			scale = yes
@@ -5118,9 +5146,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Indian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.15
 			scale = yes
@@ -5147,9 +5173,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT East African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.15
 			scale = yes
@@ -5176,9 +5200,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.14
 			scale = yes
@@ -5205,9 +5227,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Sub Saharan Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.14
 			scale = yes
@@ -5234,9 +5254,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Central African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 65 percent penalty (i.e. 61 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.14
 			scale = yes
@@ -5263,9 +5281,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Nomad Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.65 based on original tech group's 75 percent penalty (i.e. 57 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.13
 			scale = yes
@@ -5292,9 +5308,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT High American Tech Spreads - dev doubled adjusted Vanilla speed roughly x 1.5. More provinces means slower spread, speeding up to compensate. Not all regions have new provinces yet, but this tech group was never meant to be 'balanced' anyway
-		#########################################################################
 		modifier = {
 			factor = 0.3
 			scale = yes
@@ -5321,9 +5335,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Central American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.1
 			scale = yes
@@ -5350,9 +5362,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Andean Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.1
 			scale = yes
@@ -5379,9 +5389,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT North American Tech Spreads - dev doubled adjusted Vanilla speed x 1.33. Only half overhauled, so only half the bonus. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.12
 			scale = yes
@@ -5408,9 +5416,7 @@ manufactories = {
 				}
 			}
 		}
-		#########################################################################
 		###BT South American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.09
 			scale = yes
@@ -5427,6 +5433,60 @@ manufactories = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				owner = { technology_group = south_american }
+				NOT = { any_friendly_coast_border_province = { manufactories = 100 } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_manufactories
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					manufactories = 100
+				}
+			}
+		}
+		###BT Aboriginal Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.09
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = { owner = { technology_group = aboriginal_tech } }
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_manufactories
+				any_friendly_coast_border_province = { manufactories = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.01
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { technology_group = aboriginal_tech }
+				NOT = { any_friendly_coast_border_province = { manufactories = 100 } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_manufactories
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					manufactories = 100
+				}
+			}
+		}
+		###BT Polynesian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.09
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = { owner = { technology_group = polynesian_tech } }
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_manufactories
+				any_friendly_coast_border_province = { manufactories = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.01
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { technology_group = polynesian_tech }
 				NOT = { any_friendly_coast_border_province = { manufactories = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -5631,10 +5691,10 @@ manufactories = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes
@@ -5681,13 +5741,11 @@ manufactories = {
 	}
 }
 
-
-
 #######################################
 # Enlightenment
 #######################################
 enlightenment = {
-	penalty = 0.5
+	#penalty = 0.5
 
 	bonus = {
 		num_accepted_cultures = 2			#BTAddOn change from culture conversion cost -25 percent. The Enlightenment wasn't about more effective methods of assimilation, it was about bringing enlightenment to the world (okay, maybe a little bit about assimilation, but not enough for a bonus here). Plus, cheaper culture conversion was wiping out too many small cultures too quickly.
@@ -5743,7 +5801,7 @@ enlightenment = {
 			}
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1700
 		#BTAddOn notes - completed overhauled requirements and UI display here. It IS possible for the enlightenment to be delayed until a country can fulfill the requirements, this is intentional, there is 50 years for someone to meet the criteria
@@ -5805,20 +5863,14 @@ enlightenment = {
 		#			DIP = 5
 		#		}
 		#	}
-		#	
+		#
 		#}
 	}
 	start_chance = 5		#in 100 for when a province can_start			#BTAddOn changed from 10 - I actually don't mind this one being delayed a bit, it is the last one and shouldn't average before 1720s
-	
-	
 	on_start = institution_events.7
-	
-	
 	can_embrace = {
 		owner = { has_institution = feudalism }			#BTAddOn new - this makes it so a province must have feudalism before it can embrace anything else. I'm hoping this improves the 1650-no institutions-10 levels behind-to-1675-all institutions-1 level behind problem introduced in the new institution system.
 	}
-
-	
 	embracement_speed = {
 		#modifier = {
 		#	factor = 0.1
@@ -5848,12 +5900,8 @@ enlightenment = {
 		#		}
 		#	}
 		#}
-		#########################################################################
 		###Start of BT Tech group specific spread modifiers - enlightenment
-		#########################################################################
-		#########################################################################
 		###BT Western Tech Spreads - dev doubled adjusted Vanilla speed roughly x 1.5. More provinces means slower spread, speeding up to compensate.
-		#########################################################################
 		modifier = {
 			factor = 0.12
 			scale = yes
@@ -5880,9 +5928,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Eastern Tech Spreads - dev doubled adjusted Vanilla speed roughly x 1.5, more provinces means slower spread, speeding up to compensate. Then x 0.95 based on original tech group's 20 percent penalty (i.e. 83 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.12
 			scale = yes
@@ -5909,9 +5955,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Ottoman Tech Spreads - dev doubled adjusted Vanilla speed roughly x 1.5, more provinces means slower spread, speeding up to compensate. Then x 0.90 based on original tech group's 25 percent penalty (i.e. 80 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.11
 			scale = yes
@@ -5938,9 +5982,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Muslim Tech Spreads - dev doubled adjusted Vanilla speed x 1.5, more provinces means slower spread, speeding up to compensate. Then x 0.80 based on original tech group's 40 percent penalty (i.e. 71 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.1
 			scale = yes
@@ -5967,9 +6009,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Indian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.06
 			scale = yes
@@ -5996,9 +6036,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT East African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.06
 			scale = yes
@@ -6025,9 +6063,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.05
 			scale = yes
@@ -6054,9 +6090,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Sub Saharan Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.05
 			scale = yes
@@ -6083,9 +6117,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Central African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 65 percent penalty (i.e. 61 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.05
 			scale = yes
@@ -6112,9 +6144,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Nomad Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.65 based on original tech group's 75 percent penalty (i.e. 57 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.04
 			scale = yes
@@ -6141,9 +6171,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT High American Tech Spreads - dev doubled adjusted Vanilla speed roughly x 1.5. More provinces means slower spread, speeding up to compensate. Not all regions have new provinces yet, but this tech group was never meant to be 'balanced' anyway
-		#########################################################################
 		modifier = {
 			factor = 0.12
 			scale = yes
@@ -6170,9 +6198,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Central American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.03
 			scale = yes
@@ -6199,9 +6225,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT Andean Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.03
 			scale = yes
@@ -6228,9 +6252,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT North American Tech Spreads - dev doubled adjusted Vanilla speed x 1.33. Only half overhauled, so only half the bonus. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.03
 			scale = yes
@@ -6257,9 +6279,7 @@ enlightenment = {
 				}
 			}
 		}
-		#########################################################################
 		###BT South American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
-		#########################################################################
 		modifier = {
 			factor = 0.03
 			scale = yes
@@ -6276,6 +6296,60 @@ enlightenment = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				owner = { technology_group = south_american }
+				NOT = { any_friendly_coast_border_province = { enlightenment = 100 } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_enlightenment
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					enlightenment = 100
+				}
+			}
+		}
+		###BT Aboriginal Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.03
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = { owner = { technology_group = aboriginal_tech } }
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_enlightenment
+				any_friendly_coast_border_province = { enlightenment = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.01			#1/3 foreign spread for very low tech groups
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { technology_group = aboriginal_tech }
+				NOT = { any_friendly_coast_border_province = { enlightenment = 100 } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_enlightenment
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					enlightenment = 100
+				}
+			}
+		}
+		###BT Polynesian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
+		modifier = {
+			factor = 0.03
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = { owner = { technology_group = polynesian_tech } }
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_enlightenment
+				any_friendly_coast_border_province = { enlightenment = 100 }
+			}
+		}
+		modifier = {
+			factor = 0.01			#1/3 foreign spread for very low tech groups
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { technology_group = polynesian_tech }
 				NOT = { any_friendly_coast_border_province = { enlightenment = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -6573,10 +6647,10 @@ enlightenment = {
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 12			#BTAddOn changed from 24. Logic in notes at the top of the file.
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes
@@ -6623,16 +6697,12 @@ enlightenment = {
 	}
 }
 
-
-
-
-
 #######################################
 # Industrialisation
 #######################################
 industrialization = { #Unmodified, pending Draiocht rebalance.
-	penalty = 0.5
-	
+	#penalty = 0.5
+
 	trade_company_efficiency = 2.0
 
 	bonus = {
@@ -6650,7 +6720,6 @@ industrialization = { #Unmodified, pending Draiocht rebalance.
 				continent = europe
 				owner = { technology_group = western }
 			}
-			
 			AND = {
 				is_year = 1820
 				OR = {
@@ -6660,7 +6729,7 @@ industrialization = { #Unmodified, pending Draiocht rebalance.
 			}
 		}
 	}
-	
+
 	can_start = {
 		is_year = 1750
 		is_in_capital_area = yes
@@ -6719,18 +6788,12 @@ industrialization = { #Unmodified, pending Draiocht rebalance.
 		}
 	}
 	start_chance = 100		#in 100 for when a province can_start
-	
-	
 	on_start = institution_events.80
-	
-	
 	can_embrace = {
 		always = yes
 	}
-
-	
 	embracement_speed = {
-		#Split between RB and non-RB for these four as RB gives more possibilities for spread (so higher for non-RB to compensate
+		#Split between RB and non-RB for these four as RB gives more possibilities for spread (so higher for non-RB to compensate)
 		modifier = {
 			factor = 0.3
 			force_potential = yes
@@ -6883,8 +6946,6 @@ industrialization = { #Unmodified, pending Draiocht rebalance.
 				has_building = furnace
 			}
 		}
-
-
 		#General Manufactories
 		modifier = {
 			factor = 0.15
@@ -6969,6 +7030,7 @@ industrialization = { #Unmodified, pending Draiocht rebalance.
 					trade_goods = ivory
 					trade_goods = slaves
 					trade_goods = spices
+					trade_goods = cloves
 					trade_goods = fur
 					trade_goods = incense
 				}
@@ -7102,6 +7164,7 @@ industrialization = { #Unmodified, pending Draiocht rebalance.
 					trade_goods = ivory
 					trade_goods = slaves
 					trade_goods = spices
+					trade_goods = cloves
 					trade_goods = fur
 					trade_goods = incense
 				}
@@ -7152,7 +7215,6 @@ industrialization = { #Unmodified, pending Draiocht rebalance.
 				has_building = mills
 			}
 		}
-
 		#Trade variables
 		modifier = {
 			factor = 0.18
@@ -7197,7 +7259,6 @@ industrialization = { #Unmodified, pending Draiocht rebalance.
 				}
 			}
 		}
-
 		#Stuff once someone has embraced it
 		modifier = {
 			factor = 0.75
@@ -7228,7 +7289,7 @@ industrialization = { #Unmodified, pending Draiocht rebalance.
 				}
 				continent = owner
 			}
-			
+
 			custom_trigger_tooltip = {
 				tooltip = tooltip_industrialization_embraced
 				is_owned_by_trade_company = no
@@ -7246,7 +7307,7 @@ industrialization = { #Unmodified, pending Draiocht rebalance.
 				}
 				NOT = { continent = owner }
 			}
-			
+
 			custom_trigger_tooltip = {
 				tooltip = tooltip_industrialization_embraced_other_continent
 				is_owned_by_trade_company = no
@@ -7256,10 +7317,10 @@ industrialization = { #Unmodified, pending Draiocht rebalance.
 			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 24
-		
+
 		modifier = {
 			factor = 0.25
 			is_at_war = yes

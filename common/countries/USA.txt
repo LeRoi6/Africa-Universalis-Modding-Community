@@ -1,0 +1,179 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+colonial_parent = GBR
+random_nation_chance = 0
+
+historical_score = 200
+
+color = { 69  157  208 }
+revolutionary_colors = { 8 1 8 }
+
+historical_idea_groups = {
+	plutocracy_ideas
+	trade_ideas
+	economic_ideas
+	defensive_ideas
+	maritime_ideas
+	administrative_ideas
+	offensive_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_longbow
+	gaelic_mercenary
+	gaelic_free_shooter
+	french_caracolle
+	irish_charge
+	anglofrench_line
+	french_dragoon
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"George #0" = 20
+	"James #0" = 20
+	"John #0" = 20
+	"Thomas #0" = 20
+	"Charles #0" = 15
+	"Daniel #0" = 15
+	"Henry #0" = 15
+	"Samuel #0" = 15
+	"Arthur #0" = 10
+	"Cyrus #0" = 10
+	"David #0" = 10
+	"Elias #0" = 10
+	"Frederick Augustus #0" = 10
+	"Nathaniel #0" = 10
+	"Peyton #0" = 10
+	"Richard #0" = 10
+	"Gunning #0" = 0
+	"Simon #0" = 0
+	"Josiah #0" = 0
+	"Matthew #0" = 0
+	"Roger #0" = 0
+	"Oliver #0" = 0
+	"Andrew #0" = 0
+	"Abraham #0" = 0
+	"Robert #0" = 0
+	"Carter #0" = 0
+	"Edward #0" = 0
+	"Lyman #0" = 0
+	"Jacob #0" = 0
+	"Pierce #0" = 0
+	"Silas #0" = 0
+	"Christopher #0" = 0
+	"Nicholas #0" = 0
+	"Cornelius #0" = 0
+	"Titus #0" = 0
+	"Rufus #0" = 0
+	"Issac #0" = 0
+	"Edmund #0" = 0
+	"Howard #0" = 0
+	"Peter #0" = 0
+	"Morgan #0" = 0
+	"DeWitt #0" = 0
+	"Aaron #0" = 0
+	"Angus #0" = 0
+	"August #0" = 0
+	"Benjamin #0" = 0
+	"Calvin #0" = 0
+	"Darren #0" = 0
+	"Elbridge #0" = 0
+	"Eric #0" = 0
+	"Francis #0" = 0
+	"Frederick #0" = 0
+	"Isaac #0" = 0
+	"Jonathan #0" = 0
+	"Joseph #0" = 0
+	"Kyran #0" = 0
+	"Luke #0" = 0
+	"Milton #0" = 0
+	"Patrick #0" = 0
+	"Paul #0" = 0
+	"Philip #0" = 0
+	"Randolf #0" = 0
+	"Silvester #0" = 0
+	"Timothy #0" = 0
+	"Wilbur #0" = 0
+	"William #0" = 0
+	"Alexander #0" = 0
+	"Stephen #0" = 0
+	
+	"Deborah #0" = -1
+	"Sarah #0" = -1
+	"Anne #0" = -1
+	"Abigail #0" = -1
+	"Susanna #0" = -1
+	"Martha #0" = -1
+	"Mary #0" = -1
+	"Dolly #0" = -1
+	"Elizabeth #0" = -1
+	"Hannah #0" = -1
+}
+
+leader_names = {
+	Adams 
+	Burr
+	Clinton
+	Jay Jefferson 
+	Harrison
+	King
+	Langdon
+	Madison Monroe 
+	Pinckney
+	Rutledge
+	Starbuck Steed Stryder Sutcliffe Swaggert Stover 
+	Stetson Kempton Kendrick Lane Lindon Lyle Merrick 
+	Atworth Arnott Ashton Boyd Caddock Drummond Arkeith
+	Kennedy Trevin Vaughan Dylan Dalton Dellwin Sheldon
+	Spencer Thorley Thompson Unwin Walden Ward Winston
+	Douglas Floyd Richardson
+	Hancock Bartlett Whipple Paine Gerry Hopkins Ellery
+	Sherman Huntingdon Williams Wolcott Livingston
+	Morris Lewis Stockton Witherspoon Hart Clark Rush
+	Franklin Morton Clymer Smith Taylor Wilson Ross Rodney
+	Read McKean Chase Stone Caroll Wythe Lee Nelson Braxton
+	Hooper Hewes Penn Heyward Middleton Gwinnett Walton Hall
+	Alsop Baldwin Banister Bassett Bedford Biddle Blair Bland
+	Blount Boerum Butler Brearly Cushing Dayton Deane Drayton
+	Duane Fitzsimmons Folsom Gadsden Galloway Gilman Hamilton
+	Harnett Holton Hosmer Humphreys Kinsey Lovell Jackson
+	Low Marchant McHenry Pendleton Paterson Roberdeau Scudder
+	Dobbs Spaight Sullivan Thornton Washington Wentworth
+	"Van Dyke" Wisner Williamson Cotesworth Telfair Norris
+	Wilkinson Knox Short Harvie Fleming Snyder Findlay Tompkins
+}
+
+ship_names = {
+	"American Fabius" "American Revenue" "Black Prince" "Bonhomme Richard" "Bunker Hill" "General Gadsen" "General Gates" "General Greene" "General Mifflin"
+	"General Montgomery" "General Washington" "Happy Return" "Morning Star" "New Haven" "New York" "Norfolk Revenge" "North Carolina" "Queen of France" "South Carolina"
+	"South Edisto" "St. Lawrence" "St. Louis" "True Blue" "United States" "White Oak" Abigail Achilles Active Adams Addition Adventure Albany Alfred Alliance Alston
+	America Amphitrite Annapolis Argo Ariel Arnold Astrea Aurora Bachelor Boston Bourbon Brandywine Bricole Bruke Bulldog Bulloch Cabot Camden Caswell Chatham Chesapeake
+	Columbus Comet Commerce Concord Confederacy Confiance Congress Connecticut Constellation Constitution Cyane Deane Defence Delaware Dickenson Dilligent Disdain Dolphin
+	Dragon Eagle Effingham Endeavour Enterprise Essex Experiment Fairfield Fox Franklin Friendship Frolic Ganges Greyhound Griffon Guilford Hague Hammond Hampden Hancock
+	Hannah Hannibal Harlequin Hawke Hazard Henry Hero Hibernia Hudson Hunter Impertinent Independence Insurgent Jamestown Java Katy Lee Lewis Lexington Liberty Lincoln
+	Lynch Macedonia Manly Marblehead Massachusetts Merrimack Middletown Minerva Monmouth Montezuma Morris Mosquito Northampton Ohio Page Patapsco Peacock
+	Pennsylvania Philadephia Pilgrim Pompey Portsmouth Potomac President Prosper Protector Providence Putnam Raleigh Randolph Ranger Rattlesnake Reprisal Republic
+	Repulse Resistance Resolution Retrieve Rhodes Richard Sabine Safeguard Saratoga Scorpion Shark Spitfire Spy Surprise Swift Tartar Tempest Trumbull Tyrannicide
+	Vengeance Vermont Viper Virginia Wabash Warren Washington Wasp Wilkes
+	Sagadahoc Popham Plymouth Lygonia "New Hampshire" Saybrook "Queen of Casco Bay" "Rhode Island" Falmouth Manhattan Brooklyn "Staten Island" "New Jersey"
+	"Old Dominion" Roanoke Georgia Mayflower Narragansett Aquidneck Williamsburg Maryland Wessagusset Nantucket "Martha's Vineyard" "Cape Cod" Peggy
+	"Cape May" Confidence Hickory Hornet Stinger Fly Pest Whipple Cutter "Breed's Hill" Mississippi Raritan Surveyor Spruce Schuylkill Alleghany Susquehanna
+	Savage Schulyer Success Diana Margaretta "Machias Liberty" Tatamagouche "Andrew Doria" "Rising Liberty" Freedom Mars Winthrop Bolton Scammel Patriot
+	"Commodore Barry" Madison Jefferson Olive Alabama "Sea Gull" "Long Island" Diamond Pigot Rover Turtle Whiting Crane Burke Convention "Hyder Ally"
+	"General Moultrie" "General Wayne" Navesink "Appeal to Heaven" Tidewater Truite "Notre Dame" Savannah Charleston Kennebec Yorktown Santee Liberator
+	Appalachia Regulator Overmountain Monongahela Frontiersman "Outer Banks" "Common Sense" "Rights of Man" Trenton Wilmington "Perth Amboy" Columbia
+	Kentucky Tennessee Louisiana Indiana Illinois Maine Missouri "Watauga Association" "Hampton Roads" Charlotina Vandalia Westsylvania "East Florida"
+	"West Florida" "Sic Semper Tyrannis" Minuteman "White Plains" Commonwealth Baltimore Yankee Pennamite Dixie
+}

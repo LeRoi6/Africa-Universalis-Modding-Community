@@ -1,0 +1,13 @@
+
+#Slight buff. Just handing over trade rights is a big deal. Plus 10 relations is comparatively nothing
+gen_trade_given = {
+	opinion = 25
+	years = 50
+}
+
+#50 malus for refusing to give over trade rights? Please. Genoa must really think they're owed this eh?
+gen_trade_access_denied = {
+	opinion = -25
+	years = 25
+	yearly_decay = 1
+}

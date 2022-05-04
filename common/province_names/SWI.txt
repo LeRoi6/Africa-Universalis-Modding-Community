@@ -1,0 +1,479 @@
+#Switzerland (Not swissgerman. As switzerland as a nation tends to be more open to local naming on an administrative level afaik, it might be good to prefer local naming over german) - By Arga
+
+#France
+102 = "Nissa"
+200 = "Montpelhièr"
+201 = "Marselha"
+202 = "Avinhon"
+205 = "Savouè"
+2753 = "Narbona"
+3089 = "Valença"
+
+#Italy
+3044 = "Salusse"
+3045 = "Aoûta" #Or "Augschtal"
+
+#iberia
+197 = "Rossello"
+4560 = "Eivissa"
+
+#Moved from Swiss.txt after Arga
+166 = "Schwyz"
+1867 = "Vaud"
+1871 = "Valais"
+3054 = "Ticino"
+3056 = "Geneva"
+
+
+
+#2017 Aug 23
+
+#switzerland nation (not german. btw I think as for colonial names here could be a mixture between italian, german, french and one or two romanch names. Indigenous names might be possible too)
+
+#aragon
+211 = "Perinés" #or "Pirineus"
+214 = "Zaragoza"
+220 = "València"
+1750 = "Alacant"
+4550 = "Castelló"
+
+#castile
+206 = "Galicia"
+207 = "Asturies"
+208 = "Llion"
+209 = "Bizkaia" #could be adjustment
+216 = "Salamanca"
+218 = "Badajoz"
+221 = "Murcia"
+224 = "Sevilla"
+225 = "Córduba"
+1747 = "Estremadura"
+1748 = "Jaén"
+1745 = "Cantabria"
+2751 = "Cuenca"
+2989 = "La Rioja"
+4547 = "Albacete"
+4548 = "Huelva"
+4554 = "Lugo"
+4555 = "Pontevedra"
+4551 = "Ávila"
+
+#Granada (could have either names, probably spanish names due to christianity vs. islam but then again arab names would be more local)
+222 = "Marriya" #or "Almeria"
+223 = "Garnatah" #or "Granada"
+#225 = "Gibraltar"
+4546 = "Malaqah" #or "Málaga"
+
+#portugal
+227 = "Lisboa"
+230 = "Algarve"
+232 = "Bragança"
+1851 = "Coimbra"
+3104 = "Minho"
+4556 = "Covilhã"
+3106 = "Santarém"
+3108 = "Setúbal"
+
+#france
+174 = "Bordeaux"
+176 = "Paue"
+180 = "Poitou"
+182 = "Vermandois"
+184 = "Orléans"
+194 = "Périgord"
+196 = "Tolosa"
+198 = "Roergue"
+199 = "Auvèrnhe" #or "Clarmont"
+203 = "Lyon"
+204 = "Grenoblo"
+3046 = "Haute-Savoie"
+3070 = "Laon"
+3071 = "Châlons"
+4389 = "Tours"
+3077 = "Partenaes"
+4386 = "Vendée"
+4387 = "Engoleime"
+3084 = "Foix"
+3085 = "Nimes"
+3087 = "Orlhac"
+3088 = "Forez"
+3090 = "Forcalquier"
+4111 = "La Rochelle"
+4112 = "Caur"
+
+#britanny (changed to FR by Draiocht)
+4384 = "Rennes"
+170 = "Léon"
+171 = "Vannes"
+172 = "Nantes"
+169 = "Saint-Brieuc"
+3068 = "Cornouaille"
+
+#normandy (using french names for now)
+167 = "Rouen"
+168 = "Caen"
+177 = "Le Mans"
+3073 = "Évreux"
+4385 = "Manche"
+
+#northern italy
+101 = "Zena" #or "Genova"
+#103 = "Piemonte"
+104 = "Milàn"
+106 = "Mòdna"
+#107 = "Brescia"
+#108 = "Verona"
+109 = "Mantova"
+111 = "Friûl"
+#112 = "Venesia"
+1774 = "Trevixo"
+#1862 = "Cremona"
+3047 = "Bèrghem"
+#3294 = "Vuclina" #or "Valtulina"
+
+#central italy
+114 = "Romagna"
+116 = "Firenze"
+118 = "Roma"
+120 = "Abruzzi"
+2976 = "Umbria"
+
+#southern italy
+121 = "Napule"
+123 = "Calàbbria"
+
+#Sizilien
+125 = "Paliemmu"
+2982 = "Saraùsa"
+3037 = "Girgenti"
+
+#Austria
+129 = "Kranjska"
+130 = "Eîstria"
+3050 = "Maribor"
+
+#corsica
+1247 = "Pumonti"
+5092 = "Cismonte"
+
+#england
+234 = "Wessex" #or "Westseaxe" (old english)
+238 = "Essex" #or "Eastseaxe" (old english)
+239 = "Bristol"
+1860 = "Norfolk"
+3028 = "Suffolk"
+4371 = "Sussex" #or "Subseaxe" (old english)
+
+#cornwall
+#Removed by Draiocht because Brythonic orthography really doesn't work for any other European language (Confusion with Welsh's 29 letter alphabet that looks but doesn't act like other Latin script languages, plus non-standardised Cornish & Breton), better to use Germanic defaults.
+
+#ireland (using ingame start date names for now)
+#Removed by Draiocht because Gaelic orthography really doesn't work for any other European language (h and half the vowels are diacritical marks, essentially, and this does not translate well), better to use Germanic defaults.
+
+#Comment by matteotironi95, "if you want to give them regional names, maybe it would be best to do each region with its own."
+103 = "Piemont"
+107 = "Bresa" #Brescia is italian. other mods use "Bressa", but Bressa is western lombard which is not native to the city. Bresa is in the local dialect. (often read Breha, btw)
+108 = "Verùna" #in lombard. Verona in italian and venetian.
+112 = "Venezia" #like in italian. in venetian, the proper historical spelling is Venexia, Venesia is somewhat newer, and less used in writing (btw, x in venetian represent the "german" s like in "sieben" whereas s is the "english" s like in "soft")
+1862 = "Cremuna" #in lombard
+3294 = "Valtelina" #the one you gave is likely romansch. the native language of valtellina is (western) lombard. valtulina could do as well but valtelina sounds more "Pan-lombard"
+
+
+
+#2018 Sep 5
+#balkans
+146 = "Attika"
+148 = "Saloniki"
+149 = "Adrianoúpolis"
+151 = "Istanbûl" #can be anything really
+2998 = "Buzau"
+3160 = "Bucuresti"
+3177 = "Thíva"
+3178 = "Achaïa"
+
+#turkey
+316 = "Izmit"
+5157 = "Iznik"
+
+#levant
+378 = "Trablos"
+1849 = "Hims"
+4297 = "Ba'labakku"
+5170 = "Al-Ladhiqiyah"
+5205 = "Bayrut"
+
+
+
+#2018 December
+
+#hre german naming to overwrite swiss dialect for the tag of switzerland
+72 = "Breisgau"
+165 = "Bern"
+166 = "Waldstätte" #will probably be removed once SWI is overhauled
+1869 = "Zürich"
+1870 = "St. Gallen"
+1880 = "Sundgau"
+
+#By Arga Apr 2020
+#lorraine
+187 = "Bar"
+
+#franche comte
+193 = "Besançon"
+7940 = "Saint Claude"
+7941 = "Dole"
+8029 = "Pontalier"
+
+#burgundy
+191 = "Nevers"
+192 = "Dijon"
+3091 = "Mâcon"
+7938 = "Château Chalon"
+7952 = "Châtillon"
+
+#dauphine
+7896 = "Gap"
+7897 = "Montelaimar"
+7910 = "Vièna"
+
+#lyonnais
+7909 = "Sant Etiève"
+
+#provence
+3090 = "Forcauquier"
+7892 = "Barcilona"
+7893 = "Ais"
+
+#east languedoc
+4391 = "Lo Puèi"
+
+#quercy rouergue
+7905 = "Milhau"
+
+#picardy
+88 = "Aro"
+89 = "Anmien"
+
+#champagne
+7953 = "St. Dizier"
+
+#orleanais
+3075 = "Châteaudun"
+
+#maine anjou
+7988 = "Sablé"
+
+#berry touraine
+179 = "Bourges"
+7937 = "Châteauroux"
+
+#limousin
+3109 = "Guéret"
+
+#central piedmont
+7071 = "Pinareul"
+
+#north piedmont
+7080 = "Ossola"
+
+#upper emilia
+7057 = "Piasëinsa"
+
+#liguria
+7053 = "Finô"
+7055 = "A Spèza"
+
+#rome
+7019 = "Tivoli"
+7020 = "Alatri"
+
+#abruzzo
+120 = "L'Aquila"
+
+#umbria
+2976 = "Perugia"
+7024 = "Norcia"
+
+#north tuscany
+7059 = "Fivizzano"
+
+#lower emilia
+7067 = "Reggio"
+
+#veneto
+7084 = "Rovereto"
+7085 = "Vicensa"
+
+#carnia
+7098 = "Tumieç"
+
+#vasconia
+210 = "Nafarroa"
+
+#catalonia
+8114 = "Figueres"
+
+#galicia
+206 = "A Coruña"
+
+#douro e minho
+8091 = "Valença"
+
+#algarve
+230 = "Lagos"
+8105 = "Sines"
+8106 = "Castro Verde"
+
+#alentejo
+229 = "Beja"
+4150 = "Évora"
+8063 = "Olivença"
+
+#extremadura
+1747 = "Caceres"
+
+#leon
+215 = "Valladolid"
+
+#segovia
+8051 = "Cuéllar"
+
+#la mancha
+2754 = "Ciudad Real"
+8059 = "Alcázar"
+8121 = "Almadén"
+
+#upper andalusia
+8084 = "Wadi Ashi"
+
+#valencia
+4549 = "Játiva"
+8089 = "Peniscola"
+
+#netherlands
+4383 = "Gravenhage"
+
+#barbant
+92 = "Brussel"
+3061 = "Hertogenbosch"
+8019 = "Leuven"
+
+#flanders
+90 = "Brugge"
+
+#luxembourg
+94 = "Lëtzebuerg"
+
+#croatia
+131 = "Zagreb"
+3196 = "Ogulin"
+
+#transdanubia
+1864 = "Kaposvár"
+4240 = "Székesfehérvár"
+
+#krakow
+262 = "Krakow"
+
+#lower silesia
+264 = "Brassel"
+
+#upper silesia
+263 = "Rattebor"
+3141 = "Uppeln"
+
+#lancashire
+240 = "Shrewsbury"
+
+#east anglia
+1860 = "Norwich"
+3028 = "Ipswich"
+
+#By Arga Jun 2020
+#europe
+#west lombardy
+3054 = { "Ticino" "Lugano" }
+
+#By Arga Aug 2020
+#1.30
+#europe
+#franche-comte
+3092 = { "Vesoul" "Vesoul" } #
+4764 = { "Dole" "Dole" } #
+
+#1.30 updates, unsorted
+89 = { "Amiens" "Amiens" } #
+102 = { "Nissa" "Nissa" } #
+107 = { "Bresa" "Bresa" } #
+108 = { "Verùna" "Verùna" } #
+142 = { "Kórkyra" "Kórkyra" } #
+163 = { "Chandakas" "Chandakas" } #
+173 = { "Miarritze" "Miarritze" } #
+226 = { "Jabal Tariq" "Jabal Tariq" } #
+267 = { "Plzen" "Plzen" } #
+1749 = { "Cádiz" "Cádiz" } #
+1771 = { "Litomerice" "Litomerice" } #
+1774 = { "Trevixo" "Trevixo" } #
+2991 = { "Forcauquier" "Forcauquier" } #
+3045 = { "Aoûta" "Aoûta" } #
+3081 = { "Agen" "Agen" } #
+4236 = { "Trenczin" "Trenczin" } #
+4387 = { "Engoleime" "Engoleime" } #
+4697 = { "Guéret" "Guéret" } #
+4720 = { "Geneva" "Geneva" } #
+4739 = { "Bergamo" "Bergamo" } #
+4740 = { "Como" "Como" } #
+7057 = { "Piasëinsa" "Piasëinsa" } #
+7058 = { "Alessandria" "Alessandria" } #
+7071 = { "Pinareul" "Pinareul" } #
+7072 = { "Ivreja" "Ivreja" } #
+7075 = { "Vercelli" "Vercelli" } #
+7078 = { "Lodi" "Lodi" } #
+7082 = { "Pazin" "Pazin" } #
+7085 = { "Vicensa" "Vicensa" } #
+7086 = { "Pordenon" "Pordenon" } #
+7734 = { "Zenj" "Zenj" } #
+7738 = { "Pozhega" "Pozhega" } #
+7909 = { "Sant Etiève" "Sant Etiève" } #
+7923 = { "Donibane Garazi" "Donibane Garazi" } #
+7966 = { "St. Quentin" "St. Quentin" } #
+7994 = { "Vitré" "Vitré" } #
+8016 = { "Donostia" "Donostia" } #
+8035 = { "Gijón" "Gijón" } #
+8078 = { "Medina Sidonia" "Medina Sidonia" } #
+8097 = { "Proença" "Proença" } #
+8173 = { "Trnava" "Trnava" } #
+8174 = { "Nytra" "Nytra" } #
+8177 = { "Tekov" "Tekov" } #
+8183 = { "Nograd" "Nograd" } #
+8237 = { "Znojmo" "Znojmo" } #
+8238 = { "Jihlava" "Jihlava" } #
+8255 = { "Zhatec" "Zhatec" } #
+8256 = { "Slané" "Slané" } #
+8259 = { "Prachensko" "Prachensko" } #
+
+#(JP) I've made the decision here to use capital and province names for 1871 and 8492 rather than Upper/Lower Valais in two langauges
+104 = { "Milàn" "Milàn" }
+1871 = { "Sitten" "Sitten" } #(Arga) note according to Cantonal statistical board was majority German until 1870
+7913 = { "Thonon-les-Bains" "Thonon-les-Bains" }
+7946 = { "Épinal" "Épinal" }
+8440 = { "Lörrach" "Lörrach" }
+8441 = { "Schwarzwald" "Fürstenberg" }
+8490 = { "Neuchâtel" "Neuchâtel" }
+8492 = { "Saint-Maurice" "Saint-Maurice" }
+2981 = { "Monferrato" "Monferrato" }
+3087 = { "Orlhac" "Orlhac" }
+4112 = { "Caors" "Caors" }
+4391 = { "Lo Puèi" "Lo Puèi" }
+4727 = { "Salusse" "Salusse" }
+7052 = { "Arba" "Arba" }
+7061 = { "Àich" "Àich" }
+7076 = { "Chióxa" "Chióxa" }
+7087 = { "Cèneda" "Cèneda" }
+7088 = { "Ciadore" "Ciadore" }
+7089 = { "Feltre" "Feltre" }
+7090 = { "Ruvèigno" "Ruvèigno" }
+7091 = { "Tolmin" "Tolmin" }
+7094 = { "Belun" "Belun" }
+7921 = { "Bigòrra" "Tarba" }
+7926 = { "Lo Moun" "Lo Moun" }

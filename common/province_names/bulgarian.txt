@@ -1,0 +1,6 @@
+#Contributions from a wide range, including Draiocht, JP
+#(JP) South Slavic file is primarily Serbian, but also Serbo-Croatian, the dialect that covers all in-game cultures apart from Bulgarian and Slovene.
+#(JP) This file will include Bulgarian and modern Macedonian naming.
+#(JP) I have reorganised and cleaned up all the prior South Slavic naming to try and make it more legible, consistant and keep it easier to edit in future
+
+#Balkans

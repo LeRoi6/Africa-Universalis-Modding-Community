@@ -1,0 +1,36 @@
+
+
+#Localised naming by Arga 2018 Jun 5 (Not a speaker, nor am I. If you have any corrections, please feel free to suggest them)
+
+#tibet
+565 = "Brug Yul" #Bhutan name since Eu4 doesn't differentiate between highland tibetans and bhutans
+677 = "Iha Sa"
+705 = "Gyêgumdo" #or "Skye Dgu Mdo" wylie
+2128 = "Mnga' Ris Sa Khul"
+2129 = "Byang Thang"
+2130 = "Nyingthri" #or "Nying Khri Sa Khul" wylie translit
+4205 = "Nag Chu"
+
+#By Arga Nov 2020
+#1.30 updates
+508 = { "Kasmira" "Srïnagara" } #
+557 = { "Yen" "Yen" } #Newari
+678 = { "Darzêdo" "Darzêdo" } #
+705 = { "Gyêgumdo" "Gyêgumdo" } #
+2074 = { "La Dwags" "Gle" } #
+2128 = { "Mnga' Ris Sa Khul" "Mnga' Ris Sa Khul" } #
+2131 = { "Chab Mdo" "Chab Mdo" } #
+2133 = { "Sde Dge" "Sde Dge" } #
+2135 = { "Dkar Mdzes" "Dkar Mdzes" } #
+4205 = { "Nag Chu" "Nag Chu" } #
+4481 = { "Spu Nag Kha" "Spu Nag Kha" } #
+4482 = { "Drenjong" "'Bras Ijongs" } #
+4515 = { "Skyid Grong" "Skyid Grong" } #
+4516 = { "Spu Hreng" "Spu Hreng" } #
+4520 = { "Ru Thog" "Ru Thog" } #
+
+706 = { "Tshwai Dam" "Tshwai Dam" } #
+710 = { "Gosthana" "Gosthana" } #
+739 = { "Su Lig" "Su Lig" } #
+2134 = { "Amdo" "Mtsho Sngon Zhing Chen" } #
+2184 = { "Pari" "Pari" } #unsure

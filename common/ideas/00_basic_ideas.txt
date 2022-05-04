@@ -16,11 +16,7 @@ aristocracy_ideas = {
 	}
 
 	trigger = {
-		OR = {
-			has_government_attribute = enables_aristocratic_idea_group
-			government = theocracy
-			government = tribal
-		}
+		has_government_attribute = enables_aristocratic_idea_group
 	}
 	
 	noble_knights = {
@@ -117,7 +113,6 @@ aristocracy_ideas = {
 		}
 	}
 }
-
 
 plutocracy_ideas = {
 	category = MIL
@@ -249,6 +244,127 @@ plutocracy_ideas = {
 	}
 }
 
+horde_gov_ideas = {
+	category = MIL
+	
+	bonus = {
+		cavalry_power = 0.25
+	}
+	
+	trigger = {
+		has_government_attribute = enables_horde_idea_group
+	}
+	
+	horse_lords = {
+		cavalry_cost = -0.33
+	}
+	beyond_the_sun = {
+		ae_impact = -0.1
+	}
+	mandate_of_the_khan = {
+		religious_unity = 0.25
+	}
+	there_shall_be_no_grass = {
+		land_attrition = -0.2
+	}
+	horde_loyalty = {
+		global_unrest = -1
+	}
+	watchers_of_the_silk_road = {	
+		caravan_power = 0.20
+	}
+	a_magnanimous_empire = {
+		num_accepted_cultures = 2
+	}
+	
+	ai_will_do = {
+		factor = 20
+	}
+}
+
+theocracy_gov_ideas = {
+	category = MIL
+	
+	bonus = {
+		global_heretic_missionary_strength = 0.01
+		church_loyalty_modifier = 0.1
+		brahmins_hindu_loyalty_modifier = 0.1
+		brahmins_muslim_loyalty_modifier = 0.1
+	}
+	
+	trigger = {
+		has_government_attribute = enables_divine_idea_group
+	}
+	servants_of_god = {
+		devotion = 1
+		legitimacy = 0.5
+	}
+	by_the_grace_of_god = {
+		fire_damage_received = -0.1
+	}
+	friends_in_high_places = {
+		leader_cost = -0.2
+	}
+	flesh_is_weak = {
+		land_morale = 0.1
+	}
+	alpha_and_omega = {
+		enforce_religion_cost = -0.1
+		culture_conversion_cost = -0.1
+	}
+	conviction_of_sin = {
+		global_unrest = -2
+	}
+	martyrs = {
+		global_manpower_modifier = 0.15
+	}
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+	}
+}
+
+indigenous_ideas = {
+	category = MIL
+
+	bonus = {
+		global_institution_spread = 0.25
+	}
+
+	trigger = {
+		has_government_attribute = enables_natives_idea_group
+	}
+
+	indigenous_bountiful_land = {
+		tribal_development_growth = 0.015
+		development_cost = -0.05
+	}
+	indigenous_irregular_warfare = {
+		hostile_attrition = 1
+	}
+	indigenous_constitution = {
+		monthly_reform_progress_modifier = 0.25
+	}
+	indigenous_braves = {
+		land_morale = 0.10
+	}
+	indigenous_controlled_burns = {
+		global_manpower_modifier = 0.2
+	}
+	indigenous_trade_with_foreigners = {
+		idea_cost = -0.1
+	}
+	indigenous_treaties = {
+		province_warscore_cost = -0.2
+	}
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
 
 innovativeness_ideas = {
 	category = ADM
@@ -333,7 +449,6 @@ innovativeness_ideas = {
 	}
 }
 
-
 religious_ideas = {
 	category = ADM
 
@@ -358,6 +473,11 @@ religious_ideas = {
 		devotion = 0.5
 		monthly_fervor_increase = 0.25
 		church_power_modifier = 0.1
+		monthly_piety_accelerator = 0.001
+		yearly_karma_decay = 0.1
+		yearly_doom_reduction = 1
+		yearly_authority = 0.15
+		yearly_patriarch_authority = 0.005
 	}
 	religious_tradition = {
 		prestige = 1
@@ -524,12 +644,20 @@ religious_ideas = {
 	}
 }
 
-
 spy_ideas = {
 	category = DIP
 
 	bonus = {
 		rebel_support_efficiency = 0.50
+	}
+	
+	claim_fabrication = {
+		fabricate_claims_cost = -0.25
+		can_fabricate_for_vassals = yes
+	}
+
+	state_propaganda = {
+		ae_impact = -0.2
 	}
 
 	efficient_spies = {
@@ -543,15 +671,6 @@ spy_ideas = {
 
 	vetting = {
 		global_spy_defence = 0.33
-	}
-
-	state_propaganda = {
-		ae_impact = -0.2
-	}
-	
-	claim_fabrication = {
-		fabricate_claims_cost = -0.25
-		can_fabricate_for_vassals = yes
 	}
 	
 	privateers = {
@@ -581,7 +700,6 @@ spy_ideas = {
 		}
 	}
 }
-
 
 diplomatic_ideas = {
 	category = DIP
@@ -632,7 +750,6 @@ diplomatic_ideas = {
 	}
 }
 
-
 offensive_ideas = {
 	category = MIL
 
@@ -673,7 +790,6 @@ offensive_ideas = {
 		}
 	}
 }
-
 
 defensive_ideas = {
 	category = MIL
@@ -717,7 +833,6 @@ defensive_ideas = {
 	}
 }
 
-
 trade_ideas = {
 	category = DIP
 
@@ -751,7 +866,7 @@ trade_ideas = {
 		factor = 0.7
 		modifier = {
 			factor = 0
-			NOT = { total_development = 100 }
+			NOT = { total_development = 100 } # BT; num_of_cities = 6
 			NOT = { has_government_attribute = is_merchant_republic }
 		}
 		modifier = {
@@ -782,9 +897,6 @@ trade_ideas = {
 		}
 	}
 }
-
-
-
 
 economic_ideas = {
 	category = ADM
@@ -857,7 +969,6 @@ economic_ideas = {
 	}
 }
 
-
 exploration_ideas = {
 	category = DIP
 	important = yes
@@ -866,24 +977,24 @@ exploration_ideas = {
 		cb_on_primitives = yes
 	}
 
-	colonial_ventures = {
+	colonial_ventures = { # BT; 2.
 		colonists = 1
 	}
-	quest_for_the_new_world	= {
+	quest_for_the_new_world	= { # BT; 1.
 		may_explore = yes
 	}
 	overseas_exploration = {
 		range = 0.5
 	}
 	land_of_opportunity = {
-		global_colonial_growth = 20
+		global_colonial_growth = 20 # BT; 10
 	}
 	vice_roys  = {
 		global_tariffs = 0.10
  		envoy_travel_time = -0.20
  	}
 	free_colonies = {
-		colonists = 1
+		colonists = 1 # BT; expel_minorities_cost = -1
 	}
 	global_empire = {
 		naval_forcelimit_modifier = 0.25
@@ -1073,7 +1184,7 @@ exploration_ideas = {
 				region = iberia_region
 				region = british_isles_region
 				region = low_countries_region
-				region = ireland_area
+				region = ireland_region # Brian; changed from _area
 			}
 			adm_tech = 14			#As a fourth idea, probably in the 1580s
 		}	#catch-all for ahistorical powers and unexpected developments in what was historically the colonial heartland as the fourth idea, also a further boost to the main colonisers like England and France, to guarantee the 4th idea is exploration
@@ -1096,7 +1207,7 @@ exploration_ideas = {
 					area = beieras_area
 					area = galicia_area
 					area = asturias_area
-					area = basque_area
+					area = basque_country
 					area = macaronesia_area
 				}
 				has_port = yes
@@ -1110,7 +1221,7 @@ exploration_ideas = {
 					region = france_region
 					region = british_isles_region
 					region = low_countries_region
-					region = ireland_area
+					region = ireland_region # Brian; changed from _area
 				}
 				has_port = yes
 			}
@@ -1174,7 +1285,7 @@ exploration_ideas = {
 					region = iberia_region
 					region = british_isles_region
 					region = low_countries_region
-					region = ireland_area
+					region = ireland_region # Brian; changed from _area
 				}
 			}
 			NOT = { adm_tech = 14 }
@@ -1183,6 +1294,15 @@ exploration_ideas = {
 			factor = 0.2
 			capital_scope = { NOT = { continent = europe } }
 		}	#Very unlikely if not European (I know people love seeing Asian tags in NA, but the fact is it never even came close to happening historically until the 20th century, so I'm not programming it in. A player in Asia can still colonise normally, the AI just wont usually, though a great power might occasionally.)
+		modifier = {
+			factor = 0.1
+			is_great_power = yes
+			NOT = { tag = ADU }
+			OR = {
+				technology_group = ottoman
+				technology_group = muslim
+			}			
+		}	#Extremely unlikely if is an AI Great Power with Ottoman or Muslim tech group (this is mostly to reduce the chance AI Ottomans and Mamluks will pick these in majority of games while being Great Powers, but give a very small window of opportunity for non-GP tags with these tech groups. Excluded Andalusia in the case it forms.)
 		modifier = {
 			factor = 0.01
 			NOT = { has_institution = new_world_i }
@@ -1249,7 +1369,6 @@ exploration_ideas = {
 	}
 }
 
-
 maritime_ideas = {
 	category = DIP
 
@@ -1259,13 +1378,16 @@ maritime_ideas = {
 
 	bonus = {
 		sea_repair = yes
+		movement_speed_in_fleet_modifier = 1 
 	}
 
 	merchant_traditions = {
 		naval_tradition_from_trade = 1.0
+		trade_range_modifier = 0.25
 	}
 	merchant_marine = {
 		global_sailors_modifier = 0.5
+		allowed_marine_fraction = 0.25
 	}
 	sheltered_ports = {
 		global_ship_repair = 0.1
@@ -1273,6 +1395,7 @@ maritime_ideas = {
 	}
 	grand_navy = {
 		naval_forcelimit_modifier = 0.5
+		ship_power_propagation = 0.25
 	}
 	ships_penny = {
 		global_ship_cost = -0.1
@@ -1357,7 +1480,6 @@ maritime_ideas = {
 		}
 	}
 }
-
 
 quality_ideas = {
 	category = MIL
@@ -1477,7 +1599,6 @@ quality_ideas = {
 	}
 }
 
-
 quantity_ideas = {
 	category = MIL
 
@@ -1514,7 +1635,6 @@ quantity_ideas = {
 		}
 	}
 }
-
 
 expansion_ideas = {
 	category = ADM
@@ -1670,7 +1790,6 @@ expansion_ideas = {
 	}
 }
 
-
 administrative_ideas = {
 	category = ADM
 
@@ -1731,6 +1850,7 @@ humanist_ideas = {
 	}
 	local_traditions = {
 		global_unrest = -2
+		harmonization_speed = 0.25
 	}
 	ecumenism = {
 		tolerance_heretic = 2
@@ -1908,7 +2028,8 @@ naval_ideas = {
 
 	bonus = {
 		ship_durability = 0.1
-		allowed_marine_fraction = 0.05
+		disengagement_chance = 0.15
+		#allowed_marine_fraction = 0.05 # BT; 0.1			#Cut with 1.33 to keep it at 2 modifiers
 	}
 
 	boarding_parties = {
@@ -1926,6 +2047,7 @@ naval_ideas = {
 	}
 	press_gangs = {
 		sailors_recovery_speed = 0.25
+		allowed_marine_fraction = 0.25
 	}
 	oak_forests_for_ships = {
 		heavy_ship_power = 0.20

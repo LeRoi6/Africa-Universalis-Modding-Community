@@ -1,0 +1,4 @@
+#UTR - Utrecht
+#Overrides dutch.txt
+
+98 = { "Nedersticht" "Utrecht" }

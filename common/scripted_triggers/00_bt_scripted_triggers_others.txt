@@ -35,7 +35,7 @@ bt_italy_stem_duchy_check = {
 	NOT = { tag = SAV } #Savoy
 	NOT = { tag = SAR } #Sardinia
 	#Upper Lorraine
-	
+
 	#Majors, just for backup
 	NOT = { was_tag = HLR } #HRE
 	NOT = { was_tag = PAP } #Popeman
@@ -69,7 +69,7 @@ bt_italy_stem_duchy_check = {
 #------------#
 #Usage:
 #has_fulfiled_province_requirement_for_mission_trigger = {
-#	tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+#	tooltip=country_holds_or_non_sovereign_subject_holds_highlighted
 #	provinces=byz_mainland_greece_provinces
 #	owner_type=country_or_non_sovereign_subject_holds
 #}
@@ -99,7 +99,7 @@ has_fulfiled_province_requirement_for_mission_trigger = {
 #------------#
 #Usage:
 #has_fulfiled_num_of_province_requirement_for_mission_trigger = {
-#	tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+#	tooltip=country_holds_or_non_sovereign_subject_holds_highlighted
 #	provinces=byz_mainland_greece_provinces
 #	owner_type=num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with
 #	value=15
@@ -245,12 +245,12 @@ defeat_black_sheep_provinces = {
 		province_id = 3253
 	}
 }
-conquer_the_caucasus_akk_provinces = {
+conquer_the_caucasus_akk_provinces = { # XXX
 	OR = {
-		area = shirvan_area
 		area = imereti_area
 		area = samtskhe_area
-		area = kartli_kakheti_area
+		area = shirvan_area
+		#area = kartli_kakheti_area # Brian; doesn't exist in BT
 		#BT additions:
 		province_id = 2204
 		province_id = 3253
@@ -277,12 +277,11 @@ invade_persia_akk_1_provinces = { #So vanilla has split the claims for the next 
 	}
 }
 invade_persia_akk_2_provinces = { #So vanilla has split the claims for the next mission between its two prerequisite missions. That's why this is split.
-	OR = {
-		area = persian_gulf_coast
+	OR = { # XXX
 		area = farsistan_area
 		area = kerman_area
+		area = persian_gulf_coast  
 		area = mogostan_area
-		#BT additions:
 		area = persian_gulf_islands_area
 	}
 }
@@ -322,7 +321,7 @@ ara_crowns_of_iberia_provinces = {
 		area = toledo_area #La Mancha
 		area = asturias_area
 		area = leon_area
-		area = basque_area #Vasconia
+		area = basque_country #Vasconia
 		area = galicia_area
 		area = segovia_area
 		area = new_castile_area
@@ -347,12 +346,12 @@ integrate_naples_provinces = {
 }
 conquer_athens_provinces = {
 	OR = {
-		area = western_aegean_area
 		area = morea_area #Peloponnese
-		area = thessaly_area
-		area = aetolia_area
-		area = northern_epirus_area #Ionian Islands
 		area = northern_greece_area #Epirus
+		area = western_aegean_area
+		area = northern_epirus_area #Ionian Islands
+		area = aetolia_area
+		area = thessaly_area
 	}
 }
 
@@ -375,9 +374,9 @@ recover_silesia_provinces = {
 	}
 }
 partition_poland_provinces = {
-	OR = {
+	OR = { # XXX
 		area = red_ruthenia_area
-		area = central_galicia_area
+		#area = central_galicia_area # Brian; doesn't exist in BT
 		province_id = 7274 #Bukovina
 		province_id = 3156 #Suceava
 		province_id = 7272 #Zalishchyky
@@ -394,6 +393,7 @@ austrian_hungary_provinces = {
 		area = slovakia_area
 		area = transdanubia_area
 		area = upper_hungary_area
+		area = alfold_area #Nuq, BT14 shift from transylvania mission
 	}
 }
 austrian_croatia_provinces = {
@@ -403,9 +403,7 @@ austrian_croatia_provinces = {
 		#BT additions
 		area = slavonia_area
 		province_id = 7739 #Vukovar
-	}
-	NOT = {
-		province_id = 3182 #Scutari was never part of the Habsburg domain
+		area = krajina_area # BT14 (Nuq) adjustment to vanilla. 
 	}
 }
 conquer_transylvania_provinces = {
@@ -414,23 +412,90 @@ conquer_transylvania_provinces = {
 		area = transylvania_area
 		area = banat_area
 		area = carpathian_ruthenia_area
-		area = alfold_area
+		#area = alfold_area #BT14 (Nuq) shift to austrian_hungary_provinces
 		area = eastern_alfold_area
 	}
 }
 austrian_italian_ambition_provinces = { #Why the hell did Draiocht change my trigger without telling me? This one's pretty disgusting right now. Readjusting back to Lombardy-Veneto.
+	#OR = {
+	#	area = venetia_area
+	#	#BT additions
+	#	area = lombardy_area
+	#	area = friuli_area
+	#	area = carnia_area
+	#	# area = trentino_area	#cut in BT14, merged into tirol_area
+	#	area = po_valley_area
+	#}
+	#NOT = {
+	#	province_id = 4728 #Pavia. Technically city should be in, but the border it creates is disgusting. It is meant to follow the Po river, but that doesn't work with the current overhaul, which certainly bothers me.
+	#	province_id = 3054 #Lugano, part of Switzerland.
+	#}
+	# Almost a complete rewrite for BT14 (Nuq), as of before this trigger is disgusting and mashes w/ the following mission (Duchy of Milan) too much. 
+	# Feel free to revert back but this fits w/ vanilla the most. Trigger for it will be to be in the empire, rather than direct/vassal ownership, and thus this is only used to give claims.
 	OR = {
 		area = venetia_area
-		#BT additions
-		area = lombardy_area
 		area = friuli_area
 		area = carnia_area
-		area = trentino_area
-		area = po_valley_area
+	}
+}
+austrian_defeat_the_serbs_provinces = { #New trigger to clean that jank of a mission up. Doesn't look any pretty, alas, but has to do with what vanilla gives.
+	OR = {
+		area = syrmia_area
+		area = serbia_area
+		area = bosnia_area
+		area = rascia_area
+		area = herzegovina_area
+		area = montenegro_area
+		province_id = 3000 #Nis
+		province_id = 7711 #Vranje
 	}
 	NOT = {
-		province_id = 4728 #Pavia. Technically city should be in, but the border it creates is disgusting. It is meant to follow the Po river, but that doesn't work with the current overhaul, which certainly bothers me.
-		province_id = 3054 #Lugano, part of Switzerland.
+		province_id = 7739 #Vukovar, part of austrian_croatia_provinces already
+	}
+}
+
+austrian_take_the_bishoprics_provinces = {
+	OR = {
+		area = salzburg_area # Salzburg+Berchtesgaden
+		province_id = 8216
+		province_id = 8475
+		province_id = 4759 # loose pieces of Bamberg
+		province_id = 8480
+		province_id = 110 # Trent
+		province_id = 8446 # Kempten
+		province_id = 1868 # Augsburg
+		province_id = 4709 # Passau
+		province_id = 8474
+		province_id = 4708 #Freising
+		province_id = 7760
+		province_id = 8457 
+		province_id = 8471
+	}
+}
+
+austrian_bayern_provinces = {
+	OR = {
+		area = salzburg_area
+		area = upper_bavaria_area 
+		area = lower_bavaria_area
+		province_id = 8482
+		province_id = 4760
+		province_id = 8468
+		province_id = 8469
+	}
+}
+
+austrian_swabia_provinces = {
+	OR = {
+		area = upper_rhineland_area
+		area = upper_swabia_area
+		area = east_bavaria_area
+		#southern half of lower swabia
+		province_id = 8437
+		province_id = 8438
+		province_id = 70
+		province_id = 3206
+		province_id = 8434
 	}
 }
 
@@ -496,13 +561,13 @@ defeat_the_livonian_order_provinces = { #Unchanged, though it creates errors in 
 #Ottomans
 conquer_southern_greece_provinces = {
 		#BT overhauled to all provinces in Southern Greece, excluding Cephalonia & Corfu
-	OR = {
+	OR = { # XXX
 		area = morea_area
-		area = western_aegean_area
-		area = euboea_area
-		area = aetolia_area
-		area = northern_peloponnesus_area
 		area = northern_greece_area
+		area = western_aegean_area
+		area = aetolia_area
+		#area = euboea_area # Brian; doesn't exist in BT
+		#area = northern_peloponnesus_area # Brian; doesn't exist in BT
 		province_id = 164
 	}
 	NOT = {
@@ -526,7 +591,7 @@ conquer_serbia_provinces = {
 	}
 }
 conquer_bosnia_provinces = {
-	OR = { 
+	OR = {
 		area = bosnia_area
 		#BT additions
 		area = krajina_area
@@ -595,7 +660,7 @@ safeguard_eastern_anatolia_provinces = {
 		#area = dulkadir_area
 		province_id = 4303 #Tao
 	}
-}			
+}
 conquer_mesopotamia_provinces = {
 	OR = {
 		area = iraq_arabi_area
@@ -604,7 +669,7 @@ conquer_mesopotamia_provinces = {
 		area = shahrizor_area
 		area = rakka_area
 	}
-	NOT = { 
+	NOT = {
 		province_id = 2211
 	}
 }
@@ -633,17 +698,16 @@ conquer_levant_provinces = {
 	region = mashriq_region
 }
 conquer_egypt_provinces = {
-	OR = {
+	OR = { # XXX
+		area = al_wahat_area
 		area = delta_area
 		area = bahari_area
-		area = said_area
 		area = vostani_area
-		area = al_wahat_area
-		area = gulf_of_arabia_area
+		area = said_area
+		area = lower_nubia_area
+		#area = gulf_of_arabia_area # Brian; doesn't exist in BT
 		#BT moved to Tripolitania
 		#area = cyrenaica_area
-		#BT additions
-		area = lower_nubia_area
 		province_id = 4322
 	}
 	NOT = {
@@ -674,11 +738,11 @@ conquer_tripolitania_provinces = {
 	}
 }
 conquer_tunisia_provinces = {
-	OR = {
+	OR = { # XXX
 		#BT adjusted to encompass historical regions of Tunisia under Suleiman
 		area = tunisia_area
-		area = east_aures_area
 		area = djerba_area
+		#area = east_aures_area # Brian; doesn't exist in BT
 	}
 	NOT = {
 		province_id = 5316 #Tuzer
@@ -686,16 +750,16 @@ conquer_tunisia_provinces = {
 	}
 }
 subjugate_algiers_provinces = {
-	OR = {
-		area = west_aures_area
-		area = constantine_area
-		area = kabylia_area
+	OR = { # XXX
 		area = barbary_coast_area
-		area = algiers_area
+		area = kabylia_area
 		area = hautes_plaines_area
 		area = ouled_nail_area #Hopefully this is Sarahan Atlas
+		#area = algiers_area # Brian; doesn't exist in BT
+		#area = constantine_area # Brian; doesn't exist in BT
+		#area = west_aures_area # Brian; doesn't exist in BT
 	}
-	NOT = { 
+	NOT = {
 		province_id = 350
 	}
 }
@@ -791,9 +855,9 @@ control_scania_provinces = { #Moved Bornholm to Turn the Tables
 }
 vassalize_norway_swe_provinces = { #Unchanged
 	OR = {
-		area = northern_norway
-		area = eastern_norway
-		area = western_norway
+		area = northern_norway  
+		area = eastern_norway  
+		area = western_norway  
 		area = southern_norway_area
 		area = trondelag_area
 	}
@@ -809,19 +873,19 @@ swe_turns_have_tabled_provinces = {
 swe_expand_finland_provinces = { #Kexholm County + Ingria
 	OR = {
 		area = west_karelia_area #Apparently this is the Ingria of BT.
-		area = north_karelia_area 
+		area = north_karelia
 	}
 }
 control_estonia_provinces = { #Swedish Estonia
     area = estonia_ingria_area
-    NOT = { province_id = 35 } #Ösel was actually part of Swedish Livonia, ceded in 1645 as part of the treaty of Brömsebro, together with Jämtland & Gotland (+Halland).
+    NOT = { province_id = 35 } #Ð¦sel was actually part of Swedish Livonia, ceded in 1645 as part of the treaty of BrÑ†msebro, together with JÐ´mtland & Gotland (+Halland).
     NOT = { province_id = 3230 } #Also part of Livonia
 }
 control_latvia_provinces = { #Now adjusted to only include Swedish Livonia
     OR = {
         area = livonia_area
         area = north_livonia_area
-        province_id = 35 #Ösel
+        province_id = 35 #Ð¦sel
         province_id = 3230 #Sontack
     }
     NOT = {
@@ -829,15 +893,15 @@ control_latvia_provinces = { #Now adjusted to only include Swedish Livonia
     }
 }
 swedish_pommerania_provinces = {
-	OR = { 
+	OR = {
 		province_id = 47 #Stralsund
 		province_id = 2994 #Greifswald
 		province_id = 1858 #Stettin
 		province_id = 7818 #Kammin
-		province_id = 7817 #Löcknitz
+		province_id = 7817 #LÑ†cknitz
 		province_id = 7816 #Usedom
 		province_id = 7815 #Anklam
-		province_id = 4745 #Rügen
+		province_id = 4745 #RÑŒgen
 		province_id = 2996 #Wismar. Was part of Swedish Pomerania
 		province_id = 7842 #Greifswald
 	}
@@ -854,29 +918,29 @@ swedish_prussia_provinces = {
 		area = nadruvia_area
 		area = masuria_area
 	}
-	NOT = { 
+	NOT = {
 		province_id = 1859 #Kulmerland
 		province_id = 1841 #Marienburg
 		province_id = 42 #Warmia
 	}
 }
 swe_subjugate_lithuania_provinces = {
-	OR = {
-		area = samogitia_area
-		area = yotvingia_area
-		area = trakai_area
-		area = lithuania_area
+	OR = { # XXX
 		#Technically it should give claims to whatever was Lithuania at the time, which was modern-day Belarus + parts of Russia + random pieces in modern-day Ukraine and Poland. But eh.
+		area = samogitia_area
+		area = lithuania_area
 		area = pripyat_area
+		area = podlasie_area
+		area = white_ruthenia_area
+		area = minsk_area
+		area = bryansk_area
+		area = vitebsk_area
 		area = polotsk_area
 		area = novogrudok_area
-		area = vitebsk_area
-		area = mazur_area
-		area = minsk_area
-		area = white_ruthenia_area
-		area = podlasie_area
-		area = bryansk_area
+		area = yotvingia_area
+		area = trakai_area
 		area = smolensk_area
+		#area = mazur_area # Brian; doesn't exist in BT
 	}
 	NOT = {
 		province_id = 297 #Bryansk
@@ -896,7 +960,7 @@ dan_slesvig_holstein_inheritance_provinces = {
 	NOT = {
 		province_id = 4141 #Dithmarschen
 		province_id = 7777 #Pinneburg
-		province_id = 45 #Lübeck
+		province_id = 45 #LÑŒbeck
 		province_id = 1857 #Lauenburg
 		province_id = 44 #Hamburg
 	}
@@ -1028,7 +1092,7 @@ bul_conquer_wallachia_provinces = {
 bul_conquer_moldavia_provinces = {
 	OR = {
 		area = moldavia_area
-		area = western_moldovia
+		area = western_moldovia_area  
 		area = bukovina_area
 	}
 }
@@ -1049,7 +1113,7 @@ bul_conquer_southern_thrace_provinces = {
 		province_id = 7138 #Bizye
 		province_id = 7137 #Selymbria
 		province_id = 151 #Constantinople
-	}	
+	}
 }
 bul_conquer_albania_provinces = {
 	OR = {
@@ -1103,7 +1167,7 @@ unite_the_voivodes_provinces = {
 	OR = {
 		area = wallachia_area
 		area = moldavia_area
-		area = western_moldovia
+		area = western_moldovia_area  
 		area = bukovina_area
 		area = upper_muntenia_area
 		area = oltenia_area
@@ -1139,15 +1203,15 @@ conquer_ferrara_provinces = {
 
 #Castille-Spain, GC
 gc_spa_invade_england_provinces = {
-	OR = {
-		area = wessex_area
-		area = home_counties_area
-		area = east_anglia_area
-		area = east_midlands_area
-		area = west_midlands_area
-		area = yorkshire_area
-		area = cornwall_area
+	OR = { # XXX
 		area = northern_england_area
+		area = east_midlands_area
+		area = wessex_area
+		area = east_anglia_area
+		area = west_midlands_area
+		area = home_counties_area
+		area = yorkshire_area
+		#area = cornwall_area # Brian; doesn't exist in BT
 	}
 }
 gc_cas_spa_italian_ambition_provinces = {
@@ -1173,7 +1237,6 @@ gc_spa_austrian_union_provinces = {
 		area = inner_austria_area
 		area = austria_proper_area
 		area = tirol_area
-		area = trentino_area
 	}
 }
 gc_cas_spa_reconquista_one_provinces = {
@@ -1182,6 +1245,9 @@ gc_cas_spa_reconquista_one_provinces = {
 		area = lower_andalucia_area
 		area = northern_andalusia_area
 	}
+}
+gc_cas_spa_navarra_provinces = {
+	area = basque_country
 }
 gc_cas_spa_reconquista_three_provinces = {
 	OR = {
@@ -1253,7 +1319,7 @@ tr_conquer_finland_provinces = {
 		area = bothnia_area
 		area = laponia_area
 		area = west_karelia_area
-		province_id = 7800 #Torneå
+		province_id = 7800 #TorneÐµ
 	}
 }
 rus_partition_poland_mission_provinces = {
@@ -1265,6 +1331,10 @@ rus_partition_poland_mission_provinces = {
 		area = malopolska_area
 		area = mazovia_area
 		province_id = 7272 #Zalishchyky
+		province_id = 255 #Kalisz
+	}
+	NOT = {
+		province_id = 4523 #Inowroclaw
 	}
 }
 rus_romania_conquest_provinces = {
@@ -1274,20 +1344,20 @@ rus_romania_conquest_provinces = {
 		area = oltenia_area
 		area = moldavia_area
 		area = bukovina_area
-		area = western_moldovia
+		area = western_moldovia_area  
 		area = carpathian_ruthenia_area
 	}
 }
 rus_third_rome_mission_provinces = {
-	OR = {
-		area = bulgaria_area
+	OR = { # XXX
 		area = thrace_area
-		area = northern_thrace_area
-		area = western_thrace_area
-		area = upper_thrace_area
-		area = danubian_plain_area
+		area = bulgaria_area
 		area = silistria_area
+		area = upper_thrace_area
+		area = northern_thrace_area
+		area = danubian_plain_area
 		area = vidin_area
+		#area = western_thrace_area # Brian; doesn't exist in BT
 	}
 	NOT = {
 		province_id = 7711 #Vranje
@@ -1323,7 +1393,7 @@ gra_own_iberia_provinces = {
 		area = galicia_area
 		area = asturias_area
 		area = leon_area
-		area = basque_area
+		area = basque_country
 		area = catalonia_area
 		#Why request the Portuguese ones once more? The mission even needs to be completed beforehand...
 		#area = alentejo_area
@@ -1483,7 +1553,7 @@ hun_vassal_states_two_provinces = {
 	OR = {
 		area = bukovina_area
 		area = moldavia_area
-		area = western_moldovia
+		area = western_moldovia_area  
 	}
 }
 hun_vassal_states_four_provinces = {
@@ -1501,7 +1571,7 @@ hun_ottoman_borders_three_provinces = {
 		area = vidin_area
 	}
 }
-hun_ottoman_borders_two_provinces = {			
+hun_ottoman_borders_two_provinces = {
 	OR = {
 		area = macedonia_area
 		area = northern_macedonia_area
@@ -1509,11 +1579,11 @@ hun_ottoman_borders_two_provinces = {
 	}
 }
 hun_ottoman_borders_four_provinces = {
-	OR = {
+	OR = { # XXX
 		area = thrace_area
 		area = upper_thrace_area
-		area = western_thrace_area
 		area = northern_thrace_area
+		#area = western_thrace_area # Brian; doesn't exist in BT
 	}
 }
 
@@ -1565,7 +1635,7 @@ hsn_custodian_of_holy_cities_provinces = {
 tim_persia_one_provinces = {
 	OR = {
 		area = farsistan_area
-		area = persian_gulf_coast
+		area = persian_gulf_coast  
 		area = kerman_area
 		province_id = 431
 		province_id = 4327
@@ -1682,7 +1752,7 @@ mug_open_up_china_1_provinces = { #Claim-exclusive
 }
 mug_open_up_china_2_provinces = { #Claim-exclusive
 	OR = {
-		area = thai_cantons
+		area = thai_cantons  
 		area = vietnam_area
 		area = guangxi_area
 		area = west_guangdong_area
@@ -1721,7 +1791,7 @@ mug_lower_burma_campaign_provinces = {
 mug_subah_of_ayuddhya_provinces = {
 	OR = {
 		area = prachin_area
-		area = sukothai_area
+		area = sukhothai_area
 		area = tenasserim_area
 		area = north_tenasserim_area
 		area = central_thai_area
@@ -1732,7 +1802,7 @@ mug_subah_of_ayuddhya_provinces = {
 		#Technically these areas are not new, but the mission description mentions the Khmer lands, so I'm including them.
 		area = cambodia_area
 		area = mekong_area
-		area = degar_highlands_area #<- This one is from SEA.
+		area = tay_nguyen_area # This one is from SEA.
 		area = champa_area
 	}
 }
@@ -1740,7 +1810,7 @@ mug_malaccan_viceroyalty_provinces = { #Deciding against the entire Johor area b
 	OR = {
 		area = malaya_area
 		area = malacca_area
-		area = kedah_area
+		area = north_malaya_area
 		province_id = 597 #Johor
 	}
 }
@@ -2012,7 +2082,7 @@ eng_rb_angevin_provinces = { #Modeled after https://upload.wikimedia.org/wikiped
 		area = poitou_area
 		area = pyrenees_area
 		area = guyenne_area
-		area = upper_gascony
+		area = upper_gascony  
 		area = normandy_area
 		area = lower_normandy_area
 		area = limousin_area
@@ -2109,7 +2179,7 @@ persian_gulf_provinces = {
 	OR = {
 		area = basra_area
 		area = khuzestan_area
-		area = persian_gulf_coast
+		area = persian_gulf_coast  
 	}
 }
 southern_frontier_provinces = {
@@ -2512,7 +2582,7 @@ gc_ara_italy_1_provinces = { #Claims from Genoese mission
 }
 gc_ara_italy_2_provinces = { #Claims from Venetian mission
 	OR = { #Carnia and Trentino maybe exclude, says C1CK.
-		area = trentino_area
+		# area = trentino_area		#cut in BT14, merged into tirol_area
 		area = carnia_area
 		area = friuli_area
 		area = lombardy_area #Lower Lombardy
@@ -2569,7 +2639,7 @@ gc_ara_occitania_provinces = {
 		area = massif_central_area #Auvergne
 		area = limousin_area
 		area = guyenne_area
-		area = upper_gascony
+		area = upper_gascony  
 		area = pyrenees_area #Lower Gascony
 	}
 }
@@ -2646,7 +2716,7 @@ gc_ara_alexandria_provinces = {
 		province_id = 352 #Gafsa
 		province_id = 353 #Medinine
 		province_id = 2954 #Djerba
-		area = tripolitania_area 
+		area = tripolitania_area
 		province_id = 356 #Benghazi
 		province_id = 357 #Darnah
 		province_id = 2326 #Tubruq
@@ -2685,4 +2755,227 @@ emp_pro_jerusalem_provinces = {
 }
 emp_pro_france_provinces = {
 	region = france_region
+}
+
+#Bavaria, EMP, made by C1CK
+bav_expand_in_bavaria_provinces = {
+	OR = {
+		province_id = 1757 #Oberpfalz
+		province_id = 76 #Salzburg
+		province_id = 2957 #Regensburg
+	}
+}
+
+conquer_franken_provinces = {
+	OR = {
+		province_id = 4716 #Coburg
+		area = franconia_area #Lower Franconia
+		province_id = 4718 #Aschaffensburg
+		province_id = 3207 #Darmstadt
+		province_id = 71 #Ansbach
+		province_id = 4715 #Rothenburg
+	}
+}
+
+conquer_ansbach_provinces = { #Not Ansbach, this is Conquer Swabia
+	OR = {
+		province_id = 3206 #Heilbronn
+		province_id = 70 #Stuttgart
+		province_id = 4713 #Urach
+		province_id = 3204 #Hohenzollern
+		province_id = 1872 #Ulm
+		#province_id = 4711 #DonauwÑ†rth #This is included in vanilla, but with the way it interacts with the previous mission this juts out in an odd way, since Rothenburg is in Franconia in BT
+		area = upper_swabia_area
+	}
+}
+
+emp_bav_union_with_palatinate_provinces = {
+	OR = {
+		province_id = 4767 #ZweibrÑŒcken
+		province_id = 1761 #Pfalz
+		province_id = 77 #Heidelburg
+		province_id = 1757 #Oberpfalz
+	}
+}
+
+emp_bav_conquer_tirol_provinces = { #Adjusted to be historical County of Tirol
+	OR = {
+		province_id = 4710 #Vorarlberg
+		province_id = 73 #Inntal
+		# area = trentino_area		#cut in BT14, merged into tirol_area
+		province_id = 1768 #Lienz
+	}
+}
+
+emp_bav_sway_cologne_provinces = {
+	OR = {
+		area = north_rhine_area
+	}
+}
+
+emp_bav_tame_brandenburg_provinces = {
+	OR = {
+		area = mittelmark_area
+		area = neumark_area
+	}
+}
+
+emp_bav_union_with_austria_provinces = {
+	OR = {
+		area = austria_proper_area
+		area = inner_austria_area
+		area = carinthia_area
+	}
+}
+
+emp_bav_italian_sun_provinces = {
+	OR = {
+		area = venetia_area
+		area = carnia_area
+		area = friuli_area
+		area = carinthia_area
+	}
+}
+
+emp_bav_netherlands_provinces = {
+	OR = {
+		area = frisia_area
+		area = holland_area
+		area = brabant_area #South Brababt
+		area = north_brabant_area #Guelders
+	}
+}
+
+#Brandenburg-Prussia, EMP, made by C1CK, updated by Nuq (1.33)
+emp_brapru_reclaim_neumark_provinces = {
+	OR = {
+		province_id = 49 #Landsberg
+		province_id = 7821 #Zantoch
+		province_id = 4747 #Dramburg
+	}
+}
+
+emp_brapru_conquer_pomerania_provinces = {
+	OR = {
+		area = vorpommern_area
+		area = hinter_pommern_area
+	}
+}
+
+emp_brapru_connect_the_prussian_lands_provinces = { #First partition of Poland
+	OR = {
+		area = mittelmark_area
+		area = neumark_area #Added for Prussian side
+		area = west_prussia_area
+		area = east_prussia_area
+		area = masuria_area
+		area = nadruvia_area
+		province_id = 8229 #Walcz
+		province_id = 2963 #Krajna
+		province_id = 4523 #Inowroclaw
+	}
+}
+
+emp_brapru_conquer_silesia_provinces = {
+	OR = {
+		area = lusatia_area
+		area = silesia_area #Upper Silesia
+		area = middle_silesia_area
+		area = lower_silesia_area
+	}
+}
+
+emp_brapru_franconian_conquest_provinces = {
+	OR = {
+		province_id = 4716 #Coburg
+		area = franconia_area #Lower Franconia
+		area = upper_franconia_area #Upper Franconia
+	}
+}
+
+emp_brapru_prussia_partitions_poland_provinces = { #Second Partition
+	OR = {
+		area = wielkopolska_area #Poznan
+		area = kuyavia_area
+		province_id = 256 #Plock
+		province_id = 8230 #Gostynin
+		province_id = 4525 #Rawa
+		province_id = 258 #Sieradz
+		province_id = 4533 #Wielun
+		province_id = 8225 #Piotrkow
+		#province_id = 3220 #Czestochowa (This means that the Prussian partition technically borders the Austrian parition, despite them not bordering historically, because Czestochowa is larger than I want) (Actually decided against all of that, moved this to the third partition)
+	}
+}
+
+emp_brapru_lower_saxony_provinces = {
+	OR = {
+		area = northern_saxony_area
+		area = lower_saxony_area #Not excluding Eastphalia here, since I think its better here, than in the Westphalia mission
+		#area = weser_area
+		area = bremen_verden_area
+		province_id = 1931 #Emden
+		province_id = 8299 #Jever
+		province_id = 8401 #Lier
+		province_id = 44 #Hamburg
+		province_id = 1857 #Lauenburg
+	}
+}
+
+emp_brapru_westphalian_conquest_provinces = {
+	OR = {
+		area = north_westphalia_area #Lower Westphaloa
+		area = westphalia_area #Upper Westphalia
+		area = weser_area #Weser-Emsland
+		area = braunschweig_area #Upper... Eastphalia. This is vanilla's borders for mission, sue me.
+	}
+}
+
+emp_brapru_kiel_canal_provinces = {
+	OR = {
+		area = holstein_area
+		province_id = 13 #Schleswig
+		province_id = 7773 #Flensburg
+		province_id = 3135 #Nordfriesland
+	}
+}
+
+emp_brapru_duchy_of_cleves_provinces = {
+	OR = {
+		area = north_rhine_area
+	}
+}
+
+emp_brapru_rhineland_conquest_provinces = {
+	OR = {
+		area = lower_rhineland_area
+		area = hesse_area
+		area = palatinate_area
+		area = nassau_area
+		province_id = 77	#Minor yoink of heidelberg from Swabia
+		province_id = 8434
+		province_id = 8435
+	}
+}
+
+#Uses one of the Alawite schools:
+#Country
+has_alawite_school_trigger = {
+	OR = {
+		religious_school = {
+			group = muslim
+			school = haddadin_school
+		}
+		religious_school = {
+			group = muslim
+			school = kalbiyya_school
+		}
+		religious_school = {
+			group = muslim
+			school = khayatin_school
+		}
+		religious_school = {
+			group = muslim
+			school = matawira_school
+		}
+	}
 }

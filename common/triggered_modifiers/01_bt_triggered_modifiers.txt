@@ -136,63 +136,67 @@ bt_iberian_crowns = {
 ###########################################
 # Hanseatic League Balancing
 ###########################################
-bt_hanseatic_domination = {
-	potential = {
-		home_trade_node = { province_id = 45 }
-		government = republic
-		is_in_trade_league = yes
-		OR = {
-			tag = HSA
-			HSA = { NOT = { is_trade_league_leader = yes } }
-		}
-	}
-	trigger = {
-		custom_trigger_tooltip = {
-			tooltip = bt_trade_capital_in_luebeck_node_tooltip
-			home_trade_node = { province_id = 45 }
-		}
-		has_government_attribute = is_merchant_republic
-		is_trade_league_leader = yes
-		is_subject = no
-	}
-	placed_merchant_power = 18
-	global_foreign_trade_power = 0.25
-}
+#BT 14 - Temporarily removed due to error spam, needs rewrite
+#bt_hanseatic_domination = {
+#	potential = {
+#		home_trade_node = { province_id = 45 } # XXX
+#		government = republic
+#		is_in_trade_league = yes
+#		OR = {
+#			tag = HSA
+#			HSA = { NOT = { is_trade_league_leader = yes } }
+#		}
+#	}
+#	trigger = {
+#		custom_trigger_tooltip = {
+#			tooltip = bt_trade_capital_in_luebeck_node_tooltip
+#			home_trade_node = { province_id = 45 } # XXX
+#		}
+#		has_government_attribute = is_merchant_republic
+#		is_trade_league_leader = yes
+#		is_subject = no
+#	}
+#	placed_merchant_power = 18
+#	global_foreign_trade_power = 0.25
+#}
 
 
 ###########################################
 # Maritime Republic Bonuses
 ###########################################
-bt_maritime_republic_bonus = {
-	potential = {
-		home_trade_node = {
-			OR = {
-				province_id = 1308
-				province_id = 1298
-			}
-		}
-		culture_group = latin
-		government = republic
-		any_core_province = { has_port = yes }
-	}
-	trigger = {
-		OR = {
-			custom_trigger_tooltip = {
-				tooltip = bt_trade_capital_in_venice_node_tooltip
-				home_trade_node = { province_id = 1308 }
-			}
-			custom_trigger_tooltip = {
-				tooltip = bt_trade_capital_in_genoa_node_tooltip
-				home_trade_node = { province_id = 1298 }
-			}
-		}
-		has_government_attribute = is_merchant_republic
-		is_subject = no
-		any_core_province = { has_port = yes }
-	}
-	trade_steering = 0.25
-	global_ship_trade_power = 0.10
-}
+#BT 14 - Temporarily removed due to error spam, needs rewrite
+#bt_maritime_republic_bonus = {
+#	potential = {
+#		home_trade_node = { # XXX
+#			OR = {
+#				province_id = 1308
+#				province_id = 1298
+#			}
+#		}
+#		culture_group = latin
+#		government = republic
+#		#num_of_ports = 1
+#		any_core_province = { has_port = yes } # XXX
+#	}
+#	trigger = {
+#		OR = {
+#			custom_trigger_tooltip = {
+#				tooltip = bt_trade_capital_in_venice_node_tooltip
+#				home_trade_node = { province_id = 1308 } # XXX
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = bt_trade_capital_in_genoa_node_tooltip
+#				home_trade_node = { province_id = 1298 } # XXX
+#			}
+#		}
+#		has_government_attribute = is_merchant_republic
+#		is_subject = no
+#		#num_of_ports = 1
+#		any_core_province = { has_port = yes } # XXX
+#	}
+#	trade_steering = 0.25
+#	global_ship_trade_power = 0.10
+#}
 
 ###########################################
 # Burgundy Balancing
@@ -211,4 +215,57 @@ bt_hegemony_of_burgundy = {
 		personal_union = 5
 	}
 	diplomatic_upkeep = 5
+}
+
+###########################################
+# Saxony Balancing
+###########################################
+bt_wettin_realms = {
+	potential = {
+		tag = SAX
+		is_subject = no
+		NOT = { has_country_flag = formed_saxony_flag_bt }
+	}
+	trigger = {
+		any_subject_country = {
+			is_subject_of_type = personal_union
+		}
+		senior_union_with = MEI
+		senior_union_with = THU
+	}
+	diplomatic_upkeep = 2 
+	reduced_liberty_desire = 40
+}
+
+###########################################
+# Kurdish Overlord Balancing
+###########################################
+bt_kurdish_overlords = {
+	potential = {
+		is_subject = no
+		OR = {
+			religion = sunni
+			religion = shiite
+		}
+		any_country = {
+				primary_culture = kurdish
+				OR = {
+					is_subject_of = ROOT
+					guaranteed_by = ROOT
+				}
+			}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = {
+				primary_culture = kurdish
+				OR = {
+					is_subject_of = ROOT
+					guaranteed_by = ROOT
+				}
+			}
+			amount = 3
+		}
+	}
+	diplomatic_upkeep = 2
 }

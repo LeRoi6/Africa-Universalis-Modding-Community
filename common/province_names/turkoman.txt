@@ -1,0 +1,10 @@
+#Turkoman
+#(JP) Representing Aq and Qara Qoyunlu, as well as Dulkadir - nomadic Turks ruling over Mesopotamia
+#(JP) Will overwrite turkish_g.txt which is Ottoman Turkish
+
+#Mesopotamia
+4294 = { "Qala Çolan" "Qala Çolan" }
+6103 = { "Ergani" "Ergani" }
+6121 = { "Imadiye" "Imadiye" }
+6129 = [ "Sultanabad" "Sultanabad" }
+6144 = { "Nasiriye" "Nasiriye" )

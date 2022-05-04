@@ -1,0 +1,9 @@
+#Moved to turkish_g
+#(JP) location for Ottoman only names as opposed to Seljuk/Beylik names
+
+2298 = { "Antalya" "Antalya" }
+4309 = { "Aydin" "Aydin" }
+4312 = { "Bolu" "Bolu" }
+5162 = { "Meghri" "Meghri" }
+6012 = { "Gölhisar" "Gölhisar" }
+6027 = { "Shehirkishla" "Shehirkishla" }

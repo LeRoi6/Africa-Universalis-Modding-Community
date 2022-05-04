@@ -40,6 +40,7 @@ estate_burghers =
 		#development_cost = 0.1			#BTAddOn removed - estates rebalancing
 		republican_tradition = -0.5			#BTAddOn new - estates rebalancing
 		stability_cost_modifier = 0.33			#BTAddOn new - estates rebalancing
+		global_unrest = 2
 	}
 	land_ownership_modifier = {
 		burghers_loyalty_modifier = 0.2
@@ -79,20 +80,6 @@ estate_burghers =
 			has_province_modifier = thankful_guilds
 		}
 	}
-	# These do not scale, but only applied in provinces owned by the estate
-	#province_modifier_happy = {
-	#	#trade_goods_size_modifier = 0.1			#BTAddOn removed - estates rebalancing
-	#	local_development_cost = -0.10			#BTAddOn new - estates rebalancing
-	#	province_trade_power_modifier = 0.25			#BTAddOn changed from 0.5 - estates rebalancing (was way too overpowered)
-	#}
-	#province_modifier_neutral = {
-	#	local_development_cost = -0.05
-	#}		
-	#province_modifier_angry = {
-	#	local_unrest = 5
-	#	local_development_cost = 0.10			#BTAddOn new - estates rebalancing
-	#	province_trade_power_modifier = -0.25			#BTAddOn new - estates rebalancing
-	#}	
 	
 	# Influence modifiers
 	base_influence = 10
@@ -220,7 +207,6 @@ estate_burghers =
 		}
 		loyalty = -20
 	}
-	
 	#Custom Names
 	custom_name = {
 		desc = estate_bourgeoisie
@@ -263,6 +249,8 @@ estate_burghers =
 		estate_burghers_exclusive_trade_rights
 		estate_burghers_control_over_monetary_policy
 		estate_burghers_private_trade_fleets
+		estate_burghers_khmer_irrigation
+		estate_burghers_tropical_nation
 		estate_burghers_monopoly_of_textiles
 		estate_burghers_monopoly_of_dyes
 		estate_burghers_monopoly_of_glass
@@ -270,6 +258,9 @@ estate_burghers =
 		estate_burghers_enforced_interfaith_dialogue
 		estate_burghers_prussian_confederation
 		estate_burghers_statutory_rights
+		estate_burghers_orang_laut_alliances
+		estate_burghers_control_over_the_mint
+		estate_burghers_hydraulic_rights
 	}
 
 	agendas = {

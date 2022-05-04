@@ -1,0 +1,3 @@
+#Contributions from a wide range, including JP
+#(JP) Scottish English, NOT SCOTS, will overwrite british.txt. This is NOT for Scots, but rather Scottish English names where different for later British English
+#(JP) I have reorganised and cleaned up all the prior British/English naming to try and make it more legible, consistant and keep it easier to edit in future

@@ -1,0 +1,40 @@
+#Frisian
+
+#Low Countries
+94 = { "Luksemboarch" "Luksemboarch" }
+96 = { "Seelân" "Middelburch" }
+98 = { "Utert" "Utert" }
+99 = { "Arnhim" "Arnhim" }
+100 = { "Westergoa" "Snits" }
+1931 = { "Emsgoa" "Emden" }
+3058 = { "Drinte" "Kûfurd" }
+3064 = { "Dúntsjerk" "Dúntsjerk" }
+4381 = { "Oerisel" "Swol" }
+4382 = { "Ommelannen" "Delfsyl" }
+4383 = { "De Haach" "De Haach" }
+4770 = { "De Bosk" "De Bosk" }
+7954 = { "West-Fryslân" "Nieuwediep" }
+8118 = { "Grinslân" "Grins" }
+8119 = { "Eastergoa" "Ljouwert" }
+8120 = { "Twinte" "Ynskedee" }
+8229 = { "Rjustringen" "Jever" }
+8400 = { "Stellingwerven" "Wolvega" }
+8401 = { "Lier" "Lier" }
+
+#North Germany
+44 = { "Hamburch" "Hamburch" }
+50 = { "Berlyn" "Berlyn" }
+55 = { "Aldenburch" "Aldenburch" }
+86 = { "Múnster" "Múnster" }
+1775 = { "Kil" "Kil" }
+1878 = { "Aken" "Aken" }
+
+#Scandinavia
+3134 = { "Apenrua" "Apenrua" }
+3135 = { "Noard-Fryslân" "Husem" }
+
+#Britain
+238 = "Eastsaksen"
+246 = "Noardumbrje"
+248 = { "Edinburch" "Edinburch" }
+4371 = "Sudsaksen" 

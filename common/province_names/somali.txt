@@ -1,0 +1,45 @@
+#Somali, all by Arga
+
+#africa
+358 = { "Iskandariya" "Iskandariya" } #
+361 = { "Qaahiro" "Qaahiro" } #
+1205 = { "Muqdisho" "Muqdisho" } #
+1206 = { "Qardho" "Qardho" } #
+1207 = { "Ogaadeen" "Dhanaan" } #the city of Bale is outside the province?
+1208 = { "Dhagaxbuur" "Dhagaxbuur" } #
+1209 = { "Barbara" "Barbara" } #
+1211 = { "Herer" "Herer" } #
+1212 = { "Saylac" "Saylac" } #
+1215 = { "Tajuura" "Tajuura" } #
+2024 = { "Garoowe" "Garoowe" } #
+2315 = { "Suwees" "Suwees" } #
+2764 = { "Aysaqiita" "Aysaqiita" } #Afar language
+2773 = { "Jigjiga" "Jigjiga" } #
+2774 = { "Kismaayo" "Kismaayo" } #or Kismanyy for Maay language
+2775 = { "Marka" "Marka" } #or Marky for Maay language
+2776 = { "Afgooye" "Afgooye" } #This is not Afgooye, vanilla bug
+2777 = { "Baardheere" "Baardheere" } #
+2778 = { "Wardheer" "Wardheer" } #
+2779 = { "Afdheer" "Afdheer" } #
+2780 = { "Beledweyne" "Beledweyne" } #
+2781 = { "Gedo" "Luuq" } #or Gethy in Maay language
+2782 = { "Warshiikh" "Warshiikh" } #or Warsheekh
+2783 = { "Hobyo" "Hobyo" } #
+2784 = { "Gaalkacyo" "Gaalkacyo" } #
+2785 = { "Ceelbuur" "Ceelbuur" } #
+2786 = { "Boosaaso" "Boosaaso" } #or Bandar Qasim
+2788 = { "Xaafuun" "Xaafuun" } #
+2789 = { "Laasqoray" "Laasqoray" } #
+2790 = { "Sanaag" "Sanaag" } #
+2792 = { "Togdheer" "Burco" } #seems to be oldest permanent town?
+2793 = { "Hargeysa" "Hargeysa" } #
+2794 = { "Baraawe" "Baraawe" } #or Barawy in Maay language
+4052 = { "Wabiga Daawa" "Daawa" } #means River Dawa
+#asia
+365 = { "Siinaa" "Siinaa" } #
+385 = { "Makka" "Makka" } #
+387 = { "Mocha" "Mocha" } #
+388 = { "Cadan" "Cadan" } #
+1099 = { "Suqadara" "Sooq" } #
+2343 = { "Xadramaut" "Xadramaut" } #
+4280 = { "Ta'izz" "Ta'izz" } #

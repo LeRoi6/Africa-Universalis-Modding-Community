@@ -4,8 +4,8 @@
 ###########################################
 
 bt_conquest_of_the_great_fire = {
-	potential = { religion = zoroastrian_group }
-	trigger = { religion = zoroastrian_group }
+	potential = { religion_group = zoroastrian_group }
+	trigger = { religion_group = zoroastrian_group }
 	
 	prestige = 0.5
 	missionaries = 1

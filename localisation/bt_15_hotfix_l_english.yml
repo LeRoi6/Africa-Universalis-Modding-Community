@@ -1,0 +1,6 @@
+﻿l_english:
+
+ #Some 11th hour hotfix 15.0.1 content here
+ bt_otto_crimea_tweaks_two_tt:0 "We gain §YClaims§! on heathen-held land along the northern §YBlack Sea Coast§!"
+ bt_ottos_want_genoese_land_anatolia_tt:0 "[Root.GetName] gains §YPermanent Claims§! on Genoese land in §YAnatolia§!"
+ bt_ottos_want_genoese_land_local_tt:0 "[Root.GetName] gains §YClaims§! on Genoese land around the §YBlack Sea§! and §YBosphorus Strait§!"

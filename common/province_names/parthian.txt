@@ -1,0 +1,26 @@
+
+
+#Localised naming by Arga 2019
+
+#parthia
+410 = "Seleucia"
+416 = "Tawresh"
+427 = "Hecatompylos" 
+428 = "Rhagiana"
+431 = "Harmozeia"
+435 = "Zranka"
+437 = "Mithradatkirt"
+440 = "Uvarazmish"
+445 = "Margush"
+447 = "Harauvatish"
+450 = "Baxtrish"
+451 = "Kapisa"
+578 = "Peukela"
+2216 = "Komesh"
+2218 = "Parsa"
+2307 = "Thospia"
+4290 = "çusha"
+
+#syria
+277 = "Halab"
+379 = "Kang Diz Huxt" #middle persian, or "Hierosolyma"

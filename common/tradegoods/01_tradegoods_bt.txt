@@ -9,6 +9,7 @@
 #bt_trade_good_apiculture
 
 #Beyond Typus trade goods
+### 37
 bt_trade_good_beer = {
 	color = { 0.68 0.66 0.54 }
 	modifier = {
@@ -25,11 +26,11 @@ bt_trade_good_beer = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { development = 99 }	#Lower average dev in BT, so lowering from 18 to 12
+			NOT = { development = 99 } # Lower average dev in BT, so lowering from 18 to 12
 		}
 		modifier = {
-			factor = 2.0
-			development = 100	#Lower average dev in BT, so lowering from 22 to 16
+			factor = 2
+			development = 100 # Lower average dev in BT, so lowering from 22 to 16
 		}
 	}
 }
@@ -50,11 +51,11 @@ bt_trade_good_books = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { development = 99 }	#Lower average dev in BT, so lowering from 18 to 12
+			NOT = { development = 99 } # Lower average dev in BT, so lowering from 18 to 12
 		}
 		modifier = {
 			factor = 2.0
-			development = 100	#Lower average dev in BT, so lowering from 22 to 16
+			development = 100 # Lower average dev in BT, so lowering from 22 to 16
 		}
 	}
 }
@@ -79,7 +80,7 @@ bt_trade_good_fruit = {
 				region = west_siberia_region
 				region = east_siberia_region
 				region = sahel_region
-			}			#Fruit disabled in these regions
+			} # Fruit disabled in these regions
 		}
 		modifier = {
 			factor = 0
@@ -115,7 +116,7 @@ bt_trade_good_fruit = {
 			factor = 0.5
 			OR = {
 				has_winter = normal_winter
-				has_terrain = farmlands			#Counterintuitive, but in core farming areas we would typically prefer grain or rich goods like cloth.
+				has_terrain = farmlands # Counterintuitive, but in core farming areas we would typically prefer grain or rich goods like cloth.
 				has_terrain = savannah
 				has_terrain = woods
 			}
@@ -127,13 +128,13 @@ bt_trade_good_fruit = {
 				has_climate = tropical
 			}
 		}
-		#Specific areas or provinces
+		# Specific areas or provinces
 		modifier = {
 			factor = 0
 			area = newfoundland_area
 		}
 		modifier = {
-			factor = 0.0
+			factor = 0
 			is_random_new_world = no
 			OR = {
 				area = east_alaska_area
@@ -175,7 +176,7 @@ bt_trade_good_fruit = {
 bt_trade_good_apiculture = {
 	color = { 0.87 0.72 0.09 }
 	modifier = {
-		global_supply_limit_modifier = 0.10
+		global_supply_limit_modifier = 0.1
 	}
 	province = {
 		attrition = -1
@@ -189,13 +190,13 @@ bt_trade_good_apiculture = {
 				continent = south_america
 				continent = oceania
 			}
-			OR = {
-				technology_group = north_american
-				technology_group = mesoamerican
-				technology_group = south_american
-				technology_group = andean
-				technology_group = high_american
-			}
+			#OR = { # Brian; provinces don't have technology_group XXX
+			#	technology_group = north_american
+			#	technology_group = mesoamerican
+			#	technology_group = south_american
+			#	technology_group = andean
+			#	technology_group = high_american
+			#}
 		}	#Beekeeping was an Old World affair.
 		modifier = {
 			factor = 0

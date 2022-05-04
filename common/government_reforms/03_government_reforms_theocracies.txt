@@ -16,6 +16,10 @@ theocracy_mechanic = {
 	heir = yes
 	basic_reform = yes # = invisible/does not take up a slot
 	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
 
 	modifiers = {
 		brahmins_hindu_influence_modifier = 0.1
@@ -35,7 +39,9 @@ leading_clergy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
-		global_tax_modifier = 0.05
+		build_cost = -0.1 					#(JP) Changed to give tax modifier to abbacies
+		development_cost = -0.1
+		church_influence_modifier = 0.1
 	}
 }
 
@@ -79,6 +85,24 @@ papacy_reform = {
 	custom_attributes = {
 		locked_government_type = yes
 	}
+}
+
+imperial_abbey_reform = {
+	potential = {
+		NOT = { tag = PAP }
+		capital_scope = { is_part_of_hre = yes }
+	}
+	modifiers = {
+		global_tax_modifier = 0.1
+		church_influence_modifier = 0.1
+	}
+	legacy_equivalent = theocratic_government
+	icon = "imp_abbey"						#(JP) Waiting for Chrys
+	lock_level_when_selected = yes
+	has_devotion = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
 }
 
 #Internal vs External Mission
@@ -174,7 +198,7 @@ kingdom_of_god_reform = {
 		global_manpower_modifier = 0.1
 		prestige = 1
 		devotion = 1
-		appoint_cardinal_cost = -0.5
+		appoint_cardinal_cost = -0.3
 		papal_influence_from_cardinals = 1.0
 	}
 	allow_normal_conversion = yes
@@ -269,17 +293,17 @@ monastic_breweries_reform = {
 				}
 				if = {
 					limit = {
-						trade_goods = bt_trade_goods_beer
+						trade_goods = bt_trade_good_beer # Brian fixed; BT; grain
 					}
 					add_province_modifier = {
-						name = grain_bonus_prod #Nerfed to 50% since beer is more valuable.
+						name = grain_bonus_prod
 						duration = -1
 						hidden = yes
 					}
 				}
-				if = {
+				if = { # BT
 					limit = {
-						trade_goods = bt_trade_goods_fruit
+						trade_goods = bt_trade_good_fruit # Brian fixed
 					}
 					add_province_modifier = { #New for BT.
 						name = fruit_bonus_prod
@@ -390,7 +414,7 @@ conciliarism_reform = {
 		tag = PAP
 	}
 	modifiers = {
-		appoint_cardinal_cost = -0.5
+		appoint_cardinal_cost = -0.3
 	}
 	ai = {
 		factor = 3
@@ -510,18 +534,22 @@ theocratic_democracy_reform = {
 	
 	trigger = {
 		NOT = { has_reform = monastic_order_reform }
-		OR = {
-			NOT = { has_estate = estate_nobles }
-			crown_stronger_than_estate = { estate = estate_nobles }
+		if = {
+			limit = { has_dlc = "Common Sense" }
+			OR = {
+				NOT = { has_estate = estate_nobles }
+				crown_stronger_than_estate = { estate = estate_nobles }
+			}
 		}
 	}
 
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
-	}
-	custom_attributes = {
-		blocked_call_diet = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+			disables_nobility = yes
+		}
 	}
 	ai = {
 		factor = 1
@@ -569,18 +597,22 @@ regionally_elected_commanders = {
 			has_reform = monastic_order_reform
 			tag = KOJ
 		}
-		OR = {
-			NOT = { has_estate = estate_nobles }
-			crown_stronger_than_estate = { estate = estate_nobles }
+		if = {
+			limit = { has_dlc = "Common Sense" }
+			OR = {
+				NOT = { has_estate = estate_nobles }
+				crown_stronger_than_estate = { estate = estate_nobles }
+			}
 		}
 	}
 
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
-	}
-	custom_attributes = {
-		blocked_call_diet = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+			disables_nobility = yes
+		}
 	}
 	ai = {
 		factor = 1
@@ -670,9 +702,11 @@ commander_king_reform = {
 			has_reform = monastic_order_reform
 			tag = KOJ
 		}
-		full_idea_group = aristocracy_ideas
+		full_idea_group = theocracy_gov_ideas
 	}
 	modifiers = {
+		devotion = 0.1
+		harsh_treatment_cost = -0.2
 		leader_land_fire = 1
 	}
 	custom_attributes = {
@@ -720,6 +754,8 @@ admiral_king_reform = {
 		admirals_become_rulers = yes
 	}
 	has_term_election = no
+	queen = yes
+	royal_marriage = yes
 	heir = no
 	ai = {
 		factor = 0.1
@@ -823,6 +859,7 @@ religion_in_one_country_reform = {
 religious_permanent_revolution_reform = {
 	icon = "religious_permanent_revolution_reform"
 	allow_normal_conversion = yes
+	force_conversion_gives_global_holy_war_released_modifier = yes
 	potential = {
 		NOT = {
 			religion = confucianism
@@ -839,7 +876,7 @@ religious_permanent_revolution_reform = {
 		custom_tooltip = world_crusade_tt
 	}
 	modifiers = {
-		enforce_religion_cost = -0.4
+		enforce_religion_cost = -0.25
 	}
 	ai = {
 		factor = 3
@@ -872,7 +909,7 @@ priestly_autonomy_reform = {
 	}
 	
 	modifiers = {
-		governing_capacity = 500
+		governing_capacity = 500 # BT; 250
 	}
 	ai = {
 		factor = 3
@@ -925,10 +962,7 @@ all_under_tengri_reform = {
 	}
 }
 
-####################################################################################################
-####################################################################################################
-####################	Legacy Governments From Beyond Typus and Beyond the Pale	####################
-####################################################################################################
-####################################################################################################
 
-#Regnum Dei cut for the moment, too much work to update.
+# Legacy Governments From Beyond Typus and Beyond the Pale
+
+# Regnum Dei cut for the moment, too much work to update.
